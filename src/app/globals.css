@@ -98,32 +98,38 @@ button {
 }
 
 .site-header {
-  height: 88px;
+  min-height: 88px;
+  height: auto;
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(255, 255, 255, .94);
+  background: rgba(255, 255, 255, .98);
   backdrop-filter: blur(16px);
   border-bottom: 1px solid rgba(18, 33, 58, .08);
+  padding: 10px 0;
+  overflow: visible; /* 强制确保 Logo 不被剪裁 */
 }
 
 .nav-wrap {
-  height: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 24px;
+  width: 100%;
 }
 
 .brand {
   display: flex;
   align-items: center;
-  flex: 0 0 auto;
+  flex-shrink: 0;
 }
 
 .brand img {
-  height: 64px;
+  height: auto;
+  max-height: 85px; /* 增加上限并允许高度自适应 */
   width: auto;
   object-fit: contain;
+  display: block;
 }
 
 .primary-nav {
