@@ -3,5 +3,5 @@ export const siteConfig = {
   salesEmail: "info@zhiyudao.com",
   companyName: "Dalian Zhiyudao Signage & Tech. Co., Ltd.",
   contactPerson: "Aaron",
-  url: "https://zyd-signage-website.vercel.app",
+  url: "https://zydsign.com",
 };
