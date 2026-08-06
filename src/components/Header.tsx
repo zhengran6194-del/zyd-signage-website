@@ -16,8 +16,9 @@ export default function Header() {
     <header className="site-header" id="top">
       <div className="container nav-wrap">
         <a className="brand" href="/" aria-label="ZYD Home">
-          <img src="/assets/images/logo-header.png" alt="ZYD Zhiyudao Sign logo" width={166} height={78} />
+          <img src="/assets/images/logo-correct.jpg" alt="ZYD Zhiyudao Sign logo" width={166} height={78} />
         </a>
+
 
         <button 
           className="menu-toggle" 

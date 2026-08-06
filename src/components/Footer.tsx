@@ -14,9 +14,10 @@ export default function Footer() {
     <footer className="site-footer">
       <div className="container footer-grid">
         <div className="footer-brand">
-          <img src="/assets/images/logo-header.png" alt="ZYD Signage" />
+          <img src="/assets/images/logo-correct.jpg" alt="ZYD Signage" />
           <p>{siteConfig.companyName} Factory-direct custom signage solutions since 2006.</p>
         </div>
+
         <div>
           <h3>Products</h3>
           <a href="/products">Illuminated Letters</a>
