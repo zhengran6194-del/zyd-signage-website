@@ -15,16 +15,70 @@ export default function HaloLitLettersPage() {
     <>
       <Header />
       <main id="main">
-        <section className="bg-slate-900 text-white py-20 relative overflow-hidden">
-          <div className="container grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-5xl lg:text-7xl font-black mb-6 leading-tight uppercase tracking-tighter">Custom Halo-Lit <br/><span className="text-blue-500 italic">Stainless Steel</span> Letters</h1>
-              <p className="text-xl text-slate-300 mb-8 font-medium">Premium rear-glow fabricated metal letters for high-end storefronts and architectural projects.</p>
-              <button onClick={() => handleWhatsApp("I am interested in Custom Halo-Lit Letters.")} className="button button-green-base px-10 py-5 rounded-full text-white font-black text-xl flex items-center gap-4">
-                GET A QUOTE
-              </button>
+        {/* 1. Hero */}
+        <section className="bg-slate-900 text-white py-24 lg:py-32 relative overflow-hidden">
+          <div className="container grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+            <div className="reveal visible">
+              <div className="eyebrow text-blue-400 font-black tracking-widest uppercase mb-6 text-sm">Industrial Precision</div>
+              <h1 className="text-6xl lg:text-8xl font-black mb-8 leading-[0.9] tracking-tighter uppercase">
+                Custom <span className="text-blue-500 italic">Halo-Lit</span> <br/>Metal Letters
+              </h1>
+              <p className="text-xl lg:text-2xl text-slate-300 mb-12 max-w-xl leading-relaxed font-medium">
+                Elegant rear-glow illumination for premium architectural branding. Fabricated from marine-grade stainless steel with high-output LED modules.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-6">
+                <button 
+                  onClick={() => handleWhatsApp("Hi Aaron, I need a quote for Custom Halo-Lit Stainless Steel Letters.")}
+                  className="button button-green-base px-12 py-6 rounded-full text-white font-black text-2xl flex items-center justify-center gap-4 shadow-2xl transition-all hover:-translate-y-1"
+                >
+                  GET A QUOTE
+                </button>
+              </div>
             </div>
-            <div><img src="/assets/images/cat-illuminated.webp" alt="Product" className="rounded-[3rem] shadow-2xl border-4 border-white/10" /></div>
+            <div className="reveal visible relative">
+              <div className="absolute -inset-4 bg-blue-500/20 blur-3xl rounded-full"></div>
+              <img src="/assets/images/cat-illuminated.webp" alt="Halo-Lit Signage" className="relative rounded-[4rem] shadow-2xl border-8 border-white/5 object-cover w-full h-[600px]" />
+            </div>
+          </div>
+        </section>
+
+        {/* 2. Professional Specs Table */}
+        <section className="section bg-white">
+          <div className="container">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
+              <div className="lg:col-span-2">
+                <h2 className="text-4xl lg:text-5xl font-black text-slate-900 mb-12 uppercase tracking-tight">Engineering Specifications</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                  <div className="p-10 bg-slate-50 rounded-[3rem] border border-slate-100">
+                    <h3 className="text-xl font-black text-blue-600 mb-4 uppercase italic">Material Options</h3>
+                    <ul className="space-y-3 text-slate-600 font-bold">
+                      <li>&bull; #304 / #316 Marine-Grade Stainless Steel</li>
+                      <li>&bull; Brushed, Mirror, or Titanium Finish</li>
+                      <li>&bull; UV-Resistant Powder Coating (Any RAL)</li>
+                      <li>&bull; Solid Block Acrylic for Light Diffusing</li>
+                    </ul>
+                  </div>
+                  <div className="p-10 bg-slate-50 rounded-[3rem] border border-slate-100">
+                    <h3 className="text-xl font-black text-blue-600 mb-4 uppercase italic">Technical Data</h3>
+                    <ul className="space-y-3 text-slate-600 font-bold">
+                      <li>&bull; LED Lifetime: 50,000+ Hours</li>
+                      <li>&bull; IP Rating: IP65 / IP67 (Waterproof)</li>
+                      <li>&bull; Input Voltage: AC 110V-240V (DC 12V/24V)</li>
+                      <li>&bull; Warranty: 3-5 Years Global Guarantee</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-slate-950 p-12 rounded-[4rem] text-white flex flex-col justify-center shadow-2xl">
+                <h3 className="text-3xl font-black mb-6 italic text-blue-400 uppercase tracking-tighter">Factory Advantage</h3>
+                <p className="text-slate-400 mb-10 leading-relaxed font-medium">Direct manufacturing from our 20,000sqm base ensures zero middleman costs and 100% quality control on every weld and finish.</p>
+                <div className="space-y-6">
+                  <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">Global DDP Shipping</span></div>
+                  <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">Free 3D Mockup Setup</span></div>
+                  <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">Fast Turnaround (7-10 Days)</span></div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </main>

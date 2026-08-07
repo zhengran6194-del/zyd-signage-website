@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Link from 'next/link';
 
 export default function ProductsPage() {
   useEffect(() => {
@@ -46,9 +47,9 @@ export default function ProductsPage() {
                   </div>
                   <h3 className="text-2xl font-black mb-3 text-slate-900">{p.title}</h3>
                   <p className="text-slate-500 leading-relaxed mb-6">{p.desc}</p>
-                  <a href={`/products/${p.id}`} className="button button-green-base w-full py-4 text-white font-bold rounded-full">
+                  <Link href={`/products/${p.id}`} className="button button-green-base w-full py-4 text-white font-bold rounded-full text-center block">
                     View Details
-                  </a>
+                  </Link>
                 </div>
               ))}
             </div>
