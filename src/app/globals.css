@@ -69,39 +69,79 @@ button {
 }
 
 .site-header {
-  min-height: 88px;
+  min-height: 100px;
   height: auto;
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(255, 255, 255, .98);
-  backdrop-filter: blur(24px);
-  border-bottom: 1px solid rgba(18, 33, 58, .08);
-  padding: 12px 0;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(30px) saturate(180%);
+  -webkit-backdrop-filter: blur(30px) saturate(180%);
+  border-bottom: 1px solid rgba(18, 33, 58, 0.05);
+  padding: 10px 0;
   overflow: visible;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.brand img {
-  height: auto;
-  max-height: 85px;
-  width: auto;
-  object-fit: contain;
+.site-header:hover {
+  background: rgba(255, 255, 255, 0.95);
 }
 
-/* 郑总图三优化：极致 3D 浓郁绿色底座风格 (12px 深度厚重) */
-.button-green-base {
-  background: linear-gradient(180deg, #1dbb5d 0%, #086d34 100%);
-  box-shadow: 0 15px 40px rgba(8, 109, 52, 0.4), 0 12px 0 #054a22; /* 12px 实体超厚底座 */
-  border: none;
-  transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
-  color: #fff !important;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  display: inline-flex;
+.primary-nav {
+  display: flex;
+  gap: 3.5rem;
   align-items: center;
-  justify-content: center;
+}
+
+.primary-nav a {
+  font-family: 'Inter', 'Manrope', sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--blue-950);
+  position: relative;
+  transition: all 0.3s ease;
+  padding: 8px 0;
+}
+
+.primary-nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: var(--blue-700);
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 4px;
+}
+
+.primary-nav a:hover {
+  color: var(--blue-700);
+  transform: translateY(-1px);
+}
+
+.primary-nav a:hover::after {
+  width: 100%;
+}
+
+.nav-actions .button.small {
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  padding: 14px 28px;
+  border-radius: 50px;
+  box-shadow: 0 10px 25px rgba(8, 109, 52, 0.3), 0 8px 0 #054a22;
+}
+
+.nav-actions .button.small:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(8, 109, 52, 0.4), 0 6px 0 #054a22;
+}
+
+.nav-actions .button.small:active {
+  transform: translateY(6px);
+  box-shadow: 0 4px 10px rgba(8, 109, 52, 0.2), 0 2px 0 #054a22;
 }
 
 .button-green-base:hover {

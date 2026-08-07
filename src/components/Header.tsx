@@ -33,17 +33,16 @@ export default function Header() {
           <Link href="/projects">Case Studies</Link>
           <Link href="/faq">FAQ</Link>
           <Link href="/about">About</Link>
-          <Link href="/#contact">Contact</Link>
+          <Link href="/contact">Contact</Link>
         </nav>
 
         <div className="nav-actions">
-          <a 
-            className="button button-green-base small px-6 py-2" 
-            href="#contact" 
-            onClick={(e) => handleWhatsApp(e, "I am interested in a signage quote.")}
+          <Link 
+            className="button button-green-base small px-8 py-3" 
+            href="/contact"
           >
-            Get a Quote
-          </a>
+            Get a Free Quote
+          </Link>
         </div>
       </div>
     </header>
