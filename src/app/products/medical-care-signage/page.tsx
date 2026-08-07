@@ -50,21 +50,40 @@ export default function MedicalSignagePage() {
                 <h2 className="text-4xl lg:text-5xl font-black text-slate-900 mb-12 uppercase tracking-tight">Engineering Specifications</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                   <div className="p-10 bg-slate-50 rounded-[3rem] border border-slate-100">
-                    <h3 className="text-xl font-black text-blue-600 mb-4 uppercase italic">Hygiene Standards</h3>
+                    <h3 className="text-xl font-black text-blue-600 mb-4 uppercase italic">Material Options</h3>
                     <ul className="space-y-3 text-slate-600 font-bold">
-                      <li>&bull; Medical-Grade 304 Stainless Steel</li>
-                      <li>&bull; Non-Porous Antibacterial Acrylics</li>
-                      <li>&bull; ISO-Certified Sterile Coatings</li>
-                      <li>&bull; Chemical-Resistant Surface Finishes</li>
+                      <li>&bull; Galvanized Sheet (镀锌板) — Hot-Dip Galvanized</li>
+                      <li>&bull; 201 Stainless Steel (201 不锈钢) — Economical Grade</li>
+                      <li>&bull; 304 Stainless Steel (304 不锈钢) — Premium Outdoor Grade</li>
+                      <li>&bull; Aluminum Plate (铝板) — Lightweight &amp; Corrosion-Resistant</li>
                     </ul>
                   </div>
                   <div className="p-10 bg-slate-50 rounded-[3rem] border border-slate-100">
-                    <h3 className="text-xl font-black text-blue-600 mb-4 uppercase italic">ADA Compliance</h3>
+                    <h3 className="text-xl font-black text-blue-600 mb-4 uppercase italic">Surface Treatment</h3>
                     <ul className="space-y-3 text-slate-600 font-bold">
-                      <li>&bull; Tactile Lettering & Braille (Grade 2)</li>
-                      <li>&bull; High-Contrast Ratio Color Palettes</li>
-                      <li>&bull; Glare-Free Matte Finishes</li>
-                      <li>&bull; International Accessibility Standards</li>
+                      <li>&bull; Professional Powder Coating (Any RAL Color)</li>
+                      <li>&bull; Automotive-Grade Paint Finish</li>
+                      <li>&bull; Brushed or Mirror Finish</li>
+                      <li>&bull; Antibacterial Coating Option (Healthcare Grade)</li>
+                    </ul>
+                  </div>
+                  <div className="p-10 bg-slate-50 rounded-[3rem] border border-slate-100">
+                    <h3 className="text-xl font-black text-blue-600 mb-4 uppercase italic">Structure &amp; Mounting</h3>
+                    <ul className="space-y-3 text-slate-600 font-bold">
+                      <li>&bull; Internal Reinforced Frames</li>
+                      <li>&bull; L-Shape / U-Shape Mounting Brackets</li>
+                      <li>&bull; Flush-Mount Installation Available</li>
+                      <li>&bull; ADA-Compliant Tactile &amp; Braille Signage</li>
+                    </ul>
+                  </div>
+                  <div className="p-10 bg-slate-50 rounded-[3rem] border border-slate-100">
+                    <h3 className="text-xl font-black text-blue-600 mb-4 uppercase italic">Components &amp; Durability</h3>
+                    <ul className="space-y-3 text-slate-600 font-bold">
+                      <li>&bull; High-Efficiency LED Modules (Samsung / Epistar Chips)</li>
+                      <li>&bull; MeanWell Power Supplies (IP67 Rated)</li>
+                      <li>&bull; UV-Resistant &amp; Rust-Proof Construction</li>
+                      <li>&bull; Weather-Certified for -40°C to +60°C</li>
+                      <li>&bull; 3-5 Year Global Warranty</li>
                     </ul>
                   </div>
                 </div>

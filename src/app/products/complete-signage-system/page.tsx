@@ -52,19 +52,36 @@ export default function CompleteSignageSystemPage() {
                   <div className="p-10 bg-slate-50 rounded-[3rem] border border-slate-100">
                     <h3 className="text-xl font-black text-blue-600 mb-4 uppercase italic">Material Options</h3>
                     <ul className="space-y-3 text-slate-600 font-bold">
-                      <li>&bull; #304 / #316 Marine-Grade Stainless Steel</li>
-                      <li>&bull; Extruded Aluminum Profiles &amp; Panels</li>
-                      <li>&bull; Solid Block Acrylic for Light Diffusing</li>
-                      <li>&bull; UV-Resistant Powder Coating (Any RAL)</li>
+                      <li>&bull; Galvanized Sheet (镀锌板) — Hot-Dip Galvanized</li>
+                      <li>&bull; 201 Stainless Steel (201 不锈钢) — Economical Grade</li>
+                      <li>&bull; 304 Stainless Steel (304 不锈钢) — Premium Outdoor Grade</li>
+                      <li>&bull; Aluminum Plate (铝板) — Lightweight &amp; Corrosion-Resistant</li>
                     </ul>
                   </div>
                   <div className="p-10 bg-slate-50 rounded-[3rem] border border-slate-100">
-                    <h3 className="text-xl font-black text-blue-600 mb-4 uppercase italic">Technical Data</h3>
+                    <h3 className="text-xl font-black text-blue-600 mb-4 uppercase italic">Surface Treatment</h3>
                     <ul className="space-y-3 text-slate-600 font-bold">
-                      <li>&bull; LED Lifetime: 50,000+ Hours</li>
-                      <li>&bull; IP Rating: IP65 / IP67 (Waterproof)</li>
-                      <li>&bull; Input Voltage: AC 110V-240V (DC 12V/24V)</li>
-                      <li>&bull; Warranty: 3-5 Years Global Guarantee</li>
+                      <li>&bull; Professional Powder Coating (Any RAL Color)</li>
+                      <li>&bull; Automotive-Grade Paint Finish</li>
+                      <li>&bull; Brushed or Mirror Finish</li>
+                    </ul>
+                  </div>
+                  <div className="p-10 bg-slate-50 rounded-[3rem] border border-slate-100">
+                    <h3 className="text-xl font-black text-blue-600 mb-4 uppercase italic">Structure &amp; Mounting</h3>
+                    <ul className="space-y-3 text-slate-600 font-bold">
+                      <li>&bull; Internal Reinforced Frames</li>
+                      <li>&bull; L-Shape / U-Shape Mounting Brackets</li>
+                      <li>&bull; Flush-Mount Installation Available</li>
+                    </ul>
+                  </div>
+                  <div className="p-10 bg-slate-50 rounded-[3rem] border border-slate-100">
+                    <h3 className="text-xl font-black text-blue-600 mb-4 uppercase italic">Components &amp; Durability</h3>
+                    <ul className="space-y-3 text-slate-600 font-bold">
+                      <li>&bull; High-Efficiency LED Modules (Samsung / Epistar Chips)</li>
+                      <li>&bull; MeanWell Power Supplies (IP67 Rated)</li>
+                      <li>&bull; UV-Resistant &amp; Rust-Proof Construction</li>
+                      <li>&bull; Weather-Certified for -40°C to +60°C</li>
+                      <li>&bull; 3-5 Year Global Warranty</li>
                     </ul>
                   </div>
                 </div>
