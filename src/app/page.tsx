@@ -99,11 +99,11 @@ export default function Home() {
                 <div className="rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white">
                   <img src="/assets/images/factory-overview.jpg" alt="Factory QC" className="w-full h-[400px] object-cover" />
                 </div>
-                <div className="absolute -bottom-12 -right-12 bg-slate-950 p-12 rounded-[4rem] text-white shadow-3xl hidden lg:block border-4 border-blue-500/20">
-                  <strong className="text-6xl font-black block text-blue-400 italic mb-2 tracking-tighter leading-none">100%</strong>
-                  <div className="space-y-1">
-                    <span className="text-xs uppercase font-black tracking-[0.3em] text-slate-300 block">In-House</span>
-                    <span className="text-xs uppercase font-black tracking-[0.3em] text-slate-500 block">Manufacturing</span>
+                <div className="absolute -bottom-20 -right-20 bg-slate-950 p-20 rounded-[5rem] text-white shadow-[0_50px_100px_rgba(0,0,0,0.5),0_15px_0_#1e293b] hidden lg:block border-8 border-blue-500/10">
+                  <strong className="text-[140px] font-black block text-blue-400 italic mb-4 tracking-tighter leading-none drop-shadow-[0_10px_30px_rgba(30,144,255,0.4)]">100%</strong>
+                  <div className="space-y-2 text-center">
+                    <span className="text-xl uppercase font-black tracking-[0.5em] text-slate-200 block">In-House</span>
+                    <span className="text-xl uppercase font-black tracking-[0.5em] text-slate-500 block">Manufacturing</span>
                   </div>
                 </div>
               </div>
