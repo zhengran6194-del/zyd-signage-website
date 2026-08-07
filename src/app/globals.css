@@ -74,63 +74,32 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
 }
 
 .brand img { 
-  max-height: 64px; /* Zheng zong request: Large and clear */
+  max-height: 64px; /* Zheng zong request: Large and clear matching red box ratio */
   width: auto; 
   object-fit: contain; 
 }
 
-.primary-nav { 
-  display: flex; 
-  gap: 2.5rem; 
-  align-items: center;
-  margin-left: auto;
-  margin-right: 2.5rem;
-}
-
-.primary-nav a {
-  font-weight: 700;
-  font-size: 13px;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--blue-950);
-  transition: color 0.3s ease;
-  position: relative;
-}
-
-.primary-nav a:hover { color: var(--blue-700); }
-
-.primary-nav a::after {
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: var(--blue-700);
-  transition: width 0.3s ease;
-}
-
-.primary-nav a:hover::after { width: 100%; }
-
-/* Unified Button Scale */
+/* 12px 3D 绿色底座风格 */
 .button-green-base {
   background: linear-gradient(180deg, #10b981 0%, #059669 100%);
-  box-shadow: 0 4px 0 #065f46;
+  box-shadow: 0 15px 45px rgba(16, 185, 129, 0.4), 0 12px 0 #065f46; /* 12px 实体超厚底座 */
+  border: none;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
   color: #fff !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   font-weight: 800;
   text-transform: uppercase;
-  padding: 12px 32px; /* px-8 py-3 equivalent */
+  padding: 12px 32px;
   border-radius: 4px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition: 0.15s;
   font-size: 14px;
   letter-spacing: 0.05em;
 }
 
-.button-green-base:hover { transform: translateY(-1px); box-shadow: 0 5px 0 #065f46; }
-.button-green-base:active { transform: translateY(3px); box-shadow: 0 1px 0 #065f46; }
+.button-green-base:hover { transform: translateY(-2px); box-shadow: 0 18px 50px rgba(16, 185, 129, 0.5), 0 14px 0 #065f46; }
+.button-green-base:active { transform: translateY(12px); box-shadow: 0 4px 10px rgba(16, 185, 129, 0.2), 0 0px 0 #065f46; }
 
 /* WhatsApp Floating Icon - Clean PNG */
 .floating-whatsapp {

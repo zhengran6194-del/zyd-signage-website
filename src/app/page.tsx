@@ -99,16 +99,17 @@ export default function Home() {
                 <div className="rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white">
                   <img src="/assets/images/factory-overview.jpg" alt="Factory QC" className="w-full h-[400px] object-cover" />
                 </div>
-                <div className="absolute -bottom-10 -right-10 bg-slate-950 p-8 lg:p-12 rounded-[4rem] text-white shadow-[0_30px_60px_rgba(0,0,0,0.5),0_12px_0_#070a14] border-[8px] border-blue-500/10 transition-all duration-700 hover:scale-[1.02] group/badge overflow-hidden hidden lg:block">
+                <div className="absolute bottom-6 right-6 bg-slate-950 p-6 lg:p-8 rounded-[3rem] text-white shadow-[0_20px_40px_rgba(0,0,0,0.5),0_10px_0_#070a14] border-[6px] border-blue-500/10 transition-all duration-700 hover:scale-[1.05] group/badge overflow-hidden hidden lg:block">
                   {/* Atmospheric Glow */}
-                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.15)_0%,transparent_80%)] blur-[100px] opacity-70 group-hover/badge:opacity-100 transition-opacity"></div>
+                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.1)_0%,transparent_80%)] blur-[80px] opacity-70 group-hover/badge:opacity-100 transition-opacity"></div>
                   
-                  <strong className="relative z-10 text-[100px] font-black block text-transparent bg-clip-text bg-gradient-to-b from-white via-blue-400 to-blue-900 italic mb-2 tracking-tighter leading-none drop-shadow-[0_15px_30px_rgba(30,144,255,0.6)] text-center">100%</strong>
+                  <strong className="relative z-10 text-[100px] font-black block text-transparent bg-clip-text bg-gradient-to-b from-white via-blue-400 to-blue-900 italic mb-1 tracking-tighter leading-none drop-shadow-[0_10px_20px_rgba(30,144,255,0.6)] text-center">100%</strong>
                   
-                  <div className="relative z-10 space-y-2 text-center">
-                    <span className="text-xl lg:text-2xl uppercase font-black tracking-[0.6em] text-white block ml-[0.6em] drop-shadow-lg">In-House</span>
-                    <span className="text-[10px] lg:text-xs uppercase font-black tracking-[0.4em] text-slate-500 block opacity-70 ml-[0.4em]">Manufacturing</span>
+                  <div className="relative z-10 space-y-1 text-center">
+                    <span className="text-lg lg:text-xl uppercase font-black tracking-[0.6em] text-white block ml-[0.6em] drop-shadow-md">In-House</span>
+                    <span className="text-[8px] lg:text-[10px] uppercase font-black tracking-[0.4em] text-slate-500 block opacity-70 ml-[0.4em]">Manufacturing</span>
                   </div>
+                </div>
                 </div>
               </div>
             </div>
