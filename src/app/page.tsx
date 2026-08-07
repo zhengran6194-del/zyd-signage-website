@@ -99,20 +99,15 @@ export default function Home() {
                 <div className="rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white">
                   <img src="/assets/images/factory-overview.jpg" alt="Factory QC" className="w-full h-[400px] object-cover" />
                 </div>
-                <div className="absolute -bottom-64 -right-64 bg-slate-950 p-48 lg:p-64 rounded-[20rem] text-white shadow-[0_150px_300px_rgba(0,0,0,0.9),0_50px_0_#05070a] hidden lg:block border-[32px] border-blue-500/10 transition-all duration-1000 hover:scale-[1.08] group/badge overflow-hidden ring-[1px] ring-blue-400/20">
+                <div className="absolute -bottom-10 -right-10 bg-slate-950 p-8 lg:p-12 rounded-[4rem] text-white shadow-[0_30px_60px_rgba(0,0,0,0.5),0_12px_0_#070a14] border-[8px] border-blue-500/10 transition-all duration-700 hover:scale-[1.02] group/badge overflow-hidden hidden lg:block">
                   {/* Atmospheric Glow */}
-                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.2)_0%,transparent_80%)] blur-[200px] opacity-80 group-hover/badge:opacity-100 transition-opacity"></div>
-                  <div className="absolute -top-full -left-full w-[200%] h-[200%] bg-gradient-to-br from-blue-400/20 via-transparent to-transparent blur-[150px] rotate-45 animate-pulse"></div>
+                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.15)_0%,transparent_80%)] blur-[100px] opacity-70 group-hover/badge:opacity-100 transition-opacity"></div>
                   
-                  <strong className="relative z-10 text-[320px] font-black block text-transparent bg-clip-text bg-gradient-to-b from-white via-blue-400 to-blue-900 italic mb-12 tracking-tighter leading-none drop-shadow-[0_60px_120px_rgba(30,144,255,0.8)]">100%</strong>
+                  <strong className="relative z-10 text-[100px] font-black block text-transparent bg-clip-text bg-gradient-to-b from-white via-blue-400 to-blue-900 italic mb-2 tracking-tighter leading-none drop-shadow-[0_15px_30px_rgba(30,144,255,0.6)] text-center">100%</strong>
                   
-                  <div className="relative z-10 space-y-8 text-center translate-y-[-20px]">
-                    <span className="text-5xl lg:text-6xl uppercase font-black tracking-[1.2em] text-white block ml-[1.2em] drop-shadow-lg">In-House</span>
-                    <span className="text-3xl lg:text-4xl uppercase font-black tracking-[1em] text-slate-500 block opacity-70 ml-[1em]">Manufacturing</span>
-                  </div>
-                  
-                  <div className="relative z-10 mt-24 flex justify-center">
-                    <div className="h-3 w-80 bg-gradient-to-r from-transparent via-blue-500/80 to-transparent opacity-80 blur-[2px]"></div>
+                  <div className="relative z-10 space-y-2 text-center">
+                    <span className="text-xl lg:text-2xl uppercase font-black tracking-[0.6em] text-white block ml-[0.6em] drop-shadow-lg">In-House</span>
+                    <span className="text-[10px] lg:text-xs uppercase font-black tracking-[0.4em] text-slate-500 block opacity-70 ml-[0.4em]">Manufacturing</span>
                   </div>
                 </div>
               </div>

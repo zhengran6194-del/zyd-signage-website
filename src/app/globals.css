@@ -74,7 +74,7 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
 }
 
 .brand img { 
-  max-height: 26px; /* Optimized delicate size */
+  max-height: 64px; /* Zheng zong request: Large and clear */
   width: auto; 
   object-fit: contain; 
 }
