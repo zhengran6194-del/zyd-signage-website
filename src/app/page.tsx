@@ -40,23 +40,23 @@ export default function Home() {
       <Header />
       <main id="main">
         {/* 1. REFINED HERO */}
-        <section className="hero relative flex items-center bg-slate-950 text-white overflow-hidden py-24 lg:py-32">
+        <section className="hero relative flex items-center bg-slate-950 text-white overflow-hidden py-20 lg:py-24">
           <div className="absolute inset-0 z-0">
             <img src="/assets/images/hero-bg-seafront.png" alt="ZYD Factory" className="w-full h-full object-cover opacity-60" />
             <div className="hero-overlay-dark"></div>
           </div>
           
           <div className="container relative z-10">
-            <div className="max-w-3xl">
+            <div className="max-w-2xl">
               <div className="reveal">
-                <div className="text-blue-400 font-bold tracking-[0.3em] uppercase text-xs mb-4">Precision Engineering Since 2006</div>
+                <div className="text-blue-400 font-bold tracking-[0.3em] uppercase text-[10px] mb-4">Precision Engineering Since 2006</div>
                 <h1 className="mb-6 uppercase">Precision Built <br/><span className="text-blue-500 italic font-medium">B2B Signage</span> Solutions</h1>
-                <p className="text-lg text-slate-300 mb-10 font-medium leading-relaxed opacity-90">
+                <p className="text-base text-slate-300 mb-10 font-medium leading-relaxed opacity-90">
                   A 20,000sqm manufacturing powerhouse delivering architectural-grade wayfinding and custom identification systems with Global DDP capabilities.
                 </p>
                 <div className="flex gap-4">
-                  <Link href="/contact" className="button-green-base">Get a Free Quote</Link>
-                  <Link href="/products" className="px-8 py-3 border border-white/20 rounded font-bold uppercase text-[12px] hover:bg-white hover:text-slate-950 transition-all">Explore Catalog</Link>
+                  <Link href="/contact" className="button button-green-base">Get a Free Quote</Link>
+                  <Link href="/products" className="px-6 py-2.5 border border-white/20 rounded font-bold uppercase text-[11px] hover:bg-white hover:text-slate-950 transition-all flex items-center">Explore Catalog</Link>
                 </div>
               </div>
             </div>
@@ -64,19 +64,19 @@ export default function Home() {
         </section>
 
         {/* 2. PRODUCTION PROCESS (Restored) */}
-        <section className="section bg-white">
+        <section className="section bg-white py-20 lg:py-24">
           <div className="container">
-            <div className="text-center mb-16 reveal">
-              <div className="text-blue-600 font-bold uppercase text-xs tracking-widest mb-2">The ZYD Way</div>
+            <div className="text-left mb-12 reveal">
+              <div className="text-blue-600 font-bold uppercase text-[10px] tracking-widest mb-2">The ZYD Way</div>
               <h2 className="mb-4">Our 8-Step Manufacturing Process</h2>
-              <p className="text-slate-500 max-w-2xl mx-auto">Ensuring absolute compliance and durability for large-scale international projects.</p>
+              <p className="text-slate-500 max-w-2xl">Ensuring absolute compliance and durability for large-scale international projects.</p>
             </div>
             <div className="step-grid">
               {steps.map((s, i) => (
                 <div key={i} className="step-card reveal">
                   <div className="step-no">{s.no}</div>
-                  <h3 className="text-xl font-black text-slate-900 mb-2 uppercase">{s.title}</h3>
-                  <p className="text-sm text-slate-600 font-medium leading-relaxed">{s.desc}</p>
+                  <h3 className="text-lg font-black text-slate-900 mb-2 uppercase">{s.title}</h3>
+                  <p className="text-xs text-slate-600 font-medium leading-relaxed">{s.desc}</p>
                 </div>
               ))}
             </div>
@@ -84,33 +84,33 @@ export default function Home() {
         </section>
 
         {/* 3. QUALITY & COMPLIANCE (New Section) */}
-        <section className="section bg-slate-50 border-y border-slate-100">
+        <section className="section bg-slate-50 border-y border-slate-100 py-20 lg:py-24">
           <div className="container">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               <div className="reveal">
                 <h2 className="mb-6 uppercase tracking-tighter">Global Compliance & <br/>Quality Standards</h2>
-                <p className="text-slate-600 mb-10 text-lg leading-relaxed">We adhere to the highest international certifications to guarantee structural integrity and electrical safety in any environment.</p>
-                <div className="grid grid-cols-2 gap-6">
+                <p className="text-slate-600 mb-10 text-base leading-relaxed">We adhere to the highest international certifications to guarantee structural integrity and electrical safety in any environment.</p>
+                <div className="grid grid-cols-2 gap-4">
                   {[
                     { label: 'ISO 9001:2015', desc: 'Quality Management' },
                     { label: 'CE Certified', desc: 'Electrical Compliance' },
                     { label: 'SGS Inspected', desc: 'Factory Standards' },
                     { label: 'UL Components', desc: 'Premium Components' },
                   ].map((cert, idx) => (
-                    <div key={idx} className="p-5 bg-white border border-slate-100 rounded-lg shadow-sm">
-                      <div className="font-black text-blue-600 text-sm mb-1">{cert.label}</div>
-                      <div className="text-[11px] font-bold uppercase tracking-widest text-slate-400">{cert.desc}</div>
+                    <div key={idx} className="p-4 bg-white border border-slate-100 rounded-lg shadow-sm">
+                      <div className="font-black text-blue-600 text-[12px] mb-0.5">{cert.label}</div>
+                      <div className="text-[10px] font-bold uppercase tracking-widest text-slate-400">{cert.desc}</div>
                     </div>
                   ))}
                 </div>
               </div>
               <div className="reveal relative">
-                <div className="rounded-[2rem] overflow-hidden shadow-2xl border-8 border-white">
-                  <img src="/assets/images/factory-overview.jpg" alt="Factory QC" className="w-full h-[450px] object-cover" />
+                <div className="rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white">
+                  <img src="/assets/images/factory-overview.jpg" alt="Factory QC" className="w-full h-[400px] object-cover" />
                 </div>
-                <div className="absolute -bottom-8 -right-8 bg-slate-950 p-8 rounded-2xl text-white shadow-2xl hidden lg:block">
-                  <strong className="text-3xl font-black block text-blue-400 italic mb-1 tracking-tighter">20,000㎡</strong>
-                  <span className="text-[10px] uppercase font-bold tracking-widest text-slate-400">Capacity Leader</span>
+                <div className="absolute -bottom-6 -right-6 bg-slate-950 p-6 rounded-2xl text-white shadow-2xl hidden lg:block">
+                  <strong className="text-2xl font-black block text-blue-400 italic mb-1 tracking-tighter">20,000㎡</strong>
+                  <span className="text-[9px] uppercase font-bold tracking-widest text-slate-400">Capacity Leader</span>
                 </div>
               </div>
             </div>
@@ -118,30 +118,34 @@ export default function Home() {
         </section>
 
         {/* 4. PRODUCTS PREVIEW */}
-        <section className="section bg-white">
+        <section className="section bg-white py-20 lg:py-24">
           <div className="container">
-            <div className="flex justify-between items-end mb-16 reveal">
+            <div className="flex justify-between items-end mb-12 reveal">
               <div>
                 <h2 className="uppercase tracking-tighter">Signage Solutions</h2>
-                <p className="text-slate-500 font-medium mt-2">Bespoke manufacturing for architectural projects.</p>
+                <p className="text-slate-500 font-medium text-sm mt-1">Bespoke manufacturing for global architectural projects.</p>
               </div>
-              <Link href="/products" className="text-blue-600 font-bold uppercase text-[12px] tracking-widest border-b-2 border-blue-100 hover:border-blue-600 transition-all pb-1">
+              <Link href="/products" className="text-blue-600 font-bold uppercase text-[11px] tracking-widest border-b border-blue-100 hover:border-blue-600 transition-all pb-0.5">
                 View Full Catalog &rarr;
               </Link>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
               {[
                 { title: 'Halo-Lit Letters', img: 'cat-illuminated.webp', id: 'custom-halo-lit-letters' },
                 { title: 'Wayfinding Systems', img: 'hero-wayfinding.png', id: 'architectural-wayfinding-system' },
                 { title: 'Monument Signs', img: 'cat-outdoor.webp', id: 'outdoor-pylon-monument-sign' },
                 { title: 'LED Light Boxes', img: 'cat-lightbox.webp', id: 'ultra-slim-led-light-box' },
+                { title: 'LED Neon Signs', img: 'cat-neon.webp', id: 'custom-led-neon-sign' },
+                { title: 'Metal & Acrylic Signs', img: 'cat-metal.webp', id: 'metal-acrylic-logo-sign' },
+                { title: 'Landscape & Furniture', img: 'landscape-bench.jpg', id: 'custom-landscape-furniture' },
+                { title: 'Complete Systems', img: 'cat-system.webp', id: 'complete-signage-system' },
               ].map((p, i) => (
                 <div key={i} className="reveal group">
-                  <div className="overflow-hidden rounded-xl mb-4 h-64 bg-slate-100 border border-slate-50">
+                  <div className="overflow-hidden rounded-xl mb-4 h-60 bg-slate-100 border border-slate-50">
                     <img src={`/assets/images/${p.img}`} alt={p.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                   </div>
-                  <h4 className="font-black text-slate-900 mb-2 uppercase text-sm">{p.title}</h4>
-                  <Link href={`/products/${p.id}`} className="text-[11px] font-bold text-slate-400 uppercase tracking-widest group-hover:text-blue-600 transition-colors">Details</Link>
+                  <h4 className="font-black text-slate-900 mb-1 uppercase text-xs">{p.title}</h4>
+                  <Link href={`/products/${p.id}`} className="text-[10px] font-bold text-slate-400 uppercase tracking-widest group-hover:text-blue-600 transition-colors">Details</Link>
                 </div>
               ))}
             </div>
@@ -149,23 +153,20 @@ export default function Home() {
         </section>
 
         {/* 5. CALL TO ACTION */}
-        <section id="contact" className="section bg-slate-950 text-white relative overflow-hidden">
+        <section id="contact" className="section bg-slate-950 text-white relative overflow-hidden py-24">
           <div className="absolute inset-0 opacity-10 pointer-events-none">
             <img src="/assets/images/grid-pattern.svg" alt="Pattern" className="w-full h-full object-cover" />
           </div>
-          <div className="container relative z-10 text-center max-w-2xl">
+          <div className="container relative z-10 text-center max-w-xl">
             <div className="reveal">
-              <h2 className="mb-6 uppercase">Ready to Start Your <br/>Next Signage Project?</h2>
-              <p className="text-slate-400 mb-10 text-lg">Contact our engineering team for expert technical support and factory-direct pricing.</p>
-              <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                <button 
-                  className="button-green-base px-12 py-4"
-                  onClick={(e) => handleWhatsApp(e, "Hi Aaron, I want to start a custom signage project.")}
-                >
-                  Start WhatsApp Chat
-                </button>
-                <Link href="/contact" className="px-12 py-4 border border-white/20 rounded font-bold uppercase text-[14px] hover:bg-white hover:text-slate-950 transition-all flex items-center justify-center">
-                  Request a Quote
+              <h2 className="mb-4 uppercase">Ready to Start?</h2>
+              <p className="text-slate-400 mb-10 text-base">Contact our engineering team for expert technical support and factory-direct pricing.</p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link href="/contact" className="button button-green-base px-10 py-3">
+                  Get a Free Quote
+                </Link>
+                <Link href="/about" className="px-10 py-3 border border-white/20 rounded font-bold uppercase text-[12px] hover:bg-white hover:text-slate-950 transition-all flex items-center justify-center">
+                  Learn More
                 </Link>
               </div>
             </div>
