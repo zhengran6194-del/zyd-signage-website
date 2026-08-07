@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import { siteConfig } from '@/config/site';
 
 export default function Header() {
@@ -15,9 +16,9 @@ export default function Header() {
   return (
     <header className="site-header" id="top">
       <div className="container nav-wrap">
-        <a className="brand" href="/" aria-label="ZYD Home">
+        <Link className="brand" href="/" aria-label="ZYD Home">
           <img src="/assets/images/logo-correct.jpg" alt="ZYD logo" />
-        </a>
+        </Link>
 
         <button 
           className="menu-toggle" 
@@ -28,11 +29,11 @@ export default function Header() {
         </button>
 
         <nav id="primary-nav" className={`primary-nav ${isMenuOpen ? 'open' : ''}`}>
-          <a href="/products">Products</a>
-          <a href="/projects">Case Studies</a>
-          <a href="/faq">FAQ</a>
-          <a href="/about">About</a>
-          <a href="/#contact">Contact</a>
+          <Link href="/products">Products</Link>
+          <Link href="/projects">Case Studies</Link>
+          <Link href="/faq">FAQ</Link>
+          <Link href="/about">About</Link>
+          <Link href="/#contact">Contact</Link>
         </nav>
 
         <div className="nav-actions">

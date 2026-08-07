@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { siteConfig } from '@/config/site';
 
 export default function Footer() {
@@ -20,16 +21,16 @@ export default function Footer() {
 
         <div>
           <h3>Products</h3>
-          <a href="/products">Illuminated Letters</a>
-          <a href="/products">LED Light Boxes</a>
-          <a href="/products">Wayfinding Systems</a>
-          <a href="/products">Outdoor Signs</a>
+          <Link href="/products">Illuminated Letters</Link>
+          <Link href="/products">LED Light Boxes</Link>
+          <Link href="/products">Wayfinding Systems</Link>
+          <Link href="/products">Outdoor Signs</Link>
         </div>
         <div>
           <h3>Company</h3>
-          <a href="/about">About Us</a>
-          <a href="/projects">Projects</a>
-          <a href="/faq">FAQ</a>
+          <Link href="/about">About Us</Link>
+          <Link href="/projects">Projects</Link>
+          <Link href="/faq">FAQ</Link>
         </div>
         <div>
           <h3>Support</h3>
