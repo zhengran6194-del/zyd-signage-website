@@ -21,84 +21,6 @@
   --container: min(1440px, calc(100% - 80px));
 }
 
-.site-header {
-  min-height: 80px;
-  height: auto;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: rgba(255, 255, 255, 0.65);
-  backdrop-filter: blur(40px) saturate(200%);
-  -webkit-backdrop-filter: blur(40px) saturate(200%);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-  padding: 0;
-  display: flex;
-  align-items: center;
-  overflow: visible;
-  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.nav-wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.brand img {
-  height: auto;
-  max-height: 45px;
-  width: auto;
-  object-fit: contain;
-}
-
-.primary-nav {
-  display: flex;
-  gap: 2.5rem;
-  align-items: center;
-  margin-left: auto;
-  margin-right: 3rem;
-}
-
-.primary-nav a {
-  font-family: 'Inter', 'Manrope', sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--blue-950);
-  position: relative;
-  transition: all 0.3s ease;
-}
-
-.nav-actions .button.small {
-  font-size: 13px;
-  letter-spacing: 0.05em;
-  padding: 12px 24px;
-  border-radius: 50px;
-  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3), 0 6px 0 #065f46;
-}
-
-.hero h1 {
-  font-family: 'Montserrat', 'Manrope', sans-serif;
-  font-size: clamp(40px, 6vw, 80px); 
-  line-height: 1.1;
-  letter-spacing: -.03em;
-  margin: 0 0 30px;
-}
-
-.hero-lead {
-  font-size: clamp(18px, 2vw, 24px);
-  line-height: 1.6;
-}
-
-.button-natural {
-  padding: 12px 32px;
-  font-size: 16px;
-  font-weight: 800;
-  border-radius: 50px;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -126,15 +48,9 @@ a {
   text-decoration: none;
 }
 
-button,
-input,
-select,
-textarea {
-  font: inherit;
-}
-
 button {
   cursor: pointer;
+  font: inherit;
 }
 
 .container {
@@ -146,8 +62,9 @@ button {
   padding: 120px 0;
 }
 
+/* 顶部导航精致化 */
 .site-header {
-  min-height: 100px;
+  min-height: 80px;
   height: auto;
   position: sticky;
   top: 0;
@@ -156,8 +73,9 @@ button {
   backdrop-filter: blur(45px) saturate(210%);
   -webkit-backdrop-filter: blur(45px) saturate(210%);
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-  padding: 10px 0;
-  overflow: visible;
+  padding: 0;
+  display: flex;
+  align-items: center;
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -165,10 +83,43 @@ button {
   background: rgba(255, 255, 255, 0.90);
 }
 
+.nav-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.brand img {
+  height: auto;
+  max-height: 45px;
+  width: auto;
+  object-fit: contain;
+}
+
+.primary-nav {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 3rem;
+}
+
+.primary-nav a {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--blue-950);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
 .primary-nav a::after {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: -4px;
   left: 0;
   width: 0;
   height: 4px;
@@ -177,176 +128,90 @@ button {
   border-radius: 10px;
 }
 
-/* 郑总图三优化：极致 3D 浓郁绿色底座风格 (12px 深度厚重) */
-.button-green-base {
-  background: linear-gradient(180deg, #10b981 0%, #059669 100%);
-  box-shadow: 0 15px 45px rgba(16, 185, 129, 0.5), 0 12px 0 #065f46; /* 12px 实体超厚底座 */
-  border: none;
-  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
-  color: #fff !important;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.button-green-base:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 20px 50px rgba(16, 185, 129, 0.6), 0 15px 0 #065f46;
-}
-
-.button-green-base:active {
-  transform: translateY(12px); /* 物理沉降 12px */
-  box-shadow: 0 5px 15px rgba(16, 185, 129, 0.25), 0 0px 0 #065f46;
-}
-
-.site-header:hover {
-  background: rgba(255, 255, 255, 0.95);
-}
-
-.primary-nav {
-  display: flex;
-  gap: 3.5rem;
-  align-items: center;
-}
-
-.primary-nav a {
-  font-family: 'Inter', 'Manrope', sans-serif;
-  font-weight: 800;
-  font-size: 15px;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  color: var(--blue-950);
-  position: relative;
-  transition: all 0.3s ease;
-  padding: 8px 0;
-}
-
-.primary-nav a::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 4px;
-  background: linear-gradient(90deg, #1459b8, #22d3ee);
-  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
-  border-radius: 10px;
-}
-
 .primary-nav a:hover {
   color: var(--blue-700);
-  transform: translateY(-1px);
 }
 
 .primary-nav a:hover::after {
   width: 100%;
 }
 
-.nav-actions .button.small {
-  font-size: 14px;
-  letter-spacing: 0.08em;
-  padding: 14px 28px;
-  border-radius: 50px;
-  box-shadow: 0 10px 25px rgba(8, 109, 52, 0.3), 0 8px 0 #054a22;
-}
-
-.nav-actions .button.small:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 30px rgba(8, 109, 52, 0.4), 0 6px 0 #054a22;
-}
-
-.nav-actions .button.small:active {
-  transform: translateY(6px);
-  box-shadow: 0 4px 10px rgba(8, 109, 52, 0.2), 0 2px 0 #054a22;
-}
-
-/* 郑总图三优化：极致 3D 浓郁绿色底座风格 (12px 深度厚重) */
+/* 按钮全局样式 - 彻底收敛比例 */
 .button-green-base {
-  background: linear-gradient(180deg, #26e679 0%, #0ca34a 100%);
-  box-shadow: 0 15px 45px rgba(22, 184, 91, 0.45), 0 12px 0 #066d31; /* 12px 实体超厚底座 */
+  background: linear-gradient(180deg, #10b981 0%, #059669 100%);
+  box-shadow: 0 10px 25px rgba(16, 185, 129, 0.35), 0 10px 0 #065f46; /* 10px 3D 深度，更精致 */
   border: none;
   transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
   color: #fff !important;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  font-weight: 900;
+  font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.05em;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  border-radius: 50px;
+  padding: 12px 32px; /* 默认自然大小 */
+}
+
+.button-green-base.small {
+  padding: 10px 24px;
+  font-size: 13px;
+  box-shadow: 0 6px 15px rgba(16, 185, 129, 0.3), 0 6px 0 #065f46;
 }
 
 .button-green-base:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 20px 50px rgba(22, 184, 91, 0.55), 0 15px 0 #066d31;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(16, 185, 129, 0.45), 0 12px 0 #065f46;
 }
 
 .button-green-base:active {
-  transform: translateY(12px); /* 物理沉降 12px */
-  box-shadow: 0 5px 15px rgba(22, 184, 91, 0.25), 0 0px 0 #066d31;
+  transform: translateY(10px);
+  box-shadow: 0 4px 10px rgba(16, 185, 129, 0.2), 0 0px 0 #065f46;
 }
 
-/* 郑总图四：终极 180px 纯净 3D WhatsApp 悬浮组件 (无白边，无背景框) */
+/* 首页 Hero 标题精致化 */
+.hero h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(36px, 5vw, 72px); 
+  line-height: 1.1;
+  letter-spacing: -.03em;
+  margin: 0 0 24px;
+}
+
+.hero-lead {
+  font-size: clamp(18px, 1.5vw, 22px);
+  line-height: 1.6;
+}
+
+.hero-overlay-dark {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(7, 18, 38, 0.92) 0%, rgba(7, 18, 38, 0.5) 100%);
+  z-index: 1;
+}
+
+/* WhatsApp 悬浮精致化 */
 .floating-whatsapp {
   position: fixed;
-  left: 60px;
-  bottom: 60px;
+  left: 40px;
+  bottom: 40px;
   z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: transparent !important;
-  padding: 0;
-  border: none !important;
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.floating-whatsapp img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.4));
 }
 
 .floating-whatsapp:hover {
   transform: scale(1.1) rotate(5deg);
-}
-
-.floating-whatsapp img {
-  width: 150px; /* 最终定格在 150px */
-  height: 150px;
-  object-fit: contain;
-  filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.5));
-  border: none !important;
-  background: transparent !important;
-  outline: none !important;
-}
-
-.floating-whatsapp span {
-  display: none !important; /* 彻底物理移除文字 */
-}
-
-/* 巨幕背景遮罩，确保白色巨型标题清晰 */
-.hero-overlay-dark {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to right, rgba(7, 18, 38, 0.95) 0%, rgba(7, 18, 38, 0.6) 100%);
-  z-index: 1;
-}
-
-.hero h1 {
-  font-family: 'Montserrat', 'Manrope', sans-serif;
-  font-size: clamp(80px, 12vw, 200px); 
-  line-height: 0.8;
-  letter-spacing: -.07em;
-  margin: 0 0 40px;
-}
-
-@media (max-width: 1024px) {
-  .hero h1 {
-    font-size: clamp(60px, 10vw, 100px);
-  }
-  .floating-whatsapp img {
-    width: 120px;
-    height: 120px;
-  }
 }
 
 .reveal {

@@ -143,9 +143,9 @@ export default function Home() {
           <div className="container contact-card grid grid-cols-1 lg:grid-cols-2 gap-24 items-center relative z-10">
             <div className="contact-copy reveal text-center lg:text-left">
               <div className="eyebrow text-amber-500 font-bold tracking-[0.4em] mb-6 uppercase text-base">Start your project</div>
-              <h2 className="text-6xl font-black text-white mb-10 tracking-tighter leading-tight">Get a Factory-Direct <br/>Quote Today</h2>
+              <h2 className="text-4xl lg:text-5xl font-black text-white mb-10 tracking-tighter leading-tight uppercase">Get a Factory-Direct <br/>Quote Today</h2>
               <button 
-                className="button button-green-base w-full py-10 text-white font-black text-3xl rounded-full shadow-2xl flex items-center justify-center gap-8 transition-all mt-10"
+                className="button button-green-base w-full py-6 text-white font-black text-xl rounded-full shadow-2xl flex items-center justify-center gap-8 transition-all mt-10"
                 onClick={(e) => handleWhatsApp(e as any, "Hi Aaron, I want to start a custom signage project.")}
               >
                 Start WhatsApp Chat
