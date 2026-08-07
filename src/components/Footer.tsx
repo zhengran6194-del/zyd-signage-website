@@ -43,7 +43,7 @@ export default function Footer() {
         <a href="#top">Back to top ↑</a>
       </div>
       
-      {/* 郑总优化：终极版 150px 3D 悬浮图标 (无文字、无白边) */}
+      {/* 郑总优化：Refined size 3D WhatsApp icon */}
       <a 
         className="floating-whatsapp" 
         href="#contact" 
