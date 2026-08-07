@@ -10,7 +10,7 @@ export default function ProjectsPage() {
       <Header />
       <main className="bg-white min-h-screen pt-32 pb-40">
         <div className="container max-w-5xl">
-          <h1 className="text-7xl font-black uppercase tracking-tighter mb-12">Global Showcase</h1>
+          <h1 className="text-7xl font-black uppercase tracking-tighter mb-12">Case Studies</h1>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
             {[
