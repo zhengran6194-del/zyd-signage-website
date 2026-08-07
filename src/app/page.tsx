@@ -99,14 +99,19 @@ export default function Home() {
                 <div className="rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white">
                   <img src="/assets/images/factory-overview.jpg" alt="Factory QC" className="w-full h-[400px] object-cover" />
                 </div>
-                <div className="absolute -bottom-24 -right-24 bg-slate-950 p-24 lg:p-28 rounded-[6rem] text-white shadow-[0_60px_120px_rgba(0,0,0,0.6),0_20px_0_#0f172a] hidden lg:block border-[12px] border-blue-500/5">
-                  <strong className="text-[160px] font-black block text-transparent bg-clip-text bg-gradient-to-b from-blue-300 to-blue-600 italic mb-6 tracking-tighter leading-none drop-shadow-[0_20px_50px_rgba(30,144,255,0.5)]">100%</strong>
-                  <div className="space-y-3 text-center">
-                    <span className="text-2xl uppercase font-black tracking-[0.6em] text-slate-100 block">In-House</span>
-                    <span className="text-2xl uppercase font-black tracking-[0.6em] text-slate-400 block opacity-80">Manufacturing</span>
+                <div className="absolute -bottom-48 -right-48 bg-slate-950 p-40 lg:p-52 rounded-[15rem] text-white shadow-[0_120px_240px_rgba(0,0,0,0.8),0_40px_0_#070a14] hidden lg:block border-[24px] border-blue-500/10 transition-all duration-1000 hover:scale-[1.05] group/badge overflow-hidden">
+                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.15)_0%,transparent_70%)] blur-[150px] opacity-70 group-hover/badge:opacity-100 transition-opacity"></div>
+                  <div className="absolute -top-1/2 -left-1/2 w-full h-full bg-gradient-to-br from-blue-500/10 to-transparent blur-[100px] rotate-45 animate-pulse"></div>
+                  
+                  <strong className="relative z-10 text-[260px] font-black block text-transparent bg-clip-text bg-gradient-to-b from-blue-100 via-blue-400 to-blue-800 italic mb-10 tracking-tighter leading-none drop-shadow-[0_40px_80px_rgba(30,144,255,0.7)]">100%</strong>
+                  
+                  <div className="relative z-10 space-y-6 text-center">
+                    <span className="text-4xl lg:text-5xl uppercase font-black tracking-[1em] text-slate-100 block ml-[1em]">In-House</span>
+                    <span className="text-2xl lg:text-3xl uppercase font-black tracking-[0.8em] text-slate-500 block opacity-60 ml-[0.8em]">Manufacturing</span>
                   </div>
-                  <div className="mt-8 flex justify-center">
-                    <div className="h-1 w-24 bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-50"></div>
+                  
+                  <div className="relative z-10 mt-20 flex justify-center">
+                    <div className="h-2 w-64 bg-gradient-to-r from-transparent via-blue-500/50 to-transparent opacity-60"></div>
                   </div>
                 </div>
               </div>
