@@ -18,12 +18,6 @@ export default function Home() {
     return () => observer.disconnect();
   }, []);
 
-  const handleWhatsApp = (e: any, message: string) => {
-    if (e) e.preventDefault();
-    const url = `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(message)}`;
-    window.open(url, '_blank');
-  };
-
   const steps = [
     { no: '01', title: 'Technical Consultation', desc: 'Expert analysis of signage requirements and site conditions.' },
     { no: '02', title: 'Precision 3D Mockup', desc: 'Visualizing final aesthetics with industrial-grade 3D renderings.' },
