@@ -27,38 +27,64 @@ export default function Home() {
     <>
       <Header />
       <main id="main">
-        {/* 1. Hero Section */}
-        <section className="hero section-pad bg-white">
-          <div className="container hero-grid grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="hero-copy reveal">
-              <div className="eyebrow text-blue-700 font-extrabold tracking-widest mb-4 uppercase">
-                Factory-direct custom signage since 2006
+        {/* 1. MEGA HERO SECTION (郑总图一风格 - 极致扩容版) */}
+        <section className="hero relative min-h-screen flex items-center bg-slate-950 text-white overflow-hidden py-32 lg:py-48 xl:py-60">
+          {/* Enhanced科技感径向渐变 */}
+          <div className="absolute inset-0 opacity-30 pointer-events-none bg-[radial-gradient(circle_at_70%_30%,#1d4ed8,transparent_60%),radial-gradient(circle_at_20%_70%,#1e3a8a,transparent_50%)]"></div>
+          
+          <div className="container relative z-10">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
+              {/* Text Copy Area */}
+              <div className="hero-copy reveal lg:col-span-7 xl:col-span-8">
+                <div className="eyebrow text-blue-500 font-black tracking-[0.4em] mb-8 uppercase text-sm lg:text-base border-l-4 border-blue-600 pl-5">
+                  Precision Engineering since 2006
+                </div>
+                <h1 className="text-6xl md:text-8xl xl:text-[150px] font-black leading-[0.85] tracking-tighter mb-10 text-white drop-shadow-2xl">
+                  CRAFTING <br/>
+                  <span className="text-blue-500">TRUSTED</span> <br/>
+                  SIGNAGE
+                </h1>
+                <p className="hero-lead text-xl lg:text-2xl text-slate-400 mb-14 max-w-3xl leading-relaxed font-medium">
+                  Leading-edge architectural signage systems for global B2B projects. 
+                  <span className="block mt-3 text-white font-bold text-2xl">Factory Direct · Global DDP · 20,000㎡ Base</span>
+                </p>
+                <div className="hero-actions flex flex-wrap gap-8 mb-16">
+                  <a 
+                    className="button button-whatsapp bg-blue-600 hover:bg-blue-700 shadow-[0_25px_60px_rgba(37,99,235,0.45)] px-14 py-7 rounded-full text-white font-black text-2xl flex items-center gap-5 transition-all transform hover:-translate-y-2 active:scale-95" 
+                    href="#contact" 
+                    onClick={(e) => handleWhatsApp(e, "Hi Aaron, I would like a free 3D mockup and quote.")}
+                  >
+                    <img src="/assets/images/whatsapp-icon.jpg" alt="WhatsApp" className="w-12 h-12 object-contain" />
+                    START MY PROJECT
+                  </a>
+                  <a className="button border-2 border-slate-700 hover:bg-white hover:text-slate-950 px-14 py-7 rounded-full font-black text-2xl transition-all tracking-tight" href="/products">
+                    VIEW SOLUTIONS
+                  </a>
+                </div>
+                
+                {/* Large trust metrics for high-end feel */}
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-12 pt-12 border-t border-slate-800/60">
+                  <div><strong className="block text-4xl font-black text-white italic mb-1">20,000</strong><span className="text-xs uppercase tracking-[0.2em] text-slate-500 font-black">SQM Factory</span></div>
+                  <div><strong className="block text-4xl font-black text-white italic mb-1">18+</strong><span className="text-xs uppercase tracking-[0.2em] text-slate-500 font-black">Years Exp.</span></div>
+                  <div><strong className="block text-4xl font-black text-white italic mb-1">50+</strong><span className="text-xs uppercase tracking-[0.2em] text-slate-500 font-black">Countries</span></div>
+                  <div><strong className="block text-4xl font-black text-white italic mb-1">DDP</strong><span className="text-xs uppercase tracking-[0.2em] text-slate-500 font-black">Shipping</span></div>
+                </div>
               </div>
-              <h1 className="text-5xl lg:text-7xl font-black text-slate-900 leading-tight mb-6">
-                Custom Signage Solutions <span className="text-blue-600 block">Direct from Factory</span>
-              </h1>
-              <p className="hero-lead text-xl text-slate-600 mb-8 max-w-2xl leading-relaxed">
-                Premium illuminated signs, light boxes, and wayfinding systems. We offer <strong>Factory Pricing</strong>, 
-                <strong> Global DDP Shipping</strong>, and <strong>Free 3D Mockups</strong> for B2B projects worldwide.
-              </p>
-              <div className="hero-actions flex flex-wrap gap-4 mb-10">
-                <a 
-                  className="button button-whatsapp bg-green-500 hover:bg-green-600 shadow-xl px-10 py-5 rounded-full text-white font-bold flex items-center gap-3 transition-all transform hover:-translate-y-1" 
-                  href="#contact" 
-                  onClick={(e) => handleWhatsApp(e, "Hi Aaron, I would like a free 3D mockup and quote.")}
-                >
-                  <svg viewBox="0 0 24 24" className="w-6 fill-current"><path d="M19.1 4.9A9.9 9.9 0 0 0 3.6 16.8L2.2 22l5.4-1.4A10 10 0 1 0 19.1 4.9Zm-7.1 15a8 8 0 0 1-4-1.1l-.3-.2-3.2.8.9-3.1-.2-.3a8 8 0 1 1 6.8 3.9Zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.6.1-.2.3-.6.8-.8 1-.1.2-.3.2-.5.1-1.4-.7-2.4-1.3-3.3-2.9-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 1.8.8 2.5.8 3.4.7 1-.1 1.4-.7 1.6-1.3.2-.6.2-1.1.1-1.2-.2-.2-.4-.2-.6-.3Z"/></svg>
-                  Get My Free 3D Mockup
-                </a>
-                <a className="button button-secondary border-2 border-slate-200 hover:bg-slate-50 px-10 py-5 rounded-full font-bold transition-all" href="/products">
-                  View Catalog
-                </a>
+
+              {/* Mega Image Area - Bleeding out effect */}
+              <div className="hero-gallery reveal lg:col-span-5 xl:col-span-4 relative">
+                <div className="relative z-10 transform lg:scale-125 xl:scale-[1.4] lg:translate-x-10">
+                  <div className="absolute -inset-10 bg-blue-600/10 blur-[100px] rounded-full"></div>
+                  <figure className="gallery-main relative overflow-hidden rounded-[4rem] shadow-[0_60px_120px_rgba(0,0,0,0.8)] border-[6px] border-slate-800/50 bg-slate-900 group">
+                    <img src="/assets/images/hero-medical.jpg" alt="High Quality Medical Signage" className="w-full h-auto object-cover transition-transform duration-1000 group-hover:scale-110" />
+                  </figure>
+                  {/* Floating ID Card Style detail */}
+                  <div className="absolute -bottom-10 -left-10 bg-blue-600 px-8 py-6 rounded-[2rem] shadow-2xl hidden xl:block border-4 border-white/10 backdrop-blur-lg">
+                    <span className="block text-[10px] font-black uppercase tracking-[0.3em] text-white/70 mb-2">Featured Industry</span>
+                    <span className="text-2xl font-black italic text-white leading-none">Medical Care <br/>Signage System</span>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className="hero-gallery reveal">
-              <figure className="gallery-main relative overflow-hidden rounded-[2.5rem] shadow-2xl">
-                <img src="/assets/images/hero-medical.jpg" alt="High Quality Medical Signage" className="w-full h-auto object-cover" />
-              </figure>
             </div>
           </div>
         </section>
@@ -140,8 +166,9 @@ export default function Home() {
             </div>
             <button 
               onClick={() => handleWhatsApp(null as any, "Hi Aaron, I'm sending my logo/drawings for a quote.")}
-              className="bg-white text-blue-600 font-black px-12 py-5 rounded-full text-lg shadow-2xl hover:scale-105 transition-transform"
+              className="bg-white text-blue-600 font-black px-12 py-5 rounded-full text-lg shadow-2xl hover:scale-105 transition-transform flex items-center gap-3"
             >
+              <img src="/assets/images/whatsapp-icon.jpg" alt="WhatsApp" className="whatsapp-icon-img" />
               Start Free Quote
             </button>
           </div>
@@ -245,9 +272,10 @@ export default function Home() {
                   <textarea className="w-full border-2 border-slate-100 p-6 rounded-3xl mb-6 focus:border-blue-500 outline-none transition-colors text-slate-700" rows={5} placeholder="Tell us about your project requirements..."></textarea>
                 </div>
                 <button 
-                  className="button button-primary w-full bg-blue-600 hover:bg-blue-700 py-6 text-white font-black text-xl rounded-full shadow-2xl shadow-blue-500/40 transition-all active:scale-95"
+                  className="button button-primary w-full bg-blue-600 hover:bg-blue-700 py-6 text-white font-black text-xl rounded-full shadow-2xl shadow-blue-500/40 transition-all active:scale-95 flex items-center justify-center gap-4"
                   onClick={(e) => handleWhatsApp(e as any, "Hi Aaron, I want to start a custom signage project.")}
                 >
+                  <img src="/assets/images/whatsapp-icon.jpg" alt="WhatsApp" className="whatsapp-icon-img !w-12 !h-12" />
                   Start WhatsApp Chat
                 </button>
                 <p className="text-center text-slate-400 text-xs mt-6 uppercase tracking-widest">Aaron typically replies within 1 hour</p>

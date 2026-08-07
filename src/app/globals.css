@@ -321,11 +321,20 @@ button {
 
 .hero h1 {
   font-family: 'Montserrat', 'Manrope', sans-serif;
-  font-size: clamp(48px, 5vw, 76px);
-  line-height: 1.06;
-  letter-spacing: -.045em;
-  margin: 0 0 24px;
-  color: var(--blue-950);
+  font-size: clamp(60px, 10vw, 160px); /* 大幅提升标题字号 */
+  line-height: 0.92;
+  letter-spacing: -.06em;
+  margin: 0 0 32px;
+}
+
+.section-pad-mega {
+  padding: 160px 0 180px; /* 大幅拉大上下间距 */
+}
+
+@media (max-width: 1024px) {
+  .hero h1 {
+    font-size: clamp(50px, 8vw, 80px);
+  }
 }
 
 .hero h1 span {
@@ -1195,6 +1204,13 @@ button {
   margin: 0;
 }
 
+.whatsapp-icon-img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
 .floating-whatsapp {
   position: fixed;
   right: 24px;
@@ -1203,11 +1219,9 @@ button {
   display: flex;
   align-items: center;
   gap: 10px;
-  background: #15b85a;
-  color: #fff;
-  padding: 13px 18px;
-  border-radius: 999px;
-  box-shadow: 0 14px 36px rgba(10, 114, 51, .35);
+  background: transparent;
+  color: #15b85a;
+  padding: 0;
   font-weight: 800;
   font-size: 13px;
 }
