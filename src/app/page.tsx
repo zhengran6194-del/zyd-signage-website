@@ -99,11 +99,14 @@ export default function Home() {
                 <div className="rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white">
                   <img src="/assets/images/factory-overview.jpg" alt="Factory QC" className="w-full h-[400px] object-cover" />
                 </div>
-                <div className="absolute -bottom-20 -right-20 bg-slate-950 p-20 rounded-[5rem] text-white shadow-[0_50px_100px_rgba(0,0,0,0.5),0_15px_0_#1e293b] hidden lg:block border-8 border-blue-500/10">
-                  <strong className="text-[140px] font-black block text-blue-400 italic mb-4 tracking-tighter leading-none drop-shadow-[0_10px_30px_rgba(30,144,255,0.4)]">100%</strong>
-                  <div className="space-y-2 text-center">
-                    <span className="text-xl uppercase font-black tracking-[0.5em] text-slate-200 block">In-House</span>
-                    <span className="text-xl uppercase font-black tracking-[0.5em] text-slate-500 block">Manufacturing</span>
+                <div className="absolute -bottom-24 -right-24 bg-slate-950 p-24 lg:p-28 rounded-[6rem] text-white shadow-[0_60px_120px_rgba(0,0,0,0.6),0_20px_0_#0f172a] hidden lg:block border-[12px] border-blue-500/5">
+                  <strong className="text-[160px] font-black block text-transparent bg-clip-text bg-gradient-to-b from-blue-300 to-blue-600 italic mb-6 tracking-tighter leading-none drop-shadow-[0_20px_50px_rgba(30,144,255,0.5)]">100%</strong>
+                  <div className="space-y-3 text-center">
+                    <span className="text-2xl uppercase font-black tracking-[0.6em] text-slate-100 block">In-House</span>
+                    <span className="text-2xl uppercase font-black tracking-[0.6em] text-slate-400 block opacity-80">Manufacturing</span>
+                  </div>
+                  <div className="mt-8 flex justify-center">
+                    <div className="h-1 w-24 bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-50"></div>
                   </div>
                 </div>
               </div>
