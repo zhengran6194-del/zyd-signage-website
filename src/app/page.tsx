@@ -74,14 +74,14 @@ export default function Home() {
 
             <div className="category-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
-                { title: 'Illuminated Letters', desc: 'Front-lit, halo-lit and dual-lit LED channel letters.', img: 'cat-illuminated.webp' },
-                { title: 'LED Light Boxes', desc: 'Ultra-slim, magnetic, and projecting light boxes.', img: 'cat-lightbox.webp' },
-                { title: 'LED Neon Signs', desc: 'High-visibility custom logos and decorative neon flex.', img: 'cat-neon.webp' },
-                { title: 'Wayfinding Systems', desc: 'Airport, hospital, and architectural directional signs.', img: 'hero-wayfinding.png' },
-                { title: 'Outdoor Signs', desc: 'Large pylon signs and corporate entry identification.', img: 'cat-outdoor.webp' },
-                { title: 'Metal & Acrylic Signs', desc: 'Elegant laser-cut metal and premium acrylic plaques.', img: 'cat-metal.webp' },
-                { title: 'Landscape & Furniture', desc: 'Bespoke urban landscape branding and outdoor seating.', img: 'landscape-bench.jpg' },
-                { title: 'Complete Systems', desc: 'Coordinated sign packages for large-scale B2B projects.', img: 'cat-system.webp' },
+                { title: 'Illuminated Letters', desc: 'Front-lit, halo-lit and dual-lit LED channel letters.', img: 'cat-illuminated.webp', id: 'custom-halo-lit-letters' },
+                { title: 'LED Light Boxes', desc: 'Ultra-slim, magnetic, and projecting light boxes.', img: 'cat-lightbox.webp', id: 'ultra-slim-led-light-box' },
+                { title: 'LED Neon Signs', desc: 'High-visibility custom logos and decorative neon flex.', img: 'cat-neon.webp', id: 'custom-led-neon-sign' },
+                { title: 'Wayfinding Systems', desc: 'Airport, hospital, and architectural directional signs.', img: 'hero-wayfinding.png', id: 'architectural-wayfinding-system' },
+                { title: 'Outdoor Signs', desc: 'Large pylon signs and corporate entry identification.', img: 'cat-outdoor.webp', id: 'outdoor-pylon-monument-sign' },
+                { title: 'Metal & Acrylic Signs', desc: 'Elegant laser-cut metal and premium acrylic plaques.', img: 'cat-metal.webp', id: 'metal-acrylic-logo-sign' },
+                { title: 'Landscape & Furniture', desc: 'Bespoke urban landscape branding and outdoor seating.', img: 'landscape-bench.jpg', id: 'custom-landscape-furniture' },
+                { title: 'Complete Systems', desc: 'Coordinated sign packages for large-scale B2B projects.', img: 'cat-system.webp', id: 'complete-signage-system' },
               ].map((p, i) => (
                 <div key={i} className="reveal bg-white border border-slate-100 p-4 rounded-[2rem] shadow-sm hover:shadow-xl transition-all group">
                   <div className="overflow-hidden rounded-[1.5rem] mb-6 h-52 bg-slate-100">
@@ -89,9 +89,9 @@ export default function Home() {
                   </div>
                   <h3 className="text-xl font-black mb-2 text-slate-900">{p.title}</h3>
                   <p className="text-slate-500 text-sm mb-4 h-10 overflow-hidden leading-relaxed">{p.desc}</p>
-                  <button onClick={() => handleWhatsApp(null as any, `Hi Aaron, I am interested in ${p.title}.`)} className="text-blue-600 font-black text-sm uppercase tracking-wider hover:gap-2 flex items-center gap-1 transition-all">
-                    Consult <span>→</span>
-                  </button>
+                  <a href={`/products/${p.id}`} className="text-blue-600 font-black text-sm uppercase tracking-wider hover:gap-2 flex items-center gap-1 transition-all">
+                    View Details <span>→</span>
+                  </a>
                 </div>
               ))}
             </div>
