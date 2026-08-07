@@ -50,7 +50,6 @@ export default function MedicalSignagePage() {
                 onClick={() => handleWhatsApp("Hi Aaron, I am interested in Medical Signage Systems for a hospital project.")}
                 className="button button-green-base px-10 py-5 rounded-full text-white font-black text-xl flex items-center gap-4 shadow-2xl transition-all active:scale-95"
               >
-                <img src="/assets/images/whatsapp-icon-3d.jpg" alt="WhatsApp" className="w-10 h-10 object-contain" />
                 GET A PROJECT QUOTE
               </button>
             </div>
@@ -108,7 +107,6 @@ export default function MedicalSignagePage() {
                    onClick={() => handleWhatsApp("Hi Aaron, I need an expert consultation for a healthcare signage project.")}
                    className="button button-green-base w-full py-6 rounded-full font-black text-xl flex items-center justify-center gap-4 shadow-xl"
                 >
-                  <img src="/assets/images/whatsapp-icon-3d.jpg" alt="WhatsApp" className="w-12 h-12 object-contain" />
                   START CONSULTATION
                 </button>
               </div>

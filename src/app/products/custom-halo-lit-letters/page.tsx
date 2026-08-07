@@ -21,7 +21,6 @@ export default function HaloLitLettersPage() {
               <h1 className="text-5xl lg:text-7xl font-black mb-6 leading-tight uppercase tracking-tighter">Custom Halo-Lit <br/><span className="text-blue-500 italic">Stainless Steel</span> Letters</h1>
               <p className="text-xl text-slate-300 mb-8 font-medium">Premium rear-glow fabricated metal letters for high-end storefronts and architectural projects.</p>
               <button onClick={() => handleWhatsApp("I am interested in Custom Halo-Lit Letters.")} className="button button-green-base px-10 py-5 rounded-full text-white font-black text-xl flex items-center gap-4">
-                <img src="/assets/images/whatsapp-icon-3d.jpg" alt="WhatsApp" className="w-10 h-10 object-contain" />
                 GET A QUOTE
               </button>
             </div>

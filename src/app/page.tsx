@@ -57,7 +57,6 @@ export default function Home() {
                     href="#contact" 
                     onClick={(e) => handleWhatsApp(e, "Hi Aaron, I would like a free 3D mockup and quote.")}
                   >
-                    <img src="/assets/images/whatsapp-icon-3d.jpg" alt="WhatsApp" className="w-14 h-14 object-contain" />
                     START MY PROJECT
                   </a>
                   <a className="button border-4 border-white/30 backdrop-blur-xl hover:bg-white hover:text-slate-950 px-20 py-10 rounded-full font-black text-3xl transition-all tracking-tight" href="/products">
@@ -123,7 +122,6 @@ export default function Home() {
               onClick={() => handleWhatsApp(null as any, "Hi Aaron, I'm sending my logo/drawings for a quote.")}
               className="button button-green-base px-16 py-8 rounded-full text-2xl shadow-2xl flex items-center gap-4 transition-transform active:scale-95"
             >
-              <img src="/assets/images/whatsapp-icon-3d.jpg" alt="WhatsApp" className="w-12 h-12 object-contain" />
               Start Free Quote
             </button>
           </div>
@@ -152,7 +150,6 @@ export default function Home() {
                   className="button button-green-base w-full py-10 text-white font-black text-3xl rounded-full shadow-2xl flex items-center justify-center gap-8 transition-all"
                   onClick={(e) => handleWhatsApp(e as any, "Hi Aaron, I want to start a custom signage project.")}
                 >
-                  <img src="/assets/images/whatsapp-icon-3d.jpg" alt="WhatsApp" className="w-16 h-16 object-contain" />
                   Start WhatsApp Chat
                 </button>
                 <p className="text-center text-slate-400 text-sm mt-10 uppercase tracking-[0.2em] font-black">Aaron typically replies within 1 hour</p>

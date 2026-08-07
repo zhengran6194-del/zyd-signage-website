@@ -117,7 +117,7 @@ button {
 /* 郑总图四：终极 180px 纯净 3D WhatsApp 悬浮组件 (无白边，无背景框) */
 .floating-whatsapp {
   position: fixed;
-  right: 60px;
+  left: 60px;
   bottom: 60px;
   z-index: 1000;
   display: flex;
