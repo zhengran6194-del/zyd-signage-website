@@ -42,13 +42,14 @@ export default function Footer() {
         <a href="#top">Back to top ↑</a>
       </div>
       
+      {/* 郑总优化：终极版 150px 3D 悬浮图标 (无文字、无白边) */}
       <a 
         className="floating-whatsapp" 
         href="#contact" 
         onClick={(e) => handleWhatsApp(e, "Hi Aaron, I have a question about signage.")}
+        aria-label="Chat on WhatsApp"
       >
-        <img src="/assets/images/whatsapp-icon.jpg" alt="WhatsApp" className="whatsapp-icon-img !w-[50px] !h-[50px]" />
-        <span>Chat with Aaron</span>
+        <img src="/assets/images/whatsapp-icon-3d.jpg" alt="WhatsApp" />
       </a>
     </footer>
   );

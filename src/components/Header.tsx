@@ -16,21 +16,18 @@ export default function Header() {
     <header className="site-header" id="top">
       <div className="container nav-wrap">
         <a className="brand" href="/" aria-label="ZYD Home">
-          <img src="/assets/images/logo-correct.jpg" alt="ZYD Zhiyudao Sign logo" width={166} height={78} />
+          <img src="/assets/images/logo-correct.jpg" alt="ZYD logo" />
         </a>
-
 
         <button 
           className="menu-toggle" 
-          aria-expanded={isMenuOpen} 
-          aria-controls="primary-nav" 
-          aria-label="Open navigation"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="Toggle navigation"
         >
           <span></span><span></span><span></span>
         </button>
 
-        <nav id="primary-nav" className={`primary-nav ${isMenuOpen ? 'open' : ''}`} aria-label="Primary navigation">
+        <nav id="primary-nav" className={`primary-nav ${isMenuOpen ? 'open' : ''}`}>
           <a href="/products">Products</a>
           <a href="/projects">Case Studies</a>
           <a href="/faq">FAQ</a>
@@ -40,11 +37,11 @@ export default function Header() {
 
         <div className="nav-actions">
           <a 
-            className="button button-primary small js-whatsapp" 
+            className="button button-green-base small px-6 py-2" 
             href="#contact" 
-            onClick={(e) => handleWhatsApp(e, "Hi Aaron, I would like a free signage quote.")}
+            onClick={(e) => handleWhatsApp(e, "I am interested in a signage quote.")}
           >
-            Get a Free Quote
+            Get a Quote
           </a>
         </div>
       </div>
