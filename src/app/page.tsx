@@ -99,9 +99,12 @@ export default function Home() {
                 <div className="rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white">
                   <img src="/assets/images/factory-overview.jpg" alt="Factory QC" className="w-full h-[400px] object-cover" />
                 </div>
-                <div className="absolute -bottom-6 -right-6 bg-slate-950 p-6 rounded-2xl text-white shadow-2xl hidden lg:block">
-                  <strong className="text-2xl font-black block text-blue-400 italic mb-1 tracking-tighter">20,000㎡</strong>
-                  <span className="text-[9px] uppercase font-bold tracking-widest text-slate-400">Capacity Leader</span>
+                <div className="absolute -bottom-12 -right-12 bg-slate-950 p-12 rounded-[4rem] text-white shadow-3xl hidden lg:block border-4 border-blue-500/20">
+                  <strong className="text-6xl font-black block text-blue-400 italic mb-2 tracking-tighter leading-none">100%</strong>
+                  <div className="space-y-1">
+                    <span className="text-xs uppercase font-black tracking-[0.3em] text-slate-300 block">In-House</span>
+                    <span className="text-xs uppercase font-black tracking-[0.3em] text-slate-500 block">Manufacturing</span>
+                  </div>
                 </div>
               </div>
             </div>
