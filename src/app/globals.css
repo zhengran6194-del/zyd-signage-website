@@ -134,10 +134,10 @@ button {
 }
 
 .floating-whatsapp img {
-  width: 180px; /* 极致 180px */
-  height: 180px;
+  width: 150px; /* 最终定格在 150px */
+  height: 150px;
   object-fit: contain;
-  filter: drop-shadow(0 40px 80px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.5));
   border: none !important;
   background: transparent !important;
   outline: none !important;
@@ -168,8 +168,8 @@ button {
     font-size: clamp(60px, 10vw, 100px);
   }
   .floating-whatsapp img {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
   }
 }
 
