@@ -21,11 +21,13 @@ export default function Header() {
         </Link>
 
         <button 
-          className="menu-toggle" 
+          className={`menu-toggle ${isMenuOpen ? 'active' : ''}`}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle navigation"
         >
-          <span></span><span></span><span></span>
+          <span className="w-6 h-0.5 bg-slate-900 block mb-1"></span>
+          <span className="w-6 h-0.5 bg-slate-900 block mb-1"></span>
+          <span className="w-6 h-0.5 bg-slate-900 block"></span>
         </button>
 
         <nav id="primary-nav" className={`primary-nav ${isMenuOpen ? 'open' : ''}`}>

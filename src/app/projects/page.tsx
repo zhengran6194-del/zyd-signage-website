@@ -14,17 +14,19 @@ export default function ProjectsPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
             {[
-              { title: 'Dubai Int. Airport', tag: 'Wayfinding', desc: 'Complete architectural signage overhaul across 3 terminals.' },
-              { title: 'Singapore Medical Ctr', tag: 'Healthcare', desc: 'Full-spectrum antibacterial wayfinding and room ID systems.' },
-              { title: 'London Financial Hub', tag: 'Illuminated', desc: 'Large-scale halo-lit steel branding for 50-story commercial towers.' },
-              { title: 'Riyadh Urban Vision', tag: 'Landscape', desc: 'Custom branding benches and smart city wayfinding furniture.' },
+              { title: 'Dubai Int. Airport', tag: 'Wayfinding', desc: 'Complete architectural signage overhaul across 3 terminals.', img: 'case-facade.webp' },
+              { title: 'Singapore Medical Ctr', tag: 'Healthcare', desc: 'Full-spectrum antibacterial wayfinding and room ID systems.', img: 'case-hotel.webp' },
+              { title: 'London Financial Hub', tag: 'Illuminated', desc: 'Large-scale halo-lit steel branding for 50-story commercial towers.', img: 'case-monument.webp' },
+              { title: 'Riyadh Urban Vision', tag: 'Landscape', desc: 'Custom branding benches and smart city wayfinding furniture.', img: 'case-neon.webp' },
             ].map((proj, idx) => (
-              <div key={idx} className="reveal bg-slate-50 rounded-[3rem] overflow-hidden border border-slate-100 group hover:shadow-2xl transition-all">
-                <div className="h-72 bg-slate-200"></div>
+              <div key={idx} className="reveal bg-slate-50 rounded-[2rem] overflow-hidden border border-slate-100 group hover:shadow-2xl transition-all">
+                <div className="h-80 overflow-hidden">
+                  <img src={`/assets/images/${proj.img}`} alt={proj.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                </div>
                 <div className="p-10">
-                  <div className="text-blue-600 font-black text-xs uppercase tracking-[0.3em] mb-3 italic">{proj.tag}</div>
-                  <h3 className="text-3xl font-black mb-4 uppercase tracking-tighter">{proj.title}</h3>
-                  <p className="text-slate-600 leading-relaxed font-medium">{proj.desc}</p>
+                  <div className="text-blue-600 font-black text-[10px] uppercase tracking-[0.3em] mb-3 italic">{proj.tag}</div>
+                  <h3 className="text-2xl font-black mb-4 uppercase tracking-tighter">{proj.title}</h3>
+                  <p className="text-slate-500 text-sm leading-relaxed font-medium">{proj.desc}</p>
                 </div>
               </div>
             ))}
