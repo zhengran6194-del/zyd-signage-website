@@ -7,40 +7,38 @@ import { siteConfig } from '@/config/site';
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const handleWhatsApp = (e: React.MouseEvent<HTMLAnchorElement>, message: string) => {
-    e.preventDefault();
-    const url = `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(message)}`;
-    window.open(url, '_blank');
-  };
-
   return (
     <header className="site-header" id="top">
       <div className="container nav-wrap">
+        {/* Logo 居左 */}
         <Link className="brand" href="/" aria-label="ZYD Home">
           <img src="/assets/images/logo-correct.jpg" alt="ZYD logo" />
         </Link>
 
+        {/* 移动端切换按钮 */}
         <button 
-          className={`menu-toggle ${isMenuOpen ? 'active' : ''}`}
+          className="menu-toggle" 
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle navigation"
         >
-          <span className="w-6 h-0.5 bg-slate-900 block mb-1"></span>
-          <span className="w-6 h-0.5 bg-slate-900 block mb-1"></span>
-          <span className="w-6 h-0.5 bg-slate-900 block"></span>
+          <span style={{ transform: isMenuOpen ? 'rotate(45deg) translate(5px, 5px)' : 'none' }}></span>
+          <span style={{ opacity: isMenuOpen ? 0 : 1 }}></span>
+          <span style={{ transform: isMenuOpen ? 'rotate(-45deg) translate(5px, -5px)' : 'none' }}></span>
         </button>
 
+        {/* 导航居中偏右 */}
         <nav id="primary-nav" className={`primary-nav ${isMenuOpen ? 'open' : ''}`}>
-          <Link href="/products">Products</Link>
-          <Link href="/projects">Case Studies</Link>
-          <Link href="/faq">FAQ</Link>
-          <Link href="/about">About</Link>
-          <Link href="/contact">Contact</Link>
+          <Link href="/products" onClick={() => setIsMenuOpen(false)}>Products</Link>
+          <Link href="/projects" onClick={() => setIsMenuOpen(false)}>Case Studies</Link>
+          <Link href="/faq" onClick={() => setIsMenuOpen(false)}>FAQ</Link>
+          <Link href="/about" onClick={() => setIsMenuOpen(false)}>About</Link>
+          <Link href="/contact" onClick={() => setIsMenuOpen(false)}>Contact</Link>
         </nav>
 
+        {/* 按钮居右 */}
         <div className="nav-actions">
           <Link 
-            className="button button-green-base small" 
+            className="button button-green-base" 
             href="/contact"
           >
             Get a Free Quote
