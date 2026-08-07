@@ -1,13 +1,10 @@
 'use client';
 import React from 'react';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import Link from 'next/link';
 
 export default function ProjectsPage() {
   return (
     <>
-      <Header />
       <main className="bg-white min-h-screen pt-32 pb-40">
         <div className="container max-w-5xl">
           <h1 className="text-7xl font-black uppercase tracking-tighter mb-12">Case Studies</h1>
@@ -41,7 +38,6 @@ export default function ProjectsPage() {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

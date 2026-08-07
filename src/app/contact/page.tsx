@@ -1,8 +1,6 @@
 'use client';
 
 import React from 'react';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import { siteConfig } from '@/config/site';
 
 export default function ContactPage() {
@@ -13,7 +11,6 @@ export default function ContactPage() {
 
   return (
     <>
-      <Header />
       <main className="bg-slate-50 min-h-screen pt-24 pb-32">
         <div className="container">
           {/* Header Section */}
@@ -109,7 +106,6 @@ export default function ContactPage() {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

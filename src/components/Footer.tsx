@@ -21,10 +21,10 @@ export default function Footer() {
 
         <div>
           <h3>Products</h3>
-          <Link href="/products">Illuminated Letters</Link>
-          <Link href="/products">LED Light Boxes</Link>
-          <Link href="/products">Wayfinding Systems</Link>
-          <Link href="/products">Outdoor Signs</Link>
+          <Link href="/products/custom-halo-lit-letters">Illuminated Letters</Link>
+          <Link href="/products/ultra-slim-led-light-box">LED Light Boxes</Link>
+          <Link href="/products/architectural-wayfinding-system">Wayfinding Systems</Link>
+          <Link href="/products/outdoor-pylon-monument-sign">Outdoor Signs</Link>
         </div>
         <div>
           <h3>Company</h3>

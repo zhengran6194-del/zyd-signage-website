@@ -1,12 +1,9 @@
 'use client';
 import React from 'react';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 
 export default function FAQPage() {
   return (
     <>
-      <Header />
       <main className="bg-slate-50 min-h-screen pt-24 pb-32">
         <div className="container max-w-4xl">
           <h1 className="text-6xl font-black text-slate-900 mb-12 uppercase tracking-tighter">Resources & FAQ</h1>
@@ -26,7 +23,6 @@ export default function FAQPage() {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

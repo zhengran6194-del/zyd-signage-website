@@ -1,12 +1,9 @@
 'use client';
 import React from 'react';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 
 export default function AboutPage() {
   return (
     <>
-      <Header />
       <main className="section-pad bg-white min-h-screen">
         <div className="container pt-20">
           <div className="section-heading text-center mb-16">
@@ -27,7 +24,6 @@ export default function AboutPage() {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

@@ -1,14 +1,11 @@
 'use client';
 
 import React, { useEffect } from 'react';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import Link from 'next/link';
 
 export default function MedicalSignagePage() {
   return (
     <>
-      <Header />
       <main id="main">
         {/* 1. Hero */}
         <section className="bg-slate-900 text-white py-20 lg:py-24 relative overflow-hidden">
@@ -47,10 +44,10 @@ export default function MedicalSignagePage() {
                   <div className="p-8 bg-slate-50 rounded-[2rem] border border-slate-100">
                     <h3 className="text-xl font-black text-blue-600 mb-4 uppercase italic">Material Options</h3>
                     <ul className="space-y-3 text-slate-600 font-bold">
-                      <li>&bull; Galvanized Sheet (镀锌板)</li>
-                      <li>&bull; 201 Stainless Steel (201 不锈钢)</li>
-                      <li>&bull; 304 Stainless Steel (304 不锈钢)</li>
-                      <li>&bull; Aluminum Plate (铝板)</li>
+                      <li>&bull; Galvanized Sheet (镀锌板) — Hot-Dip Galvanized</li>
+                      <li>&bull; 201 Stainless Steel (201 不锈钢) — Economical Grade</li>
+                      <li>&bull; 304 Stainless Steel (304 不锈钢) — Premium Outdoor Grade</li>
+                      <li>&bull; Aluminum Plate (铝板) — Lightweight & Corrosion-Resistant</li>
                     </ul>
                   </div>
                   <div className="p-8 bg-slate-50 rounded-[2rem] border border-slate-100">
@@ -76,7 +73,6 @@ export default function MedicalSignagePage() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

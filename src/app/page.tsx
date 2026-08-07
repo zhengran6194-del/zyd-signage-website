@@ -2,8 +2,6 @@
 
 import React, { useEffect } from 'react';
 import Link from 'next/link';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import { siteConfig } from '@/config/site';
 
 export default function Home() {
@@ -31,7 +29,6 @@ export default function Home() {
 
   return (
     <>
-      <Header />
       <main id="main">
         {/* 1. REFINED HERO */}
         <section className="hero relative flex items-center bg-slate-950 text-white overflow-hidden py-20 lg:py-24">
@@ -167,7 +164,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

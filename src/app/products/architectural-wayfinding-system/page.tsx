@@ -2,13 +2,10 @@
 
 import React from 'react';
 import Link from 'next/link';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 
 export default function WayfindingSystemPage() {
   return (
     <>
-      <Header />
       <main id="main">
         {/* 1. Hero */}
         <section className="bg-slate-900 text-white py-20 lg:py-24 relative overflow-hidden">
@@ -95,7 +92,6 @@ export default function WayfindingSystemPage() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }
