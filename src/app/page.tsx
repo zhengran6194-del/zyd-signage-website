@@ -110,7 +110,6 @@ export default function Home() {
                     <span className="text-[8px] lg:text-[10px] uppercase font-black tracking-[0.4em] text-slate-500 block opacity-70 ml-[0.4em]">Manufacturing</span>
                   </div>
                 </div>
-                </div>
               </div>
             </div>
           </div>
