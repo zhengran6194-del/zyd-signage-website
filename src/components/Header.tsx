@@ -38,7 +38,7 @@ export default function Header() {
 
         <div className="nav-actions">
           <Link 
-            className="button button-green-base small px-8 py-3" 
+            className="button button-green-base small" 
             href="/contact"
           >
             Get a Free Quote

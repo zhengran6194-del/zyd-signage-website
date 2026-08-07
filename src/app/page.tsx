@@ -29,45 +29,74 @@ export default function Home() {
       <Header />
       <main id="main">
         {/* 1. MEGA HERO SECTION */}
-        <section className="hero relative min-h-screen flex items-center bg-slate-950 text-white overflow-hidden py-32 lg:py-48 xl:py-60">
+        <section className="hero relative min-h-[80vh] flex items-center bg-slate-950 text-white overflow-hidden py-24 lg:py-32">
           <div className="absolute inset-0 z-0">
-            <img src="/assets/images/hero-bg-seafront.png" alt="ZYD Seafront Factory" className="w-full h-full object-cover" />
+            <img src="/assets/images/hero-bg-seafront.png" alt="ZYD Seafront Factory" className="w-full h-full object-cover opacity-60" />
             <div className="hero-overlay-dark"></div>
           </div>
           
-          <div className="container relative z-10 text-center lg:text-left">
-            <div className="max-w-6xl mx-auto lg:mx-0">
+          <div className="container relative z-10">
+            <div className="max-w-4xl">
               <div className="hero-copy reveal">
-                <div className="eyebrow text-blue-400 font-black tracking-[0.5em] mb-10 uppercase text-base border-l-8 border-blue-600 pl-6 inline-block">
-                  Precision Engineering since 2006
+                <div className="eyebrow text-blue-400 font-bold tracking-[0.3em] mb-6 uppercase text-sm border-l-4 border-blue-600 pl-4 inline-block">
+                  Industrial Signage Leader Since 2006
                 </div>
-                <h1 className="text-7xl md:text-9xl xl:text-[180px] font-black leading-[0.8] tracking-tighter mb-12 text-white drop-shadow-[0_15px_45px_rgba(0,0,0,0.7)] uppercase">
-                  CRAFTING <br/>
-                  <span className="text-blue-500 italic">TRUSTED</span> <br/>
-                  SIGNAGE
+                <h1 className="font-black leading-tight mb-8 text-white uppercase">
+                  Precision Built <br/>
+                  <span className="text-blue-500 italic">B2B Signage</span> Solutions
                 </h1>
-                <p className="hero-lead text-2xl lg:text-4xl text-slate-200 mb-16 max-w-4xl leading-relaxed font-medium mx-auto lg:mx-0 opacity-95 tracking-tight text-left">
-                  Leading-edge architectural signage systems for global B2B projects. 
-                  <span className="block mt-8 text-white font-black text-3xl lg:text-4xl uppercase border-y-2 border-white/20 py-5 inline-block tracking-tighter text-left">Factory Direct &middot; Global DDP &middot; 20,000sqm Base</span>
+                <p className="hero-lead text-slate-200 mb-12 max-w-2xl font-medium opacity-90">
+                  A 20,000sqm manufacturing powerhouse delivering architectural-grade wayfinding and custom identification systems to global commercial projects.
                 </p>
-                <div className="hero-actions flex flex-wrap justify-center lg:justify-start gap-10 mb-24">
-                  <a 
-                    className="button button-green-base px-20 py-10 rounded-full text-white font-black text-3xl flex items-center gap-6 transform hover:-translate-y-2 active:scale-95 transition-all shadow-2xl" 
-                    href="#contact" 
-                    onClick={(e) => handleWhatsApp(e, "Hi Aaron, I would like a free 3D mockup and quote.")}
+                <div className="hero-actions flex flex-wrap gap-6 mb-16">
+                  <Link 
+                    className="button button-green-base px-10 py-4 rounded-full text-white font-bold text-lg shadow-xl" 
+                    href="/contact"
                   >
-                    START MY PROJECT
-                  </a>
-                  <Link href="/products" className="button border-4 border-white/30 backdrop-blur-xl hover:bg-white hover:text-slate-950 px-20 py-10 rounded-full font-black text-3xl transition-all tracking-tight">
-                    VIEW SOLUTIONS
+                    Get a Free Quote
+                  </Link>
+                  <Link href="/products" className="button border-2 border-white/30 backdrop-blur-lg hover:bg-white hover:text-slate-950 px-10 py-4 rounded-full font-bold text-lg transition-all">
+                    View Solutions
                   </Link>
                 </div>
                 
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-12 lg:gap-24 pt-20 border-t border-white/10 max-w-5xl mx-auto lg:mx-0 text-white">
-                  <div><strong className="block text-5xl lg:text-6xl font-black italic mb-3 tracking-tighter text-blue-400">20,000</strong><span className="text-xs lg:text-sm uppercase tracking-[0.3em] text-slate-400 font-black">SQM Factory</span></div>
-                  <div><strong className="block text-5xl lg:text-6xl font-black italic mb-3 tracking-tighter text-blue-400">18+</strong><span className="text-xs lg:text-sm uppercase tracking-[0.3em] text-slate-400 font-black">Years Exp.</span></div>
-                  <div><strong className="block text-5xl lg:text-6xl font-black italic mb-3 tracking-tighter text-blue-400">50+</strong><span className="text-xs lg:text-sm uppercase tracking-[0.3em] text-slate-400 font-black">Countries</span></div>
-                  <div><strong className="block text-5xl lg:text-6xl font-black italic mb-3 tracking-tighter text-blue-400">DDP</strong><span className="text-xs lg:text-sm uppercase tracking-[0.3em] text-slate-400 font-black">Global Shipping</span></div>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-12 border-t border-white/10 max-w-4xl text-white">
+                  <div><strong className="block text-3xl font-black italic mb-1 text-blue-400 tracking-tighter">20,000</strong><span className="text-[10px] uppercase tracking-widest text-slate-400 font-bold">SQM Factory</span></div>
+                  <div><strong className="block text-3xl font-black italic mb-1 text-blue-400 tracking-tighter">18+</strong><span className="text-[10px] uppercase tracking-widest text-slate-400 font-bold">Years Exp.</span></div>
+                  <div><strong className="block text-3xl font-black italic mb-1 text-blue-400 tracking-tighter">50+</strong><span className="text-[10px] uppercase tracking-widest text-slate-400 font-bold">Countries</span></div>
+                  <div><strong className="block text-3xl font-black italic mb-1 text-blue-400 tracking-tighter">DDP</strong><span className="text-[10px] uppercase tracking-widest text-slate-400 font-bold">Global Shipping</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 1.1 PRODUCTION EXCELLENCE (Added Section) */}
+        <section className="section bg-white py-32 border-b border-slate-50">
+          <div className="container">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+              <div className="reveal">
+                <div className="eyebrow text-blue-600 font-black tracking-widest uppercase mb-4 text-sm">Manufacturing Power</div>
+                <h2 className="text-4xl lg:text-5xl font-black text-slate-900 mb-8 tracking-tighter uppercase">High-End Production Facility</h2>
+                <p className="text-xl text-slate-600 mb-10 leading-relaxed font-medium">Our Dalian base integrates the entire value chain—from architectural 3D modeling and structural engineering to precision CNC fabrication and automotive-grade finish coating.</p>
+                <div className="grid grid-cols-2 gap-8">
+                  <div className="p-6 bg-slate-50 rounded-3xl border border-slate-100">
+                    <h4 className="font-black text-slate-900 mb-2 uppercase text-sm">CNC & Laser</h4>
+                    <p className="text-xs text-slate-500 font-bold tracking-tight">Precision cutting with ±0.1mm tolerance for complex metal profiles.</p>
+                  </div>
+                  <div className="p-6 bg-slate-50 rounded-3xl border border-slate-100">
+                    <h4 className="font-black text-slate-900 mb-2 uppercase text-sm">Clean-Room Paint</h4>
+                    <p className="text-xs text-slate-500 font-bold tracking-tight">Dust-free automotive-grade coating system for 10+ years durability.</p>
+                  </div>
+                </div>
+              </div>
+              <div className="reveal relative">
+                <div className="rounded-[3rem] overflow-hidden shadow-2xl">
+                  <img src="/assets/images/factory-overview.jpg" alt="ZYD Factory Production" className="w-full h-[500px] object-cover" />
+                </div>
+                <div className="absolute -bottom-10 -left-10 bg-slate-950 p-10 rounded-[3rem] text-white shadow-2xl hidden lg:block">
+                  <strong className="text-4xl font-black block text-blue-400 italic mb-2 tracking-tighter">100%</strong>
+                  <span className="text-[10px] uppercase font-bold tracking-[0.2em] text-slate-400">In-House Manufacturing</span>
                 </div>
               </div>
             </div>
