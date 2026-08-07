@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "ZYD Custom Signage | Factory-Direct Signage Solutions",
-  description: "Factory-direct custom signage for hotels, retail, commercial buildings and public projects. Get a free 3D mockup and quote on WhatsApp.",
-  keywords: ["custom signage", "channel letters", "light boxes", "LED neon signs", "wayfinding signs", "monument signs", "signage manufacturer"],
+  description: "Factory-direct custom signage for global B2B projects. Premium wayfinding and architectural signs.",
 };
 
 export default function RootLayout({

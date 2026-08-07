@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ZYD Signage Website Package
 
-## Getting Started
+A static, responsive B2B lead-generation website designed for GitHub Pages. No build tools or server are required.
 
-First, run the development server:
+## 1. Required edits before deployment
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Open `site-config.js` and replace:
+
+```js
+whatsappNumber: "8613800000000",
+salesEmail: "sales@example.com"
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The WhatsApp number must include the country code and digits only, without `+`, spaces or dashes.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Example:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```js
+whatsappNumber: "447599932002"
+```
 
-## Learn More
+Also replace the two `sales@example.com` occurrences in `index.html` with your real email address.
 
-To learn more about Next.js, take a look at the following resources:
+## 2. Preview locally
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+You can double-click `index.html`, or run a local server:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+python -m http.server 8000
+```
 
-## Deploy on Vercel
+Then open `http://localhost:8000`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 3. Deploy to GitHub Pages
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Create a new GitHub repository.
+2. Upload all files and folders from this package to the repository root.
+3. Open **Settings → Pages**.
+4. Under **Build and deployment**, select **Deploy from a branch**.
+5. Select the `main` branch and `/ (root)` folder.
+6. Save and wait for GitHub to publish the site.
+
+## 4. Site structure
+
+- `index.html` — complete homepage and SEO content
+- `styles.css` — responsive visual design
+- `script.js` — mobile navigation, animations and WhatsApp enquiry logic
+- `site-config.js` — WhatsApp number and basic company configuration
+- `assets/images/` — logo, product, factory and project images
+
+## 5. Notes
+
+- The enquiry form does not store user data. It creates a prefilled WhatsApp message.
+- Browsers cannot automatically attach uploaded files to WhatsApp. The selected file name is included in the message, and the buyer is instructed to attach the file manually after WhatsApp opens.
+- Product and project images are local, so the site does not depend on external image hosts.
+- Google Fonts are loaded from Google. Remove the font links in `index.html` if you need a fully offline package.
+- Update the organization URL in the JSON-LD block inside `index.html` after your GitHub Pages URL is known.
