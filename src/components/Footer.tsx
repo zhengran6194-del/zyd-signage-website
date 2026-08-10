@@ -15,21 +15,21 @@ export default function Footer() {
     <footer className="bg-white border-t border-slate-100 pt-32 pb-16">
       <div className="container">
         <div className="flex flex-col lg:flex-row items-start justify-between gap-24 mb-32">
-          {/* 1. Left Branding Section (1/3 Width) */}
+          {/* 1. Left Branding Section (approx 1/3) */}
           <div className="lg:w-1/3">
             <Link href="/" className="inline-block mb-12">
               <img src="/assets/images/logo-correct.jpg" alt="ZYD Signage" className="max-h-12 opacity-95 hover:opacity-100 transition-all" />
             </Link>
-            <p className="text-slate-400 text-xs font-black leading-loose uppercase tracking-[0.4em] max-w-[320px]">
+            <p className="text-slate-400 text-[10px] font-black leading-loose uppercase tracking-[0.4em] max-w-[320px]">
               Global Benchmark in Architectural Signage & Precision Fabrication Engineering. 
               Reliability built through innovation since 2006.
             </p>
           </div>
 
-          {/* 2. Right Concentrated Info Sections (2/3 Width) */}
-          <div className="lg:w-2/3 grid grid-cols-2 md:grid-cols-4 gap-12 lg:gap-16">
+          {/* 2. Right Info Sections Grid (approx 2/3) */}
+          <div className="lg:w-2/3 grid grid-cols-2 md:grid-cols-4 gap-12 lg:gap-20">
             <div>
-              <h4 className="text-blue-950 font-black text-[11px] uppercase tracking-[0.3em] mb-12 border-b-2 border-slate-100 pb-6 inline-block">Product Lines</h4>
+              <h4 className="text-blue-950 font-black text-[11px] uppercase tracking-[0.3em] mb-12 border-b-2 border-slate-100 pb-6 inline-block">Signage Lines</h4>
               <ul className="space-y-8">
                 <li><Link href="/products/custom-halo-lit-letters" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Halo-Lit Letters</Link></li>
                 <li><Link href="/products/ultra-slim-led-light-box" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">LED Light Boxes</Link></li>
@@ -42,8 +42,8 @@ export default function Footer() {
               <h4 className="text-blue-950 font-black text-[11px] uppercase tracking-[0.3em] mb-12 border-b-2 border-slate-100 pb-6 inline-block">Corporate</h4>
               <ul className="space-y-8">
                 <li><Link href="/about" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Production Base</Link></li>
-                <li><Link href="/projects" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Project Case</Link></li>
-                <li><Link href="/faq" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Technical Lab</Link></li>
+                <li><Link href="/projects" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Project Portfolio</Link></li>
+                <li><Link href="/faq" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Engineering Hub</Link></li>
                 <li><Link href="/contact" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Consult Now</Link></li>
               </ul>
             </div>
@@ -59,14 +59,14 @@ export default function Footer() {
             </div>
 
             <div>
-              <h4 className="text-blue-950 font-black text-[11px] uppercase tracking-[0.3em] mb-12 border-b-2 border-slate-100 pb-6 inline-block">Inquiry</h4>
+              <h4 className="text-blue-950 font-black text-[11px] uppercase tracking-[0.3em] mb-12 border-b-2 border-slate-100 pb-6 inline-block">B2B Inquiry</h4>
               <div className="space-y-8">
                 <div>
                   <div className="text-[10px] text-slate-400 font-black uppercase tracking-[0.2em] mb-2">Direct Mail</div>
                   <a href={`mailto:${siteConfig.salesEmail}`} className="text-xs text-slate-500 hover:text-blue-600 font-bold block transition-all break-all">{siteConfig.salesEmail}</a>
                 </div>
                 <div>
-                  <div className="text-[10px] text-slate-400 font-black uppercase tracking-[0.2em] mb-2">Engineering</div>
+                  <div className="text-[10px] text-slate-400 font-black uppercase tracking-[0.2em] mb-2">Lead Engineer</div>
                   <p className="text-xs text-slate-500 font-black tracking-widest block">+{siteConfig.whatsappNumber}</p>
                 </div>
               </div>
