@@ -33,7 +33,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Base Typography - Standardized */
 h1 { font-weight: 900; line-height: 1.1; letter-spacing: -0.02em; }
 h2 { font-size: clamp(28px, 4vw, 40px); font-weight: 900; line-height: 1.2; letter-spacing: -0.01em; }
 h3 { font-size: 24px; font-weight: 800; line-height: 1.3; }
@@ -74,17 +73,17 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
 }
 
 .brand img { 
-  max-height: 40px; /* Zheng zong request: 40px Refined size */
+  max-height: 80px; /* Zheng zong request: Macro size for the large screen */
   width: auto; 
   object-fit: contain; 
 }
 
 .primary-nav { 
   display: flex; 
-  gap: 3rem; 
+  gap: 4rem; /* Broadened for airy feel - Final Refinement */
   align-items: center;
   margin-left: auto;
-  margin-right: 2rem;
+  margin-right: 2.5rem;
 }
 
 .primary-nav a {
@@ -141,9 +140,9 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
   transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .floating-whatsapp img { 
-  width: 80px; 
-  height: 80px; 
-  filter: drop-shadow(0 15px 30px rgba(0,0,0,0.25)); 
+  width: 120px; 
+  height: 120px; 
+  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.3)); 
 }
 .floating-whatsapp:hover { transform: scale(1.1); }
 
@@ -155,7 +154,7 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
 }
 .reveal.visible { opacity: 1; transform: none; }
 
-/* Production Steps Grid */
+/* Production Steps Grid - High End Overhaul */
 .step-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -192,13 +191,21 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
   margin-bottom: 1.5rem;
   color: var(--blue-700);
 }
+.step-card h3 {
+  font-size: 18px;
+  margin-bottom: 0.75rem;
+}
+.step-card p {
+  color: var(--muted);
+  line-height: 1.7;
+}
 
 /* Sections */
 .hero { min-height: 100vh; }
 .hero-overlay-dark {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, rgba(7, 18, 38, 0.9) 0%, rgba(7, 18, 38, 0.4) 100%);
+  background: linear-gradient(to right, rgba(7, 18, 38, 0.88) 0%, rgba(7, 18, 38, 0.4) 100%);
 }
 
 @media (max-width: 1024px) {
@@ -215,4 +222,6 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
     box-shadow: var(--shadow-md);
   }
   .primary-nav.open { display: flex; }
+  .menu-toggle { display: flex; flex-direction: column; gap: 5px; }
+  .menu-toggle span { width: 24px; height: 2px; background: var(--blue-950); transition: 0.3s; }
 }
