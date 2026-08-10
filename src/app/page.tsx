@@ -89,7 +89,7 @@ export default function Home() {
                 <div className="text-blue-400 font-bold tracking-[0.5em] mb-10 uppercase text-sm border-l-4 border-blue-600 pl-6">
                   PRECISION ENGINEERING SINCE 2006
                 </div>
-                <h1 className="text-6xl lg:text-[140px] font-black leading-none tracking-tighter mb-12 uppercase drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
+                <h1 className="text-5xl lg:text-[120px] font-black leading-none tracking-tighter mb-12 uppercase drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
                   CRAFTING <br/>
                   <span className="text-blue-500 italic">TRUSTED</span> <br/>
                   SIGNAGE
@@ -114,7 +114,7 @@ export default function Home() {
                   
                   <div className="mb-8 relative z-10">
                     <div className="text-blue-400 font-black text-[11px] uppercase tracking-[0.3em] mb-4 italic">FOR COMMERCIAL PROJECTS</div>
-                    <h3 className="text-3xl font-black text-white mb-6 uppercase tracking-tighter leading-tight">Your Complete <br/>Signage Partner</h3>
+                    <h3 className="text-3xl font-black text-white mb-6 uppercase tracking-tighter leading-tight">Commercial <br/>Signage Solutions</h3>
                     <p className="text-slate-400 text-sm leading-relaxed mb-6 font-medium max-w-sm">
                       From illuminated letters and light boxes to complete wayfinding and outdoor signage systems — engineered and manufactured directly from our factory.
                     </p>
@@ -154,10 +154,10 @@ export default function Home() {
 
             {/* Statistics Bar */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-16 pt-20 mt-32 border-t border-white/10 max-w-6xl text-white reveal">
-              <div><strong className="block text-6xl lg:text-7xl font-black italic mb-2 text-blue-400 tracking-tighter drop-shadow-sm leading-none">20,000</strong><span className="text-xs uppercase font-black tracking-widest text-slate-400">SQM Factory</span></div>
-              <div><strong className="block text-6xl lg:text-7xl font-black italic mb-2 text-blue-400 tracking-tighter drop-shadow-sm leading-none">18+</strong><span className="text-xs uppercase font-black tracking-widest text-slate-400">Years Exp.</span></div>
-              <div><strong className="block text-6xl lg:text-7xl font-black italic mb-2 text-blue-400 tracking-tighter drop-shadow-sm leading-none">50+</strong><span className="text-xs uppercase font-black tracking-widest text-slate-400">Countries</span></div>
-              <div><strong className="block text-6xl lg:text-7xl font-black italic mb-2 text-blue-400 tracking-tighter drop-shadow-sm leading-none">DDP</strong><span className="text-xs uppercase font-black tracking-widest text-slate-400">Global Shipping</span></div>
+              <div><strong className="block text-5xl lg:text-6xl font-black italic mb-2 text-blue-400 tracking-tighter drop-shadow-sm leading-none">20,000</strong><span className="text-xs uppercase font-black tracking-widest text-slate-400">SQM Factory</span></div>
+              <div><strong className="block text-5xl lg:text-6xl font-black italic mb-2 text-blue-400 tracking-tighter drop-shadow-sm leading-none">18+</strong><span className="text-xs uppercase font-black tracking-widest text-slate-400">Years Exp.</span></div>
+              <div><strong className="block text-5xl lg:text-6xl font-black italic mb-2 text-blue-400 tracking-tighter drop-shadow-sm leading-none">50+</strong><span className="text-xs uppercase font-black tracking-widest text-slate-400">Countries</span></div>
+              <div><strong className="block text-5xl lg:text-6xl font-black italic mb-2 text-blue-400 tracking-tighter drop-shadow-sm leading-none">DDP</strong><span className="text-xs uppercase font-black tracking-widest text-slate-400">Global Shipping</span></div>
             </div>
           </div>
         </section>
