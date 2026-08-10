@@ -14,61 +14,61 @@ export default function Footer() {
   return (
     <footer className="bg-white border-t border-slate-100 pt-32 pb-16">
       <div className="container">
-        <div className="flex flex-col lg:flex-row items-start justify-between gap-24 mb-32">
-          {/* 1. Left Branding Section (approx 1/3) */}
-          <div className="lg:w-1/3">
-            <Link href="/" className="inline-block mb-12">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12 lg:gap-16 mb-32 items-start">
+          {/* Column 1: Logo */}
+          <div className="flex flex-col items-start">
+            <Link href="/" className="inline-block mb-10">
               <img src="/assets/images/logo-correct.jpg" alt="ZYD Signage" className="max-h-12 opacity-95 hover:opacity-100 transition-all" />
             </Link>
-            <p className="text-slate-400 text-[10px] font-black leading-loose uppercase tracking-[0.4em] max-w-[320px]">
-              Global Benchmark in Architectural Signage & Precision Fabrication Engineering. 
-              Reliability built through innovation since 2006.
+            <p className="text-slate-400 text-[10px] font-black leading-loose uppercase tracking-[0.4em] max-w-[200px]">
+              The Global Benchmark in Architectural-Grade Wayfinding.
             </p>
           </div>
 
-          {/* 2. Right Info Sections Grid (approx 2/3) */}
-          <div className="lg:w-2/3 grid grid-cols-2 md:grid-cols-4 gap-12 lg:gap-20">
-            <div>
-              <h4 className="text-blue-950 font-black text-[11px] uppercase tracking-[0.3em] mb-12 border-b-2 border-slate-100 pb-6 inline-block">Signage Lines</h4>
-              <ul className="space-y-8">
-                <li><Link href="/products/custom-halo-lit-letters" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Halo-Lit Letters</Link></li>
-                <li><Link href="/products/ultra-slim-led-light-box" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">LED Light Boxes</Link></li>
-                <li><Link href="/products/architectural-wayfinding-system" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Wayfinding Systems</Link></li>
-                <li><Link href="/products/outdoor-pylon-monument-sign" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Outdoor Signage</Link></li>
-              </ul>
-            </div>
+          {/* Column 2: Solutions */}
+          <div>
+            <h4 className="text-blue-950 font-black text-[11px] uppercase tracking-[0.3em] mb-10 border-b-2 border-slate-100 pb-4 inline-block">Solutions</h4>
+            <ul className="space-y-6">
+              <li><Link href="/products/custom-halo-lit-letters" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Halo-Lit Letters</Link></li>
+              <li><Link href="/products/ultra-slim-led-light-box" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">LED Light Boxes</Link></li>
+              <li><Link href="/products/architectural-wayfinding-system" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Wayfinding Systems</Link></li>
+              <li><Link href="/products/outdoor-pylon-monument-sign" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Outdoor Signage</Link></li>
+            </ul>
+          </div>
 
-            <div>
-              <h4 className="text-blue-950 font-black text-[11px] uppercase tracking-[0.3em] mb-12 border-b-2 border-slate-100 pb-6 inline-block">Corporate</h4>
-              <ul className="space-y-8">
-                <li><Link href="/about" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Production Base</Link></li>
-                <li><Link href="/projects" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Project Portfolio</Link></li>
-                <li><Link href="/faq" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Engineering Hub</Link></li>
-                <li><Link href="/contact" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Consult Now</Link></li>
-              </ul>
-            </div>
+          {/* Column 3: Company */}
+          <div>
+            <h4 className="text-blue-950 font-black text-[11px] uppercase tracking-[0.3em] mb-10 border-b-2 border-slate-100 pb-4 inline-block">Company</h4>
+            <ul className="space-y-6">
+              <li><Link href="/about" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Our Factory</Link></li>
+              <li><Link href="/projects" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Case Studies</Link></li>
+              <li><Link href="/faq" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">FAQ</Link></li>
+              <li><Link href="/contact" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Consult Aaron</Link></li>
+            </ul>
+          </div>
 
-            <div>
-              <h4 className="text-blue-950 font-black text-[11px] uppercase tracking-[0.3em] mb-12 border-b-2 border-slate-100 pb-6 inline-block">Social Media</h4>
-              <ul className="space-y-8">
-                <li className="text-sm text-slate-300 font-black uppercase tracking-[0.2em] cursor-default hover:text-slate-400 transition-colors">LinkedIn</li>
-                <li className="text-sm text-slate-300 font-black uppercase tracking-[0.2em] cursor-default hover:text-slate-400 transition-colors">Facebook</li>
-                <li className="text-sm text-slate-300 font-black uppercase tracking-[0.2em] cursor-default hover:text-slate-400 transition-colors">Instagram</li>
-                <li className="text-sm text-slate-300 font-black uppercase tracking-[0.2em] cursor-default hover:text-slate-400 transition-colors">YouTube</li>
-              </ul>
-            </div>
+          {/* Column 4: Social Media */}
+          <div>
+            <h4 className="text-blue-950 font-black text-[11px] uppercase tracking-[0.3em] mb-10 border-b-2 border-slate-100 pb-4 inline-block">Social Media</h4>
+            <ul className="space-y-6">
+              <li className="text-sm text-slate-300 font-black uppercase tracking-[0.2em] cursor-default hover:text-slate-400 transition-colors">LinkedIn</li>
+              <li className="text-sm text-slate-300 font-black uppercase tracking-[0.2em] cursor-default hover:text-slate-400 transition-colors">Facebook</li>
+              <li className="text-sm text-slate-300 font-black uppercase tracking-[0.2em] cursor-default hover:text-slate-400 transition-colors">Instagram</li>
+              <li className="text-sm text-slate-300 font-black uppercase tracking-[0.2em] cursor-default hover:text-slate-400 transition-colors">YouTube</li>
+            </ul>
+          </div>
 
-            <div>
-              <h4 className="text-blue-950 font-black text-[11px] uppercase tracking-[0.3em] mb-12 border-b-2 border-slate-100 pb-6 inline-block">B2B Inquiry</h4>
-              <div className="space-y-8">
-                <div>
-                  <div className="text-[10px] text-slate-400 font-black uppercase tracking-[0.2em] mb-2">Direct Mail</div>
-                  <a href={`mailto:${siteConfig.salesEmail}`} className="text-xs text-slate-500 hover:text-blue-600 font-bold block transition-all break-all">{siteConfig.salesEmail}</a>
-                </div>
-                <div>
-                  <div className="text-[10px] text-slate-400 font-black uppercase tracking-[0.2em] mb-2">Lead Engineer</div>
-                  <p className="text-xs text-slate-500 font-black tracking-widest block">+{siteConfig.whatsappNumber}</p>
-                </div>
+          {/* Column 5: Contact Info */}
+          <div>
+            <h4 className="text-blue-950 font-black text-[11px] uppercase tracking-[0.3em] mb-10 border-b-2 border-slate-100 pb-4 inline-block">B2B Connect</h4>
+            <div className="space-y-6">
+              <div>
+                <div className="text-[10px] text-slate-400 font-black uppercase tracking-[0.2em] mb-2">Direct Mail</div>
+                <a href={`mailto:${siteConfig.salesEmail}`} className="text-xs text-slate-500 hover:text-blue-600 font-bold block transition-all break-all">{siteConfig.salesEmail}</a>
+              </div>
+              <div>
+                <div className="text-[10px] text-slate-400 font-black uppercase tracking-[0.2em] mb-2">Lead Engineer</div>
+                <p className="text-xs text-slate-500 font-black tracking-widest block">+{siteConfig.whatsappNumber}</p>
               </div>
             </div>
           </div>

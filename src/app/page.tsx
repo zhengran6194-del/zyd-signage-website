@@ -67,6 +67,12 @@ export default function Home() {
     },
   ];
 
+  const handleWhatsApp = (e: any, message: string) => {
+    if (e) e.preventDefault();
+    const url = `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
+  };
+
   return (
     <>
       <main id="main">
@@ -101,18 +107,47 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Featured Industry Card */}
+              {/* RIGHT SIDE: COMMERCIAL PROJECTS CARD */}
               <div className="reveal relative hidden lg:block">
-                <div className="bg-white/5 backdrop-blur-3xl p-16 rounded-[4rem] border border-white/10 shadow-[0_80px_150px_rgba(0,0,0,0.6)] relative group overflow-hidden">
-                  <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/20 blur-[100px] rounded-full -translate-y-1/2 translate-x-1/2"></div>
-                  <div className="text-blue-400 font-black text-sm uppercase tracking-[0.3em] mb-6 italic">Featured Industry</div>
-                  <h3 className="text-5xl font-black mb-10 uppercase tracking-tighter leading-tight text-white">Medical Care <br/>Signage System</h3>
-                  <div className="rounded-[3rem] overflow-hidden mb-10 border-4 border-white/10 h-80">
-                    <img src="/assets/images/hero-medical.jpg" alt="Medical Signage" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" />
+                <div className="bg-[#0b1a33]/90 backdrop-blur-2xl p-10 lg:p-12 rounded-3xl border border-white/10 shadow-[0_80px_150px_rgba(0,0,0,0.6)] relative group overflow-hidden">
+                  <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/10 blur-[100px] rounded-full -translate-y-1/2 translate-x-1/2"></div>
+                  
+                  <div className="mb-8 relative z-10">
+                    <div className="text-blue-400 font-black text-[11px] uppercase tracking-[0.3em] mb-4 italic">FOR COMMERCIAL PROJECTS</div>
+                    <h3 className="text-3xl font-black text-white mb-4 uppercase tracking-tighter leading-tight">Your Complete <br/>Signage Partner</h3>
+                    <p className="text-slate-400 text-sm leading-relaxed mb-6 font-medium max-w-sm">
+                      From illuminated letters and light boxes to complete wayfinding and outdoor signage systems — engineered and manufactured directly from our factory.
+                    </p>
+                    <div className="text-blue-300 text-xs font-bold uppercase tracking-widest border-l-2 border-blue-500/50 pl-4 py-1">
+                      Free 3D Mockup &middot; Engineering Support &middot; Factory Production &middot; Global DDP Delivery
+                    </div>
                   </div>
-                  <Link href="/products/medical-care-signage" className="button button-green-base w-full py-5 text-white font-bold rounded-full text-center block text-xl">
-                    View Details
-                  </Link>
+
+                  {/* 3-Image Grid Layout - Refined size */}
+                  <div className="grid grid-cols-2 gap-4 mb-8 h-52 relative z-10">
+                    <div className="overflow-hidden rounded-2xl border border-white/5 h-full">
+                      <img src="/assets/images/cat-illuminated.webp" alt="Building Signage" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" />
+                    </div>
+                    <div className="grid grid-rows-2 gap-4 h-full">
+                      <div className="overflow-hidden rounded-2xl border border-white/5 h-full">
+                        <img src="/assets/images/cat-wayfinding.webp" alt="Wayfinding" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" />
+                      </div>
+                      <div className="overflow-hidden rounded-2xl border border-white/5 h-full">
+                        <img src="/assets/images/cat-outdoor.webp" alt="Monument Sign" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex justify-between items-end relative z-10">
+                    <Link href="/products" className="text-blue-400 font-black text-sm uppercase tracking-widest hover:text-blue-200 transition-colors flex items-center gap-2 group/cta">
+                      EXPLORE SIGNAGE SOLUTIONS <span className="group-hover/cta:translate-x-1 transition-transform">→</span>
+                    </Link>
+                    <div className="text-[10px] text-slate-500 font-bold italic flex gap-4 uppercase tracking-tighter">
+                      <span>Custom Design</span>
+                      <span>Factory Direct</span>
+                      <span>Worldwide Delivery</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -151,8 +186,8 @@ export default function Home() {
         {/* 3. QUALITY & COMPLIANCE */}
         <section className="section bg-slate-50 border-y border-slate-100 py-20 lg:py-24">
           <div className="container">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-              <div className="reveal">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 lg:gap-32 items-center">
+              <div className="reveal max-w-xl">
                 <h2 className="mb-6 uppercase tracking-tighter">Global Compliance & <br/>Quality Standards</h2>
                 <p className="text-slate-600 mb-10 text-base leading-relaxed">We adhere to the highest international certifications to guarantee structural integrity and electrical safety in any environment.</p>
                 <div className="grid grid-cols-2 gap-4">
@@ -173,12 +208,12 @@ export default function Home() {
                 <div className="rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white">
                   <img src="/assets/images/factory-overview.jpg" alt="Factory QC" className="w-full h-[400px] object-cover" />
                 </div>
-                <div className="absolute -bottom-24 -right-24 bg-slate-950 p-24 lg:p-32 rounded-[6rem] text-white shadow-[0_60px_120px_rgba(0,0,0,0.6),0_20px_0_#050810] border-[12px] border-blue-500/10 transition-all duration-700 hover:scale-[1.05] group/badge overflow-hidden hidden lg:block">
-                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.2)_0%,transparent_80%)] blur-[120px] opacity-70 group-hover/badge:opacity-100 transition-opacity"></div>
-                  <strong className="relative z-10 text-[200px] font-black block text-transparent bg-clip-text bg-gradient-to-b from-white via-blue-400 to-blue-900 italic mb-4 tracking-tighter leading-none drop-shadow-[0_20px_40px_rgba(30,144,255,0.6)] text-center">100%</strong>
-                  <div className="relative z-10 space-y-4 text-center">
-                    <span className="text-3xl lg:text-4xl uppercase font-black tracking-[0.8em] text-white block ml-[0.8em] drop-shadow-lg">In-House</span>
-                    <span className="text-xl lg:text-2xl uppercase font-black tracking-[0.6em] text-slate-500 block opacity-70 ml-[0.6em]">Manufacturing</span>
+                <div className="absolute -bottom-40 -right-40 bg-slate-950 p-40 lg:p-52 rounded-[10rem] text-white shadow-[0_100px_200px_rgba(0,0,0,0.7),0_30px_0_#050810] border-[20px] border-blue-500/10 transition-all duration-1000 hover:scale-[1.05] group/badge overflow-hidden hidden lg:block">
+                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.3)_0%,transparent_80%)] blur-[150px] opacity-80 group-hover/badge:opacity-100 transition-opacity"></div>
+                  <strong className="relative z-10 text-[320px] font-black block text-transparent bg-clip-text bg-gradient-to-b from-white via-blue-400 to-blue-900 italic mb-8 tracking-tighter leading-none drop-shadow-[0_40px_80px_rgba(30,144,255,0.7)] text-center">100%</strong>
+                  <div className="relative z-10 space-y-6 text-center">
+                    <span className="text-4xl lg:text-5xl uppercase font-black tracking-[1em] text-white block ml-[1em] drop-shadow-2xl">In-House</span>
+                    <span className="text-2xl lg:text-3xl uppercase font-black tracking-[0.8em] text-slate-500 block opacity-70 ml-[0.8em]">Manufacturing</span>
                   </div>
                 </div>
               </div>

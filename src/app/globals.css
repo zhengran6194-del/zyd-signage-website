@@ -50,10 +50,10 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
 
 .section { padding: 100px 0; }
 
-/* Header: Mega Scale, High-End */
+/* Header: Thin, Elegant, Sticky */
 .site-header {
-  min-height: 100px;
-  height: 100px;
+  min-height: 70px;
+  height: 70px;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -74,17 +74,17 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
 }
 
 .brand img { 
-  max-height: 80px; /* Mega Logo size */
+  max-height: 40px; /* Zheng zong request: 40px Refined size */
   width: auto; 
   object-fit: contain; 
 }
 
 .primary-nav { 
   display: flex; 
-  gap: 3.5rem; 
+  gap: 3rem; 
   align-items: center;
   margin-left: auto;
-  margin-right: 3rem;
+  margin-right: 2rem;
 }
 
 .primary-nav a {
