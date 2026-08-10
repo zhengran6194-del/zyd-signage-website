@@ -164,7 +164,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 2. THE ZYD WAY: PRODUCTION PROCESS (Icon Grid - Final High End) */}
+        {/* 2. THE ZYD WAY: PRODUCTION PROCESS (Icon Grid - Final 3D Polish) */}
         <section className="section bg-white py-32 lg:py-48">
           <div className="container">
             <div className="text-center mb-24 reveal">
@@ -176,13 +176,16 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16">
               {steps.map((s, i) => (
                 <div key={i} className="reveal group/card">
-                  <div className="p-12 bg-white rounded-2xl border border-slate-100 shadow-[0_4px_20px_rgba(0,0,0,0.02)] hover:shadow-[0_20px_40px_rgba(0,0,0,0.05)] hover:-translate-y-2 transition-all duration-500 h-full flex flex-col items-start">
-                    <div className="flex justify-between items-start w-full mb-10">
+                  <div className="p-12 bg-white rounded-2xl border border-slate-100 shadow-[0_4px_20px_rgba(0,0,0,0.02)] hover:shadow-[0_20px_40px_rgba(0,0,0,0.05)] hover:-translate-y-2 transition-all duration-500 h-full flex flex-col items-start relative overflow-hidden">
+                    <div className="absolute top-0 right-0 w-32 h-32 bg-blue-50/50 blur-[60px] rounded-full translate-x-1/2 -translate-y-1/2"></div>
+                    <div className="flex justify-between items-start w-full mb-10 relative z-10">
                       <span className="text-blue-600 font-black text-sm uppercase tracking-widest bg-blue-50 px-4 py-1.5 rounded-lg">{s.no}</span>
-                      {s.icon}
+                      <div className="text-blue-600 group-hover/card:scale-110 transition-transform duration-500">
+                        {s.icon}
+                      </div>
                     </div>
-                    <h3 className="text-2xl font-black text-slate-900 uppercase tracking-tight mb-4 group-hover/card:text-blue-600 transition-colors">{s.title}</h3>
-                    <p className="text-slate-500 text-sm leading-relaxed font-medium group-hover/card:text-slate-600 transition-colors">{s.desc}</p>
+                    <h3 className="text-2xl font-black text-slate-900 uppercase tracking-tight mb-4 group-hover/card:text-blue-600 transition-colors relative z-10">{s.title}</h3>
+                    <p className="text-slate-500 text-sm leading-relaxed font-medium group-hover/card:text-slate-600 transition-colors relative z-10">{s.desc}</p>
                   </div>
                 </div>
               ))}
@@ -215,14 +218,20 @@ export default function Home() {
                 <div className="rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white max-w-lg ml-auto">
                   <img src="/assets/images/factory-overview.jpg" alt="Factory QC" className="w-full h-[350px] object-cover" />
                 </div>
-                <div className="absolute -bottom-12 -right-12 bg-slate-950 p-12 lg:p-14 rounded-[4rem] text-white shadow-[0_40px_80px_rgba(0,0,0,0.6),0_15px_0_#070a14] border-[12px] border-blue-500/10 transition-all duration-700 hover:scale-[1.02] group/badge overflow-hidden hidden lg:block">
-                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.15)_0%,transparent_80%)] blur-[100px] opacity-70 group-hover/badge:opacity-100 transition-opacity"></div>
+                <div className="absolute -bottom-64 -right-64 bg-slate-950 p-48 lg:p-64 rounded-[20rem] text-white shadow-[0_150px_300px_rgba(0,0,0,0.9),0_50px_0_#05070a] hidden lg:block border-[32px] border-blue-500/10 transition-all duration-1000 hover:scale-[1.08] group/badge overflow-hidden ring-[1px] ring-blue-400/20">
+                  {/* Atmospheric Glow */}
+                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.2)_0%,transparent_80%)] blur-[200px] opacity-80 group-hover/badge:opacity-100 transition-opacity"></div>
+                  <div className="absolute -top-full -left-full w-[200%] h-[200%] bg-gradient-to-br from-blue-400/20 via-transparent to-transparent blur-[150px] rotate-45 animate-pulse"></div>
                   
-                  <strong className="relative z-10 text-[100px] font-black block text-transparent bg-clip-text bg-gradient-to-b from-white via-blue-400 to-blue-900 italic mb-2 tracking-tighter leading-none drop-shadow-[0_15px_30px_rgba(30,144,255,0.6)] text-center">100%</strong>
+                  <strong className="relative z-10 text-[320px] font-black block text-transparent bg-clip-text bg-gradient-to-b from-white via-blue-400 to-blue-900 italic mb-12 tracking-tighter leading-none drop-shadow-[0_60px_120px_rgba(30,144,255,0.8)] text-center">100%</strong>
                   
-                  <div className="relative z-10 space-y-2 text-center">
-                    <span className="text-xl lg:text-2xl uppercase font-black tracking-[0.6em] text-white block ml-[0.6em] drop-shadow-lg">In-House</span>
-                    <span className="text-[10px] lg:text-xs uppercase font-black tracking-[0.4em] text-slate-500 block opacity-70 ml-[0.4em]">Manufacturing</span>
+                  <div className="relative z-10 space-y-8 text-center translate-y-[-20px]">
+                    <span className="text-5xl lg:text-6xl uppercase font-black tracking-[1.2em] text-white block ml-[1.2em] drop-shadow-lg">In-House</span>
+                    <span className="text-3xl lg:text-4xl uppercase font-black tracking-[1em] text-slate-500 block opacity-70 ml-[1em]">Manufacturing</span>
+                  </div>
+                  
+                  <div className="relative z-10 mt-24 flex justify-center">
+                    <div className="h-3 w-80 bg-gradient-to-r from-transparent via-blue-500/80 to-transparent opacity-80 blur-[2px]"></div>
                   </div>
                 </div>
               </div>
