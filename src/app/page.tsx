@@ -67,12 +67,6 @@ export default function Home() {
     },
   ];
 
-  const handleWhatsApp = (e: any, message: string) => {
-    if (e) e.preventDefault();
-    const url = `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(message)}`;
-    window.open(url, '_blank');
-  };
-
   return (
     <>
       <main id="main">
@@ -89,7 +83,7 @@ export default function Home() {
                 <div className="text-blue-400 font-bold tracking-[0.5em] mb-10 uppercase text-sm border-l-4 border-blue-600 pl-6">
                   PRECISION ENGINEERING SINCE 2006
                 </div>
-                <h1 className="text-6xl lg:text-[130px] font-black leading-none tracking-tighter mb-12 uppercase drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
+                <h1 className="text-6xl lg:text-[140px] font-black leading-none tracking-tighter mb-12 uppercase drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
                   CRAFTING <br/>
                   <span className="text-blue-500 italic">TRUSTED</span> <br/>
                   SIGNAGE
@@ -109,7 +103,7 @@ export default function Home() {
 
               {/* Featured Industry Card */}
               <div className="reveal relative hidden lg:block">
-                <div className="bg-white/5 backdrop-blur-3xl p-16 rounded-[5rem] border border-white/10 shadow-[0_80px_150px_rgba(0,0,0,0.6)] relative group overflow-hidden">
+                <div className="bg-white/5 backdrop-blur-3xl p-16 rounded-[4rem] border border-white/10 shadow-[0_80px_150px_rgba(0,0,0,0.6)] relative group overflow-hidden">
                   <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/20 blur-[100px] rounded-full -translate-y-1/2 translate-x-1/2"></div>
                   <div className="text-blue-400 font-black text-sm uppercase tracking-[0.3em] mb-6 italic">Featured Industry</div>
                   <h3 className="text-5xl font-black mb-10 uppercase tracking-tighter leading-tight text-white">Medical Care <br/>Signage System</h3>
