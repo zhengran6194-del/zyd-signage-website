@@ -181,21 +181,21 @@ export default function Home() {
 
         {/* 3. QUALITY & COMPLIANCE (Refined Image 2 Proportions) */}
         <section className="section bg-slate-50 border-y border-slate-100 py-20 lg:py-32 overflow-hidden">
-          <div className="max-w-full w-full px-[2%] mx-auto relative z-10">
-            <div className="grid grid-cols-1 lg:grid-cols-[20%_80%] gap-24 lg:gap-32 items-center">
-              <div className="reveal max-w-xs">
+          <div className="max-w-[1600px] w-[95%] mx-auto relative z-10">
+            <div className="grid grid-cols-1 lg:grid-cols-[40%_60%] gap-24 lg:gap-32 items-center">
+              <div className="reveal max-w-xl">
                 <div className="text-blue-600 font-black uppercase text-[10px] tracking-[0.4em] mb-4 border-l-2 border-blue-600 pl-4">Quality Assurance</div>
-                <h2 className="mb-6 uppercase tracking-tighter text-slate-900 leading-[0.95] text-4xl">Global <br/>Compliance & <br/>Quality Standards</h2>
-                <p className="text-slate-500 mb-12 text-sm leading-relaxed font-medium opacity-80">We adhere to the highest international certifications to guarantee structural integrity and electrical safety in any environment.</p>
-                <div className="grid grid-cols-1 gap-4 lg:gap-5">
+                <h2 className="mb-6 uppercase tracking-tighter text-slate-900 leading-[0.95] text-5xl lg:text-6xl">Global <br/>Compliance & <br/>Quality Standards</h2>
+                <p className="text-slate-500 mb-12 text-lg leading-relaxed font-medium opacity-80">We adhere to the highest international certifications to guarantee structural integrity and electrical safety in any environment.</p>
+                <div className="grid grid-cols-2 gap-4 lg:gap-5">
                   {[
                     { label: 'ISO 9001:2015', desc: 'Quality Management' },
                     { label: 'CE Certified', desc: 'Electrical Compliance' },
                     { label: 'SGS Inspected', desc: 'Factory Standards' },
                     { label: 'UL Components', desc: 'Premium Components' },
                   ].map((cert, idx) => (
-                    <div key={idx} className="p-5 bg-white border border-slate-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-                      <div className="font-black text-blue-600 text-sm mb-1">{cert.label}</div>
+                    <div key={idx} className="p-6 bg-white border border-slate-100 rounded-3xl shadow-sm hover:shadow-md transition-shadow">
+                      <div className="font-black text-blue-600 text-base mb-1">{cert.label}</div>
                       <div className="text-[10px] font-bold uppercase tracking-widest text-slate-400">{cert.desc}</div>
                     </div>
                   ))}
@@ -203,12 +203,12 @@ export default function Home() {
               </div>
               
               <div className="reveal relative flex justify-end">
-                <div className="rounded-[4rem] overflow-hidden shadow-[0_50px_100px_rgba(0,0,0,0.15)] border-[12px] border-white w-full aspect-square lg:aspect-[16/7]">
+                <div className="rounded-[3rem] overflow-hidden shadow-[0_50px_100px_rgba(0,0,0,0.15)] border-[12px] border-white w-full aspect-square lg:aspect-[4/3]">
                   <img src="/assets/images/factory-overview.jpg" alt="Factory QC" className="w-full h-full object-cover" />
                 </div>
                 
                 {/* Right Floating Vertical Card (Image 2 Proportions) */}
-                <div className="absolute right-8 top-1/2 -translate-y-1/2 bg-white p-10 lg:p-16 py-24 rounded-[3.5rem] shadow-[0_60px_120px_rgba(10,39,84,0.12)] border border-white w-[32%] z-20">
+                <div className="absolute right-0 top-1/2 -translate-y-1/2 bg-white p-10 lg:p-14 py-20 rounded-[3.5rem] shadow-[0_60px_120px_rgba(10,39,84,0.12)] border border-white w-[38%] z-20">
                   <div className="space-y-16">
                     {[
                       { 
