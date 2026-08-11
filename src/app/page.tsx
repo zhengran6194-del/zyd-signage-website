@@ -179,66 +179,66 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 3. QUALITY & COMPLIANCE (Image 1) */}
+        {/* 3. QUALITY & COMPLIANCE (Refined Image 2 Proportions) */}
         <section className="section bg-slate-50 border-y border-slate-100 py-20 lg:py-32 overflow-hidden">
           <div className="container">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 lg:gap-32 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-[0.85fr_1.15fr] gap-24 lg:gap-32 items-center">
               <div className="reveal max-w-xl">
-                <div className="text-blue-600 font-bold uppercase text-xs tracking-widest mb-4">Quality Assurance</div>
-                <h2 className="mb-6 uppercase tracking-tighter text-slate-900 leading-tight">Global Compliance & <br/>Quality Standards</h2>
-                <p className="text-slate-600 mb-10 text-lg leading-relaxed font-medium">We adhere to the highest international certifications to guarantee structural integrity and electrical safety in any environment.</p>
-                <div className="grid grid-cols-2 gap-6">
+                <div className="text-blue-600 font-black uppercase text-[10px] tracking-[0.4em] mb-4 border-l-2 border-blue-600 pl-4">Quality Assurance</div>
+                <h2 className="mb-6 uppercase tracking-tighter text-slate-900 leading-[0.95] text-5xl lg:text-6xl">Global <br/>Compliance & <br/>Quality Standards</h2>
+                <p className="text-slate-500 mb-12 text-lg leading-relaxed font-medium opacity-80">We adhere to the highest international certifications to guarantee structural integrity and electrical safety in any environment.</p>
+                <div className="grid grid-cols-2 gap-4 lg:gap-5">
                   {[
                     { label: 'ISO 9001:2015', desc: 'Quality Management' },
                     { label: 'CE Certified', desc: 'Electrical Compliance' },
                     { label: 'SGS Inspected', desc: 'Factory Standards' },
                     { label: 'UL Components', desc: 'Premium Components' },
                   ].map((cert, idx) => (
-                    <div key={idx} className="p-6 bg-white border border-slate-100 rounded-2xl shadow-sm">
+                    <div key={idx} className="p-6 bg-white border border-slate-100 rounded-3xl shadow-sm hover:shadow-md transition-shadow">
                       <div className="font-black text-blue-600 text-base mb-1">{cert.label}</div>
-                      <div className="text-[11px] font-bold uppercase tracking-widest text-slate-400">{cert.desc}</div>
+                      <div className="text-[10px] font-bold uppercase tracking-widest text-slate-400">{cert.desc}</div>
                     </div>
                   ))}
                 </div>
               </div>
               
               <div className="reveal relative flex justify-end">
-                <div className="rounded-[3rem] overflow-hidden shadow-3xl border-8 border-white w-[85%]">
-                  <img src="/assets/images/factory-overview.jpg" alt="Factory QC" className="w-full h-[550px] object-cover" />
+                <div className="rounded-[4rem] overflow-hidden shadow-[0_50px_100px_rgba(0,0,0,0.15)] border-[12px] border-white w-[90%] aspect-square lg:aspect-[4/5]">
+                  <img src="/assets/images/factory-overview.jpg" alt="Factory QC" className="w-full h-full object-cover" />
                 </div>
                 
-                {/* Right Floating Vertical Card (Image 2 White Theme) */}
-                <div className="absolute right-0 top-1/2 -translate-y-1/2 bg-white p-10 lg:p-12 rounded-[3rem] shadow-[0_40px_100px_rgba(0,0,0,0.1)] border border-slate-100 w-[48%] z-20 reveal">
-                  <div className="space-y-10">
+                {/* Right Floating Vertical Card (Image 2 Proportions) */}
+                <div className="absolute right-0 top-1/2 -translate-y-1/2 bg-white p-10 lg:p-14 rounded-[3.5rem] shadow-[0_60px_120px_rgba(10,39,84,0.12)] border border-white w-[46%] z-20">
+                  <div className="space-y-12">
                     {[
                       { 
                         t: 'Factory Direct', 
                         d: 'In-House Production', 
-                        icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M3 21h18M3 7v1h18V7l-2-4H5L3 7zM19 8v10M5 8v10M9 8v10M15 8v10"/></svg> 
+                        icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M3 21h18M3 7v1h18V7l-2-4H5L3 7zM19 8v10M5 8v10M9 8v10M15 8v10"/></svg> 
                       },
                       { 
                         t: '18+ Years', 
                         d: 'Industry Experience', 
-                        icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 
+                        icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 
                       },
                       { 
                         t: 'ISO Quality', 
                         d: 'Certified Processes', 
-                        icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> 
+                        icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> 
                       },
                       { 
                         t: 'Global Delivery', 
                         d: 'Reliable Worldwide Supply', 
-                        icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg> 
+                        icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg> 
                       }
                     ].map((item, idx) => (
-                      <div key={idx} className="flex items-center gap-6">
-                        <div className="w-14 h-14 bg-blue-50 rounded-full flex items-center justify-center shrink-0 text-blue-600">
+                      <div key={idx} className="flex items-center gap-6 group">
+                        <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center shrink-0 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-all duration-500 shadow-sm">
                           {item.icon}
                         </div>
                         <div>
-                          <div className="text-slate-900 font-black text-[13px] uppercase tracking-widest mb-1">{item.t}</div>
-                          <div className="text-slate-400 font-bold text-xs leading-tight">{item.d}</div>
+                          <div className="text-slate-950 font-black text-[14px] uppercase tracking-wider mb-1 leading-tight">{item.t}</div>
+                          <div className="text-slate-400 font-bold text-[11px] leading-tight opacity-80">{item.d}</div>
                         </div>
                       </div>
                     ))}
