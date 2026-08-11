@@ -207,18 +207,39 @@ export default function Home() {
                   <img src="/assets/images/factory-overview.jpg" alt="Factory QC" className="w-full h-[550px] object-cover" />
                 </div>
                 
-                {/* Right Floating Vertical Card (Image 1) */}
-                <div className="absolute right-0 top-1/2 -translate-y-1/2 bg-slate-950 p-10 rounded-[3rem] text-white shadow-[0_50px_100px_rgba(0,0,0,0.4)] border border-white/10 w-[45%] z-20">
+                {/* Right Floating Vertical Card (Image 2 White Theme) */}
+                <div className="absolute right-0 top-1/2 -translate-y-1/2 bg-white p-10 lg:p-12 rounded-[3rem] shadow-[0_40px_100px_rgba(0,0,0,0.1)] border border-slate-100 w-[48%] z-20 reveal">
                   <div className="space-y-10">
                     {[
-                      { t: 'Factory Direct', d: 'In-House Production' },
-                      { t: '18+ Years', d: 'Industry Experience' },
-                      { t: 'ISO Quality', d: 'Certified Processes' },
-                      { t: 'Global Delivery', d: 'Reliable Worldwide Supply' }
+                      { 
+                        t: 'Factory Direct', 
+                        d: 'In-House Production', 
+                        icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M3 21h18M3 7v1h18V7l-2-4H5L3 7zM19 8v10M5 8v10M9 8v10M15 8v10"/></svg> 
+                      },
+                      { 
+                        t: '18+ Years', 
+                        d: 'Industry Experience', 
+                        icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 
+                      },
+                      { 
+                        t: 'ISO Quality', 
+                        d: 'Certified Processes', 
+                        icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> 
+                      },
+                      { 
+                        t: 'Global Delivery', 
+                        d: 'Reliable Worldwide Supply', 
+                        icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg> 
+                      }
                     ].map((item, idx) => (
-                      <div key={idx} className="border-l-4 border-blue-500 pl-6">
-                        <div className="text-blue-400 font-black text-sm uppercase tracking-widest mb-1">{item.t}</div>
-                        <div className="text-white font-bold text-base leading-tight">{item.d}</div>
+                      <div key={idx} className="flex items-center gap-6">
+                        <div className="w-14 h-14 bg-blue-50 rounded-full flex items-center justify-center shrink-0 text-blue-600">
+                          {item.icon}
+                        </div>
+                        <div>
+                          <div className="text-slate-900 font-black text-[13px] uppercase tracking-widest mb-1">{item.t}</div>
+                          <div className="text-slate-400 font-bold text-xs leading-tight">{item.d}</div>
+                        </div>
                       </div>
                     ))}
                   </div>
