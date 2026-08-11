@@ -182,7 +182,7 @@ export default function Home() {
         {/* 3. QUALITY & COMPLIANCE (Refined Image 2 Proportions) */}
         <section className="section bg-slate-50 border-y border-slate-100 py-20 lg:py-32 overflow-hidden">
           <div className="container">
-            <div className="grid grid-cols-1 lg:grid-cols-[0.85fr_1.15fr] gap-24 lg:gap-32 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-[38%_62%] gap-24 lg:gap-32 items-center">
               <div className="reveal max-w-xl">
                 <div className="text-blue-600 font-black uppercase text-[10px] tracking-[0.4em] mb-4 border-l-2 border-blue-600 pl-4">Quality Assurance</div>
                 <h2 className="mb-6 uppercase tracking-tighter text-slate-900 leading-[0.95] text-5xl lg:text-6xl">Global <br/>Compliance & <br/>Quality Standards</h2>
@@ -208,7 +208,7 @@ export default function Home() {
                 </div>
                 
                 {/* Right Floating Vertical Card (Image 2 Proportions) */}
-                <div className="absolute right-0 top-1/2 -translate-y-1/2 bg-white p-10 lg:p-14 rounded-[3.5rem] shadow-[0_60px_120px_rgba(10,39,84,0.12)] border border-white w-[46%] z-20">
+                <div className="absolute right-0 top-1/2 -translate-y-1/2 bg-white p-10 lg:p-14 rounded-[3.5rem] shadow-[0_60px_120px_rgba(10,39,84,0.12)] border border-white w-[40%] z-20">
                   <div className="space-y-12">
                     {[
                       { 
