@@ -14,21 +14,21 @@ export default function Footer() {
   return (
     <footer className="bg-white border-t border-slate-100 pt-32 pb-16">
       <div className="container">
-        <div className="flex flex-col lg:flex-row items-start justify-between gap-24 mb-32">
-          {/* 1. Extreme Left Branding Section (approx 1/4) */}
-          <div className="lg:w-1/4">
+        <div className="flex flex-col lg:flex-row items-start justify-between gap-16 lg:gap-32 mb-32">
+          {/* Column 1: Extreme Left Logo Section (1/3) */}
+          <div className="lg:w-1/3">
             <Link href="/" className="inline-block mb-12">
-              <img src="/assets/images/logo-correct.jpg" alt="ZYD Signage" className="max-h-12 opacity-95 transition-all hover:opacity-100" />
+              <img src="/assets/images/logo-correct.jpg" alt="ZYD Signage" className="max-h-12 opacity-95 hover:opacity-100 transition-all" />
             </Link>
-            <p className="text-slate-400 text-[10px] font-black leading-loose uppercase tracking-[0.4em] max-w-[240px]">
-              The Global Benchmark in Architectural-Grade Wayfinding & Fabrication.
+            <p className="text-slate-400 text-xs font-black leading-loose uppercase tracking-[0.4em] max-w-[280px]">
+              Global Benchmark in Architectural Signage & Precision Fabrication.
             </p>
           </div>
 
-          {/* 2. Right Info Sections Grid (Concentrated 4 Columns) */}
+          {/* Right Section: Concentrated grid (2/3) */}
           <div className="lg:w-2/3 grid grid-cols-2 md:grid-cols-4 gap-12 lg:gap-16">
             <div>
-              <h4 className="text-blue-950 font-black text-[11px] uppercase tracking-[0.3em] mb-12 border-b-2 border-slate-100 pb-4 inline-block">Solutions</h4>
+              <h4 className="text-blue-950 font-black text-[11px] uppercase tracking-[0.3em] mb-12 border-b-2 border-slate-100 pb-4 inline-block">Product Lines</h4>
               <ul className="space-y-8">
                 <li><Link href="/products/custom-halo-lit-letters" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Halo-Lit Letters</Link></li>
                 <li><Link href="/products/ultra-slim-led-light-box" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">LED Light Boxes</Link></li>
@@ -41,7 +41,7 @@ export default function Footer() {
               <h4 className="text-blue-950 font-black text-[11px] uppercase tracking-[0.3em] mb-12 border-b-2 border-slate-100 pb-4 inline-block">Corporate</h4>
               <ul className="space-y-8">
                 <li><Link href="/about" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Production Base</Link></li>
-                <li><Link href="/projects" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Case Studies</Link></li>
+                <li><Link href="/projects" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Case Portfolio</Link></li>
                 <li><Link href="/faq" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Resources</Link></li>
                 <li><Link href="/contact" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Consult Now</Link></li>
               </ul>
@@ -57,7 +57,7 @@ export default function Footer() {
               </ul>
             </div>
 
-            <div>
+            <div className="lg:pl-4">
               <h4 className="text-blue-950 font-black text-[11px] uppercase tracking-[0.3em] mb-12 border-b-2 border-slate-100 pb-4 inline-block">B2B Connect</h4>
               <div className="space-y-8">
                 <div>
@@ -65,7 +65,7 @@ export default function Footer() {
                   <a href={`mailto:${siteConfig.salesEmail}`} className="text-xs text-slate-500 hover:text-blue-600 font-bold block transition-all break-all">{siteConfig.salesEmail}</a>
                 </div>
                 <div>
-                  <div className="text-[10px] text-slate-400 font-black uppercase tracking-[0.2em] mb-2">Lead Engineer</div>
+                  <div className="text-[10px] text-slate-400 font-black uppercase tracking-[0.2em] mb-2">Technical Lead</div>
                   <p className="text-xs text-slate-500 font-black tracking-widest block">+{siteConfig.whatsappNumber}</p>
                 </div>
               </div>
