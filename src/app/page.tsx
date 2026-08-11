@@ -78,77 +78,70 @@ export default function Home() {
   return (
     <>
       <main id="main">
-        {/* 1. MEGA HERO SECTION */}
+        {/* 1. MEGA HERO SECTION (Image 2) */}
         <section className="hero relative min-h-screen flex items-center bg-slate-950 text-white overflow-hidden py-32">
           <div className="absolute inset-0 z-0">
-            <img src="/assets/images/hero-bg-seafront.png" alt="ZYD Factory" className="w-full h-full object-cover opacity-70" />
-            <div className="hero-overlay-dark opacity-60"></div>
+            <img src="/assets/images/hero-bg-factory-aerial.jpg" alt="ZYD Factory Aerial" className="w-full h-full object-cover opacity-70" />
+            <div className="hero-overlay-dark opacity-40"></div>
           </div>
           
           <div className="max-w-[1600px] w-[95%] mx-auto relative z-10">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-32 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-32 items-center mb-24">
               <div className="hero-copy reveal">
-                <div className="text-blue-400 font-bold tracking-[0.5em] mb-10 uppercase text-sm border-l-4 border-blue-600 pl-6">
-                  PRECISION ENGINEERING SINCE 2006
-                </div>
-                <h1 className="text-6xl lg:text-[140px] font-black leading-none tracking-tighter mb-12 uppercase drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
-                  CRAFTING <br/>
-                  <span className="text-blue-500 italic">TRUSTED</span> <br/>
-                  SIGNAGE
+                <h1 className="text-4xl lg:text-6xl font-black leading-tight mb-8 uppercase text-white">
+                  Premium Custom Signage <br/>
+                  Solutions Direct from Factory.
                 </h1>
-                <p className="text-2xl text-slate-300 mb-16 max-w-xl leading-relaxed font-medium opacity-90">
-                  Global manufacturing leader delivering architectural-grade wayfinding and custom branding for high-end B2B projects.
+                <p className="text-xl lg:text-2xl text-slate-200 mb-12 max-w-xl leading-relaxed font-medium">
+                  20 Years Expertise. We provide One-Stop Signage Systems for Hotels, Commercial Spaces, and Industrial Parks. Durable in all environments.
                 </p>
-                <div className="flex flex-wrap gap-8">
-                  <Link href="/contact" className="button button-green-base px-12 py-5 text-xl">
-                    Get a Free Quote
+                <div className="flex flex-wrap gap-6">
+                  <Link href="/contact" className="button button-green-base px-10 py-5 text-lg rounded-md">
+                    Get My Free 3D Mockup & Quote →
                   </Link>
-                  <Link href="/products" className="px-12 py-5 border-2 border-white/20 rounded-full font-black uppercase text-sm hover:bg-white hover:text-slate-950 transition-all flex items-center justify-center">
-                    Browse catalog
+                  <Link href="/products" className="px-10 py-5 border-2 border-white/20 rounded-md font-black uppercase text-sm hover:bg-white hover:text-slate-950 transition-all flex items-center justify-center">
+                    Explore Solutions
                   </Link>
                 </div>
               </div>
 
-              {/* RIGHT SIDE: FEATURED INDUSTRY CARD (Medical Care) */}
+              {/* RIGHT CARD: SIGNAGE SOLUTIONS */}
               <div className="reveal relative hidden lg:block">
-                <div className="bg-[#0b1a33]/92 backdrop-blur-3xl p-12 rounded-[3rem] border border-white/10 shadow-[0_80px_150px_rgba(0,0,0,0.6)] relative group overflow-hidden scale-[0.85] origin-right">
+                <div className="bg-[#0b1a33]/80 backdrop-blur-2xl p-12 rounded-[2rem] border border-white/10 shadow-[0_80px_150px_rgba(0,0,0,0.6)] relative group overflow-hidden">
                   <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/10 blur-[100px] rounded-full -translate-y-1/2 translate-x-1/2"></div>
                   
                   <div className="mb-8 relative z-10">
-                    <div className="text-blue-400 font-black text-[11px] uppercase tracking-[0.3em] mb-4 italic">Featured Industry</div>
-                    <h3 className="text-4xl font-black text-white mb-6 uppercase tracking-tighter leading-tight">Medical Care <br/>Signage System</h3>
-                    <p className="text-slate-400 text-sm leading-relaxed mb-6 font-medium max-w-sm">
-                      Advanced antibacterial wayfinding and identification solutions for healthcare centers. Specialized manufacturing for sterile environments.
+                    <div className="text-green-400 font-black text-[12px] uppercase tracking-[0.3em] mb-4">SIGNAGE SOLUTIONS</div>
+                    <h3 className="text-4xl font-black text-white mb-6 uppercase tracking-tighter">Custom Signage <br/>Systems</h3>
+                    <p className="text-slate-300 text-base leading-relaxed mb-8 font-medium">
+                      Wayfinding, illuminated signs, and outdoor signs for commercial projects.
                     </p>
-                    <div className="text-blue-300 text-xs font-bold uppercase tracking-widest border-l-2 border-blue-500/50 pl-4 py-1">
-                      ADA Compliant &middot; Antimicrobial Finish &middot; Global Delivery
-                    </div>
-                  </div>
-
-                  <div className="overflow-hidden rounded-2xl border border-white/5 mb-8 h-56 relative z-10">
-                    <img src="/assets/images/hero-medical.jpg" alt="Medical Signage" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" />
-                  </div>
-
-                  <div className="flex justify-between items-end relative z-10">
-                    <Link href="/products/medical-care-signage" className="text-blue-400 font-black text-sm uppercase tracking-widest hover:text-blue-300 transition-colors flex items-center gap-2">
-                      VIEW DETAILS <span className="text-lg">→</span>
-                    </Link>
-                    <div className="text-[10px] text-slate-500 font-bold italic flex gap-4 uppercase tracking-tighter">
-                      <span>Custom Design</span>
-                      <span>Factory Direct</span>
-                      <span>Worldwide Delivery</span>
+                    
+                    <div className="flex flex-wrap gap-3">
+                      {['Wayfinding', 'Illuminated Signs', 'Outdoor Signs'].map((chip, idx) => (
+                        <span key={idx} className="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-xs font-bold text-slate-200 flex items-center gap-2">
+                          <span className="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
+                          {chip}
+                        </span>
+                      ))}
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Statistics Bar */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-16 pt-20 mt-32 border-t border-white/10 max-w-6xl text-white reveal">
-              <div><strong className="block text-6xl lg:text-7xl font-black italic mb-2 text-blue-400 tracking-tighter drop-shadow-sm leading-none">20,000</strong><span className="text-xs uppercase font-black tracking-widest text-slate-400">SQM Factory</span></div>
-              <div><strong className="block text-6xl lg:text-7xl font-black italic mb-2 text-blue-400 tracking-tighter drop-shadow-sm leading-none">18+</strong><span className="text-xs uppercase font-black tracking-widest text-slate-400">Years Exp.</span></div>
-              <div><strong className="block text-6xl lg:text-7xl font-black italic mb-2 text-blue-400 tracking-tighter drop-shadow-sm leading-none">50+</strong><span className="text-xs uppercase font-black tracking-widest text-slate-400">Countries</span></div>
-              <div><strong className="block text-6xl lg:text-7xl font-black italic mb-2 text-blue-400 tracking-tighter drop-shadow-sm leading-none">DDP</strong><span className="text-xs uppercase font-black tracking-widest text-slate-400">Global Shipping</span></div>
+            {/* Statistics Bar (Image 2) */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-16 py-12 border-y border-white/10 max-w-6xl text-white reveal mt-auto">
+              {[
+                { val: 'EST. 2006' },
+                { val: '20,000m² PRODUCTION BASE' },
+                { val: 'GLOBAL DDP SHIPPING' },
+                { val: 'QUALITY GUARANTEE' }
+              ].map((item, idx) => (
+                <div key={idx} className="text-center md:text-left border-l border-white/5 pl-8 first:border-none">
+                  <strong className="block text-xl lg:text-2xl font-black tracking-tight text-white uppercase">{item.val}</strong>
+                </div>
+              ))}
             </div>
           </div>
         </section>
@@ -182,42 +175,48 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 3. QUALITY & COMPLIANCE */}
-        <section className="section bg-slate-50 border-y border-slate-100 py-20 lg:py-24 overflow-hidden">
+        {/* 3. QUALITY & COMPLIANCE (Image 1) */}
+        <section className="section bg-slate-50 border-y border-slate-100 py-20 lg:py-32 overflow-hidden">
           <div className="container">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 lg:gap-32 items-center">
               <div className="reveal max-w-xl">
-                <h2 className="mb-6 uppercase tracking-tighter">Global Compliance & <br/>Quality Standards</h2>
-                <p className="text-slate-600 mb-10 text-base leading-relaxed">We adhere to the highest international certifications to guarantee structural integrity and electrical safety in any environment.</p>
-                <div className="grid grid-cols-2 gap-4">
+                <div className="text-blue-600 font-bold uppercase text-xs tracking-widest mb-4">Quality Assurance</div>
+                <h2 className="mb-6 uppercase tracking-tighter text-slate-900 leading-tight">Global Compliance & <br/>Quality Standards</h2>
+                <p className="text-slate-600 mb-10 text-lg leading-relaxed font-medium">We adhere to the highest international certifications to guarantee structural integrity and electrical safety in any environment.</p>
+                <div className="grid grid-cols-2 gap-6">
                   {[
                     { label: 'ISO 9001:2015', desc: 'Quality Management' },
                     { label: 'CE Certified', desc: 'Electrical Compliance' },
                     { label: 'SGS Inspected', desc: 'Factory Standards' },
                     { label: 'UL Components', desc: 'Premium Components' },
                   ].map((cert, idx) => (
-                    <div key={idx} className="p-4 bg-white border border-slate-100 rounded-lg shadow-sm">
-                      <div className="font-black text-blue-600 text-[12px] mb-0.5">{cert.label}</div>
-                      <div className="text-[10px] font-bold uppercase tracking-widest text-slate-400">{cert.desc}</div>
+                    <div key={idx} className="p-6 bg-white border border-slate-100 rounded-2xl shadow-sm">
+                      <div className="font-black text-blue-600 text-base mb-1">{cert.label}</div>
+                      <div className="text-[11px] font-bold uppercase tracking-widest text-slate-400">{cert.desc}</div>
                     </div>
                   ))}
                 </div>
               </div>
-              <div className="reveal relative">
-                <div className="rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white max-w-lg ml-auto">
-                  <img src="/assets/images/factory-overview.jpg" alt="Factory QC" className="w-full h-[400px] object-cover" />
+              
+              <div className="reveal relative flex justify-end">
+                <div className="rounded-[3rem] overflow-hidden shadow-3xl border-8 border-white w-[85%]">
+                  <img src="/assets/images/factory-overview.jpg" alt="Factory QC" className="w-full h-[550px] object-cover" />
                 </div>
-                {/* MEGA BADGE: 320px Scale - Re-positioned to prevent blocking */}
-                <div className="absolute -bottom-64 -right-64 bg-slate-950 p-48 lg:p-64 rounded-[20rem] text-white shadow-[0_150px_300px_rgba(0,0,0,0.9),0_50px_0_#05070a] border-[32px] border-blue-500/10 transition-all duration-1000 hover:scale-[1.08] group/badge overflow-hidden hidden lg:block">
-                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.3)_0%,transparent_80%)] blur-[150px] opacity-80 group-hover/badge:opacity-100 transition-opacity"></div>
-                  <div className="absolute -top-full -left-full w-[200%] h-[200%] bg-gradient-to-br from-blue-400/20 via-transparent to-transparent blur-[150px] rotate-45 animate-pulse"></div>
-                  <strong className="relative z-10 text-[320px] font-black block text-transparent bg-clip-text bg-gradient-to-b from-white via-blue-400 to-blue-900 italic mb-12 tracking-tighter leading-none drop-shadow-[0_60px_120px_rgba(30,144,255,0.8)] text-center">100%</strong>
-                  <div className="relative z-10 space-y-8 text-center translate-y-[-20px]">
-                    <span className="text-5xl lg:text-6xl uppercase font-black tracking-[1.2em] text-white block ml-[1.2em] drop-shadow-lg">In-House</span>
-                    <span className="text-3xl lg:text-4xl uppercase font-black tracking-[1em] text-slate-500 block opacity-70 ml-[1em]">Manufacturing</span>
-                  </div>
-                  <div className="relative z-10 mt-24 flex justify-center">
-                    <div className="h-3 w-80 bg-gradient-to-r from-transparent via-blue-500/80 to-transparent opacity-80 blur-[2px]"></div>
+                
+                {/* Right Floating Vertical Card (Image 1) */}
+                <div className="absolute right-0 top-1/2 -translate-y-1/2 bg-slate-950 p-10 rounded-[3rem] text-white shadow-[0_50px_100px_rgba(0,0,0,0.4)] border border-white/10 w-[45%] z-20">
+                  <div className="space-y-10">
+                    {[
+                      { t: 'Factory Direct', d: 'In-House Production' },
+                      { t: '18+ Years', d: 'Industry Experience' },
+                      { t: 'ISO Quality', d: 'Certified Processes' },
+                      { t: 'Global Delivery', d: 'Reliable Worldwide Supply' }
+                    ].map((item, idx) => (
+                      <div key={idx} className="border-l-4 border-blue-500 pl-6">
+                        <div className="text-blue-400 font-black text-sm uppercase tracking-widest mb-1">{item.t}</div>
+                        <div className="text-white font-bold text-base leading-tight">{item.d}</div>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>
