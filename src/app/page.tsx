@@ -81,8 +81,8 @@ export default function Home() {
         {/* 1. MEGA HERO SECTION (Image 2) */}
         <section className="hero relative min-h-screen flex items-center bg-slate-950 text-white overflow-hidden py-32">
           <div className="absolute inset-0 z-0">
-            <img src="/assets/images/hero-bg-factory-aerial.jpg" alt="ZYD Factory Aerial" className="w-full h-full object-cover opacity-70" />
-            <div className="hero-overlay-dark opacity-40"></div>
+            <img src="/assets/images/hero-bg-factory-aerial.jpg" alt="ZYD Factory Aerial" className="w-full h-full object-cover opacity-80" />
+            <div className="hero-overlay-dark opacity-30"></div>
           </div>
           
           <div className="max-w-[1600px] w-[95%] mx-auto relative z-10">
