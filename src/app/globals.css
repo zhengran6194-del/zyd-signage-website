@@ -132,7 +132,7 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
 .button-green-base:hover { transform: translateY(-1px); box-shadow: 0 5px 0 #065f46; }
 .button-green-base:active { transform: translateY(3px); box-shadow: 0 1px 0 #065f46; }
 
-/* WhatsApp Floating Icon - Small & Clean */
+/* WhatsApp Floating Icon - Small & Clean with Ripple Animation */
 .floating-whatsapp {
   position: fixed;
   left: 30px;
@@ -140,12 +140,42 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
   z-index: 1000;
   transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+
+.floating-whatsapp::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  background-color: var(--green);
+  border-radius: 50%;
+  z-index: -1;
+  animation: ripple 2s infinite;
+  opacity: 0;
+}
+
+@keyframes ripple {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.6);
+    opacity: 0;
+  }
+}
+
 .floating-whatsapp img { 
   width: 150px; 
   height: 150px; 
   filter: drop-shadow(0 15px 30px rgba(0,0,0,0.25)); 
+  display: block;
 }
+
 .floating-whatsapp:hover { transform: scale(1.1); }
+.floating-whatsapp:active { transform: scale(0.9); }
 
 /* Animation Classes */
 .reveal {

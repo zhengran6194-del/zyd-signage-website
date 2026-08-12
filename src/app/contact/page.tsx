@@ -1,11 +1,43 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import { siteConfig } from '@/config/site';
 
 export default function ContactPage() {
-  const handleWhatsApp = () => {
-    const url = `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent("Hi Aaron, I would like to request a quote for a signage project.")}`;
+  const [formData, setFormData] = useState({
+    fullName: '',
+    email: '',
+    company: '',
+    details: ''
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    const { fullName, email, company, details } = formData;
+    
+    if (!fullName || !details) {
+      alert("Please fill in your name and project details.");
+      return;
+    }
+
+    const message = `*Project Inquiry from ZYD Website*\n\n` +
+      `*Name:* ${fullName}\n` +
+      `*Email:* ${email || 'N/A'}\n` +
+      `*Company:* ${company || 'N/A'}\n` +
+      `*Details:* ${details}`;
+
+    const whatsappUrl = `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
+  const handleDirectWhatsApp = () => {
+    const url = `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent("Hi Aaron, I would like to chat about a signage project.")}`;
     window.open(url, '_blank');
   };
 
@@ -26,26 +58,56 @@ export default function ContactPage() {
             {/* Contact Form */}
             <div className="bg-white p-12 lg:p-16 rounded-[4rem] shadow-2xl border border-slate-100 reveal visible">
               <h2 className="text-3xl font-black mb-10 uppercase tracking-tight">Project Inquiry</h2>
-              <form className="space-y-8" onSubmit={(e) => e.preventDefault()}>
+              <form className="space-y-8" onSubmit={handleSubmit}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div className="space-y-3">
                     <label className="text-sm font-black uppercase tracking-widest text-slate-400 pl-2">Full Name</label>
-                    <input type="text" placeholder="John Doe" className="w-full px-8 py-5 rounded-3xl bg-slate-50 border-none focus:ring-4 focus:ring-blue-500/10 font-bold transition-all" />
+                    <input 
+                      type="text" 
+                      name="fullName"
+                      value={formData.fullName}
+                      onChange={handleChange}
+                      placeholder="John Doe" 
+                      className="w-full px-8 py-5 rounded-3xl bg-slate-50 border-none focus:ring-4 focus:ring-blue-500/10 font-bold transition-all" 
+                      required
+                    />
                   </div>
                   <div className="space-y-3">
                     <label className="text-sm font-black uppercase tracking-widest text-slate-400 pl-2">Email Address</label>
-                    <input type="email" placeholder="john@example.com" className="w-full px-8 py-5 rounded-3xl bg-slate-50 border-none focus:ring-4 focus:ring-blue-500/10 font-bold transition-all" />
+                    <input 
+                      type="email" 
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      placeholder="john@example.com" 
+                      className="w-full px-8 py-5 rounded-3xl bg-slate-50 border-none focus:ring-4 focus:ring-blue-500/10 font-bold transition-all" 
+                    />
                   </div>
                 </div>
                 <div className="space-y-3">
                   <label className="text-sm font-black uppercase tracking-widest text-slate-400 pl-2">Company Name</label>
-                  <input type="text" placeholder="Global Signage Corp" className="w-full px-8 py-5 rounded-3xl bg-slate-50 border-none focus:ring-4 focus:ring-blue-500/10 font-bold transition-all" />
+                  <input 
+                    type="text" 
+                    name="company"
+                    value={formData.company}
+                    onChange={handleChange}
+                    placeholder="Global Signage Corp" 
+                    className="w-full px-8 py-5 rounded-3xl bg-slate-50 border-none focus:ring-4 focus:ring-blue-500/10 font-bold transition-all" 
+                  />
                 </div>
                 <div className="space-y-3">
                   <label className="text-sm font-black uppercase tracking-widest text-slate-400 pl-2">Project Details</label>
-                  <textarea rows={5} placeholder="Describe your signage needs, dimensions, and installation environment..." className="w-full px-8 py-5 rounded-3xl bg-slate-50 border-none focus:ring-4 focus:ring-blue-500/10 font-bold transition-all resize-none"></textarea>
+                  <textarea 
+                    name="details"
+                    value={formData.details}
+                    onChange={handleChange}
+                    rows={5} 
+                    placeholder="Describe your signage needs, dimensions, and installation environment..." 
+                    className="w-full px-8 py-5 rounded-3xl bg-slate-50 border-none focus:ring-4 focus:ring-blue-500/10 font-bold transition-all resize-none"
+                    required
+                  ></textarea>
                 </div>
-                <button type="button" className="button button-green-base w-full py-8 text-white font-black text-2xl rounded-full transition-all">
+                <button type="submit" className="button button-green-base w-full py-8 text-white font-black text-2xl rounded-full transition-all">
                   SUBMIT INQUIRY
                 </button>
               </form>
@@ -73,7 +135,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <div className="text-xs font-black uppercase tracking-[0.3em] text-slate-500 mb-1">WhatsApp Chat</div>
-                      <button onClick={handleWhatsApp} className="text-xl font-bold hover:text-green-400 transition-all">+{siteConfig.whatsappNumber} ({siteConfig.contactPerson})</button>
+                      <button onClick={handleDirectWhatsApp} className="text-xl font-bold hover:text-green-400 transition-all">+{siteConfig.whatsappNumber} ({siteConfig.contactPerson})</button>
                     </div>
                   </div>
                 </div>
