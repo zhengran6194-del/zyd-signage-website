@@ -11,6 +11,11 @@ export default function Footer() {
     window.open(url, '_blank');
   };
 
+  const scrollToTop = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <footer className="bg-white border-t border-slate-100 pt-32 pb-16">
       <div className="container">
@@ -78,7 +83,11 @@ export default function Footer() {
             <span className="h-px w-12 bg-slate-100 hidden md:block"></span>
             <span className="text-[10px] text-slate-300 font-black uppercase tracking-[0.4em]">Global DDP Certified</span>
           </div>
-          <a href="#top" className="text-[10px] text-blue-600 font-black uppercase tracking-widest hover:text-blue-800 transition-all group flex items-center gap-4">
+          <a 
+            href="#top" 
+            onClick={scrollToTop}
+            className="text-[10px] text-blue-600 font-black uppercase tracking-widest hover:text-blue-800 transition-all group flex items-center gap-4"
+          >
             Back to top 
             <span className="group-hover:-translate-y-2 transition-transform duration-300">↑</span>
           </a>
