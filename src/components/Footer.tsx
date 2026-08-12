@@ -50,10 +50,9 @@ export default function Footer() {
             <div>
               <h4 className="text-blue-950 font-black text-[11px] uppercase tracking-[0.3em] mb-12 border-b-2 border-slate-100 pb-4 inline-block">Social Identity</h4>
               <ul className="space-y-8">
-                <li className="text-sm text-slate-300 font-black uppercase tracking-[0.2em] cursor-default hover:text-slate-400 transition-colors">LinkedIn</li>
-                <li className="text-sm text-slate-300 font-black uppercase tracking-[0.2em] cursor-default hover:text-slate-400 transition-colors">Facebook</li>
-                <li className="text-sm text-slate-300 font-black uppercase tracking-[0.2em] cursor-default hover:text-slate-400 transition-colors">Instagram</li>
-                <li className="text-sm text-slate-300 font-black uppercase tracking-[0.2em] cursor-default hover:text-slate-400 transition-colors">YouTube</li>
+                <li><a href={siteConfig.links.linkedin} target="_blank" rel="noopener noreferrer" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all">LinkedIn</a></li>
+                <li><a href={siteConfig.links.twitter} target="_blank" rel="noopener noreferrer" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all">Twitter (X)</a></li>
+                <li><a href={siteConfig.links.tiktok} target="_blank" rel="noopener noreferrer" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all">TikTok</a></li>
               </ul>
             </div>
 
