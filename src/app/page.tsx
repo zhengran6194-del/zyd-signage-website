@@ -112,7 +112,7 @@ export default function Home() {
                   
                   <div className="mb-8 relative z-10">
                     <div className="text-green-400 font-black text-[12px] uppercase tracking-[0.3em] mb-4">SIGNAGE SOLUTIONS</div>
-                    <h3 className="text-4xl font-black text-white mb-6 uppercase tracking-tighter leading-tight">Custom Signage <br/>Systems</h3>
+                    <h3 className="text-4xl font-black text-white mb-6 uppercase tracking-tighter leading-tight">Commercial <br/>Signage Solutions</h3>
                     <p className="text-slate-300 text-base leading-relaxed mb-8 font-medium">
                       Wayfinding, illuminated signs, and outdoor signs for commercial projects.
                     </p>
@@ -305,7 +305,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

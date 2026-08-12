@@ -18,7 +18,7 @@ export default function Footer() {
           {/* Column 1: Extreme Left Logo Section (1/3) */}
           <div className="lg:w-1/3">
             <Link href="/" className="inline-block mb-12">
-              <img src="/assets/images/logo-correct.jpg" alt="ZYD Signage" className="h-[120px] opacity-95 hover:opacity-100 transition-all" />
+              <img src="/assets/images/logo-correct.jpg" alt="ZYD Signage" className="h-[160px] opacity-95 hover:opacity-100 transition-all" />
             </Link>
             <p className="text-slate-400 text-xs font-black leading-loose uppercase tracking-[0.4em] max-w-[280px]">
               Global Benchmark in Architectural Signage & Precision Fabrication.

@@ -52,8 +52,8 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
 
 /* Header: Mega Scale, High-End */
 .site-header {
-  min-height: 150px; /* ULTRA SCALE-UP per Zheng zong's request */
-  height: 150px;
+  min-height: 200px; /* URGENT SCALE-UP per TL request */
+  height: 200px;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -74,7 +74,7 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
 }
 
 .brand img { 
-  max-height: 120px; /* Zheng zong request: Ultra scale matching red box */
+  max-height: 160px; /* URGENT SCALE-UP per TL request */
   width: auto; 
   object-fit: contain; 
 }
