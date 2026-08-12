@@ -43,10 +43,10 @@ const categories = [
 ];
 
 const guides = [
-  { category: 'Buying Guide', title: 'How Much Do Custom Channel Letters Cost?', date: 'Aug 24, 2026' },
-  { category: 'Technical Guide', title: 'Front-Lit vs Halo-Lit Channel Letters', date: 'Aug 20, 2026' },
-  { category: 'Buying Guide', title: 'How to Choose the Right Sign for Your Business', date: 'Aug 15, 2026' },
-  { category: 'Materials', title: '304 Stainless Steel vs Galvanized Steel for Outdoor Signs', date: 'Aug 10, 2026' },
+  { category: 'Buying Guide', title: 'How Much Do Custom Channel Letters Cost?', date: 'Aug 24, 2026', image: 'faq-guide-cost.webp' },
+  { category: 'Technical Guide', title: 'Front-Lit vs Halo-Lit Channel Letters', date: 'Aug 20, 2026', image: 'faq-guide-lighting.webp' },
+  { category: 'Buying Guide', title: 'How to Choose the Right Sign for Your Business', date: 'Aug 15, 2026', image: 'faq-guide-selection.webp' },
+  { category: 'Materials', title: '304 Stainless Steel vs Galvanized Steel for Outdoor Signs', date: 'Aug 10, 2026', image: 'faq-guide-materials.webp' },
 ];
 
 const faqs = [
@@ -120,10 +120,12 @@ export default function FAQPage() {
             {guides.map((guide, i) => (
               <div key={i} className="reveal group cursor-pointer">
                 <div className="bg-slate-100 rounded-[2rem] h-48 mb-6 overflow-hidden relative">
+                  <img 
+                    src={`/assets/images/${guide.image}`} 
+                    alt={guide.title} 
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
                   <div className="absolute inset-0 bg-blue-600/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                  <div className="flex items-center justify-center h-full text-slate-400 group-hover:text-blue-500 transition-colors">
-                    <BookIcon />
-                  </div>
                 </div>
                 <div className="text-[10px] font-black uppercase tracking-widest text-blue-600 mb-3">{guide.category}</div>
                 <h4 className="text-lg font-black text-slate-900 mb-3 leading-tight group-hover:text-blue-600 transition-colors">{guide.title}</h4>
