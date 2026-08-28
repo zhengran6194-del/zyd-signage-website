@@ -293,22 +293,22 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
               {[
-                { title: 'Halo-Lit Letters', img: 'cat-illuminated.webp', id: 'custom-halo-lit-letters' },
-                { title: 'Wayfinding Systems', img: 'hero-wayfinding.png', id: 'architectural-wayfinding-system' },
-                { title: 'Monument Signs', img: 'cat-outdoor.webp', id: 'outdoor-pylon-monument-sign' },
-                { title: 'LED Light Boxes', img: 'cat-lightbox.webp', id: 'ultra-slim-led-light-box' },
-                { title: 'LED Neon Signs', img: 'cat-neon.webp', id: 'custom-led-neon-sign' },
-                { title: 'Metal & Acrylic Signs', img: 'cat-metal.webp', id: 'metal-acrylic-logo-sign' },
-                { title: 'Landscape & Furniture', img: 'landscape-bench.jpg', id: 'custom-landscape-furniture' },
-                { title: 'Complete Systems', img: 'cat-system.webp', id: 'complete-signage-system' },
+                { title: 'Halo-Lit Letters', img: 'cat-illuminated.webp' },
+                { title: 'Wayfinding Systems', img: 'hero-wayfinding.png' },
+                { title: 'Monument Signs', img: 'cat-outdoor.webp' },
+                { title: 'LED Light Boxes', img: 'cat-lightbox.webp' },
+                { title: 'LED Neon Signs', img: 'cat-neon.webp' },
+                { title: 'Metal & Acrylic Signs', img: 'cat-metal.webp' },
+                { title: 'Landscape & Furniture', img: 'landscape-bench.jpg' },
+                { title: 'Complete Systems', img: 'cat-system.webp' },
               ].map((p, i) => (
-                <div key={i} className="reveal group">
+                <Link href="/products" key={i} className="reveal group block">
                   <div className="overflow-hidden rounded-xl mb-4 h-60 bg-slate-100 border border-slate-50">
                     <img src={`/assets/images/${p.img}`} alt={p.title} width={1200} height={800} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                   </div>
                   <h4 className="font-black text-slate-900 mb-1 uppercase text-xs">{p.title}</h4>
-                  <Link href={`/products/${p.id}`} className="text-[10px] font-bold text-slate-400 uppercase tracking-widest group-hover:text-blue-600 transition-colors">Details</Link>
-                </div>
+                  <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest group-hover:text-blue-600 transition-colors">Details</span>
+                </Link>
               ))}
             </div>
           </div>

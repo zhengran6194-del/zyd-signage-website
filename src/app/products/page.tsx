@@ -30,7 +30,7 @@ export default function ProductsPage() {
     <>
       <main id="main" className="bg-slate-50 min-h-screen">
         <section className="py-24 bg-slate-900 text-white">
-          <div className="container text-center reveal">
+          <div className="max-w-[1600px] w-[95%] mx-auto text-center reveal">
             <div className="eyebrow text-blue-400 font-bold tracking-[0.3em] uppercase mb-4 text-xs">Manufacturing Excellence</div>
             <h1 className="mb-6 uppercase">Signage Solutions</h1>
             <p className="text-lg text-slate-400 max-w-2xl mx-auto font-medium">Factory-direct specialized manufacturing for global architectural projects.</p>
@@ -38,8 +38,8 @@ export default function ProductsPage() {
         </section>
 
         <section className="section">
-          <div className="container">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+          <div className="max-w-[1600px] w-[95%] mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
             {products.map((p, i) => (
               <div key={i} className="reveal group bg-white border border-slate-100 p-6 rounded-[1.5rem] shadow-sm hover:shadow-xl transition-all duration-300">
                 <div className="overflow-hidden rounded-[1rem] mb-6 h-72 bg-slate-100 border border-slate-50">
