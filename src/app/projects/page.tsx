@@ -18,7 +18,7 @@ export default function ProjectsPage() {
             ].map((proj, idx) => (
               <div key={idx} className="reveal bg-slate-50 rounded-[2rem] overflow-hidden border border-slate-100 group hover:shadow-2xl transition-all">
                 <div className="h-80 overflow-hidden">
-                  <img src={`/assets/images/${proj.img}`} alt={proj.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                  <img src={`/assets/images/${proj.img}`} alt={proj.title} width={1200} height={800} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                 </div>
                 <div className="p-10">
                   <div className="text-blue-600 font-black text-[10px] uppercase tracking-[0.3em] mb-3 italic">{proj.tag}</div>

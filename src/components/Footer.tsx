@@ -23,7 +23,7 @@ export default function Footer() {
           {/* Column 1: Extreme Left Logo Section (1/3) */}
           <div className="lg:w-1/3">
             <Link href="/" className="inline-block mb-12">
-              <img src="/assets/images/logo-correct.jpg" alt="ZYD Signage" className="h-[160px] opacity-95 hover:opacity-100 transition-all" />
+              <img src="/assets/images/logo-correct.jpg" alt="ZYD Signage" width={320} height={160} loading="lazy" className="h-[160px] opacity-95 hover:opacity-100 transition-all" />
             </Link>
             <p className="text-slate-400 text-xs font-black leading-loose uppercase tracking-[0.4em] max-w-[280px]">
               Global Benchmark in Architectural Signage & Precision Fabrication.
@@ -68,10 +68,17 @@ export default function Footer() {
                   <div className="text-[10px] text-slate-400 font-black uppercase tracking-[0.2em] mb-2">Direct Mail</div>
                   <a href={`mailto:${siteConfig.salesEmail}`} className="text-xs text-slate-500 hover:text-blue-600 font-bold block transition-all break-all">{siteConfig.salesEmail}</a>
                 </div>
-                <div>
-                  <div className="text-[10px] text-slate-400 font-black uppercase tracking-[0.2em] mb-2">Technical Lead</div>
-                  <p className="text-xs text-slate-500 font-black tracking-widest block">+{siteConfig.whatsappNumber}</p>
-                </div>
+                  <div>
+                    <div className="text-[10px] text-slate-400 font-black uppercase tracking-[0.2em] mb-2">Technical Lead</div>
+                    <a
+                      href={`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent("Hi Aaron, I have a question about signage.")}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs text-slate-500 hover:text-green-600 font-black tracking-widest block transition-all"
+                    >
+                      +{siteConfig.whatsappNumber}
+                    </a>
+                  </div>
               </div>
             </div>
           </div>
@@ -101,7 +108,7 @@ export default function Footer() {
         onClick={(e) => handleWhatsApp(e, "Hi Aaron, I have a question about signage.")}
         aria-label="Chat on WhatsApp"
       >
-        <img src="/assets/images/whatsapp-icon-3d.jpg" alt="WhatsApp" />
+        <img src="/assets/images/whatsapp-icon-3d.jpg" alt="WhatsApp" width={150} height={150} loading="lazy" />
       </a>
     </footer>
   );

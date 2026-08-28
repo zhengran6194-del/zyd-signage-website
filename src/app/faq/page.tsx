@@ -2,8 +2,6 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import { siteConfig } from '@/config/site';
 
 const ChevronDownIcon = () => (
@@ -85,7 +83,7 @@ export default function FAQPage() {
       {/* 1. HERO SECTION */}
       <section className="relative min-h-[50vh] flex items-center bg-slate-950 text-white overflow-hidden py-24">
         <div className="absolute inset-0 z-0">
-          <img src="/assets/images/hero-bg-seafront.png" alt="Industrial Facility" className="w-full h-full object-cover opacity-40" />
+          <img src="/assets/images/hero-bg-seafront.png" alt="Industrial Facility" width={1920} height={1080} loading="eager" fetchPriority="high" className="w-full h-full object-cover opacity-40" />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-slate-950/80"></div>
         </div>
         <div className="container relative z-10 text-center">
@@ -134,6 +132,9 @@ export default function FAQPage() {
                   <img 
                     src={`/assets/images/${guide.image}`} 
                     alt={guide.title} 
+                    width={800}
+                    height={600}
+                    loading="lazy"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-blue-600/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>

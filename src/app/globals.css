@@ -178,6 +178,7 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
 .floating-whatsapp:active { transform: scale(0.9); }
 
 /* Animation Classes */
+.menu-toggle { display: none; }
 .reveal {
   opacity: 0;
   transform: translateY(20px);
@@ -232,10 +233,20 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
 }
 
 @media (max-width: 1024px) {
+  .site-header {
+    min-height: 80px;
+    height: 80px;
+  }
+  .brand img {
+    max-height: 56px;
+  }
+  .nav-actions {
+    display: none;
+  }
   .primary-nav {
     display: none;
     position: absolute;
-    top: 70px;
+    top: 80px;
     left: 0;
     width: 100%;
     background: #fff;
@@ -247,4 +258,12 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
   .primary-nav.open { display: flex; }
   .menu-toggle { display: flex; flex-direction: column; gap: 5px; }
   .menu-toggle span { width: 24px; height: 2px; background: var(--blue-950); transition: 0.3s; }
+  .floating-whatsapp {
+    left: 16px;
+    bottom: 16px;
+  }
+  .floating-whatsapp img {
+    width: 64px;
+    height: 64px;
+  }
 }

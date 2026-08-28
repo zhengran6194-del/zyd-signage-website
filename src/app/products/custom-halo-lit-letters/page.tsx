@@ -29,7 +29,7 @@ export default function HaloLitLettersPage() {
             </div>
             <div className="reveal visible relative">
               <div className="absolute -inset-4 bg-blue-500/20 blur-3xl rounded-full"></div>
-              <img src="/assets/images/cat-illuminated.webp" alt="Halo-Lit Signage" className="relative rounded-[2.5rem] shadow-2xl border-4 border-white/5 object-cover w-full h-[420px] lg:h-[500px]" />
+              <img src="/assets/images/cat-illuminated.webp" alt="Halo-Lit Signage" width={1200} height={800} loading="eager" fetchPriority="high" className="relative rounded-[2.5rem] shadow-2xl border-4 border-white/5 object-cover w-full h-[420px] lg:h-[500px]" />
             </div>
           </div>
         </section>

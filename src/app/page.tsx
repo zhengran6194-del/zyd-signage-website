@@ -2,9 +2,6 @@
 
 import React, { useEffect } from 'react';
 import Link from 'next/link';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import { siteConfig } from '@/config/site';
 
 export default function Home() {
   useEffect(() => {
@@ -69,19 +66,13 @@ export default function Home() {
     },
   ];
 
-  const handleWhatsApp = (e: any, message: string) => {
-    if (e) e.preventDefault();
-    const url = `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(message)}`;
-    window.open(url, '_blank');
-  };
-
   return (
     <>
       <main id="main">
         {/* 1. MEGA HERO SECTION (Image 2) */}
         <section className="hero relative min-h-screen flex items-center bg-slate-950 text-white overflow-hidden py-32">
           <div className="absolute inset-0 z-0">
-            <img src="/assets/images/hero-bg-factory-aerial.jpg" alt="ZYD Factory Aerial" className="w-full h-full object-cover opacity-80" />
+            <img src="/assets/images/hero-bg-factory-aerial.jpg" alt="ZYD Factory Aerial" width={1920} height={1080} loading="eager" fetchPriority="high" className="w-full h-full object-cover opacity-80" />
             <div className="hero-overlay-dark opacity-30"></div>
           </div>
           
@@ -204,7 +195,7 @@ export default function Home() {
               
               <div className="reveal relative flex justify-end">
                 <div className="rounded-[3rem] overflow-hidden shadow-[0_50px_100px_rgba(0,0,0,0.15)] border-[12px] border-white w-full aspect-square lg:aspect-[4/3]">
-                  <img src="/assets/images/factory-overview.jpg" alt="Factory QC" className="w-full h-full object-cover" />
+                  <img src="/assets/images/factory-overview.jpg" alt="Factory QC" width={1200} height={800} loading="lazy" className="w-full h-full object-cover" />
                 </div>
                 
                 {/* Right Floating Vertical Card (Image 2 Proportions) */}
@@ -274,7 +265,7 @@ export default function Home() {
               ].map((p, i) => (
                 <div key={i} className="reveal group">
                   <div className="overflow-hidden rounded-xl mb-4 h-60 bg-slate-100 border border-slate-50">
-                    <img src={`/assets/images/${p.img}`} alt={p.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    <img src={`/assets/images/${p.img}`} alt={p.title} width={1200} height={800} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                   </div>
                   <h4 className="font-black text-slate-900 mb-1 uppercase text-xs">{p.title}</h4>
                   <Link href={`/products/${p.id}`} className="text-[10px] font-bold text-slate-400 uppercase tracking-widest group-hover:text-blue-600 transition-colors">Details</Link>
@@ -287,7 +278,7 @@ export default function Home() {
         {/* 5. CALL TO ACTION */}
         <section id="contact" className="section bg-slate-950 text-white relative overflow-hidden py-24">
           <div className="absolute inset-0 opacity-10 pointer-events-none">
-            <img src="/assets/images/grid-pattern.svg" alt="Pattern" className="w-full h-full object-cover" />
+            <img src="/assets/images/grid-pattern.svg" alt="Pattern" width={1200} height={800} loading="lazy" className="w-full h-full object-cover" />
           </div>
           <div className="container relative z-10 text-center max-w-xl">
             <div className="reveal">

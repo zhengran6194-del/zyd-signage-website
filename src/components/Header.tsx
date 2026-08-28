@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { siteConfig } from '@/config/site';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,7 +11,7 @@ export default function Header() {
       <div className="container nav-wrap">
         {/* Logo 居左 */}
         <Link className="brand" href="/" aria-label="ZYD Home">
-          <img src="/assets/images/logo-correct.jpg" alt="ZYD logo" />
+          <img src="/assets/images/logo-correct.jpg" alt="ZYD logo" width={320} height={160} loading="eager" />
         </Link>
 
         {/* 移动端切换按钮 */}

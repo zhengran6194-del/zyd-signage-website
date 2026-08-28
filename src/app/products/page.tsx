@@ -43,7 +43,7 @@ export default function ProductsPage() {
             {products.map((p, i) => (
               <div key={i} className="reveal group bg-white border border-slate-100 p-6 rounded-[1.5rem] shadow-sm hover:shadow-xl transition-all duration-300">
                 <div className="overflow-hidden rounded-[1rem] mb-6 h-72 bg-slate-100 border border-slate-50">
-                  <img src={`/assets/images/${p.img}`} alt={p.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                  <img src={`/assets/images/${p.img}`} alt={p.title} width={1200} height={800} loading="lazy" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                 </div>
                 <h3 className="text-xl font-black mb-3 text-slate-900 uppercase">{p.title}</h3>
                 <p className="text-slate-500 text-sm leading-relaxed mb-8 font-medium">{p.desc}</p>

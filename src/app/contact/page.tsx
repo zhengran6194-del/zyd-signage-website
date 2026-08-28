@@ -36,6 +36,20 @@ export default function ContactPage() {
     window.open(whatsappUrl, '_blank');
   };
 
+  const handleEmailSubmit = () => {
+    const { fullName, email, company, details } = formData;
+
+    if (!fullName || !details) {
+      alert("Please fill in your name and project details.");
+      return;
+    }
+
+    const subject = 'Project Inquiry from ZYD Website';
+    const body = `Name: ${fullName}\nEmail: ${email || 'N/A'}\nCompany: ${company || 'N/A'}\nDetails: ${details}`;
+    const mailtoUrl = `mailto:${siteConfig.salesEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoUrl;
+  };
+
   const handleDirectWhatsApp = () => {
     const url = `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent("Hi Aaron, I would like to chat about a signage project.")}`;
     window.open(url, '_blank');
@@ -67,8 +81,9 @@ export default function ContactPage() {
               <form className="space-y-8" onSubmit={handleSubmit}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div className="space-y-3">
-                    <label className="text-sm font-black uppercase tracking-widest text-slate-400 pl-2">Full Name</label>
+                    <label htmlFor="full-name" className="text-sm font-black uppercase tracking-widest text-slate-400 pl-2">Full Name</label>
                     <input 
+                      id="full-name"
                       type="text" 
                       name="fullName"
                       value={formData.fullName}
@@ -79,8 +94,9 @@ export default function ContactPage() {
                     />
                   </div>
                   <div className="space-y-3">
-                    <label className="text-sm font-black uppercase tracking-widest text-slate-400 pl-2">Email Address</label>
+                    <label htmlFor="email-address" className="text-sm font-black uppercase tracking-widest text-slate-400 pl-2">Email Address</label>
                     <input 
+                      id="email-address"
                       type="email" 
                       name="email"
                       value={formData.email}
@@ -91,8 +107,9 @@ export default function ContactPage() {
                   </div>
                 </div>
                 <div className="space-y-3">
-                  <label className="text-sm font-black uppercase tracking-widest text-slate-400 pl-2">Company Name</label>
+                  <label htmlFor="company-name" className="text-sm font-black uppercase tracking-widest text-slate-400 pl-2">Company Name</label>
                   <input 
+                    id="company-name"
                     type="text" 
                     name="company"
                     value={formData.company}
@@ -102,8 +119,9 @@ export default function ContactPage() {
                   />
                 </div>
                 <div className="space-y-3">
-                  <label className="text-sm font-black uppercase tracking-widest text-slate-400 pl-2">Project Details</label>
+                  <label htmlFor="project-details" className="text-sm font-black uppercase tracking-widest text-slate-400 pl-2">Project Details</label>
                   <textarea 
+                    id="project-details"
                     name="details"
                     value={formData.details}
                     onChange={handleChange}
@@ -115,6 +133,13 @@ export default function ContactPage() {
                 </div>
                 <button type="submit" className="button button-green-base w-full py-8 text-white font-black text-2xl rounded-full transition-all">
                   SUBMIT INQUIRY
+                </button>
+                <button
+                  type="button"
+                  onClick={handleEmailSubmit}
+                  className="w-full text-sm font-black uppercase tracking-widest text-slate-500 hover:text-blue-600 transition-all"
+                >
+                  Prefer email? Send this inquiry by email
                 </button>
               </form>
             </div>
@@ -171,7 +196,7 @@ export default function ContactPage() {
                     <div className="absolute inset-0 bg-slate-900/40 flex items-center justify-center opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-all">
                       <span className="text-white font-black text-sm uppercase tracking-widest bg-slate-950/80 px-6 py-3 rounded-full">Chat on WhatsApp</span>
                     </div>
-                    <img src="/assets/images/factory-overview.jpg" alt="Factory Overview" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                    <img src="/assets/images/factory-overview.jpg" alt="Factory Overview" width={1200} height={800} loading="lazy" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                   </button>
                 </div>
               </div>
