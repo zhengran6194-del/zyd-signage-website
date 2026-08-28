@@ -36,23 +36,29 @@ These four cards use existing local images. Replace the matching file in `public
 | **Choosing the Right Sign** | `public/assets/images/cat-wayfinding.webp` |
 | **Materials** | `public/assets/images/cat-metal.webp` |
 
-## 4. Factory Live Section: Image Placeholder to Video (首页工厂实况：图片占位替换为视频)
-The homepage factory live section currently uses an image placeholder at `public/assets/images/factory-main.webp`. This image will remain the fallback until the homepage media node is changed to a video.
+## 4. Factory Live Section: Video Connected (首页工厂实况：视频已接入)
+The homepage factory live section is now connected to the video at `public/assets/videos/factory-live.mp4`. The image at `public/assets/images/factory-main.webp` is configured as the video's poster and appears before playback or when video playback is unavailable.
 
-When your factory video is ready:
+Current homepage media references in `src/app/page.tsx`:
 
-1. **Prepare the video**: Use an MP4 file encoded with H.264 video and AAC audio for broad browser compatibility. Keep the file reasonably compressed for fast loading.
-2. **Upload to the fixed folder and filename**: Place the file at `public/assets/videos/factory-live.mp4`. Create the `public/assets/videos/` folder if it does not exist. Keep this exact path and filename so the handoff instructions remain consistent.
-3. **Switch the homepage media node**: Uploading the MP4 alone does **not** automatically turn the image into a video. In `src/app/page.tsx`, replace the factory section's image media node that references `/assets/images/factory-main.webp` with a `<video>` node whose source is `/assets/videos/factory-live.mp4`. Keep suitable `muted`, `loop`, `playsInline`, and `controls` settings as needed for the desired behavior.
-4. **Test locally**: Confirm the homepage loads the video, it starts or plays as intended, and the image fallback/alt behavior is still appropriate.
-5. **Sync with GitHub Desktop**: Commit the changed video and homepage file, then click **Push origin**. Vercel will build and deploy the update automatically.
+- Video source: `/assets/videos/factory-live.mp4`
+- Poster image: `/assets/images/factory-main.webp`
 
-The current image placeholder path and future video path are deliberately fixed:
+The connected video uses an MP4 file encoded with H.264 video and AAC audio for broad browser compatibility. Keep the file reasonably compressed for fast loading.
+
+### Replace the connected factory video later
+
+1. **Prepare the replacement video**: Use the same MP4 format (H.264 video + AAC audio) and compress it for web delivery.
+2. **Keep the fixed path and filename**: Replace the file at `public/assets/videos/factory-live.mp4`. Keep the poster at `public/assets/images/factory-main.webp`, or replace that poster image at the same path if needed.
+3. **Only edit code when changing media behavior or paths**: Replacing the MP4 at the fixed path updates the video asset without changing the page code. If you change the path, poster, or video behavior, update the `<video>` node in `src/app/page.tsx` accordingly. Uploading a video to another filename will not switch the homepage automatically.
+4. **Test locally**: Confirm the homepage loads the video, the poster appears as intended, and playback works on desktop and mobile.
+5. **Sync with GitHub Desktop**: Commit the replacement video/poster and any code changes, then click **Push origin**. Vercel will build and deploy the update automatically.
 
 | Media State | File Path |
 | :--- | :--- |
-| **Current image placeholder** | `public/assets/images/factory-main.webp` |
-| **Future factory video** | `public/assets/videos/factory-live.mp4` |
+| **Connected homepage video** | `public/assets/videos/factory-live.mp4` |
+| **Video poster** | `public/assets/images/factory-main.webp` |
+| **Homepage code** | `src/app/page.tsx` |
 
 ## 5. How to Swap Images (图片替换步骤)
 1. **Prepare your image**: Ensure the filename exactly matches the one in the table above (e.g., `hero-bg-factory-aerial.jpg`).

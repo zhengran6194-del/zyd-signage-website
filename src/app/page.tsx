@@ -193,22 +193,16 @@ export default function Home() {
               </div>
               <div className="reveal relative group">
                 <div className="rounded-[3rem] overflow-hidden shadow-2xl border-[12px] border-slate-50 aspect-[4/3] bg-slate-100">
-                  <img
-                    src="/assets/images/factory-main.webp"
-                    alt="ZYD factory production floor preview"
-                    width={1200}
-                    height={900}
-                    loading="lazy"
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  <video
+                    src="/assets/videos/factory-live.mp4"
+                    controls
+                    muted
+                    loop
+                    playsInline
+                    preload="metadata"
+                    poster="/assets/images/factory-main.webp"
+                    className="w-full h-full object-cover"
                   />
-                  <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                    <div className="flex flex-col items-center gap-4">
-                      <span className="w-20 h-20 rounded-full bg-white/90 text-blue-600 flex items-center justify-center shadow-2xl">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg>
-                      </span>
-                      <span className="bg-slate-950/80 text-white px-5 py-2 rounded-full text-[10px] font-black uppercase tracking-[0.25em]">Video Coming Soon</span>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
