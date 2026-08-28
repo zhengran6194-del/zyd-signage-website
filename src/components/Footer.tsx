@@ -58,6 +58,7 @@ export default function Footer() {
                 <li><a href={siteConfig.links.linkedin} target="_blank" rel="noopener noreferrer" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all">LinkedIn</a></li>
                 <li><a href={siteConfig.links.twitter} target="_blank" rel="noopener noreferrer" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all">Twitter (X)</a></li>
                 <li><a href={siteConfig.links.tiktok} target="_blank" rel="noopener noreferrer" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all">TikTok</a></li>
+                <li><a href="https://dlzydbs.en.alibaba.com/?spm=a2700.micro_cgs_home.0.0.2f073e5fBh410q" target="_blank" rel="noopener noreferrer" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all">Alibaba</a></li>
               </ul>
             </div>
 
