@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { siteConfig } from '@/config/site';
 
 const ChevronDownIcon = () => (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-9"/></svg>
@@ -43,10 +44,10 @@ const categories = [
 ];
 
 const guides = [
-  { category: 'Buying Guide', title: 'How Much Do Custom Channel Letters Cost?', date: 'Aug 24, 2026', image: 'faq-guide-cost.webp' },
-  { category: 'Technical Guide', title: 'Front-Lit vs Halo-Lit Channel Letters', date: 'Aug 20, 2026', image: 'faq-guide-lighting.webp' },
-  { category: 'Buying Guide', title: 'How to Choose the Right Sign for Your Business', date: 'Aug 15, 2026', image: 'faq-guide-selection.webp' },
-  { category: 'Materials', title: '304 Stainless Steel vs Galvanized Steel for Outdoor Signs', date: 'Aug 10, 2026', image: 'faq-guide-materials.webp' },
+  { category: 'Buying Guide', title: 'How Much Do Custom Channel Letters Cost?', date: 'Aug 24, 2026', image: 'cat-illuminated.webp' },
+  { category: 'Technical Guide', title: 'Front-Lit vs Halo-Lit Channel Letters', date: 'Aug 20, 2026', image: 'lightbox.webp' },
+  { category: 'Buying Guide', title: 'How to Choose the Right Sign for Your Business', date: 'Aug 15, 2026', image: 'cat-wayfinding.webp' },
+  { category: 'Materials', title: '304 Stainless Steel vs Galvanized Steel for Outdoor Signs', date: 'Aug 10, 2026', image: 'cat-metal.webp' },
 ];
 
 const faqs = [
@@ -62,6 +63,11 @@ const faqs = [
 
 export default function FAQPage() {
   const [activeFaq, setActiveFaq] = useState<number | null>(0);
+
+  const openWhatsApp = (message: string) => {
+    const url = `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
 
   useEffect(() => {
     const observerOptions = { threshold: 0.1 };
@@ -118,7 +124,12 @@ export default function FAQPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {guides.map((guide, i) => (
-              <div key={i} className="reveal group cursor-pointer">
+              <button
+                key={i}
+                type="button"
+                onClick={() => openWhatsApp(`Hi Aaron, I would like to discuss the "${guide.title}" guide and my signage project.`)}
+                className="reveal group cursor-pointer w-full text-left"
+              >
                 <div className="bg-slate-100 rounded-[2rem] h-48 mb-6 overflow-hidden relative">
                   <img 
                     src={`/assets/images/${guide.image}`} 
@@ -130,7 +141,7 @@ export default function FAQPage() {
                 <div className="text-[10px] font-black uppercase tracking-widest text-blue-600 mb-3">{guide.category}</div>
                 <h4 className="text-lg font-black text-slate-900 mb-3 leading-tight group-hover:text-blue-600 transition-colors">{guide.title}</h4>
                 <div className="text-xs text-slate-400 font-bold">{guide.date}</div>
-              </div>
+              </button>
             ))}
           </div>
         </div>
@@ -182,7 +193,13 @@ export default function FAQPage() {
               <p className="text-slate-400 text-lg mb-12 max-w-xl mx-auto font-medium">Our technical sales engineers are ready to assist with your specific project requirements.</p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
                 <Link href="/contact" className="button-green-base">Contact Sales Support</Link>
-                <button className="px-12 py-4 border border-white/20 rounded font-bold uppercase text-sm text-white hover:bg-white hover:text-slate-950 transition-all">Submit Technical Ticket</button>
+                <button
+                  type="button"
+                  onClick={() => openWhatsApp('Hi Aaron, I would like to submit a technical ticket for my signage project. Please help me review the requirements and next steps.')}
+                  className="px-12 py-4 border border-white/20 rounded font-bold uppercase text-sm text-white hover:bg-white hover:text-slate-950 transition-all"
+                >
+                  Submit Technical Ticket
+                </button>
               </div>
             </div>
           </div>

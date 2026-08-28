@@ -8,7 +8,8 @@ To change the background or hero images, simply replace the file in `public/asse
 
 | Target Area | File Path | Recommendation |
 | :--- | :--- | :--- |
-| **Main Hero Background** (首页大海背景) | `public/assets/images/hero-bg-seafront.png` | 1920x1080+, Dark/Muted |
+| **Main Hero Background** (首页工厂主视觉) | `public/assets/images/hero-bg-factory-aerial.jpg` | 1920x1080+, Dark/Muted |
+| **FAQ Hero Background** (FAQ页面主视觉) | `public/assets/images/hero-bg-seafront.png` | 1920x1080+, Dark/Muted |
 | **WhatsApp Icon** (左下角图标) | `public/assets/images/whatsapp-icon-3d.jpg` | 512x512, Square |
 | **Company Logo** (顶部Logo) | `public/assets/images/logo-correct.jpg` | Transparent PNG preferred |
 | **Wayfinding Hero** | `public/assets/images/hero-wayfinding.png` | Product close-up |
@@ -25,11 +26,21 @@ These are the images shown in the product grids on the Home and Products pages.
 * **Furniture/Bench**: `landscape-bench.jpg`
 * **Complete System**: `cat-system.webp`
 
-## 3. How to Swap (操作步骤)
-1. **Prepare your image**: Ensure the filename exactly matches the one in the table above (e.g., `hero-bg-seafront.png`).
+## 3. FAQ Popular Guides Images (FAQ指南图片)
+These four cards use existing local images. Replace the matching file in `public/assets/images/` to update the card image without editing the page:
+
+| Guide Card | File Path |
+| :--- | :--- |
+| **Channel Letters Cost** | `public/assets/images/cat-illuminated.webp` |
+| **Front-Lit vs Halo-Lit** | `public/assets/images/lightbox.webp` |
+| **Choosing the Right Sign** | `public/assets/images/cat-wayfinding.webp` |
+| **Materials** | `public/assets/images/cat-metal.webp` |
+
+## 4. How to Swap (操作步骤)
+1. **Prepare your image**: Ensure the filename exactly matches the one in the table above (e.g., `hero-bg-factory-aerial.jpg`).
 2. **Upload/Overwrite**: Place the new file in the `public/assets/images/` directory, overwriting the old one.
 3. **Deploy**: Push the changes to GitHub. Vercel will automatically update the site in ~1 minute.
 
 ---
-**Note**: If you want to use a different filename (e.g., `new-hero.jpg`), you must update the `src` attribute in `src/app/page.tsx` or the respective product subpage.
+**Note**: If you want to use a different filename (e.g., `new-hero.jpg`), you must update the `src` attribute in `src/app/page.tsx`, `src/app/faq/page.tsx`, or the respective product subpage.
 **注意**：如果您使用了不同的文件名（如 `new-hero.jpg`），则必须在代码中搜索并修改对应的 `src` 路径。

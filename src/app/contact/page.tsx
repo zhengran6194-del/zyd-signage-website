@@ -41,6 +41,12 @@ export default function ContactPage() {
     window.open(url, '_blank');
   };
 
+  const handleFactoryLocation = () => {
+    const message = "Hi Aaron, I would like to discuss a signage project and learn more about your factory.";
+    const url = `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
+  };
+
   return (
     <>
       <main className="bg-slate-50 min-h-screen pt-24 pb-32">
@@ -156,12 +162,17 @@ export default function ContactPage() {
                       </p>
                     </div>
                   </div>
-                  <div className="rounded-[2.5rem] overflow-hidden bg-slate-100 h-64 relative group">
-                    <div className="absolute inset-0 bg-slate-900/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all cursor-pointer">
-                      <span className="text-white font-black text-sm uppercase tracking-widest bg-slate-950/80 px-6 py-3 rounded-full">View on Google Maps</span>
+                  <button
+                    type="button"
+                    onClick={handleFactoryLocation}
+                    className="rounded-[2.5rem] overflow-hidden bg-slate-100 h-64 relative group block w-full text-left"
+                    aria-label="Contact us on WhatsApp about the factory location"
+                  >
+                    <div className="absolute inset-0 bg-slate-900/40 flex items-center justify-center opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-all">
+                      <span className="text-white font-black text-sm uppercase tracking-widest bg-slate-950/80 px-6 py-3 rounded-full">Chat on WhatsApp</span>
                     </div>
                     <img src="/assets/images/factory-overview.jpg" alt="Factory Overview" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-                  </div>
+                  </button>
                 </div>
               </div>
             </div>
