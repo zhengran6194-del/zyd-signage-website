@@ -2,6 +2,7 @@
 
 import React, { useEffect } from 'react';
 import Link from 'next/link';
+import { siteConfig } from '@/config/site';
 
 export default function Home() {
   useEffect(() => {
@@ -170,7 +171,51 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 3. QUALITY & COMPLIANCE (Refined Image 2 Proportions) */}
+        {/* 3. INSIDE OUR FACTORY */}
+        <section className="section bg-white py-24 lg:py-32">
+          <div className="container">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
+              <div className="reveal max-w-xl">
+                <div className="text-blue-600 font-black uppercase text-[10px] tracking-[0.4em] mb-5 border-l-2 border-blue-600 pl-4">INSIDE OUR FACTORY</div>
+                <h2 className="text-5xl lg:text-6xl font-black text-slate-950 uppercase tracking-tighter leading-[0.95] mb-8">See Your Box Being Made — Live.</h2>
+                <p className="text-slate-500 text-lg leading-relaxed font-medium mb-10">From precision cutting to final quality checks, see how your signage moves through our factory before it reaches your project site.</p>
+                <div className="flex flex-col sm:flex-row gap-5">
+                  <a
+                    href={`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent('Hi Aaron, I would like to arrange a full factory tour and discuss a signage project.')}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="button-green-base"
+                  >
+                    Full Factory Tour
+                  </a>
+                  <Link href="/contact" className="button-green-base">Get Free Quote</Link>
+                </div>
+              </div>
+              <div className="reveal relative group">
+                <div className="rounded-[3rem] overflow-hidden shadow-2xl border-[12px] border-slate-50 aspect-[4/3] bg-slate-100">
+                  <img
+                    src="/assets/images/factory-main.webp"
+                    alt="ZYD factory production floor preview"
+                    width={1200}
+                    height={900}
+                    loading="lazy"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                    <div className="flex flex-col items-center gap-4">
+                      <span className="w-20 h-20 rounded-full bg-white/90 text-blue-600 flex items-center justify-center shadow-2xl">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg>
+                      </span>
+                      <span className="bg-slate-950/80 text-white px-5 py-2 rounded-full text-[10px] font-black uppercase tracking-[0.25em]">Video Coming Soon</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 4. QUALITY & COMPLIANCE (Refined Image 2 Proportions) */}
         <section className="section bg-slate-50 border-y border-slate-100 py-20 lg:py-32 overflow-hidden">
           <div className="max-w-[1600px] w-[95%] mx-auto relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-[40%_60%] gap-24 lg:gap-32 items-center">

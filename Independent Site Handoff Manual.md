@@ -37,7 +37,11 @@ GitHub Desktop 是您连接本地文件与线上服务器的桥梁。每当您�
 
 ---
 
-## 4. 联系方式
+## 4. 首页工厂实况视频替换
+
+首页工厂实况目前使用图片占位：`public/assets/images/factory-main.webp`。以后准备好视频后，请将 MP4 上传到固定路径 `public/assets/videos/factory-live.mp4`，然后按 [IMAGE_SWAP_GUIDE.md](IMAGE_SWAP_GUIDE.md) 的“Factory Live Section: Image Placeholder to Video”章节修改首页媒体节点。仅上传视频文件不会自动切换为视频；还需要在 `src/app/page.tsx` 中将对应图片节点替换为 `<video>` 节点，完成测试后通过 GitHub Desktop 提交并 Push。
+
+## 5. 联系方式
 
 在维护过程中遇到技术疑问或需要深度调整，请联系：
 
