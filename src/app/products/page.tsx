@@ -41,13 +41,17 @@ export default function ProductsPage() {
           <div className="max-w-[1600px] w-[95%] mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
             {products.map((p, i) => (
-              <div key={i} className="reveal group bg-white border border-slate-100 p-6 rounded-[1.5rem] shadow-sm hover:shadow-xl transition-all duration-300">
+              <div key={i} className="reveal group flex flex-col bg-white border border-slate-100 p-6 rounded-[1.5rem] shadow-sm hover:shadow-xl transition-all duration-300">
                 <div className="overflow-hidden rounded-[1rem] mb-6 h-72 bg-slate-100 border border-slate-50">
                   <img src={`/assets/images/${p.img}`} alt={p.title} width={1200} height={800} loading="lazy" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                 </div>
                 <h3 className="text-xl font-black mb-3 text-slate-900 uppercase">{p.title}</h3>
                 <p className="text-slate-500 text-sm leading-relaxed mb-8 font-medium">{p.desc}</p>
-                <Link href={`/products/${p.id}`} className="button button-green-base w-full py-3 text-white font-bold rounded-md text-center block">
+                <div className="flex flex-wrap gap-x-4 gap-y-1 text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-6">
+                  <span>MOQ: 1</span>
+                  <span>Lead Time: 7–14 days</span>
+                </div>
+                <Link href={`/products/${p.id}`} className="button button-green-base w-full py-3 mt-auto text-white font-bold rounded-md text-center block">
                   View Details
                 </Link>
               </div>

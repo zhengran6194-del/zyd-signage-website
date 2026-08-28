@@ -307,6 +307,10 @@ export default function Home() {
                     <img src={`/assets/images/${p.img}`} alt={p.title} width={1200} height={800} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                   </div>
                   <h4 className="font-black text-slate-900 mb-1 uppercase text-xs">{p.title}</h4>
+                  <div className="flex flex-wrap gap-x-4 gap-y-1 text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-2">
+                    <span>MOQ: 1</span>
+                    <span>Lead Time: 7–14 days</span>
+                  </div>
                   <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest group-hover:text-blue-600 transition-colors">Details</span>
                 </Link>
               ))}
