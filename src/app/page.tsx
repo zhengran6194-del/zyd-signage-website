@@ -200,7 +200,7 @@ export default function Home() {
                     loop
                     playsInline
                     preload="metadata"
-                    poster="/assets/images/factory-main.webp"
+                    poster="/assets/images/factory-video-poster.jpg"
                     className="w-full h-full object-cover"
                   />
                 </div>
