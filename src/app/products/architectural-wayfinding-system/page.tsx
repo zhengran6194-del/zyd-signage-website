@@ -44,10 +44,10 @@ export default function WayfindingSystemPage() {
                   <div className="p-8 bg-slate-50 rounded-[2rem] border border-slate-100">
                     <h3 className="text-xl font-black text-blue-600 mb-4 uppercase italic">Material Options</h3>
                     <ul className="space-y-3 text-slate-600 font-bold">
-                      <li>&bull; Galvanized Sheet (镀锌板) — Hot-Dip Galvanized</li>
-                      <li>&bull; 201 Stainless Steel (201 不锈钢) — Economical Grade</li>
-                      <li>&bull; 304 Stainless Steel (304 不锈钢) — Premium Outdoor Grade</li>
-                      <li>&bull; Aluminum Plate (铝板) — Lightweight &amp; Corrosion-Resistant</li>
+                      <li>&bull; Galvanized Sheet — Hot-Dip Galvanized</li>
+                      <li>&bull; 201 Stainless Steel — Economical Grade</li>
+                      <li>&bull; 304 Stainless Steel — Premium Outdoor Grade</li>
+                      <li>&bull; Aluminum Plate — Lightweight &amp; Corrosion-Resistant</li>
                     </ul>
                   </div>
                   <div className="p-8 bg-slate-50 rounded-[2rem] border border-slate-100">

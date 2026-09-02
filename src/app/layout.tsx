@@ -13,6 +13,9 @@ export const metadata: Metadata = {
     template: "%s | ZYD Signage",
   },
   description: "Factory-direct custom signage for global B2B projects. Premium wayfinding and architectural signs.",
+  verification: {
+    google: "mg4KF2OFvytTwIMO7heJcKvB5BrULWY76NeAxIYW6Ss",
+  },
   alternates: {
     canonical: "/",
   },
