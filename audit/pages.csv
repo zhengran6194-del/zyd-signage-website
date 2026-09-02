@@ -1,0 +1,16 @@
+﻿route,file,use_client,has_metadata,layout_metadata
+/,src/app/page.tsx,True,False,True
+/about,src/app/about/page.tsx,True,False,True
+/contact,src/app/contact/page.tsx,True,False,True
+/faq,src/app/faq/page.tsx,True,False,True
+/products,src/app/products/page.tsx,True,False,True
+/products/architectural-wayfinding-system,src/app/products/architectural-wayfinding-system/page.tsx,True,False,True
+/products/complete-signage-system,src/app/products/complete-signage-system/page.tsx,True,False,True
+/products/custom-halo-lit-letters,src/app/products/custom-halo-lit-letters/page.tsx,True,False,True
+/products/custom-landscape-furniture,src/app/products/custom-landscape-furniture/page.tsx,True,False,True
+/products/custom-led-neon-sign,src/app/products/custom-led-neon-sign/page.tsx,True,False,True
+/products/medical-care-signage,src/app/products/medical-care-signage/page.tsx,True,False,True
+/products/metal-acrylic-logo-sign,src/app/products/metal-acrylic-logo-sign/page.tsx,True,False,True
+/products/outdoor-pylon-monument-sign,src/app/products/outdoor-pylon-monument-sign/page.tsx,True,False,True
+/products/ultra-slim-led-light-box,src/app/products/ultra-slim-led-light-box/page.tsx,True,False,True
+/projects,src/app/projects/page.tsx,True,False,True

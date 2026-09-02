@@ -1,0 +1,7 @@
+[
+  {
+    "severity": "warning",
+    "description": "非产品页出现中文字符（残留中文）",
+    "location": "src/components/Header.tsx:12"
+  }
+]
