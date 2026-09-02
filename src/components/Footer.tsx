@@ -35,10 +35,15 @@ export default function Footer() {
             <div>
               <h4 className="text-blue-950 font-black text-[11px] uppercase tracking-[0.3em] mb-12 border-b-2 border-slate-100 pb-4 inline-block">Product Lines</h4>
               <ul className="space-y-8">
-                <li><Link href="/products/custom-halo-lit-letters" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Halo-Lit Letters</Link></li>
-                <li><Link href="/products/ultra-slim-led-light-box" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">LED Light Boxes</Link></li>
                 <li><Link href="/products/architectural-wayfinding-system" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Wayfinding Systems</Link></li>
+                <li><Link href="/products/complete-signage-system" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Complete Signage Systems</Link></li>
+                <li><Link href="/products/custom-halo-lit-letters" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Halo-Lit Letters</Link></li>
+                <li><Link href="/products/custom-landscape-furniture" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Landscape Furniture</Link></li>
+                <li><Link href="/products/custom-led-neon-sign" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">LED Neon Signs</Link></li>
+                <li><Link href="/products/medical-care-signage" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Medical Care Signage</Link></li>
+                <li><Link href="/products/metal-acrylic-logo-sign" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Metal & Acrylic Logos</Link></li>
                 <li><Link href="/products/outdoor-pylon-monument-sign" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Outdoor Signage</Link></li>
+                <li><Link href="/products/ultra-slim-led-light-box" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">LED Light Boxes</Link></li>
               </ul>
             </div>
 

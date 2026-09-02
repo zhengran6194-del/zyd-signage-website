@@ -3,9 +3,31 @@ import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import JsonLd from "@/components/JsonLd";
 import { siteConfig } from "@/config/site";
 
 const ogImage = `${siteConfig.url}/assets/images/hero-bg-factory-aerial.jpg`;
+const siteJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": `${siteConfig.url}/#organization`,
+      name: siteConfig.companyName,
+      url: siteConfig.url,
+      logo: `${siteConfig.url}/assets/images/logo-correct.jpg`,
+      email: siteConfig.salesEmail,
+      sameAs: [siteConfig.links.twitter, siteConfig.links.tiktok, siteConfig.links.linkedin],
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${siteConfig.url}/#website`,
+      name: siteConfig.companyName,
+      url: siteConfig.url,
+      publisher: { "@id": `${siteConfig.url}/#organization` },
+    },
+  ],
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -56,6 +78,7 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet" />
       </head>
       <body>
+        <JsonLd data={siteJsonLd} />
         <noscript>
           <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MB5CNFHN"
             height="0" width="0" style={{ display: 'none', visibility: 'hidden' }} />

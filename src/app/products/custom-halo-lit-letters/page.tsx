@@ -90,6 +90,13 @@ export default function HaloLitLettersPage() {
             </div>
           </div>
         </section>
+        <section className="bg-slate-50 py-12">
+          <div className="container text-center">
+            <Link href="/products" className="text-sm text-blue-600 hover:text-blue-800 font-black uppercase tracking-widest transition-all">
+              Related Products
+            </Link>
+          </div>
+        </section>
       </main>
     </>
   );

@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import JsonLd from '@/components/JsonLd';
 import { siteConfig } from '@/config/site';
 
 const ChevronDownIcon = () => (
@@ -59,6 +60,16 @@ const faqs = [
   { q: 'Do you offer engineering support for structural calculations?', a: 'Yes, for large-scale monument signs and pylons, our structural engineers can provide wind load calculations and foundation specifications tailored to your local environment.' },
 ];
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.q,
+    acceptedAnswer: { "@type": "Answer", text: faq.a },
+  })),
+};
+
 export default function FAQPage() {
   const [activeFaq, setActiveFaq] = useState<number | null>(0);
 
@@ -80,6 +91,7 @@ export default function FAQPage() {
 
   return (
     <main className="bg-white min-h-screen">
+      <JsonLd data={faqJsonLd} />
       {/* 1. HERO SECTION */}
       <section className="relative min-h-[50vh] flex items-center bg-slate-950 text-white overflow-hidden py-24">
         <div className="absolute inset-0 z-0">

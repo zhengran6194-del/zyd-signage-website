@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { siteConfig } from "@/config/site";
+import ProductsBreadcrumbJsonLd from "@/components/ProductsBreadcrumbJsonLd";
 
 export const metadata: Metadata = {
   title: "Signage Solutions",
@@ -8,5 +9,10 @@ export const metadata: Metadata = {
 };
 
 export default function ProductsLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return children;
+  return (
+    <>
+      <ProductsBreadcrumbJsonLd />
+      {children}
+    </>
+  );
 }
