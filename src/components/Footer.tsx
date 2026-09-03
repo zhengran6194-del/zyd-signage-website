@@ -116,6 +116,14 @@ export default function Footer() {
       >
         <img src="/assets/images/whatsapp-icon-3d.jpg" alt="WhatsApp" width={150} height={150} loading="lazy" />
       </a>
+      <a
+        className="floating-quote"
+        href="/contact"
+        aria-label="Get a free signage project quote"
+      >
+        <span className="floating-quote-icon" aria-hidden="true">↗</span>
+        <span className="floating-quote-label">Get a Free Quote</span>
+      </a>
     </footer>
   );
 }
