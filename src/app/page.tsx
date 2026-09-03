@@ -11,6 +11,8 @@ export default function Home() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitMessage, setSubmitMessage] = useState('');
   const [submitMessageType, setSubmitMessageType] = useState<'success' | 'error'>('success');
+  const [selectedFiles, setSelectedFiles] = useState<File[]>([]);
+  const [fileError, setFileError] = useState('');
 
   useEffect(() => {
     const observerOptions = { threshold: 0.1 };
@@ -47,13 +49,34 @@ export default function Home() {
     return { fullName, email, company, details };
   };
 
+  const handleFilesChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const files = Array.from(e.target.files || []);
+    const allowedExtensions = /\.(pdf|ai|psd)$/i;
+    const invalidFile = files.find(file => !allowedExtensions.test(file.name) || file.size > 10 * 1024 * 1024);
+    if (invalidFile) {
+      const error = `${invalidFile.name} must be a PDF, AI, or PSD file under 10MB.`;
+      setFileError(error);
+      setSubmitMessageType('error');
+      setSubmitMessage(error);
+      setSelectedFiles([]);
+      e.target.value = '';
+      return;
+    }
+    setSelectedFiles(files);
+    setFileError('');
+    if (submitMessageType === 'error') setSubmitMessage('');
+  };
+
   const handleInquirySubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (isSubmitting) return;
     const validated = validateInquiry();
     if (!validated) return;
     const { fullName, email, company, details } = validated;
-    const message = `*Project Inquiry from ZYD Website*\n\n*Name:* ${fullName}\n*Email:* ${email || 'N/A'}\n*Company:* ${company || 'N/A'}\n*Details:* ${details}`;
+    const fileSummary = selectedFiles.length
+      ? `\n*Design files:* ${selectedFiles.map(file => file.name).join(', ')}\nPlease send the original files in WhatsApp after chat opens. This form cannot transfer local file binaries.`
+      : '';
+    const message = `*Project Inquiry from ZYD Website*\n\n*Name:* ${fullName}\n*Email:* ${email || 'N/A'}\n*Company:* ${company || 'N/A'}\n*Details:* ${details}${fileSummary}`;
     const whatsappUrl = `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(message)}`;
     setIsSubmitting(true);
     setSubmitMessageType('success');
@@ -583,38 +606,40 @@ export default function Home() {
         {/* 9. ONLINE ADVISOR & PROJECT INQUIRY */}
         <section className="section bg-slate-100 py-20 lg:py-28">
           <div className="container">
-            <div className="grid grid-cols-1 lg:grid-cols-[0.75fr_1.25fr] gap-8 lg:gap-12 items-stretch">
-              <button type="button" onClick={handleAdvisorWhatsApp} className="reveal group rounded-[2rem] bg-slate-950 p-8 lg:p-10 text-left text-white shadow-2xl transition-transform hover:-translate-y-1">
-                <div className="flex items-start justify-between gap-6 mb-16">
-                  <div>
-                    <div className="text-emerald-300 font-black uppercase text-[10px] tracking-[0.35em] mb-4">Online Advisor</div>
-                    <h2 className="text-4xl lg:text-5xl font-black uppercase tracking-tight leading-[0.95]">Talk to Aaron</h2>
-                  </div>
-                  <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-emerald-400 text-slate-950 text-2xl font-black transition-transform group-hover:rotate-45">↗</span>
+            <button type="button" onClick={handleAdvisorWhatsApp} className="reveal group mb-8 flex w-full items-center justify-between gap-6 rounded-[2rem] bg-slate-950 p-6 text-left text-white shadow-2xl transition-transform hover:-translate-y-1 lg:p-8">
+              <div className="flex min-w-0 items-center gap-5">
+                <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-emerald-400 text-xl font-black text-slate-950">A</span>
+                <div>
+                  <div className="text-emerald-300 font-black uppercase text-[10px] tracking-[0.35em] mb-2">Online Advisor · Available on WhatsApp</div>
+                  <h2 className="text-2xl lg:text-4xl font-black uppercase tracking-tight">Talk to Aaron about your signage project</h2>
                 </div>
-                <div className="border-t border-white/15 pt-6">
-                  <p className="text-slate-300 text-base leading-relaxed font-medium">Discuss your signage project, technical requirements, and factory-direct pricing directly on WhatsApp.</p>
-                  <span className="mt-8 inline-block text-emerald-300 text-xs font-black uppercase tracking-widest">Click to open WhatsApp</span>
-                </div>
-              </button>
-
-              <div className="reveal rounded-[2rem] bg-white border border-slate-200 p-8 lg:p-12 shadow-[0_30px_80px_rgba(10,39,84,0.08)]">
-                <div className="mb-8">
-                  <div className="text-blue-600 font-black uppercase text-[10px] tracking-[0.35em] mb-3">Start Your Project</div>
-                  <h2 className="text-3xl lg:text-4xl font-black text-slate-950 uppercase tracking-tight">Project Inquiry</h2>
-                </div>
-                <form className="space-y-5" onSubmit={handleInquirySubmit}>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                    <input id="home-full-name" type="text" name="fullName" value={formData.fullName} onChange={handleInquiryChange} placeholder="Full Name *" aria-label="Full name for your signage project inquiry" required className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:ring-4 focus:ring-blue-500/10 font-bold" />
-                    <input id="home-email-address" type="email" name="email" value={formData.email} onChange={handleInquiryChange} placeholder="Email Address" aria-label="Email address for your signage project inquiry" className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:ring-4 focus:ring-blue-500/10 font-bold" />
-                  </div>
-                  <input id="home-company-name" type="text" name="company" value={formData.company} onChange={handleInquiryChange} placeholder="Company Name" aria-label="Company name for your signage project inquiry" className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:ring-4 focus:ring-blue-500/10 font-bold" />
-                  <textarea id="home-project-details" name="details" value={formData.details} onChange={handleInquiryChange} placeholder="Project Details *" aria-label="Project details for your signage inquiry" rows={5} required className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:ring-4 focus:ring-blue-500/10 font-bold resize-none" />
-                  <button type="submit" disabled={isSubmitting} className="button button-green-base w-full py-4 rounded-full font-black disabled:cursor-not-allowed disabled:opacity-70">{isSubmitting ? 'OPENING WHATSAPP...' : 'SUBMIT INQUIRY'}</button>
-                  {submitMessage && <p role="status" aria-live="polite" className={`text-center text-sm font-bold ${submitMessageType === 'error' ? 'text-red-600' : 'text-emerald-600'}`}>{submitMessage}</p>}
-                  <button type="button" onClick={handleInquiryEmail} className="w-full text-xs font-black uppercase tracking-widest text-slate-500 hover:text-blue-600 transition-colors">Prefer email? Send to {siteConfig.salesEmail}</button>
-                </form>
               </div>
+              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-emerald-400 text-xl font-black text-slate-950 transition-transform group-hover:rotate-45">↗</span>
+            </button>
+
+            <div className="reveal rounded-[2rem] bg-white border border-slate-200 p-8 lg:p-12 shadow-[0_30px_80px_rgba(10,39,84,0.08)]">
+              <div className="mb-8">
+                <div className="text-blue-600 font-black uppercase text-[10px] tracking-[0.35em] mb-3">Start Your Project</div>
+                <h2 className="text-3xl lg:text-4xl font-black text-slate-950 uppercase tracking-tight">Project Inquiry</h2>
+              </div>
+              <form className="space-y-5" onSubmit={handleInquirySubmit}>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                  <input id="home-full-name" type="text" name="fullName" value={formData.fullName} onChange={handleInquiryChange} placeholder="Full Name *" aria-label="Full name for your signage project inquiry" required className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:ring-4 focus:ring-blue-500/10 font-bold" />
+                  <input id="home-email-address" type="email" name="email" value={formData.email} onChange={handleInquiryChange} placeholder="Email Address" aria-label="Email address for your signage project inquiry" className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:ring-4 focus:ring-blue-500/10 font-bold" />
+                </div>
+                <input id="home-company-name" type="text" name="company" value={formData.company} onChange={handleInquiryChange} placeholder="Company Name" aria-label="Company name for your signage project inquiry" className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:ring-4 focus:ring-blue-500/10 font-bold" />
+                <textarea id="home-project-details" name="details" value={formData.details} onChange={handleInquiryChange} placeholder="Project Details *" aria-label="Project details for your signage inquiry" rows={5} required className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:ring-4 focus:ring-blue-500/10 font-bold resize-none" />
+                <div className="rounded-2xl border border-dashed border-slate-300 bg-slate-50 p-5">
+                  <label htmlFor="home-design-files" className="block text-sm font-black uppercase tracking-widest text-slate-700">Design Files (PDF / AI / PSD)</label>
+                  <p className="mt-2 text-xs font-medium text-slate-500">Optional. Each file must be under 10MB. Files are not uploaded automatically; attach them manually in WhatsApp after it opens.</p>
+                  <input id="home-design-files" type="file" multiple accept=".pdf,.ai,.psd,application/pdf,application/postscript,image/vnd.adobe.photoshop" onChange={handleFilesChange} className="mt-4 block w-full text-sm font-bold text-slate-600 file:mr-4 file:rounded-full file:border-0 file:bg-slate-950 file:px-5 file:py-3 file:font-black file:text-white" />
+                  {selectedFiles.length > 0 && <p className="mt-3 text-xs font-bold text-slate-600">Selected: {selectedFiles.map(file => file.name).join(', ')}</p>}
+                  {fileError && <p role="alert" className="mt-3 text-xs font-bold text-red-600">{fileError}</p>}
+                </div>
+                <button type="submit" disabled={isSubmitting} className="button button-green-base w-full py-4 rounded-full font-black disabled:cursor-not-allowed disabled:opacity-70">{isSubmitting ? 'OPENING WHATSAPP...' : 'SUBMIT INQUIRY'}</button>
+                {submitMessage && <p role="status" aria-live="polite" className={`text-center text-sm font-bold ${submitMessageType === 'error' ? 'text-red-600' : 'text-emerald-600'}`}>{submitMessage}</p>}
+                <button type="button" onClick={handleInquiryEmail} className="w-full text-xs font-black uppercase tracking-widest text-slate-500 hover:text-blue-600 transition-colors">Prefer email? Send to {siteConfig.salesEmail}</button>
+              </form>
             </div>
           </div>
         </section>
