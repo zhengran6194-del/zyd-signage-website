@@ -10,40 +10,71 @@ export default function ContactPage() {
     company: '',
     details: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitMessage, setSubmitMessage] = useState('');
+  const [submitMessageType, setSubmitMessageType] = useState<'success' | 'error'>('success');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
+    if (submitMessageType === 'error') setSubmitMessage('');
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    const { fullName, email, company, details } = formData;
-    
+  const validateForm = () => {
+    const fullName = formData.fullName.trim();
+    const email = formData.email.trim();
+    const company = formData.company.trim();
+    const details = formData.details.trim();
+
     if (!fullName || !details) {
-      alert("Please fill in your name and project details.");
-      return;
+      setSubmitMessageType('error');
+      setSubmitMessage('Please enter your full name and project details before submitting.');
+      return null;
     }
 
+    if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      setSubmitMessageType('error');
+      setSubmitMessage('Please enter a valid email address or leave the email field blank.');
+      return null;
+    }
+
+    return { fullName, email, company, details };
+  };
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    if (isSubmitting) return;
+
+    const validated = validateForm();
+    if (!validated) return;
+
+    const { fullName, email, company, details } = validated;
     const message = `*Project Inquiry from ZYD Website*\n\n` +
       `*Name:* ${fullName}\n` +
       `*Email:* ${email || 'N/A'}\n` +
       `*Company:* ${company || 'N/A'}\n` +
       `*Details:* ${details}`;
-
     const whatsappUrl = `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
+
+    setIsSubmitting(true);
+    setSubmitMessageType('success');
+    setSubmitMessage('Opening WhatsApp with your project inquiry...');
+    const whatsappWindow = window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+
+    if (whatsappWindow) {
+      setSubmitMessage('WhatsApp is ready with your project inquiry.');
+    } else {
+      setSubmitMessageType('error');
+      setSubmitMessage('WhatsApp could not be opened. Please allow pop-ups and try again.');
+    }
+    window.setTimeout(() => setIsSubmitting(false), 1500);
   };
 
   const handleEmailSubmit = () => {
-    const { fullName, email, company, details } = formData;
+    const validated = validateForm();
+    if (!validated) return;
 
-    if (!fullName || !details) {
-      alert("Please fill in your name and project details.");
-      return;
-    }
-
+    const { fullName, email, company, details } = validated;
     const subject = 'Project Inquiry from ZYD Website';
     const body = `Name: ${fullName}\nEmail: ${email || 'N/A'}\nCompany: ${company || 'N/A'}\nDetails: ${details}`;
     const mailtoUrl = `mailto:${siteConfig.salesEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
@@ -88,7 +119,8 @@ export default function ContactPage() {
                       name="fullName"
                       value={formData.fullName}
                       onChange={handleChange}
-                      placeholder="John Doe" 
+                      placeholder="Your full name" 
+                      aria-label="Full name for your signage project inquiry"
                       className="w-full px-8 py-5 rounded-3xl bg-slate-50 border-none focus:ring-4 focus:ring-blue-500/10 font-bold transition-all" 
                       required
                     />
@@ -101,7 +133,8 @@ export default function ContactPage() {
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      placeholder="john@example.com" 
+                      placeholder="you@company.com" 
+                      aria-label="Email address for your signage project inquiry"
                       className="w-full px-8 py-5 rounded-3xl bg-slate-50 border-none focus:ring-4 focus:ring-blue-500/10 font-bold transition-all" 
                     />
                   </div>
@@ -114,9 +147,10 @@ export default function ContactPage() {
                     name="company"
                     value={formData.company}
                     onChange={handleChange}
-                    placeholder="Global Signage Corp" 
-                    className="w-full px-8 py-5 rounded-3xl bg-slate-50 border-none focus:ring-4 focus:ring-blue-500/10 font-bold transition-all" 
-                  />
+                     placeholder="Your company name" 
+                     aria-label="Company name for your signage project inquiry"
+                     className="w-full px-8 py-5 rounded-3xl bg-slate-50 border-none focus:ring-4 focus:ring-blue-500/10 font-bold transition-all" 
+                   />
                 </div>
                 <div className="space-y-3">
                   <label htmlFor="project-details" className="text-sm font-black uppercase tracking-widest text-slate-400 pl-2">Project Details</label>
@@ -126,14 +160,20 @@ export default function ContactPage() {
                     value={formData.details}
                     onChange={handleChange}
                     rows={5} 
-                    placeholder="Describe your signage needs, dimensions, and installation environment..." 
-                    className="w-full px-8 py-5 rounded-3xl bg-slate-50 border-none focus:ring-4 focus:ring-blue-500/10 font-bold transition-all resize-none"
-                    required
+                     placeholder="Describe your signage needs, dimensions, location, and installation environment..." 
+                     aria-label="Project details for your signage inquiry"
+                     className="w-full px-8 py-5 rounded-3xl bg-slate-50 border-none focus:ring-4 focus:ring-blue-500/10 font-bold transition-all resize-none"
+                     required
                   ></textarea>
                 </div>
-                <button type="submit" className="button button-green-base w-full py-8 text-white font-black text-2xl rounded-full transition-all">
-                  SUBMIT INQUIRY
+                <button type="submit" disabled={isSubmitting} className="button button-green-base w-full py-8 text-white font-black text-2xl rounded-full transition-all disabled:cursor-not-allowed disabled:opacity-70">
+                  {isSubmitting ? 'OPENING WHATSAPP...' : 'SUBMIT INQUIRY'}
                 </button>
+                {submitMessage && (
+                  <p role="status" aria-live="polite" className={`text-center text-sm font-bold ${submitMessageType === 'error' ? 'text-red-600' : 'text-emerald-600'}`}>
+                    {submitMessage}
+                  </p>
+                )}
                 <button
                   type="button"
                   onClick={handleEmailSubmit}

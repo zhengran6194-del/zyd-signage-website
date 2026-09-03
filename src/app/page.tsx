@@ -366,7 +366,45 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 6. CALL TO ACTION */}
+        {/* 6. PEOPLE BEHIND THE SIGNAGE */}
+        <section className="section bg-slate-100 py-20 lg:py-28">
+          <div className="container">
+            <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-12 reveal">
+              <div className="max-w-3xl">
+                <div className="text-blue-600 font-black uppercase text-[10px] tracking-[0.35em] mb-4">People Behind the Signage</div>
+                <h2 className="text-4xl lg:text-6xl font-black text-slate-950 uppercase tracking-tight leading-[0.95] mb-5">Craftsmanship starts with people.</h2>
+                <p className="text-slate-500 text-base lg:text-lg leading-relaxed font-medium">The signs we make are shaped by the people who plan, build, review, and deliver them. Our shared work, training, and time together keep collaboration close to every project.</p>
+              </div>
+              <div className="text-slate-400 text-xs font-black uppercase tracking-[0.25em] lg:max-w-xs lg:text-right">Team culture / Practical craft / Client-focused collaboration</div>
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-6 lg:gap-8 items-stretch">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div className="reveal sm:row-span-2 bg-white rounded-[2rem] overflow-hidden border border-slate-200 shadow-sm">
+                  <img src="/assets/images/team-collage.jpg" alt="ZYD team and signage production equipment collage" width={939} height={913} loading="lazy" className="w-full h-full min-h-[360px] object-cover" />
+                </div>
+                <div className="reveal bg-white rounded-[2rem] overflow-hidden border border-slate-200 shadow-sm">
+                  <img src="/assets/images/team-annual-event.jpg" alt="ZYD team gathered at an annual company event" width={5863} height={3909} loading="lazy" className="w-full h-64 object-cover" />
+                </div>
+                <div className="reveal bg-white rounded-[2rem] overflow-hidden border border-slate-200 shadow-sm">
+                  <img src="/assets/images/team-outdoor.jpg" alt="ZYD team gathered outdoors with a company banner" width={5950} height={3967} loading="lazy" className="w-full h-64 object-cover" />
+                </div>
+              </div>
+              <div className="grid grid-cols-2 gap-6 content-start">
+                <div className="reveal col-span-2 bg-white rounded-[2rem] overflow-hidden border border-slate-200 shadow-sm">
+                  <img src="/assets/images/team-training.jpg" alt="Team members attending a signage training and display session" width={6000} height={4000} loading="lazy" className="w-full h-72 object-cover" />
+                </div>
+                <div className="reveal bg-white rounded-[2rem] overflow-hidden border border-slate-200 shadow-sm">
+                  <img src="/assets/images/team-group-small.jpg" alt="ZYD team group photo at a company gathering" width={320} height={213} loading="lazy" className="w-full h-40 object-cover" />
+                </div>
+                <div className="reveal bg-white rounded-[2rem] overflow-hidden border border-slate-200 shadow-sm">
+                  <img src="/assets/images/team-group-green.jpg" alt="ZYD team group photo in coordinated work shirts" width={320} height={213} loading="lazy" className="w-full h-40 object-cover" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 7. CALL TO ACTION */}
         <section id="contact" className="section bg-slate-950 text-white relative overflow-hidden py-24">
           <div className="absolute inset-0 opacity-10 pointer-events-none">
             <img src="/assets/images/grid-pattern.svg" alt="Pattern" width={1200} height={800} loading="lazy" className="w-full h-full object-cover" />
