@@ -1,12 +1,17 @@
 'use client';
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { siteConfig } from '@/config/site';
 
 const virtualFactoryTourUrl = 'https://dlzydbs.en.alibaba.com/view/showroom/immersed.htm?model_id=7608030&member_id=284928014&ali_id=2500000111235&vaccount_id=291300719&wx_navbar_transparent=true&_aplus_page_enable=true&model=ailab&model_source=ailab&oss_key=e2c67502-933e-451f-a79c-6e63f1e5ea4f';
 
 export default function Home() {
+  const [formData, setFormData] = useState({ fullName: '', email: '', company: '', details: '' });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitMessage, setSubmitMessage] = useState('');
+  const [submitMessageType, setSubmitMessageType] = useState<'success' | 'error'>('success');
+
   useEffect(() => {
     const observerOptions = { threshold: 0.1 };
     const observer = new IntersectionObserver((entries) => {
@@ -17,6 +22,64 @@ export default function Home() {
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
     return () => observer.disconnect();
   }, []);
+
+  const handleInquiryChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+    if (submitMessageType === 'error') setSubmitMessage('');
+  };
+
+  const validateForm = () => {
+    const fullName = formData.fullName.trim();
+    const email = formData.email.trim();
+    const company = formData.company.trim();
+    const details = formData.details.trim();
+    if (!fullName || !details) {
+      setSubmitMessageType('error');
+      setSubmitMessage('Please enter your full name and project details before submitting.');
+      return null;
+    }
+    if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      setSubmitMessageType('error');
+      setSubmitMessage('Please enter a valid email address or leave the email field blank.');
+      return null;
+    }
+    return { fullName, email, company, details };
+  };
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    if (isSubmitting) return;
+    const validated = validateForm();
+    if (!validated) return;
+    const { fullName, email, company, details } = validated;
+    const message = `*Project Inquiry from ZYD Website*\n\n*Name:* ${fullName}\n*Email:* ${email || 'N/A'}\n*Company:* ${company || 'N/A'}\n*Details:* ${details}`;
+    const whatsappUrl = `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(message)}`;
+    setIsSubmitting(true);
+    setSubmitMessageType('success');
+    setSubmitMessage('Opening WhatsApp with your project inquiry...');
+    const whatsappWindow = window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+    if (whatsappWindow) setSubmitMessage('WhatsApp is ready with your project inquiry.');
+    else {
+      setSubmitMessageType('error');
+      setSubmitMessage('WhatsApp could not be opened. Please allow pop-ups and try again.');
+    }
+    window.setTimeout(() => setIsSubmitting(false), 1500);
+  };
+
+  const handleInquiryEmail = () => {
+    const validated = validateForm();
+    if (!validated) return;
+    const { fullName, email, company, details } = validated;
+    const subject = 'Project Inquiry from ZYD Website';
+    const body = `Name: ${fullName}\nEmail: ${email || 'N/A'}\nCompany: ${company || 'N/A'}\nDetails: ${details}`;
+    window.location.href = `mailto:${siteConfig.salesEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  };
+
+  const handleDirectWhatsApp = () => {
+    const message = `Hi ${siteConfig.contactPerson}, I would like to discuss a signage project and factory-direct pricing.`;
+    window.open(`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
+  };
 
   const steps = [
     { 
@@ -471,7 +534,32 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 7. CALL TO ACTION */}
+        {/* 7. B2B PROJECT TRUST */}
+        <section className="section bg-slate-950 text-white py-20 lg:py-24">
+          <div className="container">
+            <div className="max-w-3xl mb-12 reveal">
+              <div className="text-blue-300 font-black uppercase text-[10px] tracking-[0.35em] mb-4">Built for B2B Signage Projects</div>
+              <h2 className="text-4xl lg:text-6xl font-black uppercase tracking-tight leading-[0.95] mb-5">A clear path from brief to delivery.</h2>
+              <p className="text-slate-300 text-base lg:text-lg leading-relaxed font-medium">Coordinate your signage program with the production, quality, delivery, and OEM/ODM support already built into our workflow.</p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              {[
+                { title: 'Factory Direct', text: 'In-house signage production connected to your project team.' },
+                { title: 'Quality Control', text: 'Established quality processes and final checks for every project.' },
+                { title: 'Global DDP Delivery', text: 'Worldwide delivery support for coordinated signage programs.' },
+                { title: 'OEM & ODM Coordination', text: 'Technical coordination for contractors, architects, and brands.' },
+              ].map((item) => (
+                <div key={item.title} className="reveal rounded-3xl border border-white/15 bg-white/10 p-6 lg:p-7">
+                  <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-full bg-emerald-400/15 text-emerald-300 text-xl font-black">↗</div>
+                  <h3 className="text-lg font-black uppercase tracking-tight mb-3">{item.title}</h3>
+                  <p className="text-sm leading-relaxed text-slate-300 font-medium">{item.text}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 8. CALL TO ACTION */}
         <section id="contact" className="section bg-slate-950 text-white relative overflow-hidden py-24">
           <div className="absolute inset-0 opacity-10 pointer-events-none">
             <img src="/assets/images/grid-pattern.svg" alt="Pattern" width={1200} height={800} loading="lazy" className="w-full h-full object-cover" />
@@ -487,6 +575,45 @@ export default function Home() {
                 <Link href="/about" className="px-10 py-3 border border-white/20 rounded font-bold uppercase text-[12px] hover:bg-white hover:text-slate-950 transition-all flex items-center justify-center">
                   Learn More
                 </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 9. ONLINE ADVISOR & PROJECT INQUIRY */}
+        <section className="section bg-slate-100 py-20 lg:py-28">
+          <div className="container">
+            <div className="grid grid-cols-1 lg:grid-cols-[0.75fr_1.25fr] gap-8 lg:gap-12 items-stretch">
+              <button type="button" onClick={handleDirectWhatsApp} className="reveal group rounded-[2rem] bg-slate-950 p-8 lg:p-10 text-left text-white shadow-2xl transition-transform hover:-translate-y-1">
+                <div className="flex items-start justify-between gap-6 mb-16">
+                  <div>
+                    <div className="text-emerald-300 font-black uppercase text-[10px] tracking-[0.35em] mb-4">Online Advisor</div>
+                    <h2 className="text-4xl lg:text-5xl font-black uppercase tracking-tight leading-[0.95]">Talk to Aaron</h2>
+                  </div>
+                  <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-emerald-400 text-slate-950 text-2xl font-black transition-transform group-hover:rotate-45">↗</span>
+                </div>
+                <div className="border-t border-white/15 pt-6">
+                  <p className="text-slate-300 text-base leading-relaxed font-medium">Discuss your signage project, technical requirements, and factory-direct pricing directly on WhatsApp.</p>
+                  <span className="mt-8 inline-block text-emerald-300 text-xs font-black uppercase tracking-widest">Click to open WhatsApp</span>
+                </div>
+              </button>
+
+              <div className="reveal rounded-[2rem] bg-white border border-slate-200 p-8 lg:p-12 shadow-[0_30px_80px_rgba(10,39,84,0.08)]">
+                <div className="mb-8">
+                  <div className="text-blue-600 font-black uppercase text-[10px] tracking-[0.35em] mb-3">Start Your Project</div>
+                  <h2 className="text-3xl lg:text-4xl font-black text-slate-950 uppercase tracking-tight">Project Inquiry</h2>
+                </div>
+                <form className="space-y-5" onSubmit={handleSubmit}>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <input id="home-full-name" type="text" name="fullName" value={formData.fullName} onChange={handleInquiryChange} placeholder="Full Name *" aria-label="Full name for your signage project inquiry" required className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:ring-4 focus:ring-blue-500/10 font-bold" />
+                    <input id="home-email-address" type="email" name="email" value={formData.email} onChange={handleInquiryChange} placeholder="Email Address" aria-label="Email address for your signage project inquiry" className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:ring-4 focus:ring-blue-500/10 font-bold" />
+                  </div>
+                  <input id="home-company-name" type="text" name="company" value={formData.company} onChange={handleInquiryChange} placeholder="Company Name" aria-label="Company name for your signage project inquiry" className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:ring-4 focus:ring-blue-500/10 font-bold" />
+                  <textarea id="home-project-details" name="details" value={formData.details} onChange={handleInquiryChange} placeholder="Project Details *" aria-label="Project details for your signage inquiry" rows={5} required className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:ring-4 focus:ring-blue-500/10 font-bold resize-none" />
+                  <button type="submit" disabled={isSubmitting} className="button button-green-base w-full py-4 rounded-full font-black disabled:cursor-not-allowed disabled:opacity-70">{isSubmitting ? 'OPENING WHATSAPP...' : 'SUBMIT INQUIRY'}</button>
+                  {submitMessage && <p role="status" aria-live="polite" className={`text-center text-sm font-bold ${submitMessageType === 'error' ? 'text-red-600' : 'text-emerald-600'}`}>{submitMessage}</p>}
+                  <button type="button" onClick={handleInquiryEmail} className="w-full text-xs font-black uppercase tracking-widest text-slate-500 hover:text-blue-600 transition-colors">Prefer email? Send this inquiry by email</button>
+                </form>
               </div>
             </div>
           </div>
