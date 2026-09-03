@@ -282,18 +282,16 @@ export default function Home() {
         </section>
 
         {/* 4. GLOBAL SIGNAGE POSTER */}
-        <section className="section bg-slate-100 py-12 lg:py-20">
-          <div className="container">
-            <div className="reveal overflow-hidden rounded-[2.5rem] border border-slate-200 bg-slate-950 shadow-[0_35px_100px_rgba(10,39,84,0.16)]">
-              <img
-                src="/assets/images/global-signage-poster-alt.jpg"
-                alt="ZYD global signage manufacturer poster"
-                width={2347}
-                height={1173}
-                loading="lazy"
-                className="h-auto w-full object-cover"
-              />
-            </div>
+        <section className="bg-slate-100 py-8 px-0 lg:py-12">
+          <div className="reveal w-full border-y border-slate-200 bg-slate-950 shadow-[0_35px_100px_rgba(10,39,84,0.16)]">
+            <img
+              src="/assets/images/global-signage-poster-wide.jpg"
+              alt="ZYD custom signage and architectural sign collection"
+              width={1327}
+              height={726}
+              loading="lazy"
+              className="block h-auto w-full"
+            />
           </div>
         </section>
 
