@@ -177,7 +177,7 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
               <div className="reveal max-w-xl">
                 <div className="text-blue-600 font-black uppercase text-[10px] tracking-[0.4em] mb-5 border-l-2 border-blue-600 pl-4">INSIDE OUR FACTORY</div>
-                <h2 className="text-5xl lg:text-6xl font-black text-slate-950 uppercase tracking-tighter leading-[0.95] mb-8">See Your Box Being Made — Live.</h2>
+                <h2 className="text-5xl lg:text-6xl font-black text-slate-950 uppercase tracking-tighter leading-[0.95] mb-8">See Your Signage Being Made — Live.</h2>
                 <p className="text-slate-500 text-lg leading-relaxed font-medium mb-10">From precision cutting to final quality checks, see how your signage moves through our factory before it reaches your project site.</p>
                 <div className="flex flex-col sm:flex-row gap-5">
                   <a
