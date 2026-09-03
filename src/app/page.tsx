@@ -29,7 +29,7 @@ export default function Home() {
     if (submitMessageType === 'error') setSubmitMessage('');
   };
 
-  const validateForm = () => {
+  const validateInquiry = () => {
     const fullName = formData.fullName.trim();
     const email = formData.email.trim();
     const company = formData.company.trim();
@@ -47,10 +47,10 @@ export default function Home() {
     return { fullName, email, company, details };
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleInquirySubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (isSubmitting) return;
-    const validated = validateForm();
+    const validated = validateInquiry();
     if (!validated) return;
     const { fullName, email, company, details } = validated;
     const message = `*Project Inquiry from ZYD Website*\n\n*Name:* ${fullName}\n*Email:* ${email || 'N/A'}\n*Company:* ${company || 'N/A'}\n*Details:* ${details}`;
@@ -68,7 +68,7 @@ export default function Home() {
   };
 
   const handleInquiryEmail = () => {
-    const validated = validateForm();
+    const validated = validateInquiry();
     if (!validated) return;
     const { fullName, email, company, details } = validated;
     const subject = 'Project Inquiry from ZYD Website';
@@ -76,7 +76,7 @@ export default function Home() {
     window.location.href = `mailto:${siteConfig.salesEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   };
 
-  const handleDirectWhatsApp = () => {
+  const handleAdvisorWhatsApp = () => {
     const message = `Hi ${siteConfig.contactPerson}, I would like to discuss a signage project and factory-direct pricing.`;
     window.open(`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
   };
@@ -584,7 +584,7 @@ export default function Home() {
         <section className="section bg-slate-100 py-20 lg:py-28">
           <div className="container">
             <div className="grid grid-cols-1 lg:grid-cols-[0.75fr_1.25fr] gap-8 lg:gap-12 items-stretch">
-              <button type="button" onClick={handleDirectWhatsApp} className="reveal group rounded-[2rem] bg-slate-950 p-8 lg:p-10 text-left text-white shadow-2xl transition-transform hover:-translate-y-1">
+              <button type="button" onClick={handleAdvisorWhatsApp} className="reveal group rounded-[2rem] bg-slate-950 p-8 lg:p-10 text-left text-white shadow-2xl transition-transform hover:-translate-y-1">
                 <div className="flex items-start justify-between gap-6 mb-16">
                   <div>
                     <div className="text-emerald-300 font-black uppercase text-[10px] tracking-[0.35em] mb-4">Online Advisor</div>
@@ -603,7 +603,7 @@ export default function Home() {
                   <div className="text-blue-600 font-black uppercase text-[10px] tracking-[0.35em] mb-3">Start Your Project</div>
                   <h2 className="text-3xl lg:text-4xl font-black text-slate-950 uppercase tracking-tight">Project Inquiry</h2>
                 </div>
-                <form className="space-y-5" onSubmit={handleSubmit}>
+                <form className="space-y-5" onSubmit={handleInquirySubmit}>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                     <input id="home-full-name" type="text" name="fullName" value={formData.fullName} onChange={handleInquiryChange} placeholder="Full Name *" aria-label="Full name for your signage project inquiry" required className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:ring-4 focus:ring-blue-500/10 font-bold" />
                     <input id="home-email-address" type="email" name="email" value={formData.email} onChange={handleInquiryChange} placeholder="Email Address" aria-label="Email address for your signage project inquiry" className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:ring-4 focus:ring-blue-500/10 font-bold" />
@@ -612,7 +612,7 @@ export default function Home() {
                   <textarea id="home-project-details" name="details" value={formData.details} onChange={handleInquiryChange} placeholder="Project Details *" aria-label="Project details for your signage inquiry" rows={5} required className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:ring-4 focus:ring-blue-500/10 font-bold resize-none" />
                   <button type="submit" disabled={isSubmitting} className="button button-green-base w-full py-4 rounded-full font-black disabled:cursor-not-allowed disabled:opacity-70">{isSubmitting ? 'OPENING WHATSAPP...' : 'SUBMIT INQUIRY'}</button>
                   {submitMessage && <p role="status" aria-live="polite" className={`text-center text-sm font-bold ${submitMessageType === 'error' ? 'text-red-600' : 'text-emerald-600'}`}>{submitMessage}</p>}
-                  <button type="button" onClick={handleInquiryEmail} className="w-full text-xs font-black uppercase tracking-widest text-slate-500 hover:text-blue-600 transition-colors">Prefer email? Send this inquiry by email</button>
+                  <button type="button" onClick={handleInquiryEmail} className="w-full text-xs font-black uppercase tracking-widest text-slate-500 hover:text-blue-600 transition-colors">Prefer email? Send to {siteConfig.salesEmail}</button>
                 </form>
               </div>
             </div>
