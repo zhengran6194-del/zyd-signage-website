@@ -28,7 +28,7 @@ export default function ProductsPage() {
 
   return (
     <>
-      <main id="main" className="bg-slate-50 min-h-screen">
+      <main id="main" className="bg-slate-100 min-h-screen">
         <section className="py-24 bg-slate-900 text-white">
           <div className="max-w-[1600px] w-[95%] mx-auto text-center reveal">
             <div className="eyebrow text-blue-400 font-bold tracking-[0.3em] uppercase mb-4 text-xs">Manufacturing Excellence</div>

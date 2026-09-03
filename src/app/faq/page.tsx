@@ -90,7 +90,7 @@ export default function FAQPage() {
   }, []);
 
   return (
-    <main className="bg-white min-h-screen">
+    <main className="bg-slate-100 min-h-screen">
       <JsonLd data={faqJsonLd} />
       {/* 1. HERO SECTION */}
       <section className="relative min-h-[50vh] flex items-center bg-slate-950 text-white overflow-hidden py-24">
@@ -124,7 +124,7 @@ export default function FAQPage() {
       </section>
 
       {/* 3. POPULAR GUIDES */}
-      <section className="section bg-white">
+      <section className="section bg-slate-100">
         <div className="container">
           <div className="flex justify-between items-end mb-12 reveal">
             <div>
@@ -197,7 +197,7 @@ export default function FAQPage() {
       </section>
 
       {/* 5. CTA */}
-      <section className="section bg-white">
+      <section className="section bg-slate-100">
         <div className="container">
           <div className="bg-slate-950 p-16 lg:p-24 rounded-[4rem] text-center relative overflow-hidden group shadow-2xl">
             <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/10 blur-[120px] rounded-full -translate-y-1/2 translate-x-1/2"></div>

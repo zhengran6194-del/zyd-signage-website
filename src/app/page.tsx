@@ -143,7 +143,7 @@ export default function Home() {
         </section>
 
         {/* 2. THE ZYD WAY: PRODUCTION PROCESS (Artistic Grid) */}
-        <section className="section bg-white py-32 lg:py-48">
+        <section className="section bg-slate-100 py-32 lg:py-48">
           <div className="container">
             <div className="text-center mb-24 reveal">
               <div className="text-blue-600 font-bold uppercase text-[11px] tracking-[0.4em] mb-4">Industrial Excellence</div>
@@ -172,7 +172,7 @@ export default function Home() {
         </section>
 
         {/* 3. INSIDE OUR FACTORY */}
-        <section className="section bg-white py-24 lg:py-32">
+        <section className="section bg-slate-100 py-24 lg:py-32">
           <div className="container">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
               <div className="reveal max-w-xl">
@@ -280,7 +280,7 @@ export default function Home() {
         </section>
 
         {/* 4. PRODUCTS PREVIEW */}
-        <section className="section bg-white py-20 lg:py-24">
+        <section className="section bg-slate-100 py-20 lg:py-24">
           <div className="container">
             <div className="flex justify-between items-end mb-12 reveal">
               <div>
@@ -318,7 +318,55 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 5. CALL TO ACTION */}
+        {/* 5. FACTORY DIRECT ADVANTAGES */}
+        <section className="section bg-slate-100 py-20 lg:py-28">
+          <div className="container">
+            <div className="grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-8 lg:gap-12 items-stretch">
+              <div className="reveal relative min-h-[420px] overflow-hidden rounded-[2rem] bg-slate-900 text-white">
+                <img
+                  src="/assets/images/hero-bg-factory-aerial.jpg"
+                  alt="ZYD signage manufacturing facility"
+                  width={1920}
+                  height={1080}
+                  loading="lazy"
+                  className="absolute inset-0 w-full h-full object-cover opacity-60"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/55 to-transparent"></div>
+                <div className="relative z-10 flex h-full min-h-[420px] flex-col justify-end p-8 lg:p-12">
+                  <div className="text-blue-300 font-black uppercase text-[10px] tracking-[0.35em] mb-4">Factory Direct Signage</div>
+                  <h2 className="text-4xl lg:text-5xl font-black uppercase tracking-tight leading-[0.95] mb-5">Built at the Source.</h2>
+                  <p className="max-w-lg text-slate-200 text-base lg:text-lg leading-relaxed font-medium">From technical coordination to final quality checks, keep your signage project connected to the team that makes it.</p>
+                </div>
+              </div>
+              <div className="reveal rounded-[2rem] bg-white border border-slate-200 p-8 lg:p-12 shadow-[0_30px_80px_rgba(10,39,84,0.08)]">
+                <div className="max-w-xl">
+                  <div className="text-blue-600 font-black uppercase text-[10px] tracking-[0.35em] mb-4">Why Work Direct?</div>
+                  <h2 className="text-3xl lg:text-4xl font-black text-slate-950 uppercase tracking-tight leading-tight mb-5">One partner for your signage program.</h2>
+                  <p className="text-slate-500 text-base lg:text-lg leading-relaxed font-medium mb-8">Coordinate custom signage with factory production, established quality processes, and worldwide delivery support in one streamlined workflow.</p>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    {[
+                      { t: 'Factory Direct', d: 'In-House Production', icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 21h18M3 7v1h18V7l-2-4H5L3 7zM19 8v10M5 8v10M9 8v10M15 8v10"/></svg> },
+                      { t: '18+ Years', d: 'Industry Experience', icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> },
+                      { t: 'ISO Quality', d: 'Certified Processes', icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> },
+                      { t: 'Global Delivery', d: 'Reliable Worldwide Supply', icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg> },
+                    ].map((item) => (
+                      <div key={item.t} className="flex items-center gap-4 rounded-2xl border border-slate-100 bg-slate-50 p-4">
+                        <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center shrink-0 text-blue-600">{item.icon}</div>
+                        <div>
+                          <div className="text-slate-950 font-black text-xs uppercase tracking-wider mb-1">{item.t}</div>
+                          <div className="text-slate-400 font-bold text-[10px] uppercase tracking-wide">{item.d}</div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                  <Link href="/contact" className="button button-green-base mt-8 px-8 py-3">Discuss Your Signage Project</Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 6. CALL TO ACTION */}
         <section id="contact" className="section bg-slate-950 text-white relative overflow-hidden py-24">
           <div className="absolute inset-0 opacity-10 pointer-events-none">
             <img src="/assets/images/grid-pattern.svg" alt="Pattern" width={1200} height={800} loading="lazy" className="w-full h-full object-cover" />

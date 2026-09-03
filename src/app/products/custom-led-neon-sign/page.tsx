@@ -35,7 +35,7 @@ export default function LedNeonSignPage() {
         </section>
 
         {/* 2. Professional Specs Table */}
-        <section className="section bg-white">
+        <section className="section bg-slate-100">
           <div className="container">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-14">
               <div className="lg:col-span-2">

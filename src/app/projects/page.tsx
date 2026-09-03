@@ -16,7 +16,7 @@ export default function ProjectsPage() {
 
   return (
     <>
-      <main className="bg-white min-h-screen pt-32 pb-40">
+      <main className="bg-slate-100 min-h-screen pt-32 pb-40">
         <div className="container max-w-5xl">
           <h1 className="text-7xl font-black uppercase tracking-tighter mb-12">Case Studies</h1>
           

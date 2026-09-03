@@ -4,7 +4,7 @@ import React from 'react';
 export default function AboutPage() {
   return (
     <>
-      <main className="section-pad bg-white min-h-screen">
+      <main className="section-pad bg-slate-100 min-h-screen">
         <div className="container pt-20">
           <div className="section-heading text-center mb-16">
             <h1 className="text-5xl lg:text-6xl font-black text-slate-900 mb-6 uppercase tracking-tighter">About ZYD Signage</h1>

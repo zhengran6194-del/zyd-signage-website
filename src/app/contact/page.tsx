@@ -63,7 +63,7 @@ export default function ContactPage() {
 
   return (
     <>
-      <main className="bg-slate-50 min-h-screen pt-24 pb-32">
+      <main className="bg-slate-100 min-h-screen pt-24 pb-32">
         <div className="container">
           {/* Header Section */}
           <section className="text-center mb-20 reveal visible">
