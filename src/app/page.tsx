@@ -4,6 +4,8 @@ import React, { useEffect } from 'react';
 import Link from 'next/link';
 import { siteConfig } from '@/config/site';
 
+const virtualFactoryTourUrl = 'https://dlzydbs.en.alibaba.com/view/showroom/immersed.htm?model_id=7608030&member_id=284928014&ali_id=2500000111235&vaccount_id=291300719&wx_navbar_transparent=true&_aplus_page_enable=true&model=ailab&model_source=ailab&oss_key=e2c67502-933e-451f-a79c-6e63f1e5ea4f';
+
 export default function Home() {
   useEffect(() => {
     const observerOptions = { threshold: 0.1 };
@@ -318,7 +320,38 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 5. FACTORY DIRECT ADVANTAGES */}
+        {/* 5. 360° VIRTUAL FACTORY TOUR */}
+        <section className="section bg-slate-100 py-20 lg:py-28">
+          <div className="container">
+            <div className="rounded-[2rem] bg-slate-950 p-6 lg:p-10 shadow-[0_30px_90px_rgba(10,39,84,0.14)] overflow-hidden">
+              <div className="grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-8 lg:gap-12 items-center">
+                <div className="order-2 lg:order-1">
+                  <div className="overflow-hidden rounded-[1.5rem] border border-white/15 bg-slate-900 aspect-video shadow-2xl">
+                    <iframe
+                      src={virtualFactoryTourUrl}
+                      title="360-degree Alibaba virtual factory tour"
+                      loading="lazy"
+                      allow="fullscreen; xr-spatial-tracking"
+                      allowFullScreen
+                      className="h-full w-full border-0"
+                    />
+                  </div>
+                </div>
+                <div className="order-1 lg:order-2 text-white">
+                  <div className="text-blue-300 font-black uppercase text-[10px] tracking-[0.35em] mb-4">Step Inside Our Facility</div>
+                  <h2 className="text-4xl lg:text-5xl font-black uppercase tracking-tight leading-[0.95] mb-5">360° Virtual Factory Tour</h2>
+                  <p className="text-slate-300 text-base lg:text-lg leading-relaxed font-medium mb-8">Explore our signage production environment online, then connect with the team behind your next project.</p>
+                  <div className="flex flex-col sm:flex-row gap-3">
+                    <a href={virtualFactoryTourUrl} target="_blank" rel="noopener noreferrer" className="button button-green-base px-7 py-3 text-center">Open Full VR Tour</a>
+                    <span className="flex items-center text-xs font-bold text-slate-400">If the preview is blocked, open the tour directly.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 6. FACTORY DIRECT ADVANTAGES */}
         <section className="section bg-slate-100 py-20 lg:py-28">
           <div className="container">
             <div className="grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-8 lg:gap-12 items-stretch">
