@@ -326,24 +326,30 @@ export default function Home() {
             <div className="rounded-[2rem] bg-slate-950 p-6 lg:p-10 shadow-[0_30px_90px_rgba(10,39,84,0.14)] overflow-hidden">
               <div className="grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-8 lg:gap-12 items-center">
                 <div className="order-2 lg:order-1">
-                  <div className="overflow-hidden rounded-[1.5rem] border border-white/15 bg-slate-900 aspect-video shadow-2xl">
-                    <iframe
-                      src={virtualFactoryTourUrl}
-                      title="360-degree Alibaba virtual factory tour"
+                  <a
+                    href={virtualFactoryTourUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="View the interactive Alibaba virtual factory tour"
+                    className="group block overflow-hidden rounded-[1.5rem] border border-white/15 bg-slate-900 shadow-2xl"
+                  >
+                    <img
+                      src="/assets/images/vr-tour-preview.jpg"
+                      alt="Preview of the interactive ZYD virtual factory tour"
+                      width={1308}
+                      height={484}
                       loading="lazy"
-                      allow="fullscreen; xr-spatial-tracking"
-                      allowFullScreen
-                      className="h-full w-full border-0"
+                      className="h-auto w-full transition-transform duration-500 group-hover:scale-[1.02]"
                     />
-                  </div>
+                  </a>
                 </div>
                 <div className="order-1 lg:order-2 text-white">
                   <div className="text-blue-300 font-black uppercase text-[10px] tracking-[0.35em] mb-4">Step Inside Our Facility</div>
                   <h2 className="text-4xl lg:text-5xl font-black uppercase tracking-tight leading-[0.95] mb-5">360° Virtual Factory Tour</h2>
                   <p className="text-slate-300 text-base lg:text-lg leading-relaxed font-medium mb-8">Explore our signage production environment online, then connect with the team behind your next project.</p>
                   <div className="flex flex-col sm:flex-row gap-3">
-                    <a href={virtualFactoryTourUrl} target="_blank" rel="noopener noreferrer" className="button button-green-base px-7 py-3 text-center">Open Full VR Tour</a>
-                    <span className="flex items-center text-xs font-bold text-slate-400">If the preview is blocked, open the tour directly.</span>
+                    <a href={virtualFactoryTourUrl} target="_blank" rel="noopener noreferrer" className="button button-green-base px-7 py-3 text-center">View Interactive Tour</a>
+                    <span className="flex items-center text-xs font-bold text-slate-400">Click the preview or button to open the full VR tour.</span>
                   </div>
                 </div>
               </div>
