@@ -284,13 +284,13 @@ export default function Home() {
         {/* 4. GLOBAL SIGNAGE POSTER */}
         <section className="bg-slate-100 py-8 px-0 lg:py-12">
           <div className="bg-slate-950 px-6 py-10 text-white lg:px-12 lg:py-14">
-            <div className="mx-auto max-w-7xl">
-              <div className="reveal max-w-4xl">
+            <div className="w-full">
+              <div className="reveal w-full">
                 <div className="text-blue-300 font-black uppercase text-[10px] tracking-[0.35em] mb-4">B2B SIGNAGE SOLUTIONS</div>
-                <h2 className="text-4xl lg:text-6xl font-black uppercase tracking-tight leading-[0.95] mb-5">Custom Signage for Global Projects</h2>
+                <h2 className="text-5xl sm:text-6xl lg:text-7xl font-black uppercase tracking-tight leading-[0.95] mb-5">Custom Signage for Global Projects</h2>
                 <p className="text-slate-300 text-base lg:text-lg leading-relaxed font-medium">OEM/ODM signage manufacturing for contractors, architects, and brands — from technical coordination to factory production and global delivery.</p>
               </div>
-              <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-4xl">
+              <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-3 w-full">
                 {['Factory Direct', 'OEM / ODM Support', 'Project-Based Production'].map((item) => (
                   <div key={item} className="border-l-2 border-blue-400/70 pl-4 text-sm font-black uppercase tracking-wider text-slate-200">{item}</div>
                 ))}
