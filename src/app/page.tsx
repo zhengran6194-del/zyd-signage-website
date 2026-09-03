@@ -606,12 +606,12 @@ export default function Home() {
         {/* 9. ONLINE ADVISOR & PROJECT INQUIRY */}
         <section className="section bg-slate-100 py-20 lg:py-28">
           <div className="container">
-            <button type="button" onClick={handleAdvisorWhatsApp} className="reveal group mb-8 flex w-full items-center justify-between gap-6 rounded-[2rem] bg-slate-950 p-6 text-left text-white shadow-2xl transition-transform hover:-translate-y-1 lg:p-8">
+            <button type="button" onClick={handleAdvisorWhatsApp} className="advisor-bar reveal group mb-8 flex w-full flex-wrap items-center justify-between gap-4 rounded-[2rem] p-5 text-left shadow-2xl transition-transform hover:-translate-y-1 sm:gap-6 sm:p-6 lg:flex-nowrap lg:p-8">
               <div className="flex min-w-0 items-center gap-5">
                 <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-emerald-400 text-xl font-black text-slate-950">A</span>
                 <div>
                   <div className="text-emerald-300 font-black uppercase text-[10px] tracking-[0.35em] mb-2">Online Advisor · Available on WhatsApp</div>
-                  <h2 className="text-2xl lg:text-4xl font-black uppercase tracking-tight">Talk to Aaron about your signage project</h2>
+                  <h2 className="text-xl sm:text-2xl lg:text-4xl font-black uppercase tracking-tight break-words">Talk to Aaron about your signage project</h2>
                 </div>
               </div>
               <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-emerald-400 text-xl font-black text-slate-950 transition-transform group-hover:rotate-45">↗</span>
