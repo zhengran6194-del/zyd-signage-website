@@ -23,7 +23,7 @@ export default function ProjectsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
             {[
               { title: 'ZIMBABWE NATIONAL SPORTS STADIUM', tag: 'Stadium', desc: 'Architectural signage and visitor wayfinding for a landmark sports stadium in Zimbabwe, Africa.', img: 'zimbabwe-national-sports-stadium.jpg' },
-              { title: 'Singapore Medical Ctr', tag: 'Healthcare', desc: 'Full-spectrum antibacterial wayfinding and room ID systems.', img: 'case-hotel.webp' },
+              { title: 'AFREXIMBANK AFRICA TRADE CENTRE', tag: 'Commercial', desc: 'Wayfinding and architectural signage for a landmark trade centre in Harare, Zimbabwe.', img: 'afreximbank-africa-trade-centre.jpg' },
               { title: 'London Financial Hub', tag: 'Illuminated', desc: 'Large-scale halo-lit steel branding for 50-story commercial towers.', img: 'case-monument.webp' },
               { title: 'Riyadh Urban Vision', tag: 'Landscape', desc: 'Custom branding benches and smart city wayfinding furniture.', img: 'case-neon.webp' },
             ].map((proj, idx) => (
