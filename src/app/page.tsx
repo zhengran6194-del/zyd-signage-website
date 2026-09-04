@@ -417,8 +417,10 @@ export default function Home() {
                 { title: 'Metal & Acrylic Signs', img: 'cat-metal.webp' },
                 { title: 'Landscape & Furniture', img: 'landscape-bench.jpg' },
                 { title: 'Complete Systems', img: 'cat-system.webp' },
+                { title: 'Outdoor Waste Bin', img: 'outdoor-waste-bin.jpg', id: 'outdoor-waste-bin' },
+                { title: 'Custom Planter Box', img: 'custom-planter-box.jpg', id: 'custom-planter-box' },
               ].map((p, i) => (
-                <Link href="/products" key={i} className="reveal group block">
+                <Link href={p.id ? `/products/${p.id}` : '/products'} key={i} className="reveal group block">
                   <div className="overflow-hidden rounded-xl mb-4 h-60 bg-slate-100 border border-slate-50">
                     <img src={`/assets/images/${p.img}`} alt={p.title} width={1200} height={800} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                   </div>

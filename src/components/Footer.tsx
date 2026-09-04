@@ -39,6 +39,8 @@ export default function Footer() {
                 <li><Link href="/products/complete-signage-system" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Complete Signage Systems</Link></li>
                 <li><Link href="/products/custom-halo-lit-letters" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Halo-Lit Letters</Link></li>
                 <li><Link href="/products/custom-landscape-furniture" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Landscape Furniture</Link></li>
+                <li><Link href="/products/outdoor-waste-bin" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Outdoor Waste Bin</Link></li>
+                <li><Link href="/products/custom-planter-box" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Custom Planter Box</Link></li>
               </ul>
             </div>
 

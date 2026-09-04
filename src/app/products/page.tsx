@@ -24,6 +24,8 @@ export default function ProductsPage() {
     { title: 'LED Neon Signs', desc: 'Vibrant custom neon flex for branding and interior decor.', img: 'cat-neon.webp', id: 'custom-led-neon-sign' },
     { title: 'Metal & Acrylic Signs', desc: 'Precision laser-cut corporate logos and plaque systems.', img: 'cat-metal.webp', id: 'metal-acrylic-logo-sign' },
     { title: 'Complete Systems', desc: 'One-partner coordinated signage programs for global rollouts.', img: 'cat-system.webp', id: 'complete-signage-system' },
+    { title: 'Outdoor Waste Bin', desc: 'Custom waste bins for hospitality, commercial, and public-space projects.', img: 'outdoor-waste-bin.jpg', id: 'outdoor-waste-bin' },
+    { title: 'Custom Planter Box', desc: 'Architectural planter solutions for commercial entrances and public spaces.', img: 'custom-planter-box.jpg', id: 'custom-planter-box' },
   ];
 
   return (

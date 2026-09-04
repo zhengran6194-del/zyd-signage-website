@@ -17,6 +17,8 @@ const routes = [
   { path: "/products/metal-acrylic-logo-sign", priority: 0.8 },
   { path: "/products/outdoor-pylon-monument-sign", priority: 0.8 },
   { path: "/products/ultra-slim-led-light-box", priority: 0.8 },
+  { path: "/products/outdoor-waste-bin", priority: 0.8 },
+  { path: "/products/custom-planter-box", priority: 0.8 },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
