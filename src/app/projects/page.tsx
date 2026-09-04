@@ -22,9 +22,9 @@ export default function ProjectsPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
             {[
+              { title: 'THE SETAI SEA OF GALILEE', tag: 'Hospitality', desc: 'Signage and wayfinding for a luxury lakeside resort in Israel, overlooking the Sea of Galilee.', img: 'the-setai-sea-of-galilee.jpg' },
               { title: 'ZIMBABWE NATIONAL SPORTS STADIUM', tag: 'Stadium', desc: 'Architectural signage and visitor wayfinding for a landmark sports stadium in Zimbabwe, Africa.', img: 'zimbabwe-national-sports-stadium.jpg' },
               { title: 'AFREXIMBANK AFRICA TRADE CENTRE', tag: 'Commercial', desc: 'Wayfinding and architectural signage for a landmark trade centre in Harare, Zimbabwe.', img: 'afreximbank-africa-trade-centre.jpg' },
-              { title: 'London Financial Hub', tag: 'Illuminated', desc: 'Large-scale halo-lit steel branding for 50-story commercial towers.', img: 'case-monument.webp' },
               { title: 'Riyadh Urban Vision', tag: 'Landscape', desc: 'Custom branding benches and smart city wayfinding furniture.', img: 'case-neon.webp' },
             ].map((proj, idx) => (
               <div key={idx} className="reveal bg-slate-50 rounded-[2rem] overflow-hidden border border-slate-100 group hover:shadow-2xl transition-all">
