@@ -26,7 +26,7 @@ export default function ProjectsPage() {
               { title: 'ZIMBABWE NATIONAL SPORTS STADIUM', tag: 'Stadium', desc: 'Architectural signage and visitor wayfinding for a landmark sports stadium in Zimbabwe, Africa.', img: 'zimbabwe-national-sports-stadium.jpg' },
               { title: 'AFREXIMBANK AFRICA TRADE CENTRE', tag: 'Commercial', desc: 'Wayfinding and architectural signage for a landmark trade centre in Harare, Zimbabwe.', img: 'afreximbank-africa-trade-centre.jpg' },
               { title: 'TEL HAZOR NATIONAL PARK', tag: 'Heritage', desc: 'Wayfinding and interpretive signage for an archaeological national park in Israel.', img: 'tel-hazor-national-park.jpg' },
-              { title: 'PROJECT 05', tag: 'Upcoming', desc: 'Project details coming soon.', img: null },
+              { title: 'SHELL FUEL STATION PYLON SIGN', tag: 'Fuel Station', desc: 'Pylon signage for a Shell fuel station in Calgary, Alberta, Canada.', img: 'shell-fuel-station-pylon.jpg' },
               { title: 'PROJECT 06', tag: 'Upcoming', desc: 'Project details coming soon.', img: null },
             ].map((proj, idx) => (
               <div key={idx} className="reveal flex flex-col bg-slate-50 rounded-[2rem] overflow-hidden border border-slate-100 group hover:shadow-2xl transition-all">
