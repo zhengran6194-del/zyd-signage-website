@@ -25,7 +25,7 @@ export default function ProjectsPage() {
               { title: 'THE SETAI SEA OF GALILEE', tag: 'Hospitality', desc: 'Signage and wayfinding for a luxury lakeside resort in Israel, overlooking the Sea of Galilee.', img: 'the-setai-sea-of-galilee.jpg' },
               { title: 'ZIMBABWE NATIONAL SPORTS STADIUM', tag: 'Stadium', desc: 'Architectural signage and visitor wayfinding for a landmark sports stadium in Zimbabwe, Africa.', img: 'zimbabwe-national-sports-stadium.jpg' },
               { title: 'AFREXIMBANK AFRICA TRADE CENTRE', tag: 'Commercial', desc: 'Wayfinding and architectural signage for a landmark trade centre in Harare, Zimbabwe.', img: 'afreximbank-africa-trade-centre.jpg' },
-              { title: 'Riyadh Urban Vision', tag: 'Landscape', desc: 'Custom branding benches and smart city wayfinding furniture.', img: 'case-neon.webp' },
+              { title: 'TEL HAZOR NATIONAL PARK', tag: 'Heritage', desc: 'Wayfinding and interpretive signage for an archaeological national park in Israel.', img: 'tel-hazor-national-park.jpg' },
             ].map((proj, idx) => (
               <div key={idx} className="reveal bg-slate-50 rounded-[2rem] overflow-hidden border border-slate-100 group hover:shadow-2xl transition-all">
                 <div className="h-80 overflow-hidden">
