@@ -52,7 +52,7 @@ const guides = [
 const faqs = [
   { q: 'Can you provide free 3D mockups?', a: 'Yes, our engineering team provides complimentary high-fidelity 3D mockups for all project inquiries to help you visualize the final result before production.' },
   { q: 'What file formats do I need to provide for my logo?', a: 'We prefer vector files such as .AI, .EPS, .SVG, or high-resolution .PDF. These ensure the highest precision for CNC cutting and fabrication.' },
-  { q: 'What is the standard lead time?', a: 'Typical production lead time is 7-12 working days depending on project complexity. Large-scale rollout projects are phased according to your schedule.' },
+  { q: 'What is the standard lead time?', a: 'Typical production lead time is 7–14 days depending on project complexity. Large-scale rollout projects are phased according to your schedule.' },
   { q: 'Do you provide detailed installation drawings?', a: 'Yes, every sign comes with a 1:1 scale installation template and comprehensive technical drawings showing mounting points and electrical connections.' },
   { q: 'What is International DDP Shipping?', a: 'DDP (Delivered Duty Paid) means we handle everything: freight, customs clearance, and local duties. We deliver directly to your doorstep in 50+ countries with no hidden fees.' },
   { q: 'Are your signs durable in coastal environments?', a: 'Absolutely. For coastal areas, we recommend 304 Stainless Steel with high-grade marine powder coating. This combination ensures maximum resistance to salt spray and corrosion.' },
@@ -133,29 +133,36 @@ export default function FAQPage() {
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {guides.map((guide, i) => (
-              <button
-                key={i}
-                type="button"
-                onClick={() => openWhatsApp(`Hi Aaron, I would like to discuss the "${guide.title}" guide and my signage project.`)}
-                className="reveal group cursor-pointer w-full text-left"
-              >
-                <div className="bg-slate-100 rounded-[2rem] h-48 mb-6 overflow-hidden relative">
-                  <img 
-                    src={`/assets/images/${guide.image}`} 
-                    alt={guide.title} 
-                    width={800}
-                    height={600}
-                    loading="lazy"
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-blue-600/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                </div>
-                <div className="text-[10px] font-black uppercase tracking-widest text-blue-600 mb-3">{guide.category}</div>
-                <h4 className="text-lg font-black text-slate-900 mb-3 leading-tight group-hover:text-blue-600 transition-colors">{guide.title}</h4>
-                <div className="text-xs text-slate-400 font-bold">{guide.date}</div>
-              </button>
-            ))}
+            {guides.map((guide, i) => {
+              const guidePaths = [
+                '/guides/how-much-do-custom-channel-letters-cost',
+                '/guides/front-lit-vs-halo-lit-channel-letters',
+                '/guides/how-to-choose-the-right-sign-for-your-business',
+                '/guides/304-stainless-steel-vs-galvanized-steel-outdoor-signs',
+              ];
+              return (
+                <Link
+                  key={i}
+                  href={guidePaths[i]}
+                  className="reveal group cursor-pointer w-full text-left block"
+                >
+                  <div className="bg-slate-100 rounded-[2rem] h-48 mb-6 overflow-hidden relative">
+                    <img 
+                      src={`/assets/images/${guide.image}`} 
+                      alt={guide.title} 
+                      width={800}
+                      height={600}
+                      loading="lazy"
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-blue-600/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                  </div>
+                  <div className="text-[10px] font-black uppercase tracking-widest text-blue-600 mb-3">{guide.category}</div>
+                  <h4 className="text-lg font-black text-slate-900 mb-3 leading-tight group-hover:text-blue-600 transition-colors">{guide.title}</h4>
+                  <div className="text-xs text-slate-400 font-bold">{guide.date}</div>
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>
