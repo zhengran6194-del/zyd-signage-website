@@ -308,6 +308,51 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
   background: linear-gradient(to right, rgba(7, 18, 38, 0.88) 0%, rgba(7, 18, 38, 0.4) 100%);
 }
 
+/* Header: desktop three-zone layout — logo left / nav + CTA right */
+@media (min-width: 1025px) {
+  .site-header {
+    min-height: 132px;
+    height: 132px;
+  }
+
+  /* Header gets its own wider track than the 1200px content container. */
+  .nav-wrap {
+    justify-content: flex-start; /* removes the space-between conflict */
+    max-width: 1560px;
+    width: 94%;
+  }
+
+  .brand img {
+    max-height: clamp(92px, 7vw, 112px);
+  }
+
+  /* Single rule pushes nav + CTA to the right; margin-right is the only
+     definition of the spacing between the nav and the quote button. */
+  .primary-nav {
+    margin-left: auto;
+    margin-right: clamp(1.75rem, 2vw, 2rem);
+    gap: clamp(1.5rem, 1.9vw, 2.25rem);
+    flex-wrap: nowrap;
+  }
+
+  .primary-nav a {
+    font-size: clamp(13px, 0.95vw, 14px);
+    white-space: nowrap;
+  }
+
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
+  }
+
+  .nav-actions .button-green-base {
+    padding: 12px 26px;
+    font-size: clamp(13px, 0.95vw, 14px);
+    white-space: nowrap;
+  }
+}
+
 @media (max-width: 1024px) {
   .site-header {
     min-height: 80px;
