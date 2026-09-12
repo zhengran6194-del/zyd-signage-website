@@ -19,6 +19,7 @@ const routes = [
   { path: "/products/ultra-slim-led-light-box", priority: 0.8 },
   { path: "/products/outdoor-waste-bin", priority: 0.8 },
   { path: "/products/custom-planter-box", priority: 0.8 },
+  { path: "/guides", priority: 0.8 },
   { path: "/guides/304-stainless-steel-vs-galvanized-steel-outdoor-signs", priority: 0.7 },
   { path: "/guides/how-much-do-custom-channel-letters-cost", priority: 0.7 },
   { path: "/guides/front-lit-vs-halo-lit-channel-letters", priority: 0.7 },

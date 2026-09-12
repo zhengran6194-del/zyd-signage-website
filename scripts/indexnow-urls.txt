@@ -1,0 +1,57 @@
+# IndexNow resubmission list for www.zydsign.com
+# One URL per line. Lines starting with '#' are ignored.
+#
+# Usage:
+#   powershell -File scripts/indexnow-submit.ps1 -UrlsFile scripts/indexnow-urls.txt
+#
+# IMPORTANT: run this ONLY after public/9556efc61b037c23c2a35aa4fd12076f.txt
+# is deployed and returns HTTP 200 in production. The script hard-aborts
+# otherwise (exit code 2).
+#
+# Each URL is pre-checked for HTTP 200. Any non-200 URL aborts the run unless
+# -Force is passed. Status column below was measured on 2026-09-12.
+
+# --- Group 1: guides (previously submitted with a non-validated key) ---
+# status 200
+https://www.zydsign.com/guides/how-much-do-custom-channel-letters-cost
+# status 200
+https://www.zydsign.com/guides/front-lit-vs-halo-lit-channel-letters
+# status 200
+https://www.zydsign.com/guides/304-stainless-steel-vs-galvanized-steel-outdoor-signs
+# status 200
+https://www.zydsign.com/guides/how-to-choose-the-right-sign-for-your-business
+
+# --- Group 2: guides index page (NEW) ---
+# status 404 on 2026-09-12: page not deployed yet.
+# It must exist in production before this run can pass the pre-check.
+https://www.zydsign.com/guides
+
+# --- Group 3: new product pages (NEW) ---
+# status 200
+https://www.zydsign.com/products/outdoor-waste-bin
+# status 200
+https://www.zydsign.com/products/custom-planter-box
+
+# --- Group 4: updated pages (homepage + catalog + product detail pages) ---
+# status 200
+https://www.zydsign.com/
+# status 200
+https://www.zydsign.com/products
+# status 200
+https://www.zydsign.com/products/architectural-wayfinding-system
+# status 200
+https://www.zydsign.com/products/complete-signage-system
+# status 200
+https://www.zydsign.com/products/custom-halo-lit-letters
+# status 200
+https://www.zydsign.com/products/custom-landscape-furniture
+# status 200
+https://www.zydsign.com/products/custom-led-neon-sign
+# status 200
+https://www.zydsign.com/products/medical-care-signage
+# status 200
+https://www.zydsign.com/products/metal-acrylic-logo-sign
+# status 200
+https://www.zydsign.com/products/outdoor-pylon-monument-sign
+# status 200
+https://www.zydsign.com/products/ultra-slim-led-light-box

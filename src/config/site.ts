@@ -3,7 +3,7 @@ export const siteConfig = {
   salesEmail: "zhengran@zydsign.cn",
   companyName: "Dalian Zhiyudao Signage & Tech. Co., Ltd.",
   contactPerson: "Aaron",
-  url: "https://zydsign.com",
+  url: "https://www.zydsign.com",
   links: {
     twitter: "https://x.com/ZYDsign",
     tiktok: "https://www.tiktok.com/@zydsign",

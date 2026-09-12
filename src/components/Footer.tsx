@@ -50,6 +50,10 @@ export default function Footer() {
                 <li><Link href="/about" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Production Base</Link></li>
                 <li><Link href="/projects" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Case Portfolio</Link></li>
                 <li><Link href="/faq" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Resources</Link></li>
+                <li><Link href="/guides/how-much-do-custom-channel-letters-cost" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Channel Letters Cost Guide</Link></li>
+                <li><Link href="/guides/front-lit-vs-halo-lit-channel-letters" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Front-Lit vs Halo-Lit</Link></li>
+                <li><Link href="/guides/how-to-choose-the-right-sign-for-your-business" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Choosing the Right Sign</Link></li>
+                <li><Link href="/guides/304-stainless-steel-vs-galvanized-steel-outdoor-signs" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Stainless vs Galvanized Steel</Link></li>
                 <li><Link href="/contact" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Consult Now</Link></li>
               </ul>
             </div>

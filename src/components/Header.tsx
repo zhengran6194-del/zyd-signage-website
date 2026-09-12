@@ -29,6 +29,7 @@ export default function Header() {
         <nav id="primary-nav" className={`primary-nav ${isMenuOpen ? 'open' : ''}`}>
           <Link href="/products" onClick={() => setIsMenuOpen(false)}>Products</Link>
           <Link href="/projects" onClick={() => setIsMenuOpen(false)}>Case Studies</Link>
+          <Link href="/guides" onClick={() => setIsMenuOpen(false)}>Guides</Link>
           <Link href="/faq" onClick={() => setIsMenuOpen(false)}>FAQ</Link>
           <Link href="/about" onClick={() => setIsMenuOpen(false)}>About</Link>
           <Link href="/contact" onClick={() => setIsMenuOpen(false)}>Contact</Link>

@@ -1,5 +1,4 @@
 import type { MetadataRoute } from "next";
-import { siteConfig } from "@/config/site";
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -7,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: `${siteConfig.url}/sitemap.xml`,
-    host: siteConfig.url,
+    sitemap: "https://www.zydsign.com/sitemap.xml",
+    host: "https://www.zydsign.com",
   };
 }

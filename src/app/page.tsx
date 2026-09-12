@@ -335,7 +335,7 @@ export default function Home() {
                         icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M3 21h18M3 7v1h18V7l-2-4H5L3 7zM19 8v10M5 8v10M9 8v10M15 8v10"/></svg> 
                       },
                       { 
-                        t: '18+ Years', 
+                        t: '20 Years', 
                         d: 'Industry Experience', 
                         icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 
                       },
@@ -436,6 +436,56 @@ export default function Home() {
           </div>
         </section>
 
+        {/* 5b. INSIGHTS / GUIDES */}
+        <section className="section bg-slate-100 py-20 lg:py-24 border-t border-slate-200">
+          <div className="container">
+            <div className="flex justify-between items-end mb-12 reveal">
+              <div>
+                <h2 className="uppercase tracking-tighter text-slate-900">Signage Insights</h2>
+                <p className="text-slate-500 font-medium text-sm mt-1">Buying guides for custom signage projects.</p>
+              </div>
+              <Link href="/faq" className="text-blue-600 font-bold uppercase text-[11px] tracking-widest border-b border-blue-100 hover:border-blue-600 transition-all pb-0.5">
+                All Guides &rarr;
+              </Link>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
+              {[
+                {
+                  tag: 'Buying Guide',
+                  title: 'How Much Do Custom Channel Letters Cost?',
+                  desc: 'The project inputs that shape a channel letter quotation.',
+                  href: '/guides/how-much-do-custom-channel-letters-cost',
+                },
+                {
+                  tag: 'Comparison',
+                  title: 'Front-Lit vs Halo-Lit Channel Letters',
+                  desc: 'Which illumination style suits the wall and the brand.',
+                  href: '/guides/front-lit-vs-halo-lit-channel-letters',
+                },
+                {
+                  tag: 'Buying Guide',
+                  title: 'How to Choose the Right Sign for Your Business',
+                  desc: 'Match the sign format to the site, viewer, and message.',
+                  href: '/guides/how-to-choose-the-right-sign-for-your-business',
+                },
+                {
+                  tag: 'Materials',
+                  title: '304 Stainless Steel vs Galvanized Steel',
+                  desc: 'Material selection logic for outdoor signage.',
+                  href: '/guides/304-stainless-steel-vs-galvanized-steel-outdoor-signs',
+                },
+              ].map((g, i) => (
+                <Link href={g.href} key={i} className="reveal group block bg-white border border-slate-100 rounded-xl p-6 shadow-sm hover:shadow-xl transition-all duration-300">
+                  <div className="text-[10px] font-black text-blue-600 uppercase tracking-widest mb-3">{g.tag}</div>
+                  <h4 className="font-black text-slate-900 mb-3 uppercase text-xs leading-relaxed">{g.title}</h4>
+                  <p className="text-slate-500 text-xs leading-relaxed font-medium mb-4">{g.desc}</p>
+                  <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest group-hover:text-blue-600 transition-colors">Read Guide</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* 5. 360° VIRTUAL FACTORY TOUR */}
         <section className="section bg-slate-100 py-20 lg:py-28">
           <div className="container">
@@ -501,7 +551,7 @@ export default function Home() {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     {[
                       { t: 'Factory Direct', d: 'In-House Production', icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 21h18M3 7v1h18V7l-2-4H5L3 7zM19 8v10M5 8v10M9 8v10M15 8v10"/></svg> },
-                      { t: '18+ Years', d: 'Industry Experience', icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> },
+                      { t: '20 Years', d: 'Industry Experience', icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> },
                       { t: 'ISO Quality', d: 'Certified Processes', icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> },
                       { t: 'Global Delivery', d: 'Reliable Worldwide Supply', icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg> },
                     ].map((item) => (
