@@ -12,6 +12,9 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Local scratch / backup folders are not part of the shipped app:
+    "temp/**",
+    "zyd-static-backup/**",
   ]),
 ]);
 

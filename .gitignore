@@ -5,6 +5,9 @@ zyd-static-backup/
 zyd-signage-site/
 zyd-signage-website-package.zip
 
+# scratch workspace (kept on disk, never tracked)
+temp/
+
 # dependencies
 /node_modules
 /.pnp
