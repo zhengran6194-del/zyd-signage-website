@@ -262,6 +262,11 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
 }
 .reveal.visible { opacity: 1; transform: none; }
 
+/* Without scripting the observer never runs, so never trap content at opacity:0. */
+@media (scripting: none) {
+  .reveal { opacity: 1; transform: none; }
+}
+
 /* Production Steps Grid - Icon Style */
 .step-grid {
   display: grid;

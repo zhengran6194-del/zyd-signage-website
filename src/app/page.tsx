@@ -1,8 +1,14 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { siteConfig } from '@/config/site';
+import {
+  buildWhatsAppUrl,
+  pushGenerateLead,
+  submitInquiry,
+  type InquiryPayload,
+} from '@/lib/inquiry';
 
 const virtualFactoryTourUrl = 'https://dlzydbs.en.alibaba.com/view/showroom/immersed.htm?model_id=7608030&member_id=284928014&ali_id=2500000111235&vaccount_id=291300719&wx_navbar_transparent=true&_aplus_page_enable=true&model=ailab&model_source=ailab&oss_key=e2c67502-933e-451f-a79c-6e63f1e5ea4f';
 
@@ -13,6 +19,17 @@ export default function Home() {
   const [submitMessageType, setSubmitMessageType] = useState<'success' | 'error'>('success');
   const [selectedFiles, setSelectedFiles] = useState<File[]>([]);
   const [fileError, setFileError] = useState('');
+  const [leadReceived, setLeadReceived] = useState(false);
+  const [lastSubmitted, setLastSubmitted] = useState<InquiryPayload | null>(null);
+  const [lastFileExtra, setLastFileExtra] = useState<string | undefined>(undefined);
+
+  // Anti-abuse fields are populated after mount so server and client markup match.
+  const honeypotRef = useRef<HTMLInputElement>(null);
+  const startedAtRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    if (startedAtRef.current) startedAtRef.current.value = String(Date.now());
+  }, []);
 
   useEffect(() => {
     const observerOptions = { threshold: 0.1 };
@@ -67,27 +84,45 @@ export default function Home() {
     if (submitMessageType === 'error') setSubmitMessage('');
   };
 
-  const handleInquirySubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleInquirySubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (isSubmitting) return;
     const validated = validateInquiry();
     if (!validated) return;
-    const { fullName, email, company, details } = validated;
-    const fileSummary = selectedFiles.length
-      ? `\n*Design files:* ${selectedFiles.map(file => file.name).join(', ')}\nPlease send the original files in WhatsApp after chat opens. This form cannot transfer local file binaries.`
-      : '';
-    const message = `*Project Inquiry from ZYD Website*\n\n*Name:* ${fullName}\n*Email:* ${email || 'N/A'}\n*Company:* ${company || 'N/A'}\n*Details:* ${details}${fileSummary}`;
-    const whatsappUrl = `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(message)}`;
+
     setIsSubmitting(true);
+    setLeadReceived(false);
     setSubmitMessageType('success');
-    setSubmitMessage('Opening WhatsApp with your project inquiry...');
-    const whatsappWindow = window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
-    if (whatsappWindow) setSubmitMessage('WhatsApp is ready with your project inquiry.');
-    else {
+    setSubmitMessage('Sending your inquiry...');
+
+    const response = await submitInquiry({
+      ...validated,
+      source: 'home_page',
+      companyWebsite: honeypotRef.current?.value ?? '',
+      formStartedAt: Number(startedAtRef.current?.value || 0),
+    });
+
+    if (!response.ok) {
       setSubmitMessageType('error');
-      setSubmitMessage('WhatsApp could not be opened. Please allow pop-ups and try again.');
+      setSubmitMessage(response.message);
+      setIsSubmitting(false);
+      return;
     }
-    window.setTimeout(() => setIsSubmitting(false), 1500);
+
+    // The conversion event is pushed only after the server confirmed the inquiry was stored.
+    pushGenerateLead(response, 'home_page');
+    const fileExtra = selectedFiles.length
+      ? `*Design files:* ${selectedFiles.map(file => file.name).join(', ')}\nPlease send the original files in WhatsApp. This form cannot transfer local file binaries.`
+      : undefined;
+    setLastSubmitted(validated);
+    setLastFileExtra(fileExtra);
+    setLeadReceived(true);
+    setSubmitMessageType('success');
+    setSubmitMessage(response.message);
+    setFormData({ fullName: '', email: '', company: '', details: '' });
+    setSelectedFiles([]);
+    if (startedAtRef.current) startedAtRef.current.value = String(Date.now());
+    setIsSubmitting(false);
   };
 
   const handleInquiryEmail = () => {
@@ -167,7 +202,7 @@ export default function Home() {
           
           <div className="max-w-[1600px] w-[95%] mx-auto relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-32 items-center mb-24">
-              <div className="hero-copy reveal">
+              <div className="hero-copy reveal visible">
                 <h1 className="text-4xl lg:text-6xl font-black leading-tight mb-8 uppercase text-white">
                   Premium Custom Signage <br/>
                   Solutions Direct from Factory.
@@ -186,7 +221,7 @@ export default function Home() {
               </div>
 
               {/* RIGHT CARD: SIGNAGE SOLUTIONS */}
-              <div className="reveal relative hidden lg:block">
+              <div className="reveal visible relative hidden lg:block">
                 <div className="bg-[#0b1a33]/80 backdrop-blur-2xl p-12 rounded-[2rem] border border-white/10 shadow-[0_80px_150px_rgba(0,0,0,0.6)] relative group overflow-hidden">
                   <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/10 blur-[100px] rounded-full -translate-y-1/2 translate-x-1/2"></div>
                   
@@ -215,7 +250,7 @@ export default function Home() {
             </div>
 
             {/* Statistics Bar (Image 2) */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-16 py-12 border-y border-white/10 max-w-6xl text-white reveal mt-auto">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-16 py-12 border-y border-white/10 max-w-6xl text-white reveal visible mt-auto">
               {[
                 { val: 'EST. 2006' },
                 { val: '20,000m² PRODUCTION BASE' },
@@ -675,6 +710,12 @@ export default function Home() {
                 <h2 className="text-3xl lg:text-4xl font-black text-slate-950 uppercase tracking-tight">Project Inquiry</h2>
               </div>
               <form className="space-y-5" onSubmit={handleInquirySubmit}>
+                {/* Anti-abuse fields. Kept off-screen and untabbable, never shown to visitors. */}
+                <div aria-hidden="true" style={{ position: 'absolute', left: '-9999px', width: '1px', height: '1px', overflow: 'hidden' }}>
+                  <label htmlFor="home-company-website">Company website</label>
+                  <input ref={honeypotRef} id="home-company-website" type="text" name="companyWebsite" tabIndex={-1} autoComplete="off" />
+                </div>
+                <input ref={startedAtRef} type="hidden" name="formStartedAt" defaultValue="" />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                   <input id="home-full-name" type="text" name="fullName" value={formData.fullName} onChange={handleInquiryChange} placeholder="Full Name *" aria-label="Full name for your signage project inquiry" required className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:ring-4 focus:ring-blue-500/10 font-bold" />
                   <input id="home-email-address" type="email" name="email" value={formData.email} onChange={handleInquiryChange} placeholder="Email Address" aria-label="Email address for your signage project inquiry" className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:ring-4 focus:ring-blue-500/10 font-bold" />
@@ -683,13 +724,23 @@ export default function Home() {
                 <textarea id="home-project-details" name="details" value={formData.details} onChange={handleInquiryChange} placeholder="Project Details *" aria-label="Project details for your signage inquiry" rows={5} required className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:ring-4 focus:ring-blue-500/10 font-bold resize-none" />
                 <div className="rounded-2xl border border-dashed border-slate-300 bg-slate-50 p-5">
                   <label htmlFor="home-design-files" className="block text-sm font-black uppercase tracking-widest text-slate-700">Design Files (PDF / AI / PSD)</label>
-                  <p className="mt-2 text-xs font-medium text-slate-500">Optional. Each file must be under 10MB. Files are not uploaded automatically; attach them manually in WhatsApp after it opens.</p>
+                  <p className="mt-2 text-xs font-medium text-slate-500">Optional. Each file must be under 10MB. Files are not uploaded automatically; attach them manually on WhatsApp after submitting.</p>
                   <input id="home-design-files" type="file" multiple accept=".pdf,.ai,.psd,application/pdf,application/postscript,image/vnd.adobe.photoshop" onChange={handleFilesChange} className="mt-4 block w-full text-sm font-bold text-slate-600 file:mr-4 file:rounded-full file:border-0 file:bg-slate-950 file:px-5 file:py-3 file:font-black file:text-white" />
                   {selectedFiles.length > 0 && <p className="mt-3 text-xs font-bold text-slate-600">Selected: {selectedFiles.map(file => file.name).join(', ')}</p>}
                   {fileError && <p role="alert" className="mt-3 text-xs font-bold text-red-600">{fileError}</p>}
                 </div>
-                <button type="submit" disabled={isSubmitting} className="button button-green-base w-full py-4 rounded-full font-black disabled:cursor-not-allowed disabled:opacity-70">{isSubmitting ? 'OPENING WHATSAPP...' : 'SUBMIT INQUIRY'}</button>
+                <button type="submit" disabled={isSubmitting} className="button button-green-base w-full py-4 rounded-full font-black disabled:cursor-not-allowed disabled:opacity-70">{isSubmitting ? 'SENDING...' : 'SUBMIT INQUIRY'}</button>
                 {submitMessage && <p role="status" aria-live="polite" className={`text-center text-sm font-bold ${submitMessageType === 'error' ? 'text-red-600' : 'text-emerald-600'}`}>{submitMessage}</p>}
+                {leadReceived && lastSubmitted && (
+                  <a
+                    href={buildWhatsAppUrl(lastSubmitted, lastFileExtra)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block w-full text-center text-xs font-black uppercase tracking-widest text-slate-500 hover:text-blue-600 transition-colors"
+                  >
+                    Need a faster reply? Send this inquiry on WhatsApp
+                  </a>
+                )}
                 <button type="button" onClick={handleInquiryEmail} className="w-full text-xs font-black uppercase tracking-widest text-slate-500 hover:text-blue-600 transition-colors">Prefer email? Send to {siteConfig.salesEmail}</button>
               </form>
             </div>

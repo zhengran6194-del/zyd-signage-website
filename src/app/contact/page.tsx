@@ -1,7 +1,13 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { siteConfig } from '@/config/site';
+import {
+  buildWhatsAppUrl,
+  pushGenerateLead,
+  submitInquiry,
+  type InquiryPayload,
+} from '@/lib/inquiry';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -13,6 +19,16 @@ export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitMessage, setSubmitMessage] = useState('');
   const [submitMessageType, setSubmitMessageType] = useState<'success' | 'error'>('success');
+  const [leadReceived, setLeadReceived] = useState(false);
+  const [lastSubmitted, setLastSubmitted] = useState<InquiryPayload | null>(null);
+
+  // Anti-abuse fields are populated after mount so server and client markup match.
+  const honeypotRef = useRef<HTMLInputElement>(null);
+  const startedAtRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    if (startedAtRef.current) startedAtRef.current.value = String(Date.now());
+  }, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -41,33 +57,41 @@ export default function ContactPage() {
     return { fullName, email, company, details };
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (isSubmitting) return;
 
     const validated = validateForm();
     if (!validated) return;
 
-    const { fullName, email, company, details } = validated;
-    const message = `*Project Inquiry from ZYD Website*\n\n` +
-      `*Name:* ${fullName}\n` +
-      `*Email:* ${email || 'N/A'}\n` +
-      `*Company:* ${company || 'N/A'}\n` +
-      `*Details:* ${details}`;
-    const whatsappUrl = `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(message)}`;
-
     setIsSubmitting(true);
+    setLeadReceived(false);
     setSubmitMessageType('success');
-    setSubmitMessage('Opening WhatsApp with your project inquiry...');
-    const whatsappWindow = window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+    setSubmitMessage('Sending your inquiry...');
 
-    if (whatsappWindow) {
-      setSubmitMessage('WhatsApp is ready with your project inquiry.');
-    } else {
+    const response = await submitInquiry({
+      ...validated,
+      source: 'contact_page',
+      companyWebsite: honeypotRef.current?.value ?? '',
+      formStartedAt: Number(startedAtRef.current?.value || 0),
+    });
+
+    if (!response.ok) {
       setSubmitMessageType('error');
-      setSubmitMessage('WhatsApp could not be opened. Please allow pop-ups and try again.');
+      setSubmitMessage(response.message);
+      setIsSubmitting(false);
+      return;
     }
-    window.setTimeout(() => setIsSubmitting(false), 1500);
+
+    // The conversion event is pushed only after the server confirmed the inquiry was stored.
+    pushGenerateLead(response, 'contact_page');
+    setLastSubmitted(validated);
+    setLeadReceived(true);
+    setSubmitMessageType('success');
+    setSubmitMessage(response.message);
+    setFormData({ fullName: '', email: '', company: '', details: '' });
+    if (startedAtRef.current) startedAtRef.current.value = String(Date.now());
+    setIsSubmitting(false);
   };
 
   const handleEmailSubmit = () => {
@@ -110,6 +134,12 @@ export default function ContactPage() {
             <div className="bg-white p-12 lg:p-16 rounded-[4rem] shadow-2xl border border-slate-100 reveal visible">
               <h2 className="text-3xl font-black mb-10 uppercase tracking-tight">Project Inquiry</h2>
               <form className="space-y-8" onSubmit={handleSubmit}>
+                {/* Anti-abuse fields. Kept off-screen and untabbable, never shown to visitors. */}
+                <div aria-hidden="true" style={{ position: 'absolute', left: '-9999px', width: '1px', height: '1px', overflow: 'hidden' }}>
+                  <label htmlFor="contact-company-website">Company website</label>
+                  <input ref={honeypotRef} id="contact-company-website" type="text" name="companyWebsite" tabIndex={-1} autoComplete="off" />
+                </div>
+                <input ref={startedAtRef} type="hidden" name="formStartedAt" defaultValue="" />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div className="space-y-3">
                     <label htmlFor="full-name" className="text-sm font-black uppercase tracking-widest text-slate-400 pl-2">Full Name</label>
@@ -167,12 +197,22 @@ export default function ContactPage() {
                   ></textarea>
                 </div>
                 <button type="submit" disabled={isSubmitting} className="button button-green-base w-full py-8 text-white font-black text-2xl rounded-full transition-all disabled:cursor-not-allowed disabled:opacity-70">
-                  {isSubmitting ? 'OPENING WHATSAPP...' : 'SUBMIT INQUIRY'}
+                  {isSubmitting ? 'SENDING...' : 'SUBMIT INQUIRY'}
                 </button>
                 {submitMessage && (
                   <p role="status" aria-live="polite" className={`text-center text-sm font-bold ${submitMessageType === 'error' ? 'text-red-600' : 'text-emerald-600'}`}>
                     {submitMessage}
                   </p>
+                )}
+                {leadReceived && lastSubmitted && (
+                  <a
+                    href={buildWhatsAppUrl(lastSubmitted)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block w-full text-center text-sm font-black uppercase tracking-widest text-slate-500 hover:text-blue-600 transition-all"
+                  >
+                    Need a faster reply? Send this inquiry on WhatsApp
+                  </a>
                 )}
                 <button
                   type="button"
