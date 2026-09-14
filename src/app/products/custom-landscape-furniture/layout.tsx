@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
-import { siteConfig } from "@/config/site";
+import { buildPageMetadata, ogImages } from "@/config/site";
 import ProductJsonLd from "@/components/ProductJsonLd";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Custom Landscape Furniture",
   description: "Bespoke outdoor landscape branding, signage furniture, and seating manufactured for commercial projects.",
-  alternates: { canonical: `${siteConfig.url}/products/custom-landscape-furniture` },
-};
+  path: "/products/custom-landscape-furniture",
+  image: ogImages.landscape,
+});
 
 export default function Layout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (

@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { siteConfig } from "@/config/site";
+import { buildPageMetadata } from "@/config/site";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Signage Case Studies",
   description: "Explore ZYD signage case studies across wayfinding, healthcare, illuminated branding, and landscape projects.",
-  alternates: { canonical: `${siteConfig.url}/projects` },
-};
+  path: "/projects",
+});
 
 export default function ProjectsLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return children;

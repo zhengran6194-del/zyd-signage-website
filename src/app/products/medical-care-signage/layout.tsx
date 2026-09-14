@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
-import { siteConfig } from "@/config/site";
+import { buildPageMetadata, ogImages } from "@/config/site";
 import ProductJsonLd from "@/components/ProductJsonLd";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Medical Care Signage Systems",
   description: "Specialized healthcare signage systems for hospitals, clinics, room identification, and wayfinding.",
-  alternates: { canonical: `${siteConfig.url}/products/medical-care-signage` },
-};
+  path: "/products/medical-care-signage",
+  image: ogImages.medical,
+});
 
 export default function Layout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (

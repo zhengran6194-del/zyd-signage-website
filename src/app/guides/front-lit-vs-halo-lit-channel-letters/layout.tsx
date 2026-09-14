@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { siteConfig } from "@/config/site";
+import { buildPageMetadata, ogImages, siteConfig } from "@/config/site";
 import JsonLd from "@/components/JsonLd";
 
 const path = "/guides/front-lit-vs-halo-lit-channel-letters";
 const title = "Front-Lit vs Halo-Lit Channel Letters";
 const description = "Compare front-lit and halo-lit channel letters by visual effect, mounting background, service planning, artwork, and the project details a commercial buyer should confirm.";
 
-export const metadata: Metadata = { title, description, alternates: { canonical: `${siteConfig.url}${path}` }, openGraph: { type: "article", title, description, url: `${siteConfig.url}${path}` } };
+export const metadata: Metadata = buildPageMetadata({ title, description, path, image: ogImages.channelLetters, type: "article" });
 
 export default function Layout({ children }: Readonly<{ children: React.ReactNode }>) {
   const url = `${siteConfig.url}${path}`;

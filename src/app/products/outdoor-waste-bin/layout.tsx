@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { siteConfig } from "@/config/site";
+import { buildPageMetadata, ogImages } from "@/config/site";
 import ProductJsonLd from "@/components/ProductJsonLd";
 
 const name = "Outdoor Waste Bin";
@@ -7,11 +7,7 @@ const description = "Custom outdoor waste bins for hospitality, commercial, and 
 const path = "/products/outdoor-waste-bin";
 const image = "/assets/images/outdoor-waste-bin.jpg";
 
-export const metadata: Metadata = {
-  title: name,
-  description,
-  alternates: { canonical: `${siteConfig.url}${path}` },
-};
+export const metadata: Metadata = buildPageMetadata({ title: name, description, path, image: ogImages.wasteBin });
 
 export default function Layout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (

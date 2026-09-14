@@ -1,22 +1,12 @@
 import type { Metadata } from "next";
-import { siteConfig } from "@/config/site";
+import { buildPageMetadata, siteConfig } from "@/config/site";
 import JsonLd from "@/components/JsonLd";
 
 const path = "/guides";
 const title = "Signage Guides";
 const description = "Practical buying and technical guides for custom signage projects, covering channel letter costs, illumination styles, sign selection, and outdoor materials.";
 
-export const metadata: Metadata = {
-  title,
-  description,
-  alternates: { canonical: `${siteConfig.url}${path}` },
-  openGraph: {
-    type: "website",
-    title,
-    description,
-    url: `${siteConfig.url}${path}`,
-  },
-};
+export const metadata: Metadata = buildPageMetadata({ title, description, path });
 
 export default function Layout({ children }: Readonly<{ children: React.ReactNode }>) {
   const url = `${siteConfig.url}${path}`;

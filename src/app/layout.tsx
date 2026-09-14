@@ -4,9 +4,11 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
-import { siteConfig } from "@/config/site";
+import { buildPageMetadata, siteConfig } from "@/config/site";
 
-const ogImage = `${siteConfig.url}/assets/images/hero-bg-factory-aerial.jpg`;
+const homeTitle = "ZYD Custom Signage | Factory-Direct Signage Solutions";
+const homeDescription = "Factory-direct custom signage for global B2B projects. Premium wayfinding and architectural signs.";
+
 const siteJsonLd = {
   "@context": "https://schema.org",
   "@graph": [
@@ -31,30 +33,13 @@ const siteJsonLd = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
+  ...buildPageMetadata({ title: homeTitle, description: homeDescription, path: "/" }),
   title: {
-    default: "ZYD Custom Signage | Factory-Direct Signage Solutions",
+    default: homeTitle,
     template: "%s | ZYD Signage",
   },
-  description: "Factory-direct custom signage for global B2B projects. Premium wayfinding and architectural signs.",
   verification: {
     google: "mg4KF2OFvytTwIMO7heJcKvB5BrULWY76NeAxIYW6Ss",
-  },
-  alternates: {
-    canonical: "/",
-  },
-  openGraph: {
-    type: "website",
-    siteName: siteConfig.companyName,
-    title: "ZYD Custom Signage | Factory-Direct Signage Solutions",
-    description: "Factory-direct custom signage for global B2B projects. Premium wayfinding and architectural signs.",
-    url: siteConfig.url,
-    images: [{ url: ogImage, width: 1200, height: 630, alt: "ZYD custom signage factory" }],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "ZYD Custom Signage | Factory-Direct Signage Solutions",
-    description: "Factory-direct custom signage for global B2B projects. Premium wayfinding and architectural signs.",
-    images: [ogImage],
   },
 };
 

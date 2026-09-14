@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
-import { siteConfig } from "@/config/site";
+import { buildPageMetadata, ogImages } from "@/config/site";
 import ProductJsonLd from "@/components/ProductJsonLd";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Custom Halo-Lit Metal Letters",
   description: "Custom halo-lit metal channel letters with factory-direct fabrication for architectural signage projects.",
-  alternates: { canonical: `${siteConfig.url}/products/custom-halo-lit-letters` },
-};
+  path: "/products/custom-halo-lit-letters",
+  image: ogImages.channelLetters,
+});
 
 export default function Layout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (

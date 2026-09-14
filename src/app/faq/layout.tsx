@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { siteConfig } from "@/config/site";
+import { buildPageMetadata } from "@/config/site";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Signage FAQ & Resources",
   description: "Find answers and practical resources about signage planning, materials, installation, and global logistics.",
-  alternates: { canonical: `${siteConfig.url}/faq` },
-};
+  path: "/faq",
+});
 
 export default function FAQLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return children;

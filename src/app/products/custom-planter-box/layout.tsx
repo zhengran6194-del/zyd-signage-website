@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { siteConfig } from "@/config/site";
+import { buildPageMetadata, ogImages } from "@/config/site";
 import ProductJsonLd from "@/components/ProductJsonLd";
 
 const name = "Custom Planter Box";
@@ -7,11 +7,7 @@ const description = "Custom planter boxes for hospitality, commercial, and publi
 const path = "/products/custom-planter-box";
 const image = "/assets/images/custom-planter-box.jpg";
 
-export const metadata: Metadata = {
-  title: name,
-  description,
-  alternates: { canonical: `${siteConfig.url}${path}` },
-};
+export const metadata: Metadata = buildPageMetadata({ title: name, description, path, image: ogImages.planterBox });
 
 export default function Layout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (

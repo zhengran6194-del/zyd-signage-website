@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { siteConfig } from "@/config/site";
+import { buildPageMetadata, ogImages, siteConfig } from "@/config/site";
 import JsonLd from "@/components/JsonLd";
 
 const path = "/guides/how-much-do-custom-channel-letters-cost";
 const title = "How Much Do Custom Channel Letters Cost?";
 const description = "A practical B2B guide to the information that shapes a custom channel letters quotation, from artwork and dimensions to lighting, finish, mounting, packing, and delivery scope.";
 
-export const metadata: Metadata = { title, description, alternates: { canonical: `${siteConfig.url}${path}` }, openGraph: { type: "article", title, description, url: `${siteConfig.url}${path}` } };
+export const metadata: Metadata = buildPageMetadata({ title, description, path, image: ogImages.channelLetters, type: "article" });
 
 export default function Layout({ children }: Readonly<{ children: React.ReactNode }>) {
   const url = `${siteConfig.url}${path}`;

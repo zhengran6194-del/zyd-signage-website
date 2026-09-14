@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { siteConfig } from "@/config/site";
+import { buildPageMetadata } from "@/config/site";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Contact Sales Support",
   description: "Contact ZYD Signage for custom signage project requirements, technical support, and factory-direct quotations.",
-  alternates: { canonical: `${siteConfig.url}/contact` },
-};
+  path: "/contact",
+});
 
 export default function ContactLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return children;

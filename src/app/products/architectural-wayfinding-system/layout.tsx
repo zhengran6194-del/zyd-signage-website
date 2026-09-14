@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
-import { siteConfig } from "@/config/site";
+import { buildPageMetadata, ogImages } from "@/config/site";
 import ProductJsonLd from "@/components/ProductJsonLd";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Architectural Wayfinding Systems",
   description: "Factory-direct architectural wayfinding systems for indoor and outdoor commercial environments.",
-  alternates: { canonical: `${siteConfig.url}/products/architectural-wayfinding-system` },
-};
+  path: "/products/architectural-wayfinding-system",
+  image: ogImages.wayfinding,
+});
 
 export default function Layout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (

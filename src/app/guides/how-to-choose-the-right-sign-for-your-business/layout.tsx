@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { siteConfig } from "@/config/site";
+import { buildPageMetadata, ogImages, siteConfig } from "@/config/site";
 import JsonLd from "@/components/JsonLd";
 
 const path = "/guides/how-to-choose-the-right-sign-for-your-business";
 const title = "How to Choose the Right Sign for Your Business";
 const description = "A practical sign-selection guide for business owners, contractors, and project buyers comparing pylon, monument, building, wayfinding, and illuminated sign requirements.";
 
-export const metadata: Metadata = { title, description, alternates: { canonical: `${siteConfig.url}${path}` }, openGraph: { type: "article", title, description, url: `${siteConfig.url}${path}` } };
+export const metadata: Metadata = buildPageMetadata({ title, description, path, image: ogImages.wayfinding, type: "article" });
 
 export default function Layout({ children }: Readonly<{ children: React.ReactNode }>) {
   const url = `${siteConfig.url}${path}`;
