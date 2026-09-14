@@ -142,6 +142,16 @@ function parseArgs(argv) {
 }
 
 /**
+ * fetch() collapses every transport failure into a bare "fetch failed", which is
+ * useless for diagnosing DNS/TLS/timeout problems. The real reason lives on `cause`.
+ */
+function describeError(err) {
+  const message = err?.message ?? String(err);
+  const cause = err?.cause?.message ?? err?.cause?.code;
+  return cause ? `${message}: ${cause}` : message;
+}
+
+/**
  * Returns { status, body, error }. A transport failure yields status = null so the
  * caller can distinguish "got a non-200" from "never got a response".
  */
@@ -160,7 +170,7 @@ async function getHttpStatus(uri, timeoutSec, method = "GET") {
       finalUrl: res.url,
     };
   } catch (err) {
-    return { status: null, body: null, error: err?.message ?? String(err) };
+    return { status: null, body: null, error: describeError(err) };
   }
 }
 
@@ -339,7 +349,7 @@ async function main() {
     const ref = res.headers.get("x-msedge-ref");
     if (ref) console.log(`X-MSEdge-Ref=${ref}`);
   } catch (err) {
-    fail(`Request failed before receiving a response: ${err?.message ?? String(err)}`);
+    fail(`Request failed before receiving a response: ${describeError(err)}`);
     fail("No HTTP status code was returned.");
     process.exit(4);
   }

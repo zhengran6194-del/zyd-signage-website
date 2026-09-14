@@ -2,7 +2,7 @@
 
 **版本**：v1.1（2026-09-12）
 **适用**：Dalian Zhiyudao Signage & Tech. Co., Ltd. 独立站 https://zydsign.com
-**关联**：`SEO-OPERATIONS-MANUAL.md`（阶段一：抓取与提交）、`CONTENT-PIPELINE.md`（发布节奏）、`scripts/indexnow-submit.ps1`（提交脚本）、`scripts/indexnow-urls.txt`（URL 清单）
+**关联**：`SEO-OPERATIONS-MANUAL.md`（阶段一：抓取与提交）、`CONTENT-PIPELINE.md`（发布节奏）、`scripts/indexnow-submit.mjs`（提交脚本）、`scripts/indexnow-urls.txt`（URL 清单）
 **说明**：本文档是运营规范，不是网站页面。除 `public/` 下的 key 文件与 `scripts/` 下的提交脚本外，本 SOP 不新增任何网站代码或 schema。
 
 ---
@@ -16,12 +16,12 @@
 | canonical 主机 | `www.zydsign.com` | `https://www.zydsign.com/` → HTTP 200；`https://zydsign.com/` 与 `https://zydsign.com/sitemap.xml` → HTTP 308 永久跳转 |
 | sitemap URL 数量 | **21 条** | `https://www.zydsign.com/sitemap.xml` 中 `<loc>` 计数为 21（含 4 篇 `/guides/*`） |
 | robots 是否屏蔽 key | 否 | `https://www.zydsign.com/robots.txt` 内容为 `User-Agent: *` / `Allow: /` |
-| 提交脚本 | 已创建 | `scripts/indexnow-submit.ps1`（生产 key 预检失败即硬性中止），URL 清单 `scripts/indexnow-urls.txt` |
+| 提交脚本 | 已创建 | `scripts/indexnow-submit.mjs`（生产 key 预检失败即硬性中止），URL 清单 `scripts/indexnow-urls.txt` |
 | `/guides` 索引页（生产） | **未部署，404** | `https://www.zydsign.com/guides` → HTTP 404（2026-09-12 实测）；4 篇子页均已 200 |
 
 **结论**：key 文件必须先在 Vercel 部署成功（生产返回 200），IndexNow 才能完成 key 校验。在此之前提交会被接收但校验失败。
 
-**最近一次脚本执行（2026-09-12）**：`scripts/indexnow-submit.ps1` 在生产 key 预检阶段检测到 **HTTP 404** 并按设计中止，**退出码 2，未发出任何提交**。这是预期行为，不是故障。
+**最近一次脚本执行（2026-09-12）**：`scripts/indexnow-submit.mjs` 在生产 key 预检阶段检测到 **HTTP 404** 并按设计中止，**退出码 2，未发出任何提交**。这是预期行为，不是故障。
 
 ---
 
@@ -127,15 +127,15 @@ $key = "9556efc61b037c23c2a35aa4fd12076f"
 
 日常提交统一使用脚本，不要手写 JSON。脚本会自动完成 §2.4 的两项自检，并在任何一项失败时中止。
 
-```powershell
+```bash
 # A. 批量提交（部署完成后使用，URL 清单见 §6.2）
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts/indexnow-submit.ps1 -UrlsFile scripts/indexnow-urls.txt
+node scripts/indexnow-submit.mjs --urls-file scripts/indexnow-urls.txt
 
 # B. 少量/单条提交
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts/indexnow-submit.ps1 -Urls "https://www.zydsign.com/guides/front-lit-vs-halo-lit-channel-letters"
+node scripts/indexnow-submit.mjs --urls "https://www.zydsign.com/guides/front-lit-vs-halo-lit-channel-letters"
 
 # C. 只做预检并打印将要发送的 payload，不发送请求
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts/indexnow-submit.ps1 -UrlsFile scripts/indexnow-urls.txt -DryRun
+node scripts/indexnow-submit.mjs --urls-file scripts/indexnow-urls.txt --dry-run
 ```
 
 脚本行为：
@@ -144,12 +144,12 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts/indexnow-submit.ps1 
 |---|---|---|
 | 1 | 从 `public/` 自动发现 32 位十六进制 key 文件，校验文件名与内容一致 | 退出码 5，不提交 |
 | 2 | 请求生产 `keyLocation`，要求 HTTP 200 且正文等于 key | **退出码 2，硬性中止，不提交** |
-| 3 | 逐个请求待提交 URL，要求 HTTP 200 | 退出码 3，不提交（可用 `-Force` 跳过该项检查） |
+| 3 | 逐个请求待提交 URL，要求 HTTP 200 | 退出码 3，不提交（可用 `--force` 跳过该项检查） |
 | 4 | POST 到 `https://api.indexnow.org/indexnow`，打印真实状态码、响应体与 `X-MSEdge-Ref` | 非 2xx 时退出码 4 |
 
 退出码：`0` 已接受（200/202）｜`2` 生产 key 预检失败｜`3` 目标 URL 非 200｜`4` API 返回非 2xx｜`5` 输入错误（无 URL、key 非法、主机不匹配）。
 
-脚本以 UTF-8 **无 BOM** 写入请求体（带 BOM 可能导致 API 返回 400）。脚本不修改任何网站代码。
+脚本以 UTF-8 **无 BOM** 发送请求体（带 BOM 可能导致 API 返回 400）。脚本不修改任何网站代码。
 
 ---
 
@@ -278,8 +278,8 @@ P1 或 P2 未满足时**不要提交**：脚本会在预检阶段中止（退出
 2. 完成 §6.1 的 P1 / P2 检查。
 3. 执行提交：
 
-```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts/indexnow-submit.ps1 -UrlsFile scripts/indexnow-urls.txt
+```bash
+node scripts/indexnow-submit.mjs --urls-file scripts/indexnow-urls.txt
 ```
 
 4. 把脚本打印的真实 HTTP 状态码逐条填入 §6.4 记录表。
