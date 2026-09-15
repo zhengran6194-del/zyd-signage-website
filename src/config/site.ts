@@ -106,6 +106,14 @@ export const ogImages = {
     height: 1000,
     alt: 'Custom acrylic desk sign',
   },
+  aFrameSign: {
+    path: '/assets/images/a-frame-sign.png',
+    // The supplied file is genuinely 600x600. Declared as measured rather than
+    // upscaled on paper, so og:image:width/height stay truthful.
+    width: 600,
+    height: 600,
+    alt: 'Portable metal A-frame sign',
+  },
 } satisfies Record<string, OgImageSpec>;
 
 export type PageMetadataInput = {

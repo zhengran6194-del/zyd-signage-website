@@ -20,6 +20,7 @@ const routes = [
   { path: "/products/outdoor-waste-bin", priority: 0.8 },
   { path: "/products/custom-planter-box", priority: 0.8 },
   { path: "/products/acrylic-desk-sign", priority: 0.8 },
+  { path: "/products/portable-metal-a-frame-sign", priority: 0.8 },
   { path: "/guides", priority: 0.8 },
   { path: "/guides/304-stainless-steel-vs-galvanized-steel-outdoor-signs", priority: 0.7 },
   { path: "/guides/how-much-do-custom-channel-letters-cost", priority: 0.7 },

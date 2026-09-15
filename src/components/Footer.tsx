@@ -51,6 +51,7 @@ export default function Footer() {
                 <li><Link href="/products/outdoor-waste-bin" className="text-sm text-slate-600 hover:text-blue-600 font-bold transition-all tracking-tight">Outdoor Waste Bin</Link></li>
                 <li><Link href="/products/custom-planter-box" className="text-sm text-slate-600 hover:text-blue-600 font-bold transition-all tracking-tight">Custom Planter Box</Link></li>
                 <li><Link href="/products/acrylic-desk-sign" className="text-sm text-slate-600 hover:text-blue-600 font-bold transition-all tracking-tight">Acrylic Desk Sign</Link></li>
+                <li><Link href="/products/portable-metal-a-frame-sign" className="text-sm text-slate-600 hover:text-blue-600 font-bold transition-all tracking-tight">Portable Metal A-Frame Sign</Link></li>
               </ul>
             </div>
 
