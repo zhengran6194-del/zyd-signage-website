@@ -100,6 +100,12 @@ export const ogImages = {
     height: 911,
     alt: 'Custom planter box',
   },
+  deskSign: {
+    path: '/assets/images/acrylic-desk-sign.jpg',
+    width: 1000,
+    height: 1000,
+    alt: 'Custom acrylic desk sign',
+  },
 } satisfies Record<string, OgImageSpec>;
 
 export type PageMetadataInput = {

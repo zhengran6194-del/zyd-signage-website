@@ -28,6 +28,7 @@ export default function ProductsPage() {
     { title: 'Complete Systems', desc: 'One-partner coordinated signage programs for global rollouts.', img: 'cat-system.webp', id: 'complete-signage-system' },
     { title: 'Outdoor Waste Bin', desc: 'Custom waste bins for hospitality, commercial, and public-space projects.', img: 'outdoor-waste-bin.jpg', id: 'outdoor-waste-bin' },
     { title: 'Custom Planter Box', desc: 'Architectural planter solutions for commercial entrances and public spaces.', img: 'custom-planter-box.jpg', id: 'custom-planter-box' },
+    { title: 'Acrylic Desk Sign', desc: 'Free-standing counter and desk signs for reception and front-of-house.', img: 'acrylic-desk-sign.jpg', id: 'acrylic-desk-sign' },
   ];
 
   return (

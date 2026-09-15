@@ -463,6 +463,7 @@ export default function Home() {
                 { title: 'Complete Systems', img: 'cat-system.webp', id: 'complete-signage-system' },
                 { title: 'Outdoor Waste Bin', img: 'outdoor-waste-bin.jpg', id: 'outdoor-waste-bin' },
                 { title: 'Custom Planter Box', img: 'custom-planter-box.jpg', id: 'custom-planter-box' },
+                { title: 'Acrylic Desk Sign', img: 'acrylic-desk-sign.jpg', id: 'acrylic-desk-sign' },
               ].map((p, i) => (
                 // Every card carries an id, so the link always resolves to its own
                 // detail page. The old `p.id ? ... : '/products'` fallback hid the
