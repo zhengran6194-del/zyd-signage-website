@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { buildPageMetadata } from "@/config/site";
-import ProductsBreadcrumbJsonLd from "@/components/ProductsBreadcrumbJsonLd";
 
 export const metadata: Metadata = buildPageMetadata({
   title: "Signage Solutions",
@@ -9,10 +8,8 @@ export const metadata: Metadata = buildPageMetadata({
 });
 
 export default function ProductsLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return (
-    <>
-      <ProductsBreadcrumbJsonLd />
-      {children}
-    </>
-  );
+  // The breadcrumb is rendered by the index page, not here. A layout wraps every
+  // child route, so declaring it here also emitted it on all 11 product detail
+  // pages, each of which publishes its own three-level breadcrumb.
+  return children;
 }

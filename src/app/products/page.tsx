@@ -1,6 +1,8 @@
 ﻿'use client';
 import React, { useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
+import ProductsBreadcrumbJsonLd from '@/components/ProductsBreadcrumbJsonLd';
 
 export default function ProductsPage() {
   useEffect(() => {
@@ -30,12 +32,13 @@ export default function ProductsPage() {
 
   return (
     <>
+      <ProductsBreadcrumbJsonLd />
       <main id="main" className="bg-slate-100 min-h-screen">
         <section className="py-24 bg-slate-900 text-white">
           <div className="max-w-[1600px] w-[95%] mx-auto text-center reveal">
             <div className="eyebrow text-blue-400 font-bold tracking-[0.3em] uppercase mb-4 text-xs">Manufacturing Excellence</div>
             <h1 className="mb-6 uppercase">Signage Solutions</h1>
-            <p className="text-lg text-slate-400 max-w-2xl mx-auto font-medium">Factory-direct specialized manufacturing for global architectural projects.</p>
+            <p className="text-lg text-slate-300 max-w-2xl mx-auto font-medium">Factory-direct specialized manufacturing for global architectural projects.</p>
           </div>
         </section>
 
@@ -44,12 +47,12 @@ export default function ProductsPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
             {products.map((p, i) => (
               <div key={i} className="reveal group flex flex-col bg-white border border-slate-100 p-6 rounded-[1.5rem] shadow-sm hover:shadow-xl transition-all duration-300">
-                <div className="overflow-hidden rounded-[1rem] mb-6 h-72 bg-slate-100 border border-slate-50">
-                  <img src={`/assets/images/${p.img}`} alt={p.title} width={1200} height={800} loading="lazy" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                <div className="relative overflow-hidden rounded-[1rem] mb-6 h-72 bg-slate-100 border border-slate-50">
+                  <Image src={`/assets/images/${p.img}`} alt={p.title} fill sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw" className="object-cover transition-transform duration-500 group-hover:scale-105" />
                 </div>
                 <h3 className="text-xl font-black mb-3 text-slate-900 uppercase">{p.title}</h3>
                 <p className="text-slate-500 text-sm leading-relaxed mb-8 font-medium">{p.desc}</p>
-                <div className="flex flex-wrap gap-x-4 gap-y-1 text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-6">
+                <div className="flex flex-wrap gap-x-4 gap-y-1 text-[10px] font-bold uppercase tracking-widest text-slate-600 mb-6">
                   <span>MOQ: 1</span>
                   <span>Lead Time: 7–14 days</span>
                 </div>

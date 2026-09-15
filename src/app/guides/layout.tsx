@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import { buildPageMetadata, siteConfig } from "@/config/site";
-import JsonLd from "@/components/JsonLd";
+import { buildPageMetadata } from "@/config/site";
 
 const path = "/guides";
 const title = "Signage Guides";
@@ -9,30 +8,8 @@ const description = "Practical buying and technical guides for custom signage pr
 export const metadata: Metadata = buildPageMetadata({ title, description, path });
 
 export default function Layout({ children }: Readonly<{ children: React.ReactNode }>) {
-  const url = `${siteConfig.url}${path}`;
-  const data = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "BreadcrumbList",
-        itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: siteConfig.url },
-          { "@type": "ListItem", position: 2, name: "Guides", item: url },
-        ],
-      },
-      {
-        "@type": "CollectionPage",
-        name: title,
-        description,
-        url,
-      },
-    ],
-  };
-
-  return (
-    <>
-      <JsonLd data={data} />
-      {children}
-    </>
-  );
+  // The breadcrumb and CollectionPage are rendered by the index page, not here.
+  // A layout wraps every child route, so declaring them here also published them
+  // on all four guide articles, which emit their own breadcrumb and Article node.
+  return children;
 }

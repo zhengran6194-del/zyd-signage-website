@@ -1,4 +1,10 @@
 import Link from 'next/link';
+import JsonLd from '@/components/JsonLd';
+import { siteConfig } from '@/config/site';
+
+const path = '/guides';
+const title = 'Signage Guides';
+const description = 'Practical buying and technical guides for custom signage projects, covering channel letter costs, illumination styles, sign selection, and outdoor materials.';
 
 const guides = [
   {
@@ -28,13 +34,34 @@ const guides = [
 ];
 
 export default function GuidesPage() {
+  const url = `${siteConfig.url}${path}`;
+  const data = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: siteConfig.url },
+          { "@type": "ListItem", position: 2, name: "Guides", item: url },
+        ],
+      },
+      {
+        "@type": "CollectionPage",
+        name: title,
+        description,
+        url,
+      },
+    ],
+  };
+
   return (
     <main className="bg-slate-100 min-h-screen">
+      <JsonLd data={data} />
       <section className="section bg-slate-900 text-white py-24 lg:py-28">
         <div className="container text-center">
           <div className="eyebrow text-blue-400 font-black tracking-[0.3em] uppercase mb-4 text-xs">Knowledge Base</div>
           <h1 className="uppercase tracking-tighter mb-6">Signage Guides</h1>
-          <p className="text-lg text-slate-400 max-w-2xl mx-auto font-medium">
+          <p className="text-lg text-slate-300 max-w-2xl mx-auto font-medium">
             Practical buying and technical guides for custom signage projects.
           </p>
         </div>
@@ -48,7 +75,7 @@ export default function GuidesPage() {
                 <div className="text-[10px] font-black text-blue-600 uppercase tracking-widest mb-3">{g.tag}</div>
                 <h2 className="font-black text-slate-900 mb-3 uppercase text-xs leading-relaxed">{g.title}</h2>
                 <p className="text-slate-500 text-xs leading-relaxed font-medium mb-4">{g.desc}</p>
-                <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest group-hover:text-blue-600 transition-colors">Read Guide</span>
+                <span className="text-[10px] font-bold text-slate-600 uppercase tracking-widest group-hover:text-blue-600 transition-colors">Read Guide</span>
               </Link>
             ))}
           </div>
