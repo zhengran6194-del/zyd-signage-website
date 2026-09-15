@@ -126,7 +126,7 @@ export default function MedicalSignagePage() {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-14">
               <div className="lg:col-span-2">
                 <h2 className="text-3xl font-black text-slate-900 mb-3 uppercase tracking-tight">Specifications with selection logic</h2>
-                <p className="text-slate-500 leading-relaxed mb-10 max-w-2xl font-medium">Each item is a decision input for a healthcare signage package. Confirm the department, cleaning routine, and mounting before production.</p>
+                <p className="text-slate-600 leading-relaxed mb-10 max-w-2xl font-medium">Each item is a decision input for a healthcare signage package. Confirm the department, cleaning routine, and mounting before production.</p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
                   <div className="p-8 bg-white rounded-[2rem] border border-slate-200 shadow-sm">
                     <h3 className="text-lg font-black text-blue-600 mb-4 uppercase italic">Sign family</h3>

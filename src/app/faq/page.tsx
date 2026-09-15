@@ -130,7 +130,7 @@ export default function FAQPage() {
           <div className="flex justify-between items-end mb-12 reveal">
             <div>
               <h2 className="uppercase tracking-tighter text-slate-900">Popular Guides</h2>
-              <p className="text-slate-500 font-medium mt-2">Deep dives into signage technology and procurement.</p>
+              <p className="text-slate-600 font-medium mt-2">Deep dives into signage technology and procurement.</p>
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

@@ -279,7 +279,7 @@ export default function Home() {
             <div className="text-center mb-24 reveal">
               <div className="text-blue-600 font-bold uppercase text-[11px] tracking-[0.4em] mb-4">Industrial Excellence</div>
               <h2 className="text-5xl lg:text-6xl font-black text-slate-950 uppercase tracking-tighter mb-6">Our 8-Step <br className="lg:hidden"/>Fabrication Journey</h2>
-              <p className="text-slate-500 max-w-3xl mx-auto text-lg font-medium leading-relaxed">Combining artisanal craftsmanship with robotic precision to ensure zero-defect signage delivery.</p>
+              <p className="text-slate-600 max-w-3xl mx-auto text-lg font-medium leading-relaxed">Combining artisanal craftsmanship with robotic precision to ensure zero-defect signage delivery.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16">
               {steps.map((s, i) => (
@@ -291,7 +291,7 @@ export default function Home() {
                     <span className="text-4xl font-black text-slate-100 italic tracking-tighter group-hover/card:text-blue-50 transition-colors duration-500 leading-none">{s.no}</span>
                   </div>
                   <h3 className="text-xl font-black text-slate-900 uppercase tracking-tight mb-4 group-hover/card:text-blue-600 transition-colors">{s.title}</h3>
-                  <p className="text-slate-500 text-sm leading-relaxed font-medium group-hover/card:text-slate-600 transition-colors">{s.desc}</p>
+                  <p className="text-slate-600 text-sm leading-relaxed font-medium group-hover/card:text-slate-700 transition-colors">{s.desc}</p>
                   
                   <div className="mt-8 pt-8 border-t border-slate-50 w-full opacity-0 group-hover/card:opacity-100 transition-opacity duration-500">
                     <div className="h-1 w-12 bg-blue-600 rounded-full"></div>
@@ -309,7 +309,7 @@ export default function Home() {
               <div className="reveal max-w-xl">
                 <div className="text-blue-600 font-black uppercase text-[10px] tracking-[0.4em] mb-5 border-l-2 border-blue-600 pl-4">INSIDE OUR FACTORY</div>
                 <h2 className="text-5xl lg:text-6xl font-black text-slate-950 uppercase tracking-tighter leading-[0.95] mb-8">See Your Signage Being Made — Live.</h2>
-                <p className="text-slate-500 text-lg leading-relaxed font-medium mb-10">From precision cutting to final quality checks, see how your signage moves through our factory before it reaches your project site.</p>
+                <p className="text-slate-600 text-lg leading-relaxed font-medium mb-10">From precision cutting to final quality checks, see how your signage moves through our factory before it reaches your project site.</p>
                 <div className="flex flex-col sm:flex-row gap-5">
                   <a
                     href={`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent('Hi Aaron, I would like to arrange a full factory tour and discuss a signage project.')}`}
@@ -347,7 +347,7 @@ export default function Home() {
               <div className="reveal max-w-xl">
                 <div className="text-blue-600 font-black uppercase text-[10px] tracking-[0.4em] mb-4 border-l-2 border-blue-600 pl-4">Quality Assurance</div>
                 <h2 className="mb-6 uppercase tracking-tighter text-slate-900 leading-[0.95] text-5xl lg:text-6xl">Global <br/>Compliance & <br/>Quality Standards</h2>
-                <p className="text-slate-500 mb-12 text-lg leading-relaxed font-medium opacity-80">We adhere to the highest international certifications to guarantee structural integrity and electrical safety in any environment.</p>
+                <p className="text-slate-700 mb-12 text-lg leading-relaxed font-medium opacity-80">We adhere to the highest international certifications to guarantee structural integrity and electrical safety in any environment.</p>
                 <div className="grid grid-cols-2 gap-4 lg:gap-5">
                   {[
                     { label: 'ISO 9001:2015', desc: 'Quality Management' },
@@ -444,7 +444,7 @@ export default function Home() {
             <div className="flex justify-between items-end mb-12 reveal">
               <div>
                 <h2 className="uppercase tracking-tighter text-slate-900">Signage Solutions</h2>
-                <p className="text-slate-500 font-medium text-sm mt-1">Bespoke manufacturing for global architectural projects.</p>
+                <p className="text-slate-600 font-medium text-sm mt-1">Bespoke manufacturing for global architectural projects.</p>
               </div>
               <Link href="/products" className="text-blue-600 font-bold uppercase text-[11px] tracking-widest border-b border-blue-100 hover:border-blue-600 transition-all pb-0.5">
                 View Full Catalog &rarr;
@@ -489,7 +489,7 @@ export default function Home() {
             <div className="flex justify-between items-end mb-12 reveal">
               <div>
                 <h2 className="uppercase tracking-tighter text-slate-900">Signage Insights</h2>
-                <p className="text-slate-500 font-medium text-sm mt-1">Buying guides for custom signage projects.</p>
+                <p className="text-slate-600 font-medium text-sm mt-1">Buying guides for custom signage projects.</p>
               </div>
               <Link href="/faq" className="text-blue-600 font-bold uppercase text-[11px] tracking-widest border-b border-blue-100 hover:border-blue-600 transition-all pb-0.5">
                 All Guides &rarr;
@@ -624,7 +624,7 @@ export default function Home() {
               <div className="max-w-3xl">
                 <div className="text-blue-600 font-black uppercase text-[10px] tracking-[0.35em] mb-4">People Behind the Signage</div>
                 <h2 className="text-4xl lg:text-6xl font-black text-slate-950 uppercase tracking-tight leading-[0.95] mb-5">Craftsmanship starts with people.</h2>
-                <p className="text-slate-500 text-base lg:text-lg leading-relaxed font-medium">The signs we make are shaped by the people who plan, build, review, and deliver them. Our shared work, training, and time together keep collaboration close to every project.</p>
+                <p className="text-slate-600 text-base lg:text-lg leading-relaxed font-medium">The signs we make are shaped by the people who plan, build, review, and deliver them. Our shared work, training, and time together keep collaboration close to every project.</p>
               </div>
               <div className="text-slate-600 text-xs font-black uppercase tracking-[0.25em] lg:max-w-xs lg:text-right">Team culture / Practical craft / Client-focused collaboration</div>
             </div>

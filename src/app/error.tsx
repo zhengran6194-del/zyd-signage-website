@@ -23,7 +23,7 @@ export default function Error({
             below.
           </p>
           {error.digest ? (
-            <p className="mt-6 text-xs font-bold text-slate-500 uppercase tracking-[0.2em]">
+            <p className="mt-6 text-xs font-bold text-slate-400 uppercase tracking-[0.2em]">
               Reference: {error.digest}
             </p>
           ) : null}

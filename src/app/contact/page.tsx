@@ -125,7 +125,7 @@ export default function ContactPage() {
           <section className="text-center mb-20 reveal visible">
             <div className="eyebrow text-blue-600 font-black tracking-[0.3em] uppercase mb-4 text-sm">Get in Touch</div>
             <h1 className="text-6xl lg:text-8xl font-black text-slate-900 mb-6 uppercase tracking-tighter">Start Your Project</h1>
-            <p className="text-xl text-slate-500 max-w-2xl mx-auto font-medium">
+            <p className="text-xl text-slate-600 max-w-2xl mx-auto font-medium">
               Consult with our engineering team for free 3D mockups and factory-direct pricing.
             </p>
           </section>
@@ -237,7 +237,7 @@ export default function ContactPage() {
                       <svg className="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                     </div>
                     <div>
-                      <div className="text-xs font-black uppercase tracking-[0.3em] text-slate-500 mb-1">Email Sales</div>
+                      <div className="text-xs font-black uppercase tracking-[0.3em] text-slate-400 mb-1">Email Sales</div>
                       <a href={`mailto:${siteConfig.salesEmail}`} className="text-xl font-bold hover:text-blue-400 transition-all">{siteConfig.salesEmail}</a>
                     </div>
                   </div>
@@ -246,7 +246,7 @@ export default function ContactPage() {
                       <svg className="w-6 h-6 text-green-400" fill="currentColor" viewBox="0 0 24 24"><path d="M19.1 4.9A9.9 9.9 0 0 0 3.6 16.8L2.2 22l5.4-1.4A10 10 0 1 0 19.1 4.9Zm-7.1 15a8 8 0 0 1-4-1.1l-.3-.2-3.2.8.9-3.1-.2-.3a8 8 0 1 1 6.8 3.9Zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.6.1-.2.3-.6.8-.8 1-.1.2-.3.2-.5.1-1.4-.7-2.4-1.3-3.3-2.9-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 1.8.8 2.5.8 3.4.7 1-.1 1.4-.7 1.6-1.3.2-.6.2-1.1.1-1.2-.2-.2-.4-.2-.6-.3Z"/></svg>
                     </div>
                     <div>
-                      <div className="text-xs font-black uppercase tracking-[0.3em] text-slate-500 mb-1">WhatsApp Chat</div>
+                      <div className="text-xs font-black uppercase tracking-[0.3em] text-slate-400 mb-1">WhatsApp Chat</div>
                       <button onClick={handleDirectWhatsApp} className="text-xl font-bold hover:text-green-400 transition-all">+{siteConfig.whatsappNumber} ({siteConfig.contactPerson})</button>
                     </div>
                   </div>
