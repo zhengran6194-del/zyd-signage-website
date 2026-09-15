@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,7 +12,10 @@ export default function Header() {
       <div className="container nav-wrap">
         {/* Logo 居左 */}
         <Link className="brand" href="/" aria-label="ZYD Home">
-          <img src="/assets/images/logo-correct.jpg" alt="ZYD logo" width={320} height={160} loading="eager" />
+          {/* The file is a PNG despite the .jpg extension, and its true size is
+              4961x3508 (1.41:1). The old 320x160 pair described a 2:1 box and
+              was only saved from distortion by the object-fit on .brand img. */}
+          <Image src="/assets/images/logo-correct.jpg" alt="ZYD logo" width={4961} height={3508} loading="eager" sizes="(max-width: 1024px) 80px, 160px" />
         </Link>
 
         {/* 移动端切换按钮 */}
