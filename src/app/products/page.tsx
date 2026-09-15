@@ -29,7 +29,7 @@ export default function ProductsPage() {
     { title: 'Outdoor Waste Bin', desc: 'Custom waste bins for hospitality, commercial, and public-space projects.', img: 'outdoor-waste-bin.jpg', id: 'outdoor-waste-bin' },
     { title: 'Custom Planter Box', desc: 'Architectural planter solutions for commercial entrances and public spaces.', img: 'custom-planter-box.jpg', id: 'custom-planter-box' },
     { title: 'Acrylic Desk Sign', desc: 'Free-standing counter and desk signs for reception and front-of-house.', img: 'acrylic-desk-sign.jpg', id: 'acrylic-desk-sign' },
-    { title: 'Portable Metal A-Frame Sign', desc: 'Free-standing A-frame signs for pavements, forecourts, and event stands.', img: 'a-frame-sign.png', id: 'portable-metal-a-frame-sign' },
+    { title: 'Portable Metal A-Frame Sign', desc: 'Free-standing A-frame signs for pavements, forecourts, and event stands.', img: 'a-frame-sign.webp', id: 'portable-metal-a-frame-sign' },
   ];
 
   return (

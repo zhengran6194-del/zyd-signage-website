@@ -48,8 +48,8 @@ export const ogImages = {
   },
   outdoor: {
     path: '/assets/images/cat-outdoor.webp',
-    width: 1536,
-    height: 1024,
+    width: 1254,
+    height: 1254,
     alt: 'Outdoor pylon and monument signage',
   },
   metalLogo: {
@@ -107,11 +107,9 @@ export const ogImages = {
     alt: 'Custom acrylic desk sign',
   },
   aFrameSign: {
-    path: '/assets/images/a-frame-sign.png',
-    // The supplied file is genuinely 600x600. Declared as measured rather than
-    // upscaled on paper, so og:image:width/height stay truthful.
-    width: 600,
-    height: 600,
+    path: '/assets/images/a-frame-sign.webp',
+    width: 1254,
+    height: 1254,
     alt: 'Portable metal A-frame sign',
   },
 } satisfies Record<string, OgImageSpec>;

@@ -107,17 +107,16 @@ export default function PortableMetalAFrameSignPage() {
             </div>
             <div className="reveal visible relative">
               <div className="absolute -inset-4 bg-blue-500/20 blur-3xl rounded-full"></div>
-              {/* The supplied artwork is a transparent cut-out with near-black line
-                  work, which measured about 1.1:1 against the dark hero panel and
-                  would have disappeared on it. A light panel keeps every stroke of
-                  the cut-out legible, and object-contain keeps the whole cut-out in
-                  frame instead of cropping it the way a photograph can be cropped. */}
+              {/* object-contain keeps the whole sign inside the frame instead of
+                  cropping it the way the card images are cropped, and the light
+                  panel stops the photo's pale background from butting straight
+                  against the dark hero. */}
               <div className="relative rounded-[2.5rem] bg-slate-50 border border-slate-200 shadow-2xl flex items-center justify-center p-8 lg:p-10 h-[420px] lg:h-[500px]">
                 <Image
-                  src="/assets/images/a-frame-sign.png"
+                  src="/assets/images/a-frame-sign.webp"
                   alt="Portable metal A-frame sign"
-                  width={600}
-                  height={600}
+                  width={1254}
+                  height={1254}
                   priority
                   sizes="(min-width: 1024px) 50vw, 100vw"
                   className="object-contain w-full h-full"
