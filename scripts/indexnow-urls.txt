@@ -2,14 +2,14 @@
 # One URL per line. Lines starting with '#' are ignored.
 #
 # Usage:
-#   powershell -File scripts/indexnow-submit.ps1 -UrlsFile scripts/indexnow-urls.txt
+#   node scripts/indexnow-submit.mjs --urls-file scripts/indexnow-urls.txt
 #
 # IMPORTANT: run this ONLY after public/9556efc61b037c23c2a35aa4fd12076f.txt
 # is deployed and returns HTTP 200 in production. The script hard-aborts
 # otherwise (exit code 2).
 #
 # Each URL is pre-checked for HTTP 200. Any non-200 URL aborts the run unless
-# -Force is passed. Status column below was measured on 2026-09-12.
+# --force is passed. Status column below was measured on 2026-09-12.
 
 # --- Group 1: guides (previously submitted with a non-validated key) ---
 # status 200
