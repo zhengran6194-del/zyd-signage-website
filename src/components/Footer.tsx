@@ -40,18 +40,12 @@ export default function Footer() {
               <h4 className="text-blue-950 font-black text-[11px] uppercase tracking-[0.3em] mb-12 border-b-2 border-slate-200 pb-4 inline-block">Product Lines</h4>
               <ul className="space-y-8">
                 <li><Link href="/products/architectural-wayfinding-system" className="text-sm text-slate-600 hover:text-blue-600 font-bold transition-all tracking-tight">Wayfinding Systems</Link></li>
-                <li><Link href="/products/medical-care-signage" className="text-sm text-slate-600 hover:text-blue-600 font-bold transition-all tracking-tight">Medical Signage</Link></li>
-                <li><Link href="/products/custom-landscape-furniture" className="text-sm text-slate-600 hover:text-blue-600 font-bold transition-all tracking-tight">Landscape Furniture</Link></li>
                 <li><Link href="/products/custom-halo-lit-letters" className="text-sm text-slate-600 hover:text-blue-600 font-bold transition-all tracking-tight">Halo-Lit Letters</Link></li>
                 <li><Link href="/products/ultra-slim-led-light-box" className="text-sm text-slate-600 hover:text-blue-600 font-bold transition-all tracking-tight">LED Light Boxes</Link></li>
                 <li><Link href="/products/outdoor-pylon-monument-sign" className="text-sm text-slate-600 hover:text-blue-600 font-bold transition-all tracking-tight">Monument Signs</Link></li>
                 <li><Link href="/products/custom-led-neon-sign" className="text-sm text-slate-600 hover:text-blue-600 font-bold transition-all tracking-tight">LED Neon Signs</Link></li>
                 <li><Link href="/products/metal-acrylic-logo-sign" className="text-sm text-slate-600 hover:text-blue-600 font-bold transition-all tracking-tight">Metal & Acrylic Signs</Link></li>
-                <li><Link href="/products/complete-signage-system" className="text-sm text-slate-600 hover:text-blue-600 font-bold transition-all tracking-tight">Complete Signage Systems</Link></li>
-                <li><Link href="/products/outdoor-waste-bin" className="text-sm text-slate-600 hover:text-blue-600 font-bold transition-all tracking-tight">Outdoor Waste Bin</Link></li>
-                <li><Link href="/products/custom-planter-box" className="text-sm text-slate-600 hover:text-blue-600 font-bold transition-all tracking-tight">Custom Planter Box</Link></li>
-                <li><Link href="/products/acrylic-desk-sign" className="text-sm text-slate-600 hover:text-blue-600 font-bold transition-all tracking-tight">Acrylic Desk Sign</Link></li>
-                <li><Link href="/products/portable-metal-a-frame-sign" className="text-sm text-slate-600 hover:text-blue-600 font-bold transition-all tracking-tight">Portable Metal A-Frame Sign</Link></li>
+                <li><Link href="/products" className="text-sm text-slate-600 hover:text-blue-600 font-bold transition-all tracking-tight">All Product Lines →</Link></li>
               </ul>
             </div>
 
@@ -63,8 +57,6 @@ export default function Footer() {
                 <li><Link href="/faq" className="text-sm text-slate-600 hover:text-blue-600 font-bold transition-all tracking-tight">Resources</Link></li>
                 <li><Link href="/guides/how-much-do-custom-channel-letters-cost" className="text-sm text-slate-600 hover:text-blue-600 font-bold transition-all tracking-tight">Channel Letters Cost Guide</Link></li>
                 <li><Link href="/guides/front-lit-vs-halo-lit-channel-letters" className="text-sm text-slate-600 hover:text-blue-600 font-bold transition-all tracking-tight">Front-Lit vs Halo-Lit</Link></li>
-                <li><Link href="/guides/how-to-choose-the-right-sign-for-your-business" className="text-sm text-slate-600 hover:text-blue-600 font-bold transition-all tracking-tight">Choosing the Right Sign</Link></li>
-                <li><Link href="/guides/304-stainless-steel-vs-galvanized-steel-outdoor-signs" className="text-sm text-slate-600 hover:text-blue-600 font-bold transition-all tracking-tight">Stainless vs Galvanized Steel</Link></li>
                 <li><Link href="/contact" className="text-sm text-slate-600 hover:text-blue-600 font-bold transition-all tracking-tight">Consult Now</Link></li>
               </ul>
             </div>
