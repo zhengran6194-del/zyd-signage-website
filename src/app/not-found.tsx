@@ -75,7 +75,7 @@ export default function NotFound() {
                 </span>
                 <span
                   aria-hidden="true"
-                  className="block mt-3 text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em]"
+                  className="block mt-3 text-[10px] font-bold text-slate-600 uppercase tracking-[0.2em]"
                 >
                   Open section
                 </span>
