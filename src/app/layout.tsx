@@ -1,10 +1,21 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import { Manrope } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
 import { buildPageMetadata, siteConfig } from "@/config/site";
+
+// Self-hosted at build time, so no external stylesheet blocks first paint.
+// Manrope is a variable font, so the whole weight axis ships in one file.
+// A second family was requested in the same URL but is referenced by no rule,
+// so it is deliberately not loaded any more.
+const manrope = Manrope({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-manrope",
+});
 
 const homeTitle = "ZYD Custom Signage | Factory-Direct Signage Solutions";
 const homeDescription = "Factory-direct custom signage for global B2B projects. Premium wayfinding and architectural signs.";
@@ -19,6 +30,14 @@ const siteJsonLd = {
       url: siteConfig.url,
       logo: `${siteConfig.url}/assets/images/logo-correct.jpg`,
       email: siteConfig.salesEmail,
+      telephone: `+${siteConfig.whatsappNumber}`,
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "No. 18, Industrial Zone, Ganjingzi District",
+        addressLocality: "Dalian",
+        addressRegion: "Liaoning",
+        addressCountry: "CN",
+      },
       sameAs: [siteConfig.links.twitter, siteConfig.links.tiktok, siteConfig.links.linkedin],
     },
     {
@@ -49,7 +68,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={manrope.variable}>
       <head>
         <Script id="gtm" strategy="beforeInteractive">
           {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -58,9 +77,6 @@ export default function RootLayout({
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-MB5CNFHN');`}
         </Script>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet" />
       </head>
       <body>
         <JsonLd data={siteJsonLd} />
@@ -68,8 +84,15 @@ export default function RootLayout({
           <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MB5CNFHN"
             height="0" width="0" style={{ display: 'none', visibility: 'hidden' }} />
         </noscript>
+        <a className="skip-link" href="#main-content">
+          Skip to main content
+        </a>
         <Header />
-        {children}
+        {/* Keyboard entry point for the skip link. tabIndex={-1} lets focus land
+            here while keeping the wrapper out of the sequential tab order. */}
+        <div id="main-content" tabIndex={-1}>
+          {children}
+        </div>
         <Footer />
         <Script id="microsoft-clarity" strategy="afterInteractive">
           {`(function(c,l,a,r,i,t,y){

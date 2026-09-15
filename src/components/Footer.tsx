@@ -25,7 +25,7 @@ export default function Footer() {
             <Link href="/" className="inline-block mb-12">
               <img src="/assets/images/logo-correct.jpg" alt="ZYD Signage" width={320} height={160} loading="lazy" className="h-[160px] opacity-95 hover:opacity-100 transition-all" />
             </Link>
-            <p className="text-slate-400 text-xs font-black leading-loose uppercase tracking-[0.4em] max-w-[280px]">
+            <p className="text-slate-600 text-xs font-black leading-loose uppercase tracking-[0.4em] max-w-[280px]">
               Global Benchmark in Architectural Signage & Precision Fabrication.
             </p>
           </div>
@@ -72,11 +72,11 @@ export default function Footer() {
               <h4 className="text-blue-950 font-black text-[11px] uppercase tracking-[0.3em] mb-12 border-b-2 border-slate-200 pb-4 inline-block">B2B Connect</h4>
               <div className="space-y-8">
                 <div>
-                  <div className="text-[10px] text-slate-400 font-black uppercase tracking-[0.2em] mb-2">Direct Mail</div>
+                  <div className="text-[10px] text-slate-600 font-black uppercase tracking-[0.2em] mb-2">Direct Mail</div>
                   <a href={`mailto:${siteConfig.salesEmail}`} className="text-xs text-slate-500 hover:text-blue-600 font-bold block transition-all break-all">{siteConfig.salesEmail}</a>
                 </div>
                   <div>
-                    <div className="text-[10px] text-slate-400 font-black uppercase tracking-[0.2em] mb-2">Technical Lead</div>
+                    <div className="text-[10px] text-slate-600 font-black uppercase tracking-[0.2em] mb-2">Technical Lead</div>
                     <a
                       href={`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent("Hi Aaron, I have a question about signage.")}`}
                       target="_blank"
@@ -93,9 +93,9 @@ export default function Footer() {
 
         <div className="pt-20 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-12">
           <div className="flex items-center gap-8">
-            <span className="text-[10px] text-slate-300 font-black uppercase tracking-[0.5em]">© 2026 {siteConfig.companyName}</span>
+            <span className="text-[10px] text-slate-600 font-black uppercase tracking-[0.5em]">© 2026 {siteConfig.companyName}</span>
             <span className="h-px w-12 bg-slate-300 hidden md:block"></span>
-            <span className="text-[10px] text-slate-300 font-black uppercase tracking-[0.4em]">Global DDP Certified</span>
+            <span className="text-[10px] text-slate-600 font-black uppercase tracking-[0.4em]">Global DDP Certified</span>
           </div>
           <a 
             href="#top" 

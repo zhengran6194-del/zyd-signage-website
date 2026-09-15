@@ -15,10 +15,13 @@ export default function Header() {
         </Link>
 
         {/* 移动端切换按钮 */}
-        <button 
-          className="menu-toggle" 
+        <button
+          type="button"
+          className="menu-toggle"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle navigation"
+          aria-expanded={isMenuOpen}
+          aria-controls="primary-nav"
         >
           <span style={{ transform: isMenuOpen ? 'rotate(45deg) translate(5px, 5px)' : 'none' }}></span>
           <span style={{ opacity: isMenuOpen ? 0 : 1 }}></span>
