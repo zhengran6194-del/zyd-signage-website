@@ -69,7 +69,7 @@ export default function StainlessSteelComparisonGuide() {
           <p className="text-slate-300 text-lg leading-relaxed max-w-3xl">
             A buyer-focused way to compare two common material routes for outdoor signage before requesting drawings, finish samples, and a project quotation.
           </p>
-          <div className="mt-8 flex flex-wrap gap-4 text-xs font-bold uppercase tracking-widest text-slate-400">
+          <div className="mt-8 flex flex-wrap gap-4 text-xs font-bold uppercase tracking-widest text-slate-300">
             <span>Guide</span><span>•</span><span>Updated Sep 7, 2026</span><span>•</span><span>By Aaron, ZYD Signage</span>
           </div>
         </header>
@@ -167,7 +167,7 @@ export default function StainlessSteelComparisonGuide() {
             <div className="bg-slate-950 text-white rounded-[2rem] p-8">
               <div className="text-blue-400 font-black uppercase tracking-[0.25em] text-xs mb-4">Buyer brief</div>
               <h2 className="text-2xl font-black uppercase tracking-tight mb-4">Send the project inputs</h2>
-              <p className="text-slate-400 leading-relaxed mb-6">Share the site, sign type, approximate dimensions, finish preference, quantity, and destination. ZYD can review the brief before recommending a fabrication route.</p>
+              <p className="text-slate-300 leading-relaxed mb-6">Share the site, sign type, approximate dimensions, finish preference, quantity, and destination. ZYD can review the brief before recommending a fabrication route.</p>
               <Link href="/contact" className="inline-flex button-green-base px-6 py-4 rounded-full text-white font-black text-sm">REQUEST A REVIEW</Link>
             </div>
             <div className="bg-white rounded-[2rem] p-8 border border-slate-200">

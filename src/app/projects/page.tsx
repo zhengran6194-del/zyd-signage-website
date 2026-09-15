@@ -1,6 +1,7 @@
 'use client';
 import React, { useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function ProjectsPage() {
   useEffect(() => {
@@ -31,13 +32,13 @@ export default function ProjectsPage() {
               { title: 'HENGLI HEAVY INDUSTRY MONUMENT', tag: 'Monument', desc: 'Landmark monument signage for Hengli Heavy Industry in Dalian, China, delivered for the Davos period.', img: 'hengli-monument.jpg' },
             ].map((proj, idx) => (
               <div key={idx} className="reveal flex flex-col bg-slate-50 rounded-[2rem] overflow-hidden border border-slate-100 group hover:shadow-2xl transition-all">
-                <div className="h-[26rem] overflow-hidden">
+                <div className="relative h-[26rem] overflow-hidden">
                   {proj.img ? (
-                    <img src={`/assets/images/${proj.img}`} alt={proj.title} width={1200} height={800} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                    <Image src={`/assets/images/${proj.img}`} alt={proj.title} fill sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" className="object-cover group-hover:scale-105 transition-transform duration-700" />
                   ) : (
                     <div className="w-full h-full bg-slate-200 flex flex-col items-center justify-center gap-4">
-                      <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-slate-400"><rect x="3" y="3" width="18" height="18" rx="2" /><circle cx="8.5" cy="8.5" r="1.5" /><path d="M21 15l-5-5L5 21" /></svg>
-                      <span className="text-sm font-black uppercase tracking-widest text-slate-400">Image Coming Soon</span>
+                      <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-slate-600"><rect x="3" y="3" width="18" height="18" rx="2" /><circle cx="8.5" cy="8.5" r="1.5" /><path d="M21 15l-5-5L5 21" /></svg>
+                      <span className="text-sm font-black uppercase tracking-widest text-slate-600">Image Coming Soon</span>
                     </div>
                   )}
                 </div>
@@ -52,7 +53,7 @@ export default function ProjectsPage() {
 
           <div className="bg-slate-950 p-16 lg:p-20 rounded-[4rem] shadow-2xl text-center">
             <p className="text-3xl text-blue-400 font-black italic mb-6 uppercase tracking-tighter">Your Project Next?</p>
-            <p className="text-slate-400 text-xl mb-10 max-w-2xl mx-auto leading-relaxed">We handle end-to-end design, manufacturing, and Global DDP shipping for large-scale architectural projects.</p>
+            <p className="text-slate-300 text-xl mb-10 max-w-2xl mx-auto leading-relaxed">We handle end-to-end design, manufacturing, and Global DDP shipping for large-scale architectural projects.</p>
             <Link href="/#contact" className="button button-green-base px-16 py-8 rounded-full text-white font-black text-2xl shadow-2xl">
               CONSULT AN ENGINEER
             </Link>

@@ -1,5 +1,6 @@
 'use client';
 import React from 'react';
+import Image from 'next/image';
 
 export default function AboutPage() {
   return (
@@ -18,8 +19,8 @@ export default function AboutPage() {
               <p>We pride ourselves on our <strong>Door-to-Door (DDP) shipping</strong> capabilities, handling all customs and duties for our clients in 50+ countries.</p>
             </div>
             <div className="relative group">
-              <img src="/assets/images/company-entrance.jpg" alt="ZYD Factory Entrance" width={1200} height={800} loading="lazy" className="rounded-[3rem] shadow-2xl w-full h-[450px] object-cover" />
-              <p className="text-center text-sm font-black text-slate-400 mt-4 tracking-widest uppercase">Factory Entrance</p>
+              <Image src="/assets/images/company-entrance.jpg" alt="ZYD Factory Entrance" width={1448} height={1086} sizes="(min-width: 768px) 50vw, 100vw" className="rounded-[3rem] shadow-2xl w-full h-[450px] object-cover" />
+              <p className="text-center text-sm font-black text-slate-600 mt-4 tracking-widest uppercase">Factory Entrance</p>
             </div>
           </div>
         </div>

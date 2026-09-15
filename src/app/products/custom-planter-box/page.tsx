@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function CustomPlanterBoxPage() {
   return (
@@ -14,7 +15,7 @@ export default function CustomPlanterBoxPage() {
               <h1 className="text-4xl lg:text-5xl font-black mb-6 leading-tight tracking-tight uppercase">
                 Custom <span className="text-blue-500 italic">Planter</span> <br />Box
               </h1>
-              <p className="text-lg text-slate-400 mb-8 max-w-xl leading-relaxed font-medium">
+              <p className="text-lg text-slate-300 mb-8 max-w-xl leading-relaxed font-medium">
                 Architectural planter solutions that bring greenery into hotels, commercial entrances, and public spaces. Coordinate the shape, appearance, and project requirements directly with our factory team.
               </p>
               <Link href="/contact" className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide">
@@ -23,7 +24,7 @@ export default function CustomPlanterBoxPage() {
             </div>
             <div className="reveal visible relative">
               <div className="absolute -inset-4 bg-blue-500/20 blur-3xl rounded-full"></div>
-              <img src="/assets/images/custom-planter-box.jpg" alt="Custom architectural planter boxes with greenery" width={915} height={915} loading="eager" fetchPriority="high" className="relative rounded-[2.5rem] shadow-2xl border-4 border-white/5 object-cover w-full h-[420px] lg:h-[500px]" />
+              <Image src="/assets/images/custom-planter-box.jpg" alt="Custom architectural planter boxes with greenery" width={915} height={911} priority sizes="(min-width: 1024px) 50vw, 100vw" className="relative rounded-[2.5rem] shadow-2xl border-4 border-white/5 object-cover w-full h-[420px] lg:h-[500px]" />
             </div>
           </div>
         </section>
@@ -54,7 +55,7 @@ export default function CustomPlanterBoxPage() {
               </div>
               <div className="bg-slate-950 p-10 rounded-[3rem] text-white flex flex-col justify-center shadow-2xl">
                 <h3 className="text-2xl font-black mb-6 italic text-blue-400 uppercase tracking-tighter">Built for Your Project</h3>
-                <p className="text-slate-400 mb-8 leading-relaxed font-medium">Send your drawings, target quantity, and site requirements to receive a factory-direct recommendation.</p>
+                <p className="text-slate-300 mb-8 leading-relaxed font-medium">Send your drawings, target quantity, and site requirements to receive a factory-direct recommendation.</p>
                 <div className="space-y-5">
                   <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">Custom Appearance Coordination</span></div>
                   <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">Project-Based Production</span></div>

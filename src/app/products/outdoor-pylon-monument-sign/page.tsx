@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import JsonLd from '@/components/JsonLd';
 
 const faqs = [
@@ -42,7 +43,7 @@ export default function OutdoorPylonMonumentSignPage() {
               <h1 className="text-4xl lg:text-5xl font-black mb-6 leading-tight tracking-tight uppercase">
                 Outdoor Pylon &amp; <span className="text-blue-500 italic">Monument</span> <br/>Signs
               </h1>
-              <p className="text-lg text-slate-400 mb-8 max-w-xl leading-relaxed font-medium">
+              <p className="text-lg text-slate-300 mb-8 max-w-xl leading-relaxed font-medium">
                 Landmark-scale entry identification for corporate campuses, dealerships and retail destinations.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -56,7 +57,7 @@ export default function OutdoorPylonMonumentSignPage() {
             </div>
             <div className="reveal visible relative">
               <div className="absolute -inset-4 bg-blue-500/20 blur-3xl rounded-full"></div>
-              <img src="/assets/images/cat-outdoor.webp" alt="Outdoor Pylon Monument Sign" width={1200} height={800} loading="eager" fetchPriority="high" className="relative rounded-[2.5rem] shadow-2xl border-4 border-white/5 object-cover w-full h-[420px] lg:h-[500px]" />
+              <Image src="/assets/images/cat-outdoor.webp" alt="Outdoor Pylon Monument Sign" width={1536} height={1024} priority sizes="(min-width: 1024px) 50vw, 100vw" className="relative rounded-[2.5rem] shadow-2xl border-4 border-white/5 object-cover w-full h-[420px] lg:h-[500px]" />
             </div>
           </div>
         </section>
@@ -165,7 +166,7 @@ export default function OutdoorPylonMonumentSignPage() {
               </div>
               <div className="bg-slate-950 p-10 rounded-[3rem] text-white flex flex-col justify-center shadow-2xl">
                 <h3 className="text-2xl font-black mb-6 italic text-blue-400 uppercase tracking-tighter">Factory Advantage</h3>
-                <p className="text-slate-400 mb-8 leading-relaxed font-medium">Direct manufacturing from our 20,000sqm base in Dalian, established in 2006, keeps every weld and finish under one quality-control process.</p>
+                <p className="text-slate-300 mb-8 leading-relaxed font-medium">Direct manufacturing from our 20,000sqm base in Dalian, established in 2006, keeps every weld and finish under one quality-control process.</p>
                 <div className="space-y-5">
                   <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">Global DDP Shipping</span></div>
                   <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">MOQ: 1</span></div>

@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import JsonLd from '@/components/JsonLd';
 import { siteConfig } from '@/config/site';
 
@@ -95,7 +96,7 @@ export default function FAQPage() {
       {/* 1. HERO SECTION */}
       <section className="relative min-h-[50vh] flex items-center bg-slate-950 text-white overflow-hidden py-24">
         <div className="absolute inset-0 z-0">
-          <img src="/assets/images/hero-bg-seafront.png" alt="Industrial Facility" width={1920} height={1080} loading="eager" fetchPriority="high" className="w-full h-full object-cover opacity-40" />
+          <Image src="/assets/images/hero-bg-seafront.png" alt="Industrial Facility" fill priority sizes="100vw" className="object-cover opacity-40" />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-slate-950/80"></div>
         </div>
         <div className="container relative z-10 text-center">
@@ -147,19 +148,18 @@ export default function FAQPage() {
                   className="reveal group cursor-pointer w-full text-left block"
                 >
                   <div className="bg-slate-100 rounded-[2rem] h-48 mb-6 overflow-hidden relative">
-                    <img 
-                      src={`/assets/images/${guide.image}`} 
-                      alt={guide.title} 
-                      width={800}
-                      height={600}
-                      loading="lazy"
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    <Image
+                      src={`/assets/images/${guide.image}`}
+                      alt={guide.title}
+                      fill
+                      sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw"
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-blue-600/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                   </div>
                   <div className="text-[10px] font-black uppercase tracking-widest text-blue-600 mb-3">{guide.category}</div>
                   <h4 className="text-lg font-black text-slate-900 mb-3 leading-tight group-hover:text-blue-600 transition-colors">{guide.title}</h4>
-                  <div className="text-xs text-slate-400 font-bold">{guide.date}</div>
+                  <div className="text-xs text-slate-600 font-bold">{guide.date}</div>
                 </Link>
               );
             })}
@@ -184,7 +184,7 @@ export default function FAQPage() {
                   <span className={`text-xl font-black uppercase tracking-tight transition-colors ${activeFaq === i ? 'text-blue-600' : 'text-slate-900 group-hover:text-blue-500'}`}>
                     {faq.q}
                   </span>
-                  <div className={`transition-transform duration-300 ${activeFaq === i ? 'rotate-180 text-blue-600' : 'text-slate-400 group-hover:text-blue-500'}`}>
+                  <div className={`transition-transform duration-300 ${activeFaq === i ? 'rotate-180 text-blue-600' : 'text-slate-600 group-hover:text-blue-500'}`}>
                     <ChevronDownIcon />
                   </div>
                 </button>
@@ -210,7 +210,7 @@ export default function FAQPage() {
             <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/10 blur-[120px] rounded-full -translate-y-1/2 translate-x-1/2"></div>
             <div className="relative z-10 reveal">
               <h2 className="text-white mb-6 uppercase tracking-tighter">Still have questions?</h2>
-              <p className="text-slate-400 text-lg mb-12 max-w-xl mx-auto font-medium">Our technical sales engineers are ready to assist with your specific project requirements.</p>
+              <p className="text-slate-300 text-lg mb-12 max-w-xl mx-auto font-medium">Our technical sales engineers are ready to assist with your specific project requirements.</p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
                 <Link href="/contact" className="button-green-base">Contact Sales Support</Link>
                 <button

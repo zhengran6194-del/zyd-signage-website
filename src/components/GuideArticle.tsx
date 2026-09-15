@@ -61,7 +61,7 @@ export default function GuideArticle(guide: GuideArticleProps) {
           <div className="text-blue-400 font-black uppercase tracking-[0.3em] text-xs mb-5">{guide.category}</div>
           <h1 className="text-4xl lg:text-6xl font-black uppercase tracking-tighter leading-tight mb-6">{guide.title}</h1>
           <p className="text-slate-300 text-lg leading-relaxed max-w-3xl">{guide.description}</p>
-          <div className="mt-8 flex flex-wrap gap-4 text-xs font-bold uppercase tracking-widest text-slate-400">
+          <div className="mt-8 flex flex-wrap gap-4 text-xs font-bold uppercase tracking-widest text-slate-300">
             <span>Guide</span><span>•</span><span>Updated {guide.updated}</span><span>•</span><span>By Aaron, ZYD Signage</span>
           </div>
         </header>
@@ -148,7 +148,7 @@ export default function GuideArticle(guide: GuideArticleProps) {
             <div className="bg-slate-950 text-white rounded-[2rem] p-8">
               <div className="text-blue-400 font-black uppercase tracking-[0.25em] text-xs mb-4">Buyer brief</div>
               <h2 className="text-2xl font-black uppercase tracking-tight mb-4">{guide.asideTitle}</h2>
-              <p className="text-slate-400 leading-relaxed mb-6">{guide.asideText}</p>
+              <p className="text-slate-300 leading-relaxed mb-6">{guide.asideText}</p>
               <Link href="/contact" className="inline-flex button-green-base px-6 py-4 rounded-full text-white font-black text-sm">DISCUSS YOUR PROJECT</Link>
             </div>
           </aside>

@@ -8,6 +8,7 @@ import {
   submitInquiry,
   type InquiryPayload,
 } from '@/lib/inquiry';
+import Image from 'next/image';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -142,7 +143,7 @@ export default function ContactPage() {
                 <input ref={startedAtRef} type="hidden" name="formStartedAt" defaultValue="" />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div className="space-y-3">
-                    <label htmlFor="full-name" className="text-sm font-black uppercase tracking-widest text-slate-400 pl-2">Full Name</label>
+                    <label htmlFor="full-name" className="text-sm font-black uppercase tracking-widest text-slate-600 pl-2">Full Name</label>
                     <input 
                       id="full-name"
                       type="text" 
@@ -151,12 +152,12 @@ export default function ContactPage() {
                       onChange={handleChange}
                       placeholder="Your full name" 
                       aria-label="Full name for your signage project inquiry"
-                      className="w-full px-8 py-5 rounded-3xl bg-slate-50 border-none focus:ring-4 focus:ring-blue-500/10 font-bold transition-all" 
+                      className="w-full px-8 py-5 rounded-3xl bg-slate-50 border-none focus:ring-4 focus:ring-blue-600 font-bold transition-all" 
                       required
                     />
                   </div>
                   <div className="space-y-3">
-                    <label htmlFor="email-address" className="text-sm font-black uppercase tracking-widest text-slate-400 pl-2">Email Address</label>
+                    <label htmlFor="email-address" className="text-sm font-black uppercase tracking-widest text-slate-600 pl-2">Email Address</label>
                     <input 
                       id="email-address"
                       type="email" 
@@ -165,12 +166,12 @@ export default function ContactPage() {
                       onChange={handleChange}
                       placeholder="you@company.com" 
                       aria-label="Email address for your signage project inquiry"
-                      className="w-full px-8 py-5 rounded-3xl bg-slate-50 border-none focus:ring-4 focus:ring-blue-500/10 font-bold transition-all" 
+                      className="w-full px-8 py-5 rounded-3xl bg-slate-50 border-none focus:ring-4 focus:ring-blue-600 font-bold transition-all" 
                     />
                   </div>
                 </div>
                 <div className="space-y-3">
-                  <label htmlFor="company-name" className="text-sm font-black uppercase tracking-widest text-slate-400 pl-2">Company Name</label>
+                  <label htmlFor="company-name" className="text-sm font-black uppercase tracking-widest text-slate-600 pl-2">Company Name</label>
                   <input 
                     id="company-name"
                     type="text" 
@@ -179,11 +180,11 @@ export default function ContactPage() {
                     onChange={handleChange}
                      placeholder="Your company name" 
                      aria-label="Company name for your signage project inquiry"
-                     className="w-full px-8 py-5 rounded-3xl bg-slate-50 border-none focus:ring-4 focus:ring-blue-500/10 font-bold transition-all" 
+                     className="w-full px-8 py-5 rounded-3xl bg-slate-50 border-none focus:ring-4 focus:ring-blue-600 font-bold transition-all" 
                    />
                 </div>
                 <div className="space-y-3">
-                  <label htmlFor="project-details" className="text-sm font-black uppercase tracking-widest text-slate-400 pl-2">Project Details</label>
+                  <label htmlFor="project-details" className="text-sm font-black uppercase tracking-widest text-slate-600 pl-2">Project Details</label>
                   <textarea 
                     id="project-details"
                     name="details"
@@ -192,7 +193,7 @@ export default function ContactPage() {
                     rows={5} 
                      placeholder="Describe your signage needs, dimensions, location, and installation environment..." 
                      aria-label="Project details for your signage inquiry"
-                     className="w-full px-8 py-5 rounded-3xl bg-slate-50 border-none focus:ring-4 focus:ring-blue-500/10 font-bold transition-all resize-none"
+                     className="w-full px-8 py-5 rounded-3xl bg-slate-50 border-none focus:ring-4 focus:ring-blue-600 font-bold transition-all resize-none"
                      required
                   ></textarea>
                 </div>
@@ -261,7 +262,7 @@ export default function ContactPage() {
                       <svg className="w-6 h-6 text-slate-900" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                     </div>
                     <div>
-                      <div className="text-xs font-black uppercase tracking-[0.3em] text-slate-400 mb-1">Address</div>
+                      <div className="text-xs font-black uppercase tracking-[0.3em] text-slate-600 mb-1">Address</div>
                       <p className="text-lg font-bold text-slate-900 leading-relaxed">
                         No. 18, Industrial Zone, Ganjingzi District, Dalian, Liaoning, China
                       </p>
@@ -276,7 +277,7 @@ export default function ContactPage() {
                     <div className="absolute inset-0 bg-slate-900/40 flex items-center justify-center opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-all">
                       <span className="text-white font-black text-sm uppercase tracking-widest bg-slate-950/80 px-6 py-3 rounded-full">Chat on WhatsApp</span>
                     </div>
-                    <img src="/assets/images/factory-overview.jpg" alt="Factory Overview" width={1200} height={800} loading="lazy" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                    <Image src="/assets/images/factory-overview.jpg" alt="Factory Overview" fill sizes="(min-width: 1024px) 45vw, 100vw" className="object-cover transition-transform duration-700 group-hover:scale-110" />
                   </button>
                 </div>
               </div>
