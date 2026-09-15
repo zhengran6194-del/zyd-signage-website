@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { siteConfig } from '@/config/site';
 
 export default function Footer() {
@@ -23,7 +24,10 @@ export default function Footer() {
           {/* Column 1: Extreme Left Logo Section (1/3) */}
           <div className="lg:w-1/3">
             <Link href="/" className="inline-block mb-12">
-              <img src="/assets/images/logo-correct.jpg" alt="ZYD Signage" width={320} height={160} loading="lazy" className="h-[160px] opacity-95 hover:opacity-100 transition-all" />
+              {/* width/height mirror the real 4961x3508 file. The previous
+                  320x160 pair described a 2:1 box for a 1.41:1 image, so this
+                  was being stretched horizontally. */}
+              <Image src="/assets/images/logo-correct.jpg" alt="ZYD Signage" width={4961} height={3508} sizes="240px" className="h-[160px] w-auto opacity-95 hover:opacity-100 transition-all" />
             </Link>
             <p className="text-slate-600 text-xs font-black leading-loose uppercase tracking-[0.4em] max-w-[280px]">
               Global Benchmark in Architectural Signage & Precision Fabrication.
@@ -36,9 +40,14 @@ export default function Footer() {
               <h4 className="text-blue-950 font-black text-[11px] uppercase tracking-[0.3em] mb-12 border-b-2 border-slate-200 pb-4 inline-block">Product Lines</h4>
               <ul className="space-y-8">
                 <li><Link href="/products/architectural-wayfinding-system" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Wayfinding Systems</Link></li>
-                <li><Link href="/products/complete-signage-system" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Complete Signage Systems</Link></li>
-                <li><Link href="/products/custom-halo-lit-letters" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Halo-Lit Letters</Link></li>
+                <li><Link href="/products/medical-care-signage" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Medical Signage</Link></li>
                 <li><Link href="/products/custom-landscape-furniture" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Landscape Furniture</Link></li>
+                <li><Link href="/products/custom-halo-lit-letters" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Halo-Lit Letters</Link></li>
+                <li><Link href="/products/ultra-slim-led-light-box" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">LED Light Boxes</Link></li>
+                <li><Link href="/products/outdoor-pylon-monument-sign" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Monument Signs</Link></li>
+                <li><Link href="/products/custom-led-neon-sign" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">LED Neon Signs</Link></li>
+                <li><Link href="/products/metal-acrylic-logo-sign" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Metal & Acrylic Signs</Link></li>
+                <li><Link href="/products/complete-signage-system" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Complete Signage Systems</Link></li>
                 <li><Link href="/products/outdoor-waste-bin" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Outdoor Waste Bin</Link></li>
                 <li><Link href="/products/custom-planter-box" className="text-sm text-slate-500 hover:text-blue-600 font-bold transition-all tracking-tight">Custom Planter Box</Link></li>
               </ul>
@@ -115,7 +124,7 @@ export default function Footer() {
         onClick={(e) => handleWhatsApp(e, "Hi Aaron, I have a question about signage.")}
         aria-label="Chat on WhatsApp"
       >
-        <img src="/assets/images/whatsapp-icon-3d.jpg" alt="WhatsApp" width={150} height={150} loading="lazy" />
+        <Image src="/assets/images/whatsapp-icon-3d.jpg" alt="WhatsApp" width={1254} height={1254} sizes="(max-width: 1024px) 64px, 150px" />
       </a>
       <a
         className="floating-quote"

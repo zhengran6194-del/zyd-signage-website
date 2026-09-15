@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useEffect, useRef, useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { siteConfig } from '@/config/site';
 import {
@@ -196,7 +197,14 @@ export default function Home() {
         {/* 1. MEGA HERO SECTION (Image 2) */}
         <section className="hero relative min-h-screen flex items-center bg-slate-950 text-white overflow-hidden py-32">
           <div className="absolute inset-0 z-0">
-            <img src="/assets/images/hero-bg-factory-aerial.jpg" alt="ZYD Factory Aerial" width={1920} height={1080} loading="eager" fetchPriority="high" className="w-full h-full object-cover opacity-80" />
+            <Image
+              src="/assets/images/hero-bg-factory-aerial.jpg"
+              alt="ZYD Factory Aerial"
+              fill
+              priority
+              sizes="100vw"
+              className="object-cover opacity-80"
+            />
             <div className="hero-overlay-dark opacity-30"></div>
           </div>
           
@@ -349,15 +357,15 @@ export default function Home() {
                   ].map((cert, idx) => (
                     <div key={idx} className="p-6 bg-white border border-slate-100 rounded-3xl shadow-sm hover:shadow-md transition-shadow">
                       <div className="font-black text-blue-600 text-base mb-1">{cert.label}</div>
-                      <div className="text-[10px] font-bold uppercase tracking-widest text-slate-400">{cert.desc}</div>
+                      <div className="text-[10px] font-bold uppercase tracking-widest text-slate-600">{cert.desc}</div>
                     </div>
                   ))}
                 </div>
               </div>
               
               <div className="reveal relative flex justify-end">
-                <div className="rounded-[3rem] overflow-hidden shadow-[0_50px_100px_rgba(0,0,0,0.15)] border-[12px] border-white w-full aspect-square lg:aspect-[4/3]">
-                  <img src="/assets/images/factory-overview.jpg" alt="Factory QC" width={1200} height={800} loading="lazy" className="w-full h-full object-cover" />
+                <div className="relative rounded-[3rem] overflow-hidden shadow-[0_50px_100px_rgba(0,0,0,0.15)] border-[12px] border-white w-full aspect-square lg:aspect-[4/3]">
+                  <Image src="/assets/images/factory-overview.jpg" alt="Factory QC" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
                 </div>
                 
                 {/* Right Floating Vertical Card (Image 2 Proportions) */}
@@ -391,7 +399,7 @@ export default function Home() {
                         </div>
                         <div>
                           <div className="text-slate-950 font-black text-[14px] uppercase tracking-wider mb-1 leading-tight">{item.t}</div>
-                          <div className="text-slate-400 font-bold text-[11px] leading-tight opacity-80">{item.d}</div>
+                          <div className="text-slate-600 font-bold text-[11px] leading-tight opacity-80">{item.d}</div>
                         </div>
                       </div>
                     ))}
@@ -419,12 +427,12 @@ export default function Home() {
             </div>
           </div>
           <div className="reveal w-full border-y border-slate-200 bg-slate-950 shadow-[0_35px_100px_rgba(10,39,84,0.16)]">
-            <img
+            <Image
               src="/assets/images/global-signage-poster-wide.jpg"
               alt="ZYD custom signage and architectural sign collection"
               width={1327}
               height={726}
-              loading="lazy"
+              sizes="100vw"
               className="block h-auto w-full"
             />
           </div>
@@ -444,27 +452,31 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
               {[
-                { title: 'Halo-Lit Letters', img: 'cat-illuminated.webp' },
-                { title: 'Wayfinding Systems', img: 'hero-wayfinding.png' },
-                { title: 'Monument Signs', img: 'cat-outdoor.webp' },
-                { title: 'LED Light Boxes', img: 'cat-lightbox.webp' },
-                { title: 'LED Neon Signs', img: 'cat-neon.webp' },
-                { title: 'Metal & Acrylic Signs', img: 'cat-metal.webp' },
-                { title: 'Landscape & Furniture', img: 'landscape-bench.jpg' },
-                { title: 'Complete Systems', img: 'cat-system.webp' },
+                { title: 'Halo-Lit Letters', img: 'cat-illuminated.webp', id: 'custom-halo-lit-letters' },
+                { title: 'Wayfinding Systems', img: 'hero-wayfinding.png', id: 'architectural-wayfinding-system' },
+                { title: 'Medical Signage', img: 'hero-medical.jpg', id: 'medical-care-signage' },
+                { title: 'Monument Signs', img: 'cat-outdoor.webp', id: 'outdoor-pylon-monument-sign' },
+                { title: 'LED Light Boxes', img: 'cat-lightbox.webp', id: 'ultra-slim-led-light-box' },
+                { title: 'LED Neon Signs', img: 'cat-neon.webp', id: 'custom-led-neon-sign' },
+                { title: 'Metal & Acrylic Signs', img: 'cat-metal.webp', id: 'metal-acrylic-logo-sign' },
+                { title: 'Landscape & Furniture', img: 'landscape-bench.jpg', id: 'custom-landscape-furniture' },
+                { title: 'Complete Systems', img: 'cat-system.webp', id: 'complete-signage-system' },
                 { title: 'Outdoor Waste Bin', img: 'outdoor-waste-bin.jpg', id: 'outdoor-waste-bin' },
                 { title: 'Custom Planter Box', img: 'custom-planter-box.jpg', id: 'custom-planter-box' },
               ].map((p, i) => (
-                <Link href={p.id ? `/products/${p.id}` : '/products'} key={i} className="reveal group block">
-                  <div className="overflow-hidden rounded-xl mb-4 h-60 bg-slate-100 border border-slate-50">
-                    <img src={`/assets/images/${p.img}`} alt={p.title} width={1200} height={800} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                // Every card carries an id, so the link always resolves to its own
+                // detail page. The old `p.id ? ... : '/products'` fallback hid the
+                // eight cards that were missing one behind the catalog page.
+                <Link href={`/products/${p.id}`} key={i} className="reveal group block">
+                  <div className="relative overflow-hidden rounded-xl mb-4 h-60 bg-slate-100 border border-slate-50">
+                    <Image src={`/assets/images/${p.img}`} alt={p.title} fill sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw" className="object-cover group-hover:scale-105 transition-transform duration-500" />
                   </div>
                   <h4 className="font-black text-slate-900 mb-1 uppercase text-xs">{p.title}</h4>
-                  <div className="flex flex-wrap gap-x-4 gap-y-1 text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-2">
+                  <div className="flex flex-wrap gap-x-4 gap-y-1 text-[10px] font-bold uppercase tracking-widest text-slate-600 mb-2">
                     <span>MOQ: 1</span>
                     <span>Lead Time: 7–14 days</span>
                   </div>
-                  <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest group-hover:text-blue-600 transition-colors">Details</span>
+                  <span className="text-[10px] font-bold text-slate-600 uppercase tracking-widest group-hover:text-blue-600 transition-colors">Details</span>
                 </Link>
               ))}
             </div>
@@ -514,7 +526,7 @@ export default function Home() {
                   <div className="text-[10px] font-black text-blue-600 uppercase tracking-widest mb-3">{g.tag}</div>
                   <h4 className="font-black text-slate-900 mb-3 uppercase text-xs leading-relaxed">{g.title}</h4>
                   <p className="text-slate-500 text-xs leading-relaxed font-medium mb-4">{g.desc}</p>
-                  <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest group-hover:text-blue-600 transition-colors">Read Guide</span>
+                  <span className="text-[10px] font-bold text-slate-600 uppercase tracking-widest group-hover:text-blue-600 transition-colors">Read Guide</span>
                 </Link>
               ))}
             </div>
@@ -534,12 +546,12 @@ export default function Home() {
                     aria-label="View the interactive Alibaba virtual factory tour"
                     className="group block overflow-hidden rounded-[1.5rem] border border-white/15 bg-slate-900 shadow-2xl"
                   >
-                    <img
+                    <Image
                       src="/assets/images/vr-tour-preview.jpg"
                       alt="Preview of the interactive ZYD virtual factory tour"
-                      width={1308}
-                      height={484}
-                      loading="lazy"
+                      width={1754}
+                      height={1033}
+                      sizes="(min-width: 1024px) 60vw, 100vw"
                       className="h-auto w-full transition-transform duration-500 group-hover:scale-[1.02]"
                     />
                   </a>
@@ -550,7 +562,7 @@ export default function Home() {
                   <p className="text-slate-300 text-base lg:text-lg leading-relaxed font-medium mb-8">Explore our signage production environment online, then connect with the team behind your next project.</p>
                   <div className="flex flex-col sm:flex-row gap-3">
                     <a href={virtualFactoryTourUrl} target="_blank" rel="noopener noreferrer" className="button button-green-base px-7 py-3 text-center">View Interactive Tour</a>
-                    <span className="flex items-center text-xs font-bold text-slate-400">Click the preview or button to open the full VR tour.</span>
+                    <span className="flex items-center text-xs font-bold text-slate-300">Click the preview or button to open the full VR tour.</span>
                   </div>
                 </div>
               </div>
@@ -563,13 +575,12 @@ export default function Home() {
           <div className="container">
             <div className="grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-8 lg:gap-12 items-stretch">
               <div className="reveal relative min-h-[420px] overflow-hidden rounded-[2rem] bg-slate-900 text-white">
-                <img
+                <Image
                   src="/assets/images/hero-bg-factory-aerial.jpg"
                   alt="ZYD signage manufacturing facility"
-                  width={1920}
-                  height={1080}
-                  loading="lazy"
-                  className="absolute inset-0 w-full h-full object-cover opacity-60"
+                  fill
+                  sizes="(min-width: 1024px) 45vw, 100vw"
+                  className="object-cover opacity-60"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/55 to-transparent"></div>
                 <div className="relative z-10 flex h-full min-h-[420px] flex-col justify-end p-8 lg:p-12">
@@ -594,7 +605,7 @@ export default function Home() {
                         <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center shrink-0 text-blue-600">{item.icon}</div>
                         <div>
                           <div className="text-slate-950 font-black text-xs uppercase tracking-wider mb-1">{item.t}</div>
-                          <div className="text-slate-400 font-bold text-[10px] uppercase tracking-wide">{item.d}</div>
+                          <div className="text-slate-600 font-bold text-[10px] uppercase tracking-wide">{item.d}</div>
                         </div>
                       </div>
                     ))}
@@ -615,29 +626,29 @@ export default function Home() {
                 <h2 className="text-4xl lg:text-6xl font-black text-slate-950 uppercase tracking-tight leading-[0.95] mb-5">Craftsmanship starts with people.</h2>
                 <p className="text-slate-500 text-base lg:text-lg leading-relaxed font-medium">The signs we make are shaped by the people who plan, build, review, and deliver them. Our shared work, training, and time together keep collaboration close to every project.</p>
               </div>
-              <div className="text-slate-400 text-xs font-black uppercase tracking-[0.25em] lg:max-w-xs lg:text-right">Team culture / Practical craft / Client-focused collaboration</div>
+              <div className="text-slate-600 text-xs font-black uppercase tracking-[0.25em] lg:max-w-xs lg:text-right">Team culture / Practical craft / Client-focused collaboration</div>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-6 lg:gap-8 items-stretch">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div className="reveal sm:row-span-2 bg-white rounded-[2rem] overflow-hidden border border-slate-200 shadow-sm">
-                  <img src="/assets/images/team-collage.jpg" alt="ZYD team and signage production equipment collage" width={939} height={913} loading="lazy" className="w-full h-full min-h-[360px] object-cover" />
+                <div className="reveal relative sm:row-span-2 min-h-[360px] bg-white rounded-[2rem] overflow-hidden border border-slate-200 shadow-sm">
+                  <Image src="/assets/images/team-collage.jpg" alt="ZYD team and signage production equipment collage" fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-cover" />
                 </div>
                 <div className="reveal bg-white rounded-[2rem] overflow-hidden border border-slate-200 shadow-sm">
-                  <img src="/assets/images/team-annual-event.jpg" alt="ZYD team gathered at an annual company event" width={5863} height={3909} loading="lazy" className="w-full h-64 object-cover" />
+                  <Image src="/assets/images/team-annual-event.jpg" alt="ZYD team gathered at an annual company event" width={1920} height={1280} sizes="(min-width: 640px) 25vw, 100vw" className="w-full h-64 object-cover" />
                 </div>
                 <div className="reveal bg-white rounded-[2rem] overflow-hidden border border-slate-200 shadow-sm">
-                  <img src="/assets/images/team-outdoor.jpg" alt="ZYD team gathered outdoors with a company banner" width={5950} height={3967} loading="lazy" className="w-full h-64 object-cover" />
+                  <Image src="/assets/images/team-outdoor.jpg" alt="ZYD team gathered outdoors with a company banner" width={1920} height={1280} sizes="(min-width: 640px) 25vw, 100vw" className="w-full h-64 object-cover" />
                 </div>
               </div>
               <div className="grid grid-cols-2 gap-6 content-start">
                 <div className="reveal col-span-2 bg-white rounded-[2rem] overflow-hidden border border-slate-200 shadow-sm">
-                  <img src="/assets/images/team-training.jpg" alt="Team members attending a signage training and display session" width={6000} height={4000} loading="lazy" className="w-full h-72 object-cover" />
+                  <Image src="/assets/images/team-training.jpg" alt="Team members attending a signage training and display session" width={1920} height={1280} sizes="(min-width: 1024px) 33vw, 100vw" className="w-full h-72 object-cover" />
                 </div>
                 <div className="reveal bg-white rounded-[2rem] overflow-hidden border border-slate-200 shadow-sm">
-                  <img src="/assets/images/team-group-small.jpg" alt="ZYD team group photo at a company gathering" width={320} height={213} loading="lazy" className="w-full h-40 object-cover" />
+                  <Image src="/assets/images/team-group-small.jpg" alt="ZYD team group photo at a company gathering" width={320} height={213} sizes="(min-width: 1024px) 16vw, 50vw" className="w-full h-40 object-cover" />
                 </div>
                 <div className="reveal bg-white rounded-[2rem] overflow-hidden border border-slate-200 shadow-sm">
-                  <img src="/assets/images/team-group-green.jpg" alt="ZYD team group photo in coordinated work shirts" width={320} height={213} loading="lazy" className="w-full h-40 object-cover" />
+                  <Image src="/assets/images/team-group-green.jpg" alt="ZYD team group photo in coordinated work shirts" width={320} height={213} sizes="(min-width: 1024px) 16vw, 50vw" className="w-full h-40 object-cover" />
                 </div>
               </div>
             </div>
@@ -672,12 +683,14 @@ export default function Home() {
         {/* 8. CALL TO ACTION */}
         <section id="contact" className="section bg-slate-950 text-white relative overflow-hidden py-24">
           <div className="absolute inset-0 opacity-10 pointer-events-none">
-            <img src="/assets/images/grid-pattern.svg" alt="Pattern" width={1200} height={800} loading="lazy" className="w-full h-full object-cover" />
+            {/* A local SVG cannot go through the image optimiser without
+                enabling dangerouslyAllowSVG, so it is served as-is. */}
+            <Image src="/assets/images/grid-pattern.svg" alt="Pattern" fill unoptimized sizes="100vw" className="object-cover" />
           </div>
           <div className="container relative z-10 text-center max-w-xl">
             <div className="reveal">
               <h2 className="mb-4 uppercase">Ready to Start?</h2>
-              <p className="text-slate-400 mb-10 text-base">Contact our engineering team for expert technical support and factory-direct pricing.</p>
+              <p className="text-slate-300 mb-10 text-base">Contact our engineering team for expert technical support and factory-direct pricing.</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/contact" className="button button-green-base px-10 py-3">
                   Get a Free Quote
@@ -717,11 +730,11 @@ export default function Home() {
                 </div>
                 <input ref={startedAtRef} type="hidden" name="formStartedAt" defaultValue="" />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                  <input id="home-full-name" type="text" name="fullName" value={formData.fullName} onChange={handleInquiryChange} placeholder="Full Name *" aria-label="Full name for your signage project inquiry" required className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:ring-4 focus:ring-blue-500/10 font-bold" />
-                  <input id="home-email-address" type="email" name="email" value={formData.email} onChange={handleInquiryChange} placeholder="Email Address" aria-label="Email address for your signage project inquiry" className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:ring-4 focus:ring-blue-500/10 font-bold" />
+                  <input id="home-full-name" type="text" name="fullName" value={formData.fullName} onChange={handleInquiryChange} placeholder="Full Name *" aria-label="Full name for your signage project inquiry" required className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:ring-4 focus:ring-blue-600 font-bold" />
+                  <input id="home-email-address" type="email" name="email" value={formData.email} onChange={handleInquiryChange} placeholder="Email Address" aria-label="Email address for your signage project inquiry" className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:ring-4 focus:ring-blue-600 font-bold" />
                 </div>
-                <input id="home-company-name" type="text" name="company" value={formData.company} onChange={handleInquiryChange} placeholder="Company Name" aria-label="Company name for your signage project inquiry" className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:ring-4 focus:ring-blue-500/10 font-bold" />
-                <textarea id="home-project-details" name="details" value={formData.details} onChange={handleInquiryChange} placeholder="Project Details *" aria-label="Project details for your signage inquiry" rows={5} required className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:ring-4 focus:ring-blue-500/10 font-bold resize-none" />
+                <input id="home-company-name" type="text" name="company" value={formData.company} onChange={handleInquiryChange} placeholder="Company Name" aria-label="Company name for your signage project inquiry" className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:ring-4 focus:ring-blue-600 font-bold" />
+                <textarea id="home-project-details" name="details" value={formData.details} onChange={handleInquiryChange} placeholder="Project Details *" aria-label="Project details for your signage inquiry" rows={5} required className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:ring-4 focus:ring-blue-600 font-bold resize-none" />
                 <div className="rounded-2xl border border-dashed border-slate-300 bg-slate-50 p-5">
                   <label htmlFor="home-design-files" className="block text-sm font-black uppercase tracking-widest text-slate-700">Design Files (PDF / AI / PSD)</label>
                   <p className="mt-2 text-xs font-medium text-slate-500">Optional. Each file must be under 10MB. Files are not uploaded automatically; attach them manually on WhatsApp after submitting.</p>
