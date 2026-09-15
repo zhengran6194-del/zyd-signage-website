@@ -5,6 +5,10 @@
   --blue-900: #0b326d;
   --blue-800: #0f438f;
   --blue-700: #1459b8;
+  /* #155dfc is Tailwind's blue-600, which text-blue-600 renders 109 times
+     across the app, so .step-no matches the site accent exactly. The literal
+     fallback keeps it resolving even if the theme variable is ever dropped. */
+  --blue-600: var(--color-blue-600, #155dfc);
   --blue-100: #eaf2ff;
   --gold-500: #bc9a63;
   --gold-300: #dbc59d;
