@@ -37,19 +37,19 @@ These four cards use existing local images. Replace the matching file in `public
 | **Materials** | `public/assets/images/cat-metal.webp` |
 
 ## 4. Factory Live Section: Video Connected (首页工厂实况：视频已接入)
-The homepage factory live section is now connected to the video at `public/assets/videos/factory-live.mp4`. The image at `public/assets/images/factory-main.webp` is configured as the video's poster and appears before playback or when video playback is unavailable.
+The homepage factory live section is now connected to the video at `public/assets/videos/factory-live.mp4`. The image at `public/assets/images/factory-video-poster.jpg` is configured as the video's poster and appears before playback or when video playback is unavailable.
 
 Current homepage media references in `src/app/page.tsx`:
 
 - Video source: `/assets/videos/factory-live.mp4`
-- Poster image: `/assets/images/factory-main.webp`
+- Poster image: `/assets/images/factory-video-poster.jpg`
 
 The connected video uses an MP4 file encoded with H.264 video and AAC audio for broad browser compatibility. Keep the file reasonably compressed for fast loading.
 
 ### Replace the connected factory video later
 
 1. **Prepare the replacement video**: Use the same MP4 format (H.264 video + AAC audio) and compress it for web delivery.
-2. **Keep the fixed path and filename**: Replace the file at `public/assets/videos/factory-live.mp4`. Keep the poster at `public/assets/images/factory-main.webp`, or replace that poster image at the same path if needed.
+2. **Keep the fixed path and filename**: Replace the file at `public/assets/videos/factory-live.mp4`. Keep the poster at `public/assets/images/factory-video-poster.jpg`, or replace that poster image at the same path if needed.
 3. **Only edit code when changing media behavior or paths**: Replacing the MP4 at the fixed path updates the video asset without changing the page code. If you change the path, poster, or video behavior, update the `<video>` node in `src/app/page.tsx` accordingly. Uploading a video to another filename will not switch the homepage automatically.
 4. **Test locally**: Confirm the homepage loads the video, the poster appears as intended, and playback works on desktop and mobile.
 5. **Sync with GitHub Desktop**: Commit the replacement video/poster and any code changes, then click **Push origin**. Vercel will build and deploy the update automatically.
@@ -57,7 +57,7 @@ The connected video uses an MP4 file encoded with H.264 video and AAC audio for 
 | Media State | File Path |
 | :--- | :--- |
 | **Connected homepage video** | `public/assets/videos/factory-live.mp4` |
-| **Video poster** | `public/assets/images/factory-main.webp` |
+| **Video poster** | `public/assets/images/factory-video-poster.jpg` |
 | **Homepage code** | `src/app/page.tsx` |
 
 ## 5. How to Swap Images (图片替换步骤)

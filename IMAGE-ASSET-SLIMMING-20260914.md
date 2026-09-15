@@ -76,7 +76,7 @@
 | team-collage.jpg / vr-tour-preview.jpg / logo-correct.jpg | .jpg | **PNG**（前两者本次已转为真 JPEG） |
 | hero-wayfinding.png | .png | **JPEG** |
 
-2. **文档与代码不一致**：`IMAGE_SWAP_GUIDE.md` 与 `Independent Site Handoff Manual.md` 称首页视频 poster 为 `public/assets/images/factory-main.webp`，但代码实际使用 `src/app/page.tsx:291` 的 `poster="/assets/images/factory-video-poster.jpg"`。`factory-main.webp` 因此属零引用文件，已归档。**两份文档需要更新**。
+2. **文档与代码不一致**：`IMAGE_SWAP_GUIDE.md` 与 `Independent Site Handoff Manual.md` 称首页视频 poster 为 `public/assets/images/factory-main.webp`，但代码实际使用 `src/app/page.tsx:291` 的 `poster="/assets/images/factory-video-poster.jpg"`。`factory-main.webp` 因此属零引用文件，已归档。**两份文档已于 2026-09-15 更正为 `factory-video-poster.jpg`。**
 
 ---
 
