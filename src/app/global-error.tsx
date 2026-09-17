@@ -14,7 +14,7 @@ const palette = {
   muted: '#667085',
   blue950: '#082554',
   blue700: '#1459b8',
-  green: '#10b981',
+  green: '#047857',
   line: '#e4e9f1',
 } as const;
 
