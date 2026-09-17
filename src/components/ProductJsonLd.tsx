@@ -27,17 +27,6 @@ export default function ProductJsonLd({ name, description, path, image }: Produc
         description,
         url,
         image: `${siteConfig.url}${image}`,
-        offers: {
-          "@type": "Offer",
-          url,
-          priceCurrency: "USD",
-          availability: "https://schema.org/InStock",
-          seller: { "@id": `${siteConfig.url}/#organization` },
-          // Every unit is quoted against the drawing, quantity and destination, so
-          // no list price exists to publish. Leaving `price` out keeps the node
-          // honest rather than attaching a figure no quotation would match; the
-          // cost of that honesty is that no price is shown in rich results.
-        },
       },
     ],
   };
