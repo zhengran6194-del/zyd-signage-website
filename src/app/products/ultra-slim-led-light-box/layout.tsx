@@ -16,7 +16,7 @@ export default function Layout({ children }: Readonly<{ children: React.ReactNod
         name="Ultra-Slim LED Light Boxes"
         description="Ultra-slim and projecting LED light boxes for retail, hospitality, commercial, and architectural signage."
         path="/products/ultra-slim-led-light-box"
-        image="/assets/images/cat-lightbox.webp"
+        image="/assets/images/cat-lightbox.jpg"
       />
       {children}
     </>

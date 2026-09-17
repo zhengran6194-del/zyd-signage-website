@@ -452,15 +452,15 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
               {[
-                { title: 'Halo-Lit Letters', img: 'cat-illuminated.webp', id: 'custom-halo-lit-letters' },
-                { title: 'Wayfinding Systems', img: 'hero-wayfinding.png', id: 'architectural-wayfinding-system' },
+                { title: 'Halo-Lit Letters', img: 'cat-illuminated.jpg', id: 'custom-halo-lit-letters' },
+                { title: 'Wayfinding Systems', img: 'hero-wayfinding.jpg', id: 'architectural-wayfinding-system' },
                 { title: 'Medical Signage', img: 'hero-medical.jpg', id: 'medical-care-signage' },
                 { title: 'Monument Signs', img: 'cat-outdoor.webp', id: 'outdoor-pylon-monument-sign' },
-                { title: 'LED Light Boxes', img: 'cat-lightbox.webp', id: 'ultra-slim-led-light-box' },
+                { title: 'LED Light Boxes', img: 'cat-lightbox.jpg', id: 'ultra-slim-led-light-box' },
                 { title: 'LED Neon Signs', img: 'cat-neon.webp', id: 'custom-led-neon-sign' },
-                { title: 'Metal & Acrylic Signs', img: 'cat-metal.webp', id: 'metal-acrylic-logo-sign' },
+                { title: 'Metal & Acrylic Signs', img: 'cat-metal.jpg', id: 'metal-acrylic-logo-sign' },
                 { title: 'Landscape & Furniture', img: 'landscape-bench.jpg', id: 'custom-landscape-furniture' },
-                { title: 'Complete Systems', img: 'cat-system.webp', id: 'complete-signage-system' },
+                { title: 'Complete Systems', img: 'cat-system.jpg', id: 'complete-signage-system' },
                 { title: 'Outdoor Waste Bin', img: 'outdoor-waste-bin.jpg', id: 'outdoor-waste-bin' },
                 { title: 'Custom Planter Box', img: 'custom-planter-box.jpg', id: 'custom-planter-box' },
                 { title: 'Acrylic Desk Sign', img: 'acrylic-desk-sign.jpg', id: 'acrylic-desk-sign' },

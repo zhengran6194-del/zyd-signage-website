@@ -35,13 +35,13 @@ export const ogImages = {
     alt: 'ZYD Signage factory-direct signage manufacturing',
   },
   channelLetters: {
-    path: '/assets/images/cat-illuminated.webp',
+    path: '/assets/images/cat-illuminated.jpg',
     width: 1440,
     height: 1080,
     alt: 'Custom illuminated channel letters',
   },
   wayfinding: {
-    path: '/assets/images/hero-wayfinding.png',
+    path: '/assets/images/hero-wayfinding.jpg',
     width: 1536,
     height: 1024,
     alt: 'Architectural wayfinding signage system',
@@ -53,7 +53,7 @@ export const ogImages = {
     alt: 'Outdoor pylon and monument signage',
   },
   metalLogo: {
-    path: '/assets/images/cat-metal.webp',
+    path: '/assets/images/cat-metal.jpg',
     width: 1080,
     height: 1080,
     alt: 'Metal and acrylic logo signage',
@@ -65,13 +65,13 @@ export const ogImages = {
     alt: 'Custom LED neon signage',
   },
   lightBox: {
-    path: '/assets/images/cat-lightbox.webp',
+    path: '/assets/images/cat-lightbox.jpg',
     width: 736,
     height: 736,
     alt: 'Ultra-slim LED light box',
   },
   system: {
-    path: '/assets/images/cat-system.webp',
+    path: '/assets/images/cat-system.jpg',
     width: 1000,
     height: 1497,
     alt: 'Complete coordinated signage system',

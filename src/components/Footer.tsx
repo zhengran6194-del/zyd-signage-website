@@ -27,7 +27,7 @@ export default function Footer() {
               {/* width/height mirror the real 4961x3508 file. The previous
                   320x160 pair described a 2:1 box for a 1.41:1 image, so this
                   was being stretched horizontally. */}
-              <Image src="/assets/images/logo-correct.jpg" alt="ZYD Signage" width={4961} height={3508} sizes="240px" className="h-[160px] w-auto opacity-95 hover:opacity-100 transition-all" />
+              <Image src="/assets/images/logo-correct.png" alt="ZYD Signage" width={4961} height={3508} sizes="240px" className="h-[160px] w-auto opacity-95 hover:opacity-100 transition-all" />
             </Link>
             <p className="text-slate-600 text-xs font-black leading-loose uppercase tracking-[0.4em] max-w-[280px]">
               Global Benchmark in Architectural Signage & Precision Fabrication.

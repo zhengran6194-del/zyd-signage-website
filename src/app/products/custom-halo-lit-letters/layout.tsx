@@ -16,7 +16,7 @@ export default function Layout({ children }: Readonly<{ children: React.ReactNod
         name="Custom Halo-Lit Metal Letters"
         description="Custom halo-lit metal channel letters with factory-direct fabrication for architectural signage projects."
         path="/products/custom-halo-lit-letters"
-        image="/assets/images/cat-illuminated.webp"
+        image="/assets/images/cat-illuminated.jpg"
       />
       {children}
     </>

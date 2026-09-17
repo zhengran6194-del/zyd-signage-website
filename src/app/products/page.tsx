@@ -17,15 +17,15 @@ export default function ProductsPage() {
   }, []);
 
   const products = [
-    { title: 'Airport Wayfinding', desc: 'High-precision indoor and outdoor directional systems.', img: 'hero-wayfinding.png', id: 'architectural-wayfinding-system' },
+    { title: 'Airport Wayfinding', desc: 'High-precision indoor and outdoor directional systems.', img: 'hero-wayfinding.jpg', id: 'architectural-wayfinding-system' },
     { title: 'Medical Signage', desc: 'Specialized healthcare signage systems for hospitals.', img: 'hero-medical.jpg', id: 'medical-care-signage' },
     { title: 'Landscape & Furniture', desc: 'Bespoke outdoor landscape branding and seating.', img: 'landscape-bench.jpg', id: 'custom-landscape-furniture' },
-    { title: 'Illuminated Letters', desc: 'Premium front-lit and halo-lit 3D LED channel letters.', img: 'cat-illuminated.webp', id: 'custom-halo-lit-letters' },
-    { title: 'LED Light Boxes', desc: 'Ultra-slim and projecting LED light boxes for retail.', img: 'cat-lightbox.webp', id: 'ultra-slim-led-light-box' },
+    { title: 'Illuminated Letters', desc: 'Premium front-lit and halo-lit 3D LED channel letters.', img: 'cat-illuminated.jpg', id: 'custom-halo-lit-letters' },
+    { title: 'LED Light Boxes', desc: 'Ultra-slim and projecting LED light boxes for retail.', img: 'cat-lightbox.jpg', id: 'ultra-slim-led-light-box' },
     { title: 'Monument Signs', desc: 'Large-scale pylon signs and entry identification.', img: 'cat-outdoor.webp', id: 'outdoor-pylon-monument-sign' },
     { title: 'LED Neon Signs', desc: 'Vibrant custom neon flex for branding and interior decor.', img: 'cat-neon.webp', id: 'custom-led-neon-sign' },
-    { title: 'Metal & Acrylic Signs', desc: 'Precision laser-cut corporate logos and plaque systems.', img: 'cat-metal.webp', id: 'metal-acrylic-logo-sign' },
-    { title: 'Complete Systems', desc: 'One-partner coordinated signage programs for global rollouts.', img: 'cat-system.webp', id: 'complete-signage-system' },
+    { title: 'Metal & Acrylic Signs', desc: 'Precision laser-cut corporate logos and plaque systems.', img: 'cat-metal.jpg', id: 'metal-acrylic-logo-sign' },
+    { title: 'Complete Systems', desc: 'One-partner coordinated signage programs for global rollouts.', img: 'cat-system.jpg', id: 'complete-signage-system' },
     { title: 'Outdoor Waste Bin', desc: 'Custom waste bins for hospitality, commercial, and public-space projects.', img: 'outdoor-waste-bin.jpg', id: 'outdoor-waste-bin' },
     { title: 'Custom Planter Box', desc: 'Architectural planter solutions for commercial entrances and public spaces.', img: 'custom-planter-box.jpg', id: 'custom-planter-box' },
     { title: 'Acrylic Desk Sign', desc: 'Free-standing counter and desk signs for reception and front-of-house.', img: 'acrylic-desk-sign.jpg', id: 'acrylic-desk-sign' },

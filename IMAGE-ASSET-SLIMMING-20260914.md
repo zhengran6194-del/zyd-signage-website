@@ -40,7 +40,7 @@
 | 文件 | 前 | 后 | 尺寸 | 编码 | 质量 |
 |---|---|---|---|---|---|
 | factory-overview.jpg | 9.55 MB | 521 KB | 10969x9078 → 1920x1589 | jpeg→jpeg | 85 |
-| hero-bg-seafront.png | 9.55 MB | **296 KB** | 10969x9078 → 1440x1192 | jpeg→jpeg | 85 |
+| hero-bg-seafront.jpg | 9.55 MB | **296 KB** | 10969x9078 → 1440x1192 | jpeg→jpeg | 85 |
 | hero-bg-factory-aerial.jpg | 7.52 MB | **296 KB** | 10969x9078 → 1440x1192 | jpeg→jpeg | 85 |
 | team-annual-event.jpg | 4.29 MB | 390 KB | 5863x3909 → 1920x1280 | jpeg→jpeg | 85 |
 | team-training.jpg | 3.78 MB | 394 KB | 5950x3967 → 1920x1280 | jpeg→jpeg | 85 |
@@ -60,21 +60,24 @@
 ## 4. 页面使用的 hero（重要更正）
 
 - **首页 hero = `hero-bg-factory-aerial.jpg`**，引用位置 `src/app/page.tsx:164`（`loading="eager"` + `fetchPriority="high"`），同时作为 OG 图被 `src/app/layout.tsx:9` 引用 → 会被社交爬虫抓取。
-- **FAQ 页 hero = `hero-bg-seafront.png`**，引用位置 `src/app/faq/page.tsx:98`（同为 eager + high）。
+- **FAQ 页 hero = `hero-bg-seafront.jpg`**，引用位置 `src/app/faq/page.tsx:98`（同为 eager + high）。
 - 两者均已按 hero 预算压缩到 296 KB。
 
 ---
 
-## 5. 发现的两个既有问题（本次未修改代码）
+## 5. 发现的两个既有问题（已于 2026-09-17 治理）
 
-1. **扩展名与实际字节格式不一致**（属既有状态，本次**按原样保留**，未改变渲染行为）：
+1. **扩展名与实际字节格式不一致（已治理）**：本次按真实魔数与 `sharp` 解码格式改名，保留原始字节与画质，并同步全部代码、OG registry 和维护文档引用：
 
 | 文件 | 扩展名 | 实际格式 |
 |---|---|---|
-| hero-bg-seafront.png | .png | **JPEG** |
-| cat-neon.webp / cat-outdoor.webp / cat-system.webp / cat-wayfinding.webp / cat-illuminated.webp / cat-lightbox.webp / cat-metal.webp / lightbox.webp | .webp | **JPEG**（本次已将 cat-neon.webp 输出为真 WebP） |
-| team-collage.jpg / vr-tour-preview.jpg / logo-correct.jpg | .jpg | **PNG**（前两者本次已转为真 JPEG） |
-| hero-wayfinding.png | .png | **JPEG** |
+| hero-bg-seafront.jpg | .jpg | **JPEG**（已改名） |
+| cat-system.jpg / cat-wayfinding.jpg | .jpg | **JPEG**（已改名） |
+| cat-neon.webp / cat-outdoor.webp | .webp | **WebP**（保持原名） |
+| cat-illuminated.jpg / cat-lightbox.jpg / cat-metal.jpg / lightbox.jpg | .jpg | **JPEG**（已改名） |
+| team-collage.jpg / vr-tour-preview.jpg | .jpg | **JPEG** |
+| logo-correct.png | .png | **PNG**（已改名） |
+| hero-wayfinding.jpg | .jpg | **JPEG**（已改名） |
 
 2. **文档与代码不一致**：`IMAGE_SWAP_GUIDE.md` 与 `Independent Site Handoff Manual.md` 称首页视频 poster 为 `public/assets/images/factory-main.webp`，但代码实际使用 `src/app/page.tsx:291` 的 `poster="/assets/images/factory-video-poster.jpg"`。`factory-main.webp` 因此属零引用文件，已归档。**两份文档已于 2026-09-15 更正为 `factory-video-poster.jpg`。**
 

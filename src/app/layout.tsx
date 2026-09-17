@@ -28,7 +28,7 @@ const siteJsonLd = {
       "@id": `${siteConfig.url}/#organization`,
       name: siteConfig.companyName,
       url: siteConfig.url,
-      logo: `${siteConfig.url}/assets/images/logo-correct.jpg`,
+      logo: `${siteConfig.url}/assets/images/logo-correct.png`,
       email: siteConfig.salesEmail,
       telephone: `+${siteConfig.whatsappNumber}`,
       address: {

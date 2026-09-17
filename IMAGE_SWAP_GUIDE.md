@@ -9,32 +9,32 @@ To change the background or hero images, simply replace the file in `public/asse
 | Target Area | File Path | Recommendation |
 | :--- | :--- | :--- |
 | **Main Hero Background** (首页工厂主视觉) | `public/assets/images/hero-bg-factory-aerial.jpg` | 1920x1080+, Dark/Muted |
-| **FAQ Hero Background** (FAQ页面主视觉) | `public/assets/images/hero-bg-seafront.png` | 1920x1080+, Dark/Muted |
+| **FAQ Hero Background** (FAQ页面主视觉) | `public/assets/images/hero-bg-seafront.jpg` | 1920x1080+, Dark/Muted |
 | **WhatsApp Icon** (左下角图标) | `public/assets/images/whatsapp-icon-3d.jpg` | 512x512, Square |
-| **Company Logo** (顶部Logo) | `public/assets/images/logo-correct.jpg` | Transparent PNG preferred |
-| **Wayfinding Hero** | `public/assets/images/hero-wayfinding.png` | Product close-up |
+| **Company Logo** (顶部Logo) | `public/assets/images/logo-correct.png` | Transparent PNG preferred |
+| **Wayfinding Hero** | `public/assets/images/hero-wayfinding.jpg` | Product close-up |
 | **Medical Hero** | `public/assets/images/hero-medical.jpg` | Hospital scenario |
 
 ## 2. Product Category Images (产品大类图)
 These are the images shown in the product grids on the Home and Products pages.
 
-* **Illuminated Letters**: `cat-illuminated.webp`
-* **Light Boxes**: `cat-lightbox.webp`
+* **Illuminated Letters**: `cat-illuminated.jpg`
+* **Light Boxes**: `cat-lightbox.jpg`
 * **Neon Signs**: `cat-neon.webp`
 * **Outdoor Signs**: `cat-outdoor.webp`
-* **Metal/Acrylic**: `cat-metal.webp`
+* **Metal/Acrylic**: `cat-metal.jpg`
 * **Furniture/Bench**: `landscape-bench.jpg`
-* **Complete System**: `cat-system.webp`
+* **Complete System**: `cat-system.jpg`
 
 ## 3. FAQ Popular Guides Images (FAQ指南图片)
 These four cards use existing local images. Replace the matching file in `public/assets/images/` to update the card image without editing the page:
 
 | Guide Card | File Path |
 | :--- | :--- |
-| **Channel Letters Cost** | `public/assets/images/cat-illuminated.webp` |
-| **Front-Lit vs Halo-Lit** | `public/assets/images/lightbox.webp` |
-| **Choosing the Right Sign** | `public/assets/images/cat-wayfinding.webp` |
-| **Materials** | `public/assets/images/cat-metal.webp` |
+| **Channel Letters Cost** | `public/assets/images/cat-illuminated.jpg` |
+| **Front-Lit vs Halo-Lit** | `public/assets/images/lightbox.jpg` |
+| **Choosing the Right Sign** | `public/assets/images/cat-wayfinding.jpg` |
+| **Materials** | `public/assets/images/cat-metal.jpg` |
 
 ## 4. Factory Live Section: Video Connected (首页工厂实况：视频已接入)
 The homepage factory live section is now connected to the video at `public/assets/videos/factory-live.mp4`. The image at `public/assets/images/factory-video-poster.jpg` is configured as the video's poster and appears before playback or when video playback is unavailable.

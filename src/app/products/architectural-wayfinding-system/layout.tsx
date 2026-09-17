@@ -16,7 +16,7 @@ export default function Layout({ children }: Readonly<{ children: React.ReactNod
         name="Architectural Wayfinding Systems"
         description="Factory-direct architectural wayfinding systems for indoor and outdoor commercial environments."
         path="/products/architectural-wayfinding-system"
-        image="/assets/images/hero-wayfinding.png"
+        image="/assets/images/hero-wayfinding.jpg"
       />
       {children}
     </>

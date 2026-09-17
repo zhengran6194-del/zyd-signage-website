@@ -16,7 +16,7 @@ export default function Layout({ children }: Readonly<{ children: React.ReactNod
         name="Metal & Acrylic Logo Signs"
         description="Precision metal and acrylic logo signs, plaques, and corporate identity systems for B2B projects."
         path="/products/metal-acrylic-logo-sign"
-        image="/assets/images/cat-metal.webp"
+        image="/assets/images/cat-metal.jpg"
       />
       {children}
     </>

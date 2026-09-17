@@ -44,10 +44,10 @@ const categories = [
 ];
 
 const guides = [
-  { category: 'Buying Guide', title: 'How Much Do Custom Channel Letters Cost?', date: 'Aug 24, 2026', image: 'cat-illuminated.webp' },
-  { category: 'Technical Guide', title: 'Front-Lit vs Halo-Lit Channel Letters', date: 'Aug 20, 2026', image: 'lightbox.webp' },
-  { category: 'Buying Guide', title: 'How to Choose the Right Sign for Your Business', date: 'Aug 15, 2026', image: 'cat-wayfinding.webp' },
-  { category: 'Materials', title: '304 Stainless Steel vs Galvanized Steel for Outdoor Signs', date: 'Aug 10, 2026', image: 'cat-metal.webp' },
+  { category: 'Buying Guide', title: 'How Much Do Custom Channel Letters Cost?', date: 'Aug 24, 2026', image: 'cat-illuminated.jpg' },
+  { category: 'Technical Guide', title: 'Front-Lit vs Halo-Lit Channel Letters', date: 'Aug 20, 2026', image: 'lightbox.jpg' },
+  { category: 'Buying Guide', title: 'How to Choose the Right Sign for Your Business', date: 'Aug 15, 2026', image: 'cat-wayfinding.jpg' },
+  { category: 'Materials', title: '304 Stainless Steel vs Galvanized Steel for Outdoor Signs', date: 'Aug 10, 2026', image: 'cat-metal.jpg' },
 ];
 
 const faqs = [
@@ -96,7 +96,7 @@ export default function FAQPage() {
       {/* 1. HERO SECTION */}
       <section className="relative min-h-[50vh] flex items-center bg-slate-950 text-white overflow-hidden py-24">
         <div className="absolute inset-0 z-0">
-          <Image src="/assets/images/hero-bg-seafront.png" alt="Industrial Facility" fill priority sizes="100vw" className="object-cover opacity-40" />
+          <Image src="/assets/images/hero-bg-seafront.jpg" alt="Industrial Facility" fill priority sizes="100vw" className="object-cover opacity-40" />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-slate-950/80"></div>
         </div>
         <div className="container relative z-10 text-center">

@@ -16,7 +16,7 @@ export default function Layout({ children }: Readonly<{ children: React.ReactNod
         name="Complete Signage Systems"
         description="Coordinated complete signage systems for global architectural rollouts, from design through manufacturing."
         path="/products/complete-signage-system"
-        image="/assets/images/cat-system.webp"
+        image="/assets/images/cat-system.jpg"
       />
       {children}
     </>

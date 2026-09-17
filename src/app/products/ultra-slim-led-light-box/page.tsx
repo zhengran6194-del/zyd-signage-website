@@ -57,7 +57,7 @@ export default function UltraSlimLightBoxPage() {
             </div>
             <div className="reveal visible relative">
               <div className="absolute -inset-4 bg-blue-500/20 blur-3xl rounded-full"></div>
-              <Image src="/assets/images/cat-lightbox.webp" alt="Ultra-Slim LED Light Box" width={736} height={736} priority sizes="(min-width: 1024px) 50vw, 100vw" className="relative rounded-[2.5rem] shadow-2xl border-4 border-white/5 object-cover w-full h-[420px] lg:h-[500px]" />
+              <Image src="/assets/images/cat-lightbox.jpg" alt="Ultra-Slim LED Light Box" width={736} height={736} priority sizes="(min-width: 1024px) 50vw, 100vw" className="relative rounded-[2.5rem] shadow-2xl border-4 border-white/5 object-cover w-full h-[420px] lg:h-[500px]" />
             </div>
           </div>
         </section>
