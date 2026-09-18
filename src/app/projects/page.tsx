@@ -12,8 +12,9 @@ type CaseStudy = {
   href?: string;
 };
 
+// Append new case studies here by default; only an explicitly requested position
+// should place one elsewhere in the list.
 const caseStudies: CaseStudy[] = [
-  { title: 'WATER FASHION PLAZA WAYFINDING', tag: 'Retail', desc: 'Wayfinding and architectural signage for a commercial complex in Dalian, China, from the outdoor pylon sign through to the interior floor directories.', img: 'projects/dalian-water-plaza-facade-letters.jpg', href: '/case-studies/dalian-water-plaza-wayfinding-signage' },
   { title: 'THE SETAI SEA OF GALILEE', tag: 'Hospitality', desc: 'Signage and wayfinding for a luxury lakeside resort in Israel, overlooking the Sea of Galilee.', img: 'the-setai-sea-of-galilee.jpg' },
   { title: 'ZIMBABWE NATIONAL SPORTS STADIUM', tag: 'Stadium', desc: 'Architectural signage and visitor wayfinding for a landmark sports stadium in Zimbabwe, Africa.', img: 'zimbabwe-national-sports-stadium.jpg' },
   { title: 'AFREXIMBANK AFRICA TRADE CENTRE', tag: 'Commercial', desc: 'Wayfinding and architectural signage for a landmark trade centre in Harare, Zimbabwe.', img: 'afreximbank-africa-trade-centre.jpg' },
@@ -21,6 +22,7 @@ const caseStudies: CaseStudy[] = [
   { title: 'SHELL FUEL STATION PYLON SIGN', tag: 'Fuel Station', desc: 'Pylon signage for a Shell fuel station in Calgary, Alberta, Canada.', img: 'shell-fuel-station-pylon.jpg' },
   { title: 'XIZHONG ISLAND SITE', tag: 'Site Signage', desc: 'Site identification and signage for the Xizhong Island facility in Dalian, Liaoning, China.', img: 'xizhong-island-site.jpg' },
   { title: 'HENGLI HEAVY INDUSTRY MONUMENT', tag: 'Monument', desc: 'Landmark monument signage for Hengli Heavy Industry in Dalian, China, delivered for the Davos period.', img: 'hengli-monument.jpg' },
+  { title: 'WATER FASHION PLAZA WAYFINDING', tag: 'Retail', desc: 'Wayfinding and architectural signage for a commercial complex in Dalian, China, from the outdoor pylon sign through to the interior floor directories.', img: 'projects/dalian-water-plaza-facade-letters.jpg', href: '/case-studies/dalian-water-plaza-wayfinding-signage' },
 ];
 
 const CARD_CLASS =
