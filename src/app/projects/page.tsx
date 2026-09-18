@@ -3,6 +3,29 @@ import React, { useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
+type CaseStudy = {
+  title: string;
+  tag: string;
+  desc: string;
+  img: string;
+  /** Only set once a detail page exists for the project. */
+  href?: string;
+};
+
+const caseStudies: CaseStudy[] = [
+  { title: 'WATER FASHION PLAZA WAYFINDING', tag: 'Retail', desc: 'Wayfinding and architectural signage for a commercial complex in Dalian, China, from the outdoor pylon sign through to the interior floor directories.', img: 'projects/dalian-water-plaza-facade-letters.jpg', href: '/case-studies/dalian-water-plaza-wayfinding-signage' },
+  { title: 'THE SETAI SEA OF GALILEE', tag: 'Hospitality', desc: 'Signage and wayfinding for a luxury lakeside resort in Israel, overlooking the Sea of Galilee.', img: 'the-setai-sea-of-galilee.jpg' },
+  { title: 'ZIMBABWE NATIONAL SPORTS STADIUM', tag: 'Stadium', desc: 'Architectural signage and visitor wayfinding for a landmark sports stadium in Zimbabwe, Africa.', img: 'zimbabwe-national-sports-stadium.jpg' },
+  { title: 'AFREXIMBANK AFRICA TRADE CENTRE', tag: 'Commercial', desc: 'Wayfinding and architectural signage for a landmark trade centre in Harare, Zimbabwe.', img: 'afreximbank-africa-trade-centre.jpg' },
+  { title: 'TEL HAZOR NATIONAL PARK', tag: 'Heritage', desc: 'Wayfinding and interpretive signage for an archaeological national park in Israel.', img: 'tel-hazor-national-park.jpg' },
+  { title: 'SHELL FUEL STATION PYLON SIGN', tag: 'Fuel Station', desc: 'Pylon signage for a Shell fuel station in Calgary, Alberta, Canada.', img: 'shell-fuel-station-pylon.jpg' },
+  { title: 'XIZHONG ISLAND SITE', tag: 'Site Signage', desc: 'Site identification and signage for the Xizhong Island facility in Dalian, Liaoning, China.', img: 'xizhong-island-site.jpg' },
+  { title: 'HENGLI HEAVY INDUSTRY MONUMENT', tag: 'Monument', desc: 'Landmark monument signage for Hengli Heavy Industry in Dalian, China, delivered for the Davos period.', img: 'hengli-monument.jpg' },
+];
+
+const CARD_CLASS =
+  'reveal relative flex flex-col bg-slate-50 rounded-[2rem] overflow-hidden border border-slate-100 group hover:shadow-2xl transition-all';
+
 export default function ProjectsPage() {
   useEffect(() => {
     const observerOptions = { threshold: 0.1 };
@@ -22,16 +45,8 @@ export default function ProjectsPage() {
           <h1 className="text-7xl font-black uppercase tracking-tighter mb-12">Case Studies</h1>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 mb-20">
-            {[
-              { title: 'THE SETAI SEA OF GALILEE', tag: 'Hospitality', desc: 'Signage and wayfinding for a luxury lakeside resort in Israel, overlooking the Sea of Galilee.', img: 'the-setai-sea-of-galilee.jpg' },
-              { title: 'ZIMBABWE NATIONAL SPORTS STADIUM', tag: 'Stadium', desc: 'Architectural signage and visitor wayfinding for a landmark sports stadium in Zimbabwe, Africa.', img: 'zimbabwe-national-sports-stadium.jpg' },
-              { title: 'AFREXIMBANK AFRICA TRADE CENTRE', tag: 'Commercial', desc: 'Wayfinding and architectural signage for a landmark trade centre in Harare, Zimbabwe.', img: 'afreximbank-africa-trade-centre.jpg' },
-              { title: 'TEL HAZOR NATIONAL PARK', tag: 'Heritage', desc: 'Wayfinding and interpretive signage for an archaeological national park in Israel.', img: 'tel-hazor-national-park.jpg' },
-              { title: 'SHELL FUEL STATION PYLON SIGN', tag: 'Fuel Station', desc: 'Pylon signage for a Shell fuel station in Calgary, Alberta, Canada.', img: 'shell-fuel-station-pylon.jpg' },
-              { title: 'XIZHONG ISLAND SITE', tag: 'Site Signage', desc: 'Site identification and signage for the Xizhong Island facility in Dalian, Liaoning, China.', img: 'xizhong-island-site.jpg' },
-              { title: 'HENGLI HEAVY INDUSTRY MONUMENT', tag: 'Monument', desc: 'Landmark monument signage for Hengli Heavy Industry in Dalian, China, delivered for the Davos period.', img: 'hengli-monument.jpg' },
-            ].map((proj, idx) => (
-              <div key={idx} className="reveal flex flex-col bg-slate-50 rounded-[2rem] overflow-hidden border border-slate-100 group hover:shadow-2xl transition-all">
+            {caseStudies.map((proj, idx) => (
+              <div key={idx} className={CARD_CLASS}>
                 <div className="relative h-[26rem] overflow-hidden">
                   {proj.img ? (
                     <Image src={`/assets/images/${proj.img}`} alt={proj.title} fill sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" className="object-cover group-hover:scale-105 transition-transform duration-700" />
@@ -46,7 +61,19 @@ export default function ProjectsPage() {
                   <div className="text-blue-600 font-black text-[11px] uppercase tracking-[0.3em] mb-4 italic">{proj.tag}</div>
                   <h3 className="text-[1.7rem] leading-tight font-black mb-5 uppercase tracking-tighter">{proj.title}</h3>
                   <p className="text-slate-500 text-base leading-relaxed font-medium">{proj.desc}</p>
+                  {proj.href && (
+                    <span className="mt-6 text-sm font-black uppercase tracking-widest text-blue-700 group-hover:text-blue-900 transition-colors">
+                      View case study &rarr;
+                    </span>
+                  )}
                 </div>
+                {proj.href && (
+                  <Link
+                    href={proj.href}
+                    className="absolute inset-0"
+                    aria-label={`Read the ${proj.title} case study`}
+                  />
+                )}
               </div>
             ))}
           </div>
