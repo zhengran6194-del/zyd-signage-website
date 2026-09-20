@@ -139,6 +139,20 @@ export type PageMetadataInput = {
  * here keeps og:url aligned with the canonical and stops routes from silently
  * inheriting the homepage title, description and URL.
  */
+/**
+ * Routes that also publish a Markdown mirror, as described by llmstxt.org: the
+ * clean text version lives at the same URL with `index.md` appended. Content
+ * pages under these prefixes, plus the three root pages, are mirrored by
+ * scripts/generate-page-markdown.mjs, which fails the build if a page here has
+ * no mirror. Keep the two lists in step.
+ */
+const MARKDOWN_MIRROR_PREFIXES = ['/products/', '/guides/', '/case-studies/'];
+const MARKDOWN_MIRROR_PATHS = ['/about', '/contact', '/faq'];
+
+const hasMarkdownMirror = (path: string): boolean =>
+  MARKDOWN_MIRROR_PREFIXES.some((prefix) => path.startsWith(prefix)) ||
+  MARKDOWN_MIRROR_PATHS.includes(path);
+
 export function buildPageMetadata({
   title,
   description,
@@ -152,7 +166,12 @@ export function buildPageMetadata({
   return {
     title,
     description,
-    alternates: { canonical: url },
+    alternates: {
+      canonical: url,
+      // Tells agents where the Markdown version of this page lives, so they can
+      // fetch clean text instead of parsing the HTML.
+      ...(hasMarkdownMirror(path) ? { types: { 'text/markdown': `${url}/index.md` } } : {}),
+    },
     openGraph: {
       type,
       siteName: siteConfig.companyName,

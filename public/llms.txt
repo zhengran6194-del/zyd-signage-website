@@ -19,39 +19,39 @@ ZYD Signage is the trading name of Dalian Zhiyudao Signage & Tech. Co., Ltd. The
 
 ## Company
 
-- [About ZYD Signage](https://www.zydsign.com/about): Company background, the Dalian production base and DDP delivery scope.
-- [Contact](https://www.zydsign.com/contact): Project enquiries, drawings and quotations.
-- [FAQ](https://www.zydsign.com/faq): Lead times, warranty terms, ordering and delivery questions.
+- [About ZYD Signage](https://www.zydsign.com/about/index.md): Company background, the Dalian production base and DDP delivery scope.
+- [Contact](https://www.zydsign.com/contact/index.md): Project enquiries, drawings and quotations.
+- [FAQ](https://www.zydsign.com/faq/index.md): Lead times, warranty terms, ordering and delivery questions.
 
 ## Product lines
 
-- [Airport Wayfinding](https://www.zydsign.com/products/architectural-wayfinding-system): High-precision indoor and outdoor directional systems.
-- [Medical Signage](https://www.zydsign.com/products/medical-care-signage): Specialized healthcare signage systems for hospitals.
-- [Landscape & Furniture](https://www.zydsign.com/products/custom-landscape-furniture): Bespoke outdoor landscape branding and seating.
-- [Illuminated Letters](https://www.zydsign.com/products/custom-halo-lit-letters): Premium front-lit and halo-lit 3D LED channel letters.
-- [LED Light Boxes](https://www.zydsign.com/products/ultra-slim-led-light-box): Ultra-slim and projecting LED light boxes for retail.
-- [Monument Signs](https://www.zydsign.com/products/outdoor-pylon-monument-sign): Large-scale pylon signs and entry identification.
-- [LED Neon Signs](https://www.zydsign.com/products/custom-led-neon-sign): Vibrant custom neon flex for branding and interior decor.
-- [Metal & Acrylic Signs](https://www.zydsign.com/products/metal-acrylic-logo-sign): Precision laser-cut corporate logos and plaque systems.
-- [Complete Systems](https://www.zydsign.com/products/complete-signage-system): One-partner coordinated signage programs for global rollouts.
-- [Outdoor Waste Bin](https://www.zydsign.com/products/outdoor-waste-bin): Custom waste bins for hospitality, commercial, and public-space projects.
-- [Custom Planter Box](https://www.zydsign.com/products/custom-planter-box): Architectural planter solutions for commercial entrances and public spaces.
-- [Acrylic Desk Sign](https://www.zydsign.com/products/acrylic-desk-sign): Free-standing counter and desk signs for reception and front-of-house.
-- [Portable Metal A-Frame Sign](https://www.zydsign.com/products/portable-metal-a-frame-sign): Free-standing A-frame signs for pavements, forecourts, and event stands.
+- [Airport Wayfinding](https://www.zydsign.com/products/architectural-wayfinding-system/index.md): High-precision indoor and outdoor directional systems.
+- [Medical Signage](https://www.zydsign.com/products/medical-care-signage/index.md): Specialized healthcare signage systems for hospitals.
+- [Landscape & Furniture](https://www.zydsign.com/products/custom-landscape-furniture/index.md): Bespoke outdoor landscape branding and seating.
+- [Illuminated Letters](https://www.zydsign.com/products/custom-halo-lit-letters/index.md): Premium front-lit and halo-lit 3D LED channel letters.
+- [LED Light Boxes](https://www.zydsign.com/products/ultra-slim-led-light-box/index.md): Ultra-slim and projecting LED light boxes for retail.
+- [Monument Signs](https://www.zydsign.com/products/outdoor-pylon-monument-sign/index.md): Large-scale pylon signs and entry identification.
+- [LED Neon Signs](https://www.zydsign.com/products/custom-led-neon-sign/index.md): Vibrant custom neon flex for branding and interior decor.
+- [Metal & Acrylic Signs](https://www.zydsign.com/products/metal-acrylic-logo-sign/index.md): Precision laser-cut corporate logos and plaque systems.
+- [Complete Systems](https://www.zydsign.com/products/complete-signage-system/index.md): One-partner coordinated signage programs for global rollouts.
+- [Outdoor Waste Bin](https://www.zydsign.com/products/outdoor-waste-bin/index.md): Custom waste bins for hospitality, commercial, and public-space projects.
+- [Custom Planter Box](https://www.zydsign.com/products/custom-planter-box/index.md): Architectural planter solutions for commercial entrances and public spaces.
+- [Acrylic Desk Sign](https://www.zydsign.com/products/acrylic-desk-sign/index.md): Free-standing counter and desk signs for reception and front-of-house.
+- [Portable Metal A-Frame Sign](https://www.zydsign.com/products/portable-metal-a-frame-sign/index.md): Free-standing A-frame signs for pavements, forecourts, and event stands.
 
 Full product index: https://www.zydsign.com/products
 
 ## Buying guides
 
-- [How Much Do Custom Channel Letters Cost?](https://www.zydsign.com/guides/how-much-do-custom-channel-letters-cost): The project inputs that shape a channel letter quotation, from artwork and dimensions to lighting, finish, mounting, and delivery scope.
-- [Front-Lit vs Halo-Lit Channel Letters](https://www.zydsign.com/guides/front-lit-vs-halo-lit-channel-letters): How front-lit and halo-lit letters differ in visual effect, mounting background, service planning, and the details a buyer should confirm.
-- [How to Choose the Right Sign for Your Business](https://www.zydsign.com/guides/how-to-choose-the-right-sign-for-your-business): A practical framework for choosing pylon, monument, building, wayfinding, or illuminated signage around the real site and message.
-- [304 Stainless Steel vs Galvanized Steel](https://www.zydsign.com/guides/304-stainless-steel-vs-galvanized-steel-outdoor-signs): Material-selection logic for outdoor signs, comparing 304 stainless steel and galvanized steel by exposure, finish, and fabrication.
+- [How Much Do Custom Channel Letters Cost?](https://www.zydsign.com/guides/how-much-do-custom-channel-letters-cost/index.md): The project inputs that shape a channel letter quotation, from artwork and dimensions to lighting, finish, mounting, and delivery scope.
+- [Front-Lit vs Halo-Lit Channel Letters](https://www.zydsign.com/guides/front-lit-vs-halo-lit-channel-letters/index.md): How front-lit and halo-lit letters differ in visual effect, mounting background, service planning, and the details a buyer should confirm.
+- [How to Choose the Right Sign for Your Business](https://www.zydsign.com/guides/how-to-choose-the-right-sign-for-your-business/index.md): A practical framework for choosing pylon, monument, building, wayfinding, or illuminated signage around the real site and message.
+- [304 Stainless Steel vs Galvanized Steel](https://www.zydsign.com/guides/304-stainless-steel-vs-galvanized-steel-outdoor-signs/index.md): Material-selection logic for outdoor signs, comparing 304 stainless steel and galvanized steel by exposure, finish, and fabrication.
 
 Full guide index: https://www.zydsign.com/guides
 
 ## Case studies
 
-- [Water Fashion Plaza Wayfinding](https://www.zydsign.com/case-studies/dalian-water-plaza-wayfinding-signage): Wayfinding and architectural signage for a commercial complex in Dalian, China, from the outdoor pylon sign through to the interior floor directories.
+- [Water Fashion Plaza Wayfinding](https://www.zydsign.com/case-studies/dalian-water-plaza-wayfinding-signage/index.md): Wayfinding and architectural signage for a commercial complex in Dalian, China, from the outdoor pylon sign through to the interior floor directories.
 
 Full case study index: https://www.zydsign.com/projects

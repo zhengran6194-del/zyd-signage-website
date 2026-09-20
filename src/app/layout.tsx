@@ -81,6 +81,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={manrope.variable}>
       <head>
+        {/* llmstxt.org: names the file that describes every page under this path. */}
+        <link rel="describedby" href={`${siteConfig.url}/llms.txt`} />
         <Script id="gtm" strategy="beforeInteractive">
           {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],

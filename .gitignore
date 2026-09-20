@@ -25,6 +25,15 @@ temp/
 /.next/
 /out/
 
+# page markdown mirrors, regenerated from the prerendered HTML by
+# scripts/generate-page-markdown.mjs as part of `npm run build`
+/public/products/*/index.md
+/public/guides/*/index.md
+/public/case-studies/*/index.md
+/public/about/index.md
+/public/contact/index.md
+/public/faq/index.md
+
 # production
 /build
 
