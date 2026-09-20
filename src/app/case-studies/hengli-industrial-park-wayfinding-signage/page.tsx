@@ -118,7 +118,9 @@ const sections: Section[] = [
       'The park entrance is the first identity point in the system. A curved image wall carries the park name in large dimensional lettering, paired with a circular logo element, so the gateway reads as one composition from the approach road.',
       'A second entrance treatment sets freestanding park name letters into the landscaped lawn. Both parts establish the visual language that continues into the road, building and production-area signs across Hengli Industrial Park.',
     ],
-    images: [IMAGES.entranceImageWall, IMAGES.entranceLandscapeLetters],
+    // The image wall already opens the page above, so the section carries only
+    // the lawn lettering and no photograph is shown twice.
+    images: [IMAGES.entranceLandscapeLetters],
   },
   {
     heading: 'Building numbers and campus identification',

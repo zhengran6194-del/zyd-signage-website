@@ -193,13 +193,13 @@ function render(node, ctx = { listDepth: 0 }) {
     case 'thead':
     case 'tbody':
       return '';
-    case 'figure': {
-      const img = node.children.filter((c) => c.tag === 'img').map((c) => render(c, ctx)).join('');
-      const caption = node.children.filter((c) => c.tag === 'figcaption').map((c) => inline2(c, ctx)).join(' ');
-      return `\n\n${img}${caption ? `\n*${caption.trim()}*` : ''}\n\n`;
-    }
+    case 'figure':
+      // A figure's contents can sit inside layout wrappers, so render the whole
+      // subtree instead of only direct img/figcaption children - otherwise an
+      // image wrapped in a div is dropped from the mirror entirely.
+      return `\n\n${kids()}\n\n`;
     case 'figcaption':
-      return '';
+      return inline().trim() ? `\n\n*${inline().trim()}*\n\n` : '';
     case 'blockquote':
       return `\n\n> ${inline().trim()}\n\n`;
     case 'hr':
