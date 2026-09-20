@@ -223,9 +223,44 @@ export default function WaterFashionPlazaCaseStudy() {
       acceptedAnswer: { '@type': 'Answer', text: faq.answer },
     })),
   };
+  const caseStudyUrl = 'https://www.zydsign.com/case-studies/dalian-water-plaza-wayfinding-signage';
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.zydsign.com' },
+      { '@type': 'ListItem', position: 2, name: 'Case Studies', item: 'https://www.zydsign.com/projects' },
+      { '@type': 'ListItem', position: 3, name: 'Water Fashion Plaza', item: caseStudyUrl },
+    ],
+  };
+  const articleJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'Water Fashion Plaza: Wayfinding and Signage in Dalian',
+    description: 'A commercial complex in Dalian, China, needed one identification and wayfinding package that would hold together from the road outside to the third-floor corridor. ZYD Signage designed, manufactured and installed it.',
+    url: caseStudyUrl,
+    mainEntityOfPage: caseStudyUrl,
+    image: Object.values(IMAGES).map((image) => `https://www.zydsign.com${image.src}`),
+    articleSection: 'Case Studies',
+    about: {
+      '@type': 'Thing',
+      name: 'Water Fashion Plaza wayfinding and architectural signage system',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Dalian Zhiyudao Signage & Tech. Co., Ltd.',
+      url: 'https://www.zydsign.com',
+    },
+    articleBody: [
+      'Project facts: ' + projectFacts.map((fact) => `${fact.label}: ${fact.value}`).join('; '),
+      ...sections.flatMap((section) => [section.heading, ...section.paragraphs, ...(section.bullets ?? [])]),
+    ].join(' '),
+  };
 
   return (
     <main id="main" className="bg-slate-100 min-h-screen pt-32 pb-40">
+      <JsonLd data={breadcrumbJsonLd} />
+      <JsonLd data={articleJsonLd} />
       <JsonLd data={faqJsonLd} />
       <article className="w-full max-w-6xl px-4 sm:px-6 lg:px-10 mx-auto">
         <header className="bg-slate-950 text-white rounded-[3rem] px-6 py-12 sm:px-12 lg:px-16 lg:py-16 mb-10">

@@ -2,6 +2,8 @@
 import React, { useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import JsonLd from '@/components/JsonLd';
+import { siteConfig } from '@/config/site';
 
 type CaseStudy = {
   title: string;
@@ -29,6 +31,41 @@ const CARD_CLASS =
   'reveal relative flex flex-col bg-slate-50 rounded-[2rem] overflow-hidden border border-slate-100 group hover:shadow-2xl transition-all';
 
 export default function ProjectsPage() {
+  const url = `${siteConfig.url}/projects`;
+  const caseStudyItems = caseStudies
+    .filter((project): project is CaseStudy & { href: string } => Boolean(project.href))
+    .map((project, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: project.title,
+      url: `${siteConfig.url}${project.href}`,
+    }));
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: siteConfig.url },
+          { '@type': 'ListItem', position: 2, name: 'Case Studies', item: url },
+        ],
+      },
+      {
+        '@type': 'CollectionPage',
+        name: 'Case Studies',
+        description: 'Explore ZYD signage case studies across wayfinding, healthcare, illuminated branding, and landscape projects.',
+        url,
+        mainEntity: { '@id': `${url}#case-studies` },
+      },
+      {
+        '@id': `${url}#case-studies`,
+        '@type': 'ItemList',
+        name: 'ZYD Signage case studies with detail pages',
+        itemListElement: caseStudyItems,
+      },
+    ],
+  };
+
   useEffect(() => {
     const observerOptions = { threshold: 0.1 };
     const observer = new IntersectionObserver((entries) => {
@@ -42,6 +79,7 @@ export default function ProjectsPage() {
 
   return (
     <>
+      <JsonLd data={structuredData} />
       <main className="bg-slate-100 min-h-screen pt-32 pb-40">
         <div className="w-full max-w-[110rem] px-4 sm:px-6 lg:px-10 mx-auto">
           <h1 className="text-7xl font-black uppercase tracking-tighter mb-12">Case Studies</h1>

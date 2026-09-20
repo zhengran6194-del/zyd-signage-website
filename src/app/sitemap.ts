@@ -1,6 +1,11 @@
 import type { MetadataRoute } from "next";
 import { siteConfig } from "@/config/site";
 
+// A single site-wide content baseline avoids inventing independent edit dates for
+// routes whose source data is maintained together. Update this date after a
+// coordinated content review or release.
+const SITE_CONTENT_BASELINE_DATE = "2026-09-20";
+
 const routes = [
   { path: "", priority: 1.0 },
   { path: "/products", priority: 0.9 },
@@ -32,6 +37,7 @@ const routes = [
 export default function sitemap(): MetadataRoute.Sitemap {
   return routes.map(({ path, priority }) => ({
     url: `${siteConfig.url}${path}`,
+    lastModified: SITE_CONTENT_BASELINE_DATE,
     changeFrequency: "monthly",
     priority,
   }));
