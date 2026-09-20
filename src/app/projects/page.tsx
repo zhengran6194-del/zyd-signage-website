@@ -23,8 +23,9 @@ const caseStudies: CaseStudy[] = [
   { title: 'TEL HAZOR NATIONAL PARK', tag: 'Heritage', desc: 'Wayfinding and interpretive signage for an archaeological national park in Israel.', img: 'tel-hazor-national-park.jpg' },
   { title: 'SHELL FUEL STATION PYLON SIGN', tag: 'Fuel Station', desc: 'Pylon signage for a Shell fuel station in Calgary, Alberta, Canada.', img: 'shell-fuel-station-pylon.jpg' },
   { title: 'XIZHONG ISLAND SITE', tag: 'Site Signage', desc: 'Site identification and signage for the Xizhong Island facility in Dalian, Liaoning, China.', img: 'xizhong-island-site.jpg' },
-  { title: 'HENGLI HEAVY INDUSTRY MONUMENT', tag: 'Monument', desc: 'Landmark monument signage for Hengli Heavy Industry in Dalian, China, delivered for the Davos period.', img: 'hengli-monument.jpg' },
+  { title: 'HENGLI INDUSTRIAL PARK MONUMENT', tag: 'Monument', desc: 'Landmark monument signage for Hengli Industrial Park in Dalian, China.', img: 'hengli-monument.jpg' },
   { title: 'WATER FASHION PLAZA WAYFINDING', tag: 'Retail', desc: 'Wayfinding and architectural signage for a commercial complex in Dalian, China, from the outdoor pylon sign through to the interior floor directories.', img: 'projects/dalian-water-plaza-facade-letters.jpg', href: '/case-studies/dalian-water-plaza-wayfinding-signage' },
+  { title: 'HENGLI INDUSTRIAL PARK WAYFINDING', tag: 'Industrial Park', desc: 'A coordinated wayfinding and signage system connecting the gateway, roads, buildings, production zones and functional spaces.', img: 'projects/hengli-industrial-park-entrance-monument.jpg', href: '/case-studies/hengli-industrial-park-wayfinding-signage' },
 ];
 
 const CARD_CLASS =
