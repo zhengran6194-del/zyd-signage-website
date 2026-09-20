@@ -5,12 +5,74 @@ import JsonLd from '@/components/JsonLd';
 const CASE_STUDY_URL = 'https://www.zydsign.com/case-studies/hengli-industrial-park-wayfinding-signage';
 const PROJECTS_URL = 'https://www.zydsign.com/projects';
 
-const projectImage = {
-  src: '/assets/images/projects/hengli-industrial-park-entrance-monument.jpg',
-  width: 1627,
-  height: 965,
-  alt: 'Illuminated Hengli Industrial Park entrance monument beside a landscaped road at night',
+type ProjectImage = {
+  src: string;
+  width: number;
+  height: number;
+  alt: string;
 };
+
+/**
+ * Site photographs localised from the project coverage. Every file lives in
+ * public/assets/images/projects and the declared width and height match the
+ * decoded image, so Next.js reserves the right box for each one.
+ */
+const IMAGES = {
+  entranceImageWall: {
+    src: '/assets/images/projects/hengli-industrial-park-entrance-image-wall.jpg',
+    width: 1080,
+    height: 720,
+    alt: 'Illuminated entrance image wall at Hengli Industrial Park carrying the park name in dimensional lettering beside a circular park logo',
+  },
+  entranceLandscapeLetters: {
+    src: '/assets/images/projects/hengli-industrial-park-entrance-landscape-letters.jpg',
+    width: 1080,
+    height: 720,
+    alt: 'Large freestanding park name letters on the lawn at the Hengli Industrial Park entrance, with the bilingual welcome line beneath',
+  },
+  futureFactoryBuilding: {
+    src: '/assets/images/projects/hengli-industrial-park-future-factory-building.jpg',
+    width: 1080,
+    height: 720,
+    alt: 'Production workshop building at Hengli Industrial Park with an identification sign mounted high on the facade cladding',
+  },
+  workshopSteelStructure: {
+    src: '/assets/images/projects/hengli-industrial-park-workshop-steel-structure.jpg',
+    width: 1080,
+    height: 720,
+    alt: 'Steel structure and overhead crane of a large production workshop at Hengli Industrial Park during construction',
+  },
+  workshopZoneSign: {
+    src: '/assets/images/projects/hengli-industrial-park-workshop-zone-sign.jpg',
+    width: 1080,
+    height: 716,
+    alt: 'Workshop wall sign identifying a production zone at Hengli Industrial Park, with a separate zone plate fixed below it',
+  },
+  workshopRoad: {
+    src: '/assets/images/projects/hengli-industrial-park-workshop-road.jpg',
+    width: 1080,
+    height: 708,
+    alt: 'Two large production workshops at Hengli Industrial Park facing each other across a site road with crossing markings',
+  },
+  campusBuildings: {
+    src: '/assets/images/projects/hengli-industrial-park-campus-buildings.jpg',
+    width: 1080,
+    height: 720,
+    alt: 'Accommodation and office buildings at Hengli Industrial Park seen from above, with landscaped grounds and parking between them',
+  },
+  buildingNumberSign: {
+    src: '/assets/images/projects/hengli-industrial-park-building-number-sign.jpg',
+    width: 1080,
+    height: 720,
+    alt: 'Building number sign mounted on a brick facade at Hengli Industrial Park',
+  },
+  propertyServiceCentreSign: {
+    src: '/assets/images/projects/hengli-industrial-park-property-service-centre-sign.jpg',
+    width: 1080,
+    height: 720,
+    alt: 'Freestanding property service centre directional sign in the landscaped grounds at Hengli Industrial Park',
+  },
+} satisfies Record<string, ProjectImage>;
 
 const projectFacts: Array<{ label: string; value: string }> = [
   { label: 'Project', value: 'Hengli Industrial Park' },
@@ -22,7 +84,14 @@ const projectFacts: Array<{ label: string; value: string }> = [
   { label: 'Services', value: 'Site survey, graded planning, factory production, installation and after-sales maintenance' },
 ];
 
-const sections = [
+type Section = {
+  heading: string;
+  paragraphs: string[];
+  bullets?: string[];
+  images?: ProjectImage[];
+};
+
+const sections: Section[] = [
   {
     heading: 'The challenge: one system for a large industrial park',
     paragraphs: [
@@ -46,24 +115,42 @@ const sections = [
   {
     heading: 'Gateway identity and landscape signage',
     paragraphs: [
-      'The entrance landscape monument is the first identity point in the system. Large illuminated lettering and a curved image wall give the gateway a recognisable form while working as part of the surrounding landscape.',
-      'The entrance treatment combines brand presentation with arrival orientation. It establishes the visual language that continues into the road, building and production-area signs across Hengli Industrial Park.',
+      'The park entrance is the first identity point in the system. A curved image wall carries the park name in large dimensional lettering, paired with a circular logo element, so the gateway reads as one composition from the approach road.',
+      'A second entrance treatment sets freestanding park name letters into the landscaped lawn. Both parts establish the visual language that continues into the road, building and production-area signs across Hengli Industrial Park.',
     ],
-    images: [projectImage],
+    images: [IMAGES.entranceImageWall, IMAGES.entranceLandscapeLetters],
   },
   {
-    heading: 'Road zones, buildings and production areas',
+    heading: 'Building numbers and campus identification',
     paragraphs: [
-      'Road-zone signs organize movement between the park areas and help distinguish routes for people and vehicles. Building numbers and door signs then provide the closer-grain information needed for accommodation and office destinations.',
-      'Production workshops use separate zone markers suited to the scale and conditions of an industrial site. The signs identify workshop areas and support the park-wide logic without relying on one sign to carry every piece of information.',
+      'The accommodation and office side of the park is read at a closer distance than the entrance. Building number signs mounted on the facades identify individual blocks, and the number sits on the brick elevation itself rather than on a separate board.',
+      'Because the buildings share one architectural language, the number signs carry the identification role. That keeps the campus legible floor by floor without adding signage clutter to the elevations.',
     ],
+    images: [IMAGES.campusBuildings, IMAGES.buildingNumberSign],
+  },
+  {
+    heading: 'Production workshop zone signage',
+    paragraphs: [
+      'The production area operates at a different scale from the rest of the park. Workshop facades carry identification signs set high on the cladding, and zone plates mark the subdivisions within a single workshop building.',
+      'Workshop zone markers therefore have to work from a distance and at the building line. The signs identify the workshop and its production zone so that teams and vehicles move to the correct part of the structure.',
+    ],
+    images: [IMAGES.futureFactoryBuilding, IMAGES.workshopZoneSign, IMAGES.workshopSteelStructure],
+  },
+  {
+    heading: 'Road zones and people and vehicle movement',
+    paragraphs: [
+      'The workshops sit either side of internal site roads, with crossing markings carrying pedestrian movement across the vehicle route. Road-zone information and the building signs work together at these points, so a driver or a pedestrian reads direction before committing to a turn.',
+      'This is where separating people and vehicle movement matters most. The road layout, the crossing markings and the adjacent building identification combine into one readable route rather than three separate cues.',
+    ],
+    images: [IMAGES.workshopRoad],
   },
   {
     heading: 'Functional signage with bilingual information',
     paragraphs: [
-      'Functional signs cover the everyday points that need quick recognition, including fire-safety locations, equipment spaces and rest areas. Clear symbols and bilingual Chinese and English wording help the signs work for different users across the park.',
-      'The functional-sign matrix keeps categories consistent. A fire-safety marker, equipment sign, rest-area sign or building identifier can be recognized as part of the same system while retaining its own operational purpose.',
+      'Functional signs cover the everyday points that need quick recognition, including fire-safety locations, equipment spaces, service facilities and rest areas. Clear symbols and bilingual Chinese and English wording help the signs work for different users across the park.',
+      'Freestanding directional signs carry facility information into the landscaped areas, so a visitor can locate a service point from the road or path rather than only at the building door.',
     ],
+    images: [IMAGES.propertyServiceCentreSign],
   },
   {
     heading: 'Materials and fabrication for an industrial setting',
@@ -131,7 +218,7 @@ export default function HengliIndustrialParkCaseStudy() {
     description: 'A coordinated wayfinding and signage system for Hengli Industrial Park connecting the gateway, roads, buildings, production zones and functional spaces.',
     url: CASE_STUDY_URL,
     mainEntityOfPage: CASE_STUDY_URL,
-    image: [`https://www.zydsign.com${projectImage.src}`],
+    image: Object.values(IMAGES).map((image) => `https://www.zydsign.com${image.src}`),
     articleSection: 'Case Studies',
     about: {
       '@type': 'Thing',
@@ -187,19 +274,19 @@ export default function HengliIndustrialParkCaseStudy() {
         <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_320px] gap-10 items-start">
           <div className="bg-white rounded-[2.5rem] p-6 sm:p-10 lg:p-14 shadow-sm border border-slate-200">
             <figure className="mb-10">
-              <div className="relative overflow-hidden rounded-[1.75rem] border border-slate-200 bg-slate-100 aspect-[16/9]">
+              <div className="relative overflow-hidden rounded-[1.75rem] border border-slate-200 bg-slate-100">
                 <Image
-                  src={projectImage.src}
-                  alt={projectImage.alt}
-                  width={projectImage.width}
-                  height={projectImage.height}
+                  src={IMAGES.entranceImageWall.src}
+                  alt={IMAGES.entranceImageWall.alt}
+                  width={IMAGES.entranceImageWall.width}
+                  height={IMAGES.entranceImageWall.height}
                   priority
                   sizes="(min-width: 1024px) 60vw, 100vw"
                   className="object-cover w-full h-auto"
                 />
               </div>
               <figcaption className="text-sm text-slate-600 mt-3">
-                Illuminated entrance monument signage for Hengli Industrial Park.
+                Illuminated entrance image wall at the Hengli Industrial Park gateway.
               </figcaption>
             </figure>
 
@@ -238,11 +325,24 @@ export default function HengliIndustrialParkCaseStudy() {
                   </ul>
                 )}
                 {section.images && (
-                  <div className="mt-8 mx-auto max-w-xl">
+                  <div
+                    className={
+                      section.images.length > 1
+                        ? 'grid gap-5 sm:grid-cols-2 mt-8'
+                        : 'mt-8 mx-auto max-w-xl'
+                    }
+                  >
                     {section.images.map((image) => (
                       <figure key={image.src}>
-                        <div className="relative overflow-hidden rounded-2xl border border-slate-200 bg-slate-100 aspect-[16/9]">
-                          <Image src={image.src} alt={image.alt} width={image.width} height={image.height} sizes="(min-width: 640px) 40vw, 100vw" className="object-cover w-full h-auto" />
+                        <div className="relative overflow-hidden rounded-2xl border border-slate-200 bg-slate-100">
+                          <Image
+                            src={image.src}
+                            alt={image.alt}
+                            width={image.width}
+                            height={image.height}
+                            sizes="(min-width: 640px) 40vw, 100vw"
+                            className="object-cover w-full h-auto"
+                          />
                         </div>
                         <figcaption className="text-sm text-slate-600 mt-3">{image.alt}</figcaption>
                       </figure>
