@@ -4,12 +4,20 @@ export const siteConfig = {
   whatsappNumber: "8615931359322",
   salesEmail: "zhengran@zydsign.cn",
   companyName: "Dalian Zhiyudao Signage & Tech. Co., Ltd.",
+  /** Trading name, as used in the site title template. */
+  brandName: "ZYD Signage",
   contactPerson: "Aaron",
   url: "https://www.zydsign.com",
+  /**
+   * One-line entity description. Shared by the Organization schema and copied
+   * verbatim into public/llms.txt so both state the same positioning.
+   */
+  description: "Factory-direct signage manufacturer in Dalian, China, producing wayfinding, architectural and illuminated signage for global B2B projects since 2006.",
   links: {
     twitter: "https://x.com/ZYDsign",
     tiktok: "https://www.tiktok.com/@zydsign",
-    linkedin: "https://www.linkedin.com/in/%E5%88%9A-%E5%88%98-553686404"
+    linkedin: "https://www.linkedin.com/in/%E5%88%9A-%E5%88%98-553686404",
+    alibaba: "https://dlzydbs.en.alibaba.com/"
   }
 };
 

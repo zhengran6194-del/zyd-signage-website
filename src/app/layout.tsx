@@ -26,7 +26,15 @@ const siteJsonLd = {
     {
       "@type": "Organization",
       "@id": `${siteConfig.url}/#organization`,
-      name: siteConfig.companyName,
+      name: siteConfig.brandName,
+      // The registered entity, stated separately from the trading name so the two
+      // are not read as competing identities.
+      legalName: siteConfig.companyName,
+      alternateName: ["ZYD Custom Signage"],
+      // The site states EST. 2006 throughout; this makes the founding year
+      // machine-readable instead of leaving it to be inferred from copy.
+      foundingDate: "2006",
+      description: siteConfig.description,
       url: siteConfig.url,
       logo: `${siteConfig.url}/assets/images/logo-correct.png`,
       email: siteConfig.salesEmail,
@@ -38,7 +46,10 @@ const siteJsonLd = {
         addressRegion: "Liaoning",
         addressCountry: "CN",
       },
-      sameAs: [siteConfig.links.twitter, siteConfig.links.tiktok, siteConfig.links.linkedin],
+      // The Alibaba storefront replaces the LinkedIn profile that used to sit
+      // here: that URL is a personal profile, and schema.org sameAs describes the
+      // organisation itself. The footer still links the profile as a contact.
+      sameAs: [siteConfig.links.twitter, siteConfig.links.tiktok, siteConfig.links.alibaba],
     },
     {
       "@type": "WebSite",

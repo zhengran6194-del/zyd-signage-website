@@ -493,7 +493,7 @@ export default function Home() {
                 <h2 className="uppercase tracking-tighter text-slate-900">Signage Insights</h2>
                 <p className="text-slate-600 font-medium text-sm mt-1">Buying guides for custom signage projects.</p>
               </div>
-              <Link href="/faq" className="text-blue-600 font-bold uppercase text-[11px] tracking-widest border-b border-blue-100 hover:border-blue-600 transition-all pb-0.5">
+              <Link href="/guides" className="text-blue-600 font-bold uppercase text-[11px] tracking-widest border-b border-blue-100 hover:border-blue-600 transition-all pb-0.5">
                 All Guides &rarr;
               </Link>
             </div>

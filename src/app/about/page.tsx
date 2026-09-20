@@ -14,7 +14,7 @@ export default function AboutPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
             <div className="text-slate-700 leading-relaxed text-lg">
-              <p className="mb-6">Dalian Zhiyudao Signage & Tech. Co., Ltd. (ZYD) is a factory-direct manufacturer serving global B2B signage projects for over 18 years.</p>
+              <p className="mb-6">Dalian Zhiyudao Signage & Tech. Co., Ltd. (ZYD) is a factory-direct manufacturer serving global B2B signage projects since 2006.</p>
               <p className="mb-6">Our <strong>20,000sqm production base</strong> is equipped with advanced CNC technology and automated processes to ensure the highest quality for architectural wayfinding and custom signs.</p>
               <p>We pride ourselves on our <strong>Door-to-Door (DDP) shipping</strong> capabilities, handling all customs and duties for our clients in 50+ countries.</p>
             </div>
