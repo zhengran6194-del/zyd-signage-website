@@ -33,6 +33,9 @@ temp/
 /public/about/index.md
 /public/contact/index.md
 /public/faq/index.md
+/public/products/index.md
+/public/guides/index.md
+/public/projects/index.md
 
 # production
 /build

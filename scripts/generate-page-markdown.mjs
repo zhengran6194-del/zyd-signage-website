@@ -23,8 +23,9 @@ const ROUTE_GROUPS = [
   { prefix: '/case-studies', dir: 'case-studies' },
 ];
 
-// Pages that sit at the root of the site rather than in a group.
-const ROOT_PAGES = ['/about', '/contact', '/faq'];
+// Pages that sit at the top level as a single HTML file rather than in a group:
+// the standing pages, plus the three listing routes.
+const TOP_LEVEL_PAGES = ['/about', '/contact', '/faq', '/products', '/guides', '/projects'];
 
 const VOID_TAGS = new Set(['br', 'img', 'hr', 'input', 'meta', 'link', 'source', 'area', 'base', 'col', 'embed', 'track', 'wbr']);
 
@@ -101,8 +102,35 @@ const assetUrl = (src) => {
 // separated or adjacent blocks run together on one line.
 const BLOCK_CONTAINERS = new Set(['div', 'section', 'article', 'aside', 'header', 'footer', 'main', 'nav']);
 
+// Card listings wrap a whole card - tag, heading, paragraph, call to action - in
+// a single <a>. Flattening that to one inline link glues the runs together and
+// loses the URLs an agent needs, so such links are rendered as blocks with the
+// target named underneath.
+const BLOCK_TAGS = new Set([...BLOCK_CONTAINERS, 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'ul', 'ol', 'dl', 'table', 'blockquote', 'figure', 'pre']);
+
+const hasBlockChild = (node) =>
+  node.children.some((c) => BLOCK_TAGS.has(c.tag) || (c.tag !== 'text' && hasBlockChild(c)));
+
 function render(node, ctx = { listDepth: 0 }) {
-  const kids = () => node.children.map((c) => render(c, ctx)).join('');
+  /**
+   * Two adjacent elements carry no whitespace between them in the HTML - the
+   * page separates them with a flex gap - so they run together once the tags are
+   * gone. Insert a separator, but only between elements and only when neither
+   * side already supplies one, so words split across spans stay intact.
+   */
+  const kids = () => {
+    let out = '';
+    let prevWasElement = false;
+    for (const child of node.children) {
+      const piece = render(child, ctx);
+      if (piece === '') continue;
+      const isElement = child.tag !== 'text';
+      if (out && prevWasElement && isElement && !/\s$/.test(out) && !/^\s/.test(piece)) out += ' ';
+      out += piece;
+      prevWasElement = isElement;
+    }
+    return out;
+  };
   const inline = () => node.children.map((c) => renderInline(c, ctx)).join('');
 
   switch (node.tag) {
@@ -127,8 +155,12 @@ function render(node, ctx = { listDepth: 0 }) {
     case 'em':
     case 'i': return `*${inline().trim()}*`;
     case 'a': {
-      const text = inline().trim();
       const href = node.attrs?.href;
+      if (hasBlockChild(node)) {
+        const inner = kids().trim();
+        return `\n\n${inner}${href ? `\n\n<${abs(href)}>` : ''}\n\n`;
+      }
+      const text = inline().trim();
       if (!href) return text;
       return text ? `[${text}](${abs(href)})` : `<${abs(href)}>`;
     }
@@ -267,7 +299,7 @@ const listPages = () => {
       if (file.endsWith('.html')) urls.push(`${group.prefix}/${file.replace(/\.html$/, '')}`);
     }
   }
-  for (const url of ROOT_PAGES) {
+  for (const url of TOP_LEVEL_PAGES) {
     if (fs.existsSync(path.join(APP_DIR, `${url.slice(1)}.html`))) urls.push(url);
   }
   return urls.sort();

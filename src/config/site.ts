@@ -147,7 +147,7 @@ export type PageMetadataInput = {
  * no mirror. Keep the two lists in step.
  */
 const MARKDOWN_MIRROR_PREFIXES = ['/products/', '/guides/', '/case-studies/'];
-const MARKDOWN_MIRROR_PATHS = ['/about', '/contact', '/faq'];
+const MARKDOWN_MIRROR_PATHS = ['/about', '/contact', '/faq', '/products', '/guides', '/projects'];
 
 const hasMarkdownMirror = (path: string): boolean =>
   MARKDOWN_MIRROR_PREFIXES.some((prefix) => path.startsWith(prefix)) ||

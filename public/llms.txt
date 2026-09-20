@@ -39,7 +39,7 @@ ZYD Signage is the trading name of Dalian Zhiyudao Signage & Tech. Co., Ltd. The
 - [Acrylic Desk Sign](https://www.zydsign.com/products/acrylic-desk-sign/index.md): Free-standing counter and desk signs for reception and front-of-house.
 - [Portable Metal A-Frame Sign](https://www.zydsign.com/products/portable-metal-a-frame-sign/index.md): Free-standing A-frame signs for pavements, forecourts, and event stands.
 
-Full product index: https://www.zydsign.com/products
+- [Full product index](https://www.zydsign.com/products/index.md)
 
 ## Buying guides
 
@@ -48,10 +48,10 @@ Full product index: https://www.zydsign.com/products
 - [How to Choose the Right Sign for Your Business](https://www.zydsign.com/guides/how-to-choose-the-right-sign-for-your-business/index.md): A practical framework for choosing pylon, monument, building, wayfinding, or illuminated signage around the real site and message.
 - [304 Stainless Steel vs Galvanized Steel](https://www.zydsign.com/guides/304-stainless-steel-vs-galvanized-steel-outdoor-signs/index.md): Material-selection logic for outdoor signs, comparing 304 stainless steel and galvanized steel by exposure, finish, and fabrication.
 
-Full guide index: https://www.zydsign.com/guides
+- [Full guide index](https://www.zydsign.com/guides/index.md)
 
 ## Case studies
 
 - [Water Fashion Plaza Wayfinding](https://www.zydsign.com/case-studies/dalian-water-plaza-wayfinding-signage/index.md): Wayfinding and architectural signage for a commercial complex in Dalian, China, from the outdoor pylon sign through to the interior floor directories.
 
-Full case study index: https://www.zydsign.com/projects
+- [Full case study index](https://www.zydsign.com/projects/index.md)
