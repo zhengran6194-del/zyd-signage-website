@@ -21,6 +21,7 @@ export default function Home() {
   const [selectedFiles, setSelectedFiles] = useState<File[]>([]);
   const [fileError, setFileError] = useState('');
   const [leadReceived, setLeadReceived] = useState(false);
+  const [showAllProducts, setShowAllProducts] = useState(false);
   const [lastSubmitted, setLastSubmitted] = useState<InquiryPayload | null>(null);
   const [lastFileExtra, setLastFileExtra] = useState<string | undefined>(undefined);
 
@@ -450,7 +451,7 @@ export default function Home() {
                 View Full Catalog &rarr;
               </Link>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
+            <div id="home-products-grid" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
               {[
                 { title: 'Halo-Lit Letters', img: 'cat-illuminated.jpg', id: 'custom-halo-lit-letters' },
                 { title: 'Wayfinding Systems', img: 'hero-wayfinding.jpg', id: 'architectural-wayfinding-system' },
@@ -469,7 +470,12 @@ export default function Home() {
                 // Every card carries an id, so the link always resolves to its own
                 // detail page. The old `p.id ? ... : '/products'` fallback hid the
                 // eight cards that were missing one behind the catalog page.
-                <Link href={`/products/${p.id}`} key={i} className="reveal group block">
+                <Link
+                  href={`/products/${p.id}`}
+                  key={i}
+                  className="reveal group block"
+                  hidden={!showAllProducts && i >= 8}
+                >
                   <div className="relative overflow-hidden rounded-xl mb-4 h-60 bg-slate-100 border border-slate-50">
                     <Image src={`/assets/images/${p.img}`} alt={p.title} fill sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw" className="object-cover group-hover:scale-105 transition-transform duration-500" />
                   </div>
@@ -482,6 +488,15 @@ export default function Home() {
                 </Link>
               ))}
             </div>
+            <button
+              type="button"
+              className="mx-auto mt-12 block border-b border-blue-200 pb-1 text-blue-600 font-bold uppercase text-[11px] tracking-widest hover:border-blue-600 transition-all"
+              aria-expanded={showAllProducts}
+              aria-controls="home-products-grid"
+              onClick={() => setShowAllProducts((current) => !current)}
+            >
+              {showAllProducts ? 'Show fewer products' : 'Show all products'}
+            </button>
           </div>
         </section>
 
