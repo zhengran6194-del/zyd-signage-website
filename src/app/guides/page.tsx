@@ -77,11 +77,11 @@ export default function GuidesPage() {
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
             {guides.map((g, i) => (
-              <Link href={g.href} key={i} className="group block min-w-0 bg-white border border-slate-100 rounded-xl p-6 shadow-sm hover:shadow-xl transition-all duration-300">
-                <div className="text-[10px] font-black text-blue-600 uppercase tracking-widest mb-3">{g.tag}</div>
-                <h2 className="min-w-0 break-words font-black text-slate-900 mb-3 uppercase text-xs leading-relaxed">{g.title}</h2>
-                <p className="text-slate-500 text-xs leading-relaxed font-medium mb-4">{g.desc}</p>
-                <span className="text-[10px] font-bold text-slate-600 uppercase tracking-widest group-hover:text-blue-600 transition-colors">Read Guide</span>
+              <Link href={g.href} key={i} className="group flex h-full min-h-[240px] min-w-0 flex-col bg-white border border-slate-100 rounded-xl p-6 shadow-sm hover:shadow-xl transition-all duration-300">
+                <div className="text-[11px] font-black text-blue-600 uppercase tracking-widest mb-3">{g.tag}</div>
+                <h2 className="min-w-0 break-words font-black text-slate-900 mb-3 uppercase text-sm leading-snug">{g.title}</h2>
+                <p className="text-slate-500 text-sm leading-relaxed font-medium mb-4">{g.desc}</p>
+                <span className="mt-auto text-xs font-bold text-slate-600 uppercase tracking-widest group-hover:text-blue-600 transition-colors">Read Guide</span>
               </Link>
             ))}
           </div>
