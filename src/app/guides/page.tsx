@@ -31,6 +31,12 @@ const guides = [
     desc: 'Material-selection logic for outdoor signs, comparing 304 stainless steel and galvanized steel by exposure, finish, and fabrication.',
     href: '/guides/304-stainless-steel-vs-galvanized-steel-outdoor-signs',
   },
+  {
+    tag: 'Manufacturing Guide',
+    title: 'How Custom Signage Is Made: 7 Manufacturing Steps',
+    desc: 'A buyer-focused guide to design development, fabrication, finishing, illumination, quality control, packing and delivery.',
+    href: '/guides/custom-signage-manufacturing-process',
+  },
 ];
 
 export default function GuidesPage() {

@@ -48,6 +48,7 @@ const guides = [
   { category: 'Technical Guide', title: 'Front-Lit vs Halo-Lit Channel Letters', date: 'Aug 20, 2026', image: 'lightbox.jpg' },
   { category: 'Buying Guide', title: 'How to Choose the Right Sign for Your Business', date: 'Aug 15, 2026', image: 'cat-wayfinding.jpg' },
   { category: 'Materials', title: '304 Stainless Steel vs Galvanized Steel for Outdoor Signs', date: 'Aug 10, 2026', image: 'cat-metal.jpg' },
+  { category: 'Manufacturing Guide', title: 'How Custom Signage Is Made: 7 Manufacturing Steps', date: 'Jul 22, 2026', image: 'cat-system.jpg' },
 ];
 
 const faqs = [
@@ -145,6 +146,7 @@ export default function FAQPage() {
                 '/guides/front-lit-vs-halo-lit-channel-letters',
                 '/guides/how-to-choose-the-right-sign-for-your-business',
                 '/guides/304-stainless-steel-vs-galvanized-steel-outdoor-signs',
+                '/guides/custom-signage-manufacturing-process',
               ];
               return (
                 <Link

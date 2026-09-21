@@ -33,6 +33,7 @@ const routes = [
   { path: "/guides/how-much-do-custom-channel-letters-cost", priority: 0.7 },
   { path: "/guides/front-lit-vs-halo-lit-channel-letters", priority: 0.7 },
   { path: "/guides/how-to-choose-the-right-sign-for-your-business", priority: 0.7 },
+  { path: "/guides/custom-signage-manufacturing-process", priority: 0.7 },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
