@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import JsonLd from '@/components/JsonLd';
+import WhatsAppCta from '@/components/WhatsAppCta';
 
 type ProjectImage = {
   src: string;
@@ -395,6 +396,7 @@ export default function WaterFashionPlazaCaseStudy() {
                   {link.label}
                 </Link>
               ))}
+              <WhatsAppCta label="Request a 3D Concept" message="Hi Aaron, I would like to request a 3D concept based on the Water Fashion Plaza wayfinding case study." className="text-blue-700 hover:text-blue-900" />
             </div>
           </div>
 

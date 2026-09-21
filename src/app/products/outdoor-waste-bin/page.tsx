@@ -3,6 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import WhatsAppCta from '@/components/WhatsAppCta';
 
 export default function OutdoorWasteBinPage() {
   return (
@@ -18,9 +19,12 @@ export default function OutdoorWasteBinPage() {
               <p className="text-lg text-slate-300 mb-8 max-w-xl leading-relaxed font-medium">
                 A refined waste bin solution for hotels, commercial spaces, and public environments. Coordinate the visible form, branding, and project requirements directly with our factory team.
               </p>
-              <Link href="/contact" className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide">
-                GET A PROJECT QUOTE
-              </Link>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link href="/contact" className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide">
+                  GET A PROJECT QUOTE
+                </Link>
+                <WhatsAppCta label="Check Feasibility" message="Hi Aaron, can you check feasibility for a custom outdoor waste bin project?" />
+              </div>
             </div>
             <div className="reveal visible relative">
               <div className="absolute -inset-4 bg-blue-500/20 blur-3xl rounded-full"></div>

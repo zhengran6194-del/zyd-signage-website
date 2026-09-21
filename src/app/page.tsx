@@ -3,6 +3,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import WhatsAppCta from '@/components/WhatsAppCta';
 import { siteConfig } from '@/config/site';
 import {
   buildWhatsAppUrl,
@@ -712,9 +713,11 @@ export default function Home() {
                 <Link href="/contact" className="button button-green-base px-10 py-3">
                   Get a Free Quote
                 </Link>
-                <Link href="/about" className="px-10 py-3 border border-white/20 rounded font-bold uppercase text-[12px] hover:bg-white hover:text-slate-950 transition-all flex items-center justify-center">
-                  Learn More
-                </Link>
+                <WhatsAppCta
+                  label="Send Artwork"
+                  message="Hi Aaron, I would like to send artwork for a signage project."
+                  className="inline-flex items-center justify-center rounded border border-emerald-300 px-10 py-3 font-bold uppercase text-[12px] text-emerald-100 hover:bg-emerald-400 hover:text-slate-950 transition-all"
+                />
               </div>
             </div>
           </div>

@@ -3,6 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import WhatsAppCta from '@/components/WhatsAppCta';
 import JsonLd from '@/components/JsonLd';
 
 const faqs = [
@@ -53,6 +54,7 @@ export default function HaloLitLettersPage() {
                 >
                   GET A QUOTE
                 </Link>
+                <WhatsAppCta label="Check Feasibility" message="Hi Aaron, can you check feasibility for custom halo-lit metal letters?" />
               </div>
             </div>
             <div className="reveal visible relative">

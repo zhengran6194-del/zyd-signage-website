@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import JsonLd from '@/components/JsonLd';
+import WhatsAppCta from '@/components/WhatsAppCta';
 
 export type GuideSource = {
   name: string;
@@ -153,6 +154,7 @@ export default function GuideArticle(guide: GuideArticleProps) {
 
             <div className="mt-12 pt-8 border-t border-slate-200 flex flex-wrap gap-5 text-sm font-black uppercase tracking-widest">
               {guide.relatedLinks.map((link) => <Link key={link.href} href={link.href} className="text-blue-700 hover:text-blue-900">{link.label}</Link>)}
+              <WhatsAppCta label="Get Material Advice" message={`Hi Aaron, I would like material advice for this guide topic: ${guide.title}.`} className="text-blue-700 hover:text-blue-900" />
             </div>
           </div>
 
