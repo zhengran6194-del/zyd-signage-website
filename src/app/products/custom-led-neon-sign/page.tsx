@@ -96,7 +96,7 @@ export default function LedNeonSignPage() {
                 The design is simplified into continuous paths that the tubing can follow, so very fine detail and tight inner corners are usually adjusted. Vector artwork gives the cleanest starting point. The review confirms which strokes stay open and how the power feed and controller are hidden.
               </p>
               <div className="mt-auto">
-                <Link href="/contact" className="text-sm font-black uppercase tracking-widest text-blue-700 hover:text-blue-900">Send your artwork for review</Link>
+                <Link href="/contact" className="text-sm font-black uppercase tracking-widest text-blue-700 hover:text-blue-900">Send your project brief</Link>
               </div>
             </div>
 
