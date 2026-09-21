@@ -25,6 +25,11 @@ const guide: GuideArticleData = {
     },
     {
       heading: '3. Laser cutting, CNC cutting and bending',
+      image: {
+        src: '/assets/images/guides/custom-signage-laser-cutting-signage-parts.jpg',
+        alt: 'Laser cutting head working over flat metal sheets for custom signage parts',
+        caption: 'Laser cutting is shown here as part of the controlled sheet-metal preparation stage.',
+      },
       paragraphs: [
         'After the construction route is confirmed, sheet, plate, profiles or other sign components are cut using the selected production method. Laser cutting and CNC processes can support repeatable shapes, lettering and apertures when the drawing, material and machine setup are coordinated.',
         'Cut components are then formed where the design requires returns, folded edges, trays or structural parts. The correct sequence depends on the sign type and material; the important buyer question is whether the cut files, bend information and revision status are controlled together.'
@@ -33,6 +38,11 @@ const guide: GuideArticleData = {
     },
     {
       heading: '4. Frame welding and post-weld finishing',
+      image: {
+        src: '/assets/images/guides/custom-signage-signage-frame-welding.jpg',
+        alt: 'Worker welding a rectangular metal frame for a custom signage assembly',
+        caption: 'Frame welding creates the structural base before post-weld finishing and surface treatment.',
+      },
       paragraphs: [
         'Frames, returns, trays and supports are joined using the method appropriate to the construction. Welding is followed by post-weld finishing so joints, edges and visible surfaces can receive the intended finish without avoidable marks or uneven transitions.',
         'This stage is where fabrication discipline becomes visible in the finished sign. A buyer should ask how the factory checks alignment, joint treatment, access panels and the relationship between the welded frame and the face or lettering.'
@@ -41,6 +51,11 @@ const guide: GuideArticleData = {
     },
     {
       heading: '5. Surface treatment and colour management',
+      image: {
+        src: '/assets/images/guides/custom-signage-signage-metal-fabrication.jpg',
+        alt: 'Worker finishing a reflective metal signage panel at a fabrication bench',
+        caption: 'Visible metal surfaces are handled and finished before the sign moves to later assembly checks.',
+      },
       paragraphs: [
         'Surface treatment may include spray coating, baking paint, fluorocarbon coating, electroplating or anodising, depending on the material, environment and design brief. The selected route should be recorded with the substrate, colour reference, gloss or texture direction and preparation requirements.',
         'Colour management is not only a final visual check. Samples, batch references, lighting conditions and viewing context should be considered together because a colour can read differently on a coated metal face, an acrylic component or an illuminated sign.'
@@ -49,6 +64,11 @@ const guide: GuideArticleData = {
     },
     {
       heading: '6. Illumination layout, enclosure and pre-assembly',
+      image: {
+        src: '/assets/images/guides/custom-signage-signage-component-assembly.jpg',
+        alt: 'Worker fitting signage components onto a protected assembly bench',
+        caption: 'Component assembly and protection are coordinated before the completed sign is packed.',
+      },
       paragraphs: [
         'For illuminated signage, the light source layout is coordinated with the letter or cabinet geometry before the sign is closed. LED modules, wiring, power components and access points need to fit the enclosure and support the intended visual effect without making service impossible.',
         'The sign is then assembled and pre-built where the project allows. Pre-assembly helps the team review proportions, joins, face fit, component access, information placement and overall appearance before packing or site installation.'
@@ -57,6 +77,11 @@ const guide: GuideArticleData = {
     },
     {
       heading: '7. Inspection, protective packing and delivery',
+      image: {
+        src: '/assets/images/guides/custom-signage-signage-assembly-and-packing.jpg',
+        alt: 'Workers wrapping finished signage components for protective packing',
+        caption: 'Protective handling and packing help finished components reach the installation team in usable condition.',
+      },
       paragraphs: [
         'The final stage combines inspection with a delivery plan. Checks may cover dimensions, finish, colour, fit, information, illumination, component access and the condition of the completed sign. Where an ageing or burn-in check is specified or required by the project, it should be documented as part of that project’s inspection scope rather than assumed for every order.',
         'Protective packing is then matched to the sign geometry, finish, components and transport route. Clear identification, packing records and installation information help the site team receive the right parts and reduce avoidable handling damage during delivery and installation.'

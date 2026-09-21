@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import JsonLd from '@/components/JsonLd';
 
@@ -14,6 +15,11 @@ export type GuideSection = {
   rows?: Array<{ factor: string; first: string; second: string }>;
   firstLabel?: string;
   secondLabel?: string;
+  image?: {
+    src: string;
+    alt: string;
+    caption?: string;
+  };
 };
 
 export type GuideFaq = {
@@ -73,6 +79,12 @@ export default function GuideArticle(guide: GuideArticleProps) {
             {guide.sections.map((section) => (
               <section key={section.heading} className="mb-12">
                 <h2 className="text-3xl font-black uppercase tracking-tight text-slate-900 mb-5">{section.heading}</h2>
+                {section.image && (
+                  <figure className="my-7 overflow-hidden rounded-2xl border border-slate-200 bg-slate-50">
+                    <Image src={section.image.src} alt={section.image.alt} width={1080} height={720} sizes="(min-width: 1024px) 720px, 100vw" className="h-auto w-full max-w-full object-cover" />
+                    {section.image.caption && <figcaption className="px-5 py-3 text-sm text-slate-500">{section.image.caption}</figcaption>}
+                  </figure>
+                )}
                 {section.paragraphs.map((paragraph) => (
                   <p key={paragraph} className="text-slate-600 leading-relaxed mb-4">{paragraph}</p>
                 ))}
