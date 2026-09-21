@@ -54,7 +54,7 @@ export default function OutdoorPylonMonumentSignPage() {
                 >
                   GET A QUOTE
                 </Link>
-                <WhatsAppCta label="Check Feasibility" message="Hi Aaron, can you check feasibility for an outdoor pylon or monument sign?" />
+                <WhatsAppCta label="Check Feasibility" message="Hi Aaron, can you check feasibility for an outdoor pylon or monument sign?" brief={{ product: 'an outdoor pylon or monument sign', items: ['Site plan and approach context', 'Approximate dimensions and quantity', 'Artwork, finish and lighting direction', 'Foundation/mounting/site photos and ship-to country'] }} />
               </div>
             </div>
             <div className="reveal visible relative">

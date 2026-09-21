@@ -54,7 +54,7 @@ export default function CompleteSignageSystemPage() {
                 >
                   GET A QUOTE
                 </Link>
-                <WhatsAppCta label="Check Feasibility" message="Hi Aaron, can you check feasibility for a complete signage system?" />
+                <WhatsAppCta label="Check Feasibility" message="Hi Aaron, can you check feasibility for a complete signage system?" brief={{ product: 'a complete signage system', items: ['Site list and rollout sequence', 'Sign types and quantities per site', 'Artwork or brand standards', 'Mounting/site photos and ship-to country'] }} />
               </div>
             </div>
             <div className="reveal visible relative">

@@ -54,7 +54,7 @@ export default function LedNeonSignPage() {
                 >
                   GET A QUOTE
                 </Link>
-                <WhatsAppCta label="Check Feasibility" message="Hi Aaron, can you check feasibility for a custom LED neon sign?" />
+                <WhatsAppCta label="Check Feasibility" message="Hi Aaron, can you check feasibility for a custom LED neon sign?" brief={{ product: 'a custom LED neon sign', items: ['Vector artwork', 'Overall dimensions and quantity', 'Colour, lighting and power direction', 'Wall/mounting photo and ship-to country'] }} />
               </div>
             </div>
             <div className="reveal visible relative">
@@ -106,7 +106,7 @@ export default function LedNeonSignPage() {
                 Share the wall material, the mounting height, and whether a visible or concealed power feed is preferred, plus the required color and any dimming or animation requirement. Those details determine the backing and the driver selection, and they keep the quotation comparable between suppliers.
               </p>
               <div className="mt-auto">
-                <Link href="/products/ultra-slim-led-light-box" className="text-sm font-black uppercase tracking-widest text-blue-700 hover:text-blue-900">See illuminated panel options</Link>
+                <Link href="/contact" className="text-sm font-black uppercase tracking-widest text-blue-700 hover:text-blue-900">Send your project brief</Link>
               </div>
             </div>
 

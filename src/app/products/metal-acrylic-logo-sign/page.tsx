@@ -54,7 +54,7 @@ export default function MetalAcrylicLogoSignPage() {
                 >
                   GET A QUOTE
                 </Link>
-                <WhatsAppCta label="Check Feasibility" message="Hi Aaron, can you check feasibility for a metal and acrylic logo sign?" />
+                <WhatsAppCta label="Check Feasibility" message="Hi Aaron, can you check feasibility for a metal and acrylic logo sign?" brief={{ product: 'a metal and acrylic logo sign', items: ['Vector artwork or logo file', 'Overall dimensions and quantity', 'Metal/acrylic finish direction', 'Wall/mounting photo and ship-to country'] }} />
               </div>
             </div>
             <div className="reveal visible relative">
@@ -106,7 +106,7 @@ export default function MetalAcrylicLogoSignPage() {
                 Vector artwork is the reliable starting point because the mark is cut and layered rather than printed, and very fine strokes may need adjustment for the material. Include the intended size, the wall surface, and any brand color references. The review confirms layer build-up and mounting before production.
               </p>
               <div className="mt-auto">
-                <Link href="/contact" className="text-sm font-black uppercase tracking-widest text-blue-700 hover:text-blue-900">Send your artwork for review</Link>
+                <Link href="/contact" className="text-sm font-black uppercase tracking-widest text-blue-700 hover:text-blue-900">Send your project brief</Link>
               </div>
             </div>
 

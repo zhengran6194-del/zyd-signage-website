@@ -54,7 +54,7 @@ export default function HaloLitLettersPage() {
                 >
                   GET A QUOTE
                 </Link>
-                <WhatsAppCta label="Check Feasibility" message="Hi Aaron, can you check feasibility for custom halo-lit metal letters?" />
+                <WhatsAppCta label="Check Feasibility" message="Hi Aaron, can you check feasibility for custom halo-lit metal letters?" brief={{ product: 'custom halo-lit metal letters', items: ['Vector artwork and letter size', 'Quantity and overall run', 'Wall material and mounting photo', 'Finish, lighting direction and ship-to country'] }} />
               </div>
             </div>
             <div className="reveal visible relative">

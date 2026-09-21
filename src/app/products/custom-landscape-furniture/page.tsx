@@ -54,7 +54,7 @@ export default function LandscapeFurniturePage() {
                 >
                   GET A QUOTE
                 </Link>
-                <WhatsAppCta label="Check Feasibility" message="Hi Aaron, can you check feasibility for custom landscape furniture?" />
+                <WhatsAppCta label="Check Feasibility" message="Hi Aaron, can you check feasibility for custom landscape furniture?" brief={{ product: 'custom landscape furniture', items: ['Site plan and element list', 'Dimensions and quantities', 'Finish or brand colour direction', 'Ground-fixing/site photos and ship-to country'] }} />
               </div>
             </div>
             <div className="reveal visible relative">

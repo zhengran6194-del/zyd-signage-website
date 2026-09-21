@@ -54,7 +54,7 @@ export default function MedicalSignagePage() {
                 >
                   GET A QUOTE
                 </Link>
-                <WhatsAppCta label="Check Feasibility" message="Hi Aaron, can you check feasibility for a medical care signage system?" />
+                <WhatsAppCta label="Check Feasibility" message="Hi Aaron, can you check feasibility for a medical care signage system?" brief={{ product: 'a medical care signage system', items: ['Floor/department plans', 'Sign types, dimensions and quantities', 'Artwork, finish and accessibility notes', 'Mounting/site photos and ship-to country'] }} />
               </div>
             </div>
             <div className="reveal visible relative">

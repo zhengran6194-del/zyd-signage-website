@@ -23,7 +23,7 @@ export default function OutdoorWasteBinPage() {
                 <Link href="/contact" className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide">
                   GET A PROJECT QUOTE
                 </Link>
-                <WhatsAppCta label="Check Feasibility" message="Hi Aaron, can you check feasibility for a custom outdoor waste bin project?" />
+                <WhatsAppCta label="Check Feasibility" message="Hi Aaron, can you check feasibility for a custom outdoor waste bin project?" brief={{ product: 'a custom outdoor waste bin project', items: ['Artwork or logo file', 'Dimensions, capacity and quantity', 'Material and finish direction', 'Installation/site photos and ship-to country'] }} />
               </div>
             </div>
             <div className="reveal visible relative">

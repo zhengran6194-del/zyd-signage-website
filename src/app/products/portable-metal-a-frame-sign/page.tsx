@@ -104,7 +104,7 @@ export default function PortableMetalAFrameSignPage() {
                 >
                   GET A QUOTE
                 </Link>
-                <WhatsAppCta label="Check Feasibility" message="Hi Aaron, can you check feasibility for a portable metal A-frame sign?" />
+                <WhatsAppCta label="Check Feasibility" message="Hi Aaron, can you check feasibility for a portable metal A-frame sign?" brief={{ product: 'a portable metal A-frame sign', items: ['Artwork or message file', 'Overall dimensions and quantity', 'Finish, double-sided or fold direction', 'Pavement/site photos and ship-to country'] }} />
               </div>
             </div>
             <div className="reveal visible relative">

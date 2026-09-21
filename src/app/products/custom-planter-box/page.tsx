@@ -23,7 +23,7 @@ export default function CustomPlanterBoxPage() {
                 <Link href="/contact" className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide">
                   GET A PROJECT QUOTE
                 </Link>
-                <WhatsAppCta label="Check Feasibility" message="Hi Aaron, can you check feasibility for a custom planter box project?" />
+                <WhatsAppCta label="Check Feasibility" message="Hi Aaron, can you check feasibility for a custom planter box project?" brief={{ product: 'a custom planter box project', items: ['Drawings or artwork', 'Dimensions and target quantity', 'Material, drainage and finish', 'Installation/site photos and ship-to country'] }} />
               </div>
             </div>
             <div className="reveal visible relative">

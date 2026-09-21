@@ -54,7 +54,7 @@ export default function UltraSlimLightBoxPage() {
                 >
                   GET A QUOTE
                 </Link>
-                <WhatsAppCta label="Check Feasibility" message="Hi Aaron, can you check feasibility for an ultra-slim LED light box?" />
+                <WhatsAppCta label="Check Feasibility" message="Hi Aaron, can you check feasibility for an ultra-slim LED light box?" brief={{ product: 'an ultra-slim LED light box', items: ['Artwork or panel file', 'Panel dimensions and quantity', 'Finish, colour and lighting direction', 'Mounting/site photos and ship-to country'] }} />
               </div>
             </div>
             <div className="reveal visible relative">

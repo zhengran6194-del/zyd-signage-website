@@ -54,7 +54,7 @@ export default function WayfindingSystemPage() {
                 >
                   GET A QUOTE
                 </Link>
-                <WhatsAppCta label="Check Feasibility" message="Hi Aaron, can you check feasibility for an architectural wayfinding system?" />
+                <WhatsAppCta label="Check Feasibility" message="Hi Aaron, can you check feasibility for an architectural wayfinding system?" brief={{ product: 'an architectural wayfinding system', items: ['Site or floor plans', 'Sign types and quantities', 'Artwork or brand standards', 'Mounting conditions and ship-to country'] }} />
               </div>
             </div>
             <div className="reveal visible relative">

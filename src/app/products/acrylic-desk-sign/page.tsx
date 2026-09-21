@@ -104,7 +104,7 @@ export default function AcrylicDeskSignPage() {
                 >
                   GET A QUOTE
                 </Link>
-                <WhatsAppCta label="Check Feasibility" message="Hi Aaron, can you check feasibility for an acrylic desk sign project?" />
+                <WhatsAppCta label="Check Feasibility" message="Hi Aaron, can you check feasibility for an acrylic desk sign project?" brief={{ product: 'an acrylic desk sign', items: ['Artwork or logo file', 'Overall dimensions and quantity', 'Finish and edge direction', 'Counter/desk photo and ship-to country'] }} />
               </div>
             </div>
             <div className="reveal visible relative">
