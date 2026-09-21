@@ -29,7 +29,7 @@
 | 项目 | 当前事实 | 证据 | 运营含义 |
 |---|---|---|---|
 | 实体信息 | 公司名为 Dalian Zhiyudao Signage & Tech. Co., Ltd.，邮箱、联系人 Aaron、域名已配置 | `src/config/site.ts:1-11` | 后续官网、目录站、LinkedIn、报价单必须以同一实体信息为准 |
-| 核心卖点 | 首页统计区写有 `EST. 2006`、`20,000m² PRODUCTION BASE`、`GLOBAL DDP SHIPPING`、`QUALITY GUARANTEE` | `src/app/page.tsx:217-228` | 可用于英文内容和首复模板；数字仍须有内部举证台账 |
+| 核心卖点 | 首页统计区写有 `EST. 2006`、`20,000m² PRODUCTION BASE`、`GLOBAL DDP SHIPPING`、`QUALITY REVIEW` | `src/app/page.tsx:217-228` | 可用于英文内容和首复模板；数字仍须有内部举证台账 |
 | 产品入口 | 产品目录页有 11 个产品入口，详情页采用静态 App Router 页面 | `src/app/products/page.tsx:17-27`；`src/app/products/*/page.tsx` | 先围绕真实品类建立 topic cluster，不用泛流量词填充 |
 | Sitemap | sitemap 路由数组覆盖首页、核心页面和产品页，共 17 个 URL | `src/app/sitemap.ts:4-22` | 收录提交以该文件生成的 `/sitemap.xml` 为准；每次新增内容后复核 |
 | Robots | robots 放行全站并引用 sitemap | `src/app/robots.ts:4-12` | 继续保持可抓取；任何 AI crawler 限制变更须先评估 |

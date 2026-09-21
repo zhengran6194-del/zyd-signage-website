@@ -170,19 +170,19 @@ export default function Home() {
     { 
       no: '05', 
       title: 'Automotive Coating', 
-      desc: 'Dust-free finish application for 10+ years of weather resistance.',
+      desc: 'Dust-free finish application selected for the specified project environment.',
       icon: <svg className="w-12 h-12 mb-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" /></svg>
     },
     { 
       no: '06', 
       title: 'LED Integration', 
-      desc: 'Multi-point wiring with high-efficiency Samsung/Epistar modules.',
+      desc: 'Multi-point wiring with LED modules selected for the project specification.',
       icon: <svg className="w-12 h-12 mb-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
     },
     { 
       no: '07', 
-      title: '48H Burn-in Test', 
-      desc: 'Rigorous multi-stage QC including extended illumination trials.',
+      title: 'Illumination Quality Checks',
+      desc: 'Project-specific QC including illumination trials and final checks.',
       icon: <svg className="w-12 h-12 mb-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
     },
     { 
@@ -218,7 +218,7 @@ export default function Home() {
                   Solutions Direct from Factory.
                 </h1>
                 <p className="text-xl lg:text-2xl text-slate-200 mb-12 max-w-xl leading-relaxed font-medium">
-                  20 Years Expertise. We provide One-Stop Signage Systems for Hotels, Commercial Spaces, and Industrial Parks. Durable in all environments.
+                  20 Years Expertise. We provide One-Stop Signage Systems for Hotels, Commercial Spaces, and Industrial Parks. Materials and finishes are selected for the specified environment.
                 </p>
                 <div className="flex flex-wrap gap-6">
                   <Link href="/contact" className="button button-green-base px-10 py-5 text-lg rounded-md">
@@ -265,7 +265,7 @@ export default function Home() {
                 { val: 'EST. 2006' },
                 { val: '20,000m² PRODUCTION BASE' },
                 { val: 'GLOBAL DDP SHIPPING' },
-                { val: 'QUALITY GUARANTEE' }
+                { val: 'QUALITY REVIEW' }
               ].map((item, idx) => (
                 <div key={idx} className="text-center md:text-left border-l border-white/5 pl-8 first:border-none">
                   <strong className="block text-xl lg:text-2xl font-black tracking-tight text-white uppercase">{item.val}</strong>
@@ -281,7 +281,7 @@ export default function Home() {
             <div className="text-center mb-24 reveal">
               <div className="text-blue-600 font-bold uppercase text-[11px] tracking-[0.4em] mb-4">Industrial Excellence</div>
               <h2 className="text-5xl lg:text-6xl font-black text-slate-950 uppercase tracking-tighter mb-6">Our 8-Step <br className="lg:hidden"/>Fabrication Journey</h2>
-              <p className="text-slate-600 max-w-3xl mx-auto text-lg font-medium leading-relaxed">Combining artisanal craftsmanship with robotic precision to ensure zero-defect signage delivery.</p>
+                <p className="text-slate-600 max-w-3xl mx-auto text-lg font-medium leading-relaxed">Combining skilled fabrication with structured production checks for project-specific signage delivery.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16">
               {steps.map((s, i) => (
@@ -349,13 +349,13 @@ export default function Home() {
               <div className="reveal max-w-xl">
                 <div className="text-blue-600 font-black uppercase text-[10px] tracking-[0.4em] mb-4 border-l-2 border-blue-600 pl-4">Quality Assurance</div>
                 <h2 className="mb-6 uppercase tracking-tighter text-slate-900 leading-[0.95] text-5xl lg:text-6xl">Global <br/>Compliance & <br/>Quality Standards</h2>
-                <p className="text-slate-700 mb-12 text-lg leading-relaxed font-medium opacity-80">We adhere to the highest international certifications to guarantee structural integrity and electrical safety in any environment.</p>
+                <p className="text-slate-700 mb-12 text-lg leading-relaxed font-medium opacity-80">Certification, component selection, and electrical safety requirements are reviewed against each project brief and destination.</p>
                 <div className="grid grid-cols-2 gap-4 lg:gap-5">
                   {[
-                    { label: 'ISO 9001:2015', desc: 'Quality Management' },
-                    { label: 'CE Certified', desc: 'Electrical Compliance' },
-                    { label: 'SGS Inspected', desc: 'Factory Standards' },
-                    { label: 'UL Components', desc: 'Premium Components' },
+                    { label: 'Quality Management', desc: 'Process reviewed per project' },
+                    { label: 'Electrical Requirements', desc: 'Checked against destination' },
+                    { label: 'Inspection Scope', desc: 'Agreed before production' },
+                    { label: 'Component Selection', desc: 'Matched to the specification' },
                   ].map((cert, idx) => (
                     <div key={idx} className="p-6 bg-white border border-slate-100 rounded-3xl shadow-sm hover:shadow-md transition-shadow">
                       <div className="font-black text-blue-600 text-base mb-1">{cert.label}</div>
@@ -385,8 +385,8 @@ export default function Home() {
                         icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 
                       },
                       { 
-                        t: 'ISO Quality', 
-                        d: 'Certified Processes', 
+                        t: 'Quality Process',
+                        d: 'Documented Checks',
                         icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> 
                       },
                       { 
@@ -616,7 +616,7 @@ export default function Home() {
                     {[
                       { t: 'Factory Direct', d: 'In-House Production', icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 21h18M3 7v1h18V7l-2-4H5L3 7zM19 8v10M5 8v10M9 8v10M15 8v10"/></svg> },
                       { t: '20 Years', d: 'Industry Experience', icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> },
-                      { t: 'ISO Quality', d: 'Certified Processes', icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> },
+                      { t: 'Quality Process', d: 'Documented Checks', icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> },
                       { t: 'Global Delivery', d: 'Reliable Worldwide Supply', icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg> },
                     ].map((item) => (
                       <div key={item.t} className="flex items-center gap-4 rounded-2xl border border-slate-100 bg-slate-50 p-4">
@@ -684,7 +684,7 @@ export default function Home() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {[
                 { title: 'Factory Direct', text: 'In-house signage production connected to your project team.' },
-                { title: 'Quality Control', text: 'Established quality processes and final checks for every project.' },
+                { title: 'Quality Control', text: 'Established quality processes and project-specific final checks.' },
                 { title: 'Global DDP Delivery', text: 'Worldwide delivery support for coordinated signage programs.' },
                 { title: 'OEM & ODM Coordination', text: 'Technical coordination for contractors, architects, and brands.' },
               ].map((item) => (

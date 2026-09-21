@@ -113,7 +113,7 @@ export default function CompleteSignageSystemPage() {
             <div className="bg-white rounded-[2.5rem] border border-slate-200 p-10 shadow-sm flex flex-col">
               <h2 className="text-2xl lg:text-3xl font-black uppercase tracking-tight text-slate-900 mb-5">How is a multi-site rollout phased and shipped?</h2>
               <p className="text-slate-600 leading-relaxed mb-6">
-                Rollouts are scheduled by site or opening date, with element groups produced and packed in the order they are needed on site. Global DDP delivery is quoted into the program so freight, clearance, and duties are handled as part of the scope rather than as a separate surprise.
+                Rollouts are scheduled by site or opening date, with element groups produced and packed in the order they are needed on site. DDP delivery can be quoted into the program after the destination and cargo details are reviewed, with freight, clearance, and duties stated in the agreed scope.
               </p>
               <div className="mt-auto">
                 <Link href="/products/architectural-wayfinding-system" className="text-sm font-black uppercase tracking-widest text-blue-700 hover:text-blue-900">Explore coordinated wayfinding</Link>
@@ -149,17 +149,17 @@ export default function CompleteSignageSystemPage() {
                   <div className="p-8 bg-white rounded-[2rem] border border-slate-200 shadow-sm">
                     <h3 className="text-lg font-black text-blue-600 mb-4 uppercase italic">Lighting &amp; components</h3>
                     <ul className="space-y-3 text-slate-600 font-medium">
-                      <li>&bull; LED modules using Samsung or Epistar chips</li>
-                      <li>&bull; MeanWell power supplies rated IP67</li>
-                      <li>&bull; Weather operation from -40°C to +60°C for exterior elements</li>
+                      <li>&bull; LED modules selected for the project specification</li>
+                      <li>&bull; Power supplies selected for the project specification</li>
+                      <li>&bull; Environmental rating reviewed for the exterior application</li>
                     </ul>
                   </div>
                   <div className="p-8 bg-white rounded-[2rem] border border-slate-200 shadow-sm">
                     <h3 className="text-lg font-black text-blue-600 mb-4 uppercase italic">Phasing &amp; delivery</h3>
                     <ul className="space-y-3 text-slate-600 font-medium">
                       <li>&bull; Production grouped by site or opening date</li>
-                      <li>&bull; Global DDP delivery included in the scope</li>
-                      <li>&bull; 3–5 year global warranty on components and structure</li>
+                      <li>&bull; DDP delivery scope quoted from destination and cargo details</li>
+                      <li>&bull; Warranty terms confirmed in the project quotation</li>
                     </ul>
                   </div>
                 </div>
@@ -168,7 +168,7 @@ export default function CompleteSignageSystemPage() {
                 <h3 className="text-2xl font-black mb-6 italic text-blue-400 uppercase tracking-tighter">Factory Advantage</h3>
                 <p className="text-slate-300 mb-8 leading-relaxed font-medium">Direct manufacturing from our 20,000sqm base in Dalian, established in 2006, keeps every element group under one quality-control process.</p>
                 <div className="space-y-5">
-                  <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">Global DDP Shipping</span></div>
+                  <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">DDP Shipping by Quotation</span></div>
                   <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">MOQ: 1</span></div>
                   <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">Lead Time: 7–14 days</span></div>
                 </div>

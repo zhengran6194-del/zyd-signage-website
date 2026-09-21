@@ -121,7 +121,7 @@ export default function ProjectsPage() {
 
           <div className="bg-slate-950 p-16 lg:p-20 rounded-[4rem] shadow-2xl text-center">
             <p className="text-3xl text-blue-400 font-black italic mb-6 uppercase tracking-tighter">Your Project Next?</p>
-            <p className="text-slate-300 text-xl mb-10 max-w-2xl mx-auto leading-relaxed">We handle end-to-end design, manufacturing, and Global DDP shipping for large-scale architectural projects.</p>
+            <p className="text-slate-300 text-xl mb-10 max-w-2xl mx-auto leading-relaxed">We coordinate design, manufacturing, and DDP delivery scope for large-scale architectural projects when destination and cargo details are confirmed.</p>
             <Link href="/#contact" className="button button-green-base px-16 py-8 rounded-full text-white font-black text-2xl shadow-2xl">
               CONSULT AN ENGINEER
             </Link>

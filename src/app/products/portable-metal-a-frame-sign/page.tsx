@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     question: 'What is the minimum order and lead time for an A-frame sign?',
-    answer: 'Minimum order is 1 unit and typical production lead time is 7–14 days depending on artwork, quantity, and finish. Signs ship DDP to the destination and carry a 3–5 year warranty.',
+    answer: 'Minimum order is 1 unit and typical production lead time is 7–14 days depending on artwork, quantity, and finish. DDP delivery and any warranty terms are confirmed in the project quotation.',
   },
 ];
 
@@ -208,11 +208,11 @@ export default function PortableMetalAFrameSignPage() {
               </div>
               <div>
                 <div className="text-[10px] font-black uppercase tracking-[0.3em] text-blue-400 mb-3">Warranty</div>
-                <div className="text-sm text-slate-300 font-medium leading-relaxed">3–5 year warranty on supplied signage.</div>
+                <div className="text-sm text-slate-300 font-medium leading-relaxed">Warranty terms stated in the project quotation.</div>
               </div>
               <div>
                 <div className="text-[10px] font-black uppercase tracking-[0.3em] text-blue-400 mb-3">Delivery</div>
-                <div className="text-sm text-slate-300 font-medium leading-relaxed">Global DDP shipping handled as one delivered price.</div>
+                <div className="text-sm text-slate-300 font-medium leading-relaxed">DDP shipping may be quoted as one delivered scope after destination and cargo review.</div>
               </div>
               <div>
                 <div className="text-[10px] font-black uppercase tracking-[0.3em] text-blue-400 mb-3">Artwork</div>

@@ -98,7 +98,7 @@ export default function Footer() {
           <div className="flex items-center gap-8">
             <span className="text-[10px] text-slate-600 font-black uppercase tracking-[0.5em]">© 2026 {siteConfig.companyName}</span>
             <span className="h-px w-12 bg-slate-300 hidden md:block"></span>
-            <span className="text-[10px] text-slate-600 font-black uppercase tracking-[0.4em]">Global DDP Certified</span>
+            <span className="text-[10px] text-slate-600 font-black uppercase tracking-[0.4em]">DDP Delivery Scope</span>
           </div>
           <a 
             href="#top" 

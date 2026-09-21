@@ -83,7 +83,7 @@ export default function OutdoorPylonMonumentSignPage() {
             <div className="bg-white rounded-[2.5rem] border border-slate-200 p-10 shadow-sm flex flex-col">
               <h2 className="text-2xl lg:text-3xl font-black uppercase tracking-tight text-slate-900 mb-5">How are large pylon signs engineered for wind load?</h2>
               <p className="text-slate-600 leading-relaxed mb-6">
-                Wind resistance is a site-specific engineering question, not a fixed specification. Our engineering team provides project-specific wind load calculations and foundation specifications when the site location, overall dimensions, and local conditions are confirmed. The illumination and power components used in these structures are rated for outdoor use, including weather operation from -40°C to +60°C.
+                Wind resistance is a site-specific engineering question, not a fixed specification. Our engineering team provides project-specific wind load calculations and foundation specifications when the site location, overall dimensions, and local conditions are confirmed. The illumination and power components are selected and reviewed against the confirmed exterior application.
               </p>
               <div className="mt-auto">
                 <Link href="/guides/how-to-choose-the-right-sign-for-your-business" className="text-sm font-black uppercase tracking-widest text-blue-700 hover:text-blue-900">Read the sign-selection guide</Link>
@@ -158,10 +158,10 @@ export default function OutdoorPylonMonumentSignPage() {
                   <div className="p-8 bg-white rounded-[2rem] border border-slate-200 shadow-sm">
                     <h3 className="text-lg font-black text-blue-600 mb-4 uppercase italic">Illumination &amp; durability</h3>
                     <ul className="space-y-3 text-slate-600 font-medium">
-                      <li>&bull; LED modules using Samsung or Epistar chips</li>
-                      <li>&bull; MeanWell power supplies rated IP67</li>
-                      <li>&bull; Weather operation from -40°C to +60°C</li>
-                      <li>&bull; 3–5 year global warranty on components and structure</li>
+                      <li>&bull; LED modules selected for the project specification</li>
+                      <li>&bull; Power supplies selected for the project specification</li>
+                      <li>&bull; Environmental rating reviewed for the exterior application</li>
+                      <li>&bull; Warranty terms confirmed in the project quotation</li>
                     </ul>
                   </div>
                 </div>
@@ -170,7 +170,7 @@ export default function OutdoorPylonMonumentSignPage() {
                 <h3 className="text-2xl font-black mb-6 italic text-blue-400 uppercase tracking-tighter">Factory Advantage</h3>
                 <p className="text-slate-300 mb-8 leading-relaxed font-medium">Direct manufacturing from our 20,000sqm base in Dalian, established in 2006, keeps every weld and finish under one quality-control process.</p>
                 <div className="space-y-5">
-                  <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">Global DDP Shipping</span></div>
+                  <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">DDP Shipping by Quotation</span></div>
                   <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">MOQ: 1</span></div>
                   <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">Lead Time: 7–14 days</span></div>
                 </div>

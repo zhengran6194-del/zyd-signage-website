@@ -149,16 +149,16 @@ export default function UltraSlimLightBoxPage() {
                   <div className="p-8 bg-white rounded-[2rem] border border-slate-200 shadow-sm">
                     <h3 className="text-lg font-black text-blue-600 mb-4 uppercase italic">Lighting</h3>
                     <ul className="space-y-3 text-slate-600 font-medium">
-                      <li>&bull; LED modules using Samsung or Epistar chips</li>
-                      <li>&bull; MeanWell power supplies rated IP67</li>
+                      <li>&bull; LED modules selected for the project specification</li>
+                      <li>&bull; Power supplies selected for the project specification</li>
                       <li>&bull; Service access agreed for driver replacement</li>
                     </ul>
                   </div>
                   <div className="p-8 bg-white rounded-[2rem] border border-slate-200 shadow-sm">
                     <h3 className="text-lg font-black text-blue-600 mb-4 uppercase italic">Durability</h3>
                     <ul className="space-y-3 text-slate-600 font-medium">
-                      <li>&bull; Weather operation from -40°C to +60°C</li>
-                      <li>&bull; 3–5 year global warranty on components and structure</li>
+                      <li>&bull; Environmental rating reviewed for the exterior application</li>
+                      <li>&bull; Warranty terms confirmed in the project quotation</li>
                       <li>&bull; Sealing specified for the installation environment</li>
                     </ul>
                   </div>
@@ -168,7 +168,7 @@ export default function UltraSlimLightBoxPage() {
                 <h3 className="text-2xl font-black mb-6 italic text-blue-400 uppercase tracking-tighter">Factory Advantage</h3>
                 <p className="text-slate-300 mb-8 leading-relaxed font-medium">Direct manufacturing from our 20,000sqm base in Dalian, established in 2006, keeps panel fabrication and finishing under one quality-control process.</p>
                 <div className="space-y-5">
-                  <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">Global DDP Shipping</span></div>
+                  <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">DDP Shipping by Quotation</span></div>
                   <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">MOQ: 1</span></div>
                   <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">Lead Time: 7–14 days</span></div>
                 </div>
