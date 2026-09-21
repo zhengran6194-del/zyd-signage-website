@@ -146,8 +146,8 @@ export type PageMetadataInput = {
  * scripts/generate-page-markdown.mjs, which fails the build if a page here has
  * no mirror. Keep the two lists in step.
  */
-const MARKDOWN_MIRROR_PREFIXES = ['/products/', '/guides/', '/case-studies/'];
-const MARKDOWN_MIRROR_PATHS = ['/about', '/contact', '/faq', '/products', '/guides', '/projects'];
+const MARKDOWN_MIRROR_PREFIXES = ['/products/', '/guides/', '/case-studies/', '/solutions/'];
+const MARKDOWN_MIRROR_PATHS = ['/about', '/contact', '/faq', '/products', '/guides', '/projects', '/solutions'];
 
 const hasMarkdownMirror = (path: string): boolean =>
   MARKDOWN_MIRROR_PREFIXES.some((prefix) => path.startsWith(prefix)) ||

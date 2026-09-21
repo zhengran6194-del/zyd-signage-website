@@ -1,0 +1,80 @@
+import type { SolutionDefinition } from '@/components/SolutionPage';
+
+const commonProducts = {
+  wayfinding: { label: 'Architectural Wayfinding System', href: '/products/architectural-wayfinding-system', description: 'Coordinate directional panels, directories, mounting, and finishes around the visitor journey.' },
+  complete: { label: 'Complete Signage System', href: '/products/complete-signage-system', description: 'Group exterior identification, illuminated elements, wayfinding, and interior branding into one brief.' },
+  pylon: { label: 'Outdoor Pylon & Monument Sign', href: '/products/outdoor-pylon-monument-sign', description: 'Review freestanding identification, tenant panels, visibility, engineering inputs, and delivery scope.' },
+  letters: { label: 'Custom Halo-Lit Letters', href: '/products/custom-halo-lit-letters', description: 'Compare illuminated letter construction, mounting background, finish, wiring, and service access.' },
+  lightbox: { label: 'Ultra-Slim LED Light Box', href: '/products/ultra-slim-led-light-box', description: 'Plan projecting or wall-mounted illuminated panels around viewing direction, power, and service access.' },
+  metal: { label: 'Metal & Acrylic Logo Sign', href: '/products/metal-acrylic-logo-sign', description: 'Define logo proportions, face material, finish, illumination, and mounting details.' },
+  medical: { label: 'Medical Care Signage', href: '/products/medical-care-signage', description: 'Coordinate functional room, directional, and identification signage around a healthcare site brief.' },
+  landscape: { label: 'Custom Landscape Furniture', href: '/products/custom-landscape-furniture', description: 'Coordinate outdoor furniture and branded elements with the local environment and maintenance access.' },
+};
+
+export const solutions: SolutionDefinition[] = [
+  {
+    slug: 'mall-wayfinding-signage',
+    title: 'Mall Wayfinding Signage for Commercial Complexes',
+    description: 'A buyer-focused route for shopping malls and commercial complexes that need exterior identification, parking and arrival guidance, directories, tenant branding, and functional signs to work as one system.',
+    eyebrow: 'Commercial complex signage solution',
+    image: { src: '/assets/images/projects/dalian-water-plaza-mall-exterior-night.jpg', alt: 'Illuminated commercial complex signage and wayfinding at night' },
+    directAnswer: 'Mall wayfinding signage should connect the arrival point, vehicle and pedestrian routes, tenant directories, facilities, and building identification through one coordinated visual system. Start with the site journey and decision points, then align pylon or monument signs, illuminated letters, directories, overhead signs, and functional signage to the same project brief.',
+    scenarios: ['Shopping mall arrival and gateway identification', 'Parking, garage, pedestrian, lift, restroom, and facility directions', 'Tenant directories and floor-level visitor orientation', 'Commercial complex refreshes with multiple sign types and finishes'],
+    signTypes: ['Pylon or monument identification at the approach', 'Illuminated channel letters or logo signage on the facade', 'Freestanding floor directories and tenant panels', 'Overhead directional signs, restroom signs, and functional notices'],
+    procurementItems: ['Site plan, approach directions, and visitor decision points', 'Brand artwork, tenant list, directory hierarchy, and language requirements', 'Approximate dimensions, quantities, mounting surfaces, and access constraints', 'Material and finish direction: stainless steel, acrylic, aluminum, or coated routes', 'Lighting intent, power access, service route, destination, and installation scope'],
+    faqs: [
+      { question: 'What signs are usually included in a mall wayfinding brief?', answer: 'A mall brief may include exterior identification, pylon or monument signs, facade letters, parking and pedestrian directions, floor directories, facility signs, and tenant branding. The exact package depends on the site journey, sign locations, and project scope.' },
+      { question: 'How should a commercial complex choose materials and finishes?', answer: 'Select materials and finishes around the exposure, appearance, fabrication, drainage, cleaning access, and maintenance plan for each location. Stainless steel, acrylic, aluminum, and galvanized or coated routes can be reviewed against the confirmed design and environment.' },
+      { question: 'What should be sent before requesting a mall signage quotation?', answer: 'Send the site plan, sign schedule, artwork or brand standards, approximate dimensions, quantities, mounting information, lighting direction, destination, and installation responsibility. Unknown items can be marked for clarification rather than assumed.' },
+    ],
+    products: [commonProducts.wayfinding, commonProducts.complete, commonProducts.pylon, commonProducts.letters, commonProducts.lightbox],
+    caseStudies: [{ label: 'Water Fashion Plaza Wayfinding Case Study', href: '/case-studies/dalian-water-plaza-wayfinding-signage', description: 'Review an actual commercial complex signage system spanning the exterior pylon, facade identification, garage, directories, overhead signs, facilities, and interior elements.' }],
+    briefProduct: 'mall wayfinding signage',
+    briefItems: ['Site plan and visitor routes', 'Sign schedule and tenant directory', 'Artwork, dimensions, and quantities', 'Materials, finishes, and lighting direction', 'Mounting, destination, and installation scope'],
+    whatsappMessage: 'Hi Aaron, I am planning mall or commercial complex wayfinding signage. I would like to share the site plan, sign schedule, artwork, quantities, destination, and installation requirements for a project review.',
+  },
+  {
+    slug: 'industrial-park-signage',
+    title: 'Industrial Park Signage and Wayfinding Systems',
+    description: 'A practical signage route for industrial parks that need gateways, road and building identification, production-zone directions, functional signs, and consistent materials across a large site.',
+    eyebrow: 'Industrial park signage solution',
+    image: { src: '/assets/images/projects/hengli-industrial-park-entrance-image-wall.jpg', alt: 'Industrial park gateway signage and site identification' },
+    directAnswer: 'Industrial park signage combines gateway identification, road and building wayfinding, production-zone markers, safety and functional signs, and visitor orientation. The procurement brief should separate vehicle routes, pedestrian routes, building names, sign visibility, mounting conditions, materials, and the installation sequence before production.',
+    scenarios: ['Industrial park gateway and campus identification', 'Roadside directions between buildings, zones, and entrances', 'Production, warehouse, office, parking, and service-area identification', 'Multi-location programs requiring a repeatable sign and finish standard'],
+    signTypes: ['Large gateway pylon or monument identification', 'Roadside directional and building identification signs', 'Functional signs for production zones, parking, and service areas', 'Directories, entrance letters, and interior or reception identification'],
+    procurementItems: ['Site master plan, vehicle routes, pedestrian routes, and building list', 'Bilingual or multilingual text, artwork, arrows, and sign hierarchy', 'Sign locations, sightlines, approximate dimensions, quantities, and mounting conditions', 'Exposure, material and finish direction, foundation or interface information', 'Phasing, destination, packing, installation responsibility, and DDP quotation inputs'],
+    faqs: [
+      { question: 'What is the first document to prepare for an industrial park signage project?', answer: 'Start with a site master plan showing gateways, roads, buildings, production zones, parking, and service routes. Add a sign schedule so each location, message, direction, approximate size, and quantity can be reviewed together.' },
+      { question: 'Can one material route be used across an industrial park?', answer: 'A repeatable material and finish standard can support consistency, but each location still needs an exposure, mounting, fabrication, and maintenance review. Stainless steel, aluminum, acrylic, and galvanized or coated routes may be compared against the project brief.' },
+      { question: 'How are large industrial park programs phased?', answer: 'Phasing can follow site zones, building readiness, or the construction and opening sequence. Confirm the sign schedule, artwork revisions, installation access, packing, destination, and delivery scope before setting the production plan.' },
+    ],
+    products: [commonProducts.complete, commonProducts.wayfinding, commonProducts.pylon, commonProducts.metal, commonProducts.landscape],
+    caseStudies: [{ label: 'Hengli Industrial Park Wayfinding Case Study', href: '/case-studies/hengli-industrial-park-wayfinding-signage', description: 'Review a coordinated industrial park system covering gateways, roads, buildings, production zones, and functional spaces.' }],
+    briefProduct: 'industrial park signage',
+    briefItems: ['Master plan and vehicle routes', 'Building, zone, and parking sign schedule', 'Artwork, languages, dimensions, and quantities', 'Exposure, materials, finishes, and mounting', 'Phasing, destination, and installation scope'],
+    whatsappMessage: 'Hi Aaron, I am planning industrial park signage and wayfinding. I would like to share the master plan, building list, sign schedule, quantities, destination, and phasing requirements for a project review.',
+  },
+  {
+    slug: 'hotel-signage',
+    title: 'Hotel Signage Systems for Guest Arrival and Navigation',
+    description: 'A project-focused route for hotel owners, designers, and contractors planning arrival identification, illuminated branding, directories, guest navigation, room and facility signs, and back-of-house functional signage.',
+    eyebrow: 'Hospitality signage solution',
+    image: { src: '/assets/images/hero-wayfinding.jpg', alt: 'Architectural wayfinding signage suitable for a hotel guest navigation brief' },
+    directAnswer: 'Hotel signage should guide a guest from the approach and drop-off point through the lobby, rooms, facilities, parking, and service areas without losing the property’s visual language. Build the brief around arrival visibility, guest decision points, directories, room and facility identification, materials, illumination, mounting, and installation access.',
+    scenarios: ['Hotel entrance, driveway, and drop-off identification', 'Lobby, reception, floor, room, lift, restroom, and facility navigation', 'Parking, service, back-of-house, and functional signage', 'New-build, refurbishment, and brand-standard coordination projects'],
+    signTypes: ['Exterior pylon, monument, or entrance identification', 'Illuminated facade letters and logo signs', 'Lobby directories, floor identifiers, and room or facility signs', 'Parking, service, safety, and other functional signage'],
+    procurementItems: ['Site plan, arrival route, guest journey, and key decision points', 'Brand guidelines, artwork, text hierarchy, and language requirements', 'Sign schedule, approximate dimensions, quantities, and mounting surfaces', 'Material, finish, lighting, power access, service route, and maintenance direction', 'Destination, packaging, installation responsibility, and any DDP quotation inputs'],
+    faqs: [
+      { question: 'What should a hotel signage brief cover first?', answer: 'Start with the guest journey from the approach and drop-off point through reception, lifts, rooms, facilities, parking, and service areas. Then map each decision point to a sign type, message, location, material, finish, and installation requirement.' },
+      { question: 'Which materials can be considered for hotel signage?', answer: 'Material selection follows the location, exposure, design language, finish, fabrication, cleaning access, and maintenance plan. Stainless steel, acrylic, aluminum, and galvanized or coated routes can be reviewed for the relevant exterior, interior, and functional signs.' },
+      { question: 'Can hotel signage include both illuminated branding and functional signs?', answer: 'Yes, a hotel program can coordinate illuminated entrance or facade branding with directories, room and facility identification, parking, service, and other functional signs. The quotation should separate the sign types, artwork, mounting, lighting, and installation scope.' },
+    ],
+    products: [commonProducts.complete, commonProducts.wayfinding, commonProducts.letters, commonProducts.metal, commonProducts.medical],
+    caseStudies: [{ label: 'Explore the Signage Projects Index', href: '/projects', description: 'Review available architectural, commercial, and wayfinding project references before sending a hotel signage brief.' }],
+    briefProduct: 'hotel signage system',
+    briefItems: ['Site plan and guest journey', 'Sign schedule and brand artwork', 'Dimensions, quantities, and mounting surfaces', 'Materials, finishes, and lighting direction', 'Destination, access, and installation scope'],
+    whatsappMessage: 'Hi Aaron, I am planning hotel signage for arrival, guest navigation, facilities, and service areas. I would like to share the site plan, sign schedule, artwork, quantities, destination, and installation requirements for a project review.',
+  },
+];
+
+export const solutionBySlug = Object.fromEntries(solutions.map((solution) => [solution.slug, solution]));

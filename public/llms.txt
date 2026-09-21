@@ -41,6 +41,13 @@ ZYD Signage is the trading name of Dalian Zhiyudao Signage & Tech. Co., Ltd. The
 
 - [Full product index](https://www.zydsign.com/products/index.md)
 
+## Project scenario solutions
+
+- [Mall Wayfinding Signage](https://www.zydsign.com/solutions/mall-wayfinding-signage/index.md): Scenario-based planning for commercial complexes, covering arrival identification, pylon signs, facade letters, directories, overhead directions, and functional signage.
+- [Industrial Park Signage](https://www.zydsign.com/solutions/industrial-park-signage/index.md): Scenario-based planning for gateways, roads, buildings, production zones, parking, functional signs, and repeatable materials across a large site.
+- [Hotel Signage](https://www.zydsign.com/solutions/hotel-signage/index.md): Scenario-based planning for hotel arrival, illuminated branding, directories, guest navigation, room and facility signs, parking, and service areas.
+- [Solutions index](https://www.zydsign.com/solutions/index.md)
+
 ## Buying guides
 
 - [How Much Do Custom Channel Letters Cost?](https://www.zydsign.com/guides/how-much-do-custom-channel-letters-cost/index.md): The project inputs that shape a channel letter quotation, from artwork and dimensions to lighting, finish, mounting, and delivery scope.

@@ -21,11 +21,12 @@ const ROUTE_GROUPS = [
   { prefix: '/products', dir: 'products' },
   { prefix: '/guides', dir: 'guides' },
   { prefix: '/case-studies', dir: 'case-studies' },
+  { prefix: '/solutions', dir: 'solutions' },
 ];
 
 // Pages that sit at the top level as a single HTML file rather than in a group:
 // the standing pages, plus the three listing routes.
-const TOP_LEVEL_PAGES = ['/about', '/contact', '/faq', '/products', '/guides', '/projects'];
+const TOP_LEVEL_PAGES = ['/about', '/contact', '/faq', '/products', '/guides', '/projects', '/solutions'];
 
 const VOID_TAGS = new Set(['br', 'img', 'hr', 'input', 'meta', 'link', 'source', 'area', 'base', 'col', 'embed', 'track', 'wbr']);
 
