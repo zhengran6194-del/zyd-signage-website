@@ -145,7 +145,11 @@ export default function GuideArticle(guide: GuideArticleProps) {
               <ol className="space-y-5 list-decimal pl-5">
                 {guide.sources.map((source) => (
                   <li key={source.url} className="pl-2 text-slate-700">
-                    <a href={source.url} target="_blank" rel="noopener noreferrer" className="font-bold text-blue-700 underline decoration-blue-200 underline-offset-4 hover:text-blue-900">{source.name}</a>
+                    {source.url.startsWith('/') ? (
+                      <Link href={source.url} className="font-bold text-blue-700 underline decoration-blue-200 underline-offset-4 hover:text-blue-900">{source.name}</Link>
+                    ) : (
+                      <a href={source.url} target="_blank" rel="noopener noreferrer" className="font-bold text-blue-700 underline decoration-blue-200 underline-offset-4 hover:text-blue-900">{source.name}</a>
+                    )}
                     <p className="text-sm text-slate-500 mt-1">{source.note}</p>
                   </li>
                 ))}

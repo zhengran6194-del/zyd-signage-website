@@ -37,6 +37,12 @@ const guides = [
     desc: 'A buyer-focused guide to design development, fabrication, finishing, illumination, quality control, packing and delivery.',
     href: '/guides/custom-signage-manufacturing-process',
   },
+  {
+    tag: 'Materials & Finishes',
+    title: 'How to Choose Materials and Finishes for Illuminated Signage',
+    desc: 'A project-based guide to illuminated letters, sheet materials, surface finishes, light-source checks, and scenario-specific selection.',
+    href: '/guides/signage-material-selection-guide',
+  },
 ];
 
 export default function GuidesPage() {
