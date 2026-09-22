@@ -13,7 +13,12 @@ const guide: GuideArticleData = {
         'The same logo can need a different construction at a mall entrance, on an exposed building facade, inside a hotel lobby, or on an industrial park gateway. Begin by defining where the sign will sit, who needs to read it, how far away it must work, whether it is illuminated, and how the installation team will access it later.',
         'For a wayfinding system, the environment review should include vehicle and pedestrian routes, decision points, viewing distance, mounting surface, cleaning access, and the relationship between exterior identification and interior directories. For a brand sign, add the intended day and night effect, face treatment, return depth, wiring route, and service opening.'
       ],
-      bullets: ['Indoor or outdoor exposure, including coastal or salt-air conditions where relevant.', 'Viewing distance, sign scale, day/night appearance, and surrounding lighting.', 'Mounting surface, access equipment, drainage, cleaning, wiring, and maintenance assumptions.', 'Destination, packing, installation responsibility, and any DDP delivery scope to be quoted.']
+      bullets: ['Indoor or outdoor exposure, including coastal or salt-air conditions where relevant.', 'Viewing distance, sign scale, day/night appearance, and surrounding lighting.', 'Mounting surface, access equipment, drainage, cleaning, wiring, and maintenance assumptions.', 'Destination, packing, installation responsibility, and any DDP delivery scope to be quoted.'],
+      image: {
+        src: '/assets/images/guides/signage-material-selection-guide-mall-light-box.png',
+        alt: 'Illuminated light boxes installed in a bright indoor shopping mall',
+        caption: 'Project environment changes the required sign construction, lighting, mounting, and maintenance brief.'
+      }
     },
     {
       heading: '2. Illuminated letter constructions: match the build to the brief',
@@ -29,6 +34,11 @@ const guide: GuideArticleData = {
       ],
       firstLabel: 'Possible direction',
       secondLabel: 'Buyer checks',
+      image: {
+        src: '/assets/images/guides/signage-material-selection-guide-illuminated-letters.png',
+        alt: 'Dimensional illuminated letters and acrylic sign faces shown in different finishes',
+        caption: 'Letter construction, face material, return depth, and viewing distance should be reviewed together.'
+      }
     },
     {
       heading: '3. Sheet materials: stainless steel, aluminum, galvanized steel, or acrylic',
@@ -36,7 +46,12 @@ const guide: GuideArticleData = {
         '304 stainless steel, aluminum, galvanized steel, and acrylic can each have a place in a signage program. The selection should follow exposure, fabrication, weight, finish, transparency or opacity, mounting, cleaning, and the appearance required by the design. A material comparison is useful only when the sign location and construction are known.',
         '304 stainless steel can be considered for exposed metal elements where its appearance and project environment fit the brief. Aluminum can be considered when lower weight, larger panels, or an exterior route calls for it. Galvanized steel may be reviewed for suitable protected or coated applications, while acrylic is often used for faces, translucent elements, letters, and shaped panels where light transmission or form is part of the design. A project-specific review should still confirm the selected grade, thickness, preparation, and finish.'
       ],
-      bullets: ['304 stainless steel: review for exposed metal, finish, fabrication, and coastal or salt-air context.', 'Aluminum: review when weight, panel size, corrosion context, and mounting are important.', 'Galvanized steel: confirm substrate, coating route, exposure, edges, drainage, and maintenance.', 'Acrylic: confirm thickness, dimensions, light transmission, colour, support, and handling assumptions.', '201 stainless steel may be discussed as a general material option, but it should not be treated as a site-wide recommendation without project review.']
+      bullets: ['304 stainless steel: review for exposed metal, finish, fabrication, and coastal or salt-air context.', 'Aluminum: review when weight, panel size, corrosion context, and mounting are important.', 'Galvanized steel: confirm substrate, coating route, exposure, edges, drainage, and maintenance.', 'Acrylic: confirm thickness, dimensions, light transmission, colour, support, and handling assumptions.', '201 stainless steel may be discussed as a general material option, but it should not be treated as a site-wide recommendation without project review.'],
+      image: {
+        src: '/assets/images/guides/signage-material-selection-guide-coastal-sheet-material.png',
+        alt: 'Metal sign panel mounted on a coastal site beside the sea',
+        caption: 'Coastal exposure makes substrate, edge treatment, finish, drainage, and maintenance part of the material decision.'
+      }
     },
     {
       heading: '4. Surface finishes change the appearance and maintenance brief',
@@ -44,7 +59,12 @@ const guide: GuideArticleData = {
         'The substrate is only part of the decision. Spray or baked paint, fluorocarbon coating, electroplating, anodising, and brushing can create different visual effects and require different preparation, inspection, cleaning, and maintenance assumptions. The correct finish depends on the material, exposure, colour, texture, location, and design intent.',
         'Use an agreed colour reference and sample wherever the finish is important to the brand system. For a coastal or exposed application, ask the supplier to state the proposed preparation, coating route, edge treatment, inspection scope, and maintenance assumptions instead of treating a finish name as a performance guarantee.'
       ],
-      bullets: ['Record substrate, preparation, colour reference, gloss or texture, and finish route.', 'Use a physical or documented sample when colour and surface appearance are critical.', 'Check visible edges, returns, joints, cut-outs, and transitions between different materials.', 'Keep cleaning, access, replacement, and future touch-up assumptions in the project record.']
+      bullets: ['Record substrate, preparation, colour reference, gloss or texture, and finish route.', 'Use a physical or documented sample when colour and surface appearance are critical.', 'Check visible edges, returns, joints, cut-outs, and transitions between different materials.', 'Keep cleaning, access, replacement, and future touch-up assumptions in the project record.'],
+      image: {
+        src: '/assets/images/guides/signage-material-selection-guide-surface-finish-samples.png',
+        alt: 'Brushed, polished, painted, and metallic surface finish samples arranged for comparison',
+        caption: 'Finish samples make colour, texture, gloss, and preparation choices easier to compare before production.'
+      }
     },
     {
       heading: '5. Light-source selection: review the whole illuminated sign',
@@ -52,7 +72,12 @@ const guide: GuideArticleData = {
         'For an illuminated sign, brightness is only one part of the brief. Review light distribution, face material, letter depth, internal spacing, power location, wiring, service access, glare, surrounding light, and the intended colour temperature. Warm, neutral, and cool white examples can help align the design conversation, but the final selection should follow the project appearance and approval sample.',
         'Ask for the proposed light-source layout, component information, enclosure details, and applicable inspection records. Uniformity, ageing or burn-in checks, waterproofing, lifetime, and component brand should be treated as project-specific items to verify in supplier documents and the agreed inspection scope, not as blanket promises for every sign.'
       ],
-      bullets: ['Define the day/night visual effect and acceptable colour-temperature direction.', 'Review module or strip layout against letter depth, face material, returns, and enclosure.', 'Confirm wiring, power access, service openings, packing, and installation sequence.', 'Request project-specific component, inspection, ageing, and water-ingress information where required.']
+      bullets: ['Define the day/night visual effect and acceptable colour-temperature direction.', 'Review module or strip layout against letter depth, face material, returns, and enclosure.', 'Confirm wiring, power access, service openings, packing, and installation sequence.', 'Request project-specific component, inspection, ageing, and water-ingress information where required.'],
+      image: {
+        src: '/assets/images/guides/signage-material-selection-guide-light-source-assembly.png',
+        alt: 'Exploded illuminated sign assembly showing LED modules, face panel, returns, and backplate',
+        caption: 'Light distribution depends on module layout, face material, letter depth, wiring, and service access.'
+      }
     },
     {
       heading: '6. Match the selection to the project scenario',
@@ -68,6 +93,11 @@ const guide: GuideArticleData = {
       ],
       firstLabel: 'Starting direction',
       secondLabel: 'Confirm before production',
+      image: {
+        src: '/assets/images/guides/signage-material-selection-guide-rooftop-installation.png',
+        alt: 'Large dimensional letters being installed on a high-rise rooftop',
+        caption: 'Large facade and roof signs require sightline, structure, wind, access, and local review checks.'
+      }
     },
   ],
   checklistTitle: 'Buyer checklist for material selection',
