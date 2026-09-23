@@ -13,6 +13,8 @@
 
 # --- Group 1: guides (previously submitted with a non-validated key) ---
 # status 200
+https://www.zydsign.com/guides/signage-procurement-low-bid-pitfalls
+# status 200
 https://www.zydsign.com/guides/signage-material-selection-guide
 # status 200
 https://www.zydsign.com/guides/how-much-do-custom-channel-letters-cost

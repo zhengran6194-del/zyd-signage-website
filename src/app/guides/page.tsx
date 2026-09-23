@@ -43,6 +43,12 @@ const guides = [
     desc: 'A project-based guide to illuminated letters, sheet materials, surface finishes, light-source checks, and scenario-specific selection.',
     href: '/guides/signage-material-selection-guide',
   },
+  {
+    tag: 'Procurement',
+    title: 'Low-Bid Signage Tenders: Why the Cheapest Quote Fails at Acceptance',
+    desc: 'Where a signage price difference hides, the defects that surface at acceptance, the real cost of rework, and the technical requirements to write into the tender.',
+    href: '/guides/signage-procurement-low-bid-pitfalls',
+  },
 ];
 
 export default function GuidesPage() {

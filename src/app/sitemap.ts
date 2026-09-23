@@ -39,6 +39,7 @@ const routes = [
   { path: "/guides/how-to-choose-the-right-sign-for-your-business", priority: 0.7 },
   { path: "/guides/custom-signage-manufacturing-process", priority: 0.7 },
   { path: "/guides/signage-material-selection-guide", priority: 0.8 },
+  { path: "/guides/signage-procurement-low-bid-pitfalls", priority: 0.8 },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

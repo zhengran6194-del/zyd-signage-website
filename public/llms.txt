@@ -50,6 +50,7 @@ ZYD Signage is the trading name of Dalian Zhiyudao Signage & Tech. Co., Ltd. The
 
 ## Buying guides
 
+- [Low-Bid Signage Tenders: Why the Cheapest Quote Fails at Acceptance](https://www.zydsign.com/guides/signage-procurement-low-bid-pitfalls/index.md): A procurement guide to signage tenders, where a price difference hides, the defects that surface at acceptance, the cost of rework, and the technical requirements to specify before award.
 - [How to Choose Materials and Finishes for Illuminated Signage](https://www.zydsign.com/guides/signage-material-selection-guide/index.md): A buyer guide to illuminated letter construction, stainless steel, aluminum, galvanized steel and acrylic routes, surface finishes, light-source checks, and scenario-specific selection.
 - [How Much Do Custom Channel Letters Cost?](https://www.zydsign.com/guides/how-much-do-custom-channel-letters-cost/index.md): The project inputs that shape a channel letter quotation, from artwork and dimensions to lighting, finish, mounting, and delivery scope.
 - [Front-Lit vs Halo-Lit Channel Letters](https://www.zydsign.com/guides/front-lit-vs-halo-lit-channel-letters/index.md): How front-lit and halo-lit letters differ in visual effect, mounting background, service planning, and the details a buyer should confirm.
