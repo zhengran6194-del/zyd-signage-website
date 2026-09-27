@@ -28,7 +28,10 @@ export const solutions: SolutionDefinition[] = [
       { question: 'What should be sent before requesting a mall signage quotation?', answer: 'Send the site plan, sign schedule, artwork or brand standards, approximate dimensions, quantities, mounting information, lighting direction, destination, and installation responsibility. Unknown items can be marked for clarification rather than assumed.' },
     ],
     products: [commonProducts.wayfinding, commonProducts.complete, commonProducts.pylon, commonProducts.letters, commonProducts.lightbox],
-    caseStudies: [{ label: 'Water Fashion Plaza Wayfinding Case Study', href: '/case-studies/dalian-water-plaza-wayfinding-signage', description: 'Review an actual commercial complex signage system spanning the exterior pylon, facade identification, garage, directories, overhead signs, facilities, and interior elements.' }],
+    caseStudies: [
+      { label: 'Water Fashion Plaza Wayfinding Case Study', href: '/case-studies/dalian-water-plaza-wayfinding-signage', description: 'Review an actual commercial complex signage system spanning the exterior pylon, facade identification, garage, directories, overhead signs, facilities, and interior elements.' },
+      { label: 'Pavilion Dalian Festive Installation Case Study', href: '/case-studies/pavilion-dalian-mall-festive-installations', description: 'Review seasonal Christmas and Lunar New Year atrium installations for a shopping centre, covering suspended structures, integrated lighting, and night-time installation.' },
+    ],
     briefProduct: 'mall wayfinding signage',
     briefItems: ['Site plan and visitor routes', 'Sign schedule and tenant directory', 'Artwork, dimensions, and quantities', 'Materials, finishes, and lighting direction', 'Mounting, destination, and installation scope'],
     whatsappMessage: 'Hi Aaron, I am planning mall or commercial complex wayfinding signage. I would like to share the site plan, sign schedule, artwork, quantities, destination, and installation requirements for a project review.',

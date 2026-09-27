@@ -36,7 +36,15 @@ https://www.zydsign.com/products/outdoor-waste-bin
 # status 200
 https://www.zydsign.com/products/custom-planter-box
 
-# --- Group 4: updated pages (homepage + catalog + product detail pages) ---
+# --- Group 4: case studies (NEW) ---
+# status 200
+https://www.zydsign.com/case-studies/pavilion-dalian-mall-festive-installations
+# status 200
+https://www.zydsign.com/case-studies/dalian-water-plaza-wayfinding-signage
+# status 200
+https://www.zydsign.com/case-studies/hengli-industrial-park-wayfinding-signage
+
+# --- Group 5: updated pages (homepage + catalog + product detail pages) ---
 # status 200
 https://www.zydsign.com/
 # status 200

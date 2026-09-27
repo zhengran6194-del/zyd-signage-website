@@ -26,6 +26,7 @@ const caseStudies: CaseStudy[] = [
   { title: 'HENGLI INDUSTRIAL PARK MONUMENT', tag: 'Monument', desc: 'Landmark monument signage for Hengli Industrial Park in Dalian, China, delivered for the Davos period.', img: 'hengli-monument.jpg' },
   { title: 'WATER FASHION PLAZA WAYFINDING', tag: 'Retail', desc: 'Wayfinding and architectural signage for a commercial complex in Dalian, China, from the outdoor pylon sign through to the interior floor directories.', img: 'projects/dalian-water-plaza-facade-letters.jpg', href: '/case-studies/dalian-water-plaza-wayfinding-signage' },
   { title: 'HENGLI INDUSTRIAL PARK WAYFINDING', tag: 'Industrial Park', desc: 'A coordinated wayfinding and signage system connecting the gateway, roads, buildings, production zones and functional spaces.', img: 'projects/hengli-industrial-park-entrance-image-wall.jpg', href: '/case-studies/hengli-industrial-park-wayfinding-signage' },
+  { title: 'PAVILION DALIAN FESTIVE INSTALLATIONS', tag: 'Retail', desc: 'Christmas and Lunar New Year atrium installations for a multi-level shopping centre in Dalian, China, built as suspended and floor elements across a tall voided atrium.', img: 'projects/pavilion-dalian-atrium-multi-level-overview.webp', href: '/case-studies/pavilion-dalian-mall-festive-installations' },
 ];
 
 const CARD_CLASS =
