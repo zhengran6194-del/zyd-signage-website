@@ -104,6 +104,14 @@ Open case study →
 
 <https://www.zydsign.com/case-studies/dalian-water-plaza-wayfinding-signage>
 
+### Pavilion Dalian Festive Installation Case Study
+
+Review seasonal Christmas and Lunar New Year atrium installations for a shopping centre, covering suspended structures, integrated lighting, and night-time installation.
+
+Open case study →
+
+<https://www.zydsign.com/case-studies/pavilion-dalian-mall-festive-installations>
+
 ## Frequently asked questions
 
 ### What signs are usually included in a mall wayfinding brief?
