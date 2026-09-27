@@ -211,14 +211,14 @@ export default function PavilionDalianFestiveInstallationsCaseStudy() {
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.zydsign.com' },
       { '@type': 'ListItem', position: 2, name: 'Case Studies', item: 'https://www.zydsign.com/projects' },
-      { '@type': 'ListItem', position: 3, name: 'Pavilion Dalian festive installations', item: caseStudyUrl },
+      { '@type': 'ListItem', position: 3, name: 'Pavilion Dalian | Festive Installations Driving Footfall', item: caseStudyUrl },
     ],
   };
 
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: 'Pavilion Dalian: Shopping Centre Festive Installations in Dalian, China',
+    headline: 'Pavilion Dalian | Festive Installations Driving Footfall',
     description: 'A multi-level shopping centre in Dalian, China, ran Christmas and Lunar New Year atrium installation programmes with custom steel structures, integrated lighting and night-time installation. ZYD Signage designed, manufactured and installed them.',
     url: caseStudyUrl,
     mainEntityOfPage: caseStudyUrl,
@@ -249,7 +249,7 @@ export default function PavilionDalianFestiveInstallationsCaseStudy() {
             Case Study &bull; Retail Festive Installations
           </div>
           <h1 className="text-4xl lg:text-6xl font-black uppercase tracking-tighter leading-tight mb-6">
-            Pavilion Dalian: Shopping Centre Festive Installations
+            Pavilion Dalian | Festive Installations Driving Footfall
           </h1>
           <p className="text-slate-300 text-lg leading-relaxed max-w-3xl">
             A multi-level shopping centre in Dalian, China, needed Christmas and Lunar New Year
