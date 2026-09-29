@@ -716,6 +716,16 @@ export default function Home() {
                 <WhatsAppCta
                   label="Send Artwork"
                   message="Hi Aaron, I would like to send artwork for a signage project."
+                  brief={{
+                    product: 'a signage project',
+                    items: [
+                      'Artwork or logo file',
+                      'Sign types, approximate sizes and quantities',
+                      'Indoor or outdoor location and mounting surface',
+                      'Finish and lighting direction',
+                      'Site photos and ship-to country',
+                    ],
+                  }}
                   className="inline-flex items-center justify-center rounded border border-emerald-300 px-10 py-3 font-bold uppercase text-[12px] text-emerald-100 hover:bg-emerald-400 hover:text-slate-950 transition-all"
                 />
               </div>

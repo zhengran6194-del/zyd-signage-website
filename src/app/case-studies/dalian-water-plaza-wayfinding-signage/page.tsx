@@ -210,6 +210,8 @@ const faqs: Array<{ question: string; answer: string }> = [
 const relatedLinks: Array<{ href: string; label: string }> = [
   { href: '/products/architectural-wayfinding-system', label: 'Architectural Wayfinding Systems' },
   { href: '/products/complete-signage-system', label: 'Complete Signage Systems' },
+  { href: '/solutions/mall-wayfinding-signage', label: 'Mall wayfinding solution' },
+  { href: '/guides/how-to-choose-the-right-sign-for-your-business', label: 'How to choose the right sign' },
   { href: '/projects', label: 'All Case Studies' },
   { href: '/contact', label: 'Start a Project Brief' },
 ];

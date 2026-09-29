@@ -200,6 +200,8 @@ const faqs = [
 const relatedLinks = [
   { href: '/products/architectural-wayfinding-system', label: 'Architectural Wayfinding Systems' },
   { href: '/products/complete-signage-system', label: 'Complete Signage Systems' },
+  { href: '/solutions/industrial-park-signage', label: 'Industrial park signage solution' },
+  { href: '/guides/signage-procurement-low-bid-pitfalls', label: 'Procurement pitfalls to avoid' },
   { href: '/projects', label: 'All Case Studies' },
   { href: '/contact', label: 'Start a Project Brief' },
 ];
