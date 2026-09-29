@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { buildPageMetadata, ogImages } from "@/config/site";
 import ProductJsonLd from "@/components/ProductJsonLd";
 
-const title = "Acrylic Desk Signs";
+const title = "Custom Acrylic Desk Signs & Counter Displays";
 const description = "Custom acrylic desk signs and counter-top brand displays, fabricated factory-direct for global B2B projects.";
 const path = "/products/acrylic-desk-sign";
 

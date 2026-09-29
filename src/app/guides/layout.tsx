@@ -2,8 +2,10 @@ import type { Metadata } from "next";
 import { buildPageMetadata } from "@/config/site";
 
 const path = "/guides";
-const title = "Signage Guides";
-const description = "Practical buying and technical guides for custom signage projects, covering channel letter costs, illumination styles, sign selection, and outdoor materials.";
+// Rendered with the root template: "Signage Guides: Cost, Materials,
+// Installation | ZYD Signage" (59 characters).
+const title = "Signage Guides: Cost, Materials, Installation";
+const description = "Practical buying and technical guides for custom signage projects: channel letter costs, illumination, sign selection, outdoor materials, MOQ and lead time.";
 
 export const metadata: Metadata = buildPageMetadata({ title, description, path });
 

@@ -4,7 +4,7 @@ import JsonLd from "@/components/JsonLd";
 
 const path = "/guides/front-lit-vs-halo-lit-channel-letters";
 const title = "Front-Lit vs Halo-Lit Channel Letters";
-const description = "Compare front-lit and halo-lit channel letters by visual effect, mounting background, service planning, artwork, and the project details a commercial buyer should confirm.";
+const description = "Compare front-lit and halo-lit channel letters by visual effect, mounting background, service access, warranty terms and the project details a buyer confirms.";
 
 export const metadata: Metadata = buildPageMetadata({ title, description, path, image: ogImages.channelLetters, type: "article" });
 

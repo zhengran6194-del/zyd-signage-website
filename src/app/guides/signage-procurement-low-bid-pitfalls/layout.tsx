@@ -3,8 +3,8 @@ import { buildPageMetadata, ogImages, siteConfig } from '@/config/site';
 import JsonLd from '@/components/JsonLd';
 
 const path = '/guides/signage-procurement-low-bid-pitfalls';
-const title = 'Low-Bid Signage Tenders: Why the Cheapest Quote Fails at Acceptance';
-const description = 'A procurement guide to signage tenders and low-bid risk: where the price difference actually comes from, the defects that surface at acceptance, the real cost of rework, and the technical requirements to write into the specification before award.';
+const title = 'Why Low-Bid Signage Tenders Fail at Acceptance';
+const description = 'Why low-bid signage tenders fail at acceptance: where the price gap comes from, the defects, and the warranty and lead time clauses to fix before award.';
 
 export const metadata: Metadata = buildPageMetadata({ title, description, path, image: ogImages.channelLetters, type: 'article' });
 

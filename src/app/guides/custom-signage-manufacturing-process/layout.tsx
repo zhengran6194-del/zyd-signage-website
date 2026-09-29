@@ -4,7 +4,7 @@ import JsonLd from "@/components/JsonLd";
 
 const path = "/guides/custom-signage-manufacturing-process";
 const title = "How Custom Signage Is Made: 7 Manufacturing Steps";
-const description = "A buyer-focused guide to the custom signage manufacturing process, from design development and material checks through fabrication, quality control, packing and delivery.";
+const description = "How custom signage is manufactured: design development, material checks, fabrication, quality control, packing and DDP delivery scope.";
 
 export const metadata: Metadata = buildPageMetadata({ title, description, path, image: ogImages.system, type: "article" });
 

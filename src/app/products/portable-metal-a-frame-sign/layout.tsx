@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { buildPageMetadata, ogImages } from "@/config/site";
 import ProductJsonLd from "@/components/ProductJsonLd";
 
-const title = "Portable Metal A-Frame Signs";
+const title = "Portable Metal A-Frame Signs for Sidewalks";
 const description = "Portable metal A-frame signs for sidewalks, entrances and events, fabricated factory-direct for global B2B projects.";
 const path = "/products/portable-metal-a-frame-sign";
 

@@ -3,7 +3,7 @@ import { buildPageMetadata, ogImages } from "@/config/site";
 import ProductJsonLd from "@/components/ProductJsonLd";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Custom Landscape Furniture",
+  title: "Custom Landscape Furniture & Outdoor Seating",
   description: "Bespoke outdoor landscape branding, signage furniture, and seating manufactured for commercial projects.",
   path: "/products/custom-landscape-furniture",
   image: ogImages.landscape,
@@ -13,7 +13,7 @@ export default function Layout({ children }: Readonly<{ children: React.ReactNod
   return (
     <>
       <ProductJsonLd
-        name="Custom Landscape Furniture"
+        name="Custom Landscape Furniture & Outdoor Seating"
         description="Bespoke outdoor landscape branding, signage furniture, and seating manufactured for commercial projects."
         path="/products/custom-landscape-furniture"
         image="/assets/images/landscape-bench.jpg"

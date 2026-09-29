@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { buildPageMetadata, ogImages } from "@/config/site";
 
-const title = "Water Fashion Plaza Wayfinding Signage Case Study";
+// Rendered with the root template: "Water Fashion Plaza Signage Case Study |
+// ZYD Signage" (52 characters).
+const title = "Water Fashion Plaza Signage Case Study";
 const description =
   "How the wayfinding and signage system for Water Fashion Plaza, a commercial complex in Dalian, China, was designed, manufactured and installed.";
 

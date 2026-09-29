@@ -4,7 +4,7 @@ import JsonLd from "@/components/JsonLd";
 
 const path = "/guides/how-to-choose-the-right-sign-for-your-business";
 const title = "How to Choose the Right Sign for Your Business";
-const description = "A practical sign-selection guide for business owners, contractors, and project buyers comparing pylon, monument, building, wayfinding, and illuminated sign requirements.";
+const description = "A practical sign-selection guide comparing pylon, monument, building, wayfinding and illuminated signs, with accessibility requirements confirmed per project.";
 
 export const metadata: Metadata = buildPageMetadata({ title, description, path, image: ogImages.wayfinding, type: "article" });
 

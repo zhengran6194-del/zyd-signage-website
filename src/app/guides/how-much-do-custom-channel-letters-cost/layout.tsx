@@ -4,7 +4,7 @@ import JsonLd from "@/components/JsonLd";
 
 const path = "/guides/how-much-do-custom-channel-letters-cost";
 const title = "How Much Do Custom Channel Letters Cost?";
-const description = "A practical B2B guide to the information that shapes a custom channel letters quotation, from artwork and dimensions to lighting, finish, mounting, packing, and delivery scope.";
+const description = "What shapes a custom channel letters quotation: artwork, dimensions, materials such as aluminum, illumination, mounting, MOQ, packing and lead time.";
 
 export const metadata: Metadata = buildPageMetadata({ title, description, path, image: ogImages.channelLetters, type: "article" });
 

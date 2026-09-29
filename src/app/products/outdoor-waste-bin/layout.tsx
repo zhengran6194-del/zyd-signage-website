@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { buildPageMetadata, ogImages } from "@/config/site";
 import ProductJsonLd from "@/components/ProductJsonLd";
 
-const name = "Outdoor Waste Bin";
+const name = "Custom Outdoor Waste Bins for Public Spaces";
 const description = "Custom outdoor waste bins for hospitality, commercial, and public-space projects, with project-specific appearance and logo coordination.";
 const path = "/products/outdoor-waste-bin";
 const image = "/assets/images/outdoor-waste-bin.jpg";

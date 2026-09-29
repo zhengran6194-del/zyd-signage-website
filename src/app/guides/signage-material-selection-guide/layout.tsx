@@ -4,7 +4,7 @@ import JsonLd from '@/components/JsonLd';
 
 const path = '/guides/signage-material-selection-guide';
 const title = 'How to Choose Materials and Finishes for Illuminated Signage';
-const description = 'A practical buyer guide to choosing illuminated letter construction, sheet materials, surface finishes, light-source details, and project-specific options for indoor and outdoor signage.';
+const description = 'A practical guide to illuminated letter construction, sheet materials such as aluminum, stainless steel and acrylic, surface finishes, and light-source details.';
 
 export const metadata: Metadata = buildPageMetadata({ title, description, path, image: ogImages.channelLetters, type: 'article' });
 

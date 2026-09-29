@@ -3,8 +3,8 @@ import { buildPageMetadata, ogImages } from "@/config/site";
 import ProductJsonLd from "@/components/ProductJsonLd";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Architectural Wayfinding Systems",
-  description: "Factory-direct architectural wayfinding systems for indoor and outdoor commercial environments.",
+  title: "Architectural Wayfinding Systems & Braille Signage",
+  description: "Factory-direct architectural wayfinding and Braille signage, with accessibility requirements such as ADA confirmed against each project brief.",
   path: "/products/architectural-wayfinding-system",
   image: ogImages.wayfinding,
 });
@@ -13,8 +13,8 @@ export default function Layout({ children }: Readonly<{ children: React.ReactNod
   return (
     <>
       <ProductJsonLd
-        name="Architectural Wayfinding Systems"
-        description="Factory-direct architectural wayfinding systems for indoor and outdoor commercial environments."
+        name="Architectural Wayfinding Systems & Braille Signage"
+        description="Factory-direct architectural wayfinding and Braille signage, with accessibility requirements such as ADA confirmed against each project brief."
         path="/products/architectural-wayfinding-system"
         image="/assets/images/hero-wayfinding.jpg"
       />

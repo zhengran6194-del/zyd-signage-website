@@ -3,7 +3,7 @@ import { buildPageMetadata, ogImages } from "@/config/site";
 import ProductJsonLd from "@/components/ProductJsonLd";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Custom LED Neon Signs",
+  title: "Custom LED Neon Signs for Retail & Hospitality",
   description: "Custom LED neon flex signs for branding, interiors, hospitality, retail, and commercial spaces.",
   path: "/products/custom-led-neon-sign",
   image: ogImages.neon,
@@ -13,7 +13,7 @@ export default function Layout({ children }: Readonly<{ children: React.ReactNod
   return (
     <>
       <ProductJsonLd
-        name="Custom LED Neon Signs"
+        name="Custom LED Neon Signs for Retail & Hospitality"
         description="Custom LED neon flex signs for branding, interiors, hospitality, retail, and commercial spaces."
         path="/products/custom-led-neon-sign"
         image="/assets/images/cat-neon.webp"
