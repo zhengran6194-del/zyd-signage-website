@@ -49,6 +49,24 @@ const guides = [
     desc: 'Where a signage price difference hides, the defects that surface at acceptance, the real cost of rework, and the technical requirements to write into the tender.',
     href: '/guides/signage-procurement-low-bid-pitfalls',
   },
+  {
+    tag: 'Scenario Planning',
+    title: 'Mall Wayfinding & Directory Signage Systems',
+    desc: 'A buyer route for malls and commercial complexes that need exterior identification, parking guidance, directories, tenant branding and signs as one system.',
+    href: '/guides/mall-wayfinding-signage',
+  },
+  {
+    tag: 'Scenario Planning',
+    title: 'Industrial Park Signage and Wayfinding Systems',
+    desc: 'A signage route for industrial parks: gateways, road and building identification, production-zone directions and one material standard across a large site.',
+    href: '/guides/industrial-park-signage',
+  },
+  {
+    tag: 'Scenario Planning',
+    title: 'Hotel Signage & Guest Wayfinding Systems',
+    desc: 'A project route for hotels: arrival identification, illuminated branding, directories, guest navigation, room and facility signs, and functional signage.',
+    href: '/guides/hotel-signage',
+  },
 ];
 
 export default function GuidesPage() {

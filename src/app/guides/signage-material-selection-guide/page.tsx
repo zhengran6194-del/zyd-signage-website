@@ -118,9 +118,9 @@ const guide: GuideArticleData = {
   relatedLinks: [
     { href: '/products/custom-halo-lit-letters', label: 'Review illuminated letters' },
     { href: '/products/architectural-wayfinding-system', label: 'Review wayfinding systems' },
-    { href: '/solutions/mall-wayfinding-signage', label: 'See mall signage solution' },
-    { href: '/solutions/industrial-park-signage', label: 'See industrial park solution' },
-    { href: '/solutions/hotel-signage', label: 'See hotel signage solution' },
+    { href: '/guides/mall-wayfinding-signage', label: 'See mall signage solution' },
+    { href: '/guides/industrial-park-signage', label: 'See industrial park solution' },
+    { href: '/guides/hotel-signage', label: 'See hotel signage solution' },
     { href: '/contact', label: 'Discuss your project' },
   ],
   asideTitle: 'Need a material shortlist?',

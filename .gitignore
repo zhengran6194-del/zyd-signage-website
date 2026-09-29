@@ -30,6 +30,10 @@ temp/
 /public/products/*/index.md
 /public/guides/*/index.md
 /public/case-studies/*/index.md
+# /solutions was retired and its pages moved under /guides; the rules stay so a
+# stale copy can never be re-added to git by accident.
+/public/solutions/index.md
+/public/solutions/*/index.md
 /public/index.md
 /public/about/index.md
 /public/contact/index.md

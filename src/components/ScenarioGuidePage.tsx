@@ -3,10 +3,10 @@ import Link from 'next/link';
 import JsonLd from '@/components/JsonLd';
 import WhatsAppCta from '@/components/WhatsAppCta';
 
-export type SolutionFaq = { question: string; answer: string };
-export type SolutionLink = { label: string; href: string; description: string };
+export type ScenarioGuideFaq = { question: string; answer: string };
+export type ScenarioGuideLink = { label: string; href: string; description: string };
 
-export type SolutionDefinition = {
+export type ScenarioGuideDefinition = {
   slug: string;
   title: string;
   description: string;
@@ -16,9 +16,9 @@ export type SolutionDefinition = {
   scenarios: string[];
   signTypes: string[];
   procurementItems: string[];
-  faqs: SolutionFaq[];
-  products: SolutionLink[];
-  caseStudies: SolutionLink[];
+  faqs: ScenarioGuideFaq[];
+  products: ScenarioGuideLink[];
+  caseStudies: ScenarioGuideLink[];
   briefProduct: string;
   briefItems: string[];
   whatsappMessage: string;
@@ -26,14 +26,14 @@ export type SolutionDefinition = {
 
 const siteUrl = 'https://www.zydsign.com';
 
-export default function SolutionPage({ solution }: { solution: SolutionDefinition }) {
-  const pageUrl = `${siteUrl}/solutions/${solution.slug}`;
+export default function ScenarioGuidePage({ solution }: { solution: ScenarioGuideDefinition }) {
+  const pageUrl = `${siteUrl}/guides/${solution.slug}`;
   const breadcrumbJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: siteUrl },
-      { '@type': 'ListItem', position: 2, name: 'Solutions', item: `${siteUrl}/solutions` },
+      { '@type': 'ListItem', position: 2, name: 'Guides', item: `${siteUrl}/guides` },
       { '@type': 'ListItem', position: 3, name: solution.title, item: pageUrl },
     ],
   };
@@ -68,7 +68,7 @@ export default function SolutionPage({ solution }: { solution: SolutionDefinitio
         <section className="bg-slate-950 pt-28 pb-16 text-white sm:pt-36">
           <div className="container grid grid-cols-1 items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
             <div>
-              <Link href="/solutions" className="mb-6 inline-flex text-xs font-black uppercase tracking-[0.3em] text-blue-300 hover:text-white">Solutions</Link>
+              <Link href="/guides" className="mb-6 inline-flex text-xs font-black uppercase tracking-[0.3em] text-blue-300 hover:text-white">Guides</Link>
               <div className="mb-4 text-xs font-black uppercase tracking-[0.35em] text-emerald-300">{solution.eyebrow}</div>
               <h1 className="max-w-4xl text-4xl font-black uppercase leading-tight tracking-tight sm:text-5xl lg:text-6xl">{solution.title}</h1>
               <p className="mt-6 max-w-2xl text-lg font-medium leading-relaxed text-slate-300">{solution.description}</p>

@@ -44,6 +44,17 @@ https://www.zydsign.com/case-studies/dalian-water-plaza-wayfinding-signage
 # status 200
 https://www.zydsign.com/case-studies/hengli-industrial-park-wayfinding-signage
 
+# --- Group 6: scenario pages migrated from /solutions to /guides ---
+# The old /solutions URLs now 301 to these addresses, so the new URLs are the
+# ones to resubmit. Status must be measured after deploy; the pre-check in
+# indexnow-submit.mjs aborts the run if any of them is not 200.
+# status not yet measured
+https://www.zydsign.com/guides/mall-wayfinding-signage
+# status not yet measured
+https://www.zydsign.com/guides/industrial-park-signage
+# status not yet measured
+https://www.zydsign.com/guides/hotel-signage
+
 # --- Group 5: updated pages (homepage + catalog + product detail pages) ---
 # status 200
 https://www.zydsign.com/

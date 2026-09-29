@@ -1,4 +1,4 @@
-import type { SolutionDefinition } from '@/components/SolutionPage';
+import type { ScenarioGuideDefinition } from '@/components/ScenarioGuidePage';
 
 const commonProducts = {
   wayfinding: { label: 'Architectural Wayfinding System', href: '/products/architectural-wayfinding-system', description: 'Coordinate directional panels, directories, mounting, and finishes around the visitor journey.' },
@@ -11,7 +11,7 @@ const commonProducts = {
   landscape: { label: 'Custom Landscape Furniture', href: '/products/custom-landscape-furniture', description: 'Coordinate outdoor furniture and branded elements with the local environment and maintenance access.' },
 };
 
-export const solutions: SolutionDefinition[] = [
+export const scenarioGuides: ScenarioGuideDefinition[] = [
   {
     slug: 'mall-wayfinding-signage',
     title: 'Mall Wayfinding Signage for Commercial Complexes',
@@ -80,4 +80,4 @@ export const solutions: SolutionDefinition[] = [
   },
 ];
 
-export const solutionBySlug = Object.fromEntries(solutions.map((solution) => [solution.slug, solution]));
+export const scenarioGuideBySlug = Object.fromEntries(scenarioGuides.map((guide) => [guide.slug, guide]));

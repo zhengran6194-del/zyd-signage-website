@@ -19,6 +19,35 @@ const nextConfig: NextConfig = {
   // Do not advertise the framework version.
   poweredByHeader: false,
 
+  /**
+   * The three scenario pages used to live under /solutions. That section was
+   * retired and the pages moved next to the buying guides, so the old
+   * addresses are kept alive with permanent redirects instead of 404s: they
+   * were already published and may be indexed or linked from elsewhere.
+   */
+  async redirects() {
+    // statusCode 301 rather than `permanent: true`, which Next resolves to 308.
+    // Both are permanent, but 301 is the signal the migrated pages should carry.
+    return [
+      { source: "/solutions", destination: "/guides", statusCode: 301 },
+      {
+        source: "/solutions/mall-wayfinding-signage",
+        destination: "/guides/mall-wayfinding-signage",
+        statusCode: 301,
+      },
+      {
+        source: "/solutions/industrial-park-signage",
+        destination: "/guides/industrial-park-signage",
+        statusCode: 301,
+      },
+      {
+        source: "/solutions/hotel-signage",
+        destination: "/guides/hotel-signage",
+        statusCode: 301,
+      },
+    ];
+  },
+
   async headers() {
     return [
       {

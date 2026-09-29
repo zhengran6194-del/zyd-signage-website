@@ -195,7 +195,7 @@ const faqs: Array<{ question: string; answer: string }> = [
 ];
 
 const relatedLinks = [
-  { href: '/solutions/mall-wayfinding-signage', label: 'Mall signage solution' },
+  { href: '/guides/mall-wayfinding-signage', label: 'Mall signage solution' },
   { href: '/products/complete-signage-system', label: 'Complete signage system' },
   { href: '/guides/custom-signage-manufacturing-process', label: 'How custom signage is made' },
   { href: '/case-studies/dalian-water-plaza-wayfinding-signage', label: 'Water Fashion Plaza wayfinding' },

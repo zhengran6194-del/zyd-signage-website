@@ -41,14 +41,11 @@ ZYD Signage is the trading name of Dalian Zhiyudao Signage & Tech. Co., Ltd. The
 
 - [Full product index](https://www.zydsign.com/products/index.md)
 
-## Project scenario solutions
+## Guides
 
-- [Mall Wayfinding Signage](https://www.zydsign.com/solutions/mall-wayfinding-signage/index.md): Scenario-based planning for commercial complexes, covering arrival identification, pylon signs, facade letters, directories, overhead directions, and functional signage.
-- [Industrial Park Signage](https://www.zydsign.com/solutions/industrial-park-signage/index.md): Scenario-based planning for gateways, roads, buildings, production zones, parking, functional signs, and repeatable materials across a large site.
-- [Hotel Signage](https://www.zydsign.com/solutions/hotel-signage/index.md): Scenario-based planning for hotel arrival, illuminated branding, directories, guest navigation, room and facility signs, parking, and service areas.
-- [Solutions index](https://www.zydsign.com/solutions/index.md)
-
-## Buying guides
+- [Mall Wayfinding Signage](https://www.zydsign.com/guides/mall-wayfinding-signage/index.md): Scenario-based planning for commercial complexes, covering arrival identification, pylon signs, facade letters, directories, overhead directions, and functional signage.
+- [Industrial Park Signage](https://www.zydsign.com/guides/industrial-park-signage/index.md): Scenario-based planning for gateways, roads, buildings, production zones, parking, functional signs, and repeatable materials across a large site.
+- [Hotel Signage](https://www.zydsign.com/guides/hotel-signage/index.md): Scenario-based planning for hotel arrival, illuminated branding, directories, guest navigation, room and facility signs, parking, and service areas.
 
 - [Low-Bid Signage Tenders: Why the Cheapest Quote Fails at Acceptance](https://www.zydsign.com/guides/signage-procurement-low-bid-pitfalls/index.md): A procurement guide to signage tenders, where a price difference hides, the defects that surface at acceptance, the cost of rework, and the technical requirements to specify before award.
 - [How to Choose Materials and Finishes for Illuminated Signage](https://www.zydsign.com/guides/signage-material-selection-guide/index.md): A buyer guide to illuminated letter construction, stainless steel, aluminum, galvanized steel and acrylic routes, surface finishes, light-source checks, and scenario-specific selection.
