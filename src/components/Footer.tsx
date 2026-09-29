@@ -53,6 +53,7 @@ export default function Footer() {
               <h4 className="text-blue-950 font-black text-[11px] uppercase tracking-[0.3em] mb-12 border-b-2 border-slate-200 pb-4 inline-block">Corporate</h4>
               <ul className="space-y-8">
                 <li><Link href="/about" className="text-sm text-slate-600 hover:text-blue-600 font-bold transition-all tracking-tight">Production Base</Link></li>
+                <li><Link href="/solutions" className="text-sm text-slate-600 hover:text-blue-600 font-bold transition-all tracking-tight">Signage Solutions</Link></li>
                 <li><Link href="/projects" className="text-sm text-slate-600 hover:text-blue-600 font-bold transition-all tracking-tight">Case Portfolio</Link></li>
                 <li><Link href="/faq" className="text-sm text-slate-600 hover:text-blue-600 font-bold transition-all tracking-tight">Resources</Link></li>
                 <li><Link href="/guides/how-much-do-custom-channel-letters-cost" className="text-sm text-slate-600 hover:text-blue-600 font-bold transition-all tracking-tight">Channel Letters Cost Guide</Link></li>

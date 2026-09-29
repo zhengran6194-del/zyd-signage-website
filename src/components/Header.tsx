@@ -35,6 +35,7 @@ export default function Header() {
         {/* 导航居中偏右 */}
         <nav id="primary-nav" className={`primary-nav ${isMenuOpen ? 'open' : ''}`}>
           <Link href="/products" onClick={() => setIsMenuOpen(false)}>Products</Link>
+          <Link href="/solutions" onClick={() => setIsMenuOpen(false)}>Solutions</Link>
           <Link href="/projects" onClick={() => setIsMenuOpen(false)}>Case Studies</Link>
           <Link href="/guides" onClick={() => setIsMenuOpen(false)}>Guides</Link>
           <Link href="/faq" onClick={() => setIsMenuOpen(false)}>FAQ</Link>

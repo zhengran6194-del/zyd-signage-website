@@ -25,8 +25,8 @@ const ROUTE_GROUPS = [
 ];
 
 // Pages that sit at the top level as a single HTML file rather than in a group:
-// the standing pages, plus the three listing routes.
-const TOP_LEVEL_PAGES = ['/about', '/contact', '/faq', '/products', '/guides', '/projects', '/solutions'];
+// the homepage, the standing pages, and the listing routes.
+const TOP_LEVEL_PAGES = ['/', '/about', '/contact', '/faq', '/products', '/guides', '/projects', '/solutions'];
 
 const VOID_TAGS = new Set(['br', 'img', 'hr', 'input', 'meta', 'link', 'source', 'area', 'base', 'col', 'embed', 'track', 'wbr']);
 
@@ -291,6 +291,12 @@ function tidy(md) {
 
 /* -------------------------------------------------------------------- main */
 
+// The homepage prerenders to `index.html` rather than to a directory named
+// after itself, and its mirror is `/index.md` rather than `//index.md`, so both
+// paths are derived here instead of by slicing the route.
+const htmlFileFor = (url) => path.join(APP_DIR, url === '/' ? 'index.html' : `${url.slice(1)}.html`);
+const mirrorUrlFor = (url) => (url === '/' ? '/index.md' : `${url}/index.md`);
+
 const listPages = () => {
   const urls = [];
   for (const group of ROUTE_GROUPS) {
@@ -301,7 +307,7 @@ const listPages = () => {
     }
   }
   for (const url of TOP_LEVEL_PAGES) {
-    if (fs.existsSync(path.join(APP_DIR, `${url.slice(1)}.html`))) urls.push(url);
+    if (fs.existsSync(htmlFileFor(url))) urls.push(url);
   }
   return urls.sort();
 };
@@ -315,7 +321,7 @@ if (!pages.length) {
 let written = 0;
 const failures = [];
 for (const url of pages) {
-  const htmlFile = path.join(APP_DIR, `${url.slice(1)}.html`);
+  const htmlFile = htmlFileFor(url);
   const raw = fs.readFileSync(htmlFile, 'utf8');
   const body = raw.replace(/<script>self\.__next_f\.push\([\s\S]*?\)<\/script>/g, '');
   const main = body.match(/<main[\s\S]*?<\/main>/);
@@ -337,17 +343,18 @@ for (const url of pages) {
   // all have to name the same URL, so check the annotation is really in the HTML
   // rather than trusting that the metadata call did the right thing.
   const linkTags = raw.match(/<link[^>]*rel="alternate"[^>]*>/g) ?? [];
-  const annotated = linkTags.some((tag) => /type="text\/markdown"/.test(tag) && tag.includes(`${url}/index.md`));
+  const mirrorUrl = mirrorUrlFor(url);
+  const annotated = linkTags.some((tag) => /type="text\/markdown"/.test(tag) && tag.includes(abs(mirrorUrl)));
   if (!annotated) {
-    failures.push(`${url}: HTML has no rel="alternate" type="text/markdown" pointing at ${url}/index.md`);
+    failures.push(`${url}: HTML has no rel="alternate" type="text/markdown" pointing at ${mirrorUrl}`);
     continue;
   }
 
-  const outFile = path.join(PUBLIC_DIR, url.slice(1), 'index.md');
+  const outFile = path.join(PUBLIC_DIR, mirrorUrl.slice(1));
   fs.mkdirSync(path.dirname(outFile), { recursive: true });
   fs.writeFileSync(outFile, md, 'utf8');
   written++;
-  console.log(`  ${url}/index.md  (${md.length} chars)`);
+  console.log(`  ${mirrorUrl}  (${md.length} chars)`);
 }
 
 if (failures.length) {

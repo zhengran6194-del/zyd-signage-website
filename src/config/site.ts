@@ -142,12 +142,12 @@ export type PageMetadataInput = {
 /**
  * Routes that also publish a Markdown mirror, as described by llmstxt.org: the
  * clean text version lives at the same URL with `index.md` appended. Content
- * pages under these prefixes, plus the three root pages, are mirrored by
- * scripts/generate-page-markdown.mjs, which fails the build if a page here has
- * no mirror. Keep the two lists in step.
+ * pages under these prefixes, plus the homepage, the standing pages and the
+ * listing routes, are mirrored by scripts/generate-page-markdown.mjs, which
+ * fails the build if a page here has no mirror. Keep the two lists in step.
  */
 const MARKDOWN_MIRROR_PREFIXES = ['/products/', '/guides/', '/case-studies/', '/solutions/'];
-const MARKDOWN_MIRROR_PATHS = ['/about', '/contact', '/faq', '/products', '/guides', '/projects', '/solutions'];
+const MARKDOWN_MIRROR_PATHS = ['/', '/about', '/contact', '/faq', '/products', '/guides', '/projects', '/solutions'];
 
 const hasMarkdownMirror = (path: string): boolean =>
   MARKDOWN_MIRROR_PREFIXES.some((prefix) => path.startsWith(prefix)) ||

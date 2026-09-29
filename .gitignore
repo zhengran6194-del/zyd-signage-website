@@ -30,6 +30,7 @@ temp/
 /public/products/*/index.md
 /public/guides/*/index.md
 /public/case-studies/*/index.md
+/public/index.md
 /public/about/index.md
 /public/contact/index.md
 /public/faq/index.md
