@@ -51,6 +51,9 @@ const guides = [
   { category: 'Manufacturing Guide', title: 'How Custom Signage Is Made: 7 Manufacturing Steps', date: 'Jul 22, 2026', image: 'cat-system.jpg' },
   { category: 'Materials', title: 'How to Choose Materials and Finishes for Illuminated Signage', date: 'Sep 22, 2026', image: 'cat-illuminated.jpg' },
   { category: 'Procurement', title: 'Low-Bid Signage Tenders: Why the Cheapest Quote Fails at Acceptance', date: 'Sep 23, 2026', image: 'cat-system.jpg' },
+  { category: 'Scenario Planning', title: 'Mall Wayfinding & Directory Signage Systems', date: 'Sep 21, 2026', image: 'projects/dalian-water-plaza-mall-exterior-night.jpg' },
+  { category: 'Scenario Planning', title: 'Industrial Park Signage and Wayfinding Systems', date: 'Sep 21, 2026', image: 'projects/hengli-industrial-park-entrance-image-wall.jpg' },
+  { category: 'Scenario Planning', title: 'Hotel Signage & Guest Wayfinding Systems', date: 'Sep 21, 2026', image: 'hero-wayfinding.jpg' },
 ];
 
 const faqs = [
@@ -151,6 +154,9 @@ export default function FAQPage() {
                 '/guides/custom-signage-manufacturing-process',
                 '/guides/signage-material-selection-guide',
                 '/guides/signage-procurement-low-bid-pitfalls',
+                '/guides/mall-wayfinding-signage',
+                '/guides/industrial-park-signage',
+                '/guides/hotel-signage',
               ];
               return (
                 <Link

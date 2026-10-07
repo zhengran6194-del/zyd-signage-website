@@ -9,9 +9,12 @@
 # otherwise (exit code 2).
 #
 # Each URL is pre-checked for HTTP 200. Any non-200 URL aborts the run unless
-# --force is passed. Status column below was measured on 2026-09-12.
+# --force is passed. The status column below was measured on 2026-10-07.
+#
+# Coverage: every URL in src/app/sitemap.ts (34 routes). Keep the two in step:
+# when a route is added to the sitemap, add it here in the group it belongs to.
 
-# --- Group 1: guides (previously submitted with a non-validated key) ---
+# --- Group 1: guides ---
 # status 200
 https://www.zydsign.com/guides/signage-procurement-low-bid-pitfalls
 # status 200
@@ -24,19 +27,20 @@ https://www.zydsign.com/guides/front-lit-vs-halo-lit-channel-letters
 https://www.zydsign.com/guides/304-stainless-steel-vs-galvanized-steel-outdoor-signs
 # status 200
 https://www.zydsign.com/guides/how-to-choose-the-right-sign-for-your-business
+# status 200
+https://www.zydsign.com/guides/custom-signage-manufacturing-process
 
-# --- Group 2: guides index page (NEW) ---
-# status 404 on 2026-09-12: page not deployed yet.
-# It must exist in production before this run can pass the pre-check.
+# --- Group 2: guides index page ---
+# status 200 (was 404 on 2026-09-12; the page is live now)
 https://www.zydsign.com/guides
 
-# --- Group 3: new product pages (NEW) ---
+# --- Group 3: new product pages ---
 # status 200
 https://www.zydsign.com/products/outdoor-waste-bin
 # status 200
 https://www.zydsign.com/products/custom-planter-box
 
-# --- Group 4: case studies (NEW) ---
+# --- Group 4: case studies ---
 # status 200
 https://www.zydsign.com/case-studies/pavilion-dalian-mall-festive-installations
 # status 200
@@ -44,26 +48,19 @@ https://www.zydsign.com/case-studies/dalian-water-plaza-wayfinding-signage
 # status 200
 https://www.zydsign.com/case-studies/hengli-industrial-park-wayfinding-signage
 
-# --- Group 7: accessibility planning guide (NEW) ---
-# status not yet measured; the pre-check in indexnow-submit.mjs measures it at run time.
-https://www.zydsign.com/guides/ada-braille-signage-planning-guide
-
-# --- Group 6: scenario pages migrated from /solutions to /guides ---
-# The old /solutions URLs now 301 to these addresses, so the new URLs are the
-# ones to resubmit. Status must be measured after deploy; the pre-check in
-# indexnow-submit.mjs aborts the run if any of them is not 200.
-# status not yet measured
-https://www.zydsign.com/guides/mall-wayfinding-signage
-# status not yet measured
-https://www.zydsign.com/guides/industrial-park-signage
-# status not yet measured
-https://www.zydsign.com/guides/hotel-signage
-
-# --- Group 5: updated pages (homepage + catalog + product detail pages) ---
+# --- Group 5: updated pages (homepage, catalog and site pages, then product details) ---
 # status 200
 https://www.zydsign.com/
 # status 200
 https://www.zydsign.com/products
+# status 200
+https://www.zydsign.com/projects
+# status 200
+https://www.zydsign.com/about
+# status 200
+https://www.zydsign.com/contact
+# status 200
+https://www.zydsign.com/faq
 # status 200
 https://www.zydsign.com/products/architectural-wayfinding-system
 # status 200
@@ -82,3 +79,23 @@ https://www.zydsign.com/products/metal-acrylic-logo-sign
 https://www.zydsign.com/products/outdoor-pylon-monument-sign
 # status 200
 https://www.zydsign.com/products/ultra-slim-led-light-box
+# status 200
+https://www.zydsign.com/products/acrylic-desk-sign
+# status 200
+https://www.zydsign.com/products/portable-metal-a-frame-sign
+
+# --- Group 6: scenario pages migrated from /solutions to /guides ---
+# The old /solutions URLs now 301 to these addresses, so the new URLs are the
+# ones to resubmit. Measured 200 on 2026-10-07.
+# status 200
+https://www.zydsign.com/guides/mall-wayfinding-signage
+# status 200
+https://www.zydsign.com/guides/industrial-park-signage
+# status 200
+https://www.zydsign.com/guides/hotel-signage
+
+# --- Group 7: accessibility planning guide (NEW) ---
+# status 404 on 2026-10-07: committed locally, not deployed yet. Submit this URL
+# only after the deploy that publishes it; the pre-check in indexnow-submit.mjs
+# aborts the whole run otherwise.
+https://www.zydsign.com/guides/ada-braille-signage-planning-guide

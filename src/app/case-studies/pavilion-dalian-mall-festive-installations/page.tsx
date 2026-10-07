@@ -204,6 +204,19 @@ const relatedLinks = [
 ];
 
 export default function PavilionDalianFestiveInstallationsCaseStudy() {
+  // Built from the same array the page renders, so the structured data cannot
+  // drift from the visible answers. The other two case studies emit FAQPage the
+  // same way; this page was the only one missing it.
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+    })),
+  };
+
   const caseStudyUrl = 'https://www.zydsign.com/case-studies/pavilion-dalian-mall-festive-installations';
 
   const breadcrumbJsonLd = {
@@ -242,6 +255,7 @@ export default function PavilionDalianFestiveInstallationsCaseStudy() {
 
   return (
     <main id="main" className="bg-slate-100 min-h-screen pt-32 pb-40">
+      <JsonLd data={faqJsonLd} />
       <JsonLd data={breadcrumbJsonLd} />
       <JsonLd data={articleJsonLd} />
       <article className="w-full max-w-6xl px-4 sm:px-6 lg:px-10 mx-auto">
