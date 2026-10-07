@@ -44,6 +44,10 @@ https://www.zydsign.com/case-studies/dalian-water-plaza-wayfinding-signage
 # status 200
 https://www.zydsign.com/case-studies/hengli-industrial-park-wayfinding-signage
 
+# --- Group 7: accessibility planning guide (NEW) ---
+# status not yet measured; the pre-check in indexnow-submit.mjs measures it at run time.
+https://www.zydsign.com/guides/ada-braille-signage-planning-guide
+
 # --- Group 6: scenario pages migrated from /solutions to /guides ---
 # The old /solutions URLs now 301 to these addresses, so the new URLs are the
 # ones to resubmit. Status must be measured after deploy; the pre-check in

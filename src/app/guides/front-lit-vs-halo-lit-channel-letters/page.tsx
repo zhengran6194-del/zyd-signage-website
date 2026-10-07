@@ -55,6 +55,7 @@ const guide: GuideArticleData = {
   relatedLinks: [
     { href: '/products/custom-halo-lit-letters', label: 'See custom halo-lit letters' },
     { href: '/products/custom-led-neon-sign', label: 'See custom LED neon signs' },
+    { href: '/guides/ada-braille-signage-planning-guide', label: 'Plan accessible signage' },
     { href: '/contact', label: 'Discuss lighting options' },
   ],
   asideTitle: 'Compare the same brief',

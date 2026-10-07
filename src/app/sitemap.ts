@@ -39,6 +39,7 @@ const routes = [
   { path: "/guides/custom-signage-manufacturing-process", priority: 0.7 },
   { path: "/guides/signage-material-selection-guide", priority: 0.8 },
   { path: "/guides/signage-procurement-low-bid-pitfalls", priority: 0.8 },
+  { path: "/guides/ada-braille-signage-planning-guide", priority: 0.7 },
   { path: "/case-studies/pavilion-dalian-mall-festive-installations", priority: 0.7 },
 ];
 

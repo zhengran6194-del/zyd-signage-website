@@ -51,6 +51,7 @@ const guide: GuideArticleData = {
   relatedLinks: [
     { href: '/products/outdoor-pylon-monument-sign', label: 'See outdoor pylon signs' },
     { href: '/products/architectural-wayfinding-system', label: 'See wayfinding systems' },
+    { href: '/guides/ada-braille-signage-planning-guide', label: 'Plan accessible signage' },
     { href: '/contact', label: 'Send your site brief' },
   ],
   asideTitle: 'Start with the site brief',

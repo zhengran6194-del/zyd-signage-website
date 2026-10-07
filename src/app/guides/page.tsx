@@ -50,6 +50,12 @@ const guides = [
     href: '/guides/signage-procurement-low-bid-pitfalls',
   },
   {
+    tag: 'Accessibility Planning',
+    title: 'ADA & Braille Signage: How to Plan an Accessible System',
+    desc: 'How tactile, Braille, and wayfinding signage is planned, which inputs an accessibility review asks for, and what the project team and authority must confirm.',
+    href: '/guides/ada-braille-signage-planning-guide',
+  },
+  {
     tag: 'Scenario Planning',
     title: 'Mall Wayfinding & Directory Signage Systems',
     desc: 'A buyer route for malls and commercial complexes that need exterior identification, parking guidance, directories, tenant branding and signs as one system.',

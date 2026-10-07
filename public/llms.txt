@@ -54,6 +54,7 @@ ZYD Signage is the trading name of Dalian Zhiyudao Signage & Tech. Co., Ltd. The
 - [How to Choose the Right Sign for Your Business](https://www.zydsign.com/guides/how-to-choose-the-right-sign-for-your-business/index.md): A practical framework for choosing pylon, monument, building, wayfinding, or illuminated signage around the real site and message.
 - [304 Stainless Steel vs Galvanized Steel](https://www.zydsign.com/guides/304-stainless-steel-vs-galvanized-steel-outdoor-signs/index.md): Material-selection logic for outdoor signs, comparing 304 stainless steel and galvanized steel by exposure, finish, and fabrication.
 - [How Custom Signage Is Made: 7 Manufacturing Steps](https://www.zydsign.com/guides/custom-signage-manufacturing-process/index.md): A buyer-focused guide to design development, fabrication, finishing, illumination, quality control, packing and delivery.
+- [ADA & Braille Signage: How to Plan an Accessible System](https://www.zydsign.com/guides/ada-braille-signage-planning-guide/index.md): Planning tactile, Braille and wayfinding signage, the inputs an accessibility review asks for, and the confirmations that belong to the project and the authority having jurisdiction rather than the supplier.
 
 - [Full guide index](https://www.zydsign.com/guides/index.md)
 
