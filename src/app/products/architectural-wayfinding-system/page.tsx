@@ -106,8 +106,9 @@ export default function WayfindingSystemPage() {
               <p className="text-slate-600 leading-relaxed mb-6">
                 A comparable quotation needs the site plan or floor plans, the list of sign types and quantities, the mounting conditions, the artwork or brand standards, and any accessibility requirement the project specifies. Sending those items together lets the schedule and scope be reviewed in one pass.
               </p>
-              <div className="mt-auto">
+              <div className="mt-auto flex flex-wrap gap-x-6 gap-y-3">
                 <Link href="/contact" className="text-sm font-black uppercase tracking-widest text-blue-700 hover:text-blue-900">Send your project brief</Link>
+                <Link href="/guides/ada-braille-signage-planning-guide" className="text-sm font-black uppercase tracking-widest text-blue-700 hover:text-blue-900">Plan accessible signage</Link>
               </div>
             </div>
 

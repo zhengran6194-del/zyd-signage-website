@@ -106,8 +106,9 @@ export default function MedicalSignagePage() {
               <p className="text-slate-600 leading-relaxed mb-6">
                 Send the floor plans or department list, the sign types and quantities, the mounting surfaces, any accessibility requirement the project specifies, and the brand or color standard. Confirming those items at the start keeps the schedule accurate and avoids rework during installation.
               </p>
-              <div className="mt-auto">
+              <div className="mt-auto flex flex-wrap gap-x-6 gap-y-3">
                 <Link href="/contact" className="text-sm font-black uppercase tracking-widest text-blue-700 hover:text-blue-900">Send your project brief</Link>
+                <Link href="/guides/ada-braille-signage-planning-guide" className="text-sm font-black uppercase tracking-widest text-blue-700 hover:text-blue-900">Plan accessible signage</Link>
               </div>
             </div>
 
