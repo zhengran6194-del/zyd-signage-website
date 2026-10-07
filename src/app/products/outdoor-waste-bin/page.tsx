@@ -4,6 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import WhatsAppCta from '@/components/WhatsAppCta';
+import RelatedCaseStudy from '@/components/RelatedCaseStudy';
 
 export default function OutdoorWasteBinPage() {
   return (
@@ -76,6 +77,7 @@ export default function OutdoorWasteBinPage() {
             <Link href="/products" className="text-sm text-blue-600 hover:text-blue-800 font-black uppercase tracking-widest transition-all">
               Related Products
             </Link>
+            <RelatedCaseStudy href="/case-studies/dalian-water-plaza-wayfinding-signage" name="Water Fashion Plaza, Dalian" context="the segregated recycling stations installed through the public walkways." />
           </div>
         </section>
       </main>

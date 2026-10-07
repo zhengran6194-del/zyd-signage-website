@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import WhatsAppCta from '@/components/WhatsAppCta';
 import JsonLd from '@/components/JsonLd';
+import RelatedCaseStudy from '@/components/RelatedCaseStudy';
 
 const faqs = [
   {
@@ -201,6 +202,7 @@ export default function LedNeonSignPage() {
               <Link href="/contact" className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide">DISCUSS YOUR PROJECT</Link>
               <Link href="/products" className="px-10 py-5 rounded-full border-2 border-slate-300 text-slate-700 font-black uppercase tracking-widest text-sm hover:border-blue-600 hover:text-blue-700 transition-all">All Products</Link>
             </div>
+            <RelatedCaseStudy href="/case-studies/pavilion-dalian-mall-festive-installations" name="Pavilion Dalian festive installations" context="custom illuminated features built with integrated LED modules for a retail interior." />
           </div>
         </section>
       </main>

@@ -4,6 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import WhatsAppCta from '@/components/WhatsAppCta';
+import RelatedCaseStudy from '@/components/RelatedCaseStudy';
 
 export default function CustomPlanterBoxPage() {
   return (
@@ -76,6 +77,7 @@ export default function CustomPlanterBoxPage() {
             <Link href="/products" className="text-sm text-blue-600 hover:text-blue-800 font-black uppercase tracking-widest transition-all">
               Related Products
             </Link>
+            <RelatedCaseStudy href="/case-studies/hengli-industrial-park-wayfinding-signage" name="Hengli Industrial Park" context="site fabrication and installation of outdoor units in landscaped grounds." />
           </div>
         </section>
       </main>
