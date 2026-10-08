@@ -3,23 +3,28 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import LanguageSwitch from '@/components/LanguageSwitch';
+import { headerCopy, headerCta, localeFromPath, navItems } from '@/config/i18n';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const locale = localeFromPath(usePathname());
+  const copy = headerCopy[locale];
+  const cta = headerCta[locale];
 
   return (
     <header className="site-header" id="top">
       <div className="container nav-wrap">
         {/* Logo, left aligned */}
-        <Link className="brand" href="/" aria-label="ZYD Home">
+        <Link className="brand" href="/" aria-label={copy.homeLabel}>
           {/* The master PNG is 4961x3508 (1.41:1), but .brand img caps the
               rendered height at 56px on mobile and 92-112px from 1025px up, so
               the logo is never wider than about 158px. Declaring that rendered
               box instead of the master file keeps the reserved space and the
               generated srcset in scale with what is actually painted; the ratio
               matches the master, so nothing is distorted. */}
-          <Image src="/assets/images/logo-correct.png" alt="ZYD logo" width={160} height={113} loading="eager" sizes="(max-width: 1024px) 80px, 160px" />
+          <Image src="/assets/images/logo-correct.png" alt={copy.logoAlt} width={160} height={113} loading="eager" sizes="(max-width: 1024px) 80px, 160px" />
         </Link>
 
         {/* Mobile menu toggle */}
@@ -27,7 +32,7 @@ export default function Header() {
           type="button"
           className="menu-toggle"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          aria-label="Toggle navigation"
+          aria-label={copy.menuLabel}
           aria-expanded={isMenuOpen}
           aria-controls="primary-nav"
         >
@@ -38,12 +43,11 @@ export default function Header() {
 
         {/* Navigation, pushed to the right of the logo */}
         <nav id="primary-nav" className={`primary-nav ${isMenuOpen ? 'open' : ''}`}>
-          <Link href="/products" onClick={() => setIsMenuOpen(false)}>Products</Link>
-          <Link href="/projects" onClick={() => setIsMenuOpen(false)}>Case Studies</Link>
-          <Link href="/guides" onClick={() => setIsMenuOpen(false)}>Guides</Link>
-          <Link href="/faq" onClick={() => setIsMenuOpen(false)}>FAQ</Link>
-          <Link href="/about" onClick={() => setIsMenuOpen(false)}>About</Link>
-          <Link href="/contact" onClick={() => setIsMenuOpen(false)}>Contact</Link>
+          {navItems[locale].map((item) => (
+            <Link key={item.href} href={item.href} onClick={() => setIsMenuOpen(false)}>
+              {item.label}
+            </Link>
+          ))}
           {/* Mobile: the switcher sits at the end of the panel. Hidden on
               desktop, where .nav-actions carries it instead. */}
           <LanguageSwitch className="lang-mobile" />
@@ -54,9 +58,9 @@ export default function Header() {
           <LanguageSwitch className="lang-desktop" />
           <Link 
             className="button button-green-base" 
-            href="/contact"
+            href={cta.href}
           >
-            Get a Free Quote
+            {cta.label}
           </Link>
         </div>
       </div>

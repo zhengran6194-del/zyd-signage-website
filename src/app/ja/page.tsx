@@ -38,10 +38,10 @@ const qualityPoints = [
 ];
 
 const products = [
-  { name: 'ハロー（背面発光）文字', href: '/products/custom-halo-lit-letters' },
-  { name: '導線サインシステム', href: '/products/architectural-wayfinding-system' },
+  { name: 'ハロー（背面発光）文字', href: '/ja/products/custom-halo-lit-letters' },
+  { name: '導線サインシステム', href: '/ja/products/architectural-wayfinding-system' },
   { name: '医療施設向けサイン', href: '/products/medical-care-signage' },
-  { name: 'モニュメント・ピロンサイン', href: '/products/outdoor-pylon-monument-sign' },
+  { name: 'モニュメント・ピロンサイン', href: '/ja/products/outdoor-pylon-monument-sign' },
   { name: 'LEDライトボックス', href: '/products/ultra-slim-led-light-box' },
   { name: 'LEDネオンサイン', href: '/products/custom-led-neon-sign' },
   { name: '金属・アクリルロゴサイン', href: '/products/metal-acrylic-logo-sign' },
@@ -92,11 +92,11 @@ export default function JapaneseHome() {
               20年の実績。ホテル・商業施設・産業パーク向けに、導線計画から製作・納品までを一貫して担うサイネージシステムを提供します。素材と仕上げは設置環境に合わせて選定します。
             </p>
             <div className="flex flex-col gap-4 sm:flex-row">
-              <Link href="/contact" className="button button-green-base px-10 py-4">
+              <Link href="/ja/contact" className="button button-green-base px-10 py-4">
                 無料3Dモックアップとお見積もり
               </Link>
               <Link
-                href="/products"
+                href="/ja/products"
                 className="inline-flex items-center justify-center rounded-full border border-white/30 px-10 py-4 text-sm font-black uppercase tracking-widest text-white transition-colors hover:border-white hover:bg-white/10"
               >
                 製品ラインナップを見る
@@ -159,7 +159,7 @@ export default function JapaneseHome() {
               </Link>
             ))}
           </div>
-          <Link href="/products" className="mt-10 inline-flex text-sm font-black uppercase tracking-widest text-blue-700 hover:text-blue-900">
+          <Link href="/ja/products" className="mt-10 inline-flex text-sm font-black uppercase tracking-widest text-blue-700 hover:text-blue-900">
             すべての製品を見る →
           </Link>
         </div>
@@ -255,7 +255,7 @@ export default function JapaneseHome() {
             技術的なご相談と工場直送の価格について、エンジニアリングチームが対応します。
           </p>
           <div className="flex flex-col justify-center gap-4 sm:flex-row">
-            <Link href="/contact" className="button button-green-base px-10 py-3">
+            <Link href="/ja/contact" className="button button-green-base px-10 py-3">
               無料お見積もり
             </Link>
             <WhatsAppCta

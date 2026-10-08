@@ -20,6 +20,11 @@ const lastModifiedByRoute: Record<string, string> = {
   "/contact": "2026-09-15",
   "/faq": "2026-10-07",
   "/ja": "2026-10-08",
+  "/ja/products": "2026-10-08",
+  "/ja/products/architectural-wayfinding-system": "2026-10-08",
+  "/ja/products/custom-halo-lit-letters": "2026-10-08",
+  "/ja/products/outdoor-pylon-monument-sign": "2026-10-08",
+  "/ja/contact": "2026-10-08",
 
   "/guides/mall-wayfinding-signage": "2026-09-21",
   "/guides/industrial-park-signage": "2026-09-21",
@@ -73,6 +78,43 @@ const routes: SitemapRoute[] = [
     path: "/ja",
     priority: 0.8,
     languages: { "en-US": "", "ja-JP": "/ja", "x-default": "" },
+  },
+  {
+    path: "/ja/products",
+    priority: 0.8,
+    languages: { "en-US": "/products", "ja-JP": "/ja/products", "x-default": "/products" },
+  },
+  {
+    path: "/ja/products/architectural-wayfinding-system",
+    priority: 0.7,
+    languages: {
+      "en-US": "/products/architectural-wayfinding-system",
+      "ja-JP": "/ja/products/architectural-wayfinding-system",
+      "x-default": "/products/architectural-wayfinding-system",
+    },
+  },
+  {
+    path: "/ja/products/custom-halo-lit-letters",
+    priority: 0.7,
+    languages: {
+      "en-US": "/products/custom-halo-lit-letters",
+      "ja-JP": "/ja/products/custom-halo-lit-letters",
+      "x-default": "/products/custom-halo-lit-letters",
+    },
+  },
+  {
+    path: "/ja/products/outdoor-pylon-monument-sign",
+    priority: 0.7,
+    languages: {
+      "en-US": "/products/outdoor-pylon-monument-sign",
+      "ja-JP": "/ja/products/outdoor-pylon-monument-sign",
+      "x-default": "/products/outdoor-pylon-monument-sign",
+    },
+  },
+  {
+    path: "/ja/contact",
+    priority: 0.7,
+    languages: { "en-US": "/contact", "ja-JP": "/ja/contact", "x-default": "/contact" },
   },
   { path: "/products", priority: 0.9 },
   { path: "/projects", priority: 0.8 },

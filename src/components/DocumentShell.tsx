@@ -2,6 +2,7 @@
 
 import type { ReactNode } from 'react';
 import { usePathname } from 'next/navigation';
+import { localeFromPath } from '@/config/i18n';
 
 type DocumentShellProps = {
   fontClassName: string;
@@ -28,11 +29,10 @@ type DocumentShellProps = {
  * that is served, not patched in afterwards.
  */
 export default function DocumentShell({ fontClassName, head, children }: DocumentShellProps) {
-  const pathname = usePathname();
-  const isJapanese = pathname === '/ja' || pathname.startsWith('/ja/');
+  const locale = localeFromPath(usePathname());
 
   return (
-    <html lang={isJapanese ? 'ja' : 'en'} className={fontClassName}>
+    <html lang={locale} className={fontClassName}>
       {head}
       <body>{children}</body>
     </html>
