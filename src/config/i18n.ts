@@ -19,6 +19,22 @@ export const DEFAULT_LOCALE: Locale = 'en';
 /** The locales that have a subtree, in the order they are listed in the UI. */
 export const LOCALES: Locale[] = ['en', 'ja', 'ko', 'ar', 'es', 'ru', 'de', 'fr', 'zh', 'pt', 'it', 'nl', 'pl'];
 
+/**
+ * Languages the site actually publishes content in. Only these are offered by
+ * the language switch, because a reader who picks a language has to be able to
+ * read the page they are on.
+ */
+export const PUBLISHED_LOCALES: Locale[] = ['en', 'ja'];
+
+/**
+ * Languages that were published as home pages only and have since been
+ * retired: they had no translated sub-pages, so switching to them from a
+ * product or guide page led somewhere the reader could not read. Their text,
+ * names and route mappings are kept — restoring one means moving it back into
+ * PUBLISHED_LOCALES and restoring its routes, not rewriting anything.
+ */
+export const RETIRED_LOCALES: Locale[] = ['ko', 'ar', 'es', 'ru', 'de', 'fr', 'zh', 'pt', 'it', 'nl', 'pl'];
+
 /** Language names, written the way a speaker of that language writes them. */
 export const languageNames: Record<Locale, string> = {
   en: 'English',
@@ -79,6 +95,13 @@ const LOCALE_PREFIX: Record<Locale, string> = {
 
 const TRANSLATED_LOCALES: Locale[] = ['ja', 'ko', 'ar', 'es', 'ru', 'de', 'fr', 'zh', 'pt', 'it', 'nl', 'pl'];
 
+/**
+ * Route prefixes of the retired languages. They were live and may be indexed,
+ * so they are redirected to the English home page rather than left as 404s.
+ * Declared here so the redirect list and the language lists cannot drift apart.
+ */
+export const RETIRED_LOCALE_PREFIXES: string[] = RETIRED_LOCALES.map((locale) => LOCALE_PREFIX[locale]);
+
 export const localeFromPath = (pathname: string): Locale => {
   for (const locale of TRANSLATED_LOCALES) {
     const prefix = LOCALE_PREFIX[locale];
@@ -88,7 +111,7 @@ export const localeFromPath = (pathname: string): Locale => {
 };
 
 /**
- * English routes that have a Japanese counterpart, and the same for Korean.
+ * English routes that have a Japanese counterpart.
  * A page that is missing from a map has no page in that language yet, so the
  * switch falls back to that language's home page.
  */
@@ -117,6 +140,9 @@ export const japaneseRouteFor: Record<string, string> = {
 export const translatedPathFor = (pathname: string, locale: Locale): string | null => {
   const current = localeFromPath(pathname);
   if (locale === current) return pathname;
+  // Retired languages are not offered anywhere, and their addresses redirect,
+  // so no route in the app should ever send a reader to one.
+  if (!PUBLISHED_LOCALES.includes(locale)) return null;
 
   // Every translated page mirrors an English page, so the English route is the
   // common key for looking a translation up.

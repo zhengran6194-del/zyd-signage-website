@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import { RETIRED_LOCALE_PREFIXES } from "./src/config/i18n";
 
 // Baseline security headers, applied to every route.
 const securityHeaders = [
@@ -20,14 +21,23 @@ const nextConfig: NextConfig = {
   poweredByHeader: false,
 
   /**
-   * The three scenario pages used to live under /solutions. That section was
-   * retired and the pages moved next to the buying guides, so the old
-   * addresses are kept alive with permanent redirects instead of 404s: they
-   * were already published and may be indexed or linked from elsewhere.
+   * Addresses that were published and then retired are kept alive with
+   * permanent redirects instead of 404s, because they may be indexed or linked
+   * from elsewhere.
+   *
+   * Retired language trees: those languages only ever had a home page, so a
+   * reader who switched to one from a product page found nothing to read. They
+   * now send the reader to the English home page, both the language root and
+   * anything beneath it.
    */
   async redirects() {
     // statusCode 301 rather than `permanent: true`, which Next resolves to 308.
     // Both are permanent, but 301 is the signal the migrated pages should carry.
+    const retiredLanguageRedirects = RETIRED_LOCALE_PREFIXES.flatMap((prefix) => [
+      { source: prefix, destination: "/", statusCode: 301 },
+      { source: `${prefix}/:path*`, destination: "/", statusCode: 301 },
+    ]);
+
     return [
       { source: "/solutions", destination: "/guides", statusCode: 301 },
       {
@@ -45,6 +55,7 @@ const nextConfig: NextConfig = {
         destination: "/guides/hotel-signage",
         statusCode: 301,
       },
+      ...retiredLanguageRedirects,
     ];
   },
 

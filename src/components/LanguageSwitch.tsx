@@ -4,7 +4,7 @@ import { useEffect, useId, useRef, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import {
-  LOCALES,
+  PUBLISHED_LOCALES,
   languageNames,
   languageSwitchCopy,
   localeFromPath,
@@ -94,7 +94,7 @@ export default function LanguageSwitch({ className = '' }: { className?: string 
       <div id={panelId} className="lang-panel" role="group" aria-label={copy.panelTitle} hidden={!isOpen}>
         <p className="lang-panel-title">{copy.panelTitle}</p>
         <ul className="lang-panel-grid">
-          {LOCALES.map((locale) => {
+          {PUBLISHED_LOCALES.map((locale) => {
             const isCurrent = locale === current;
             if (isCurrent) {
               return (

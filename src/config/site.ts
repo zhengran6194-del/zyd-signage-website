@@ -150,24 +150,13 @@ export type PageMetadataInput = {
 const absolute = (path: string): string => (path === '/' ? siteConfig.url : `${siteConfig.url}${path}`);
 
 /**
- * The home page is published in every language, so each of its versions — and
- * its sitemap entry — declares the same set: every language plus the x-default
- * that sends everyone else to English.
+ * The home page is published in English and Japanese, so each of the two
+ * versions — and its sitemap entry — declares both plus the x-default that
+ * sends everyone else to English.
  */
 export const homePageLanguages: LanguageAlternates = {
   en: '/',
   ja: '/ja',
-  ko: '/ko',
-  ar: '/ar',
-  es: '/es',
-  ru: '/ru',
-  de: '/de',
-  fr: '/fr',
-  zh: '/zh',
-  pt: '/pt',
-  it: '/it',
-  nl: '/nl',
-  pl: '/pl',
 };
 
 /**
