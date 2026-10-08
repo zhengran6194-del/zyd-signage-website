@@ -8,6 +8,9 @@ type WhatsAppCtaProps = {
   brief?: {
     product: string;
     items: string[];
+    /** Translated heading and closing line, for pages outside the English tree. */
+    heading?: string;
+    footnote?: string;
   };
 };
 
@@ -24,7 +27,14 @@ export default function WhatsAppCta({ label, message, className = '', brief }: W
       >
         {label}
       </a>
-      {brief && <ProjectBriefCard product={brief.product} items={brief.items} />}
+      {brief && (
+        <ProjectBriefCard
+          product={brief.product}
+          items={brief.items}
+          heading={brief.heading}
+          footnote={brief.footnote}
+        />
+      )}
     </>
   );
 }

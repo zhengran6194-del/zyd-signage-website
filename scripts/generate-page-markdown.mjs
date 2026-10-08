@@ -27,6 +27,18 @@ const ROUTE_GROUPS = [
 // the homepage, the standing pages, and the listing routes.
 const TOP_LEVEL_PAGES = ['/', '/about', '/contact', '/faq', '/products', '/guides', '/projects'];
 
+/**
+ * Path segments that are not part of the English site and publish no English
+ * Markdown mirror: the Japanese tree is excluded here explicitly rather than
+ * relying on the scan not reaching it. Should a page ever be added under one of
+ * the scanned directories with this name, it is skipped instead of being
+ * mirrored as if it were an English page — and instead of failing the build on
+ * the H1 and alternate checks.
+ */
+const EXCLUDED_SEGMENTS = new Set(['ja']);
+
+const isExcluded = (url) => url.split('/').filter(Boolean).some((segment) => EXCLUDED_SEGMENTS.has(segment));
+
 const VOID_TAGS = new Set(['br', 'img', 'hr', 'input', 'meta', 'link', 'source', 'area', 'base', 'col', 'embed', 'track', 'wbr']);
 
 /* ---------------------------------------------------------------- decoding */
@@ -302,10 +314,13 @@ const listPages = () => {
     const dir = path.join(APP_DIR, group.dir);
     if (!fs.existsSync(dir)) continue;
     for (const file of fs.readdirSync(dir)) {
-      if (file.endsWith('.html')) urls.push(`${group.prefix}/${file.replace(/\.html$/, '')}`);
+      if (!file.endsWith('.html')) continue;
+      const url = `${group.prefix}/${file.replace(/\.html$/, '')}`;
+      if (!isExcluded(url)) urls.push(url);
     }
   }
   for (const url of TOP_LEVEL_PAGES) {
+    if (isExcluded(url)) continue;
     if (fs.existsSync(htmlFileFor(url))) urls.push(url);
   }
   return urls.sort();

@@ -19,6 +19,7 @@ const lastModifiedByRoute: Record<string, string> = {
   "/about": "2026-09-29",
   "/contact": "2026-09-15",
   "/faq": "2026-10-07",
+  "/ja": "2026-10-08",
 
   "/guides/mall-wayfinding-signage": "2026-09-21",
   "/guides/industrial-park-signage": "2026-09-21",
@@ -55,8 +56,24 @@ const lastModifiedByRoute: Record<string, string> = {
 // degrades to the last coordinated content review rather than to an empty date.
 const SITE_CONTENT_BASELINE_DATE = "2026-09-20";
 
-const routes = [
+type SitemapRoute = {
+  path: string;
+  priority: number;
+  /**
+   * Set when the same page is published in more than one language. The keys are
+   * the hreflang values and the values are routes, so the entry carries the
+   * alternates a crawler needs to pair the two language versions.
+   */
+  languages?: Record<string, string>;
+};
+
+const routes: SitemapRoute[] = [
   { path: "", priority: 1.0 },
+  {
+    path: "/ja",
+    priority: 0.8,
+    languages: { "en-US": "", "ja-JP": "/ja", "x-default": "" },
+  },
   { path: "/products", priority: 0.9 },
   { path: "/projects", priority: 0.8 },
   { path: "/guides/mall-wayfinding-signage", priority: 0.8 },
@@ -93,10 +110,19 @@ const routes = [
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return routes.map(({ path, priority }) => ({
+  return routes.map(({ path, priority, languages }) => ({
     url: `${siteConfig.url}${path}`,
     lastModified: lastModifiedByRoute[path] ?? SITE_CONTENT_BASELINE_DATE,
     changeFrequency: "monthly",
     priority,
+    ...(languages
+      ? {
+          alternates: {
+            languages: Object.fromEntries(
+              Object.entries(languages).map(([code, route]) => [code, `${siteConfig.url}${route}`]),
+            ),
+          },
+        }
+      : {}),
   }));
 }

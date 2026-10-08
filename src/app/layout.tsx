@@ -5,6 +5,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
+import DocumentShell from "@/components/DocumentShell";
 import { buildPageMetadata, siteConfig } from "@/config/site";
 
 // Self-hosted at build time, so no external stylesheet blocks first paint.
@@ -63,7 +64,14 @@ const siteJsonLd = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
-  ...buildPageMetadata({ title: homeTitle, description: homeDescription, path: "/" }),
+  // The home page is the English half of a language pair, so it declares the
+  // Japanese translation and the x-default fallback alongside its canonical.
+  ...buildPageMetadata({
+    title: homeTitle,
+    description: homeDescription,
+    path: "/",
+    languages: { en: "/", ja: "/ja" },
+  }),
   title: {
     default: homeTitle,
     template: "%s | ZYD Signage",
@@ -79,42 +87,44 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={manrope.variable}>
-      <head>
-        {/* llmstxt.org: names the file that describes every page under this path. */}
-        <link rel="describedby" href={`${siteConfig.url}/llms.txt`} />
-        <Script id="gtm" strategy="beforeInteractive">
-          {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    <DocumentShell
+      fontClassName={manrope.variable}
+      head={
+        <head>
+          {/* llmstxt.org: names the file that describes every page under this path. */}
+          <link rel="describedby" href={`${siteConfig.url}/llms.txt`} />
+          <Script id="gtm" strategy="beforeInteractive">
+            {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-MB5CNFHN');`}
-        </Script>
-      </head>
-      <body>
-        <JsonLd data={siteJsonLd} />
-        <noscript>
-          <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MB5CNFHN"
-            height="0" width="0" style={{ display: 'none', visibility: 'hidden' }} />
-        </noscript>
-        <a className="skip-link" href="#main-content">
-          Skip to main content
-        </a>
-        <Header />
-        {/* Keyboard entry point for the skip link. tabIndex={-1} lets focus land
-            here while keeping the wrapper out of the sequential tab order. */}
-        <div id="main-content" tabIndex={-1}>
-          {children}
-        </div>
-        <Footer />
-        <Script id="microsoft-clarity" strategy="afterInteractive">
-          {`(function(c,l,a,r,i,t,y){
+          </Script>
+        </head>
+      }
+    >
+      <JsonLd data={siteJsonLd} />
+      <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MB5CNFHN"
+          height="0" width="0" style={{ display: 'none', visibility: 'hidden' }} />
+      </noscript>
+      <a className="skip-link" href="#main-content">
+        Skip to main content
+      </a>
+      <Header />
+      {/* Keyboard entry point for the skip link. tabIndex={-1} lets focus land
+          here while keeping the wrapper out of the sequential tab order. */}
+      <div id="main-content" tabIndex={-1}>
+        {children}
+      </div>
+      <Footer />
+      <Script id="microsoft-clarity" strategy="afterInteractive">
+        {`(function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
         t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
       })(window, document, "clarity", "script", "ybw0mi6eb6");`}
-        </Script>
-      </body>
-    </html>
+      </Script>
+    </DocumentShell>
   );
 }

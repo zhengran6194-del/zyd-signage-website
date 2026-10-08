@@ -320,6 +320,40 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
 
 .floating-whatsapp:active { transform: scale(0.9); }
 
+/* Language switch. Two instances are rendered — one in the desktop action area
+   and one inside the mobile menu panel — and CSS decides which is shown, so the
+   six navigation items and the quote button keep their existing layout. */
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.lang-switch-current {
+  color: var(--blue-700);
+  border-bottom: 2px solid var(--blue-700);
+  padding-bottom: 2px;
+  line-height: 1;
+}
+
+.lang-switch-link {
+  color: var(--blue-950);
+  line-height: 1;
+  transition: color 0.3s ease;
+}
+
+.lang-switch-link:hover { color: var(--blue-700); }
+
+.lang-desktop { margin-right: 1rem; }
+
+/* The mobile instance only has to exist inside the open menu panel. */
+.lang-mobile { display: none; }
+
 /* Animation Classes */
 .menu-toggle { display: none; }
 .reveal {
@@ -449,6 +483,7 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
     box-shadow: var(--shadow-md);
   }
   .primary-nav.open { display: flex; }
+  .lang-mobile { display: flex; }
   .menu-toggle { display: flex; flex-direction: column; gap: 5px; }
   .menu-toggle span { width: 24px; height: 2px; background: var(--blue-950); transition: 0.3s; }
   .floating-whatsapp {

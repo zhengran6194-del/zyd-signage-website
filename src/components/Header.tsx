@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import LanguageSwitch from '@/components/LanguageSwitch';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -43,10 +44,14 @@ export default function Header() {
           <Link href="/faq" onClick={() => setIsMenuOpen(false)}>FAQ</Link>
           <Link href="/about" onClick={() => setIsMenuOpen(false)}>About</Link>
           <Link href="/contact" onClick={() => setIsMenuOpen(false)}>Contact</Link>
+          {/* Mobile: the switcher sits at the end of the panel. Hidden on
+              desktop, where .nav-actions carries it instead. */}
+          <LanguageSwitch className="lang-mobile" />
         </nav>
 
         {/* Quote button, far right */}
         <div className="nav-actions">
+          <LanguageSwitch className="lang-desktop" />
           <Link 
             className="button button-green-base" 
             href="/contact"

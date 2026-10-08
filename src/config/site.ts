@@ -122,6 +122,17 @@ export const ogImages = {
   },
 } satisfies Record<string, OgImageSpec>;
 
+/**
+ * The same page in both language trees, as route paths. Supplying this makes
+ * the page declare hreflang alternates for each language plus an x-default
+ * pointing at English, which is what tells a search engine the two pages are
+ * translations of one another rather than duplicates.
+ */
+export type LanguageAlternates = {
+  en: string;
+  ja: string;
+};
+
 export type PageMetadataInput = {
   title: string;
   description: string;
@@ -129,7 +140,11 @@ export type PageMetadataInput = {
   path: string;
   image?: OgImageSpec;
   type?: 'website' | 'article';
+  /** Route of the matching page in the other language, when one exists. */
+  languages?: LanguageAlternates;
 };
+
+const absolute = (path: string): string => (path === '/' ? siteConfig.url : `${siteConfig.url}${path}`);
 
 /**
  * Single source of truth for per-route social metadata.
@@ -159,8 +174,9 @@ export function buildPageMetadata({
   path,
   image = ogImages.default,
   type = 'website',
+  languages,
 }: PageMetadataInput): Metadata {
-  const url = path === '/' ? siteConfig.url : `${siteConfig.url}${path}`;
+  const url = absolute(path);
   const imageUrl = `${siteConfig.url}${image.path}`;
 
   return {
@@ -168,6 +184,18 @@ export function buildPageMetadata({
     description,
     alternates: {
       canonical: url,
+      // Only pages that exist in both language trees declare alternates, so
+      // routes that were never translated keep emitting exactly what they did
+      // before.
+      ...(languages
+        ? {
+            languages: {
+              'en-US': absolute(languages.en),
+              'ja-JP': absolute(languages.ja),
+              'x-default': absolute(languages.en),
+            },
+          }
+        : {}),
       // Tells agents where the Markdown version of this page lives, so they can
       // fetch clean text instead of parsing the HTML.
       ...(hasMarkdownMirror(path) ? { types: { 'text/markdown': `${url}/index.md` } } : {}),
