@@ -25,6 +25,10 @@ export const japaneseRouteFor: Record<string, string> = {
   '/products/architectural-wayfinding-system': '/ja/products/architectural-wayfinding-system',
   '/products/custom-halo-lit-letters': '/ja/products/custom-halo-lit-letters',
   '/products/outdoor-pylon-monument-sign': '/ja/products/outdoor-pylon-monument-sign',
+  '/projects': '/ja/projects',
+  '/guides': '/ja/guides',
+  '/faq': '/ja/faq',
+  '/about': '/ja/about',
   '/contact': '/ja/contact',
 };
 
@@ -58,10 +62,10 @@ export const navItems: Record<Locale, NavItem[]> = {
   ],
   ja: [
     { label: '製品', href: '/ja/products' },
-    { label: '導入事例', href: '/projects' },
-    { label: 'ガイド', href: '/guides' },
-    { label: 'FAQ', href: '/faq' },
-    { label: '会社情報', href: '/about' },
+    { label: '導入事例', href: '/ja/projects' },
+    { label: 'ガイド', href: '/ja/guides' },
+    { label: 'FAQ', href: '/ja/faq' },
+    { label: '会社情報', href: '/ja/about' },
     { label: 'お問い合わせ', href: '/ja/contact' },
   ],
 };
@@ -147,9 +151,9 @@ export const footerCopy: Record<
       {
         heading: '企業情報',
         links: [
-          { label: '生産拠点', href: '/about' },
-          { label: '導入事例', href: '/projects' },
-          { label: '資料・FAQ', href: '/faq' },
+          { label: '生産拠点', href: '/ja/about' },
+          { label: '導入事例', href: '/ja/projects' },
+          { label: '資料・FAQ', href: '/ja/faq' },
           { label: 'チャンネルレター価格ガイド', href: '/guides/how-much-do-custom-channel-letters-cost' },
           { label: '前面発光と背面発光の違い', href: '/guides/front-lit-vs-halo-lit-channel-letters' },
           { label: 'ご相談はこちら', href: '/ja/contact' },

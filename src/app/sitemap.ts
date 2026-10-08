@@ -25,6 +25,10 @@ const lastModifiedByRoute: Record<string, string> = {
   "/ja/products/custom-halo-lit-letters": "2026-10-08",
   "/ja/products/outdoor-pylon-monument-sign": "2026-10-08",
   "/ja/contact": "2026-10-08",
+  "/ja/projects": "2026-10-08",
+  "/ja/guides": "2026-10-08",
+  "/ja/faq": "2026-10-08",
+  "/ja/about": "2026-10-08",
 
   "/guides/mall-wayfinding-signage": "2026-09-21",
   "/guides/industrial-park-signage": "2026-09-21",
@@ -115,6 +119,26 @@ const routes: SitemapRoute[] = [
     path: "/ja/contact",
     priority: 0.7,
     languages: { "en-US": "/contact", "ja-JP": "/ja/contact", "x-default": "/contact" },
+  },
+  {
+    path: "/ja/projects",
+    priority: 0.7,
+    languages: { "en-US": "/projects", "ja-JP": "/ja/projects", "x-default": "/projects" },
+  },
+  {
+    path: "/ja/guides",
+    priority: 0.7,
+    languages: { "en-US": "/guides", "ja-JP": "/ja/guides", "x-default": "/guides" },
+  },
+  {
+    path: "/ja/faq",
+    priority: 0.7,
+    languages: { "en-US": "/faq", "ja-JP": "/ja/faq", "x-default": "/faq" },
+  },
+  {
+    path: "/ja/about",
+    priority: 0.7,
+    languages: { "en-US": "/about", "ja-JP": "/ja/about", "x-default": "/about" },
   },
   { path: "/products", priority: 0.9 },
   { path: "/projects", priority: 0.8 },
