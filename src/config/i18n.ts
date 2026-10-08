@@ -135,7 +135,8 @@ export const toLocale = (pathname: string, locale: Locale): string => {
  * English page that already exists, so dropping the prefix is enough.
  */
 export const toEnglish = (pathname: string): string => {
-  const stripped = pathname.replace(/^\/(ja|ko|ar|es|ru|de|fr)(?=\/|$)/, '');
+  const translatedPrefix = new RegExp(`^\\/(${TRANSLATED_LOCALES.join('|')})(?=\\/|$)`);
+  const stripped = pathname.replace(translatedPrefix, '');
   return stripped === '' ? '/' : stripped;
 };
 
