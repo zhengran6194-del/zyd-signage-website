@@ -20,9 +20,11 @@ export const metadata: Metadata = buildPageMetadata({
   description,
   path: '/ja',
   image: ogImages.default,
-  // Declares the pair in both directions: /ja points at the English home page
-  // and x-default sends every other language to English.
-  languages: { en: '/', ja: '/ja' },
+  // Declares the full set in both directions: the English, Japanese and Korean
+  // home pages, with x-default sending every other language to English. The
+  // Japanese sub-pages name only the languages they exist in, since Korean
+  // versions of them do not exist.
+  languages: { en: '/', ja: '/ja', ko: '/ko' },
 });
 
 export default function JapaneseLayout({ children }: { children: React.ReactNode }) {

@@ -71,18 +71,25 @@ type SitemapRoute = {
   priority: number;
   /**
    * Set when the same page is published in more than one language. The keys are
-   * the hreflang values and the values are routes, so the entry carries the
-   * alternates a crawler needs to pair the two language versions.
+   * the hreflang values and the values are routes, and every language the page
+   * exists in is listed, so a crawler can pair the versions into one set.
    */
   languages?: Record<string, string>;
 };
 
+/**
+ * The home page is published in every language, so its entry — and that of each
+ * translation — names all three versions, including the entry's own. x-default
+ * always points at the English version.
+ */
+const homePageLanguages = { "en-US": "", "ja-JP": "/ja", "ko-KR": "/ko", "x-default": "" };
+
 const routes: SitemapRoute[] = [
-  { path: "", priority: 1.0 },
+  { path: "", priority: 1.0, languages: homePageLanguages },
   {
     path: "/ja",
     priority: 0.8,
-    languages: { "en-US": "", "ja-JP": "/ja", "x-default": "" },
+    languages: homePageLanguages,
   },
   {
     path: "/ja/products",
@@ -144,7 +151,7 @@ const routes: SitemapRoute[] = [
   {
     path: "/ko",
     priority: 0.8,
-    languages: { "en-US": "", "ko-KR": "/ko", "x-default": "" },
+    languages: homePageLanguages,
   },
   { path: "/products", priority: 0.9 },
   { path: "/projects", priority: 0.8 },

@@ -64,13 +64,13 @@ const siteJsonLd = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
-  // The home page is the English half of a language pair, so it declares the
-  // Japanese translation and the x-default fallback alongside its canonical.
+  // The home page exists in every language, so it declares all three versions
+  // and the x-default fallback alongside its canonical.
   ...buildPageMetadata({
     title: homeTitle,
     description: homeDescription,
     path: "/",
-    languages: { en: "/", ja: "/ja" },
+    languages: { en: "/", ja: "/ja", ko: "/ko" },
   }),
   title: {
     default: homeTitle,

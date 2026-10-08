@@ -128,9 +128,13 @@ export const ogImages = {
  * pointing at English, which is what tells a search engine the two pages are
  * translations of one another rather than duplicates.
  */
+/**
+ * The pages that hold the same content in each language. Every language the
+ * page exists in must be listed, including this page itself, or a crawler
+ * cannot pair the versions into one set; x-default is always the English one.
+ */
 export type LanguageAlternates = {
   en: string;
-  /** Set when the page has been translated; omitted otherwise. */
   ja?: string;
   ko?: string;
 };
