@@ -33,8 +33,10 @@ export default function DocumentShell({ fontClassName, head, children }: Documen
 
   // dir is only set where it differs from the default, so the pages that were
   // already published keep exactly the markup they had.
+  const documentLanguage = locale === 'zh' ? 'zh-CN' : locale;
+
   return (
-    <html lang={locale} dir={isRtlLocale(locale) ? 'rtl' : undefined} className={fontClassName}>
+    <html lang={documentLanguage} dir={isRtlLocale(locale) ? 'rtl' : undefined} className={fontClassName}>
       {head}
       <body>{children}</body>
     </html>

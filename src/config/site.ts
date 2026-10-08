@@ -163,6 +163,11 @@ export const homePageLanguages: LanguageAlternates = {
   ru: '/ru',
   de: '/de',
   fr: '/fr',
+  zh: '/zh',
+  pt: '/pt',
+  it: '/it',
+  nl: '/nl',
+  pl: '/pl',
 };
 
 /**

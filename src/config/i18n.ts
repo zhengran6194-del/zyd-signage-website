@@ -12,12 +12,12 @@
  * reader on the same page, and a page without one falls back to that language's
  * home page instead of a missing address.
  */
-export type Locale = 'en' | 'ja' | 'ko' | 'ar' | 'es' | 'ru' | 'de' | 'fr';
+export type Locale = 'en' | 'ja' | 'ko' | 'ar' | 'es' | 'ru' | 'de' | 'fr' | 'zh' | 'pt' | 'it' | 'nl' | 'pl';
 
 export const DEFAULT_LOCALE: Locale = 'en';
 
 /** The locales that have a subtree, in the order they are listed in the UI. */
-export const LOCALES: Locale[] = ['en', 'ja', 'ko', 'ar', 'es', 'ru', 'de', 'fr'];
+export const LOCALES: Locale[] = ['en', 'ja', 'ko', 'ar', 'es', 'ru', 'de', 'fr', 'zh', 'pt', 'it', 'nl', 'pl'];
 
 /** Language names, written the way a speaker of that language writes them. */
 export const languageNames: Record<Locale, string> = {
@@ -29,6 +29,11 @@ export const languageNames: Record<Locale, string> = {
   ru: 'Русский',
   de: 'Deutsch',
   fr: 'Français',
+  zh: '简体中文',
+  pt: 'Português',
+  it: 'Italiano',
+  nl: 'Nederlands',
+  pl: 'Polski',
 };
 
 /**
@@ -45,6 +50,11 @@ export const hreflangCode: Record<Locale, string> = {
   ru: 'ru',
   de: 'de',
   fr: 'fr',
+  zh: 'zh-CN',
+  pt: 'pt',
+  it: 'it',
+  nl: 'nl',
+  pl: 'pl',
 };
 
 /** Languages written right to left, so the document direction can follow. */
@@ -60,9 +70,14 @@ const LOCALE_PREFIX: Record<Locale, string> = {
   ru: '/ru',
   de: '/de',
   fr: '/fr',
+  zh: '/zh',
+  pt: '/pt',
+  it: '/it',
+  nl: '/nl',
+  pl: '/pl',
 };
 
-const TRANSLATED_LOCALES: Locale[] = ['ja', 'ko', 'ar', 'es', 'ru', 'de', 'fr'];
+const TRANSLATED_LOCALES: Locale[] = ['ja', 'ko', 'ar', 'es', 'ru', 'de', 'fr', 'zh', 'pt', 'it', 'nl', 'pl'];
 
 export const localeFromPath = (pathname: string): Locale => {
   for (const locale of TRANSLATED_LOCALES) {
@@ -101,6 +116,11 @@ const homeOnlyRouteFor: Partial<Record<Locale, string>> = {
   ru: '/ru',
   de: '/de',
   fr: '/fr',
+  zh: '/zh',
+  pt: '/pt',
+  it: '/it',
+  nl: '/nl',
+  pl: '/pl',
 };
 
 /** The page in the given language for an English path, or that language's home. */
@@ -198,6 +218,26 @@ export const navItems: Record<Locale, NavItem[]> = {
     { label: 'Entreprise', href: '/about' },
     { label: 'Contact', href: '/contact' },
   ],
+  zh: [
+    { label: '产品', href: '/products' }, { label: '案例', href: '/projects' }, { label: '指南', href: '/guides' },
+    { label: '常见问题', href: '/faq' }, { label: '关于我们', href: '/about' }, { label: '联系我们', href: '/contact' },
+  ],
+  pt: [
+    { label: 'Produtos', href: '/products' }, { label: 'Projetos', href: '/projects' }, { label: 'Guias', href: '/guides' },
+    { label: 'FAQ', href: '/faq' }, { label: 'Empresa', href: '/about' }, { label: 'Contacto', href: '/contact' },
+  ],
+  it: [
+    { label: 'Prodotti', href: '/products' }, { label: 'Progetti', href: '/projects' }, { label: 'Guide', href: '/guides' },
+    { label: 'FAQ', href: '/faq' }, { label: 'Azienda', href: '/about' }, { label: 'Contatti', href: '/contact' },
+  ],
+  nl: [
+    { label: 'Producten', href: '/products' }, { label: 'Projecten', href: '/projects' }, { label: 'Gidsen', href: '/guides' },
+    { label: 'FAQ', href: '/faq' }, { label: 'Over ons', href: '/about' }, { label: 'Contact', href: '/contact' },
+  ],
+  pl: [
+    { label: 'Produkty', href: '/products' }, { label: 'Realizacje', href: '/projects' }, { label: 'Poradniki', href: '/guides' },
+    { label: 'FAQ', href: '/faq' }, { label: 'O firmie', href: '/about' }, { label: 'Kontakt', href: '/contact' },
+  ],
 };
 
 export const headerCta: Record<Locale, NavItem> = {
@@ -209,6 +249,11 @@ export const headerCta: Record<Locale, NavItem> = {
   ru: { label: 'Бесплатный расчёт', href: '/contact' },
   de: { label: 'Kostenloses Angebot', href: '/contact' },
   fr: { label: 'Devis gratuit', href: '/contact' },
+  zh: { label: '免费报价', href: '/contact' },
+  pt: { label: 'Orçamento grátis', href: '/contact' },
+  it: { label: 'Preventivo gratuito', href: '/contact' },
+  nl: { label: 'Gratis offerte', href: '/contact' },
+  pl: { label: 'Bezpłatna wycena', href: '/contact' },
 };
 
 export const headerCopy: Record<Locale, { homeLabel: string; menuLabel: string; logoAlt: string }> = {
@@ -220,6 +265,11 @@ export const headerCopy: Record<Locale, { homeLabel: string; menuLabel: string; 
   ru: { homeLabel: 'Главная ZYD', menuLabel: 'Открыть меню', logoAlt: 'Логотип ZYD' },
   de: { homeLabel: 'ZYD Startseite', menuLabel: 'Menü öffnen', logoAlt: 'ZYD Logo' },
   fr: { homeLabel: 'Accueil ZYD', menuLabel: 'Ouvrir le menu', logoAlt: 'Logo ZYD' },
+  zh: { homeLabel: 'ZYD 首页', menuLabel: '打开菜单', logoAlt: 'ZYD 标志' },
+  pt: { homeLabel: 'Página inicial ZYD', menuLabel: 'Abrir menu', logoAlt: 'Logotipo ZYD' },
+  it: { homeLabel: 'Home ZYD', menuLabel: 'Apri menu', logoAlt: 'Logo ZYD' },
+  nl: { homeLabel: 'ZYD Startpagina', menuLabel: 'Menu openen', logoAlt: 'ZYD-logo' },
+  pl: { homeLabel: 'Strona główna ZYD', menuLabel: 'Otwórz menu', logoAlt: 'Logo ZYD' },
 };
 
 /** Trigger label and panel heading of the language switch, per language. */
@@ -232,6 +282,11 @@ export const languageSwitchCopy: Record<Locale, { label: string; panelTitle: str
   ru: { label: 'Языки', panelTitle: 'Выберите язык' },
   de: { label: 'Sprachen', panelTitle: 'Sprache wählen' },
   fr: { label: 'Langues', panelTitle: 'Choisir une langue' },
+  zh: { label: '语言', panelTitle: '选择语言' },
+  pt: { label: 'Idiomas', panelTitle: 'Escolha um idioma' },
+  it: { label: 'Lingue', panelTitle: 'Scegli una lingua' },
+  nl: { label: 'Talen', panelTitle: 'Kies een taal' },
+  pl: { label: 'Języki', panelTitle: 'Wybierz język' },
 };
 
 type FooterColumn = { heading: string; links: NavItem[] };
@@ -539,6 +594,66 @@ export const footerCopy: Record<
     quoteAria: 'Demander un devis de signalétique',
     quoteLabel: 'Devis gratuit',
   },
+  zh: {
+    tagline: '建筑标识与精密制造的全球标准。',
+    columns: [
+      { heading: '产品线', links: [
+        { label: '导视系统', href: '/products/architectural-wayfinding-system' }, { label: '背发光字', href: '/products/custom-halo-lit-letters' }, { label: 'LED灯箱', href: '/products/ultra-slim-led-light-box' }, { label: '精神堡垒', href: '/products/outdoor-pylon-monument-sign' }, { label: 'LED霓虹灯牌', href: '/products/custom-led-neon-sign' }, { label: '金属与亚克力标识', href: '/products/metal-acrylic-logo-sign' }, { label: '查看全部产品 →', href: '/products' },
+      ] },
+      { heading: '公司信息', links: [
+        { label: '生产基地', href: '/about' }, { label: '案例作品', href: '/projects' }, { label: '资源与FAQ', href: '/faq' }, { label: '发光字成本指南', href: '/guides/how-much-do-custom-channel-letters-cost' }, { label: '前发光与背发光对比', href: '/guides/front-lit-vs-halo-lit-channel-letters' }, { label: '立即咨询', href: '/contact' },
+      ] },
+    ],
+    emailLabel: '邮箱', whatsappLabel: '技术负责人', copyright: '© 2026', delivery: 'DDP配送范围', backToTop: '返回顶部', whatsappAria: '通过WhatsApp咨询', quoteAria: '获取标识项目免费报价', quoteLabel: '免费报价',
+  },
+  pt: {
+    tagline: 'Referência global em sinalização arquitetônica e fabricação de precisão.',
+    columns: [
+      { heading: 'Linhas de produtos', links: [
+        { label: 'Sistemas de orientação', href: '/products/architectural-wayfinding-system' }, { label: 'Letras halo iluminadas', href: '/products/custom-halo-lit-letters' }, { label: 'Caixas de luz LED', href: '/products/ultra-slim-led-light-box' }, { label: 'Totens monumentais', href: '/products/outdoor-pylon-monument-sign' }, { label: 'Letras neon LED', href: '/products/custom-led-neon-sign' }, { label: 'Sinalização de metal e acrílico', href: '/products/metal-acrylic-logo-sign' }, { label: 'Ver todos os produtos →', href: '/products' },
+      ] },
+      { heading: 'Empresa', links: [
+        { label: 'Base de produção', href: '/about' }, { label: 'Portfólio de projetos', href: '/projects' }, { label: 'Recursos e FAQ', href: '/faq' }, { label: 'Guia de custos de letras', href: '/guides/how-much-do-custom-channel-letters-cost' }, { label: 'Iluminação frontal ou halo', href: '/guides/front-lit-vs-halo-lit-channel-letters' }, { label: 'Fale conosco', href: '/contact' },
+      ] },
+    ],
+    emailLabel: 'E-mail', whatsappLabel: 'Responsável técnico', copyright: '© 2026', delivery: 'Escopo de entrega DDP', backToTop: 'Voltar ao topo', whatsappAria: 'Falar pelo WhatsApp', quoteAria: 'Solicitar orçamento de sinalização', quoteLabel: 'Orçamento grátis',
+  },
+  it: {
+    tagline: 'Punto di riferimento globale per insegne architettoniche e lavorazioni di precisione.',
+    columns: [
+      { heading: 'Linee di prodotto', links: [
+        { label: 'Sistemi di orientamento', href: '/products/architectural-wayfinding-system' }, { label: 'Lettere con luce halo', href: '/products/custom-halo-lit-letters' }, { label: 'Light box LED', href: '/products/ultra-slim-led-light-box' }, { label: 'Insegne monumentali', href: '/products/outdoor-pylon-monument-sign' }, { label: 'Insegne neon LED', href: '/products/custom-led-neon-sign' }, { label: 'Insegne in metallo e acrilico', href: '/products/metal-acrylic-logo-sign' }, { label: 'Vedi tutti i prodotti →', href: '/products' },
+      ] },
+      { heading: 'Azienda', links: [
+        { label: 'Base produttiva', href: '/about' }, { label: 'Portfolio progetti', href: '/projects' }, { label: 'Risorse e FAQ', href: '/faq' }, { label: 'Guida ai costi delle lettere', href: '/guides/how-much-do-custom-channel-letters-cost' }, { label: 'Luce frontale o halo', href: '/guides/front-lit-vs-halo-lit-channel-letters' }, { label: 'Richiedi consulenza', href: '/contact' },
+      ] },
+    ],
+    emailLabel: 'E-mail', whatsappLabel: 'Responsabile tecnico', copyright: '© 2026', delivery: 'Ambito di consegna DDP', backToTop: 'Torna in alto', whatsappAria: 'Chat su WhatsApp', quoteAria: 'Richiedi un preventivo per il progetto', quoteLabel: 'Preventivo gratuito',
+  },
+  nl: {
+    tagline: 'Wereldwijde standaard in architectonische bewegwijzering en precisiefabricage.',
+    columns: [
+      { heading: 'Productlijnen', links: [
+        { label: 'Bewegwijzeringssystemen', href: '/products/architectural-wayfinding-system' }, { label: 'Halo-verlichte letters', href: '/products/custom-halo-lit-letters' }, { label: 'LED-lichtbakken', href: '/products/ultra-slim-led-light-box' }, { label: 'Monumentborden', href: '/products/outdoor-pylon-monument-sign' }, { label: 'LED-neonborden', href: '/products/custom-led-neon-sign' }, { label: 'Metalen en acryl borden', href: '/products/metal-acrylic-logo-sign' }, { label: 'Alle producten →', href: '/products' },
+      ] },
+      { heading: 'Bedrijf', links: [
+        { label: 'Productielocatie', href: '/about' }, { label: 'Projectportfolio', href: '/projects' }, { label: 'Bronnen en FAQ', href: '/faq' }, { label: 'Kostengids kanaalletters', href: '/guides/how-much-do-custom-channel-letters-cost' }, { label: 'Front- of haloverlichting', href: '/guides/front-lit-vs-halo-lit-channel-letters' }, { label: 'Advies aanvragen', href: '/contact' },
+      ] },
+    ],
+    emailLabel: 'E-mail', whatsappLabel: 'Technische contactpersoon', copyright: '© 2026', delivery: 'DDP-leveringsomvang', backToTop: 'Naar boven', whatsappAria: 'Chat via WhatsApp', quoteAria: 'Vraag een offerte voor een bewegwijzeringsproject', quoteLabel: 'Gratis offerte',
+  },
+  pl: {
+    tagline: 'Globalny standard oznakowania architektonicznego i precyzyjnej produkcji.',
+    columns: [
+      { heading: 'Linie produktów', links: [
+        { label: 'Systemy wayfinding', href: '/products/architectural-wayfinding-system' }, { label: 'Litery z poświatą', href: '/products/custom-halo-lit-letters' }, { label: 'Kasetony LED', href: '/products/ultra-slim-led-light-box' }, { label: 'Pylony i znaki monumentalne', href: '/products/outdoor-pylon-monument-sign' }, { label: 'Neony LED', href: '/products/custom-led-neon-sign' }, { label: 'Znaki metalowe i akrylowe', href: '/products/metal-acrylic-logo-sign' }, { label: 'Zobacz wszystkie produkty →', href: '/products' },
+      ] },
+      { heading: 'Firma', links: [
+        { label: 'Baza produkcyjna', href: '/about' }, { label: 'Portfolio realizacji', href: '/projects' }, { label: 'Materiały i FAQ', href: '/faq' }, { label: 'Przewodnik po kosztach liter', href: '/guides/how-much-do-custom-channel-letters-cost' }, { label: 'Oświetlenie frontowe i halo', href: '/guides/front-lit-vs-halo-lit-channel-letters' }, { label: 'Skonsultuj projekt', href: '/contact' },
+      ] },
+    ],
+    emailLabel: 'E-mail', whatsappLabel: 'Kontakt techniczny', copyright: '© 2026', delivery: 'Zakres dostawy DDP', backToTop: 'Do góry', whatsappAria: 'Napisz przez WhatsApp', quoteAria: 'Poproś o bezpłatną wycenę projektu', quoteLabel: 'Bezpłatna wycena',
+  },
 };
 
 /** Headings that repeat in every language, plus the social list and Alibaba. */
@@ -552,6 +667,7 @@ export const footerStatic = {
     ru: 'Соцсети',
     de: 'Soziale Netzwerke',
     fr: 'Réseaux sociaux',
+    zh: '社交媒体', pt: 'Redes sociais', it: 'Social', nl: 'Sociale media', pl: 'Media społecznościowe',
   } as Record<Locale, string>,
   connectHeading: {
     en: 'B2B Connect',
@@ -562,6 +678,7 @@ export const footerStatic = {
     ru: 'Контакты B2B',
     de: 'B2B-Kontakt',
     fr: 'Contact B2B',
+    zh: 'B2B 联系', pt: 'Contacto B2B', it: 'Contatto B2B', nl: 'B2B-contact', pl: 'Kontakt B2B',
   } as Record<Locale, string>,
   socialLinks: [
     { label: 'LinkedIn', key: 'linkedin' },
