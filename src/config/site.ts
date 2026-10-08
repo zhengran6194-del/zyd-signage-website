@@ -130,7 +130,9 @@ export const ogImages = {
  */
 export type LanguageAlternates = {
   en: string;
-  ja: string;
+  /** Set when the page has been translated; omitted otherwise. */
+  ja?: string;
+  ko?: string;
 };
 
 export type PageMetadataInput = {
@@ -191,7 +193,8 @@ export function buildPageMetadata({
         ? {
             languages: {
               'en-US': absolute(languages.en),
-              'ja-JP': absolute(languages.ja),
+              ...(languages.ja ? { 'ja-JP': absolute(languages.ja) } : {}),
+              ...(languages.ko ? { 'ko-KR': absolute(languages.ko) } : {}),
               'x-default': absolute(languages.en),
             },
           }

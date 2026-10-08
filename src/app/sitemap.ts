@@ -29,6 +29,7 @@ const lastModifiedByRoute: Record<string, string> = {
   "/ja/guides": "2026-10-08",
   "/ja/faq": "2026-10-08",
   "/ja/about": "2026-10-08",
+  "/ko": "2026-10-08",
 
   "/guides/mall-wayfinding-signage": "2026-09-21",
   "/guides/industrial-park-signage": "2026-09-21",
@@ -139,6 +140,11 @@ const routes: SitemapRoute[] = [
     path: "/ja/about",
     priority: 0.7,
     languages: { "en-US": "/about", "ja-JP": "/ja/about", "x-default": "/about" },
+  },
+  {
+    path: "/ko",
+    priority: 0.8,
+    languages: { "en-US": "", "ko-KR": "/ko", "x-default": "" },
   },
   { path: "/products", priority: 0.9 },
   { path: "/projects", priority: 0.8 },

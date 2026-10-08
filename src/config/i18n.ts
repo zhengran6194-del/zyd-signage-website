@@ -1,23 +1,44 @@
 /**
- * Language plumbing for the Japanese tree.
+ * Language plumbing.
  *
- * The Japanese pages live under /ja as a parallel subtree — no route was moved
- * into a [locale] segment — so the language of a request is read from its path.
- * Everything the header, footer and language switcher need to render in the
- * reader's language is collected here, which keeps the English strings in one
- * place and makes it obvious what still has no Japanese counterpart.
+ * Every translated tree lives in a parallel subtree — /ja, /ko — rather than in
+ * a [locale] segment, so the language of a request is read from its path. The
+ * dictionaries below are the single source for the header, footer and language
+ * panel; adding a language means adding an entry to each of them plus its route
+ * map, and nothing else.
+ *
+ * Only languages that have real pages are listed anywhere in the UI, and every
+ * link is resolved to a page that exists: a page with a translation keeps the
+ * reader on the same page, and a page without one falls back to that language's
+ * home page instead of a missing address.
  */
-export type Locale = 'en' | 'ja';
+export type Locale = 'en' | 'ja' | 'ko';
 
 export const DEFAULT_LOCALE: Locale = 'en';
 
-export const localeFromPath = (pathname: string): Locale =>
-  pathname === '/ja' || pathname.startsWith('/ja/') ? 'ja' : 'en';
+/** The locales that have a subtree, in the order they are listed in the UI. */
+export const LOCALES: Locale[] = ['en', 'ja', 'ko'];
+
+/** Language names, written the way a speaker of that language writes them. */
+export const languageNames: Record<Locale, string> = {
+  en: 'English',
+  ja: '日本語',
+  ko: '한국어',
+};
+
+/** Path prefix of each translated tree; English is the site root. */
+const LOCALE_PREFIX: Record<Locale, string> = { en: '', ja: '/ja', ko: '/ko' };
+
+export const localeFromPath = (pathname: string): Locale => {
+  if (pathname === '/ko' || pathname.startsWith('/ko/')) return 'ko';
+  if (pathname === '/ja' || pathname.startsWith('/ja/')) return 'ja';
+  return DEFAULT_LOCALE;
+};
 
 /**
- * English routes that have a Japanese counterpart, and vice versa. Used by the
- * language switcher so a reader stays on the same page when a translation
- * exists, and lands on the Japanese home page when it does not.
+ * English routes that have a Japanese counterpart, and the same for Korean.
+ * A page that is missing from a map has no page in that language yet, so the
+ * switch falls back to that language's home page.
  */
 export const japaneseRouteFor: Record<string, string> = {
   '/': '/ja',
@@ -32,24 +53,39 @@ export const japaneseRouteFor: Record<string, string> = {
   '/contact': '/ja/contact',
 };
 
-/** The Japanese route for an English path, falling back to the Japanese home page. */
-export const toJapanese = (pathname: string): string => japaneseRouteFor[pathname] ?? '/ja';
+/** Korean coverage is the home page only, so everything else lands there. */
+export const koreanRouteFor: Record<string, string> = {
+  '/': '/ko',
+};
+
+/** The page in the given language for an English path, or that language's home. */
+export const toLocale = (pathname: string, locale: Locale): string => {
+  if (locale === 'en') return toEnglish(pathname);
+  return locale === 'ja' ? japaneseRouteFor[pathname] ?? '/ja' : koreanRouteFor[pathname] ?? '/ko';
+};
 
 /**
- * The English route for a Japanese path. Every Japanese page mirrors an English
- * page that already exists, so dropping the prefix is enough and cannot 404.
+ * The English route for a translated path. Every translated page mirrors an
+ * English page that already exists, so dropping the prefix is enough.
  */
 export const toEnglish = (pathname: string): string => {
-  const stripped = pathname.replace(/^\/ja(?=\/|$)/, '');
+  const stripped = pathname.replace(/^\/(ja|ko)(?=\/|$)/, '');
   return stripped === '' ? '/' : stripped;
 };
+
+/** The route a reader is on, in the given language. */
+export const localeHref = (pathname: string, locale: Locale): string =>
+  locale === localeFromPath(pathname) ? pathname : toLocale(pathname, locale);
+
+/** The canonical prefix for a language, used by the sitemap. */
+export const localePrefix = (locale: Locale): string => LOCALE_PREFIX[locale];
 
 export type NavItem = { label: string; href: string };
 
 /**
- * Navigation. Japanese entries point at the Japanese page where one exists and
- * at the English page where it does not, so no link in the Japanese header can
- * lead to a missing page.
+ * Navigation. A translated entry points at its own language's page where one
+ * exists and at the English page where it does not, so no link in a translated
+ * header can lead to a missing page.
  */
 export const navItems: Record<Locale, NavItem[]> = {
   en: [
@@ -68,16 +104,33 @@ export const navItems: Record<Locale, NavItem[]> = {
     { label: '会社情報', href: '/ja/about' },
     { label: 'お問い合わせ', href: '/ja/contact' },
   ],
+  ko: [
+    { label: '제품', href: '/products' },
+    { label: '시공 사례', href: '/projects' },
+    { label: '가이드', href: '/guides' },
+    { label: 'FAQ', href: '/faq' },
+    { label: '회사 소개', href: '/about' },
+    { label: '문의', href: '/contact' },
+  ],
 };
 
 export const headerCta: Record<Locale, NavItem> = {
   en: { label: 'Get a Free Quote', href: '/contact' },
   ja: { label: '無料見積もり', href: '/ja/contact' },
+  ko: { label: '무료 견적', href: '/contact' },
 };
 
 export const headerCopy: Record<Locale, { homeLabel: string; menuLabel: string; logoAlt: string }> = {
   en: { homeLabel: 'ZYD Home', menuLabel: 'Toggle navigation', logoAlt: 'ZYD logo' },
   ja: { homeLabel: 'ZYD ホーム', menuLabel: 'メニューを開く', logoAlt: 'ZYD ロゴ' },
+  ko: { homeLabel: 'ZYD 홈', menuLabel: '메뉴 열기', logoAlt: 'ZYD 로고' },
+};
+
+/** Trigger label and panel heading of the language switch, per language. */
+export const languageSwitchCopy: Record<Locale, { label: string; panelTitle: string }> = {
+  en: { label: 'Languages', panelTitle: 'Choose a language' },
+  ja: { label: '言語', panelTitle: '言語を選択' },
+  ko: { label: '언어', panelTitle: '언어 선택' },
 };
 
 type FooterColumn = { heading: string; links: NavItem[] };
@@ -169,12 +222,48 @@ export const footerCopy: Record<
     quoteAria: 'サイネージ案件のお見積もりを依頼する',
     quoteLabel: '無料見積もり',
   },
+  ko: {
+    tagline: '건축 사이니지와 정밀 가공의 글로벌 기준.',
+    columns: [
+      {
+        heading: '제품 라인',
+        links: [
+          { label: '웨이파인딩 시스템', href: '/products/architectural-wayfinding-system' },
+          { label: '할로 조명 문자', href: '/products/custom-halo-lit-letters' },
+          { label: 'LED 라이트박스', href: '/products/ultra-slim-led-light-box' },
+          { label: '모뉴먼트 사인', href: '/products/outdoor-pylon-monument-sign' },
+          { label: 'LED 네온 사인', href: '/products/custom-led-neon-sign' },
+          { label: '금속·아크릴 사인', href: '/products/metal-acrylic-logo-sign' },
+          { label: '모든 제품 보기 →', href: '/products' },
+        ],
+      },
+      {
+        heading: '회사 정보',
+        links: [
+          { label: '생산 기지', href: '/about' },
+          { label: '시공 사례', href: '/projects' },
+          { label: '자료·FAQ', href: '/faq' },
+          { label: '채널 레터 가격 가이드', href: '/guides/how-much-do-custom-channel-letters-cost' },
+          { label: '전면 발광과 할로 발광의 차이', href: '/guides/front-lit-vs-halo-lit-channel-letters' },
+          { label: '상담 신청', href: '/contact' },
+        ],
+      },
+    ],
+    emailLabel: '이메일',
+    whatsappLabel: '기술 담당',
+    copyright: '© 2026',
+    delivery: 'DDP 배송 범위',
+    backToTop: '맨 위로',
+    whatsappAria: 'WhatsApp으로 문의하기',
+    quoteAria: '사이니지 프로젝트 무료 견적 요청',
+    quoteLabel: '무료 견적',
+  },
 };
 
-/** Column headings that stay the same in both languages, plus the social list. */
+/** Headings that repeat in every language, plus the social list and Alibaba. */
 export const footerStatic = {
-  socialHeading: { en: 'Social Identity', ja: 'ソーシャル' } as Record<Locale, string>,
-  connectHeading: { en: 'B2B Connect', ja: 'B2B窓口' } as Record<Locale, string>,
+  socialHeading: { en: 'Social Identity', ja: 'ソーシャル', ko: '소셜' } as Record<Locale, string>,
+  connectHeading: { en: 'B2B Connect', ja: 'B2B窓口', ko: 'B2B 연락처' } as Record<Locale, string>,
   socialLinks: [
     { label: 'LinkedIn', key: 'linkedin' },
     { label: 'Twitter (X)', key: 'twitter' },
