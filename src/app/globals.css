@@ -408,6 +408,55 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
 
 a.lang-panel-item:hover { background: #f1f5f9; color: var(--blue-700); }
 
+/* A language that has no version of the current page is a button, not a link:
+   it explains the gap instead of navigating away, so it is muted and marked. */
+.lang-panel-item-unavailable {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+  color: #94a3b8;
+  text-decoration: underline dotted currentColor;
+  text-underline-offset: 4px;
+}
+
+.lang-panel-item-unavailable:hover,
+.lang-panel-item-unavailable:focus-visible { background: #f1f5f9; color: #475569; }
+
+.lang-panel-item-unavailable.is-active {
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.lang-panel-notice {
+  margin-top: 0.9rem;
+  padding: 0.75rem 0.8rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.6rem;
+  background: #f8fafc;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.lang-panel-notice-text {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--blue-950);
+}
+
+.lang-panel-notice-link {
+  display: inline-block;
+  margin-top: 0.4rem;
+  font-size: 12px;
+  font-weight: 900;
+  color: var(--blue-700);
+}
+
+.lang-panel-notice-link:hover { color: var(--blue-900); }
+
 .lang-panel-item[aria-current="true"] {
   background: #eff6ff;
   color: var(--blue-700);

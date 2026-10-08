@@ -106,28 +106,27 @@ export const japaneseRouteFor: Record<string, string> = {
 };
 
 /**
- * The other translated trees are home pages only so far, so any other page
- * falls back to that language's home page.
+ * The page in the given language that matches an English path, or null when
+ * that language has no such page yet.
+ *
+ * Returning null rather than falling back to the language's home page is
+ * deliberate: sending a reader who is looking at a product page to an unrelated
+ * home page loses their place, so the switcher tells them the page has no
+ * translation and offers the home page as a choice instead.
  */
-const homeOnlyRouteFor: Partial<Record<Locale, string>> = {
-  ko: '/ko',
-  ar: '/ar',
-  es: '/es',
-  ru: '/ru',
-  de: '/de',
-  fr: '/fr',
-  zh: '/zh',
-  pt: '/pt',
-  it: '/it',
-  nl: '/nl',
-  pl: '/pl',
-};
+export const translatedPathFor = (pathname: string, locale: Locale): string | null => {
+  const current = localeFromPath(pathname);
+  if (locale === current) return pathname;
 
-/** The page in the given language for an English path, or that language's home. */
-export const toLocale = (pathname: string, locale: Locale): string => {
-  if (locale === 'en') return toEnglish(pathname);
-  if (locale === 'ja') return japaneseRouteFor[pathname] ?? '/ja';
-  return homeOnlyRouteFor[locale] ?? '/';
+  // Every translated page mirrors an English page, so the English route is the
+  // common key for looking a translation up.
+  const englishPath = toEnglish(pathname);
+  if (locale === 'en') return englishPath;
+  if (locale === 'ja') return japaneseRouteFor[englishPath] ?? null;
+
+  // The other trees publish their home page only.
+  if (englishPath === '/') return LOCALE_PREFIX[locale] || '/';
+  return null;
 };
 
 /**
@@ -140,9 +139,8 @@ export const toEnglish = (pathname: string): string => {
   return stripped === '' ? '/' : stripped;
 };
 
-/** The route a reader is on, in the given language. */
-export const localeHref = (pathname: string, locale: Locale): string =>
-  locale === localeFromPath(pathname) ? pathname : toLocale(pathname, locale);
+/** The home page of a language, used when a page has no translation of it. */
+export const localeHomePath = (locale: Locale): string => LOCALE_PREFIX[locale] || '/';
 
 /** The canonical prefix for a language, used by the sitemap. */
 export const localePrefix = (locale: Locale): string => LOCALE_PREFIX[locale];
@@ -273,21 +271,28 @@ export const headerCopy: Record<Locale, { homeLabel: string; menuLabel: string; 
   pl: { homeLabel: 'Strona główna ZYD', menuLabel: 'Otwórz menu', logoAlt: 'Logo ZYD' },
 };
 
-/** Trigger label and panel heading of the language switch, per language. */
-export const languageSwitchCopy: Record<Locale, { label: string; panelTitle: string }> = {
-  en: { label: 'Languages', panelTitle: 'Choose a language' },
-  ja: { label: '言語', panelTitle: '言語を選択' },
-  ko: { label: '언어', panelTitle: '언어 선택' },
-  ar: { label: 'اللغات', panelTitle: 'اختر اللغة' },
-  es: { label: 'Idiomas', panelTitle: 'Elige un idioma' },
-  ru: { label: 'Языки', panelTitle: 'Выберите язык' },
-  de: { label: 'Sprachen', panelTitle: 'Sprache wählen' },
-  fr: { label: 'Langues', panelTitle: 'Choisir une langue' },
-  zh: { label: '语言', panelTitle: '选择语言' },
-  pt: { label: 'Idiomas', panelTitle: 'Escolha um idioma' },
-  it: { label: 'Lingue', panelTitle: 'Scegli una lingua' },
-  nl: { label: 'Talen', panelTitle: 'Kies een taal' },
-  pl: { label: 'Języki', panelTitle: 'Wybierz język' },
+/**
+ * Trigger label, panel heading, and the wording shown when a reader picks a
+ * language that has no version of the page they are on. The notice is written
+ * in the language they picked, because that is the language they asked for.
+ */
+export const languageSwitchCopy: Record<
+  Locale,
+  { label: string; panelTitle: string; unavailable: string; homeLink: string }
+> = {
+  en: { label: 'Languages', panelTitle: 'Choose a language', unavailable: 'This page is not available in English yet.', homeLink: 'Go to the English home page' },
+  ja: { label: '言語', panelTitle: '言語を選択', unavailable: 'このページの日本語版はまだありません。', homeLink: '日本語のトップページへ' },
+  ko: { label: '언어', panelTitle: '언어 선택', unavailable: '이 페이지는 아직 한국어 버전이 없습니다.', homeLink: '한국어 홈페이지로 이동' },
+  ar: { label: 'اللغات', panelTitle: 'اختر اللغة', unavailable: 'هذه الصفحة غير متوفرة بالعربية حتى الآن.', homeLink: 'الانتقال إلى الصفحة الرئيسية بالعربية' },
+  es: { label: 'Idiomas', panelTitle: 'Elige un idioma', unavailable: 'Esta página aún no está disponible en español.', homeLink: 'Ir a la página de inicio en español' },
+  ru: { label: 'Языки', panelTitle: 'Выберите язык', unavailable: 'Эта страница пока недоступна на русском языке.', homeLink: 'Перейти на главную страницу на русском' },
+  de: { label: 'Sprachen', panelTitle: 'Sprache wählen', unavailable: 'Diese Seite ist noch nicht auf Deutsch verfügbar.', homeLink: 'Zur deutschen Startseite' },
+  fr: { label: 'Langues', panelTitle: 'Choisir une langue', unavailable: 'Cette page n’est pas encore disponible en français.', homeLink: 'Aller à la page d’accueil en français' },
+  zh: { label: '语言', panelTitle: '选择语言', unavailable: '此页面暂无简体中文版本。', homeLink: '前往简体中文首页' },
+  pt: { label: 'Idiomas', panelTitle: 'Escolha um idioma', unavailable: 'Esta página ainda não está disponível em português.', homeLink: 'Ir para a página inicial em português' },
+  it: { label: 'Lingue', panelTitle: 'Scegli una lingua', unavailable: 'Questa pagina non è ancora disponibile in italiano.', homeLink: 'Vai alla home page in italiano' },
+  nl: { label: 'Talen', panelTitle: 'Kies een taal', unavailable: 'Deze pagina is nog niet beschikbaar in het Nederlands.', homeLink: 'Naar de Nederlandse startpagina' },
+  pl: { label: 'Języki', panelTitle: 'Wybierz język', unavailable: 'Ta strona nie jest jeszcze dostępna w języku polskim.', homeLink: 'Przejdź do strony głównej w języku polskim' },
 };
 
 type FooterColumn = { heading: string; links: NavItem[] };

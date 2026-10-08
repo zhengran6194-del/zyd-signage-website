@@ -8,7 +8,9 @@ import {
   languageNames,
   languageSwitchCopy,
   localeFromPath,
-  localeHref,
+  localeHomePath,
+  translatedPathFor,
+  type Locale,
 } from '@/config/i18n';
 
 /**
@@ -18,9 +20,11 @@ import {
  * "languages" in the language currently being read, and a chevron; opening it
  * reveals the languages arranged in a grid with the current one marked.
  *
- * The list is built from the configured locales, and each entry resolves to a
- * page that exists — the same page when that language has a translation of it,
- * otherwise that language's home page — so no entry can lead to a 404.
+ * A language whose page exists for the page being read is a link to that page.
+ * A language that has no version of this page is not a link at all: moving the
+ * reader to an unrelated home page would lose their place, so it explains, in
+ * the language they asked for, that the page is not translated yet and offers
+ * that language's home page as a choice they can make themselves.
  */
 export default function LanguageSwitch({ className = '' }: { className?: string }) {
   const pathname = usePathname();
@@ -28,8 +32,14 @@ export default function LanguageSwitch({ className = '' }: { className?: string 
   const copy = languageSwitchCopy[current];
   const panelId = useId();
   const [isOpen, setIsOpen] = useState(false);
+  const [noticeRequest, setNoticeRequest] = useState<{ locale: Locale; pathname: string } | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const triggerRef = useRef<HTMLButtonElement>(null);
+
+  // A notice belongs to the page it was raised on: it is only shown while the
+  // reader is still on that page, so navigating away clears it without an
+  // effect that would set state during render.
+  const noticeLocale = noticeRequest && noticeRequest.pathname === pathname ? noticeRequest.locale : null;
 
   useEffect(() => {
     if (!isOpen) return;
@@ -58,6 +68,8 @@ export default function LanguageSwitch({ className = '' }: { className?: string 
     };
   }, [isOpen]);
 
+  const notice = noticeLocale ? languageSwitchCopy[noticeLocale] : null;
+
   return (
     <div className={`lang-switch ${className}`.trim()} ref={containerRef}>
       <button
@@ -84,26 +96,51 @@ export default function LanguageSwitch({ className = '' }: { className?: string 
         <ul className="lang-panel-grid">
           {LOCALES.map((locale) => {
             const isCurrent = locale === current;
-            return (
-              <li key={locale}>
-                {isCurrent ? (
+            if (isCurrent) {
+              return (
+                <li key={locale}>
                   <span className="lang-panel-item" lang={locale} aria-current="true">
                     {languageNames[locale]}
                   </span>
-                ) : (
-                  <Link
-                    className="lang-panel-item"
-                    href={localeHref(pathname, locale)}
-                    lang={locale}
-                    onClick={() => setIsOpen(false)}
-                  >
+                </li>
+              );
+            }
+
+            const target = translatedPathFor(pathname, locale);
+            if (target) {
+              return (
+                <li key={locale}>
+                  <Link className="lang-panel-item" href={target} lang={locale} onClick={() => setIsOpen(false)}>
                     {languageNames[locale]}
                   </Link>
-                )}
+                </li>
+              );
+            }
+
+            return (
+              <li key={locale}>
+                <button
+                  type="button"
+                  className={`lang-panel-item lang-panel-item-unavailable${noticeLocale === locale ? ' is-active' : ''}`}
+                  lang={locale}
+                  onClick={() => setNoticeRequest({ locale, pathname })}
+                >
+                  {languageNames[locale]}
+                  <span className="sr-only"> — {languageSwitchCopy[locale].unavailable}</span>
+                </button>
               </li>
             );
           })}
         </ul>
+
+        {notice && noticeLocale && (
+          <div className="lang-panel-notice" role="status" lang={noticeLocale}>
+            <p className="lang-panel-notice-text">{notice.unavailable}</p>
+            <Link className="lang-panel-notice-link" href={localeHomePath(noticeLocale)} onClick={() => setIsOpen(false)}>
+              {notice.homeLink} →
+            </Link>
+          </div>
+        )}
       </div>
     </div>
   );
