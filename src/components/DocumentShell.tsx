@@ -2,7 +2,7 @@
 
 import type { ReactNode } from 'react';
 import { usePathname } from 'next/navigation';
-import { localeFromPath } from '@/config/i18n';
+import { isRtlLocale, localeFromPath } from '@/config/i18n';
 
 type DocumentShellProps = {
   fontClassName: string;
@@ -31,8 +31,10 @@ type DocumentShellProps = {
 export default function DocumentShell({ fontClassName, head, children }: DocumentShellProps) {
   const locale = localeFromPath(usePathname());
 
+  // dir is only set where it differs from the default, so the pages that were
+  // already published keep exactly the markup they had.
   return (
-    <html lang={locale} className={fontClassName}>
+    <html lang={locale} dir={isRtlLocale(locale) ? 'rtl' : undefined} className={fontClassName}>
       {head}
       <body>{children}</body>
     </html>

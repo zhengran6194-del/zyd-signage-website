@@ -78,7 +78,11 @@ export default function Footer() {
 
             <div className="lg:pl-4">
               <h4 className={headingClass}>{footerStatic.connectHeading[locale]}</h4>
-              <div className="space-y-8">
+              {/* Long translations of the contact labels (German and Russian in
+                  particular) would otherwise push the page wider than the
+                  viewport, because the column is narrow and the labels carry
+                  wide letter spacing. */}
+              <div className="footer-connect space-y-8">
                 <div>
                   <div className="text-[10px] text-slate-600 font-black uppercase tracking-[0.2em] mb-2">{copy.emailLabel}</div>
                   <a href={`mailto:${siteConfig.salesEmail}`} className="text-xs text-slate-600 hover:text-blue-600 font-bold block transition-all break-all">{siteConfig.salesEmail}</a>

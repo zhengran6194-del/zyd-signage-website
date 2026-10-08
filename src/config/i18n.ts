@@ -12,26 +12,63 @@
  * reader on the same page, and a page without one falls back to that language's
  * home page instead of a missing address.
  */
-export type Locale = 'en' | 'ja' | 'ko';
+export type Locale = 'en' | 'ja' | 'ko' | 'ar' | 'es' | 'ru' | 'de' | 'fr';
 
 export const DEFAULT_LOCALE: Locale = 'en';
 
 /** The locales that have a subtree, in the order they are listed in the UI. */
-export const LOCALES: Locale[] = ['en', 'ja', 'ko'];
+export const LOCALES: Locale[] = ['en', 'ja', 'ko', 'ar', 'es', 'ru', 'de', 'fr'];
 
 /** Language names, written the way a speaker of that language writes them. */
 export const languageNames: Record<Locale, string> = {
   en: 'English',
   ja: '日本語',
   ko: '한국어',
+  ar: 'العربية',
+  es: 'Español',
+  ru: 'Русский',
+  de: 'Deutsch',
+  fr: 'Français',
 };
 
+/**
+ * hreflang value for each language. English, Japanese and Korean keep the
+ * region-qualified values they were first published with; the newer trees use a
+ * language-only value, since they address a language rather than one country.
+ */
+export const hreflangCode: Record<Locale, string> = {
+  en: 'en-US',
+  ja: 'ja-JP',
+  ko: 'ko-KR',
+  ar: 'ar',
+  es: 'es',
+  ru: 'ru',
+  de: 'de',
+  fr: 'fr',
+};
+
+/** Languages written right to left, so the document direction can follow. */
+export const isRtlLocale = (locale: Locale): boolean => locale === 'ar';
+
 /** Path prefix of each translated tree; English is the site root. */
-const LOCALE_PREFIX: Record<Locale, string> = { en: '', ja: '/ja', ko: '/ko' };
+const LOCALE_PREFIX: Record<Locale, string> = {
+  en: '',
+  ja: '/ja',
+  ko: '/ko',
+  ar: '/ar',
+  es: '/es',
+  ru: '/ru',
+  de: '/de',
+  fr: '/fr',
+};
+
+const TRANSLATED_LOCALES: Locale[] = ['ja', 'ko', 'ar', 'es', 'ru', 'de', 'fr'];
 
 export const localeFromPath = (pathname: string): Locale => {
-  if (pathname === '/ko' || pathname.startsWith('/ko/')) return 'ko';
-  if (pathname === '/ja' || pathname.startsWith('/ja/')) return 'ja';
+  for (const locale of TRANSLATED_LOCALES) {
+    const prefix = LOCALE_PREFIX[locale];
+    if (pathname === prefix || pathname.startsWith(`${prefix}/`)) return locale;
+  }
   return DEFAULT_LOCALE;
 };
 
@@ -53,15 +90,24 @@ export const japaneseRouteFor: Record<string, string> = {
   '/contact': '/ja/contact',
 };
 
-/** Korean coverage is the home page only, so everything else lands there. */
-export const koreanRouteFor: Record<string, string> = {
-  '/': '/ko',
+/**
+ * The other translated trees are home pages only so far, so any other page
+ * falls back to that language's home page.
+ */
+const homeOnlyRouteFor: Partial<Record<Locale, string>> = {
+  ko: '/ko',
+  ar: '/ar',
+  es: '/es',
+  ru: '/ru',
+  de: '/de',
+  fr: '/fr',
 };
 
 /** The page in the given language for an English path, or that language's home. */
 export const toLocale = (pathname: string, locale: Locale): string => {
   if (locale === 'en') return toEnglish(pathname);
-  return locale === 'ja' ? japaneseRouteFor[pathname] ?? '/ja' : koreanRouteFor[pathname] ?? '/ko';
+  if (locale === 'ja') return japaneseRouteFor[pathname] ?? '/ja';
+  return homeOnlyRouteFor[locale] ?? '/';
 };
 
 /**
@@ -69,7 +115,7 @@ export const toLocale = (pathname: string, locale: Locale): string => {
  * English page that already exists, so dropping the prefix is enough.
  */
 export const toEnglish = (pathname: string): string => {
-  const stripped = pathname.replace(/^\/(ja|ko)(?=\/|$)/, '');
+  const stripped = pathname.replace(/^\/(ja|ko|ar|es|ru|de|fr)(?=\/|$)/, '');
   return stripped === '' ? '/' : stripped;
 };
 
@@ -112,18 +158,68 @@ export const navItems: Record<Locale, NavItem[]> = {
     { label: '회사 소개', href: '/about' },
     { label: '문의', href: '/contact' },
   ],
+  ar: [
+    { label: 'المنتجات', href: '/products' },
+    { label: 'دراسات الحالة', href: '/projects' },
+    { label: 'الأدلة', href: '/guides' },
+    { label: 'الأسئلة الشائعة', href: '/faq' },
+    { label: 'من نحن', href: '/about' },
+    { label: 'اتصل بنا', href: '/contact' },
+  ],
+  es: [
+    { label: 'Productos', href: '/products' },
+    { label: 'Casos prácticos', href: '/projects' },
+    { label: 'Guías', href: '/guides' },
+    { label: 'FAQ', href: '/faq' },
+    { label: 'Empresa', href: '/about' },
+    { label: 'Contacto', href: '/contact' },
+  ],
+  ru: [
+    { label: 'Продукция', href: '/products' },
+    { label: 'Проекты', href: '/projects' },
+    { label: 'Руководства', href: '/guides' },
+    { label: 'FAQ', href: '/faq' },
+    { label: 'О компании', href: '/about' },
+    { label: 'Контакты', href: '/contact' },
+  ],
+  de: [
+    { label: 'Produkte', href: '/products' },
+    { label: 'Referenzen', href: '/projects' },
+    { label: 'Ratgeber', href: '/guides' },
+    { label: 'FAQ', href: '/faq' },
+    { label: 'Unternehmen', href: '/about' },
+    { label: 'Kontakt', href: '/contact' },
+  ],
+  fr: [
+    { label: 'Produits', href: '/products' },
+    { label: 'Réalisations', href: '/projects' },
+    { label: 'Guides', href: '/guides' },
+    { label: 'FAQ', href: '/faq' },
+    { label: 'Entreprise', href: '/about' },
+    { label: 'Contact', href: '/contact' },
+  ],
 };
 
 export const headerCta: Record<Locale, NavItem> = {
   en: { label: 'Get a Free Quote', href: '/contact' },
   ja: { label: '無料見積もり', href: '/ja/contact' },
   ko: { label: '무료 견적', href: '/contact' },
+  ar: { label: 'عرض سعر مجاني', href: '/contact' },
+  es: { label: 'Presupuesto gratis', href: '/contact' },
+  ru: { label: 'Бесплатный расчёт', href: '/contact' },
+  de: { label: 'Kostenloses Angebot', href: '/contact' },
+  fr: { label: 'Devis gratuit', href: '/contact' },
 };
 
 export const headerCopy: Record<Locale, { homeLabel: string; menuLabel: string; logoAlt: string }> = {
   en: { homeLabel: 'ZYD Home', menuLabel: 'Toggle navigation', logoAlt: 'ZYD logo' },
   ja: { homeLabel: 'ZYD ホーム', menuLabel: 'メニューを開く', logoAlt: 'ZYD ロゴ' },
   ko: { homeLabel: 'ZYD 홈', menuLabel: '메뉴 열기', logoAlt: 'ZYD 로고' },
+  ar: { homeLabel: 'الصفحة الرئيسية ZYD', menuLabel: 'فتح القائمة', logoAlt: 'شعار ZYD' },
+  es: { homeLabel: 'Inicio ZYD', menuLabel: 'Abrir menú', logoAlt: 'Logotipo ZYD' },
+  ru: { homeLabel: 'Главная ZYD', menuLabel: 'Открыть меню', logoAlt: 'Логотип ZYD' },
+  de: { homeLabel: 'ZYD Startseite', menuLabel: 'Menü öffnen', logoAlt: 'ZYD Logo' },
+  fr: { homeLabel: 'Accueil ZYD', menuLabel: 'Ouvrir le menu', logoAlt: 'Logo ZYD' },
 };
 
 /** Trigger label and panel heading of the language switch, per language. */
@@ -131,6 +227,11 @@ export const languageSwitchCopy: Record<Locale, { label: string; panelTitle: str
   en: { label: 'Languages', panelTitle: 'Choose a language' },
   ja: { label: '言語', panelTitle: '言語を選択' },
   ko: { label: '언어', panelTitle: '언어 선택' },
+  ar: { label: 'اللغات', panelTitle: 'اختر اللغة' },
+  es: { label: 'Idiomas', panelTitle: 'Elige un idioma' },
+  ru: { label: 'Языки', panelTitle: 'Выберите язык' },
+  de: { label: 'Sprachen', panelTitle: 'Sprache wählen' },
+  fr: { label: 'Langues', panelTitle: 'Choisir une langue' },
 };
 
 type FooterColumn = { heading: string; links: NavItem[] };
@@ -258,12 +359,210 @@ export const footerCopy: Record<
     quoteAria: '사이니지 프로젝트 무료 견적 요청',
     quoteLabel: '무료 견적',
   },
+  ar: {
+    tagline: 'معيار عالمي في لافتات العمارة والتصنيع الدقيق.',
+    columns: [
+      {
+        heading: 'خطوط المنتجات',
+        links: [
+          { label: 'أنظمة لافتات التوجيه', href: '/products/architectural-wayfinding-system' },
+          { label: 'حروف بإضاءة خلفية', href: '/products/custom-halo-lit-letters' },
+          { label: 'صناديق إضاءة LED', href: '/products/ultra-slim-led-light-box' },
+          { label: 'لافتات نصب وأعمدة', href: '/products/outdoor-pylon-monument-sign' },
+          { label: 'لافتات نيون LED', href: '/products/custom-led-neon-sign' },
+          { label: 'لافتات معدنية وأكريليك', href: '/products/metal-acrylic-logo-sign' },
+          { label: 'عرض جميع المنتجات ←', href: '/products' },
+        ],
+      },
+      {
+        heading: 'معلومات الشركة',
+        links: [
+          { label: 'قاعدة الإنتاج', href: '/about' },
+          { label: 'معرض الأعمال', href: '/projects' },
+          { label: 'الموارد والأسئلة الشائعة', href: '/faq' },
+          { label: 'دليل تكلفة حروف القنوات', href: '/guides/how-much-do-custom-channel-letters-cost' },
+          { label: 'الإضاءة الأمامية مقابل الخلفية', href: '/guides/front-lit-vs-halo-lit-channel-letters' },
+          { label: 'اطلب استشارة', href: '/contact' },
+        ],
+      },
+    ],
+    emailLabel: 'البريد الإلكتروني',
+    whatsappLabel: 'المسؤول الفني',
+    copyright: '© 2026',
+    delivery: 'نطاق التسليم DDP',
+    backToTop: 'العودة إلى الأعلى',
+    whatsappAria: 'تواصل عبر واتساب',
+    quoteAria: 'اطلب عرض سعر مجاني لمشروع لافتات',
+    quoteLabel: 'عرض سعر مجاني',
+  },
+  es: {
+    tagline: 'Referencia mundial en señalización arquitectónica y fabricación de precisión.',
+    columns: [
+      {
+        heading: 'Líneas de producto',
+        links: [
+          { label: 'Sistemas de orientación', href: '/products/architectural-wayfinding-system' },
+          { label: 'Letras con luz posterior', href: '/products/custom-halo-lit-letters' },
+          { label: 'Cajas de luz LED', href: '/products/ultra-slim-led-light-box' },
+          { label: 'Señales monumentales', href: '/products/outdoor-pylon-monument-sign' },
+          { label: 'Letreros de neón LED', href: '/products/custom-led-neon-sign' },
+          { label: 'Señales de metal y acrílico', href: '/products/metal-acrylic-logo-sign' },
+          { label: 'Ver todos los productos →', href: '/products' },
+        ],
+      },
+      {
+        heading: 'Corporativo',
+        links: [
+          { label: 'Base de producción', href: '/about' },
+          { label: 'Cartera de proyectos', href: '/projects' },
+          { label: 'Recursos y FAQ', href: '/faq' },
+          { label: 'Guía de costes de letras canal', href: '/guides/how-much-do-custom-channel-letters-cost' },
+          { label: 'Iluminación frontal o posterior', href: '/guides/front-lit-vs-halo-lit-channel-letters' },
+          { label: 'Solicitar asesoría', href: '/contact' },
+        ],
+      },
+    ],
+    emailLabel: 'Correo directo',
+    whatsappLabel: 'Responsable técnico',
+    copyright: '© 2026',
+    delivery: 'Alcance de entrega DDP',
+    backToTop: 'Volver arriba',
+    whatsappAria: 'Chatear por WhatsApp',
+    quoteAria: 'Solicitar presupuesto de señalización',
+    quoteLabel: 'Presupuesto gratis',
+  },
+  ru: {
+    tagline: 'Мировой стандарт архитектурных вывесок и точной обработки.',
+    columns: [
+      {
+        heading: 'Линейки продукции',
+        links: [
+          { label: 'Системы навигационных вывесок', href: '/products/architectural-wayfinding-system' },
+          { label: 'Буквы с контровой подсветкой', href: '/products/custom-halo-lit-letters' },
+          { label: 'LED-лайтбоксы', href: '/products/ultra-slim-led-light-box' },
+          { label: 'Монументальные вывески', href: '/products/outdoor-pylon-monument-sign' },
+          { label: 'LED-неоновые вывески', href: '/products/custom-led-neon-sign' },
+          { label: 'Металл и акрил', href: '/products/metal-acrylic-logo-sign' },
+          { label: 'Вся продукция →', href: '/products' },
+        ],
+      },
+      {
+        heading: 'О компании',
+        links: [
+          { label: 'Производство', href: '/about' },
+          { label: 'Проекты', href: '/projects' },
+          { label: 'Материалы и FAQ', href: '/faq' },
+          { label: 'Гид по стоимости букв', href: '/guides/how-much-do-custom-channel-letters-cost' },
+          { label: 'Лицевая и контровая подсветка', href: '/guides/front-lit-vs-halo-lit-channel-letters' },
+          { label: 'Связаться с нами', href: '/contact' },
+        ],
+      },
+    ],
+    emailLabel: 'Почта',
+    whatsappLabel: 'Технический специалист',
+    copyright: '© 2026',
+    delivery: 'Объём поставки DDP',
+    backToTop: 'Наверх',
+    whatsappAria: 'Написать в WhatsApp',
+    quoteAria: 'Запросить бесплатный расчёт вывесок',
+    quoteLabel: 'Бесплатный расчёт',
+  },
+  de: {
+    tagline: 'Weltweiter Maßstab für Architekturbeschilderung und Präzisionsfertigung.',
+    columns: [
+      {
+        heading: 'Produktlinien',
+        links: [
+          { label: 'Wegeleitsysteme', href: '/products/architectural-wayfinding-system' },
+          { label: 'Halo-Leuchtbuchstaben', href: '/products/custom-halo-lit-letters' },
+          { label: 'LED-Lichtkästen', href: '/products/ultra-slim-led-light-box' },
+          { label: 'Monumentalschilder', href: '/products/outdoor-pylon-monument-sign' },
+          { label: 'LED-Neonschilder', href: '/products/custom-led-neon-sign' },
+          { label: 'Metall- und Acrylschilder', href: '/products/metal-acrylic-logo-sign' },
+          { label: 'Alle Produkte →', href: '/products' },
+        ],
+      },
+      {
+        heading: 'Unternehmen',
+        links: [
+          { label: 'Produktionsstandort', href: '/about' },
+          { label: 'Referenzprojekte', href: '/projects' },
+          { label: 'Ressourcen und FAQ', href: '/faq' },
+          { label: 'Kostenleitfaden Kanalbuchstaben', href: '/guides/how-much-do-custom-channel-letters-cost' },
+          { label: 'Front- oder Halo-Beleuchtung', href: '/guides/front-lit-vs-halo-lit-channel-letters' },
+          { label: 'Jetzt beraten lassen', href: '/contact' },
+        ],
+      },
+    ],
+    emailLabel: 'Direktmail',
+    whatsappLabel: 'Technischer Ansprechpartner',
+    copyright: '© 2026',
+    delivery: 'DDP-Lieferumfang',
+    backToTop: 'Nach oben',
+    whatsappAria: 'Über WhatsApp schreiben',
+    quoteAria: 'Kostenloses Angebot für ein Beschilderungsprojekt',
+    quoteLabel: 'Kostenloses Angebot',
+  },
+  fr: {
+    tagline: 'Référence mondiale de l’enseigne architecturale et de la fabrication de précision.',
+    columns: [
+      {
+        heading: 'Gammes de produits',
+        links: [
+          { label: 'Systèmes de signalétique', href: '/products/architectural-wayfinding-system' },
+          { label: 'Lettres rétro-éclairées', href: '/products/custom-halo-lit-letters' },
+          { label: 'Caissons LED', href: '/products/ultra-slim-led-light-box' },
+          { label: 'Enseignes monumentales', href: '/products/outdoor-pylon-monument-sign' },
+          { label: 'Enseignes néon LED', href: '/products/custom-led-neon-sign' },
+          { label: 'Enseignes métal et acrylique', href: '/products/metal-acrylic-logo-sign' },
+          { label: 'Tous les produits →', href: '/products' },
+        ],
+      },
+      {
+        heading: 'Entreprise',
+        links: [
+          { label: 'Site de production', href: '/about' },
+          { label: 'Portfolio de projets', href: '/projects' },
+          { label: 'Ressources et FAQ', href: '/faq' },
+          { label: 'Guide des coûts des lettres', href: '/guides/how-much-do-custom-channel-letters-cost' },
+          { label: 'Éclairage frontal ou halo', href: '/guides/front-lit-vs-halo-lit-channel-letters' },
+          { label: 'Demander un devis', href: '/contact' },
+        ],
+      },
+    ],
+    emailLabel: 'E-mail direct',
+    whatsappLabel: 'Responsable technique',
+    copyright: '© 2026',
+    delivery: 'Périmètre de livraison DDP',
+    backToTop: 'Haut de page',
+    whatsappAria: 'Discuter sur WhatsApp',
+    quoteAria: 'Demander un devis de signalétique',
+    quoteLabel: 'Devis gratuit',
+  },
 };
 
 /** Headings that repeat in every language, plus the social list and Alibaba. */
 export const footerStatic = {
-  socialHeading: { en: 'Social Identity', ja: 'ソーシャル', ko: '소셜' } as Record<Locale, string>,
-  connectHeading: { en: 'B2B Connect', ja: 'B2B窓口', ko: 'B2B 연락처' } as Record<Locale, string>,
+  socialHeading: {
+    en: 'Social Identity',
+    ja: 'ソーシャル',
+    ko: '소셜',
+    ar: 'التواصل الاجتماعي',
+    es: 'Redes sociales',
+    ru: 'Соцсети',
+    de: 'Soziale Netzwerke',
+    fr: 'Réseaux sociaux',
+  } as Record<Locale, string>,
+  connectHeading: {
+    en: 'B2B Connect',
+    ja: 'B2B窓口',
+    ko: 'B2B 연락처',
+    ar: 'تواصل B2B',
+    es: 'Contacto B2B',
+    ru: 'Контакты B2B',
+    de: 'B2B-Kontakt',
+    fr: 'Contact B2B',
+  } as Record<Locale, string>,
   socialLinks: [
     { label: 'LinkedIn', key: 'linkedin' },
     { label: 'Twitter (X)', key: 'twitter' },

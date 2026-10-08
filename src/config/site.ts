@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { LOCALES, hreflangCode, type Locale } from '@/config/i18n';
 
 export const siteConfig = {
   whatsappNumber: "8615931359322",
@@ -129,15 +130,11 @@ export const ogImages = {
  * translations of one another rather than duplicates.
  */
 /**
- * The pages that hold the same content in each language. Every language the
+ * The pages that hold the same content, keyed by language. Every language the
  * page exists in must be listed, including this page itself, or a crawler
  * cannot pair the versions into one set; x-default is always the English one.
  */
-export type LanguageAlternates = {
-  en: string;
-  ja?: string;
-  ko?: string;
-};
+export type LanguageAlternates = Partial<Record<Locale, string>>;
 
 export type PageMetadataInput = {
   title: string;
@@ -151,6 +148,22 @@ export type PageMetadataInput = {
 };
 
 const absolute = (path: string): string => (path === '/' ? siteConfig.url : `${siteConfig.url}${path}`);
+
+/**
+ * The home page is published in every language, so each of its versions — and
+ * its sitemap entry — declares the same set: every language plus the x-default
+ * that sends everyone else to English.
+ */
+export const homePageLanguages: LanguageAlternates = {
+  en: '/',
+  ja: '/ja',
+  ko: '/ko',
+  ar: '/ar',
+  es: '/es',
+  ru: '/ru',
+  de: '/de',
+  fr: '/fr',
+};
 
 /**
  * Single source of truth for per-route social metadata.
@@ -196,10 +209,13 @@ export function buildPageMetadata({
       ...(languages
         ? {
             languages: {
-              'en-US': absolute(languages.en),
-              ...(languages.ja ? { 'ja-JP': absolute(languages.ja) } : {}),
-              ...(languages.ko ? { 'ko-KR': absolute(languages.ko) } : {}),
-              'x-default': absolute(languages.en),
+              ...Object.fromEntries(
+                LOCALES.filter((locale) => Boolean(languages[locale])).map((locale) => [
+                  hreflangCode[locale],
+                  absolute(languages[locale] as string),
+                ]),
+              ),
+              'x-default': absolute(languages.en ?? '/'),
             },
           }
         : {}),

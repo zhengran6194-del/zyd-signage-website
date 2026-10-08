@@ -6,7 +6,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
 import DocumentShell from "@/components/DocumentShell";
-import { buildPageMetadata, siteConfig } from "@/config/site";
+import { buildPageMetadata, homePageLanguages, siteConfig } from "@/config/site";
 
 // Self-hosted at build time, so no external stylesheet blocks first paint.
 // Manrope is a variable font, so the whole weight axis ships in one file.
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     title: homeTitle,
     description: homeDescription,
     path: "/",
-    languages: { en: "/", ja: "/ja", ko: "/ko" },
+    languages: homePageLanguages,
   }),
   title: {
     default: homeTitle,

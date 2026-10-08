@@ -30,6 +30,11 @@ const lastModifiedByRoute: Record<string, string> = {
   "/ja/faq": "2026-10-08",
   "/ja/about": "2026-10-08",
   "/ko": "2026-10-08",
+  "/ar": "2026-10-08",
+  "/es": "2026-10-08",
+  "/ru": "2026-10-08",
+  "/de": "2026-10-08",
+  "/fr": "2026-10-08",
 
   "/guides/mall-wayfinding-signage": "2026-09-21",
   "/guides/industrial-park-signage": "2026-09-21",
@@ -79,10 +84,20 @@ type SitemapRoute = {
 
 /**
  * The home page is published in every language, so its entry — and that of each
- * translation — names all three versions, including the entry's own. x-default
+ * translation — names every version, including the entry's own. x-default
  * always points at the English version.
  */
-const homePageLanguages = { "en-US": "", "ja-JP": "/ja", "ko-KR": "/ko", "x-default": "" };
+const homePageLanguages = {
+  "en-US": "",
+  "ja-JP": "/ja",
+  "ko-KR": "/ko",
+  ar: "/ar",
+  es: "/es",
+  ru: "/ru",
+  de: "/de",
+  fr: "/fr",
+  "x-default": "",
+};
 
 const routes: SitemapRoute[] = [
   { path: "", priority: 1.0, languages: homePageLanguages },
@@ -153,6 +168,11 @@ const routes: SitemapRoute[] = [
     priority: 0.8,
     languages: homePageLanguages,
   },
+  { path: "/ar", priority: 0.8, languages: homePageLanguages },
+  { path: "/es", priority: 0.8, languages: homePageLanguages },
+  { path: "/ru", priority: 0.8, languages: homePageLanguages },
+  { path: "/de", priority: 0.8, languages: homePageLanguages },
+  { path: "/fr", priority: 0.8, languages: homePageLanguages },
   { path: "/products", priority: 0.9 },
   { path: "/projects", priority: 0.8 },
   { path: "/guides/mall-wayfinding-signage", priority: 0.8 },

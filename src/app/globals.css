@@ -320,6 +320,11 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
 
 .floating-whatsapp:active { transform: scale(0.9); }
 
+/* Footer contact block. Its labels are caps with wide letter spacing inside a
+   narrow column, so a long translation has to be allowed to wrap and break
+   rather than widen the page. */
+.footer-connect { overflow-wrap: anywhere; }
+
 /* Language switch. A disclosure: the trigger sits in the header and opens a
    panel that lists every language which has pages, with the current one marked.
    Two instances are rendered — one in the desktop action area and one inside the
