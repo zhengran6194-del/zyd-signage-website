@@ -83,6 +83,17 @@ type SitemapRoute = {
  */
 const homePageLanguages = { "en-US": "", "ja-JP": "/ja", "x-default": "" };
 
+/**
+ * A page that is published in both languages, described once so its English and
+ * Japanese entries cannot disagree: the English route, the Japanese route
+ * beneath it, and the x-default that sends every other language to English.
+ */
+const englishAndJapanese = (path: string): Record<string, string> => ({
+  "en-US": path,
+  "ja-JP": `/ja${path}`,
+  "x-default": path,
+});
+
 const routes: SitemapRoute[] = [
   { path: "", priority: 1.0, languages: homePageLanguages },
   {
@@ -90,87 +101,66 @@ const routes: SitemapRoute[] = [
     priority: 0.8,
     languages: homePageLanguages,
   },
+  // Pages published in both languages. Both entries of a pair name the same
+  // three alternates, so neither side declares a pairing the other does not.
+  { path: "/products", priority: 0.9, languages: englishAndJapanese("/products") },
+  { path: "/ja/products", priority: 0.8, languages: englishAndJapanese("/products") },
   {
-    path: "/ja/products",
+    path: "/products/architectural-wayfinding-system",
     priority: 0.8,
-    languages: { "en-US": "/products", "ja-JP": "/ja/products", "x-default": "/products" },
+    languages: englishAndJapanese("/products/architectural-wayfinding-system"),
   },
   {
     path: "/ja/products/architectural-wayfinding-system",
     priority: 0.7,
-    languages: {
-      "en-US": "/products/architectural-wayfinding-system",
-      "ja-JP": "/ja/products/architectural-wayfinding-system",
-      "x-default": "/products/architectural-wayfinding-system",
-    },
+    languages: englishAndJapanese("/products/architectural-wayfinding-system"),
+  },
+  {
+    path: "/products/custom-halo-lit-letters",
+    priority: 0.8,
+    languages: englishAndJapanese("/products/custom-halo-lit-letters"),
   },
   {
     path: "/ja/products/custom-halo-lit-letters",
     priority: 0.7,
-    languages: {
-      "en-US": "/products/custom-halo-lit-letters",
-      "ja-JP": "/ja/products/custom-halo-lit-letters",
-      "x-default": "/products/custom-halo-lit-letters",
-    },
+    languages: englishAndJapanese("/products/custom-halo-lit-letters"),
+  },
+  {
+    path: "/products/outdoor-pylon-monument-sign",
+    priority: 0.8,
+    languages: englishAndJapanese("/products/outdoor-pylon-monument-sign"),
   },
   {
     path: "/ja/products/outdoor-pylon-monument-sign",
     priority: 0.7,
-    languages: {
-      "en-US": "/products/outdoor-pylon-monument-sign",
-      "ja-JP": "/ja/products/outdoor-pylon-monument-sign",
-      "x-default": "/products/outdoor-pylon-monument-sign",
-    },
+    languages: englishAndJapanese("/products/outdoor-pylon-monument-sign"),
   },
-  {
-    path: "/ja/contact",
-    priority: 0.7,
-    languages: { "en-US": "/contact", "ja-JP": "/ja/contact", "x-default": "/contact" },
-  },
-  {
-    path: "/ja/projects",
-    priority: 0.7,
-    languages: { "en-US": "/projects", "ja-JP": "/ja/projects", "x-default": "/projects" },
-  },
-  {
-    path: "/ja/guides",
-    priority: 0.7,
-    languages: { "en-US": "/guides", "ja-JP": "/ja/guides", "x-default": "/guides" },
-  },
-  {
-    path: "/ja/faq",
-    priority: 0.7,
-    languages: { "en-US": "/faq", "ja-JP": "/ja/faq", "x-default": "/faq" },
-  },
-  {
-    path: "/ja/about",
-    priority: 0.7,
-    languages: { "en-US": "/about", "ja-JP": "/ja/about", "x-default": "/about" },
-  },
-  { path: "/products", priority: 0.9 },
-  { path: "/projects", priority: 0.8 },
+  { path: "/about", priority: 0.7, languages: englishAndJapanese("/about") },
+  { path: "/ja/about", priority: 0.7, languages: englishAndJapanese("/about") },
+  { path: "/contact", priority: 0.8, languages: englishAndJapanese("/contact") },
+  { path: "/ja/contact", priority: 0.7, languages: englishAndJapanese("/contact") },
+  { path: "/faq", priority: 0.8, languages: englishAndJapanese("/faq") },
+  { path: "/ja/faq", priority: 0.7, languages: englishAndJapanese("/faq") },
+  { path: "/projects", priority: 0.8, languages: englishAndJapanese("/projects") },
+  { path: "/ja/projects", priority: 0.7, languages: englishAndJapanese("/projects") },
+  { path: "/guides", priority: 0.8, languages: englishAndJapanese("/guides") },
+  { path: "/ja/guides", priority: 0.7, languages: englishAndJapanese("/guides") },
+  // Pages that exist in English only, so they declare no alternates.
   { path: "/guides/mall-wayfinding-signage", priority: 0.8 },
   { path: "/guides/industrial-park-signage", priority: 0.8 },
   { path: "/guides/hotel-signage", priority: 0.8 },
   { path: "/case-studies/dalian-water-plaza-wayfinding-signage", priority: 0.7 },
   { path: "/case-studies/hengli-industrial-park-wayfinding-signage", priority: 0.7 },
-  { path: "/about", priority: 0.7 },
-  { path: "/contact", priority: 0.8 },
-  { path: "/faq", priority: 0.8 },
-  { path: "/products/architectural-wayfinding-system", priority: 0.8 },
   { path: "/products/complete-signage-system", priority: 0.8 },
-  { path: "/products/custom-halo-lit-letters", priority: 0.8 },
   { path: "/products/custom-landscape-furniture", priority: 0.8 },
   { path: "/products/custom-led-neon-sign", priority: 0.8 },
   { path: "/products/medical-care-signage", priority: 0.8 },
   { path: "/products/metal-acrylic-logo-sign", priority: 0.8 },
-  { path: "/products/outdoor-pylon-monument-sign", priority: 0.8 },
   { path: "/products/ultra-slim-led-light-box", priority: 0.8 },
   { path: "/products/outdoor-waste-bin", priority: 0.8 },
   { path: "/products/custom-planter-box", priority: 0.8 },
   { path: "/products/acrylic-desk-sign", priority: 0.8 },
   { path: "/products/portable-metal-a-frame-sign", priority: 0.8 },
-  { path: "/guides", priority: 0.8 },
   { path: "/guides/304-stainless-steel-vs-galvanized-steel-outdoor-signs", priority: 0.7 },
   { path: "/guides/how-much-do-custom-channel-letters-cost", priority: 0.7 },
   { path: "/guides/front-lit-vs-halo-lit-channel-letters", priority: 0.7 },

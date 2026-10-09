@@ -1,15 +1,20 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import JsonLd from '@/components/JsonLd';
+import ProductJsonLd from '@/components/ProductJsonLd';
 import WhatsAppCta from '@/components/WhatsAppCta';
+import { siteConfig } from '@/config/site';
 import type { JapaneseProduct } from '@/content/ja-products';
 
 /**
  * Renders a Japanese product page from the content module.
  *
  * The section order and the structured data match the English page of the same
- * product: a FAQPage block built from the same three questions, so the two
- * language versions describe the page the same way.
+ * product: a BreadcrumbList and Product block describing the page, and a
+ * FAQPage block built from the same questions — the same three blocks the
+ * English page emits, so the two language versions describe the same thing.
+ * The crumb trail is worded and linked in Japanese, pointing at the Japanese
+ * listings rather than at the English ones.
  */
 export default function JapaneseProductPage({ product }: { product: JapaneseProduct }) {
   const faqJsonLd = {
@@ -27,6 +32,15 @@ export default function JapaneseProductPage({ product }: { product: JapaneseProd
 
   return (
     <>
+      <ProductJsonLd
+        name={product.seo.title}
+        description={product.seo.description}
+        path={`/ja/products/${product.slug}`}
+        image={product.image.src}
+        home={{ name: 'ホーム', href: `${siteConfig.url}/ja` }}
+        products={{ name: '製品', href: `${siteConfig.url}/ja/products` }}
+        inLanguage="ja"
+      />
       <JsonLd data={faqJsonLd} />
       <main id="main">
         {/* 1. Hero */}

@@ -28,16 +28,13 @@ const ROUTE_GROUPS = [
 const TOP_LEVEL_PAGES = ['/', '/about', '/contact', '/faq', '/products', '/guides', '/projects'];
 
 /**
- * Path segments that are not part of the English site and publish no English
- * Markdown mirror: the Japanese tree is excluded here explicitly rather than
- * relying on the scan not reaching it. Should a page ever be added under one of
- * the scanned directories with this name, it is skipped instead of being
- * mirrored as if it were an English page — and instead of failing the build on
- * the H1 and alternate checks.
+ * Language trees to mirror, as path prefixes. The English tree is the root; the
+ * Japanese tree publishes the same set of pages one level down, and an agent
+ * reading Japanese should get the Japanese text rather than the English mirror.
+ * A tree simply has fewer pages, so a route that has no counterpart in it is
+ * skipped by the existence check instead of failing the build.
  */
-const EXCLUDED_SEGMENTS = new Set(['ja']);
-
-const isExcluded = (url) => url.split('/').filter(Boolean).some((segment) => EXCLUDED_SEGMENTS.has(segment));
+const TREES = ['', '/ja'];
 
 const VOID_TAGS = new Set(['br', 'img', 'hr', 'input', 'meta', 'link', 'source', 'area', 'base', 'col', 'embed', 'track', 'wbr']);
 
@@ -310,18 +307,20 @@ const mirrorUrlFor = (url) => (url === '/' ? '/index.md' : `${url}/index.md`);
 
 const listPages = () => {
   const urls = [];
-  for (const group of ROUTE_GROUPS) {
-    const dir = path.join(APP_DIR, group.dir);
-    if (!fs.existsSync(dir)) continue;
-    for (const file of fs.readdirSync(dir)) {
-      if (!file.endsWith('.html')) continue;
-      const url = `${group.prefix}/${file.replace(/\.html$/, '')}`;
-      if (!isExcluded(url)) urls.push(url);
+  for (const tree of TREES) {
+    for (const group of ROUTE_GROUPS) {
+      const dir = path.join(APP_DIR, tree, group.dir);
+      if (!fs.existsSync(dir)) continue;
+      for (const file of fs.readdirSync(dir)) {
+        if (!file.endsWith('.html')) continue;
+        urls.push(`${tree}${group.prefix}/${file.replace(/\.html$/, '')}`);
+      }
     }
-  }
-  for (const url of TOP_LEVEL_PAGES) {
-    if (isExcluded(url)) continue;
-    if (fs.existsSync(htmlFileFor(url))) urls.push(url);
+    for (const url of TOP_LEVEL_PAGES) {
+      // The tree's own home page is its prefix, not "/ja/".
+      const localized = url === '/' ? tree || '/' : `${tree}${url}`;
+      if (fs.existsSync(htmlFileFor(localized))) urls.push(localized);
+    }
   }
   return urls.sort();
 };

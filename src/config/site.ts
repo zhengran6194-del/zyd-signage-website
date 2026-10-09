@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { LOCALES, hreflangCode, type Locale } from '@/config/i18n';
+import { LOCALES, hreflangCode, toEnglish, type Locale } from '@/config/i18n';
 
 export const siteConfig = {
   whatsappNumber: "8615931359322",
@@ -172,14 +172,25 @@ export const homePageLanguages: LanguageAlternates = {
  * clean text version lives at the same URL with `index.md` appended. Content
  * pages under these prefixes, plus the homepage, the standing pages and the
  * listing routes, are mirrored by scripts/generate-page-markdown.mjs, which
- * fails the build if a page here has no mirror. Keep the two lists in step.
+ * fails the build if a page here has no mirror. Keep the two lists in step, and
+ * keep the tree list in that script in step with the trees mirrored here.
  */
 const MARKDOWN_MIRROR_PREFIXES = ['/products/', '/guides/', '/case-studies/'];
 const MARKDOWN_MIRROR_PATHS = ['/', '/about', '/contact', '/faq', '/products', '/guides', '/projects'];
 
-const hasMarkdownMirror = (path: string): boolean =>
-  MARKDOWN_MIRROR_PREFIXES.some((prefix) => path.startsWith(prefix)) ||
-  MARKDOWN_MIRROR_PATHS.includes(path);
+/**
+ * A translated page mirrors wherever its English counterpart does, so the
+ * lookup is done on the English route rather than on the localized path: the
+ * Japanese tree publishes the same set of pages as the English one, and adding
+ * a route to the lists above marks both versions as mirrored.
+ */
+const hasMarkdownMirror = (path: string): boolean => {
+  const route = toEnglish(path);
+  return (
+    MARKDOWN_MIRROR_PREFIXES.some((prefix) => route.startsWith(prefix)) ||
+    MARKDOWN_MIRROR_PATHS.includes(route)
+  );
+};
 
 export function buildPageMetadata({
   title,

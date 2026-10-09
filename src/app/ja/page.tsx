@@ -69,7 +69,7 @@ const whyDirect = [
 
 export default function JapaneseHome() {
   return (
-    <>
+    <main id="main">
       {/* 1. HERO */}
       <section className="relative overflow-hidden bg-slate-950 pt-24 pb-20 text-white lg:pt-32 lg:pb-28">
         <div className="absolute inset-0">
@@ -285,6 +285,6 @@ export default function JapaneseHome() {
           </p>
         </div>
       </section>
-    </>
+    </main>
   );
 }

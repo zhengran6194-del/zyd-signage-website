@@ -7,7 +7,14 @@ const path = "/guides";
 const title = "Signage Guides: Cost, Materials, Installation";
 const description = "Practical buying and technical guides for custom signage projects: channel letter costs, illumination, sign selection, outdoor materials, MOQ and lead time.";
 
-export const metadata: Metadata = buildPageMetadata({ title, description, path });
+// The guide articles that have no Japanese version name none of their own:
+// their metadata replaces this one, so only the index declares the pair.
+export const metadata: Metadata = buildPageMetadata({
+  title,
+  description,
+  path,
+  languages: { en: "/guides", ja: "/ja/guides" },
+});
 
 export default function Layout({ children }: Readonly<{ children: React.ReactNode }>) {
   // The breadcrumb and CollectionPage are rendered by the index page, not here.

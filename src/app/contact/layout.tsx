@@ -5,6 +5,7 @@ export const metadata: Metadata = buildPageMetadata({
   title: "Contact Sales Support",
   description: "Contact ZYD Signage for custom signage project requirements, technical support, and factory-direct quotations.",
   path: "/contact",
+  languages: { en: "/contact", ja: "/ja/contact" },
 });
 
 export default function ContactLayout({ children }: Readonly<{ children: React.ReactNode }>) {

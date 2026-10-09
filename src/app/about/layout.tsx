@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     title,
     description: "Learn about Dalian Zhiyudao Signage & Tech. Co., Ltd., a factory-direct manufacturer of wayfinding, illuminated and architectural signage for B2B projects.",
     path: "/about",
+    languages: { en: "/about", ja: "/ja/about" },
   }),
   title: { absolute: title },
 };

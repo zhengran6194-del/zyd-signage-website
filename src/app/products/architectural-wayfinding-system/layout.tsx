@@ -7,6 +7,7 @@ export const metadata: Metadata = buildPageMetadata({
   description: "Factory-direct architectural wayfinding and Braille signage, with accessibility requirements such as ADA confirmed against each project brief.",
   path: "/products/architectural-wayfinding-system",
   image: ogImages.wayfinding,
+  languages: { en: "/products/architectural-wayfinding-system", ja: "/ja/products/architectural-wayfinding-system" },
 });
 
 export default function Layout({ children }: Readonly<{ children: React.ReactNode }>) {

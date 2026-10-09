@@ -7,6 +7,7 @@ export const metadata: Metadata = buildPageMetadata({
   description: "Large-scale outdoor pylon and monument signs for property entrances, campuses, and commercial developments.",
   path: "/products/outdoor-pylon-monument-sign",
   image: ogImages.outdoor,
+  languages: { en: "/products/outdoor-pylon-monument-sign", ja: "/ja/products/outdoor-pylon-monument-sign" },
 });
 
 export default function Layout({ children }: Readonly<{ children: React.ReactNode }>) {
