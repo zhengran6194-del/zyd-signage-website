@@ -8,7 +8,7 @@
 
 ### 已确认的站内资产
 
-- 11 个现有品类页：
+- 13 个现有品类页：
   - `/products/architectural-wayfinding-system`
   - `/products/medical-care-signage`
   - `/products/custom-halo-lit-letters`
@@ -20,7 +20,9 @@
   - `/products/outdoor-waste-bin`
   - `/products/custom-planter-box`
   - `/products/complete-signage-system`
-- FAQ 页已有 8 个问答，并已预告 4 个指南：
+  - `/products/acrylic-desk-sign`
+  - `/products/portable-metal-a-frame-sign`
+- FAQ 页已有 13 个问答，并已预告 4 个指南：
   1. `How Much Do Custom Channel Letters Cost?`
   2. `Front-Lit vs Halo-Lit Channel Letters`
   3. `How to Choose the Right Sign for Your Business`
@@ -41,9 +43,19 @@
 - 180℃ oven-baked paint process
 - WhatsApp：`+86 15931359322`
 
+#### 编辑记录：`1.5mm heavy-duty steel` / `180℃ oven-baked paint process`
+
+本节要求「发布时需在文章编辑记录中保存来源与采集日期」。这两个数字的首次站内使用记录如下。
+
+- **治理依据**：本节「允许引用的工厂事实」。该节称这些事实来自业务 KB / 交付手册。
+- **首次进入站内文案**：**2026-10-10**，写入 `src/app/about/page.tsx` 与 `src/app/ja/about/page.tsx`（英/日对应句）。在此之前，站内任何页面均未出现过这两个数字。
+- **本次口径**：两处均写作中性工艺输入陈述——英文 `Steel sheet is worked from 1.5mm stock`、`applied as oven-baked paint at 180°C`；日文「板金は1.5mmの板材から加工し、塗装は180℃の焼付塗装で仕上げます」，并明示「いずれも加工の条件を示すもので、性能の指標ではありません」。**不得**被读作性能、寿命、耐候、强度、认证或质保承诺，也不得据此推导盐雾等级、使用年限或保修结论。
+- **来源状态**：⚠️ **仓库内未找到这两个数字的原始采集记录**。`Independent Site Handoff Manual.md`、`seo/` 目录下各文档及仓库内其它文档均未出现这两个数字；`seo/trust-claims-audit-2026-09-21.md` 清理未核实声明时未处理它们，其「保留事实」清单只含 2006、20,000sqm、MOQ 1、7–14 days。因此**来源文件与采集日期待业主确认**；本记录不填写任何未经确认的来源文件名或采集日期。
+- **确认前的使用限制**：这两个数字只可用于描述加工工艺，不得进入数据资产页、对比结论或任何性能论证；业主确认来源后方可扩大使用范围。
+
 **禁止事项**：不得编造报价均值、客户证言、认证编号、交付成功率、耐候年限、保修年限、国家/地区覆盖数量、样本统计或项目结果。尤其是数据资产页，必须先人工采集真实样本，再填数字。
 
-> **时间口径冲突处理**：FAQ 现有文案出现 `7–12 working days`，本流水线统一以业务 KB 的 `7–14 days` 为准。后续编辑 FAQ 时应改为统一口径，避免文章与品类页冲突。
+> **时间口径冲突处理（已闭环）**：`7–12 working days` 与 `7–14 days` 的冲突**已统一为 `7–14 days`**。2026-10-10 全仓复核结果：站内文案与产品页、FAQ、Markdown 镜像、llms.txt 共 44 处均为 `7–14 days`；仓库内仅剩本文件此处引用 `7–12 working days` 作为历史记录，代码与文案中已无残留。新增内容一律沿用 `7–14 days`。
 
 ---
 

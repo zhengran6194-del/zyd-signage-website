@@ -41,6 +41,17 @@ temp/
 /public/products/index.md
 /public/guides/index.md
 /public/projects/index.md
+# the Japanese tree is mirrored exactly like the English one, one level down
+/public/ja/index.md
+/public/ja/about/index.md
+/public/ja/contact/index.md
+/public/ja/faq/index.md
+/public/ja/products/index.md
+/public/ja/guides/index.md
+/public/ja/projects/index.md
+/public/ja/products/*/index.md
+/public/ja/guides/*/index.md
+/public/ja/case-studies/*/index.md
 
 # production
 /build

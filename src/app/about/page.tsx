@@ -88,7 +88,7 @@ export default function AboutPage() {
                 <Link href="/guides" className="font-black text-blue-700 underline decoration-blue-300 underline-offset-4 hover:text-blue-900">signage guides</Link>.
               </p>
               <p>
-                Fabrication works in 304 stainless steel, galvanized steel and aluminium, alongside acrylic and LED components. Sheet steel is worked from 1.5mm heavy gauge, and painted finishes are applied as industrial-grade baking at 180°C, so the material and the finish are chosen for the environment the sign will stand in rather than for the workshop.
+                Fabrication works in 304 stainless steel, galvanized steel and aluminium, alongside acrylic and LED components. Steel sheet is worked from 1.5mm stock, and painted finishes are applied as oven-baked paint at 180°C. Both state what the process works with rather than a performance rating, and the material route and finish for a given sign are settled per project against the environment it will stand in.
               </p>
             </div>
           </section>
