@@ -9,6 +9,36 @@ import {
   type InquiryPayload,
 } from '@/lib/inquiry';
 import Image from 'next/image';
+import Link from 'next/link';
+import JsonLd from '@/components/JsonLd';
+
+/**
+ * Page-level structured data. The contact page described itself only through
+ * the site-wide Organization and WebSite nodes, so the page itself had no type
+ * for a search engine or an assistant to read: this gives it one, with the
+ * breadcrumb trail and the organisation it belongs to.
+ */
+const contactPageJsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: siteConfig.url },
+        { '@type': 'ListItem', position: 2, name: 'Contact', item: `${siteConfig.url}/contact` },
+      ],
+    },
+    {
+      '@type': 'ContactPage',
+      '@id': `${siteConfig.url}/contact#contactpage`,
+      url: `${siteConfig.url}/contact`,
+      name: 'Contact Sales Support',
+      inLanguage: 'en',
+      isPartOf: { '@id': `${siteConfig.url}/#website` },
+      about: { '@id': `${siteConfig.url}/#organization` },
+    },
+  ],
+};
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -119,7 +149,8 @@ export default function ContactPage() {
 
   return (
     <>
-      <main className="bg-slate-100 min-h-screen pt-24 pb-32">
+      <JsonLd data={contactPageJsonLd} />
+      <main id="main" className="bg-slate-100 min-h-screen pt-24 pb-32">
         <div className="container">
           {/* Header Section */}
           <section className="text-center mb-20 reveal visible">
@@ -283,6 +314,46 @@ export default function ContactPage() {
               </div>
             </div>
           </div>
+
+          <section className="mt-24 grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-12 items-start">
+            <div className="reveal visible">
+              <div className="eyebrow text-blue-600 font-black tracking-[0.3em] uppercase mb-4 text-sm">Before You Write</div>
+              <h2 className="text-4xl lg:text-5xl font-black text-slate-900 mb-6 uppercase tracking-tighter">What to send for a quotation</h2>
+              <p className="text-slate-600 leading-relaxed font-medium mb-6">
+                A signage quotation is built from the project, not from a product name, so the fastest route to a comparable price is a brief that states what is already fixed. A supplier can then price the same scope instead of guessing, and the open questions stay visible as open questions.
+              </p>
+              <p className="text-slate-600 leading-relaxed font-medium mb-6">
+                Send whatever exists today. Rough dimensions, a photograph of the wall or the ground, and a logo file are enough to start: the drawing set is developed with you during the technical consultation, and the free 3D mockup is produced before fabrication so the intended appearance can be reviewed first.
+              </p>
+              <p className="text-slate-600 leading-relaxed font-medium">
+                Minimum order is one unit and typical production lead time is 7–14 days from the point the artwork and the drawings are agreed, so an incomplete brief delays the start of production rather than the quotation. The <Link href="/faq" className="font-black text-blue-700 underline decoration-blue-300 underline-offset-4 hover:text-blue-900">FAQ</Link> answers the questions that arrive most often, and the <Link href="/guides" className="font-black text-blue-700 underline decoration-blue-300 underline-offset-4 hover:text-blue-900">guides</Link> cover material, illumination and procurement decisions in more detail.
+              </p>
+            </div>
+
+            <div className="bg-white border border-slate-200 rounded-[3rem] p-10 lg:p-12 shadow-sm reveal visible">
+              <h3 className="text-xl font-black text-slate-900 mb-6 uppercase tracking-tight">Project brief checklist</h3>
+              <ul className="space-y-4 text-slate-600 font-medium text-sm leading-relaxed">
+                {[
+                  'Artwork or logo file, with brand colour references',
+                  'Sign type, or the site and message if the type is still undecided',
+                  'Approximate overall dimensions, letter heights and quantity',
+                  'Indoor or outdoor placement, and the mounting surface',
+                  'Illumination preference: front-lit, halo-lit, non-illuminated, or undecided',
+                  'Material and finish direction, if one has been specified',
+                  'Photographs of the site and any access constraints',
+                  'Site city and country, delivery destination, and target timing',
+                ].map((item) => (
+                  <li key={item} className="flex gap-3">
+                    <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-blue-600" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="text-slate-500 text-sm leading-relaxed font-medium mt-8">
+                Unknown items are useful too: mark them for clarification and they are answered in the technical review rather than filled in with an assumption.
+              </p>
+            </div>
+          </section>
         </div>
       </main>
     </>

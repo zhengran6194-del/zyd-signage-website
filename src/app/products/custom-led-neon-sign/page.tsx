@@ -178,7 +178,25 @@ export default function LedNeonSignPage() {
           </div>
         </section>
 
-        {/* 5. FAQ */}
+        {/* 5. Related reading */}
+        <section className="section bg-white pt-0">
+          <div className="container max-w-4xl">
+            <div className="eyebrow text-blue-600 font-black tracking-widest uppercase mb-4 text-xs">Related Reading</div>
+            <h2 className="text-3xl font-black text-slate-900 mb-6 uppercase tracking-tight">Comparing illumination routes before you commit</h2>
+            <p className="text-slate-600 leading-relaxed font-medium mb-5">
+              Illuminated signage splits into routes that look different at night and need different mounting backgrounds, so the effect is worth settling before artwork is finalised. The comparison of{' '}
+              <Link href="/guides/front-lit-vs-halo-lit-channel-letters" className="font-black text-blue-700 underline decoration-blue-300 underline-offset-4 hover:text-blue-900">front-lit and halo-lit letters</Link>{' '}
+              explains how the two effects differ and what each one asks of the surface behind it, which is the same question a neon feature raises on an interior wall.
+            </p>
+            <p className="text-slate-600 leading-relaxed font-medium">
+              Neon tube is usually mounted on a backing panel or a prepared surface, so the panel material and its finish are part of the brief rather than an afterthought. The{' '}
+              <Link href="/guides/signage-material-selection-guide" className="font-black text-blue-700 underline decoration-blue-300 underline-offset-4 hover:text-blue-900">materials and finishes guide</Link>{' '}
+              covers how that route is chosen alongside the light source and the viewing environment.
+            </p>
+          </div>
+        </section>
+
+        {/* 6. FAQ */}
         <section className="section bg-slate-100 pt-0">
           <div className="container max-w-5xl">
             <h2 className="text-3xl font-black text-slate-900 mb-10 uppercase tracking-tight">Frequently asked questions</h2>
@@ -193,7 +211,7 @@ export default function LedNeonSignPage() {
           </div>
         </section>
 
-        {/* 6. CTA */}
+        {/* 7. CTA */}
         <section className="bg-slate-50 py-20">
           <div className="container text-center">
             <h2 className="text-3xl font-black uppercase tracking-tight text-slate-900 mb-4">Planning an LED neon feature?</h2>

@@ -44,6 +44,33 @@ export default function ProductsPage() {
           </div>
         </section>
 
+        <section className="py-20 bg-white">
+          <div className="max-w-[1600px] w-[95%] mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10">
+            <div className="reveal">
+              <h2 className="text-2xl font-black mb-4 text-slate-900 uppercase tracking-tight">Thirteen product families from one factory</h2>
+              <p className="text-slate-600 leading-relaxed font-medium text-sm">
+                The range covers architectural wayfinding and Braille signage, medical care signage, halo-lit metal letters, ultra-slim LED light boxes, LED neon, metal and acrylic logo signs, outdoor pylon and monument signs, landscape furniture, and street furniture such as waste bins, planter boxes, desk signs and A-frame signs. They are listed together because a project usually buys several at once and can take them from one factory under one drawing set and one delivery scope.
+              </p>
+            </div>
+            <div className="reveal">
+              <h2 className="text-2xl font-black mb-4 text-slate-900 uppercase tracking-tight">Start from the site, not the product name</h2>
+              <p className="text-slate-600 leading-relaxed font-medium text-sm">
+                Whether a sign stands indoors or outdoors, mounts on a wall or on the ground, and how far away it has to be read decides more of the specification than the product name does. The material routes used across the range are 304 stainless steel, galvanized steel and aluminium, and illumination can be front-lit, halo-lit or left out altogether. The guide to{' '}
+                <Link href="/guides/how-to-choose-the-right-sign-for-your-business" className="font-black text-blue-700 underline decoration-blue-300 underline-offset-4 hover:text-blue-900">choosing the right sign for a business</Link>{' '}
+                works through that comparison against the real site.
+              </p>
+            </div>
+            <div className="reveal">
+              <h2 className="text-2xl font-black mb-4 text-slate-900 uppercase tracking-tight">What ordering looks like</h2>
+              <p className="text-slate-600 leading-relaxed font-medium text-sm">
+                Minimum order is one unit, so a single sign and a multi-site rollout are both accepted, and typical production lead time is 7–14 days depending on scope and quantity. DDP may be quoted as a door-to-door scope once the destination and the cargo details are confirmed. Where the work is going out to tender, the guide to{' '}
+                <Link href="/guides/signage-procurement-low-bid-pitfalls" className="font-black text-blue-700 underline decoration-blue-300 underline-offset-4 hover:text-blue-900">low-bid signage tenders</Link>{' '}
+                explains why two prices for the same sign are rarely the same scope.
+              </p>
+            </div>
+          </div>
+        </section>
+
         <section className="section">
           <div className="max-w-[1600px] w-[95%] mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">

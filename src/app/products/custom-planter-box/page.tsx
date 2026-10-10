@@ -175,7 +175,25 @@ export default function CustomPlanterBoxPage() {
           </div>
         </section>
 
-        {/* 5. FAQ */}
+        {/* 5. Related reading */}
+        <section className="section bg-white pt-0">
+          <div className="container max-w-4xl">
+            <div className="eyebrow text-blue-600 font-black tracking-widest uppercase mb-4 text-xs">Related Reading</div>
+            <h2 className="text-3xl font-black text-slate-900 mb-6 uppercase tracking-tight">How the material route is settled for an outdoor body</h2>
+            <p className="text-slate-600 leading-relaxed font-medium mb-5">
+              A planter that stays outside is a fabricated body rather than a printed panel, so the material route is decided with the exposure, the finish and the cleaning access in view. The{' '}
+              <Link href="/guides/signage-material-selection-guide" className="font-black text-blue-700 underline decoration-blue-300 underline-offset-4 hover:text-blue-900">materials and finishes guide</Link>{' '}
+              sets out how that review is run, including the 304 stainless steel, galvanized steel and aluminium routes.
+            </p>
+            <p className="text-slate-600 leading-relaxed font-medium">
+              From there the body follows the same production path as other fabricated signage: workshop drawings, cutting and forming, finishing, and a check before packing. The guide to the{' '}
+              <Link href="/guides/custom-signage-manufacturing-process" className="font-black text-blue-700 underline decoration-blue-300 underline-offset-4 hover:text-blue-900">signage manufacturing process</Link>{' '}
+              describes each stage, which is what the quotation lines map back to.
+            </p>
+          </div>
+        </section>
+
+        {/* 6. FAQ */}
         <section className="section bg-slate-100 pt-0">
           <div className="container max-w-5xl">
             <h2 className="text-3xl font-black text-slate-900 mb-10 uppercase tracking-tight">Frequently asked questions</h2>
@@ -190,7 +208,7 @@ export default function CustomPlanterBoxPage() {
           </div>
         </section>
 
-        {/* 6. CTA */}
+        {/* 7. CTA */}
         <section className="bg-slate-50 py-20">
           <div className="container text-center">
             <h2 className="text-3xl font-black uppercase tracking-tight text-slate-900 mb-4">Planning a landscape package?</h2>

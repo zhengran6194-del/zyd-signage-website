@@ -223,7 +223,29 @@ export default function PortableMetalAFrameSignPage() {
           </div>
         </section>
 
-        {/* 5. FAQ */}
+        {/* 5. Related reading */}
+        <section className="section bg-slate-50">
+          <div className="container max-w-4xl">
+            <div className="eyebrow text-blue-600 font-black tracking-widest uppercase mb-4 text-xs">Related Reading</div>
+            <h2 className="text-3xl lg:text-4xl font-black uppercase tracking-tight text-slate-900 mb-6">Choosing the material for a sign that lives outdoors</h2>
+            <p className="text-slate-600 leading-relaxed font-medium mb-5">
+              A free-standing sign that stands on a pavement, forecourt or event floor is exposed to weather, handling and moving, so the material decision carries more weight than it does indoors. The comparison of{' '}
+              <Link href="/guides/304-stainless-steel-vs-galvanized-steel-outdoor-signs" className="font-black text-blue-700 underline decoration-blue-300 underline-offset-4 hover:text-blue-900">304 stainless steel and galvanized steel for outdoor signs</Link>{' '}
+              sets out how the two routes differ by exposure, finish and fabrication.
+            </p>
+            <p className="text-slate-600 leading-relaxed font-medium mb-5">
+              Where the sign type is still open, the guide to{' '}
+              <Link href="/guides/how-to-choose-the-right-sign-for-your-business" className="font-black text-blue-700 underline decoration-blue-300 underline-offset-4 hover:text-blue-900">choosing the right sign for a business</Link>{' '}
+              compares a portable sign against pylon, monument, building and wayfinding signage, and explains which of those a site actually needs.
+            </p>
+            <p className="text-slate-600 leading-relaxed font-medium">
+              Whichever route is chosen, the surface finish and the cleaning access are reviewed together, which is the approach described in the{' '}
+              <Link href="/guides/signage-material-selection-guide" className="font-black text-blue-700 underline decoration-blue-300 underline-offset-4 hover:text-blue-900">materials and finishes guide</Link>.
+            </p>
+          </div>
+        </section>
+
+        {/* 6. FAQ */}
         <section className="section bg-white">
           <div className="container max-w-4xl">
             <div className="text-center mb-14">
@@ -241,7 +263,7 @@ export default function PortableMetalAFrameSignPage() {
           </div>
         </section>
 
-        {/* 6. CTA */}
+        {/* 7. CTA */}
         <section className="bg-slate-50 py-20">
           <div className="container text-center">
             <h2 className="text-3xl font-black uppercase tracking-tight text-slate-900 mb-4">Planning an A-frame sign?</h2>

@@ -109,6 +109,34 @@ export default function GuidesPage() {
         </div>
       </section>
 
+      <section className="bg-white py-20 lg:py-24">
+        <div className="container grid grid-cols-1 lg:grid-cols-3 gap-10">
+          <div>
+            <h2 className="text-2xl font-black uppercase tracking-tight text-slate-900 mb-4">What these guides cover</h2>
+            <p className="text-slate-600 leading-relaxed font-medium">
+              Eleven guides cover the decisions that sit in front of a signage order: what shapes a channel letter quotation, how front-lit and halo-lit letters differ, how material and finish routes are chosen, how a low-bid tender fails at acceptance, how tactile and Braille signage is planned, and how a mall, an industrial park or a hotel becomes one coordinated signage system.
+            </p>
+          </div>
+          <div>
+            <h2 className="text-2xl font-black uppercase tracking-tight text-slate-900 mb-4">How to read them</h2>
+            <p className="text-slate-600 leading-relaxed font-medium">
+              Each guide states what belongs to the buyer and what belongs to the supplier. Project-specific items such as dimensions, materials, finishes, illumination and delivery scope are presented as decisions to confirm with a supplier rather than as universal figures, because the same sign type can be specified in several ways for different sites.
+            </p>
+          </div>
+          <div>
+            <h2 className="text-2xl font-black uppercase tracking-tight text-slate-900 mb-4">Where to go next</h2>
+            <p className="text-slate-600 leading-relaxed font-medium">
+              Guides answer the buying questions; the{' '}
+              <Link href="/products" className="font-black text-blue-700 underline decoration-blue-300 underline-offset-4 hover:text-blue-900">product range</Link>{' '}
+              shows what is manufactured for each sign type, and the{' '}
+              <Link href="/projects" className="font-black text-blue-700 underline decoration-blue-300 underline-offset-4 hover:text-blue-900">case studies</Link>{' '}
+              show how those sign types were coordinated on real sites. When the brief is ready, the technical review starts from the{' '}
+              <Link href="/contact" className="font-black text-blue-700 underline decoration-blue-300 underline-offset-4 hover:text-blue-900">contact form</Link>.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section className="section bg-slate-100 py-20 lg:py-24">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">

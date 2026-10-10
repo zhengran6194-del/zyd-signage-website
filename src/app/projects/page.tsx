@@ -85,6 +85,31 @@ export default function ProjectsPage() {
       <main className="bg-slate-100 min-h-screen pt-32 pb-40">
         <div className="w-full max-w-[110rem] px-4 sm:px-6 lg:px-10 mx-auto">
           <h1 className="text-7xl font-black uppercase tracking-tighter mb-12">Case Studies</h1>
+
+          <section className="grid grid-cols-1 lg:grid-cols-3 gap-10 mb-20">
+            <div className="reveal">
+              <h2 className="text-2xl font-black uppercase tracking-tight mb-4">What these projects have in common</h2>
+              <p className="text-slate-600 leading-relaxed font-medium">
+                Each case study describes a signage system rather than a single sign: a commercial complex that needed exterior identification through to interior floor directories, an industrial park that needed gateways, road and building identification coordinated across one large site, and a shopping centre that needed festive atrium installations built, lit and installed overnight. The pattern they share is that the sign types were planned together before anything was fabricated.
+              </p>
+            </div>
+            <div className="reveal">
+              <h2 className="text-2xl font-black uppercase tracking-tight mb-4">What a case study lets you check</h2>
+              <p className="text-slate-600 leading-relaxed font-medium">
+                Read one as a checklist of scope: the site type and its constraints, the sign types that were coordinated, the material and finish direction, the structural and installation conditions, the delivery arrangement, and who was responsible for each stage. If a comparable situation appears in your own brief, it tells you which questions to settle before requesting a quotation.
+              </p>
+            </div>
+            <div className="reveal">
+              <h2 className="text-2xl font-black uppercase tracking-tight mb-4">How to use them in a brief</h2>
+              <p className="text-slate-600 leading-relaxed font-medium">
+                A case study is evidence of scope, not a specification to copy, because dimensions, materials and finishes are settled per project. Point to the closest comparable situation in your inquiry and it becomes a shortcut to the right questions. The{' '}
+                <Link href="/guides/how-to-choose-the-right-sign-for-your-business" className="font-black text-blue-700 underline decoration-blue-300 underline-offset-4 hover:text-blue-900">guide to choosing the right sign</Link>{' '}
+                covers the rest of the decision, and the{' '}
+                <Link href="/contact" className="font-black text-blue-700 underline decoration-blue-300 underline-offset-4 hover:text-blue-900">contact form</Link>{' '}
+                is where a comparable project gets reviewed.
+              </p>
+            </div>
+          </section>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 mb-20">
             {caseStudies.map((proj, idx) => (

@@ -217,7 +217,30 @@ export default function AcrylicDeskSignPage() {
           </div>
         </section>
 
-        {/* 5. FAQ */}
+        {/* 5. Related reading */}
+        <section className="section bg-slate-50">
+          <div className="container max-w-4xl">
+            <div className="eyebrow text-blue-600 font-black tracking-widest uppercase mb-4 text-xs">Related Reading</div>
+            <h2 className="text-3xl lg:text-4xl font-black uppercase tracking-tight text-slate-900 mb-6">Where a counter sign sits in the wider package</h2>
+            <p className="text-slate-600 leading-relaxed font-medium mb-5">
+              A desk sign is usually one line of a larger signage brief, and the choice between a counter sign, a wall sign and a pylon sign follows the site rather than a preference. The guide to{' '}
+              <Link href="/guides/how-to-choose-the-right-sign-for-your-business" className="font-black text-blue-700 underline decoration-blue-300 underline-offset-4 hover:text-blue-900">choosing the right sign for a business</Link>{' '}
+              sets out how monument, building, wayfinding and illuminated signs are compared against the site, the viewing distance and the message.
+            </p>
+            <p className="text-slate-600 leading-relaxed font-medium mb-5">
+              Acrylic is the material family for this product, while the sheet routes discussed elsewhere on this site are 304 stainless steel, galvanized steel and aluminium. The{' '}
+              <Link href="/guides/signage-material-selection-guide" className="font-black text-blue-700 underline decoration-blue-300 underline-offset-4 hover:text-blue-900">materials and finishes guide</Link>{' '}
+              explains how a material route and a surface finish are reviewed against exposure, appearance, cleaning access and the background the sign will be seen against.
+            </p>
+            <p className="text-slate-600 leading-relaxed font-medium">
+              The build follows the same route as the rest of the range: artwork review, fabrication, finishing and a project-specific check before packing. The guide to the{' '}
+              <Link href="/guides/custom-signage-manufacturing-process" className="font-black text-blue-700 underline decoration-blue-300 underline-offset-4 hover:text-blue-900">signage manufacturing process</Link>{' '}
+              walks through those steps, so a buyer can see which stages the quotation covers.
+            </p>
+          </div>
+        </section>
+
+        {/* 6. FAQ */}
         <section className="section bg-white">
           <div className="container max-w-4xl">
             <div className="text-center mb-14">
@@ -235,7 +258,7 @@ export default function AcrylicDeskSignPage() {
           </div>
         </section>
 
-        {/* 6. CTA */}
+        {/* 7. CTA */}
         <section className="bg-slate-50 py-20">
           <div className="container text-center">
             <h2 className="text-3xl font-black uppercase tracking-tight text-slate-900 mb-4">Planning a desk or counter sign?</h2>
