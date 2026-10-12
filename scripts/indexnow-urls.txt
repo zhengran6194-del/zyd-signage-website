@@ -9,10 +9,12 @@
 # otherwise (exit code 2).
 #
 # Each URL is pre-checked for HTTP 200. Any non-200 URL aborts the run unless
-# --force is passed. The status column below was measured on 2026-10-07.
+# --force is passed. The status column below was measured on 2026-10-07, except
+# where a group notes a later measurement.
 #
-# Coverage: every URL in src/app/sitemap.ts (35 routes). Keep the two in step:
-# when a route is added to the sitemap, add it here in the group it belongs to.
+# Coverage: every URL in src/app/sitemap.ts (47 routes: 37 English, 10 Japanese).
+# Keep the two in step: when a route is added to the sitemap, add it here in the
+# group it belongs to.
 
 # --- Group 1: guides ---
 # status 200
@@ -50,7 +52,7 @@ https://www.zydsign.com/case-studies/hengli-industrial-park-wayfinding-signage
 
 # --- Group 5: updated pages (homepage, catalog and site pages, then product details) ---
 # status 200
-https://www.zydsign.com/
+https://www.zydsign.com
 # status 200
 https://www.zydsign.com/products
 # status 200
@@ -96,8 +98,37 @@ https://www.zydsign.com/guides/industrial-park-signage
 # status 200
 https://www.zydsign.com/guides/hotel-signage
 
-# --- Group 7: accessibility planning guide (NEW) ---
-# status 404 on 2026-10-07: committed locally, not deployed yet. Submit this URL
-# only after the deploy that publishes it; the pre-check in indexnow-submit.mjs
-# aborts the whole run otherwise.
+# --- Group 7: accessibility planning guide ---
+# status 200, re-measured 2026-10-12 (was 404 on 2026-10-07, since deployed).
 https://www.zydsign.com/guides/ada-braille-signage-planning-guide
+
+# --- Group 8: procurement guides (NEW) ---
+# status 404 on 2026-10-12: committed locally, not deployed yet. Submit these two
+# only after the deploy that publishes them; the pre-check in indexnow-submit.mjs
+# aborts the whole run otherwise.
+https://www.zydsign.com/guides/illuminated-signage-buying-guide
+https://www.zydsign.com/guides/complete-site-signage-procurement-checklist
+
+# --- Group 9: Japanese tree ---
+# The Japanese pages were missing from this list while they were already live and
+# in the sitemap. All 10 measured 200 on 2026-10-12.
+# status 200
+https://www.zydsign.com/ja
+# status 200
+https://www.zydsign.com/ja/products
+# status 200
+https://www.zydsign.com/ja/products/architectural-wayfinding-system
+# status 200
+https://www.zydsign.com/ja/products/custom-halo-lit-letters
+# status 200
+https://www.zydsign.com/ja/products/outdoor-pylon-monument-sign
+# status 200
+https://www.zydsign.com/ja/guides
+# status 200
+https://www.zydsign.com/ja/faq
+# status 200
+https://www.zydsign.com/ja/projects
+# status 200
+https://www.zydsign.com/ja/about
+# status 200
+https://www.zydsign.com/ja/contact
