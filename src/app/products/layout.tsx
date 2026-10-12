@@ -4,12 +4,12 @@ import { buildPageMetadata } from "@/config/site";
 // The brand is part of the headline, so it is declared absolute: the root
 // layout template would otherwise append " | ZYD Signage" a second time and
 // push the title past the length a search result renders.
-const title = "Signage Products: 13 Custom Sign Categories | ZYD Signage";
+const title = "Signage Products: 14 Custom Sign Categories | ZYD Signage";
 
 export const metadata: Metadata = {
   ...buildPageMetadata({
     title,
-    description: "Browse 13 factory-direct signage categories: architectural wayfinding, medical, illuminated letters, outdoor pylon, landscape and site furnishings.",
+    description: "Browse 14 factory-direct signage categories: architectural wayfinding, medical, illuminated letters, outdoor pylon, landscape and site furnishings.",
     path: "/products",
     // The Japanese index of the same listing exists, so the pair declares its
     // alternates in both directions. Product detail pages that have no Japanese

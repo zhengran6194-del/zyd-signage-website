@@ -8,10 +8,11 @@
 
 ### 已确认的站内资产
 
-- 13 个现有品类页：
+- 14 个现有品类页：
   - `/products/architectural-wayfinding-system`
   - `/products/medical-care-signage`
   - `/products/custom-halo-lit-letters`
+  - `/products/custom-channel-letters`
   - `/products/ultra-slim-led-light-box`
   - `/products/custom-led-neon-sign`
   - `/products/metal-acrylic-logo-sign`
@@ -28,6 +29,25 @@
   3. `How to Choose the Right Sign for Your Business`
   4. `304 Stainless Steel vs Galvanized Steel for Outdoor Signs`
 - Projects 页已有 7 个案例名称：Setai Israel、Zimbabwe Stadium、Afreximbank Zimbabwe、Tel Hazor Israel、Shell Calgary、Xizhong Island Dalian、Hengli Dalian；首月只将其作为案例页素材入口，不编造项目结果、客户证言或采购金额。
+
+### 新增产品页时的同步清单
+
+产品页数量（当前 **14**）写在多个文件里，新增 `/products/custom-channel-letters` 时就漏改过其中三处。新增或下线一个 `/products/...` 页面时，按顺序检查下列位置，改完逐条打勾：
+
+| # | 位置 | 要改什么 |
+|---|------|----------|
+| 1 | `src/app/products/layout.tsx` | title 与 description 里的品类数（title ≤60、description ≤160 宽度单位，全角=2） |
+| 2 | `src/app/ja/products/page.tsx` | 日文 description 的「全 N カテゴリ」 |
+| 3 | `src/app/products/page.tsx` | 索引卡数组：增减一张卡，并核对描述与图片 |
+| 4 | `src/app/sitemap.ts` | 路由条目 + `lastModifiedByRoute` 日期；无日文版时不要写 `languages`，否则会声明不存在的 URL |
+| 5 | `public/llms.txt` | 产品条目，含 Markdown 镜像 URL 与一句话说明；注意不要把一个页面的关键词写到另一个页面上 |
+| 6 | `scripts/indexnow-urls.txt` | URL 条目，以及文件头 `# Coverage` 行里的路由总数 |
+| 7 | 本文件 | 上面「已确认的站内资产」的产品页清单条数与标题数字 |
+| 8 | `src/config/site.ts` | 一般无需改：`MARKDOWN_MIRROR_PREFIXES` 已覆盖 `/products/` 前缀；仅当新页不在该前缀下才需要在此登记 |
+
+**自查方法**：`ls src/app/products` 的目录数应该等于本清单条数、等于索引卡张数，也等于三处 metadata 里写的数字；`npm run build` 的镜像数应比上一批多 1（新增页自动进入镜像）。
+
+**历史记录不要跟着改**：路线图、审计报告等记录当时状态的文件保留原数字，只在当前文案与配置里统一。
 
 ### 允许引用的工厂事实
 

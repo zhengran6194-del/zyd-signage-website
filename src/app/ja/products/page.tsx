@@ -7,7 +7,7 @@ import { japaneseProducts } from '@/content/ja-products';
 
 const title = 'サイネージ製品ラインナップ｜導線サイン・内照式・屋外サイン';
 const description =
-  '導線サイン、ハロー（背面発光）文字、モニュメントサインは日本語でご案内。さらに医療・屋外・ランドスケープなど全13カテゴリを工場直送で製作します。';
+  '導線サイン、ハロー（背面発光）文字、モニュメントサインは日本語でご案内。さらに医療・屋外・ランドスケープなど全14カテゴリを工場直送で製作します。';
 
 export const metadata: Metadata = buildPageMetadata({
   title,
