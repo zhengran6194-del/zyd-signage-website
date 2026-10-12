@@ -29,12 +29,12 @@ type Section = {
 
 const IMAGES = {
   heroStreetIdentity: {
-    src: '/assets/images/projects/dongguan-street-entrance-sculpture-and-heritage-wall.jpg',
-    width: 1280,
-    height: 1706,
-    alt: 'Dongguan Street entrance in Dalian: a plaza sculpture spelling the street name in gold three-dimensional Chinese characters, above a red brick heritage facade with large white painted characters',
-    caption: 'The street identity at the entrance: brush-lettered characters on the restored brick facade and the plaza sculpture that names the street.',
-    ratio: 'aspect-[3/4]',
+    src: '/assets/images/projects/dongguan-street-giant-gold-bow-installation.jpg',
+    width: 1366,
+    height: 911,
+    alt: 'Giant gold bow installation tied over the corner of a red brick Dongguan Street building, with scalloped window hoods and flower boxes along the facade',
+    caption: 'A giant gold bow tied over the corner of the Dongguan Street brick building.',
+    ratio: 'aspect-[3/2]',
   },
   visitorCentre: {
     src: '/assets/images/projects/dongguan-street-visitor-centre-illuminated-letters.jpg',
