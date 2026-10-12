@@ -48,6 +48,7 @@ const lastModifiedByRoute: Record<string, string> = {
 
   "/products/architectural-wayfinding-system": "2026-10-07",
   "/products/complete-signage-system": "2026-10-07",
+  "/products/custom-channel-letters": "2026-10-12",
   "/products/custom-halo-lit-letters": "2026-10-07",
   "/products/custom-landscape-furniture": "2026-10-07",
   "/products/custom-led-neon-sign": "2026-10-07",
@@ -114,6 +115,12 @@ const routes: SitemapRoute[] = [
     path: "/ja/products/architectural-wayfinding-system",
     priority: 0.7,
     languages: englishAndJapanese("/products/architectural-wayfinding-system"),
+  },
+  // English only for now: the Japanese page does not exist yet, so this entry
+  // declares no alternates rather than pointing at a URL that would 404.
+  {
+    path: "/products/custom-channel-letters",
+    priority: 0.8,
   },
   {
     path: "/products/custom-halo-lit-letters",

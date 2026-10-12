@@ -54,6 +54,7 @@ const guide: GuideArticleData = {
     { name: 'U.S. Access Board — Chapter 7: Signs', url: 'https://www.access-board.gov/ada/guides/chapter-7-signs/', note: 'Official signs guidance; this article does not replace project code review.' },
   ],
   relatedLinks: [
+    { href: '/products/custom-channel-letters', label: 'See custom front-lit channel letters' },
     { href: '/products/custom-halo-lit-letters', label: 'See custom halo-lit letters' },
     { href: '/products/complete-signage-system', label: 'See complete signage systems' },
     { href: '/contact', label: 'Send project inputs' },

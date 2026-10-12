@@ -11,7 +11,7 @@
 # Each URL is pre-checked for HTTP 200. Any non-200 URL aborts the run unless
 # --force is passed. The status column below was measured on 2026-10-07.
 #
-# Coverage: every URL in src/app/sitemap.ts (34 routes). Keep the two in step:
+# Coverage: every URL in src/app/sitemap.ts (35 routes). Keep the two in step:
 # when a route is added to the sitemap, add it here in the group it belongs to.
 
 # --- Group 1: guides ---
@@ -65,6 +65,8 @@ https://www.zydsign.com/faq
 https://www.zydsign.com/products/architectural-wayfinding-system
 # status 200
 https://www.zydsign.com/products/complete-signage-system
+# status 200
+https://www.zydsign.com/products/custom-channel-letters
 # status 200
 https://www.zydsign.com/products/custom-halo-lit-letters
 # status 200

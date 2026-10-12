@@ -9,7 +9,7 @@ const title = "About ZYD Signage | Signage Manufacturer Since 2006";
 export const metadata: Metadata = {
   ...buildPageMetadata({
     title,
-    description: "Learn about Dalian Zhiyudao Signage & Tech. Co., Ltd., a factory-direct manufacturer of wayfinding, illuminated and architectural signage for B2B projects.",
+    description: "Learn about Dalian Zhiyudao Signage & Tech. Co., Ltd., a factory-direct manufacturer of wayfinding, illuminated and architectural signage.",
     path: "/about",
     languages: { en: "/about", ja: "/ja/about" },
   }),

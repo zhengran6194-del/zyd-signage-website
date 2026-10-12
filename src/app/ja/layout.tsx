@@ -13,7 +13,7 @@ import { buildPageMetadata, homePageLanguages, ogImages } from '@/config/site';
  */
 const title = 'オーダーメイドサイネージ｜工場直送のサイン製作';
 const description =
-  'ホテル・商業施設・産業パーク向けのオーダーメイドサイネージを工場直送で。導線サインから内照式サイン、屋外サインまで、素材と仕上げを設置環境に合わせて選定し、世界DDP配送でお届けします。';
+  'ホテル・商業施設・産業パーク向けのオーダーメイドサイネージを工場直送で。導線サインから内照式、屋外サインまで、素材と仕上げを設置環境に合わせて選定します。';
 
 export const metadata: Metadata = buildPageMetadata({
   title,

@@ -21,19 +21,19 @@ export function generateStaticParams() {
  */
 const seoMetadata: Record<string, { title: string; description: string }> = {
   'mall-wayfinding-signage': {
-    title: 'Mall Wayfinding & Directory Signage Systems',
+    title: 'Mall Wayfinding & Directory Signage',
     description:
-      'A buyer route for malls and commercial complexes that need exterior identification, parking guidance, directories, tenant branding and signs as one system.',
+      'How mall wayfinding and directory signage is planned: exterior identification, parking guidance, tenant directories and functional signs as one system.',
   },
   'industrial-park-signage': {
-    title: 'Industrial Park Signage and Wayfinding Systems',
+    title: 'Industrial Park Signage & Site Identification',
     description:
-      'A signage route for industrial parks: gateways, road and building identification, production-zone directions and one material standard across a large site.',
+      'How industrial park signage is planned: site gateways, road and building identification, production-zone directions and one material standard.',
   },
   'hotel-signage': {
-    title: 'Hotel Signage & Guest Wayfinding Systems',
+    title: 'Hotel Signage & Guest Navigation',
     description:
-      'A project route for hotels: arrival identification, illuminated branding, directories, guest navigation, room and facility signs, and functional signage.',
+      'How hotel signage is planned: arrival identification, illuminated branding, guest navigation, room and facility signs, and functional wayfinding.',
   },
 };
 

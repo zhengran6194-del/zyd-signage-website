@@ -4,7 +4,7 @@ import JsonLd from "@/components/JsonLd";
 
 const path = "/guides/ada-braille-signage-planning-guide";
 const title = "ADA & Braille Signage: How to Plan an Accessible System";
-const description = "How to plan accessible signage: tactile and Braille options, mounting height and contrast inputs, and the project and local authority confirmations required.";
+const description = "How to plan accessible signage: tactile and Braille options, mounting height and contrast inputs, and the confirmations each project requires.";
 
 export const metadata: Metadata = buildPageMetadata({ title, description, path, image: ogImages.wayfinding, type: "article" });
 

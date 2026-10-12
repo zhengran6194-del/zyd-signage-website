@@ -28,7 +28,8 @@ ZYD Signage is the trading name of Dalian Zhiyudao Signage & Tech. Co., Ltd. The
 - [Airport Wayfinding](https://www.zydsign.com/products/architectural-wayfinding-system/index.md): High-precision indoor and outdoor directional systems.
 - [Medical Signage](https://www.zydsign.com/products/medical-care-signage/index.md): Specialized healthcare signage systems for hospitals.
 - [Landscape & Furniture](https://www.zydsign.com/products/custom-landscape-furniture/index.md): Bespoke outdoor landscape branding and seating.
-- [Illuminated Letters](https://www.zydsign.com/products/custom-halo-lit-letters/index.md): Premium front-lit and halo-lit 3D LED channel letters.
+- [Front-Lit Channel Letters](https://www.zydsign.com/products/custom-channel-letters/index.md): Letters whose illuminated surface is the acrylic face, with LED modules concealed inside a formed metal body.
+- [Halo-Lit Metal Letters](https://www.zydsign.com/products/custom-halo-lit-letters/index.md): Rear-glow metal letters that light the wall behind them rather than the letter face.
 - [LED Light Boxes](https://www.zydsign.com/products/ultra-slim-led-light-box/index.md): Ultra-slim and projecting LED light boxes for retail.
 - [Monument Signs](https://www.zydsign.com/products/outdoor-pylon-monument-sign/index.md): Large-scale pylon signs and entry identification.
 - [LED Neon Signs](https://www.zydsign.com/products/custom-led-neon-sign/index.md): Vibrant custom neon flex for branding and interior decor.

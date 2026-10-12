@@ -116,7 +116,8 @@ const guide: GuideArticleData = {
     { name: 'ZYD Signage — How Custom Signage Is Made', url: '/guides/custom-signage-manufacturing-process', note: 'Internal reference for drawings, samples, fabrication, inspection, packing, and delivery handoffs.' },
   ],
   relatedLinks: [
-    { href: '/products/custom-halo-lit-letters', label: 'Review illuminated letters' },
+    { href: '/products/custom-channel-letters', label: 'Review front-lit channel letters' },
+    { href: '/products/custom-halo-lit-letters', label: 'Review halo-lit letters' },
     { href: '/products/architectural-wayfinding-system', label: 'Review wayfinding systems' },
     { href: '/guides/mall-wayfinding-signage', label: 'See mall signage solution' },
     { href: '/guides/industrial-park-signage', label: 'See industrial park solution' },

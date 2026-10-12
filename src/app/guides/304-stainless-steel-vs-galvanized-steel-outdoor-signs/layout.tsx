@@ -4,7 +4,7 @@ import JsonLd from "@/components/JsonLd";
 
 const path = "/guides/304-stainless-steel-vs-galvanized-steel-outdoor-signs";
 const title = "304 Stainless Steel vs Galvanized Steel for Outdoor Signs";
-const description = "Compare 304 stainless steel and galvanized steel for outdoor signs by exposure, finish, fabrication, and the project requirements that decide between them.";
+const description = "Compare 304 stainless steel and galvanized steel for outdoor signs by exposure, finish, fabrication, and the project requirements that decide.";
 
 export const metadata: Metadata = buildPageMetadata({
   title,

@@ -223,7 +223,8 @@ const guide: GuideArticleData = {
     { name: 'ZYD Signage — Front-Lit vs Halo-Lit Channel Letters', url: '/guides/front-lit-vs-halo-lit-channel-letters', note: 'Internal reference for illumination effect, mounting, and service considerations.' },
   ],
   relatedLinks: [
-    { href: '/products/custom-halo-lit-letters', label: 'Review illuminated letters' },
+    { href: '/products/custom-channel-letters', label: 'Review front-lit channel letters' },
+    { href: '/products/custom-halo-lit-letters', label: 'Review halo-lit letters' },
     { href: '/products/complete-signage-system', label: 'Review complete signage systems' },
     { href: '/products/architectural-wayfinding-system', label: 'Review wayfinding systems' },
     { href: '/guides/mall-wayfinding-signage', label: 'See mall signage solution' },

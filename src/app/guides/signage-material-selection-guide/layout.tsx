@@ -3,8 +3,8 @@ import { buildPageMetadata, ogImages, siteConfig } from '@/config/site';
 import JsonLd from '@/components/JsonLd';
 
 const path = '/guides/signage-material-selection-guide';
-const title = 'How to Choose Materials and Finishes for Illuminated Signage';
-const description = 'A practical guide to illuminated letter construction, sheet materials such as aluminum, stainless steel and acrylic, surface finishes, and light-source details.';
+const title = 'How to Choose Materials for Illuminated Signage';
+const description = 'A practical guide to illuminated letter construction, sheet materials such as aluminum, stainless steel and acrylic, finishes, and light-source details.';
 
 export const metadata: Metadata = buildPageMetadata({ title, description, path, image: ogImages.channelLetters, type: 'article' });
 

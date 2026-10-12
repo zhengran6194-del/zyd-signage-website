@@ -53,6 +53,7 @@ const guide: GuideArticleData = {
     { name: 'U.S. Access Board — Chapter 7: Signs', url: 'https://www.access-board.gov/ada/guides/chapter-7-signs/', note: 'Official signs guidance; not a substitute for project approval.' },
   ],
   relatedLinks: [
+    { href: '/products/custom-channel-letters', label: 'See custom front-lit channel letters' },
     { href: '/products/custom-halo-lit-letters', label: 'See custom halo-lit letters' },
     { href: '/products/custom-led-neon-sign', label: 'See custom LED neon signs' },
     { href: '/guides/ada-braille-signage-planning-guide', label: 'Plan accessible signage' },

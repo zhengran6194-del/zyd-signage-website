@@ -86,6 +86,16 @@ export default function ProjectsPage() {
         <div className="w-full max-w-[110rem] px-4 sm:px-6 lg:px-10 mx-auto">
           <h1 className="text-7xl font-black uppercase tracking-tighter mb-12">Case Studies</h1>
 
+          <section className="mb-20 max-w-4xl">
+            <h2 className="text-3xl font-black uppercase tracking-tight mb-5">Where the signage work has been delivered</h2>
+            <p className="text-slate-600 leading-relaxed font-medium mb-5">
+              The case studies published here cover commercial complexes, industrial parks and retail sites. The factory work is broader than the projects that can be shown: medical care signage for hospitals, clinics and other healthcare facilities is produced alongside landscape and site furniture — benches, planters, waste bins and other coordinated outdoor elements — for public and private developments.
+            </p>
+            <p className="text-slate-600 leading-relaxed font-medium">
+              A project page is published once the client release allows the photographs and the scope to be shown, so medical and landscape projects are described here as coverage rather than named individually. The work itself follows the same route as the projects below: the sign types are planned together, the material and finish are settled against the site, and the delivery scope is confirmed before production.
+            </p>
+          </section>
+
           <section className="grid grid-cols-1 lg:grid-cols-3 gap-10 mb-20">
             <div className="reveal">
               <h2 className="text-2xl font-black uppercase tracking-tight mb-4">What these projects have in common</h2>
