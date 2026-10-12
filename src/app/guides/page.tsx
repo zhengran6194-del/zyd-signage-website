@@ -21,6 +21,12 @@ const guides = [
   },
   {
     tag: 'Buying Guide',
+    title: 'Illuminated Signage Buying Guide',
+    desc: 'How to choose between front-lit, halo-lit, LED light box and LED neon signage: the project inputs, specification checks, installation and maintenance questions, and the files a quotation needs.',
+    href: '/guides/illuminated-signage-buying-guide',
+  },
+  {
+    tag: 'Buying Guide',
     title: 'How to Choose the Right Sign for Your Business',
     desc: 'A practical framework for choosing pylon, monument, building, wayfinding, or illuminated signage around the real site and message.',
     href: '/guides/how-to-choose-the-right-sign-for-your-business',
@@ -48,6 +54,12 @@ const guides = [
     title: 'Low-Bid Signage Tenders: Why the Cheapest Quote Fails at Acceptance',
     desc: 'Where a signage price difference hides, the defects that surface at acceptance, the real cost of rework, and the technical requirements to write into the tender.',
     href: '/guides/signage-procurement-low-bid-pitfalls',
+  },
+  {
+    tag: 'Procurement Checklist',
+    title: 'Complete Site Signage Procurement Checklist',
+    desc: 'A stage-by-stage checklist for a complete site package, from brief and site survey through drawings, specification, materials, lighting, mounting, acceptance and handover.',
+    href: '/guides/complete-site-signage-procurement-checklist',
   },
   {
     tag: 'Accessibility Planning',
@@ -114,7 +126,7 @@ export default function GuidesPage() {
           <div>
             <h2 className="text-2xl font-black uppercase tracking-tight text-slate-900 mb-4">What these guides cover</h2>
             <p className="text-slate-600 leading-relaxed font-medium">
-              Eleven guides cover the decisions that sit in front of a signage order: what shapes a channel letter quotation, how front-lit and halo-lit letters differ, how material and finish routes are chosen, how a low-bid tender fails at acceptance, how tactile and Braille signage is planned, and how a mall, an industrial park or a hotel becomes one coordinated signage system.
+              Thirteen guides cover the decisions that sit in front of a signage order: how the illuminated routes compare, what shapes a channel letter quotation, how material and finish routes are chosen, how a complete site package is procured stage by stage, how a low-bid tender fails at acceptance, how tactile and Braille signage is planned, and how a mall, an industrial park or a hotel becomes one coordinated signage system.
             </p>
           </div>
           <div>

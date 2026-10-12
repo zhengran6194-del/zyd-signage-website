@@ -41,6 +41,8 @@ const lastModifiedByRoute: Record<string, string> = {
   "/guides/signage-material-selection-guide": "2026-09-22",
   "/guides/signage-procurement-low-bid-pitfalls": "2026-09-23",
   "/guides/ada-braille-signage-planning-guide": "2026-10-07",
+  "/guides/illuminated-signage-buying-guide": "2026-10-12",
+  "/guides/complete-site-signage-procurement-checklist": "2026-10-12",
 
   "/case-studies/dalian-water-plaza-wayfinding-signage": "2026-09-29",
   "/case-studies/hengli-industrial-park-wayfinding-signage": "2026-09-29",
@@ -176,6 +178,9 @@ const routes: SitemapRoute[] = [
   { path: "/guides/signage-material-selection-guide", priority: 0.8 },
   { path: "/guides/signage-procurement-low-bid-pitfalls", priority: 0.8 },
   { path: "/guides/ada-braille-signage-planning-guide", priority: 0.7 },
+  // Published in English only, so no alternates are declared.
+  { path: "/guides/illuminated-signage-buying-guide", priority: 0.8 },
+  { path: "/guides/complete-site-signage-procurement-checklist", priority: 0.8 },
   { path: "/case-studies/pavilion-dalian-mall-festive-installations", priority: 0.7 },
 ];
 
