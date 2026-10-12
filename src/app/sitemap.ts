@@ -47,6 +47,7 @@ const lastModifiedByRoute: Record<string, string> = {
   "/case-studies/dalian-water-plaza-wayfinding-signage": "2026-09-29",
   "/case-studies/hengli-industrial-park-wayfinding-signage": "2026-09-29",
   "/case-studies/pavilion-dalian-mall-festive-installations": "2026-10-07",
+  "/case-studies/dongguan-street-dalian-heritage-renewal": "2026-10-12",
 
   "/products/architectural-wayfinding-system": "2026-10-07",
   "/products/complete-signage-system": "2026-10-07",
@@ -182,6 +183,8 @@ const routes: SitemapRoute[] = [
   { path: "/guides/illuminated-signage-buying-guide", priority: 0.8 },
   { path: "/guides/complete-site-signage-procurement-checklist", priority: 0.8 },
   { path: "/case-studies/pavilion-dalian-mall-festive-installations", priority: 0.7 },
+  // Published in English only, so no alternates are declared.
+  { path: "/case-studies/dongguan-street-dalian-heritage-renewal", priority: 0.7 },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

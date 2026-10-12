@@ -12,7 +12,7 @@
 # --force is passed. The status column below was measured on 2026-10-07, except
 # where a group notes a later measurement.
 #
-# Coverage: every URL in src/app/sitemap.ts (47 routes: 37 English, 10 Japanese).
+# Coverage: every URL in src/app/sitemap.ts (48 routes: 38 English, 10 Japanese).
 # Keep the two in step: when a route is added to the sitemap, add it here in the
 # group it belongs to.
 
@@ -108,6 +108,12 @@ https://www.zydsign.com/guides/ada-braille-signage-planning-guide
 # aborts the whole run otherwise.
 https://www.zydsign.com/guides/illuminated-signage-buying-guide
 https://www.zydsign.com/guides/complete-site-signage-procurement-checklist
+
+# --- Group 10: Dongguan Street case study (NEW) ---
+# status 404 on 2026-10-12: committed locally, not deployed yet. Submit after the
+# deploy that publishes it; the pre-check in indexnow-submit.mjs aborts the whole
+# run otherwise.
+https://www.zydsign.com/case-studies/dongguan-street-dalian-heritage-renewal
 
 # --- Group 9: Japanese tree ---
 # The Japanese pages were missing from this list while they were already live and
