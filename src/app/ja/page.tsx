@@ -1,6 +1,25 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import JsonLd from '@/components/JsonLd';
 import WhatsAppCta from '@/components/WhatsAppCta';
+import { siteConfig } from '@/config/site';
+
+const japaneseHomeJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': `${siteConfig.url}/ja#webpage`,
+  url: `${siteConfig.url}/ja`,
+  name: 'オーダーメイドサイネージ｜工場直送のサイン製作',
+  description: 'ホテル・商業施設・産業パーク向けのオーダーメイドサイネージを工場直送で。導線サインから内照式、屋外サインまで、素材と仕上げを設置環境に合わせて選定します。',
+  inLanguage: 'ja',
+  isPartOf: { '@id': `${siteConfig.url}/#website` },
+  breadcrumb: {
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'ホーム', item: `${siteConfig.url}/ja` },
+    ],
+  },
+};
 
 /**
  * Japanese home page (phase one).
@@ -69,7 +88,9 @@ const whyDirect = [
 
 export default function JapaneseHome() {
   return (
-    <main id="main">
+    <>
+      <JsonLd data={japaneseHomeJsonLd} />
+      <main id="main">
       {/* 1. HERO */}
       <section className="relative overflow-hidden bg-slate-950 pt-24 pb-20 text-white lg:pt-32 lg:pb-28">
         <div className="absolute inset-0">
@@ -286,5 +307,6 @@ export default function JapaneseHome() {
         </div>
       </section>
     </main>
+    </>
   );
 }

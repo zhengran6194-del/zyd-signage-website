@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import JsonLd from '@/components/JsonLd';
-import { buildPageMetadata, siteConfig } from '@/config/site';
+import ProductsBreadcrumbJsonLd from '@/components/ProductsBreadcrumbJsonLd';
+import { buildPageMetadata } from '@/config/site';
 import { japaneseProducts } from '@/content/ja-products';
 
 const title = 'サイネージ製品ラインナップ｜導線サイン・内照式・屋外サイン';
@@ -37,17 +37,7 @@ const englishOnly = [
 export default function JapaneseProductsIndex() {
   return (
     <>
-      <JsonLd
-        data={{
-          '@context': 'https://schema.org',
-          '@type': 'BreadcrumbList',
-          inLanguage: 'ja',
-          itemListElement: [
-            { '@type': 'ListItem', position: 1, name: 'ホーム', item: `${siteConfig.url}/ja` },
-            { '@type': 'ListItem', position: 2, name: '製品', item: `${siteConfig.url}/ja/products` },
-          ],
-        }}
-      />
+      <ProductsBreadcrumbJsonLd locale="ja" />
       <main id="main" className="bg-slate-100 min-h-screen">
         <section className="py-24 bg-slate-900 text-white">
           <div className="max-w-[1600px] w-[95%] mx-auto text-center">

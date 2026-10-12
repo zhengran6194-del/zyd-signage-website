@@ -48,7 +48,7 @@ export default function ProductsPage() {
         <section className="py-20 bg-white">
           <div className="max-w-[1600px] w-[95%] mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10">
             <div className="reveal">
-              <h2 className="text-2xl font-black mb-4 text-slate-900 uppercase tracking-tight">Thirteen product families from one factory</h2>
+              <h2 className="text-2xl font-black mb-4 text-slate-900 uppercase tracking-tight">Fourteen product families from one factory</h2>
               <p className="text-slate-600 leading-relaxed font-medium text-sm">
                 The range covers architectural wayfinding and Braille signage, medical care signage, halo-lit metal letters, ultra-slim LED light boxes, LED neon, metal and acrylic logo signs, outdoor pylon and monument signs, landscape furniture, and street furniture such as waste bins, planter boxes, desk signs and A-frame signs. They are listed together because a project usually buys several at once and can take them from one factory under one drawing set and one delivery scope.
               </p>

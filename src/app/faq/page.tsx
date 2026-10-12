@@ -82,6 +82,15 @@ const faqJsonLd = {
   })),
 };
 
+const faqBreadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: siteConfig.url },
+    { '@type': 'ListItem', position: 2, name: 'FAQ', item: `${siteConfig.url}/faq` },
+  ],
+};
+
 export default function FAQPage() {
   const [activeFaq, setActiveFaq] = useState<number | null>(0);
 
@@ -104,6 +113,7 @@ export default function FAQPage() {
   return (
     <main className="bg-slate-100 min-h-screen">
       <JsonLd data={faqJsonLd} />
+      <JsonLd data={faqBreadcrumbJsonLd} />
       {/* 1. HERO SECTION */}
       <section className="relative min-h-[50vh] flex items-center bg-slate-950 text-white overflow-hidden py-24">
         <div className="absolute inset-0 z-0">

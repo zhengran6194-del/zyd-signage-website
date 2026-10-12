@@ -4,7 +4,25 @@ import React, { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import WhatsAppCta from '@/components/WhatsAppCta';
+import JsonLd from '@/components/JsonLd';
 import { siteConfig } from '@/config/site';
+
+const englishHomeJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': `${siteConfig.url}/#webpage`,
+  url: siteConfig.url,
+  name: 'ZYD Custom Signage | Factory-Direct Signage Solutions',
+  description: 'Factory-direct custom signage for global B2B projects. Premium wayfinding and architectural signs.',
+  inLanguage: 'en',
+  isPartOf: { '@id': `${siteConfig.url}/#website` },
+  breadcrumb: {
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: siteConfig.url },
+    ],
+  },
+};
 import {
   buildWhatsAppUrl,
   pushGenerateLead,
@@ -195,6 +213,7 @@ export default function Home() {
 
   return (
     <>
+      <JsonLd data={englishHomeJsonLd} />
       <main id="main">
         {/* 1. MEGA HERO SECTION (Image 2) */}
         <section className="hero relative min-h-screen flex items-center bg-slate-950 text-white overflow-hidden py-32">

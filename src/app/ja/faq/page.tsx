@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import JsonLd from '@/components/JsonLd';
+import { siteConfig } from '@/config/site';
 
 /**
  * Japanese FAQ.
@@ -102,6 +103,17 @@ export default function JapaneseFaqPage() {
             name: faq.q,
             acceptedAnswer: { '@type': 'Answer', text: faq.a },
           })),
+        }}
+      />
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          inLanguage: 'ja',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'ホーム', item: `${siteConfig.url}/ja` },
+            { '@type': 'ListItem', position: 2, name: 'FAQ', item: `${siteConfig.url}/ja/faq` },
+          ],
         }}
       />
 
