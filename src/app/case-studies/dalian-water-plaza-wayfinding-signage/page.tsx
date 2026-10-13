@@ -243,6 +243,8 @@ export default function WaterFashionPlazaCaseStudy() {
     description: 'A commercial complex in Dalian, China, needed one identification and wayfinding package that would hold together from the road outside to the third-floor corridor. ZYD Signage designed, manufactured and installed it.',
     url: caseStudyUrl,
     mainEntityOfPage: caseStudyUrl,
+    author: { '@type': 'Person', name: 'Aaron' },
+    dateModified: '2026-09-29',
     image: Object.values(IMAGES).map((image) => `https://www.zydsign.com${image.src}`),
     articleSection: 'Case Studies',
     about: {

@@ -13,7 +13,7 @@ export const siteConfig = {
    * One-line entity description. Shared by the Organization schema and copied
    * verbatim into public/llms.txt so both state the same positioning.
    */
-  description: "Factory-direct signage manufacturer in Dalian, China, producing wayfinding, architectural and illuminated signage for global B2B projects since 2006.",
+  description: "Factory-direct custom signage from Dalian, China for global B2B projects, covering wayfinding, architectural and illuminated signage.",
   links: {
     twitter: "https://x.com/ZYDsign",
     tiktok: "https://www.tiktok.com/@zydsign",

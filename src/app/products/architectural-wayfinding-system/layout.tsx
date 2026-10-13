@@ -17,8 +17,10 @@ export default function Layout({ children }: Readonly<{ children: React.ReactNod
         name="Architectural Wayfinding Systems & Braille Signage"
         description="Factory-direct architectural wayfinding and Braille signage, with accessibility requirements such as ADA confirmed against each project brief."
         path="/products/architectural-wayfinding-system"
-        image="/assets/images/hero-wayfinding.jpg"
-      />
+         image="/assets/images/hero-wayfinding.jpg"
+         category="Architectural wayfinding signage"
+         material="Aluminum, acrylic and 304 stainless steel where specified"
+       />
       {children}
     </>
   );

@@ -22,8 +22,10 @@ export default function Layout({ children }: Readonly<{ children: React.ReactNod
         name="Custom Halo-Lit Metal Letters | Aluminum & Steel"
         description={description}
         path="/products/custom-halo-lit-letters"
-        image="/assets/images/cat-illuminated.jpg"
-      />
+         image="/assets/images/cat-illuminated.jpg"
+         category="Halo-lit metal letters"
+         material="Aluminum, stainless steel and coated sheet"
+       />
       {children}
     </>
   );

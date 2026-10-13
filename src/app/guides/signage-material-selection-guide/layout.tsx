@@ -27,6 +27,7 @@ export default function Layout({ children }: Readonly<{ children: React.ReactNod
         headline: title,
         description,
         mainEntityOfPage: url,
+        author: { '@type': 'Person', name: 'Aaron' },
         publisher: { '@id': `${siteConfig.url}/#organization` },
         datePublished: '2026-09-22',
         dateModified: '2026-09-22',

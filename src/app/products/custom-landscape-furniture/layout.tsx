@@ -16,8 +16,10 @@ export default function Layout({ children }: Readonly<{ children: React.ReactNod
         name="Custom Landscape Furniture & Outdoor Seating"
         description="Bespoke outdoor landscape branding, signage furniture, and seating manufactured for commercial projects."
         path="/products/custom-landscape-furniture"
-        image="/assets/images/landscape-bench.jpg"
-      />
+         image="/assets/images/landscape-bench.jpg"
+         category="Landscape furniture and outdoor seating"
+         material="Project-specified metal and outdoor finish materials"
+       />
       {children}
     </>
   );

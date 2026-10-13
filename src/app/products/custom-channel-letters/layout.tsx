@@ -23,8 +23,10 @@ export default function Layout({ children }: Readonly<{ children: React.ReactNod
         name={title}
         description={description}
         path="/products/custom-channel-letters"
-        image="/assets/images/cat-illuminated.jpg"
-      />
+         image="/assets/images/cat-illuminated.jpg"
+         category="Illuminated channel letters"
+         material="Acrylic, formed metal and LED modules"
+       />
       {children}
     </>
   );

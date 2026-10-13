@@ -19,8 +19,10 @@ export default function PortableMetalAFrameSignLayout({ children }: Readonly<{ c
         name={title}
         description={description}
         path={path}
-        image={shareImage.path}
-      />
+         image={shareImage.path}
+         category="Portable metal A-frame signs"
+         material="Metal with project-specified finish"
+       />
       {children}
     </>
   );

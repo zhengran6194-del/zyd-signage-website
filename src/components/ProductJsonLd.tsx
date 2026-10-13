@@ -17,6 +17,9 @@ type ProductJsonLdProps = {
   products?: BreadcrumbStep;
   /** Language of the page, omitted where the page is the English original. */
   inLanguage?: string;
+  /** Product-specific category and material, only when confirmed by the page content. */
+  category?: string;
+  material?: string;
 };
 
 export default function ProductJsonLd({
@@ -27,6 +30,8 @@ export default function ProductJsonLd({
   home = { name: 'Home', href: siteConfig.url },
   products = { name: 'Products', href: `${siteConfig.url}/products` },
   inLanguage,
+  category,
+  material,
 }: ProductJsonLdProps) {
   const url = `${siteConfig.url}${path}`;
   const data = {
@@ -46,6 +51,10 @@ export default function ProductJsonLd({
         description,
         url,
         image: `${siteConfig.url}${image}`,
+        brand: { "@id": `${siteConfig.url}/#organization` },
+        manufacturer: { "@id": `${siteConfig.url}/#organization` },
+        ...(category ? { category } : {}),
+        ...(material ? { material } : {}),
         ...(inLanguage ? { inLanguage } : {}),
       },
     ],

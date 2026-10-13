@@ -236,6 +236,8 @@ export default function PavilionDalianFestiveInstallationsCaseStudy() {
     description: 'A multi-level shopping centre in Dalian, China, ran Christmas and Lunar New Year atrium installation programmes with custom steel structures, integrated lighting and night-time installation. ZYD Signage designed, manufactured and installed them.',
     url: caseStudyUrl,
     mainEntityOfPage: caseStudyUrl,
+    author: { '@type': 'Person', name: 'Aaron' },
+    dateModified: '2026-10-07',
     image: Object.values(IMAGES).map((image) => `https://www.zydsign.com${image.src}`),
     articleSection: 'Case Studies',
     about: {

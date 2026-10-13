@@ -94,7 +94,11 @@ function parseAttrs(raw = '') {
 
 /* -------------------------------------------------------------- rendering */
 
-const abs = (href) => (href?.startsWith('http') ? href : `${SITE}${href ?? ''}`);
+const abs = (href) => {
+  if (!href) return '';
+  if (/^(?:https?:|mailto:|tel:|whatsapp:)/i.test(href)) return href;
+  return `${SITE}${href}`;
+};
 
 /**
  * Rendered pages point <img> at the Next image optimiser. A Markdown mirror

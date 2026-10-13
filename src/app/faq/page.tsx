@@ -44,10 +44,10 @@ const categories = [
 ];
 
 const guides = [
-  { category: 'Buying Guide', title: 'How Much Do Custom Channel Letters Cost?', date: 'Aug 24, 2026', image: 'cat-illuminated.jpg' },
-  { category: 'Technical Guide', title: 'Front-Lit vs Halo-Lit Channel Letters', date: 'Aug 20, 2026', image: 'lightbox.jpg' },
-  { category: 'Buying Guide', title: 'How to Choose the Right Sign for Your Business', date: 'Aug 15, 2026', image: 'cat-wayfinding.jpg' },
-  { category: 'Materials', title: '304 Stainless Steel vs Galvanized Steel for Outdoor Signs', date: 'Aug 10, 2026', image: 'cat-metal.jpg' },
+  { category: 'Buying Guide', title: 'How Much Do Custom Channel Letters Cost?', date: 'Sep 7, 2026', image: 'cat-illuminated.jpg' },
+  { category: 'Technical Guide', title: 'Front-Lit vs Halo-Lit Channel Letters', date: 'Sep 7, 2026', image: 'lightbox.jpg' },
+  { category: 'Buying Guide', title: 'How to Choose the Right Sign for Your Business', date: 'Sep 7, 2026', image: 'cat-wayfinding.jpg' },
+  { category: 'Materials', title: '304 Stainless Steel vs Galvanized Steel for Outdoor Signs', date: 'Sep 7, 2026', image: 'cat-metal.jpg' },
   { category: 'Manufacturing Guide', title: 'How Custom Signage Is Made: 7 Manufacturing Steps', date: 'Jul 22, 2026', image: 'cat-system.jpg' },
   { category: 'Materials', title: 'How to Choose Materials and Finishes for Illuminated Signage', date: 'Sep 22, 2026', image: 'cat-illuminated.jpg' },
   { category: 'Procurement', title: 'Low-Bid Signage Tenders: Why the Cheapest Quote Fails at Acceptance', date: 'Sep 23, 2026', image: 'cat-system.jpg' },

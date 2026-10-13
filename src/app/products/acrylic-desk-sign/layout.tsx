@@ -19,8 +19,10 @@ export default function AcrylicDeskSignLayout({ children }: Readonly<{ children:
         name={title}
         description={description}
         path={path}
-        image={shareImage.path}
-      />
+         image={shareImage.path}
+         category="Acrylic desk signs"
+         material="Acrylic"
+       />
       {children}
     </>
   );

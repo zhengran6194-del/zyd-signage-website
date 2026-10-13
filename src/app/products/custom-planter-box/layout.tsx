@@ -12,7 +12,14 @@ export const metadata: Metadata = buildPageMetadata({ title: name, description, 
 export default function Layout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <>
-      <ProductJsonLd name={name} description={description} path={path} image={image} />
+       <ProductJsonLd
+         name={name}
+         description={description}
+         path={path}
+         image={image}
+         category="Custom planter boxes"
+         material="Project-specified metal and outdoor finish materials"
+       />
       {children}
     </>
   );

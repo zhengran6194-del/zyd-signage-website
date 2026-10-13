@@ -17,8 +17,10 @@ export default function Layout({ children }: Readonly<{ children: React.ReactNod
         name="Outdoor Pylon & Monument Signs"
         description="Large-scale outdoor pylon and monument signs for property entrances, campuses, and commercial developments."
         path="/products/outdoor-pylon-monument-sign"
-        image="/assets/images/cat-outdoor.webp"
-      />
+         image="/assets/images/cat-outdoor.webp"
+         category="Outdoor pylon and monument signs"
+         material="Galvanized sheet, stainless steel and aluminum plate"
+       />
       {children}
     </>
   );

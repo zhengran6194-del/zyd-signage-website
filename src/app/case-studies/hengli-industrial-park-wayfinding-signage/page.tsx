@@ -223,6 +223,8 @@ export default function HengliIndustrialParkCaseStudy() {
     description: 'A coordinated wayfinding and signage system for Hengli Industrial Park connecting the gateway, roads, buildings, production zones and functional spaces.',
     url: CASE_STUDY_URL,
     mainEntityOfPage: CASE_STUDY_URL,
+    author: { '@type': 'Person', name: 'Aaron' },
+    dateModified: '2026-09-29',
     image: Object.values(IMAGES).map((image) => `https://www.zydsign.com${image.src}`),
     articleSection: 'Case Studies',
     about: {

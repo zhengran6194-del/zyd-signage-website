@@ -16,8 +16,10 @@ export default function Layout({ children }: Readonly<{ children: React.ReactNod
         name="Metal & Acrylic Logo Signs & Reception Plaques"
         description="Precision metal and acrylic logo signs, plaques, and corporate identity systems for B2B projects."
         path="/products/metal-acrylic-logo-sign"
-        image="/assets/images/cat-metal.jpg"
-      />
+         image="/assets/images/cat-metal.jpg"
+         category="Metal and acrylic logo signs"
+         material="Stainless steel, aluminum, coated sheet and acrylic"
+       />
       {children}
     </>
   );

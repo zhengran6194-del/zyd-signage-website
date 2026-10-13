@@ -16,8 +16,10 @@ export default function Layout({ children }: Readonly<{ children: React.ReactNod
         name="Complete Signage Systems for Global Rollouts"
         description="Coordinated complete signage systems for global rollouts, from MOQ 1 sets to full programs, with DDP delivery scope quoted per destination."
         path="/products/complete-signage-system"
-        image="/assets/images/cat-system.jpg"
-      />
+         image="/assets/images/cat-system.jpg"
+         category="Complete signage systems"
+         material="304 stainless steel, galvanized steel and aluminium"
+       />
       {children}
     </>
   );

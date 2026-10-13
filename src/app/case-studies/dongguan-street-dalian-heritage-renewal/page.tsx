@@ -281,6 +281,8 @@ export default function DongguanStreetHeritageRenewalCaseStudy() {
     description: 'How ZYD Signage delivered the wayfinding system and themed installations for the Dongguan Street heritage renewal in Dalian, China.',
     url: caseStudyUrl,
     mainEntityOfPage: caseStudyUrl,
+    author: { '@type': 'Person', name: 'Aaron' },
+    dateModified: '2026-10-12',
     image: Object.values(IMAGES).map((image) => `https://www.zydsign.com${image.src}`),
     articleSection: 'Case Studies',
     about: {

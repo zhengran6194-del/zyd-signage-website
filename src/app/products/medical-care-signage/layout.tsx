@@ -16,8 +16,10 @@ export default function Layout({ children }: Readonly<{ children: React.ReactNod
         name="Medical Care Signage Systems for Hospitals"
         description="Specialized healthcare signage systems for hospitals, clinics, room identification, and wayfinding."
         path="/products/medical-care-signage"
-        image="/assets/images/hero-medical.jpg"
-      />
+         image="/assets/images/hero-medical.jpg"
+         category="Healthcare and medical signage"
+         material="Project-specified aluminum, acrylic and stainless steel"
+       />
       {children}
     </>
   );

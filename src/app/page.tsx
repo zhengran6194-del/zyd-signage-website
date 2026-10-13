@@ -12,8 +12,8 @@ const englishHomeJsonLd = {
   '@type': 'WebPage',
   '@id': `${siteConfig.url}/#webpage`,
   url: siteConfig.url,
-  name: 'ZYD Custom Signage | Factory-Direct Signage Solutions',
-  description: 'Factory-direct custom signage for global B2B projects. Premium wayfinding and architectural signs.',
+  name: 'ZYD Signage | Factory-Direct Signage Solutions',
+  description: 'Factory-direct custom signage from Dalian, China for global B2B projects, covering wayfinding, architectural and illuminated signage.',
   inLanguage: 'en',
   isPartOf: { '@id': `${siteConfig.url}/#website` },
   breadcrumb: {
@@ -233,11 +233,11 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-32 items-center mb-24">
               <div className="hero-copy reveal visible">
                 <h1 className="text-4xl lg:text-6xl font-black leading-tight mb-8 uppercase text-white">
-                  Premium Custom Signage <br/>
-                  Solutions Direct from Factory.
+                  ZYD Signage | Factory-Direct <br/>
+                  Signage Solutions
                 </h1>
                 <p className="text-xl lg:text-2xl text-slate-200 mb-12 max-w-xl leading-relaxed font-medium">
-                  20 Years Expertise. We provide One-Stop Signage Systems for Hotels, Commercial Spaces, and Industrial Parks. Materials and finishes are selected for the specified environment.
+                  Dalian Zhiyudao Signage &amp; Tech. Co., Ltd. makes custom wayfinding, architectural and illuminated signage in Dalian, China for global B2B projects.
                 </p>
                 <div className="flex flex-wrap gap-6">
                   <Link href="/contact" className="button button-green-base px-10 py-5 text-lg rounded-md">
