@@ -68,6 +68,12 @@ const guides = [
     href: '/guides/ada-braille-signage-planning-guide',
   },
   {
+    tag: 'Accessibility & Braille Signage',
+    title: 'Custom Braille Door Signs: Thoughtful Design Within Reach',
+    desc: 'Braille door signs and tactile room identification signs for hotels, offices, healthcare, education, and public buildings, with materials, customization scope, and accessibility requirements confirmed per project.',
+    href: '/guides/custom-braille-door-signs',
+  },
+  {
     tag: 'Scenario Planning',
     title: 'Mall Wayfinding & Directory Signage Systems',
     desc: 'A buyer route for malls and commercial complexes that need exterior identification, parking guidance, directories, tenant branding and signs as one system.',
@@ -126,7 +132,7 @@ export default function GuidesPage() {
           <div>
             <h2 className="text-2xl font-black uppercase tracking-tight text-slate-900 mb-4">What these guides cover</h2>
             <p className="text-slate-600 leading-relaxed font-medium">
-              Thirteen guides cover the decisions that sit in front of a signage order: how the illuminated routes compare, what shapes a channel letter quotation, how material and finish routes are chosen, how a complete site package is procured stage by stage, how a low-bid tender fails at acceptance, how tactile and Braille signage is planned, and how a mall, an industrial park or a hotel becomes one coordinated signage system.
+              Fourteen guides cover the decisions that sit in front of a signage order: how the illuminated routes compare, what shapes a channel letter quotation, how material and finish routes are chosen, how a complete site package is procured stage by stage, how a low-bid tender fails at acceptance, how tactile and Braille signage is planned and how custom Braille door signs are specified, and how a mall, an industrial park or a hotel becomes one coordinated signage system.
             </p>
           </div>
           <div>

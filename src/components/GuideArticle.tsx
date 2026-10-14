@@ -20,7 +20,16 @@ export type GuideSection = {
     src: string;
     alt: string;
     caption?: string;
+    width?: number;
+    height?: number;
   };
+  images?: Array<{
+    src: string;
+    alt: string;
+    caption?: string;
+    width: number;
+    height: number;
+  }>;
 };
 
 export type GuideFaq = {
@@ -80,11 +89,15 @@ export default function GuideArticle(guide: GuideArticleProps) {
             {guide.sections.map((section) => (
               <section key={section.heading} className="mb-12">
                 <h2 className="text-3xl font-black uppercase tracking-tight text-slate-900 mb-5">{section.heading}</h2>
-                {section.image && (
-                  <figure className="my-7 overflow-hidden rounded-2xl border border-slate-200 bg-slate-50">
-                    <Image src={section.image.src} alt={section.image.alt} width={1080} height={720} sizes="(min-width: 1024px) 720px, 100vw" className="h-auto w-full max-w-full object-cover" />
-                    {section.image.caption && <figcaption className="px-5 py-3 text-sm text-slate-500">{section.image.caption}</figcaption>}
-                  </figure>
+                {(section.image || section.images) && (
+                  <div className={`my-7 grid gap-5 ${section.images && section.images.length > 1 ? 'sm:grid-cols-2' : 'grid-cols-1'}`}>
+                    {(section.images ?? (section.image ? [section.image] : [])).map((image) => (
+                      <figure key={image.src} className="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50">
+                        <Image src={image.src} alt={image.alt} width={image.width ?? 1080} height={image.height ?? 720} sizes="(min-width: 1024px) 720px, 100vw" className="h-auto w-full max-w-full object-cover" />
+                        {image.caption && <figcaption className="px-5 py-3 text-sm text-slate-500">{image.caption}</figcaption>}
+                      </figure>
+                    ))}
+                  </div>
                 )}
                 {section.paragraphs.map((paragraph) => (
                   <p key={paragraph} className="text-slate-600 leading-relaxed mb-4">{paragraph}</p>
