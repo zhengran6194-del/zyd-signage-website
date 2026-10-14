@@ -8,6 +8,21 @@ const guide: GuideArticleData = {
   directAnswer: 'A Braille door sign combines raised Braille dots with tactile letters, numbers, or symbols so a permanent room or space identifier can be read by touch as well as sight. The sign should be specified from the required language, applicable accessibility standard, mounting location, and project material brief rather than treated as a decorative plate.',
   sections: [
     {
+      heading: 'White Cane Safety Day and Accessible Signage',
+      paragraphs: [
+        'October 15 is White Cane Safety Day, a reminder to consider how the spaces we design communicate with people who are blind or have low vision. Accessible room identification combines information that can be read visually with information that can be confirmed by touch.',
+      ],
+      images: [
+        {
+          src: '/assets/images/guides/custom-braille-white-cane-safety-day-poster.jpg',
+          alt: 'White Cane Safety Day accessibility poster with a tactile Braille background',
+          caption: 'A White Cane Safety Day accessibility poster uses a tactile Braille background as its visual theme.',
+          width: 1242,
+          height: 2208,
+        },
+      ],
+    },
+    {
       heading: 'What Are Braille Door Signs?',
       paragraphs: [
         'Braille door signs identify rooms or spaces through raised Braille dots. Tactile room signs can also include raised letters and numbers, allowing users to identify information by touch.',
