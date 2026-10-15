@@ -68,6 +68,9 @@ export default function GuideArticle(guide: GuideArticleProps) {
       acceptedAnswer: { "@type": "Answer", text: faq.answer },
     })),
   };
+  // No Article node here on purpose: each guide page's own layout already
+  // declares one, and a second node for the same page would duplicate the
+  // entity instead of clarifying it.
 
   return (
     <main id="main" className="bg-slate-100 min-h-screen pt-32 pb-40">

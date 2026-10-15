@@ -4,6 +4,8 @@
 
 ZYD Signage is the trading name of Dalian Zhiyudao Signage & Tech. Co., Ltd. The company manufactures custom signage at its own production base in Dalian and delivers finished projects internationally. Every fact below is also stated on the linked page.
 
+A single file carrying the full text of every page listed here is published at [llms-full.txt](https://www.zydsign.com/llms-full.txt). The list below stays the entry point: it names each page and what it covers.
+
 ## Entity Summary
 
 - Legal entity: Dalian Zhiyudao Signage & Tech. Co., Ltd.
@@ -50,7 +52,7 @@ ZYD Signage is the trading name of Dalian Zhiyudao Signage & Tech. Co., Ltd. The
 - [Acrylic Desk Sign](https://www.zydsign.com/products/acrylic-desk-sign/index.md): Free-standing counter and desk signs for reception and front-of-house.
 - [Portable Metal A-Frame Sign](https://www.zydsign.com/products/portable-metal-a-frame-sign/index.md): Free-standing A-frame signs for pavements, forecourts, and event stands.
 
-- [Full product index](https://www.zydsign.com/products/index.md)
+- [Full product index](https://www.zydsign.com/products/index.md): The complete product range as one list, for matching a sign type to a project.
 
 ## Guides
 
@@ -71,7 +73,7 @@ ZYD Signage is the trading name of Dalian Zhiyudao Signage & Tech. Co., Ltd. The
 - [Illuminated Signage Buying Guide](https://www.zydsign.com/guides/illuminated-signage-buying-guide/index.md): How front-lit, halo-lit, LED light box and LED neon routes are chosen, the project inputs and specification checks behind each one, and the files a quotation needs.
 - [Complete Site Signage Procurement Checklist](https://www.zydsign.com/guides/complete-site-signage-procurement-checklist/index.md): A stage-by-stage procurement checklist for a complete site package, from brief and site survey through drawings, specification, materials, lighting, mounting, acceptance, shipping and handover.
 
-- [Full guide index](https://www.zydsign.com/guides/index.md)
+- [Full guide index](https://www.zydsign.com/guides/index.md): The complete guide list, showing which buying, material and procurement questions are covered.
 
 ## Case studies
 
@@ -80,7 +82,7 @@ ZYD Signage is the trading name of Dalian Zhiyudao Signage & Tech. Co., Ltd. The
 - [Pavilion Dalian | Festive Installations Driving Footfall](https://www.zydsign.com/case-studies/pavilion-dalian-mall-festive-installations/index.md): Christmas and Lunar New Year atrium installation programmes for a multi-level shopping centre in Dalian, China, covering suspended structures, structural framing, integrated lighting and night-time installation.
 - [Dongguan Street | Heritage Signage and Themed Installations](https://www.zydsign.com/case-studies/dongguan-street-dalian-heritage-renewal/index.md): How ZYD Signage delivered the wayfinding system and themed installations for the Dongguan Street heritage renewal in Dalian, China.
 
-- [Full case study index](https://www.zydsign.com/projects/index.md)
+- [Full case study index](https://www.zydsign.com/projects/index.md): The complete case study list, showing the site types and sign programmes documented so far.
 
 ## Japanese (日本語)
 

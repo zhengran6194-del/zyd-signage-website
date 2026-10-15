@@ -47,7 +47,35 @@ const siteJsonLd = {
         addressRegion: "Liaoning",
         addressCountry: "CN",
       },
-      sameAs: [siteConfig.links.twitter, siteConfig.links.tiktok, siteConfig.links.linkedin, siteConfig.links.alibaba],
+      // Where the entity is established, stated separately from the postal
+      // address so an agent reads "Dalian, China" without parsing the street.
+      foundingLocation: {
+        "@type": "Place",
+        name: "Dalian, China",
+      },
+      // The same channels the contact page publishes, so an agent can name a
+      // route to the company without guessing one.
+      contactPoint: {
+        "@type": "ContactPoint",
+        contactType: "sales",
+        email: siteConfig.salesEmail,
+        telephone: `+${siteConfig.whatsappNumber}`,
+        url: `${siteConfig.url}/contact`,
+      },
+      // The Alibaba storefront is the company profile this entity publishes.
+      // The LinkedIn address in siteConfig is a personal profile, so it is
+      // deliberately not part of sameAs: schema.org sameAs describes the
+      // organisation, not one person who works for it.
+      sameAs: [siteConfig.links.twitter, siteConfig.links.tiktok, siteConfig.links.alibaba],
+    },
+    {
+      // The author byline the guides publish, named as its own entity so an
+      // Article can point at it instead of repeating an anonymous name.
+      "@type": "Person",
+      "@id": `${siteConfig.url}/#aaron`,
+      name: siteConfig.contactPerson,
+      url: `${siteConfig.url}/about`,
+      worksFor: { "@id": `${siteConfig.url}/#organization` },
     },
     {
       "@type": "WebSite",

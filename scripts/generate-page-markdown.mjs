@@ -15,6 +15,11 @@ const APP_DIR = '.next/server/app';
 const PUBLIC_DIR = 'public';
 const SITE = 'https://www.zydsign.com';
 
+// Kept identical to the blockquote llms.txt states, and read back from that file
+// at build time so the two can never disagree.
+const siteSummaryFallback =
+  'Factory-direct custom signage from Dalian, China for global B2B projects, covering wayfinding, architectural and illuminated signage.';
+
 // Directories whose children are content pages. Any page added to one of these
 // routes is picked up automatically.
 const ROUTE_GROUPS = [
@@ -337,6 +342,9 @@ if (!pages.length) {
 
 let written = 0;
 const failures = [];
+// Collected so the aggregated llms-full.txt is built from exactly the same page
+// set, in the same pass, and cannot list a page whose mirror was not written.
+const mirrored = [];
 for (const url of pages) {
   const htmlFile = htmlFileFor(url);
   const raw = fs.readFileSync(htmlFile, 'utf8');
@@ -370,6 +378,7 @@ for (const url of pages) {
   const outFile = path.join(PUBLIC_DIR, mirrorUrl.slice(1));
   fs.mkdirSync(path.dirname(outFile), { recursive: true });
   fs.writeFileSync(outFile, md, 'utf8');
+  mirrored.push({ url, markdown: md });
   written++;
   console.log(`  ${mirrorUrl}  (${md.length} chars)`);
 }
@@ -381,3 +390,104 @@ if (failures.length) {
 }
 
 console.log(`\n${written} page markdown mirrors written to ${PUBLIC_DIR}/`);
+
+/* ---------------------------------------------------------- llms-full.txt */
+
+/**
+ * One request for an agent that wants the whole site: the same pages as the
+ * mirrors above, concatenated under section headings. Generated rather than
+ * hand-written so it cannot fall behind the pages it carries.
+ *
+ * Every URL in the file is on the site's own domain. Source links a page cites
+ * off-site stay readable in the sentence but are not linked here, so an agent
+ * reading this file is never sent away from the pages being summarised; the
+ * page mirror keeps the full citation.
+ */
+const LLMS_FULL_FILE = path.join(PUBLIC_DIR, 'llms-full.txt');
+
+const STANDING_PAGES = new Set(TOP_LEVEL_PAGES);
+
+const SECTIONS = [
+  { heading: 'Company and standing pages', match: (url) => STANDING_PAGES.has(url) },
+  { heading: 'Products', match: (url) => url.startsWith('/products/') },
+  { heading: 'Guides', match: (url) => url.startsWith('/guides/') },
+  { heading: 'Case studies', match: (url) => url.startsWith('/case-studies/') },
+  { heading: 'Japanese pages (日本語)', match: (url) => url.startsWith('/ja') },
+];
+
+const onlySiteLinks = (text) =>
+  text
+    // [label](off-site) keeps the label: the sentence still reads, the off-site
+    // destination does not travel with it.
+    .replace(/\[([^\]]*)\]\((?!https:\/\/www\.zydsign\.com)[^)]*\)/g, '$1')
+    // <off-site> autolinks carry no text of their own, so the URL goes.
+    .replace(/<(?!https:\/\/www\.zydsign\.com)[^<>\s]*:\/\/[^<>\s]*>/g, '')
+    // Any bare off-site URL left in running text is removed rather than linked.
+    .replace(/https?:\/\/(?!www\.zydsign\.com)[^\s)\]<>]+/g, '')
+    .replace(/\(\s*\)/g, '')
+    .replace(/[ \t]{2,}/g, ' ')
+    .replace(/[ \t]+\n/g, '\n');
+
+const bodyFor = (markdown) => {
+  const lines = markdown.split('\n');
+  const headingIndex = lines.findIndex((line) => /^# /.test(line));
+  return onlySiteLinks(
+    lines
+      .slice(headingIndex + 1)
+      // The page's own H1 becomes the entry heading, so the rest of its
+      // headings drop one level below the section headings added here.
+      .map((line) => (/^#{2,6} /.test(line) ? `##${line}` : line))
+      .join('\n'),
+  ).trim();
+};
+
+const titleFor = (markdown) => {
+  const line = markdown.split('\n').find((candidate) => /^# /.test(candidate));
+  return (line ?? '# Untitled').replace(/^# /, '').trim();
+};
+
+let summary = siteSummaryFallback;
+try {
+  const declared = fs
+    .readFileSync(path.join(PUBLIC_DIR, 'llms.txt'), 'utf8')
+    .split('\n')
+    .find((line) => line.startsWith('> '));
+  if (declared) summary = declared.slice(2).trim();
+} catch {
+  // llms.txt is a source file that ships with the site; if a build somehow runs
+  // without it, fall back to the sentence it quotes rather than failing.
+}
+
+const out = [
+  '# ZYD Signage',
+  '',
+  `> ${summary}`,
+  '',
+  'This file carries the text of every page listed in llms.txt, so an agent can read the site in one request. Each entry names its canonical page and the Markdown mirror of that page. Figures, scopes and materials are stated as the linked page states them.',
+  '',
+];
+
+for (const section of SECTIONS) {
+  const group = mirrored.filter((page) => section.match(page.url));
+  if (!group.length) continue;
+  out.push(`## ${section.heading}`, '');
+  for (const page of group) {
+    const canonical = page.url === '/' ? `${SITE}/` : `${SITE}${page.url}`;
+    out.push(`### ${titleFor(page.markdown)}`, '');
+    out.push(`Canonical page: ${canonical}`, `Markdown mirror: ${SITE}${mirrorUrlFor(page.url)}`, '');
+    out.push(bodyFor(page.markdown), '');
+  }
+}
+
+const full = out.join('\n').replace(/\n{3,}/g, '\n\n').trim() + '\n';
+fs.writeFileSync(LLMS_FULL_FILE, full, 'utf8');
+
+const offSite = full.match(/https?:\/\/(?!www\.zydsign\.com)[^\s)\]<>]+/g) ?? [];
+console.log(
+  `llms-full.txt written to ${LLMS_FULL_FILE}/  (${mirrored.length} pages, ${full.length} chars, off-site URLs: ${offSite.length})`,
+);
+if (offSite.length) {
+  // Not fatal: a page may legitimately quote an outside reference. Reported so
+  // the invariant stays visible instead of silently degrading.
+  console.warn(`  off-site URLs kept: ${[...new Set(offSite)].slice(0, 5).join(', ')}`);
+}

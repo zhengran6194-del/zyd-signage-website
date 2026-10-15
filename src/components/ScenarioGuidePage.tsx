@@ -46,7 +46,9 @@ export default function ScenarioGuidePage({ solution }: { solution: ScenarioGuid
     mainEntityOfPage: { '@type': 'WebPage', '@id': pageUrl },
     datePublished: '2026-09-21',
     dateModified: '2026-09-21',
-    author: { '@type': 'Person', name: 'Aaron' },
+    // The shared Person node declared in the root layout, so the byline resolves
+    // to the same entity on every page rather than to a name in isolation.
+    author: { '@id': `${siteUrl}/#aaron` },
     publisher: { '@id': `${siteUrl}/#organization` },
   };
   const faqJsonLd = {
