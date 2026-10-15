@@ -45,6 +45,7 @@ const lastModifiedByRoute: Record<string, string> = {
   "/guides/complete-site-signage-procurement-checklist": "2026-10-12",
   "/guides/stainless-steel-grades-for-signage": "2026-10-15",
   "/guides/custom-braille-door-signs": "2026-10-14",
+  "/guides/signage-glossary": "2026-10-15",
 
   "/case-studies/dalian-water-plaza-wayfinding-signage": "2026-09-29",
   "/case-studies/hengli-industrial-park-wayfinding-signage": "2026-09-29",
@@ -185,6 +186,7 @@ const routes: SitemapRoute[] = [
   { path: "/guides/illuminated-signage-buying-guide", priority: 0.8 },
   { path: "/guides/complete-site-signage-procurement-checklist", priority: 0.8 },
   { path: "/guides/stainless-steel-grades-for-signage", priority: 0.8 },
+  { path: "/guides/signage-glossary", priority: 0.8 },
   // Published in English only, so no alternates are declared.
   { path: "/guides/custom-braille-door-signs", priority: 0.8 },
   { path: "/case-studies/pavilion-dalian-mall-festive-installations", priority: 0.7 },

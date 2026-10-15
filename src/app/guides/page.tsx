@@ -97,6 +97,12 @@ const guides = [
     desc: 'A project-focused route for hotel owners, designers, and contractors planning arrival identification, illuminated branding, directories, guest navigation, room and facility signs, and back-of-house functional signage.',
     href: '/guides/hotel-signage',
   },
+  {
+    tag: 'Signage Glossary',
+    title: 'Signage Glossary: Common Terms for Buyers and Project Teams',
+    desc: 'Plain-English definitions of sign types, illumination, materials, accessibility, and delivery terms, paired with the project details buyers should confirm.',
+    href: '/guides/signage-glossary',
+  },
 ];
 
 export default function GuidesPage() {
@@ -138,7 +144,7 @@ export default function GuidesPage() {
           <div>
             <h2 className="text-2xl font-black uppercase tracking-tight text-slate-900 mb-4">What these guides cover</h2>
             <p className="text-slate-600 leading-relaxed font-medium">
-              Fifteen guides cover the decisions that sit in front of a signage order: how the illuminated routes compare, what shapes a channel letter quotation, how material and finish routes are chosen, how a complete site package is procured stage by stage, how a low-bid tender fails at acceptance, how tactile and Braille signage is planned and how custom Braille door signs are specified, and how a mall, an industrial park or a hotel becomes one coordinated signage system.
+              Sixteen guides cover the decisions that sit in front of a signage order: how the illuminated routes compare, what shapes a channel letter quotation, how material and finish routes are chosen, how a complete site package is procured stage by stage, how a low-bid tender fails at acceptance, how tactile and Braille signage is planned and how custom Braille door signs are specified, and how a mall, an industrial park or a hotel becomes one coordinated signage system.
             </p>
           </div>
           <div>

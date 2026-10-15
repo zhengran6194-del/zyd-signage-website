@@ -72,6 +72,7 @@ A single file carrying the full text of every page listed here is published at [
 - [Custom Braille Door Signs: Thoughtful Design Within Reach](https://www.zydsign.com/guides/custom-braille-door-signs/index.md): Custom Braille door signs and tactile room identification signs, covering the customization scope, materials such as acrylic, aluminum and stainless steel, tactile and Braille review points, and how a sign family is specified for hotels, offices, healthcare, education and public buildings.
 - [Illuminated Signage Buying Guide](https://www.zydsign.com/guides/illuminated-signage-buying-guide/index.md): How front-lit, halo-lit, LED light box and LED neon routes are chosen, the project inputs and specification checks behind each one, and the files a quotation needs.
 - [Complete Site Signage Procurement Checklist](https://www.zydsign.com/guides/complete-site-signage-procurement-checklist/index.md): A stage-by-stage procurement checklist for a complete site package, from brief and site survey through drawings, specification, materials, lighting, mounting, acceptance, shipping and handover.
+- [Signage Glossary: Common Terms for Buyers and Project Teams](https://www.zydsign.com/guides/signage-glossary/index.md): Plain-English definitions of sign types, illumination, materials, accessibility, and delivery terms, with the project details buyers should confirm before specification and production.
 
 - [Full guide index](https://www.zydsign.com/guides/index.md): The complete guide list, showing which buying, material and procurement questions are covered.
 
