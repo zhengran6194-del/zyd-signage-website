@@ -38,6 +38,12 @@ const guides = [
     href: '/guides/304-stainless-steel-vs-galvanized-steel-outdoor-signs',
   },
   {
+    tag: 'Materials & Corrosion',
+    title: '201, 304, and 316 Stainless Steel for Signage',
+    desc: 'How grade, environment, fabrication, and installation controls work together to reduce corrosion risk in stainless-steel signage.',
+    href: '/guides/stainless-steel-grades-for-signage',
+  },
+  {
     tag: 'Manufacturing Guide',
     title: 'How Custom Signage Is Made: 7 Manufacturing Steps',
     desc: 'A buyer-focused guide to design development, fabrication, finishing, illumination, quality control, packing and delivery.',
@@ -132,7 +138,7 @@ export default function GuidesPage() {
           <div>
             <h2 className="text-2xl font-black uppercase tracking-tight text-slate-900 mb-4">What these guides cover</h2>
             <p className="text-slate-600 leading-relaxed font-medium">
-              Fourteen guides cover the decisions that sit in front of a signage order: how the illuminated routes compare, what shapes a channel letter quotation, how material and finish routes are chosen, how a complete site package is procured stage by stage, how a low-bid tender fails at acceptance, how tactile and Braille signage is planned and how custom Braille door signs are specified, and how a mall, an industrial park or a hotel becomes one coordinated signage system.
+              Fifteen guides cover the decisions that sit in front of a signage order: how the illuminated routes compare, what shapes a channel letter quotation, how material and finish routes are chosen, how a complete site package is procured stage by stage, how a low-bid tender fails at acceptance, how tactile and Braille signage is planned and how custom Braille door signs are specified, and how a mall, an industrial park or a hotel becomes one coordinated signage system.
             </p>
           </div>
           <div>
