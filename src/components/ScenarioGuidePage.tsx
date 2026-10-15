@@ -46,8 +46,8 @@ export default function ScenarioGuidePage({ solution }: { solution: ScenarioGuid
     mainEntityOfPage: { '@type': 'WebPage', '@id': pageUrl },
     datePublished: '2026-09-21',
     dateModified: '2026-09-21',
-    author: { '@type': 'Organization', name: 'ZYD Signage', url: siteUrl },
-    publisher: { '@type': 'Organization', name: 'Dalian Zhiyudao Signage & Tech. Co., Ltd.', url: siteUrl },
+    author: { '@type': 'Person', name: 'Aaron' },
+    publisher: { '@id': `${siteUrl}/#organization` },
   };
   const faqJsonLd = {
     '@context': 'https://schema.org',
