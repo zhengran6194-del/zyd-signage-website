@@ -14,6 +14,8 @@ export type GuideSection = {
   paragraphs: string[];
   bullets?: string[];
   rows?: Array<{ factor: string; first: string; second: string }>;
+  /** Header for the first column; defaults to the generic "Decision factor". */
+  factorLabel?: string;
   firstLabel?: string;
   secondLabel?: string;
   image?: {
@@ -110,7 +112,7 @@ export default function GuideArticle(guide: GuideArticleProps) {
                     <table className="w-full text-left border-collapse min-w-[620px]">
                       <thead>
                         <tr className="border-b-2 border-slate-200">
-                          <th className="py-4 pr-5 text-sm uppercase tracking-wider">Decision factor</th>
+                          <th className="py-4 pr-5 text-sm uppercase tracking-wider">{section.factorLabel ?? 'Decision factor'}</th>
                           <th className="py-4 pr-5 text-sm uppercase tracking-wider text-blue-700">{section.firstLabel}</th>
                           <th className="py-4 text-sm uppercase tracking-wider text-slate-700">{section.secondLabel}</th>
                         </tr>
