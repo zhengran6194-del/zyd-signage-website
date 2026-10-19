@@ -127,7 +127,7 @@ export default function Footer() {
         onClick={(e) => handleWhatsApp(e, whatsappMessage)}
         aria-label={copy.whatsappAria}
       >
-        <Image src="/assets/images/whatsapp-icon-3d.jpg" alt="WhatsApp" width={1254} height={1254} sizes="(max-width: 1024px) 64px, 150px" />
+        <Image src="/assets/images/whatsapp-icon-3d.jpg" alt="WhatsApp" width={1254} height={1254} sizes="(max-width: 1024px) 32px, 75px" />
       </a>
       <a
         className="floating-quote"
