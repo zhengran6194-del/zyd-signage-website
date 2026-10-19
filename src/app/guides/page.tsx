@@ -15,8 +15,8 @@ const guides = [
   },
   {
     tag: 'Comparison',
-    title: 'Front-Lit vs Halo-Lit Channel Letters',
-    desc: 'How front-lit and halo-lit letters differ in visual effect, mounting background, service planning, and the details a buyer should confirm.',
+    title: 'Front-Lit vs. Halo-Lit Channel Letters: Which Suits Your Storefront?',
+    desc: 'How front-lit and halo-lit channel letters differ in illumination, wall interaction, readability, installation, colour and maintenance, and how to specify either construction.',
     href: '/guides/front-lit-vs-halo-lit-channel-letters',
   },
   {

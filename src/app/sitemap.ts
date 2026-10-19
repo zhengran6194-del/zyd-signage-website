@@ -35,7 +35,7 @@ const lastModifiedByRoute: Record<string, string> = {
   "/guides/hotel-signage": "2026-09-21",
   "/guides/304-stainless-steel-vs-galvanized-steel-outdoor-signs": "2026-09-07",
   "/guides/how-much-do-custom-channel-letters-cost": "2026-09-07",
-  "/guides/front-lit-vs-halo-lit-channel-letters": "2026-09-07",
+  "/guides/front-lit-vs-halo-lit-channel-letters": "2026-10-19",
   "/guides/how-to-choose-the-right-sign-for-your-business": "2026-09-07",
   "/guides/custom-signage-manufacturing-process": "2026-07-22",
   "/guides/signage-material-selection-guide": "2026-09-22",
