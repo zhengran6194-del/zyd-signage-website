@@ -14,6 +14,10 @@ export type GuideSection = {
   paragraphs: string[];
   bullets?: string[];
   rows?: Array<{ factor: string; first: string; second: string }>;
+  columns?: {
+    headers: [string, string, string, string];
+    rows: Array<[string, string, string, string]>;
+  };
   /** Header for the first column; defaults to the generic "Decision factor". */
   factorLabel?: string;
   firstLabel?: string;
@@ -107,6 +111,14 @@ export default function GuideArticle(guide: GuideArticleProps) {
                 {section.paragraphs.map((paragraph) => (
                   <p key={paragraph} className="text-slate-600 leading-relaxed mb-4">{paragraph}</p>
                 ))}
+                {section.columns && (
+                  <div className="overflow-x-auto mt-6">
+                    <table className="w-full text-left border-collapse min-w-[760px]">
+                      <thead><tr className="border-b-2 border-slate-200">{section.columns.headers.map((header) => <th key={header} className="py-4 pr-5 text-sm uppercase tracking-wider">{header}</th>)}</tr></thead>
+                      <tbody className="text-slate-600">{section.columns.rows.map((row) => <tr key={row[0]} className="border-b border-slate-100 last:border-0">{row.map((cell, index) => <td key={`${row[0]}-${index}`} className={`py-4 pr-5 ${index === 0 ? 'font-bold text-slate-900' : ''}`}>{cell}</td>)}</tr>)}</tbody>
+                    </table>
+                  </div>
+                )}
                 {section.rows && (
                   <div className="overflow-x-auto mt-6">
                     <table className="w-full text-left border-collapse min-w-[620px]">
