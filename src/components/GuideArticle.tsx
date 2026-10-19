@@ -14,9 +14,10 @@ export type GuideSection = {
   paragraphs: string[];
   bullets?: string[];
   rows?: Array<{ factor: string; first: string; second: string }>;
+  /** Table with a variable number of columns, for layouts the three-column rows fields cannot carry. */
   columns?: {
-    headers: [string, string, string, string];
-    rows: Array<[string, string, string, string]>;
+    headers: string[];
+    rows: string[][];
   };
   /** Header for the first column; defaults to the generic "Decision factor". */
   factorLabel?: string;

@@ -48,6 +48,7 @@ const lastModifiedByRoute: Record<string, string> = {
   "/guides/signage-glossary": "2026-10-15",
   "/guides/hotel-room-number-signs": "2026-10-17",
   "/guides/office-door-sign-materials": "2026-10-19",
+  "/guides/trimless-vs-trim-cap-channel-letters": "2026-10-19",
 
   "/case-studies/dalian-water-plaza-wayfinding-signage": "2026-09-29",
   "/case-studies/hengli-industrial-park-wayfinding-signage": "2026-09-29",
@@ -191,6 +192,7 @@ const routes: SitemapRoute[] = [
   { path: "/guides/signage-glossary", priority: 0.8 },
   { path: "/guides/hotel-room-number-signs", priority: 0.8 },
   { path: "/guides/office-door-sign-materials", priority: 0.8 },
+  { path: "/guides/trimless-vs-trim-cap-channel-letters", priority: 0.8 },
   // Published in English only, so no alternates are declared.
   { path: "/guides/custom-braille-door-signs", priority: 0.8 },
   { path: "/case-studies/pavilion-dalian-mall-festive-installations", priority: 0.7 },
