@@ -123,8 +123,8 @@ const guides = [
   },
   {
     tag: 'Signage Procurement & Import',
-    title: 'Importing Custom Signage from China: Landed Cost, Documents and Installer Handover',
-    desc: 'How landed cost, customs documents and installer handover work when you import custom signage from China, and what the factory price leaves out.',
+    title: 'Importing Custom Signage from China: Costs, Installation and Supplier Responsibilities',
+    desc: 'What importing custom signage from China really involves: landed and installed cost, Incoterms, duty, local installation and responsibility after delivery.',
     href: '/guides/importing-custom-signage-from-china',
   },
 ];

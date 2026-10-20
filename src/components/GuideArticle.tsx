@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import JsonLd from '@/components/JsonLd';
@@ -21,6 +22,20 @@ export type GuideSection = {
     headers: string[];
     rows: string[][];
   };
+  /** Highlighted paragraph between body paragraphs, used for a stated formula or rule. */
+  callout?: string;
+  /** 1-based paragraph index the callout follows; defaults to the end of the paragraph list. */
+  calloutAfterParagraph?: number;
+  /** Third-level headings that sit under a section heading, after its tables and images. */
+  subsections?: Array<{
+    heading: string;
+    paragraphs?: string[];
+    bullets?: string[];
+    columns?: {
+      headers: string[];
+      rows: string[][];
+    };
+  }>;
   /** Header for the first column; defaults to the generic "Decision factor". */
   factorLabel?: string;
   firstLabel?: string;
@@ -67,6 +82,22 @@ type GuideArticleProps = GuideArticleData & {
   slug: string;
 };
 
+type ColumnTable = {
+  headers: string[];
+  rows: string[][];
+};
+
+function ColumnsTable({ columns }: { columns: ColumnTable }) {
+  return (
+    <div className="overflow-x-auto mt-6">
+      <table className="w-full text-left border-collapse min-w-[760px]">
+        <thead><tr className="border-b-2 border-slate-200">{columns.headers.map((header) => <th key={header} className="py-4 pr-5 text-sm uppercase tracking-wider">{header}</th>)}</tr></thead>
+        <tbody className="text-slate-600">{columns.rows.map((row) => <tr key={row[0]} className="border-b border-slate-100 last:border-0">{row.map((cell, index) => <td key={`${row[0]}-${index}`} className={`py-4 pr-5 ${index === 0 ? 'font-bold text-slate-900' : ''}`}>{cell}</td>)}</tr>)}</tbody>
+      </table>
+    </div>
+  );
+}
+
 export default function GuideArticle(guide: GuideArticleProps) {
   const faqJsonLd = {
     "@context": "https://schema.org",
@@ -111,17 +142,15 @@ export default function GuideArticle(guide: GuideArticleProps) {
                     ))}
                   </div>
                 )}
-                {section.paragraphs.map((paragraph) => (
-                  <p key={paragraph} className="text-slate-600 leading-relaxed mb-4">{paragraph}</p>
+                {section.paragraphs.map((paragraph, index) => (
+                  <Fragment key={paragraph}>
+                    <p className="text-slate-600 leading-relaxed mb-4">{paragraph}</p>
+                    {section.callout && (section.calloutAfterParagraph ?? section.paragraphs.length) === index + 1 && (
+                      <div className="my-6 rounded-2xl border-l-4 border-blue-700 bg-slate-50 px-6 py-5 text-slate-800 font-semibold leading-relaxed">{section.callout}</div>
+                    )}
+                  </Fragment>
                 ))}
-                {section.columns && (
-                  <div className="overflow-x-auto mt-6">
-                    <table className="w-full text-left border-collapse min-w-[760px]">
-                      <thead><tr className="border-b-2 border-slate-200">{section.columns.headers.map((header) => <th key={header} className="py-4 pr-5 text-sm uppercase tracking-wider">{header}</th>)}</tr></thead>
-                      <tbody className="text-slate-600">{section.columns.rows.map((row) => <tr key={row[0]} className="border-b border-slate-100 last:border-0">{row.map((cell, index) => <td key={`${row[0]}-${index}`} className={`py-4 pr-5 ${index === 0 ? 'font-bold text-slate-900' : ''}`}>{cell}</td>)}</tr>)}</tbody>
-                    </table>
-                  </div>
-                )}
+                {section.columns && <ColumnsTable columns={section.columns} />}
                 {section.rows && (
                   <div className="overflow-x-auto mt-6">
                     <table className="w-full text-left border-collapse min-w-[620px]">
@@ -149,6 +178,20 @@ export default function GuideArticle(guide: GuideArticleProps) {
                     {section.bullets.map((bullet) => <li key={bullet}>• {bullet}</li>)}
                   </ul>
                 )}
+                {section.subsections?.map((subsection) => (
+                  <div key={subsection.heading} className="mt-8">
+                    <h3 className="text-xl font-black text-slate-900 mb-3">{subsection.heading}</h3>
+                    {subsection.paragraphs?.map((paragraph) => (
+                      <p key={paragraph} className="text-slate-600 leading-relaxed mb-4">{paragraph}</p>
+                    ))}
+                    {subsection.columns && <ColumnsTable columns={subsection.columns} />}
+                    {subsection.bullets && (
+                      <ul className="space-y-3 text-slate-700 font-medium mt-5">
+                        {subsection.bullets.map((bullet) => <li key={bullet}>• {bullet}</li>)}
+                      </ul>
+                    )}
+                  </div>
+                ))}
                 {section.closingParagraphs?.map((paragraph) => (
                   <p key={paragraph} className="text-slate-600 leading-relaxed mt-5 mb-4">{paragraph}</p>
                 ))}

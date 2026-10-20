@@ -1,212 +1,304 @@
 import GuideArticle, { type GuideArticleData } from '@/components/GuideArticle';
 
 const guide: GuideArticleData = {
-  title: 'Importing Custom Signage from China: Landed Cost, Documents and Installer Handover',
+  title: 'Importing Custom Signage from China: Costs, Installation and Supplier Responsibilities',
   category: 'Signage Procurement & Import',
   description:
-    'How landed cost, customs documents and installer handover work when you import custom signage from China, and what the factory price leaves out.',
+    'What importing custom signage from China really involves: landed and installed cost, Incoterms, duty, local installation and responsibility after delivery.',
   updated: 'Oct 20, 2026',
   directAnswer:
-    'The factory price covers manufacturing, packing and usually inland transport to the port. It does not cover freight, duty, destination charges or installation. Importing works when the quotation names the delivery term, the document set is agreed with a customs broker before production, and the installer receives mounting and wiring drawings before the crates arrive.',
+    'Importing custom signage from China requires more than comparing factory prices. Before ordering, confirm the total delivered cost, local installation requirements, approval process and after-sales responsibilities.',
   sections: [
     {
-      heading: 'What the factory price does and does not include',
+      heading: 'Before You Compare Factory Prices',
       paragraphs: [
-        'A factory quotation for custom signage normally covers materials, fabrication, finishing and packing. Depending on the agreement it may also include inland transport to a named port or airport.',
-        'It usually does not include international freight, cargo insurance, import duty and tax, destination terminal or broker charges, delivery from the port to the site, installation, permits, or the electrical connection.',
-        'This is why two quotations that look far apart on paper can end up close after delivery, and why a low factory price is not the same as a low landed cost.',
-        'The simplest way to remove the ambiguity is to have the delivery term stated on the quotation. EXW, FOB, CIF and DDP place different responsibilities on the buyer and the supplier, and the difference is not only who books the freight: it also decides who is the importer of record and who carries the risk if something goes wrong in transit.',
-      ],
-      bullets: [
-        'Ask for the term to be written on the quotation itself, not agreed in conversation.',
-        'Ask which party is named as importer of record.',
-        'Ask whether packing and crating are included, and to what protection standard.',
+        'A competitive manufacturing quotation can be useful for a retail storefront, restaurant or multi-building wayfinding project. However, the sign still needs to clear customs, reach the site and be installed correctly.',
+        'The practical question is: what will it cost to turn the manufactured sign into an approved, working installation?',
+        'Dalian ZhiYuDao Signage & Tech. Co.Ltd, also known as ZYD SIGN, is a custom signage manufacturer based in Dalian, China. This guide explains what overseas buyers should clarify when sourcing channel letters, room signs and wayfinding signage.',
       ],
     },
     {
-      heading: 'Why landed cost is not the quoted unit price',
+      heading: '1. Can a Chinese Sign Manufacturer Handle the Whole Project?',
+      images: [
+        { src: '/assets/images/guides/zyd-factory-aerial-dalian.jpg', alt: 'Aerial view of the ZYD Signage factory buildings and yard in Dalian, China', width: 10969, height: 9078 },
+        { src: '/assets/images/guides/zyd-3d-metal-logo-sign.jpg', alt: 'Brushed metal 3D logo sign with ZYD lettering mounted on an interior wall', width: 413, height: 413 },
+        { src: '/assets/images/guides/zyd-cnc-router-large-format.jpg', alt: 'Large-format CNC router on the factory floor', width: 5284, height: 3523 },
+        { src: '/assets/images/guides/zyd-fiber-laser-cutting-bed.jpg', alt: 'Fiber laser cutting bed on the factory floor, shown between cutting cycles', width: 5298, height: 3532 },
+        { src: '/assets/images/guides/zyd-press-brake-forming.jpg', alt: 'Press brake tooling on the factory floor, with the machine ready for a forming cycle', width: 5316, height: 3544 },
+        { src: '/assets/images/guides/zyd-welding-letter-frames.jpg', alt: 'Welder assembling a metal letter frame with sparks', width: 6000, height: 4000 },
+      ],
       paragraphs: [
-        'Landed cost is the total you pay before the sign is working on the wall. It accumulates in layers, and each layer is invoiced by a different party.',
-        'Build a landed-cost sheet before approving a purchase order. The exercise often changes the decision: a project that looks cheaper from the factory can lose that advantage once freight, duty and the installer\'s mobilisation are counted.',
-      ],
-      rows: [
-        { factor: 'Goods, fabrication, finishing', first: 'Factory', second: 'Unit price, quantity and specification' },
-        { factor: 'Packing and crating', first: 'Factory', second: 'Crate dimensions, weight and protection' },
-        { factor: 'Inland transport to port', first: 'Factory or forwarder', second: 'Named port or airport' },
-        { factor: 'Origin charges and freight', first: 'Freight forwarder', second: 'Mode, routing and transit time' },
-        { factor: 'Cargo insurance', first: 'Forwarder or broker', second: 'Cover and claim procedure' },
-        { factor: 'Duty and import tax', first: 'Broker or importer', second: 'Classification and valuation basis' },
-        { factor: 'Destination charges', first: 'Terminal, broker or forwarder', second: 'Terminal handling, documentation, release' },
-        { factor: 'Delivery to site', first: 'Local carrier', second: 'Access, liftgate and appointment window' },
-        { factor: 'Installation and connection', first: 'Local installer or electrician', second: 'Scope, access equipment and permits' },
-      ],
-      factorLabel: 'Cost layer',
-      firstLabel: 'Usually billed by',
-      secondLabel: 'Confirm in writing',
-    },
-    {
-      heading: 'The charges that appear after the invoice, and who bills them',
-      paragraphs: [
-        'Once the factory invoice is paid, the remaining charges come from two directions: the freight forwarder and the destination service providers.',
-        'The forwarder typically invoices origin handling, freight, and sometimes insurance and destination handling as one through-rate. The destination side can invoice terminal handling, customs brokerage, documentation, release fees and final delivery. On some routes these arrive as a single all-in figure; on others each appears separately.',
-        'A DDP arrangement consolidates much of this into one price and one responsible party. It does not remove the underlying charges, and the scope still has to be written down: which taxes, which destination fees, which final-delivery conditions, and what happens if the shipment is held for inspection.',
-        'Ask each party for its own itemised estimate and add them into one sheet. A single all-in number is convenient for budgeting but difficult to audit when a charge is disputed.',
-      ],
-    },
-    {
-      heading: 'HS classification: why similar signs clear at different rates',
-      paragraphs: [
-        'Customs classification is not decided by the word sign. It depends on what the article is, what it is made of, and how it functions. An illuminated channel letter, a non-illuminated fabricated letter, a printed panel, a light box and a digital display can fall under different headings even when a buyer describes all of them as signage.',
-        'Because classification drives the duty rate and any applicable restrictions, it should be settled before production rather than at the port. Two shipments of visually similar signs can clear at different rates if the goods are described differently or if the components are invoiced separately.',
-        'The practical approach is to send the broker the specification, the material list, and a drawing or photograph, and ask for a written classification view before the order is placed. The factory can describe what it is shipping; the classification decision belongs to the importer and its broker.',
-        'The description on the commercial invoice has to match the goods. A vague description such as display materials invites questions, delay and reclassification.',
-      ],
-    },
-    {
-      heading: 'Documents the shipment needs before it leaves the factory',
-      paragraphs: [
-        'The document set should be agreed with the broker at quotation stage, because requirements differ by destination and by mode. A typical set covers the following.',
-      ],
-      bullets: [
-        'Commercial invoice with an accurate goods description, unit values and total value.',
-        'Packing list showing cartons or crates, dimensions, weights and contents per package.',
-        'Bill of lading or airway bill, issued once the shipment is handed to the carrier.',
-        'Certificate of origin, where the destination or the buyer requires one.',
-        'Product drawings and a specification sheet, so the shipment can be identified on arrival.',
-        'Material and finish declarations for the components used.',
-        'Electrical component documentation for the LED modules and power supplies.',
-        'Wood packaging treated and marked to the applicable plant-health standard, where wood crating is used.',
-      ],
-      closingParagraphs: [
-        'Send the draft documents to the broker before the shipment leaves. Corrections are inexpensive at that point and slow and expensive once the container is on the water.',
-      ],
-    },
-    {
-      heading: 'What a factory can and cannot certify for local approval',
-      paragraphs: [
-        'A factory can supply drawings, dimensions, material specifications and component data. It cannot approve a sign for a specific building, issue a local permit, or sign off an electrical installation.',
-        'Those approvals sit with the landlord, the local authority and the licensed trade in the destination market. A supplier that offers to handle everything should be asked exactly which of those steps it performs and which it does not.',
-        'The useful division of work is straightforward: the factory provides the information the approval process needs, and the buyer\'s local team uses it. Mounting height, projection, illumination limits and connection requirements are usually determined locally, and they should be confirmed before the design is frozen rather than after.',
-        'Ask the authority or the landlord what they need to see at application stage, then ask the factory for those specific documents. Generic certificates rarely answer a specific question.',
-      ],
-    },
-    {
-      heading: 'What a local installer needs to finish the job',
-      paragraphs: [
-        'The installer prices risk. When drawings are missing or arrive late, the quotation goes up or the installer declines the job. In practice the following package decides whether the installation runs smoothly.',
-      ],
-      bullets: [
-        'Shop drawings with overall dimensions and letter positions.',
-        'A mounting template or dimensioned hole pattern.',
-        'A wiring diagram, including the number of circuits and the connection points.',
-        'Power supply location and capacity, and the routing between the sign and the supply.',
-        'The weight of each letter and of each crate, for lifting and access planning.',
-        'A hardware list: anchors, studs, spacers and the fixings supplied with the letters.',
-        'The face removal and reassembly procedure for this specific construction.',
-        'Spare fasteners and a small number of spare LED modules.',
-      ],
-      closingParagraphs: [
-        'Send this package to the installer before the shipment arrives. Installation is often scheduled in a short window between other trades, and a missing drawing at that moment is expensive.',
-        'For wall types that cannot take expansion anchors, such as stone cladding or thin panels, agree the fixing method at drawing stage. It should not be decided on site on the morning of the install.',
-      ],
-    },
-    {
-      heading: 'Crating, damage and the claim window',
-      paragraphs: [
-        'Illuminated letters are fragile at the face and at the returns, and they are heavy for their size. Good crating braces the face, protects the edges, keeps letters from touching each other, and labels every crate with its contents and orientation.',
-        'Inspect the shipment before signing the delivery receipt. Photograph the crates as received, then open and check the contents while the carrier is still on site where local practice allows. Note any visible damage on the delivery document, because a signature without exceptions is difficult to argue with later.',
-        'Claim windows are set by the carrier, the insurer and the terms of sale, and they differ between routes. Confirm the procedure and the deadline before shipping and write it into the purchase order, so the inspection does not depend on whoever happens to be at the site that day.',
-      ],
-    },
-    {
-      heading: 'One set or one hundred: how order size changes the maths',
-      paragraphs: [
-        'Custom signage does not require a container. A single set can be produced, crated and shipped, but the economics change with quantity: setup, artwork preparation and crating are spread across more units, while freight is driven by volume and weight rather than by piece count.',
-        'For small orders, compare air freight against sea freight on the actual crate dimensions rather than on the goods value. A large but light sign can be expensive by air because of dimensional weight, while a small dense shipment may not justify a sea booking.',
-        'For larger projects, ask how the shipment will be consolidated and whether different sign types can share a crate or a pallet. Mixed consignments need a packing list that maps every item to its location, or the site receives a crate it cannot reconcile against the drawings.',
-      ],
-    },
-    {
-      heading: 'When importing is the wrong decision',
-      paragraphs: [
-        'Importing is a poor fit in a few situations, and it is better to identify them before the order than after.',
-      ],
-      bullets: [
-        'The opening date is only a few weeks away, and freight plus installation cannot fit the window.',
-        'The sign is small and non-illuminated, and a local supplier can deliver it at a comparable total cost.',
-        'The project requires a local warranty response with a defined service time.',
-        'The electrical installation must be certified by a local licensed contractor who has not reviewed the component documentation.',
-        'The approval authority requires a locally certified product and the available documentation does not meet that requirement.',
-      ],
-      closingParagraphs: [
-        'In these cases a local fabricator is usually the better answer. The decision should rest on the landed cost and the approval path, not on the factory price alone.',
-      ],
-    },
-    {
-      heading: 'Pre-order checks worth putting in writing',
-      paragraphs: [
-        'The questions below are the ones most often left unasked until something goes wrong. Each has a short answer that should appear in writing before the purchase order is issued.',
+        'A manufacturer may supply several sign types within one order, including illuminated letters, non-illuminated lettering, room identification signs and directional panels.',
+        'However, “complete signage package” and “turnkey installation” can describe very different scopes.',
+        'Ask the supplier to separate the project into specific services:',
       ],
       columns: {
-        headers: ['Question to ask', 'Why it matters'],
+        headers: ['Project Stage', 'What to Confirm'],
         rows: [
-          ['Which delivery term is on the quotation?', 'It decides who books freight, who is the importer and where risk passes.'],
-          ['Who is the importer of record?', 'Duty, tax and compliance obligations follow that party.'],
-          ['Has the broker confirmed the classification?', 'The rate and any applicable restrictions depend on it.'],
-          ['Which documents travel with the shipment?', 'Missing paperwork causes delay at the port, not at the factory.'],
-          ['Who installs, and have they seen the drawings?', 'Installation cost and schedule depend on information, not only on labour.'],
-          ['What is the fixing method for this wall?', 'The wrong anchor damages the facade and may complicate the approval.'],
-          ['How will damage be handled?', 'The inspection and claim path has to be agreed before delivery.'],
-          ['What is supplied as spare?', 'A single failed module should not require a new sign.'],
+          ['Design development', 'Is the supplier adapting approved artwork or developing the sign system?'],
+          ['Production drawings', 'Which dimensions, materials, lighting and fixing details are included?'],
+          ['Local engineering', 'Who provides any required site-specific calculations or stamped drawings?'],
+          ['Fabrication', 'Which products and components are included?'],
+          ['Shipping', 'Where does the quoted delivery service end?'],
+          ['Customs clearance', 'Who arranges entry and pays applicable charges?'],
+          ['Installation', 'Is an identified local contractor included in the contract?'],
+          ['After-sales support', 'Who supplies parts, performs repairs and pays site labor?'],
         ],
       },
+      closingParagraphs: [
+        'A mounting template and remote technical support can help an installer. They do not replace an agreed local installation service.',
+        'For projects combining fabricated signs and digital displays, also confirm responsibility for software, content management, network setup and ongoing support. These may involve separate suppliers.',
+      ],
+    },
+    {
+      heading: '2. Factory Price, Landed Cost and Installed Cost',
+      images: [
+        { src: '/assets/images/guides/zyd-laser-cutting-head-detail.jpg', alt: 'Close-up of a laser cutting head cutting sheet metal', width: 5943, height: 3962 },
+        { src: '/assets/images/guides/zyd-press-brake-operator-drawing.jpg', alt: 'Operator setting a press brake against a production drawing', width: 5807, height: 3871 },
+        { src: '/assets/images/guides/zyd-cnc-router-cutting-acrylic.jpg', alt: 'CNC router cutting an acrylic sheet with dust extraction', width: 5797, height: 3865 },
+      ],
+      paragraphs: [
+        'These are three different budget figures.',
+        'Factory price covers the stated manufacturing scope.',
+        'Landed cost adds the applicable costs of transporting and importing the goods to the agreed destination.',
+        'Installed project cost adds the work needed to put the sign into service, such as site preparation, permits, electrical connections, access equipment and installation.',
+        'Use the following budget structure:',
+        'Avoid counting a charge twice if it is already included in the supplier’s delivery price.',
+      ],
+      callout:
+        'Installed project budget = goods and packaging + logistics and import charges + local approval and installation costs + an allowance for unresolved items.',
+      calloutAfterParagraph: 5,
+      subsections: [
+        {
+          heading: 'What Costs Should Buyers Check?',
+          columns: {
+            headers: ['Cost Category', 'Possible Items'],
+            rows: [
+              ['Product supply', 'Letters, panels, LEDs, power supplies and mounting components'],
+              ['Pre-production', 'Samples, artwork development and specialist documentation'],
+              ['Packaging', 'Protective materials, cartons, crates and handling provisions'],
+              ['Transport', 'Origin collection, international freight and cargo insurance'],
+              ['Destination logistics', 'Terminal handling, clearance, storage and final delivery'],
+              ['Import charges', 'Duties, applicable additional tariffs, taxes and entry-related fees'],
+              ['Site work', 'Survey, wall preparation, wiring and removal of existing signs'],
+              ['Installation', 'Labor, lifting equipment, traffic management and access arrangements'],
+              ['Approval', 'Permits, engineering review, inspection or evaluation where required'],
+              ['Future service', 'Replacement parts, freight, access equipment and repair labor'],
+            ],
+          },
+        },
+      ],
+      closingParagraphs: [
+        'Not every project incurs every charge. The purpose of the list is to identify what is included, excluded or still awaiting confirmation.',
+      ],
+    },
+    {
+      heading: '3. Does “Shipping Included” Mean Duties and Taxes Are Included?',
+      images: [
+        { src: '/assets/images/guides/zyd-export-crates-loaded-on-truck.jpg', alt: 'Timber export crates loaded on a flatbed truck outside the factory', width: 1702, height: 1276 },
+      ],
+      paragraphs: [
+        'No. “Shipping included” does not define customs responsibility, unloading or installation.',
+        'Request an agreed delivery term, named place and version—for example, an appropriate Incoterms® 2020 rule—along with a written list of inclusions.',
+        'Two terms buyers may encounter are:',
+      ],
+      bullets: [
+        'DAP — Delivered at Place: the seller arranges delivery to the named place, ready for unloading; the buyer generally handles import clearance and applicable import charges.',
+        'DDP — Delivered Duty Paid: the seller generally handles import clearance and applicable duties and taxes, delivering to the named place ready for unloading.',
+      ],
+      closingParagraphs: [
+        'Before accepting a DDP quotation, confirm that the proposed arrangement can lawfully operate in the destination country. Identify the importer of record and the documents the buyer will receive.',
+        'Neither term, by itself, includes mounting the sign or connecting it to the building’s electrical supply.',
+        'Ask about unloading, appointment delivery, restricted access and delivery equipment separately. These details matter when a crate is too large or heavy for the receiving site.',
+      ],
+    },
+    {
+      heading: '4. How Much Is the Import Duty on a Custom Sign?',
+      paragraphs: [
+        'There is no single duty rate for every custom sign imported from China.',
+        'The applicable treatment can depend on the destination, tariff classification, product construction, origin and measures in effect when the goods enter the country.',
+        'An illuminated sign and a non-electrical metal plaque may require different classification analysis. Do not assume that one code applies to every product in a mixed signage order.',
+        'Before confirming the budget, send a customs broker:',
+      ],
+      bullets: [
+        'Product photographs and drawings.',
+        'Material descriptions.',
+        'Whether the product is illuminated.',
+        'Details of electrical components.',
+        'Commercial value and country of origin.',
+        'Proposed shipping and delivery arrangements.',
+      ],
+      closingParagraphs: [
+        'Ask the broker to confirm classification and applicable charges. A supplier’s suggested HS code is useful information, but it should not be treated as a guaranteed duty assessment.',
+      ],
+    },
+    {
+      heading: '5. Who Installs Imported Channel Letters?',
+      paragraphs: [
+        'An independent local sign installer or suitable contractor may accept the work, but acceptance should be confirmed before production.',
+        'Some contractors offer installation-only services. Others may decline customer-supplied signs or require additional documentation.',
+        'The installer needs enough information to assess the work.',
+      ],
+      subsections: [
+        {
+          heading: 'Send the Installer a Review Package',
+          paragraphs: ['Include:'],
+          bullets: [
+            'Approved artwork and overall dimensions.',
+            'Letter depth, materials and estimated weights.',
+            'Mounting arrangement and fixing locations.',
+            'Wall photographs and substrate information.',
+            'Wiring layout, supply requirements and power supply locations.',
+            'Proposed service access.',
+            'Relevant certification or evaluation documents.',
+            'Delivery and installation schedule.',
+          ],
+        },
+      ],
+      closingParagraphs: [
+        'Ask for a written quotation stating whether it includes permits, electrical work, lifting equipment, unloading and removal of existing signage.',
+        'A useful purchasing sequence is to obtain the installer’s review before approving the factory drawings. This allows mounting and access problems to be addressed while changes are still practical.',
+      ],
+    },
+    {
+      heading: '6. What Should U.S. Buyers Check for Illuminated Signs?',
+      paragraphs: [
+        'For U.S. projects, confirm the approval route with the local installer and authority having jurisdiction before manufacture.',
+        'UL 48 is a relevant safety standard for electric signs. However, a certified power supply or recognized LED component does not, by itself, establish certification of the completed sign.',
+        'Ask what documentation and labeling apply to the actual sign assembly.',
+        'Where a field evaluation is proposed, confirm its acceptability, scope, timing and cost in advance. An evaluation may identify changes that must be made; it should not be treated as guaranteed approval after delivery.',
+        'Electrical product review, structural approval and sign permits address different issues. Confirm each applicable requirement for the installation site.',
+      ],
+    },
+    {
+      heading: '7. What Is the MOQ for Custom Signs from China?',
+      paragraphs: [
+        'There is no universal minimum order quantity.',
+        'A manufacturer may quote a single custom logo, a complete storefront set or a larger batch of room signs. Feasibility depends on setup, material purchasing, finishing and packing requirements.',
+        'For channel letters, specify whether the quantity means individual letters or complete sign sets.',
+        'For room and wayfinding signs, provide the complete schedule. A batch containing many different names may involve different production work from a batch of identical panels.',
+        'Ask for the minimum order quantity and any setup charges for your actual specification.',
+      ],
+    },
+    {
+      heading: '8. What Happens If the Sign Is Damaged or Stops Working?',
+      images: [
+        { src: '/assets/images/guides/zyd-crate-interior-packed-letters.jpg', alt: 'Open timber crate showing channel letters wrapped in protective foam and film', width: 1280, height: 1707 },
+      ],
+      paragraphs: [
+        'Agree on the process before paying the deposit.',
+        'Separate three situations:',
+      ],
+      subsections: [
+        {
+          heading: 'Transit Damage',
+          paragraphs: [
+            'Confirm the reporting procedure, evidence required and responsibility for handling the claim.',
+            'Photograph the packaging on arrival and record visible damage. Follow the agreed delivery inspection process and applicable claim deadlines.',
+          ],
+        },
+        {
+          heading: 'Manufacturing Defects',
+          paragraphs: [
+            'Define the warranty period, covered items and remedy.',
+            'Ask whether support means replacement parts, repair, replacement of the affected product or another agreed solution.',
+          ],
+        },
+        {
+          heading: 'Installation or Site-Related Problems',
+          paragraphs: [
+            'Incorrect wiring, unsuitable fixings, site modifications and supply problems may fall outside the manufacturer’s responsibility.',
+            'Agree on how the manufacturer and installer will exchange photographs, measurements and test information to identify the cause.',
+          ],
+        },
+        {
+          heading: 'Who Pays for Repair Labor?',
+          paragraphs: ['A parts warranty does not necessarily include:'],
+          bullets: [
+            'Local technician charges.',
+            'Lift rental.',
+            'Removal and reinstallation.',
+            'Replacement freight.',
+            'Duties or taxes on replacement shipments.',
+          ],
+        },
+      ],
+      closingParagraphs: [
+        'These items should be addressed expressly. For a larger project, discuss spare components and retain the final wiring and component records.',
+      ],
+    },
+    {
+      heading: '9. A Responsibility Checklist Before Ordering',
+      paragraphs: ['Use this as a discussion template, then name the responsible party in the contract.'],
+      columns: {
+        headers: ['Task', 'Party to Name'],
+        rows: [
+          ['Final artwork approval', 'Buyer or appointed designer'],
+          ['Manufacturing to approved drawings', 'Manufacturer'],
+          ['Site measurements and substrate verification', 'Local project team'],
+          ['Local permits and engineering', 'Appointed local provider'],
+          ['Export documents', 'Contractually agreed supplier or agent'],
+          ['Import clearance and charges', 'Party established by the delivery arrangement'],
+          ['Delivery receiving and unloading', 'Agreed logistics or site team'],
+          ['Installation and electrical connection', 'Appointed qualified contractors'],
+          ['Defect assessment and remedy', 'Manufacturer and installer within their agreed scopes'],
+          ['Site repair labor and replacement freight', 'As expressly agreed in the warranty'],
+        ],
+      },
+      closingParagraphs: ['Any row without an identified owner is an unresolved project item.'],
+    },
+    {
+      heading: 'Discuss Your Signage Project with ZYD SIGN',
+      paragraphs: [
+        'Dalian ZhiYuDao Signage & Tech. Co.Ltd — ZYD SIGN manufactures custom illuminated letters, metal lettering, room signs and wayfinding signage.',
+        'For a project inquiry, share your artwork, dimensions, quantities, installation photographs and delivery location. Include requirements supplied by your installer, customs broker or local authority.',
+        'Request a quotation that separates product supply, packaging, delivery arrangements and any additional services. A clearly defined scope helps you compare suppliers and plan the work that remains at the destination.',
+        'Contact ZYD SIGN to discuss manufacturing specifications and the supply scope for your custom signage project.',
+      ],
     },
   ],
-  checklistTitle: 'Import checklist before the order is placed',
+  checklistTitle: 'Before you approve the factory drawings',
   checklistIntro:
-    'Importing works when the commercial terms, the document set and the installation handover are settled before production starts. Use this list to confirm that each one is in writing.',
+    'Importing works when the commercial terms, the installation review and the responsibility split are settled before production starts. Each item below should exist in writing, not in conversation.',
   checklist: [
-    'Delivery term named on the quotation, with the responsible party for each cost line.',
-    'Importer of record identified, and duty and tax responsibility stated in the contract.',
-    'Classification view obtained from the broker before production.',
-    'Document set agreed with the broker, including origin and wood packaging requirements.',
-    'Mounting drawings, hole pattern and letter positions issued before crating.',
-    'Wiring diagram, power supply location, capacity and circuit count provided.',
-    'Weight and crate dimensions supplied for site handling and access planning.',
-    'Crating specification covering faces, returns, corners and separation between letters.',
-    'Inspection and claim procedure agreed, with the deadline recorded in the purchase order.',
-    'Installer identified, with the handover package sent before the shipment arrives.',
+    'Installer review obtained before factory drawings are approved.',
+    'Delivery term, named place and written list of inclusions agreed.',
+    'Importer of record identified, and the documents the buyer receives confirmed.',
+    'Customs broker asked to review the actual product before the budget is fixed.',
+    'Warranty scope written to state parts, labor, freight and access separately.',
+    'Reporting procedure and claim evidence agreed before the deposit is paid.',
+    'Every row of the responsibility table assigned to a named party.',
   ],
   faqs: [
     {
-      question: 'Is importing custom signage from China cheaper than buying locally?',
+      question: 'Is importing custom signage from China always cheaper?',
       answer:
-        'Not automatically. The factory price is usually lower, but landed cost includes freight, insurance, duty, destination charges, delivery and installation. Compare the total against a local quotation for the same specification, including the installer price and the approval work.',
+        'No. Compare equivalent specifications and complete installed costs. Freight, approval work, installation and servicing can change the result.',
     },
     {
-      question: 'Who pays the import duty, me or the factory?',
+      question: 'Can a Chinese manufacturer arrange local installation?',
       answer:
-        'Normally the importer of record pays duty and import tax, which is usually the buyer or its appointed broker. Under a DDP arrangement the supplier quotes a delivered price that includes those charges, but the responsibility still has to be written into the sales contract. Confirm which party is named as importer before ordering.',
+        'Possibly, if an identified local service is offered and included in the contract. Do not assume installation is included because drawings or technical support are supplied.',
     },
     {
-      question: 'Can a Chinese factory supply a sign that passes local inspection?',
+      question: 'Does door-to-door shipping include installation?',
       answer:
-        'A factory can manufacture to a specification and supply drawings, material data and component documentation. It cannot issue a local permit, certify an electrical installation, or approve a sign for a particular building. Whether a sign passes inspection depends on local requirements and on the installation, so confirm those requirements before the design is finalised.',
+        'No. It describes a delivery service. Confirm customs charges, unloading and site access separately, and obtain an installation agreement.',
     },
     {
-      question: 'What files do I need to send before a factory can quote?',
+      question: 'Who should confirm the import duty?',
       answer:
-        'A vector artwork file, the required dimensions and letter height, the mounting surface with photographs and measurements, the viewing distance, the illumination requirement, the destination port or address, and the required completion date. A specification or designer drawing shortens the process considerably.',
+        'Ask a customs broker to review the actual product and current destination requirements before finalizing the budget.',
     },
     {
-      question: 'What happens if the sign arrives damaged?',
+      question: 'What should I ask a channel letters supplier before ordering?',
       answer:
-        'Report it to the carrier and the insurer under the procedure agreed before shipping, with photographs and the delivery documentation. Inspect the shipment before signing where possible and note exceptions on the delivery receipt. The claim window and the evidence required are set by the carrier and the policy, not by the factory.',
+        'Ask for the construction, materials, lighting specification, approval documentation, mounting details, service-access method, delivery scope and written warranty terms.',
     },
     {
-      question: 'Can I order a single sign, or is there a minimum order quantity?',
+      question: 'What if my local installer will not accept the sign?',
       answer:
-        'A single set can be produced. Unit cost falls with quantity because setup, artwork preparation and crating are spread across more pieces, and freight follows volume and weight. For one sign, compare air and sea freight on the actual crate dimensions before deciding.',
+        'Resolve the issue before production. Ask the installer to state the reason and determine whether revised drawings, different components or another approval route can address the issue.',
     },
   ],
   sources: [
@@ -224,9 +316,9 @@ const guide: GuideArticleData = {
     { href: '/guides/illuminated-signage-buying-guide', label: 'Illumination specification checks' },
     { href: '/products/custom-channel-letters', label: 'Custom channel letters built for export crating' },
   ],
-  asideTitle: 'Start with the delivery term',
+  asideTitle: 'Separate the three numbers',
   asideText:
-    'Send the drawings, the destination address and photographs of the mounting surface, and ask for the quotation to state the delivery term, the document set and the installation information package. Those three items decide most of the difference between a factory price and a working sign.',
+    'Ask for the factory price, the landed cost and the installed project cost as three separate figures, with the delivery term and the responsible party named for each cost line.',
 };
 
 export default function ImportingCustomSignageGuide() {
