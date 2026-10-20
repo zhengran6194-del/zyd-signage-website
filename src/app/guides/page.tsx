@@ -121,6 +121,12 @@ const guides = [
     desc: 'How trimless and trim cap channel letters differ in face attachment, edge appearance, logo detail, servicing and outdoor specification.',
     href: '/guides/trimless-vs-trim-cap-channel-letters',
   },
+  {
+    tag: 'Signage Procurement & Import',
+    title: 'Importing Custom Signage from China: Landed Cost, Documents and Installer Handover',
+    desc: 'How landed cost, customs documents and installer handover work when you import custom signage from China, and what the factory price leaves out.',
+    href: '/guides/importing-custom-signage-from-china',
+  },
 ];
 
 export default function GuidesPage() {
@@ -162,7 +168,7 @@ export default function GuidesPage() {
           <div>
             <h2 className="text-2xl font-black uppercase tracking-tight text-slate-900 mb-4">What these guides cover</h2>
             <p className="text-slate-600 leading-relaxed font-medium">
-              Nineteen guides cover the decisions that sit in front of a signage order: how the illuminated routes compare, what shapes a channel letter quotation, how material and finish routes are chosen, how a complete site package is procured stage by stage, how a low-bid tender fails at acceptance, how tactile and Braille signage is planned and how custom Braille door signs are specified, and how a mall, an industrial park or a hotel becomes one coordinated signage system.
+              Twenty guides cover the decisions that sit in front of a signage order: how the illuminated routes compare, what shapes a channel letter quotation, how material and finish routes are chosen, how a complete site package is procured stage by stage, how a low-bid tender fails at acceptance, how imported signage clears customs and hands over to an installer, how tactile and Braille signage is planned and how custom Braille door signs are specified, and how a mall, an industrial park or a hotel becomes one coordinated signage system.
             </p>
           </div>
           <div>

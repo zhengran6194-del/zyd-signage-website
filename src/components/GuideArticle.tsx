@@ -12,6 +12,8 @@ export type GuideSource = {
 export type GuideSection = {
   heading: string;
   paragraphs: string[];
+  /** Paragraphs that follow the bullet list in the source copy, rendered after the bullets. */
+  closingParagraphs?: string[];
   bullets?: string[];
   rows?: Array<{ factor: string; first: string; second: string }>;
   /** Table with a variable number of columns, for layouts the three-column rows fields cannot carry. */
@@ -147,6 +149,9 @@ export default function GuideArticle(guide: GuideArticleProps) {
                     {section.bullets.map((bullet) => <li key={bullet}>• {bullet}</li>)}
                   </ul>
                 )}
+                {section.closingParagraphs?.map((paragraph) => (
+                  <p key={paragraph} className="text-slate-600 leading-relaxed mt-5 mb-4">{paragraph}</p>
+                ))}
               </section>
             ))}
 

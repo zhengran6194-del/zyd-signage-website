@@ -12,7 +12,7 @@
 # --force is passed. The status column below was measured on 2026-10-07, except
 # where a group notes a later measurement.
 #
-# Coverage: every URL in src/app/sitemap.ts (54 routes: 44 English, 10 Japanese).
+# Coverage: every URL in src/app/sitemap.ts (55 routes: 45 English, 10 Japanese).
 # Keep the two in step: when a route is added to the sitemap, add it here in the
 # group it belongs to.
 
@@ -39,6 +39,8 @@ https://www.zydsign.com/guides/hotel-room-number-signs
 https://www.zydsign.com/guides/office-door-sign-materials
 # status 404 on 2026-10-19: committed locally, not deployed yet.
 https://www.zydsign.com/guides/trimless-vs-trim-cap-channel-letters
+# status 404 on 2026-10-20: committed locally, not deployed yet.
+https://www.zydsign.com/guides/importing-custom-signage-from-china
 
 # --- Group 2: guides index page ---
 # status 200 (was 404 on 2026-09-12; the page is live now)
