@@ -455,9 +455,15 @@ Start Your Project
 
 Company website
 
-Design Files (PDF / AI / PSD)
+##### Send Drawings Directly on WhatsApp
 
-Optional. Each file must be under 10MB. Files are not uploaded automatically; attach them manually on WhatsApp after submitting.
+PDF, AI or PSD — send them in the chat and they reach our engineering team immediately. No second form, no re-typing.
+
+Send Drawings on WhatsApp
+
+WhatsApp opens in a new tab. Tap the attach icon in the chat, select your files, and send.
+
+You can send drawings before or after submitting the form.
 
 SUBMIT INQUIRY Prefer email? Send to zhengran@zydsign.cn
 

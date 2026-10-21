@@ -37,12 +37,9 @@ export default function Home() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitMessage, setSubmitMessage] = useState('');
   const [submitMessageType, setSubmitMessageType] = useState<'success' | 'error'>('success');
-  const [selectedFiles, setSelectedFiles] = useState<File[]>([]);
-  const [fileError, setFileError] = useState('');
   const [leadReceived, setLeadReceived] = useState(false);
   const [showAllProducts, setShowAllProducts] = useState(false);
   const [lastSubmitted, setLastSubmitted] = useState<InquiryPayload | null>(null);
-  const [lastFileExtra, setLastFileExtra] = useState<string | undefined>(undefined);
 
   // Anti-abuse fields are populated after mount so server and client markup match.
   const honeypotRef = useRef<HTMLInputElement>(null);
@@ -87,24 +84,6 @@ export default function Home() {
     return { fullName, email, company, details };
   };
 
-  const handleFilesChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const files = Array.from(e.target.files || []);
-    const allowedExtensions = /\.(pdf|ai|psd)$/i;
-    const invalidFile = files.find(file => !allowedExtensions.test(file.name) || file.size > 10 * 1024 * 1024);
-    if (invalidFile) {
-      const error = `${invalidFile.name} must be a PDF, AI, or PSD file under 10MB.`;
-      setFileError(error);
-      setSubmitMessageType('error');
-      setSubmitMessage(error);
-      setSelectedFiles([]);
-      e.target.value = '';
-      return;
-    }
-    setSelectedFiles(files);
-    setFileError('');
-    if (submitMessageType === 'error') setSubmitMessage('');
-  };
-
   const handleInquirySubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (isSubmitting) return;
@@ -132,16 +111,11 @@ export default function Home() {
 
     // The conversion event is pushed only after the server confirmed the inquiry was stored.
     pushGenerateLead(response, 'home_page');
-    const fileExtra = selectedFiles.length
-      ? `*Design files:* ${selectedFiles.map(file => file.name).join(', ')}\nPlease send the original files in WhatsApp. This form cannot transfer local file binaries.`
-      : undefined;
     setLastSubmitted(validated);
-    setLastFileExtra(fileExtra);
     setLeadReceived(true);
     setSubmitMessageType('success');
     setSubmitMessage(response.message);
     setFormData({ fullName: '', email: '', company: '', details: '' });
-    setSelectedFiles([]);
     if (startedAtRef.current) startedAtRef.current.value = String(Date.now());
     setIsSubmitting(false);
   };
@@ -153,6 +127,20 @@ export default function Home() {
     const subject = 'Project Inquiry from ZYD Website';
     const body = `Name: ${fullName}\nEmail: ${email || 'N/A'}\nCompany: ${company || 'N/A'}\nDetails: ${details}`;
     window.location.href = `mailto:${siteConfig.salesEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  };
+
+  // Browsers cannot attach local files to WhatsApp, so drawings get their own entry point
+  // instead of a file input whose selection would never leave the page.
+  const handleDrawingsWhatsApp = () => {
+    const fullName = formData.fullName.trim();
+    const details = formData.details.trim();
+    const url = fullName && details
+      ? buildWhatsAppUrl(
+          { fullName, email: formData.email.trim(), company: formData.company.trim(), details },
+          'I will attach the design files in this chat.',
+        )
+      : `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent("Hi Aaron, I'd like to send design files for a signage quotation. I will attach them in this chat.")}`;
+    window.open(url, '_blank', 'noopener,noreferrer');
   };
 
   const handleAdvisorWhatsApp = () => {
@@ -784,18 +772,18 @@ export default function Home() {
                 </div>
                 <input id="home-company-name" type="text" name="company" value={formData.company} onChange={handleInquiryChange} placeholder="Company Name" aria-label="Company name for your signage project inquiry" className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:ring-4 focus:ring-blue-600 font-bold" />
                 <textarea id="home-project-details" name="details" value={formData.details} onChange={handleInquiryChange} placeholder="Project Details *" aria-label="Project details for your signage inquiry" rows={5} required className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:ring-4 focus:ring-blue-600 font-bold resize-none" />
-                <div className="rounded-2xl border border-dashed border-slate-300 bg-slate-50 p-5">
-                  <label htmlFor="home-design-files" className="block text-sm font-black uppercase tracking-widest text-slate-700">Design Files (PDF / AI / PSD)</label>
-                  <p className="mt-2 text-xs font-medium text-slate-500">Optional. Each file must be under 10MB. Files are not uploaded automatically; attach them manually on WhatsApp after submitting.</p>
-                  <input id="home-design-files" type="file" multiple accept=".pdf,.ai,.psd,application/pdf,application/postscript,image/vnd.adobe.photoshop" onChange={handleFilesChange} className="mt-4 block w-full text-sm font-bold text-slate-600 file:mr-4 file:rounded-full file:border-0 file:bg-slate-950 file:px-5 file:py-3 file:font-black file:text-white" />
-                  {selectedFiles.length > 0 && <p className="mt-3 text-xs font-bold text-slate-600">Selected: {selectedFiles.map(file => file.name).join(', ')}</p>}
-                  {fileError && <p role="alert" className="mt-3 text-xs font-bold text-red-600">{fileError}</p>}
+                <div className="rounded-2xl border border-emerald-200 bg-emerald-50 p-5">
+                  <h3 className="text-sm font-black uppercase tracking-widest text-slate-900">Send Drawings Directly on WhatsApp</h3>
+                  <p className="mt-2 text-xs font-medium text-slate-600">PDF, AI or PSD — send them in the chat and they reach our engineering team immediately. No second form, no re-typing.</p>
+                  <button type="button" onClick={handleDrawingsWhatsApp} className="button button-green-base w-full mt-4 py-4 rounded-full font-black">Send Drawings on WhatsApp</button>
+                  <p className="mt-3 text-xs font-medium text-slate-600">WhatsApp opens in a new tab. Tap the attach icon in the chat, select your files, and send.</p>
+                  <p className="mt-2 text-[11px] font-medium text-slate-500">You can send drawings before or after submitting the form.</p>
                 </div>
                 <button type="submit" disabled={isSubmitting} className="button button-green-base w-full py-4 rounded-full font-black disabled:cursor-not-allowed disabled:opacity-70">{isSubmitting ? 'SENDING...' : 'SUBMIT INQUIRY'}</button>
                 {submitMessage && <p role="status" aria-live="polite" className={`text-center text-sm font-bold ${submitMessageType === 'error' ? 'text-red-600' : 'text-emerald-600'}`}>{submitMessage}</p>}
                 {leadReceived && lastSubmitted && (
                   <a
-                    href={buildWhatsAppUrl(lastSubmitted, lastFileExtra)}
+                    href={buildWhatsAppUrl(lastSubmitted)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block w-full text-center text-xs font-black uppercase tracking-widest text-slate-500 hover:text-blue-600 transition-colors"
