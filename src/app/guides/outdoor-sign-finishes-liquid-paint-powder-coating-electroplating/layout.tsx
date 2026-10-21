@@ -4,7 +4,7 @@ import JsonLd from "@/components/JsonLd";
 
 const path = "/guides/outdoor-sign-finishes-liquid-paint-powder-coating-electroplating";
 const title = "Outdoor Sign Finishes: Liquid Paint, Powder Coating or Electroplating?";
-const description = "How liquid paint, powder coating and electroplating compare for outdoor signage, and what to specify for substrate, exposure, samples and evidence.";
+const description = "How liquid paint, powder coating, fluorocarbon (PVDF) coating, electroplating and anodizing compare for outdoor signage, and what to specify for substrate, exposure, samples and evidence.";
 
 export const metadata: Metadata = buildPageMetadata({ title, description, path, image: ogImages.channelLetters, type: "article" });
 

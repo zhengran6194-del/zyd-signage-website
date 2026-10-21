@@ -22,6 +22,11 @@ export type GuideSection = {
     headers: string[];
     rows: string[][];
   };
+  /** Additional tables rendered after the section's closing paragraphs. */
+  additionalColumns?: Array<{
+    headers: string[];
+    rows: string[][];
+  }>;
   /** Highlighted paragraph between body paragraphs, used for a stated formula or rule. */
   callout?: string;
   /** 1-based paragraph index the callout follows; defaults to the end of the paragraph list. */
@@ -195,6 +200,7 @@ export default function GuideArticle(guide: GuideArticleProps) {
                 {section.closingParagraphs?.map((paragraph) => (
                   <p key={paragraph} className="text-slate-600 leading-relaxed mt-5 mb-4">{paragraph}</p>
                 ))}
+                {section.additionalColumns?.map((columns) => <ColumnsTable key={columns.headers.join('|')} columns={columns} />)}
               </section>
             ))}
 

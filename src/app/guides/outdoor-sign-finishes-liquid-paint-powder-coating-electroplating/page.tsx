@@ -3,7 +3,7 @@ import GuideArticle, { type GuideArticleData } from '@/components/GuideArticle';
 const guide: GuideArticleData = {
   title: 'Outdoor Sign Finishes: Liquid Paint, Powder Coating or Electroplating?',
   category: 'Metal Sign Finishing',
-  description: 'How liquid paint, powder coating and electroplating compare for outdoor signage, and what to specify for substrate, exposure, samples and evidence.',
+  description: 'How liquid paint, powder coating, fluorocarbon (PVDF) coating, electroplating and anodizing compare for outdoor signage, and what to specify for substrate, exposure, samples and evidence.',
   updated: 'Oct 21, 2026',
   directAnswer: 'Liquid paint offers flexible colors and finishing options. Powder coating can provide a durable exterior finish when the correct system is specified. Electroplating deposits a metallic layer for a particular decorative or functional result.',
   sections: [
@@ -53,6 +53,21 @@ const guide: GuideArticleData = {
             'In signage quotations, terms such as “titanium gold” or “gold stainless steel” may describe appearance without clearly identifying the process. Ask whether the proposed finish is paint, electroplating, PVD or another treatment.',
           ],
         },
+        {
+          heading: 'Fluorocarbon (PVDF) Coating',
+          paragraphs: [
+            'Fluorocarbon coatings are liquid-applied systems built on PVDF resin. They are commonly specified for architectural aluminium panels and large exterior lettering where colour and gloss retention over time matter more than the lowest unit cost.',
+            'A fluorocarbon coating is still a coating. Performance depends on pretreatment, primer, film thickness and curing, so ask for the product designation and technical data rather than accepting "fluorocarbon" as a description.',
+          ],
+        },
+        {
+          heading: 'Anodizing',
+          paragraphs: [
+            'Anodizing is an electrolytic process carried out on aluminium. An oxide layer is grown from the metal surface itself and can be dyed, so the colour sits within the layer rather than on top of it.',
+            'Because the layer forms from the substrate, it does not fail by peeling in the way an applied coating film can. It is not a maintenance-free finish: under prolonged exterior exposure an anodized surface can still chalk, lighten or lose depth of colour.',
+            'Anodizing applies to aluminium only. A quotation that offers anodizing on a steel letter should be questioned.',
+          ],
+        },
       ],
     },
     {
@@ -73,6 +88,14 @@ const guide: GuideArticleData = {
       closingParagraphs: [
         'There is no universal durability ranking based only on these three process names.',
       ],
+      additionalColumns: [{
+        headers: ['Finish', 'How the layer is formed', 'Where it is usually specified'],
+        rows: [
+          ['Fluorocarbon (PVDF) coating', 'Liquid coating built on PVDF resin, applied over a prepared substrate and cured', 'Long-life exterior lettering and aluminium facade panels where colour and gloss retention matter'],
+          ['Polyester powder coating', 'Dry powder applied electrostatically, then cured', 'Interior signs, showrooms and shopfronts where colour range and cost matter more than maximum UV life'],
+          ['Anodizing (aluminium)', 'Oxide layer grown electrolytically from the aluminium itself, optionally dyed', 'Bare-metal appearance and facade elements in aluminium; not available on steel'],
+        ],
+      }],
     },
     {
       heading: '3. When Should You Consider Liquid Paint?',
@@ -231,6 +254,8 @@ const guide: GuideArticleData = {
           ['Cold climate', 'Specified service conditions, moisture and any de-icing salt exposure'],
           ['Sheltered exterior', 'Actual moisture exposure, condensation and cleaning conditions'],
           ['Public contact area', 'Abrasion, cleaning products and repair arrangements'],
+          ['Mirror or specular finish', 'Whether the finish can be maintained outdoors, or whether a plated look belongs indoors'],
+          ['Bare-metal appearance', 'Anodized aluminium or brushed stainless steel rather than a painted imitation'],
         ],
       },
       closingParagraphs: [
@@ -304,6 +329,26 @@ const guide: GuideArticleData = {
       ],
     },
     {
+      heading: '11. Common Specification Errors',
+      paragraphs: [
+        'Most finish failures trace back to a specification that named a process without defining the system. These are the errors worth catching before the order is placed.',
+      ],
+      images: [
+        { src: '/assets/images/guides/signage-material-selection-guide-surface-finish-samples.png', alt: 'Rows of metal finish samples showing different colors, sheens and surface textures', width: 1080, height: 720 },
+        { src: '/assets/images/guides/signage-procurement-coating-failure-peeling.webp', alt: 'Outdoor sign surface showing peeling and failed coating on a curved metal component', width: 1080, height: 720 },
+      ],
+      bullets: [
+        'Standard polyester powder quoted as fluorocarbon. Ask for the product designation and the resin system, not the colour name alone.',
+        'Anodizing proposed for a steel letter. Anodizing is an aluminium process, so the offer does not describe a buildable finish.',
+        'Anodized aluminium expected to hold its exact appearance indefinitely outdoors. The surface can chalk or lighten under prolonged UV exposure.',
+        'A plated mirror finish specified for an exposed exterior sign. Plating is most defensible indoors; outdoors it can lose gloss and is difficult to repair locally.',
+        'Finishes compared by colour only. Adhesion, film build, pretreatment and curing decide how long the appearance actually lasts.',
+      ],
+      closingParagraphs: [
+        'A finish comparison is only meaningful when each quotation describes the same substrate, the same preparation and the same system.',
+      ],
+    },
+    {
       heading: 'Specify Your Outdoor Sign Finish with ZYD SIGN',
       paragraphs: [
         'Dalian ZhiYuDao Signage & Tech. Co.Ltd — ZYD SIGN manufactures custom metal lettering, illuminated signs and architectural signage.',
@@ -325,6 +370,8 @@ const guide: GuideArticleData = {
     'Assembly sequence confirmed for heat-sensitive components.',
     'Inspection criteria, cleaning instructions and repair method supplied.',
     'Warranty scope and exclusions written into the order documents.',
+    'Coating resin system identified (for example PVDF fluorocarbon or polyester powder), not only the colour.',
+    'Anodizing confirmed as an aluminium-only process and matched to the actual component.',
   ],
   faqs: [
     { question: 'Is powder coating always better than liquid paint outdoors?', answer: 'No. Performance depends on the formulation, substrate preparation, application, curing and exposure. Compare specified systems rather than process names alone.' },
@@ -333,6 +380,8 @@ const guide: GuideArticleData = {
     { question: 'Is PVD the same as electroplating?', answer: 'No. PVD is a vacuum deposition process. Ask the supplier to identify the actual treatment when ordering gold-colored or other decorative metal finishes.' },
     { question: 'Which finish is best for coastal signage?', answer: 'There is no single answer based on finish name alone. Review the substrate, protective system, salt exposure, fabrication details and maintenance requirements together.' },
     { question: 'Can an outdoor finish be completely maintenance-free?', answer: 'Outdoor signs still need appropriate inspection and cleaning. Obtain instructions for the supplied finish, including restrictions on abrasive or chemical cleaners.' },
+    { question: 'Is anodizing the same as powder coating?', answer: 'No. Powder coating is an applied film cured onto the metal, while anodizing grows an oxide layer from the aluminium surface itself. Anodizing applies to aluminium only.' },
+    { question: 'Is fluorocarbon coating the same as powder coating?', answer: 'No. Fluorocarbon refers to a coating built on PVDF resin, usually specified where long-term colour and gloss retention matter. Standard powder coating is generally used where colour range and cost matter more. Compare the product data and the exposure rather than the process name.' },
   ],
   sources: [],
   relatedLinks: [
