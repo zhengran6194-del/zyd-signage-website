@@ -56,6 +56,12 @@ const guides = [
     href: '/guides/signage-material-selection-guide',
   },
   {
+    tag: 'Surface Finishes',
+    title: 'Outdoor Sign Finishes: Liquid Paint, Powder Coating or Electroplating?',
+    desc: 'How liquid paint, powder coating and electroplating differ for outdoor signs, and what to specify for substrate, exposure, sample approval and repair.',
+    href: '/guides/outdoor-sign-finishes-liquid-paint-powder-coating-electroplating',
+  },
+  {
     tag: 'Procurement',
     title: 'Low-Bid Signage Tenders: Why the Cheapest Quote Fails at Acceptance',
     desc: 'Where a signage price difference hides, the defects that surface at acceptance, the real cost of rework, and the technical requirements to write into the tender.',
@@ -174,7 +180,7 @@ export default function GuidesPage() {
           <div>
             <h2 className="text-2xl font-black uppercase tracking-tight text-slate-900 mb-4">What these guides cover</h2>
             <p className="text-slate-600 leading-relaxed font-medium">
-              Twenty-one guides cover the decisions that sit in front of a signage order: how the illuminated routes compare, how raceway and individually mounted channel letters differ, what shapes a channel letter quotation, how material and finish routes are chosen, how a complete site package is procured stage by stage, how a low-bid tender fails at acceptance, how imported signage clears customs and hands over to an installer, how tactile and Braille signage is planned and how custom Braille door signs are specified, and how a mall, an industrial park or a hotel becomes one coordinated signage system.
+              Twenty-two guides cover the decisions that sit in front of a signage order: how the illuminated routes compare, how raceway and individually mounted channel letters differ, what shapes a channel letter quotation, how material and finish routes are chosen, how a complete site package is procured stage by stage, how a low-bid tender fails at acceptance, how imported signage clears customs and hands over to an installer, how tactile and Braille signage is planned and how custom Braille door signs are specified, and how a mall, an industrial park or a hotel becomes one coordinated signage system.
             </p>
           </div>
           <div>
