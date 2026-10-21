@@ -49,6 +49,7 @@ const lastModifiedByRoute: Record<string, string> = {
   "/guides/hotel-room-number-signs": "2026-10-17",
   "/guides/office-door-sign-materials": "2026-10-19",
   "/guides/trimless-vs-trim-cap-channel-letters": "2026-10-19",
+  "/guides/raceway-vs-individually-mounted-channel-letters": "2026-10-21",
   "/guides/importing-custom-signage-from-china": "2026-10-20",
 
   "/case-studies/dalian-water-plaza-wayfinding-signage": "2026-09-29",
@@ -194,6 +195,7 @@ const routes: SitemapRoute[] = [
   { path: "/guides/hotel-room-number-signs", priority: 0.8 },
   { path: "/guides/office-door-sign-materials", priority: 0.8 },
   { path: "/guides/trimless-vs-trim-cap-channel-letters", priority: 0.8 },
+  { path: "/guides/raceway-vs-individually-mounted-channel-letters", priority: 0.8 },
   { path: "/guides/importing-custom-signage-from-china", priority: 0.8 },
   // Published in English only, so no alternates are declared.
   { path: "/guides/custom-braille-door-signs", priority: 0.8 },

@@ -122,6 +122,12 @@ const guides = [
     href: '/guides/trimless-vs-trim-cap-channel-letters',
   },
   {
+    tag: 'Installation Guide',
+    title: 'Raceway vs. Individually Mounted Channel Letters',
+    desc: 'How raceway and individually mounted channel letters differ in wiring, wall penetrations, appearance, installation and future service access.',
+    href: '/guides/raceway-vs-individually-mounted-channel-letters',
+  },
+  {
     tag: 'Signage Procurement & Import',
     title: 'Importing Custom Signage from China: Costs, Installation and Supplier Responsibilities',
     desc: 'What importing custom signage from China really involves: landed and installed cost, Incoterms, duty, local installation and responsibility after delivery.',
@@ -168,7 +174,7 @@ export default function GuidesPage() {
           <div>
             <h2 className="text-2xl font-black uppercase tracking-tight text-slate-900 mb-4">What these guides cover</h2>
             <p className="text-slate-600 leading-relaxed font-medium">
-              Twenty guides cover the decisions that sit in front of a signage order: how the illuminated routes compare, what shapes a channel letter quotation, how material and finish routes are chosen, how a complete site package is procured stage by stage, how a low-bid tender fails at acceptance, how imported signage clears customs and hands over to an installer, how tactile and Braille signage is planned and how custom Braille door signs are specified, and how a mall, an industrial park or a hotel becomes one coordinated signage system.
+              Twenty-one guides cover the decisions that sit in front of a signage order: how the illuminated routes compare, how raceway and individually mounted channel letters differ, what shapes a channel letter quotation, how material and finish routes are chosen, how a complete site package is procured stage by stage, how a low-bid tender fails at acceptance, how imported signage clears customs and hands over to an installer, how tactile and Braille signage is planned and how custom Braille door signs are specified, and how a mall, an industrial park or a hotel becomes one coordinated signage system.
             </p>
           </div>
           <div>
