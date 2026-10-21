@@ -1851,29 +1851,15 @@ Yes. Rear-glow letters are often paired with entry monuments, illuminated light 
 
 Each item is a decision input for rear-glow construction. Confirm the wall, finish, and lighting requirement before production.
 
-##### Letter body
+| Parameter | Range we build | What it suits — and where the limit is |
+| --- | --- | --- |
+| Letter height | 100 mm minimum; no fixed maximum | Rear-glow construction needs enough return and stroke width to conceal the modules and spread the light. Letters larger than a single fabricated unit are built in sections with internal framing, and the split is fixed on the drawing. |
+| Letter depth (return) | 25–100 mm | Depth sets the standoff from the wall and therefore how wide the halo reads. Deeper returns widen the glow and increase the load on the fixing, so the depth is agreed against the wall type and the intended effect. |
+| Colour temperature | 3000–10000 K | 3000–4000 K reads warm, 4000–5000 K neutral, around 6500 K daylight, and above that very cool. The wall colour and finish also change how the glow reads, so the final value is checked on a sample. |
+| Input voltage | 110–240 V AC | Universal-input power supplies cover 110 V and 230 V destinations; the LED side runs on low-voltage DC. The plug, circuit, isolation and any local approval remain destination requirements. |
+| Mounting | Screw fixing (studs or flange) | Suits substrates that accept mechanical fixings — concrete, masonry, metal panel and timber. Curtain wall, stone cladding, EIFS and glazed surfaces need a fixing detail agreed on the drawing rather than a default screw. |
 
-- • 304 stainless steel for exposed outdoor letters
-- • Aluminum for lighter letter bodies
-- • Coated sheet where a painted finish is specified
-
-##### Finish direction
-
-- • Brushed or mirror stainless faces
-- • Powder coating in specified RAL colors
-- • Return depth set to control the halo spread
-
-##### Lighting & mounting
-
-- • LED modules selected for the project specification
-- • Power supplies selected for the project specification
-- • Standoff and bracket layout confirmed from the wall survey
-
-##### Durability
-
-- • Environmental rating reviewed for the exterior application
-- • Warranty terms confirmed in the project quotation
-- • Wiring route and service access agreed before fabrication
+These are manufacturing ranges, not a quotation. The final dimension, depth, colour temperature and fixing detail are fixed on the approved drawing before production, and the quotation states what is included.
 
 ##### Factory Advantage
 
@@ -1893,7 +1879,7 @@ Halo-lit letters illuminate from behind, so the light reflects off the mounting 
 
 ##### Can halo-lit letters be mounted on any wall surface?
 
-The mounting surface affects the result, because the glow depends on light reflecting back from the wall. Smooth, light, or matte surfaces behave differently from dark or highly textured ones, and standoff depth changes the halo effect. Share the wall material and a photo with the brief so the mounting approach can be confirmed.
+The mounting surface affects the result, because the glow depends on light reflecting back from the wall. Smooth, light, or matte surfaces behave differently from dark or highly textured ones, and standoff depth changes the halo effect. Share the wall material and a photo with the brief so the mounting approach can be confirmed. Screw fixing with studs or flange is the standard route; where the wall cannot accept a mechanical fixing, the detail is agreed on the drawing before production.
 
 ##### What is the lead time for custom halo-lit letters?
 

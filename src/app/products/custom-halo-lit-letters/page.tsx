@@ -14,7 +14,7 @@ const faqs = [
   },
   {
     question: 'Can halo-lit letters be mounted on any wall surface?',
-    answer: 'The mounting surface affects the result, because the glow depends on light reflecting back from the wall. Smooth, light, or matte surfaces behave differently from dark or highly textured ones, and standoff depth changes the halo effect. Share the wall material and a photo with the brief so the mounting approach can be confirmed.',
+    answer: 'The mounting surface affects the result, because the glow depends on light reflecting back from the wall. Smooth, light, or matte surfaces behave differently from dark or highly textured ones, and standoff depth changes the halo effect. Share the wall material and a photo with the brief so the mounting approach can be confirmed. Screw fixing with studs or flange is the standard route; where the wall cannot accept a mechanical fixing, the detail is agreed on the drawing before production.',
   },
   {
     question: 'What is the lead time for custom halo-lit letters?',
@@ -130,40 +130,45 @@ export default function HaloLitLettersPage() {
               <div className="lg:col-span-2">
                 <h2 className="text-3xl font-black text-slate-900 mb-3 uppercase tracking-tight">Specifications with selection logic</h2>
                 <p className="text-slate-600 leading-relaxed mb-10 max-w-2xl font-medium">Each item is a decision input for rear-glow construction. Confirm the wall, finish, and lighting requirement before production.</p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-                  <div className="p-8 bg-white rounded-[2rem] border border-slate-200 shadow-sm">
-                    <h3 className="text-lg font-black text-blue-600 mb-4 uppercase italic">Letter body</h3>
-                    <ul className="space-y-3 text-slate-600 font-medium">
-                      <li>&bull; 304 stainless steel for exposed outdoor letters</li>
-                      <li>&bull; Aluminum for lighter letter bodies</li>
-                      <li>&bull; Coated sheet where a painted finish is specified</li>
-                    </ul>
-                  </div>
-                  <div className="p-8 bg-white rounded-[2rem] border border-slate-200 shadow-sm">
-                    <h3 className="text-lg font-black text-blue-600 mb-4 uppercase italic">Finish direction</h3>
-                    <ul className="space-y-3 text-slate-600 font-medium">
-                      <li>&bull; Brushed or mirror stainless faces</li>
-                      <li>&bull; Powder coating in specified RAL colors</li>
-                      <li>&bull; Return depth set to control the halo spread</li>
-                    </ul>
-                  </div>
-                  <div className="p-8 bg-white rounded-[2rem] border border-slate-200 shadow-sm">
-                    <h3 className="text-lg font-black text-blue-600 mb-4 uppercase italic">Lighting &amp; mounting</h3>
-                    <ul className="space-y-3 text-slate-600 font-medium">
-                      <li>&bull; LED modules selected for the project specification</li>
-                      <li>&bull; Power supplies selected for the project specification</li>
-                      <li>&bull; Standoff and bracket layout confirmed from the wall survey</li>
-                    </ul>
-                  </div>
-                  <div className="p-8 bg-white rounded-[2rem] border border-slate-200 shadow-sm">
-                    <h3 className="text-lg font-black text-blue-600 mb-4 uppercase italic">Durability</h3>
-                    <ul className="space-y-3 text-slate-600 font-medium">
-                      <li>&bull; Environmental rating reviewed for the exterior application</li>
-                      <li>&bull; Warranty terms confirmed in the project quotation</li>
-                      <li>&bull; Wiring route and service access agreed before fabrication</li>
-                    </ul>
-                  </div>
+                <div className="overflow-x-auto rounded-[2rem] border border-slate-200 bg-white shadow-sm">
+                  <table className="w-full min-w-[900px] border-collapse text-left">
+                    <thead>
+                      <tr className="border-b border-slate-200 bg-slate-50">
+                        <th className="px-6 py-5 text-sm font-black uppercase tracking-widest text-slate-900">Parameter</th>
+                        <th className="px-6 py-5 text-sm font-black uppercase tracking-widest text-slate-900">Range we build</th>
+                        <th className="px-6 py-5 text-sm font-black uppercase tracking-widest text-slate-900">What it suits — and where the limit is</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr className="border-b border-slate-100 align-top">
+                        <td className="px-6 py-6 font-black text-slate-900">Letter height</td>
+                        <td className="px-6 py-6 font-bold text-blue-700">100 mm minimum; no fixed maximum</td>
+                        <td className="px-6 py-6 text-slate-600 leading-relaxed">Rear-glow construction needs enough return and stroke width to conceal the modules and spread the light. Letters larger than a single fabricated unit are built in sections with internal framing, and the split is fixed on the drawing.</td>
+                      </tr>
+                      <tr className="border-b border-slate-100 align-top">
+                        <td className="px-6 py-6 font-black text-slate-900">Letter depth (return)</td>
+                        <td className="px-6 py-6 font-bold text-blue-700">25–100 mm</td>
+                        <td className="px-6 py-6 text-slate-600 leading-relaxed">Depth sets the standoff from the wall and therefore how wide the halo reads. Deeper returns widen the glow and increase the load on the fixing, so the depth is agreed against the wall type and the intended effect.</td>
+                      </tr>
+                      <tr className="border-b border-slate-100 align-top">
+                        <td className="px-6 py-6 font-black text-slate-900">Colour temperature</td>
+                        <td className="px-6 py-6 font-bold text-blue-700">3000–10000 K</td>
+                        <td className="px-6 py-6 text-slate-600 leading-relaxed">3000–4000 K reads warm, 4000–5000 K neutral, around 6500 K daylight, and above that very cool. The wall colour and finish also change how the glow reads, so the final value is checked on a sample.</td>
+                      </tr>
+                      <tr className="border-b border-slate-100 align-top">
+                        <td className="px-6 py-6 font-black text-slate-900">Input voltage</td>
+                        <td className="px-6 py-6 font-bold text-blue-700">110–240 V AC</td>
+                        <td className="px-6 py-6 text-slate-600 leading-relaxed">Universal-input power supplies cover 110 V and 230 V destinations; the LED side runs on low-voltage DC. The plug, circuit, isolation and any local approval remain destination requirements.</td>
+                      </tr>
+                      <tr className="align-top">
+                        <td className="px-6 py-6 font-black text-slate-900">Mounting</td>
+                        <td className="px-6 py-6 font-bold text-blue-700">Screw fixing (studs or flange)</td>
+                        <td className="px-6 py-6 text-slate-600 leading-relaxed">Suits substrates that accept mechanical fixings — concrete, masonry, metal panel and timber. Curtain wall, stone cladding, EIFS and glazed surfaces need a fixing detail agreed on the drawing rather than a default screw.</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
+                <p className="mt-6 text-slate-600 leading-relaxed font-medium">These are manufacturing ranges, not a quotation. The final dimension, depth, colour temperature and fixing detail are fixed on the approved drawing before production, and the quotation states what is included.</p>
               </div>
               <div className="bg-slate-950 p-10 rounded-[3rem] text-white flex flex-col justify-center shadow-2xl">
                 <h3 className="text-2xl font-black mb-6 italic text-blue-400 uppercase tracking-tighter">Factory Advantage</h3>
