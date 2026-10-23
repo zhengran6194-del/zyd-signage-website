@@ -319,6 +319,7 @@ const guide: GuideArticleData = {
   relatedLinks: [
     { href: '/products/custom-channel-letters', label: 'Front-lit channel letters' },
     { href: '/products/custom-halo-lit-letters', label: 'Halo-lit channel letters' },
+    { href: '/guides/outdoor-signs-for-cold-climates', label: 'Signs for cold climates' },
     { href: '/contact', label: 'Discuss your outdoor sign specification' },
   ],
   asideTitle: 'Specify the complete installation',

@@ -387,6 +387,7 @@ const guide: GuideArticleData = {
   relatedLinks: [
     { href: '/products/metal-acrylic-logo-sign', label: 'Metal and acrylic logo signs' },
     { href: '/guides/signage-material-selection-guide', label: 'Signage material selection guide' },
+    { href: '/guides/outdoor-signs-for-cold-climates', label: 'Cold-climate material choices' },
     { href: '/contact', label: 'Discuss your finish specification' },
   ],
   asideTitle: 'Describe the exposure, not the color',

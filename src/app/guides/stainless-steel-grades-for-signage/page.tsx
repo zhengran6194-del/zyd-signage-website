@@ -181,6 +181,7 @@ const guide: GuideArticleData = {
   relatedLinks: [
     { href: '/guides/304-stainless-steel-vs-galvanized-steel-outdoor-signs', label: 'Compare 304 stainless steel with galvanized steel' },
     { href: '/guides/signage-material-selection-guide', label: 'Review the signage material selection guide' },
+    { href: '/guides/outdoor-signs-for-cold-climates', label: 'Specify stainless steel for cold climates' },
     { href: '/contact', label: 'Send your region and installation environment' },
   ],
   asideTitle: 'Need a material review?',
