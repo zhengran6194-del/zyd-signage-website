@@ -52,6 +52,7 @@ const lastModifiedByRoute: Record<string, string> = {
   "/guides/raceway-vs-individually-mounted-channel-letters": "2026-10-21",
   "/guides/outdoor-sign-finishes-liquid-paint-powder-coating-electroplating": "2026-10-21",
   "/guides/what-does-ip65-mean-outdoor-channel-letters": "2026-10-22",
+  "/guides/outdoor-signs-for-cold-climates": "2026-10-23",
   "/guides/importing-custom-signage-from-china": "2026-10-20",
 
   "/case-studies/dalian-water-plaza-wayfinding-signage": "2026-09-29",
@@ -200,6 +201,7 @@ const routes: SitemapRoute[] = [
   { path: "/guides/raceway-vs-individually-mounted-channel-letters", priority: 0.8 },
   { path: "/guides/outdoor-sign-finishes-liquid-paint-powder-coating-electroplating", priority: 0.8 },
   { path: "/guides/what-does-ip65-mean-outdoor-channel-letters", priority: 0.8 },
+  { path: "/guides/outdoor-signs-for-cold-climates", priority: 0.8 },
   { path: "/guides/importing-custom-signage-from-china", priority: 0.8 },
   // Published in English only, so no alternates are declared.
   { path: "/guides/custom-braille-door-signs", priority: 0.8 },

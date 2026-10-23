@@ -72,6 +72,8 @@ export type GuideArticleData = {
   description: string;
   updated: string;
   directAnswer: string;
+  /** Paragraphs that follow the direct answer and precede the first numbered section. */
+  introParagraphs?: string[];
   sections: GuideSection[];
   checklistTitle: string;
   checklistIntro: string;
@@ -133,6 +135,10 @@ export default function GuideArticle(guide: GuideArticleProps) {
         <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_320px] gap-10 items-start">
           <div className="bg-white rounded-[2.5rem] p-6 sm:p-10 lg:p-14 shadow-sm border border-slate-200">
             <p className="text-xl text-slate-800 leading-relaxed font-semibold mb-10">{guide.directAnswer}</p>
+
+            {guide.introParagraphs?.map((paragraph) => (
+              <p key={paragraph} className="text-slate-600 leading-relaxed mb-4">{paragraph}</p>
+            ))}
 
             {guide.sections.map((section) => (
               <section key={section.heading} className="mb-12">

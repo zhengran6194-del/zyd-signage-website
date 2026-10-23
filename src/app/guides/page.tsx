@@ -68,6 +68,12 @@ const guides = [
     href: '/guides/what-does-ip65-mean-outdoor-channel-letters',
   },
   {
+    tag: 'Cold-Climate Signage',
+    title: 'Outdoor Signs for Cold Climates: Materials, Power Supplies and Structural Considerations',
+    desc: 'How site temperatures, metal and acrylic selection, low-temperature LED power supplies, drainage and structural review fit together when specifying signage for freezing conditions.',
+    href: '/guides/outdoor-signs-for-cold-climates',
+  },
+  {
     tag: 'Procurement',
     title: 'Low-Bid Signage Tenders: Why the Cheapest Quote Fails at Acceptance',
     desc: 'Where a signage price difference hides, the defects that surface at acceptance, the real cost of rework, and the technical requirements to write into the tender.',
