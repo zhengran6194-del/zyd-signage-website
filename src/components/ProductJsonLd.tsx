@@ -46,15 +46,17 @@ export default function ProductJsonLd({
         ],
       },
       {
-        "@type": "Product",
+        // Quote-only catalogue pages have no public offer or review data.
+        // Describe the page without claiming Product rich-result eligibility.
+        "@type": "WebPage",
+        "@id": `${url}#webpage`,
         name,
         description,
         url,
         image: `${siteConfig.url}${image}`,
-        brand: { "@id": `${siteConfig.url}/#organization` },
-        manufacturer: { "@id": `${siteConfig.url}/#organization` },
-        ...(category ? { category } : {}),
-        ...(material ? { material } : {}),
+        publisher: { "@id": `${siteConfig.url}/#organization` },
+        isPartOf: { "@id": `${siteConfig.url}/#website` },
+        ...((category || material) ? { keywords: [category, material].filter(Boolean).join(", ") } : {}),
         ...(inLanguage ? { inLanguage } : {}),
       },
     ],
