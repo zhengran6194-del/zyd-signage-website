@@ -76,9 +76,9 @@ export default function Home() {
       setSubmitMessage('Please enter your full name and project details before submitting.');
       return null;
     }
-    if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       setSubmitMessageType('error');
-      setSubmitMessage('Please enter a valid email address or leave the email field blank.');
+      setSubmitMessage('Please enter a valid email address.');
       return null;
     }
     return { fullName, email, company, details };
@@ -768,7 +768,7 @@ export default function Home() {
                 <input ref={startedAtRef} type="hidden" name="formStartedAt" defaultValue="" />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                   <input id="home-full-name" type="text" name="fullName" value={formData.fullName} onChange={handleInquiryChange} placeholder="Full Name *" aria-label="Full name for your signage project inquiry" required className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:ring-4 focus:ring-blue-600 font-bold" />
-                  <input id="home-email-address" type="email" name="email" value={formData.email} onChange={handleInquiryChange} placeholder="Email Address" aria-label="Email address for your signage project inquiry" className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:ring-4 focus:ring-blue-600 font-bold" />
+                  <input id="home-email-address" type="email" required name="email" value={formData.email} onChange={handleInquiryChange} placeholder="Email Address" aria-label="Email address for your signage project inquiry" className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:ring-4 focus:ring-blue-600 font-bold" />
                 </div>
                 <input id="home-company-name" type="text" name="company" value={formData.company} onChange={handleInquiryChange} placeholder="Company Name" aria-label="Company name for your signage project inquiry" className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:ring-4 focus:ring-blue-600 font-bold" />
                 <textarea id="home-project-details" name="details" value={formData.details} onChange={handleInquiryChange} placeholder="Project Details *" aria-label="Project details for your signage inquiry" rows={5} required className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:ring-4 focus:ring-blue-600 font-bold resize-none" />

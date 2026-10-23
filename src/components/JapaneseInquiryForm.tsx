@@ -50,7 +50,7 @@ export default function JapaneseInquiryForm() {
       setMessage('お名前とプロジェクトの内容をご記入ください。');
       return null;
     }
-    if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       setMessageType('error');
       setMessage('メールアドレスの形式をご確認ください。');
       return null;
@@ -135,7 +135,7 @@ export default function JapaneseInquiryForm() {
             <label htmlFor="ja-email-address" className={labelClass}>メールアドレス</label>
             <input
               id="ja-email-address"
-              type="email"
+              type="email" required
               name="email"
               value={formData.email}
               onChange={handleChange}

@@ -192,17 +192,29 @@ export async function POST(request: Request) {
   const emailNotification = await sendNotificationEmail(payload, { id, source, receivedAt });
   const degraded = emailNotification !== 'sent';
 
-  log('inquiry_stored', { id, source, emailNotification, degraded });
+  log('inquiry_notification_result', { id, source, emailNotification, degraded });
+
+  if (degraded) {
+    return NextResponse.json(
+      {
+        ok: false,
+        id,
+        code: 'server',
+        degraded: true,
+        emailNotification,
+        message: 'We could not confirm that your inquiry email was sent. Your details remain in the form. Please try again in a moment, or contact us on WhatsApp or by email.',
+      },
+      { status: 503 },
+    );
+  }
 
   return NextResponse.json(
     {
       ok: true,
       id,
-      degraded,
+      degraded: false,
       emailNotification,
-      message: degraded
-        ? 'Your inquiry has been received and recorded. Our team will follow up. You can also reach us on WhatsApp for a faster reply.'
-        : 'Thank you. Your inquiry has been received. Our team will get back to you shortly.',
+      message: 'Thank you. Your inquiry has been sent to our team. We will get back to you shortly.',
     },
     { status: 200 },
   );

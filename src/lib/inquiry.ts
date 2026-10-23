@@ -55,8 +55,8 @@ export function validateInquiryPayload(
   if (!details) fieldErrors.details = 'Please describe your project.';
   else if (details.length > INQUIRY_LIMITS.details) fieldErrors.details = 'Please shorten your project details.';
 
-  if (email && !EMAIL_PATTERN.test(email)) {
-    fieldErrors.email = 'Please enter a valid email address or leave it blank.';
+  if (!EMAIL_PATTERN.test(email)) {
+    fieldErrors.email = 'Please enter a valid email address.';
   } else if (email.length > INQUIRY_LIMITS.email) {
     fieldErrors.email = 'Please shorten your email address.';
   }
@@ -121,7 +121,7 @@ declare global {
  */
 export function pushGenerateLead(response: InquiryResponse, source: InquirySource) {
   if (typeof window === 'undefined') return false;
-  if (!response.ok || !response.id) return false;
+  if (!response.ok || !response.id || response.emailNotification !== 'sent') return false;
 
   window.dataLayer = window.dataLayer || [];
   window.dataLayer.push({

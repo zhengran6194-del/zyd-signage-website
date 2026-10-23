@@ -79,9 +79,9 @@ export default function ContactPage() {
       return null;
     }
 
-    if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       setSubmitMessageType('error');
-      setSubmitMessage('Please enter a valid email address or leave the email field blank.');
+      setSubmitMessage('Please enter a valid email address.');
       return null;
     }
 
@@ -191,7 +191,7 @@ export default function ContactPage() {
                     <label htmlFor="email-address" className="text-sm font-black uppercase tracking-widest text-slate-600 pl-2">Email Address</label>
                     <input 
                       id="email-address"
-                      type="email" 
+                      type="email" required 
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
