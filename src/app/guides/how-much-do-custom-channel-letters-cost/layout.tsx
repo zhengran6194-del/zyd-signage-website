@@ -3,8 +3,8 @@ import { buildPageMetadata, ogImages, siteConfig } from "@/config/site";
 import JsonLd from "@/components/JsonLd";
 
 const path = "/guides/how-much-do-custom-channel-letters-cost";
-const title = "How Much Do Custom Channel Letters Cost?";
-const description = "What shapes a custom channel letters quotation: artwork, dimensions, materials such as aluminum, illumination, mounting, MOQ, packing and lead time.";
+const title = "Channel Letter Sign Cost: What Goes Into Your Quote?";
+const description = "Understand channel letter sign pricing: fabrication, lighting, mounting, freight and local installation. Use a scope checklist to compare quotes for your project.";
 
 export const metadata: Metadata = buildPageMetadata({ title, description, path, image: ogImages.channelLetters, type: "article" });
 
@@ -16,7 +16,7 @@ export default function Layout({ children }: Readonly<{ children: React.ReactNod
       { "@type": "ListItem", position: 2, name: "Guides", item: `${siteConfig.url}/guides` },
       { "@type": "ListItem", position: 3, name: title, item: url },
     ] },
-    { "@type": "Article", "@id": `${url}#article`, headline: title, description, mainEntityOfPage: url, author: { "@type": "Person", name: "Aaron" }, publisher: { "@id": `${siteConfig.url}/#organization` }, datePublished: "2026-09-07", dateModified: "2026-09-07" },
+    { "@type": "Article", "@id": `${url}#article`, headline: title, description, mainEntityOfPage: url, author: { "@type": "Person", name: "Aaron" }, publisher: { "@id": `${siteConfig.url}/#organization` }, datePublished: "2026-09-07", dateModified: "2026-10-23" },
   ] };
   return <><JsonLd data={data} />{children}</>;
 }

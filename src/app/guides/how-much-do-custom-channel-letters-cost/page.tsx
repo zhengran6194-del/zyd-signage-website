@@ -1,66 +1,264 @@
 import GuideArticle, { type GuideArticleData } from '@/components/GuideArticle';
 
 const guide: GuideArticleData = {
-  title: 'How Much Do Custom Channel Letters Cost?',
-  category: 'Illuminated Signage Buying Guide',
-  description: 'A buyer-focused guide to the project inputs that shape a custom channel letters quotation, without pretending there is one universal price.',
-  updated: 'Sep 7, 2026',
-  directAnswer: 'There is no responsible universal price for custom channel letters. A supplier needs the letter artwork, overall size, return depth, face and return materials, lighting approach, finish, mounting surface, quantity, packing, destination, and installation scope before preparing a comparable quotation. Share those inputs first; compare the scope line by line, not only the headline number.',
-  sections: [
+  "title": "Channel Letter Sign Cost: What Goes Into Your Quote?",
+  "category": "Channel Letter Pricing Guide",
+  "description": "Understand channel letter sign pricing: fabrication, lighting, mounting, freight and local installation. Use a scope checklist to compare quotes for your project.",
+  "updated": "Oct 23, 2026",
+  "directAnswer": "Channel letter sign cost depends on the finished design and the scope you are buying. A factory quote for letters is different from a delivered price or a fully installed sign. For a usable budget, separate fabrication and components, packing and transport, and local installation. ZYD prices custom projects from artwork, dimensions, quantity, lighting, mounting details and destination; this guide does not publish a verified average price or a fixed price list.",
+  "introParagraphs": [
+    "If you are searching for the average cost of channel letter signs, first decide which total you need. A price per letter can help compare identical letters, but it cannot describe an entire storefront project unless the letter count, height, construction and included services are stated. Use the breakdown below to ask suppliers and your local installer for the same scope."
+  ],
+  "sections": [
     {
-      heading: 'What is included in a channel letters quotation?',
-      paragraphs: [
-        'A useful quotation separates the physical letters from the project services around them. Ask whether the proposal covers artwork preparation, engineering review, fabrication, illumination components, finish, mounting hardware, packing, shipping, installation drawings, and site installation. If a line is unclear, treat it as an open question rather than assuming it is included.',
-        'ISA terminology is helpful when a buyer, designer, and fabricator need to describe the same sign type. The commercial decision still depends on the actual drawing set and site brief.'
+      "heading": "Channel letter pricing: factory, delivered and installed cost",
+      "paragraphs": [
+        "Ask for a written breakdown rather than one unexplained total. Mark every item as included, excluded or awaiting confirmation. Do not add a cost twice when it is already included in another line."
       ],
-      bullets: ['Letter artwork and the production-ready file', 'Overall dimensions, individual letter proportions, and return depth', 'Face, return, trim, back, finish, and illumination requirements', 'Mounting surface, access, quantity, packing, destination, and installation responsibility']
+      "callout": "Project budget = fabrication and supplied components + any separately charged drawings, packing and freight + applicable import charges + local installation and electrical work + any required permits or site services.",
+      "columns": {
+        "headers": [
+          "Budget item",
+          "What to check in the quotation",
+          "Who should confirm it"
+        ],
+        "rows": [
+          [
+            "Letters and lighting",
+            "Letter bodies, faces, backs, finish, LED modules, power supplies and quantity.",
+            "Fabricator"
+          ],
+          [
+            "Drawings and mounting supplies",
+            "Shop drawings, wiring information, mounting template, studs, brackets or raceway; list what is supplied.",
+            "Fabricator and installer"
+          ],
+          [
+            "Packing and transport",
+            "Crate dimensions, destination, transport method, insurance and delivery point.",
+            "Supplier or freight provider"
+          ],
+          [
+            "Import charges",
+            "Which duties, taxes and clearance services are included in the agreed delivery terms.",
+            "Supplier and destination broker, where needed"
+          ],
+          [
+            "Site installation",
+            "Access equipment, wall preparation, fixing labour, electrical connection and site checks.",
+            "Local installer or contractor"
+          ],
+          [
+            "Permits and approvals",
+            "Any required landlord, planning, building or electrical approval and who obtains it.",
+            "Project team and local authority"
+          ]
+        ]
+      },
+      "closingParagraphs": [
+        "For a DDP quotation, ask for the named destination and a written list of included charges and exclusions. Do not assume that delivery includes unloading equipment, facade work, sign installation or electrical connection."
+      ]
     },
     {
-      heading: 'Which project inputs change the quotation most?',
-      paragraphs: ['The largest differences usually come from scope, not from a keyword such as “LED letters.” A single indoor logo, an exterior building sign, and a multi-location rollout can share a product name while requiring different drawings, packaging, coordination, and approval work. A buyer should provide enough detail for the supplier to identify those differences.'],
-      rows: [
-        { factor: 'Artwork and layout', first: 'Letter shapes, spacing, logo details, and readable proportions must be reviewed before fabrication.', second: 'A simple text line may require a different drawing and mounting approach than a detailed brand mark.' },
-        { factor: 'Illumination', first: 'Front-lit, halo-lit, or non-illuminated routes change the face, back, wiring, and service discussion.', second: 'The quotation should state the intended visual effect and where power and access are coordinated.' },
-        { factor: 'Finish and environment', first: 'Finish, exposure, cleaning access, and the background all influence the material and fabrication conversation.', second: 'Painted or coated routes still require a clear substrate, finish, edge, and maintenance specification.' },
-        { factor: 'Delivery scope', first: 'Packing, shipping, drawings, and installation coordination should be listed separately.', second: 'A lower headline figure may simply exclude tasks another proposal includes.' },
+      "heading": "What changes the cost of channel letter signs?",
+      "paragraphs": [
+        "A useful pricing discussion starts with the drawing. Two signs with the same wording can require different materials, fabrication and installation work. These inputs help a supplier explain the quotation rather than guess."
       ],
-      firstLabel: 'What to clarify',
-      secondLabel: 'Why comparison matters',
+      "factorLabel": "Cost input",
+      "firstLabel": "Why it affects the scope",
+      "secondLabel": "What to send",
+      "rows": [
+        {
+          "factor": "Letter height, depth and quantity",
+          "first": "Dimensions affect material use, fabrication, packing and fixing requirements. Letter count alone does not define the job.",
+          "second": "Overall width and height, individual letter height, return depth if known, and number of sets."
+        },
+        {
+          "factor": "Typeface and logo detail",
+          "first": "Fine strokes, unusual shapes and separate logo elements need their own fabrication and lighting review.",
+          "second": "Vector artwork and brand layout; flag details that must be preserved."
+        },
+        {
+          "factor": "Lighting construction",
+          "first": "Front-lit, halo-lit and combined illumination use different faces, backs, spacing and wiring arrangements.",
+          "second": "Desired lighting effect, colour temperature or colour, and a reference photo."
+        },
+        {
+          "factor": "Metal and finish",
+          "first": "Aluminum, stainless steel, coatings and visible metal finishes create different fabrication and finishing scopes.",
+          "second": "Specified material and finish, colour reference, and indoor or outdoor location."
+        },
+        {
+          "factor": "Mounting and power",
+          "first": "Individual fixings and a raceway require different hardware, wiring routes and site coordination.",
+          "second": "Wall photos, substrate, installation height and available power location."
+        },
+        {
+          "factor": "Destination and timing",
+          "first": "Packed volume, transport method, delivery point and target date affect logistics planning.",
+          "second": "Destination city and postcode, site access and required arrival date."
+        }
+      ]
     },
     {
-      heading: 'How should buyers compare two proposals?',
-      paragraphs: [
-        'Use a scope comparison table with the same artwork, size, quantity, finish, lighting brief, mounting assumptions, destination, and delivery responsibility. Ask both suppliers to identify exclusions. This avoids choosing a quote that looks lower only because engineering, packing, installation drawings, or site coordination were not described.',
-        'For accessibility-related signs or signs serving an accessible route, coordinate the sign type and placement with the project designer and the authority having jurisdiction. The U.S. Access Board references are useful public starting points, but a quotation page is not legal advice.'
+      "heading": "Front-lit vs. halo-lit: compare the same specification",
+      "paragraphs": [
+        "Front-lit letters illuminate the face; halo-lit letters direct light onto the background. Neither label alone establishes which quotation will be lower. Compare identical artwork, dimensions, material, finish, supplied components and delivery scope before deciding.",
+        "For halo-lit letters, include wall colour and texture, the intended spacing from the wall, and a site photo. For front-lit letters, confirm the face colour and intended illuminated appearance. If both options are acceptable, request two clearly labelled alternatives against the same brief."
       ],
-      bullets: ['Confirm the same artwork and dimensions are being priced.', 'Ask for finish, lighting, power, and mounting assumptions in writing.', 'Separate manufacturing, packing, shipping, drawings, and installation.', 'Record the destination and any local approval or access constraints.']
+      "bullets": [
+        "State whether power supplies and mounting hardware are included.",
+        "Confirm the wiring route and which connections remain for the installer.",
+        "Ask how the components can be accessed for maintenance."
+      ]
     },
     {
-      heading: 'What should you send to ZYD for a review?',
-      paragraphs: ['Send the logo or artwork, approximate overall size, quantity, intended viewing distance, mounting surface, illumination preference, finish direction, site city/country, target timing, and destination. If some details are unknown, label them as open decisions. ZYD can then respond with the next technical questions instead of inventing a price from incomplete information.']
+      "heading": "Why a price per letter can be misleading",
+      "paragraphs": [
+        "A per-letter price is meaningful only when size, construction and inclusions are fixed. A large logo symbol, a narrow letter and a wide letter are different pieces to fabricate. An overall project quote should identify the lettering, logo elements and number of sets.",
+        "For a multi-location programme, distinguish repeat sets from locations needing different dimensions, finishes or mounting arrangements. Ask the supplier to show shared preparation work and site-specific items separately. Do not assume a quantity discount until it appears in the quotation."
+      ]
     },
+    {
+      "heading": "Compare two channel letter quotes line by line",
+      "paragraphs": [
+        "Send both suppliers the same artwork and scope. Use this comparison sheet before treating a lower total as a saving. A missing line is a question to resolve, not a zero cost."
+      ],
+      "columns": {
+        "headers": [
+          "Comparison line",
+          "Supplier A",
+          "Supplier B"
+        ],
+        "rows": [
+          [
+            "Artwork revision, letter sizes and set quantity",
+            "Confirm",
+            "Confirm"
+          ],
+          [
+            "Material, depth, colour and finish",
+            "Confirm",
+            "Confirm"
+          ],
+          [
+            "Lighting, power supplies and electrical requirements",
+            "Included / excluded / open",
+            "Included / excluded / open"
+          ],
+          [
+            "Template, fixings, raceway and installation drawings",
+            "Included / excluded / open",
+            "Included / excluded / open"
+          ],
+          [
+            "Crating, freight and named delivery point",
+            "Included / excluded / open",
+            "Included / excluded / open"
+          ],
+          [
+            "Duties, taxes and clearance under agreed terms",
+            "Included / excluded / open",
+            "Included / excluded / open"
+          ],
+          [
+            "Local installation, access equipment and electrical work",
+            "Included / excluded / open",
+            "Included / excluded / open"
+          ],
+          [
+            "Currency, quote validity, payment terms and production start conditions",
+            "Confirm in writing",
+            "Confirm in writing"
+          ]
+        ]
+      }
+    },
+    {
+      "heading": "Reduce cost by reviewing the specification",
+      "paragraphs": [
+        "Ask for alternatives before changing the approved design. The supplier can compare a standard finish with a special finish, review a simpler layout, or price different shipment arrangements. Each alternative should state what changes visually or operationally.",
+        "Keep required weather protection, fixing design and electrical requirements in the scope. A saving that moves work to the installer needs to be evaluated with the installer, including access and labour."
+      ]
+    },
+    {
+      "heading": "Request a project-specific channel letter quote",
+      "paragraphs": [
+        "Send what you already have. A logo file, approximate dimensions and a wall photo can start the discussion; unresolved details should remain labelled as open decisions. Request a quotation showing fabrication, supplied accessories, packing and freight separately, plus the work expected from your local installer.",
+        "Copy this brief into your inquiry: Sign location: __. Artwork attached or available: __. Overall size / letter height: __. Quantity: __. Front-lit / halo-lit / undecided: __. Material and finish: __. Wall material and installation height: __. Ship-to city, postcode and country: __. Required arrival date: __. Please identify included components, delivery terms and exclusions."
+      ]
+    }
   ],
-  checklistTitle: 'Quotation preparation checklist',
-  checklistIntro: 'This is a ZYD procurement checklist, not a price promise. It helps buyers request comparable proposals and keeps unknown inputs visible.',
-  checklist: ['Artwork file and brand guidelines', 'Approximate dimensions, quantity, and viewing direction', 'Front-lit, halo-lit, non-illuminated, or undecided', 'Face/return/finish preference and mounting background', 'Site city/country, installation access, and destination', 'Required drawings, packing, shipping, and installation scope'],
-  faqs: [
-    { question: 'Can you give a price from the business name alone?', answer: 'No. The business name does not define the letter size, artwork, finish, lighting, mounting, quantity, delivery scope, or destination. Share the project brief so the quotation can be based on a stated scope.' },
-    { question: 'Should I compare the cheapest headline number?', answer: 'Compare the same scope first. A proposal that excludes drawings, packing, shipping, or installation may not be comparable to one that lists those services.' },
-    { question: 'What is the fastest way to start a quotation?', answer: 'Send the artwork, approximate size, quantity, lighting preference, finish direction, site location, and destination. Unknown items can be marked for clarification.' },
+  "checklistTitle": "Before requesting a price",
+  "checklistIntro": "Use the same brief for every quotation. Unknown items can be marked for technical review.",
+  "checklist": [
+    "Logo or vector artwork and brand colour references.",
+    "Overall dimensions, letter height, number of letters and number of sets.",
+    "Lighting effect, preferred material and finish.",
+    "Wall photo, substrate, installation height and power location.",
+    "Ship-to city, postcode and country, with target arrival date.",
+    "Required drawings, mounting accessories, packing and transport scope.",
+    "Who handles installation, electrical work and any required approvals."
   ],
-  sources: [
-    { name: 'International Sign Association (ISA) — Glossary of Sign Terms and Definitions', url: 'https://signs.org/resources-training/signs101/glossary-of-sign-terms-and-definitions/', note: 'Public terminology reference for discussing sign types and project language.' },
-    { name: 'U.S. Access Board — Americans with Disabilities Act (ADA)', url: 'https://www.access-board.gov/ada/', note: 'Official accessibility context; confirm the applicable jurisdiction and approval path.' },
-    { name: 'U.S. Access Board — Chapter 7: Signs', url: 'https://www.access-board.gov/ada/guides/chapter-7-signs/', note: 'Official signs guidance; this article does not replace project code review.' },
+  "faqs": [
+    {
+      "question": "What is the average cost of channel letter signs?",
+      "answer": "This guide does not have a verified market-average price. A meaningful comparison needs the sign size, construction, quantity and location, plus a clear distinction between factory supply, delivered cost and installed cost. Request a project-specific quote with those items separated."
+    },
+    {
+      "question": "Can channel letters be priced per letter?",
+      "answer": "Yes, a supplier may present a per-letter price for a defined specification. Check letter height, depth, material, lighting, logo elements and accessories. Confirm the total for the complete set and any separately charged delivery or installation work."
+    },
+    {
+      "question": "Does a factory quote include installation?",
+      "answer": "Only if installation is explicitly included in the written scope. Ask your local installer to quote access equipment, wall preparation, fixing, electrical connection and any required site approvals separately when they are outside the supply quote."
+    },
+    {
+      "question": "Are halo-lit letters always more expensive than front-lit letters?",
+      "answer": "The illumination label alone cannot establish the price difference. Ask for alternatives using the same artwork, size, finish, mounting brief and delivery scope so the construction differences can be priced transparently."
+    },
+    {
+      "question": "Does DDP delivery include fitting the sign?",
+      "answer": "Do not assume it does. Confirm the named destination and included delivery charges, then separately confirm unloading, facade work, sign fitting and electrical connection in the contract scope."
+    },
+    {
+      "question": "How do I get a channel letter quotation from ZYD?",
+      "answer": "Use the contact page or WhatsApp to share artwork, approximate dimensions, quantity, lighting preference, wall photos and destination. Ask for an itemised scope and identify any details that are not yet decided."
+    }
   ],
-  relatedLinks: [
-    { href: '/products/custom-channel-letters', label: 'See custom front-lit channel letters' },
-    { href: '/products/custom-halo-lit-letters', label: 'See custom halo-lit letters' },
-    { href: '/products/complete-signage-system', label: 'See complete signage systems' },
-    { href: '/contact', label: 'Send project inputs' },
+  "sources": [
+    {
+      "name": "Front-lit vs. halo-lit channel letters",
+      "url": "/guides/front-lit-vs-halo-lit-channel-letters",
+      "note": "Compare lighting construction and the site information each option needs."
+    },
+    {
+      "name": "Raceway vs. individually mounted channel letters",
+      "url": "/guides/raceway-vs-individually-mounted-channel-letters",
+      "note": "Review fixing, wiring and installation coordination before requesting a price."
+    },
+    {
+      "name": "Importing custom signage from China",
+      "url": "/guides/importing-custom-signage-from-china",
+      "note": "Prepare the delivery and procurement scope for an international signage project."
+    }
   ],
-  asideTitle: 'Prepare a comparable brief',
-  asideText: 'Share the artwork, approximate size, quantity, lighting preference, site, and destination. The open questions are part of the brief, not a reason to guess.',
+  "relatedLinks": [
+    {
+      "href": "/products/custom-channel-letters",
+      "label": "Front-lit letter specifications"
+    },
+    {
+      "href": "/products/custom-halo-lit-letters",
+      "label": "Halo-lit letter specifications"
+    },
+    {
+      "href": "/contact",
+      "label": "Request an itemised channel letter quote"
+    }
+  ],
+  "asideTitle": "Get a quote for your sign",
+  "asideText": "Send artwork, dimensions, quantity, lighting preference, a wall photo and destination. Ask us to separate fabrication, supplied accessories, packing and freight, and to identify site work outside the supply scope."
 };
 
 export default function ChannelLettersCostGuide() {
