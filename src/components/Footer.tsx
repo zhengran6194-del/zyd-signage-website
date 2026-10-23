@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
@@ -8,7 +8,23 @@ import { siteConfig } from '@/config/site';
 import { footerCopy, footerStatic, headerCta, localeFromPath } from '@/config/i18n';
 
 export default function Footer() {
-  const locale = localeFromPath(usePathname());
+  const pathname = usePathname();
+  const locale = localeFromPath(pathname);
+  const [formVisible, setFormVisible] = useState(false);
+  useEffect(() => {
+    const forms = Array.from(document.querySelectorAll('main form'));
+    if (!forms.length || !('IntersectionObserver' in window)) return;
+    const visible = new Set<Element>();
+    const observer = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) visible.add(entry.target);
+        else visible.delete(entry.target);
+      }
+      setFormVisible(visible.size > 0);
+    });
+    forms.forEach((form) => observer.observe(form));
+    return () => observer.disconnect();
+  }, [pathname]);
   const copy = footerCopy[locale];
   const contactHref = headerCta[locale].href;
   const whatsappMessage = locale === 'ja'
@@ -122,7 +138,7 @@ export default function Footer() {
 
       {/* WhatsApp Floating Icon */}
       <a 
-        className="floating-whatsapp" 
+        className={`floating-whatsapp ${formVisible ? "mobile-form-visible" : ""}`} 
         href="#contact" 
         onClick={(e) => handleWhatsApp(e, whatsappMessage)}
         aria-label={copy.whatsappAria}
@@ -130,7 +146,7 @@ export default function Footer() {
         <Image src="/assets/images/whatsapp-icon-3d.jpg" alt="WhatsApp" width={1254} height={1254} sizes="(max-width: 1024px) 65px, 100px" />
       </a>
       <a
-        className="floating-quote"
+        className={`floating-quote ${formVisible ? "mobile-form-visible" : ""}`}
         href={contactHref}
         aria-label={copy.quoteAria}
       >

@@ -204,7 +204,7 @@ export default function Home() {
       <JsonLd data={englishHomeJsonLd} />
       <main id="main">
         {/* 1. MEGA HERO SECTION (Image 2) */}
-        <section className="hero relative min-h-screen flex items-center bg-slate-950 text-white overflow-hidden py-32">
+        <section className="hero home-hero relative min-h-screen flex items-center bg-slate-950 text-white overflow-hidden py-32">
           <div className="absolute inset-0 z-0">
             <Image
               src="/assets/images/hero-bg-factory-aerial.jpg"
@@ -218,7 +218,7 @@ export default function Home() {
           </div>
           
           <div className="max-w-[1600px] w-[95%] mx-auto relative z-10">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-32 items-center mb-24">
+            <div className="home-hero-grid grid grid-cols-1 lg:grid-cols-2 gap-32 items-center mb-24">
               <div className="hero-copy reveal visible">
                 <h1 className="text-4xl lg:text-6xl font-black leading-tight mb-8 uppercase text-white">
                   ZYD Signage | Factory-Direct <br/>
@@ -267,7 +267,7 @@ export default function Home() {
             </div>
 
             {/* Statistics Bar (Image 2) */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-16 py-12 border-y border-white/10 max-w-6xl text-white reveal visible mt-auto">
+            <div className="home-hero-stats grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-16 py-12 border-y border-white/10 max-w-6xl text-white reveal visible mt-auto">
               {[
                 { val: 'EST. 2006' },
                 { val: '20,000m² PRODUCTION BASE' },
@@ -352,7 +352,7 @@ export default function Home() {
         {/* 4. QUALITY & COMPLIANCE (Refined Image 2 Proportions) */}
         <section className="section bg-slate-50 border-y border-slate-100 py-20 lg:py-32 overflow-hidden">
           <div className="max-w-[1600px] w-[95%] mx-auto relative z-10">
-            <div className="grid grid-cols-1 lg:grid-cols-[40%_60%] gap-24 lg:gap-32 items-center">
+            <div className="home-quality-grid grid grid-cols-1 lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] gap-10 lg:gap-16 items-center">
               <div className="reveal max-w-xl">
                 <div className="text-blue-600 font-black uppercase text-[10px] tracking-[0.4em] mb-4 border-l-2 border-blue-600 pl-4">Quality Assurance</div>
                 <h2 className="mb-6 uppercase tracking-tighter text-slate-900 leading-[0.95] text-5xl lg:text-6xl">Global <br/>Compliance & <br/>Quality Standards</h2>
@@ -372,14 +372,14 @@ export default function Home() {
                 </div>
               </div>
               
-              <div className="reveal relative flex justify-end">
+              <div className="home-quality-media reveal relative flex flex-col lg:block min-w-0">
                 <div className="relative rounded-[3rem] overflow-hidden shadow-[0_50px_100px_rgba(0,0,0,0.15)] border-[12px] border-white w-full aspect-square lg:aspect-[4/3]">
                   <Image src="/assets/images/factory-overview.jpg" alt="Factory QC" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
                 </div>
                 
                 {/* Right Floating Vertical Card (Image 2 Proportions) */}
-                <div className="absolute right-0 top-1/2 -translate-y-1/2 bg-white p-10 lg:p-14 py-20 rounded-[3.5rem] shadow-[0_60px_120px_rgba(10,39,84,0.12)] border border-white w-[38%] z-20">
-                  <div className="space-y-16">
+                <div className="home-quality-card relative mt-5 w-full bg-white p-5 rounded-3xl shadow-xl border border-white z-20 lg:mt-0 lg:absolute lg:right-0 lg:top-1/2 lg:-translate-y-1/2 lg:w-[55%] lg:p-8">
+                  <div className="grid grid-cols-2 gap-5 lg:grid-cols-1 lg:gap-8">
                     {[
                       { 
                         t: 'Factory Direct', 
@@ -402,8 +402,8 @@ export default function Home() {
                         icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg> 
                       }
                     ].map((item, idx) => (
-                      <div key={idx} className="flex items-center gap-6 group">
-                        <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center shrink-0 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-all duration-500 shadow-sm">
+                      <div key={idx} className="flex min-w-0 flex-col items-start gap-3 lg:flex-row lg:items-center lg:gap-4 group">
+                        <div className="w-10 h-10 lg:w-14 lg:h-14 bg-blue-50 rounded-full flex items-center justify-center shrink-0 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-all duration-500 shadow-sm">
                           {item.icon}
                         </div>
                         <div>
@@ -559,7 +559,7 @@ export default function Home() {
         </section>
 
         {/* 5. 360° VIRTUAL FACTORY TOUR */}
-        <section className="section bg-slate-100 py-20 lg:py-28">
+        <section className="home-inquiry section bg-slate-100 py-12 lg:py-28">
           <div className="container">
             <div className="rounded-[2rem] bg-slate-950 p-6 lg:p-10 shadow-[0_30px_90px_rgba(10,39,84,0.14)] overflow-hidden">
               <div className="grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-8 lg:gap-12 items-center">
@@ -614,7 +614,7 @@ export default function Home() {
                   <p className="max-w-lg text-slate-200 text-base lg:text-lg leading-relaxed font-medium">From technical coordination to final quality checks, keep your signage project connected to the team that makes it.</p>
                 </div>
               </div>
-              <div className="reveal rounded-[2rem] bg-white border border-slate-200 p-8 lg:p-12 shadow-[0_30px_80px_rgba(10,39,84,0.08)]">
+              <div className="reveal rounded-[2rem] bg-white border border-slate-200 p-5 sm:p-8 lg:p-12 shadow-[0_30px_80px_rgba(10,39,84,0.08)]">
                 <div className="max-w-xl">
                   <div className="text-blue-600 font-black uppercase text-[10px] tracking-[0.35em] mb-4">Why Work Direct?</div>
                   <h2 className="text-3xl lg:text-4xl font-black text-slate-950 uppercase tracking-tight leading-tight mb-5">One partner for your signage program.</h2>
@@ -768,10 +768,10 @@ export default function Home() {
                 <input ref={startedAtRef} type="hidden" name="formStartedAt" defaultValue="" />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                   <input id="home-full-name" type="text" name="fullName" value={formData.fullName} onChange={handleInquiryChange} placeholder="Full Name *" aria-label="Full name for your signage project inquiry" required className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:ring-4 focus:ring-blue-600 font-bold" />
-                  <input id="home-email-address" type="email" required name="email" value={formData.email} onChange={handleInquiryChange} placeholder="Email Address" aria-label="Email address for your signage project inquiry" className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:ring-4 focus:ring-blue-600 font-bold" />
+                  <input id="home-email-address" type="email" required name="email" value={formData.email} onChange={handleInquiryChange} placeholder="Email Address *" aria-label="Email address for your signage project inquiry" className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:ring-4 focus:ring-blue-600 font-bold" />
                 </div>
                 <input id="home-company-name" type="text" name="company" value={formData.company} onChange={handleInquiryChange} placeholder="Company Name" aria-label="Company name for your signage project inquiry" className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:ring-4 focus:ring-blue-600 font-bold" />
-                <textarea id="home-project-details" name="details" value={formData.details} onChange={handleInquiryChange} placeholder="Project Details *" aria-label="Project details for your signage inquiry" rows={5} required className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:ring-4 focus:ring-blue-600 font-bold resize-none" />
+                <textarea id="home-project-details" name="details" value={formData.details} onChange={handleInquiryChange} placeholder="Project Details *" aria-label="Project details for your signage inquiry" rows={4} required className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:ring-4 focus:ring-blue-600 font-bold resize-none" />
                 <div className="rounded-2xl border border-emerald-200 bg-emerald-50 p-5">
                   <h3 className="text-sm font-black uppercase tracking-widest text-slate-900">Send Drawings Directly on WhatsApp</h3>
                   <p className="mt-2 text-xs font-medium text-slate-600">PDF, AI or PSD — send them in the chat and they reach our engineering team immediately. No second form, no re-typing.</p>

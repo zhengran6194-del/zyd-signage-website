@@ -665,3 +665,32 @@ a.lang-panel-item:hover { background: #f1f5f9; color: var(--blue-700); }
     pointer-events: none;
   }
 }
+
+/* Mobile homepage: stack desktop overlays and leave inquiry controls clear. */
+@media (max-width: 1024px) {
+  .site-header { height: 64px; min-height: 64px; }
+  .site-header .nav-wrap { width: 92%; margin-inline: auto; }
+  .primary-nav { top: 64px; max-height: calc(100dvh - 64px); }
+  .home-hero { min-height: auto; padding-block: 40px 32px; }
+  .home-hero > div:last-child { width: 90%; }
+  .home-hero-grid { gap: 0; margin-bottom: 28px; }
+  .home-hero h1 { font-size: clamp(28px, 7vw, 40px); margin-bottom: 18px; }
+  .home-hero p { font-size: 16px; line-height: 1.6; margin-bottom: 24px; }
+  .home-hero .hero-copy > div { flex-direction: column; gap: 12px; }
+  .home-hero .hero-copy a { width: 100%; padding: 14px 16px; font-size: 12px; text-align: center; }
+  .home-hero-stats { padding-block: 20px; gap: 20px 12px; }
+  .home-hero-stats > div { padding-left: 0; border-left: 0; }
+  .home-hero-stats strong { font-size: 13px; line-height: 1.5; }
+  .home-quality-media { width: 100%; }
+  .home-quality-card { overflow-wrap: anywhere; }
+  .home-inquiry .advisor-bar { margin-bottom: 20px; }
+  .home-inquiry form { gap: 14px; }
+  .home-inquiry input:not([type="hidden"]),
+  .home-inquiry textarea { padding: 14px 16px; font-size: 16px; }
+  .home-inquiry form .button { font-size: 12px; padding: 14px 12px; }
+  .floating-quote { display: none; }
+  .floating-whatsapp { left: 12px; bottom: calc(12px + env(safe-area-inset-bottom)); }
+  .floating-whatsapp img { width: 48px; height: 48px; }
+  .floating-whatsapp::before { display: none; }
+  .floating-whatsapp.mobile-form-visible { visibility: hidden; pointer-events: none; }
+}
