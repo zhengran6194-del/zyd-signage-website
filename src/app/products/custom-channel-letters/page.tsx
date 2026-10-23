@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import WhatsAppCta from '@/components/WhatsAppCta';
 import JsonLd from '@/components/JsonLd';
+import ProductPurchaseDetails from '@/components/ProductPurchaseDetails';
 
 const faqs = [
   {
@@ -77,10 +78,10 @@ export default function FrontLitChannelLettersPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
-                  href="/contact"
+                  href="/contact?product=letters"
                   className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide"
                 >
-                  GET A QUOTE
+                  GET A CHANNEL LETTER QUOTE
                 </Link>
                 <WhatsAppCta label="Check Feasibility" message="Hi Aaron, can you check feasibility for custom front-lit channel letters?" brief={{ product: 'custom front-lit channel letters', items: ['Vector artwork and letter size', 'Quantity and overall run', 'Wall material and mounting photo', 'Face material, finish and ship-to country'] }} />
               </div>
@@ -91,6 +92,8 @@ export default function FrontLitChannelLettersPage() {
             </div>
           </div>
         </section>
+
+        <ProductPurchaseDetails product="letters" />
 
         {/* 2. Direct answer block */}
         <section className="section bg-slate-100">
@@ -221,7 +224,7 @@ export default function FrontLitChannelLettersPage() {
               and the{' '}
               <Link href="/guides/custom-signage-manufacturing-process" className="font-black text-blue-700 underline decoration-blue-300 underline-offset-4 hover:text-blue-900">manufacturing process guide</Link>{' '}
               cover those, and the{' '}
-              <Link href="/contact" className="font-black text-blue-700 underline decoration-blue-300 underline-offset-4 hover:text-blue-900">contact form</Link>{' '}
+              <Link href="/contact?product=letters" className="font-black text-blue-700 underline decoration-blue-300 underline-offset-4 hover:text-blue-900">contact form</Link>{' '}
               is where a front-lit letter set gets reviewed.
             </p>
           </div>
@@ -248,7 +251,7 @@ export default function FrontLitChannelLettersPage() {
             <h2 className="text-3xl font-black uppercase tracking-tight text-slate-900 mb-4">Planning front-lit letters?</h2>
             <p className="text-slate-500 font-medium mb-8">Send the artwork, letter height, quantity, wall material and face direction for a project-specific review.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact" className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide">DISCUSS YOUR PROJECT</Link>
+              <Link href="/contact?product=letters" className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide">GET A CHANNEL LETTER QUOTE</Link>
               <Link href="/products" className="px-10 py-5 rounded-full border-2 border-slate-300 text-slate-700 font-black uppercase tracking-widest text-sm hover:border-blue-600 hover:text-blue-700 transition-all">All Products</Link>
             </div>
           </div>

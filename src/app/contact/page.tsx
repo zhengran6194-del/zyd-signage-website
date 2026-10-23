@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useRef, useState } from 'react';
+import React, { Suspense, useEffect, useRef, useState } from 'react';
 import { siteConfig } from '@/config/site';
 import {
   buildWhatsAppUrl,
@@ -11,6 +11,7 @@ import {
 import Image from 'next/image';
 import Link from 'next/link';
 import JsonLd from '@/components/JsonLd';
+import ProductInterestField, { productInterests, ProductInterestSelect } from '@/components/ProductInterestField';
 
 /**
  * Page-level structured data. The contact page described itself only through
@@ -54,6 +55,7 @@ export default function ContactPage() {
   const [lastSubmitted, setLastSubmitted] = useState<InquiryPayload | null>(null);
 
   // Anti-abuse fields are populated after mount so server and client markup match.
+  const inquiryFormRef = useRef<HTMLFormElement>(null);
   const honeypotRef = useRef<HTMLInputElement>(null);
   const startedAtRef = useRef<HTMLInputElement>(null);
 
@@ -85,7 +87,11 @@ export default function ContactPage() {
       return null;
     }
 
-    return { fullName, email, company, details };
+    const productKey = String(inquiryFormRef.current ? new FormData(inquiryFormRef.current).get('productInterest') ?? '' : '');
+    const productName = Object.hasOwn(productInterests, productKey)
+      ? productInterests[productKey as keyof typeof productInterests]
+      : '';
+    return { fullName, email, company, details: productName ? 'Product: ' + productName + '\n\n' + details : details };
   };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -165,7 +171,8 @@ export default function ContactPage() {
             {/* Contact Form */}
             <div className="bg-white min-w-0 p-6 sm:p-10 lg:p-16 rounded-[2rem] sm:rounded-[4rem] shadow-2xl border border-slate-100 reveal visible">
               <h2 className="text-3xl font-black mb-10 uppercase tracking-tight">Project Inquiry</h2>
-              <form className="space-y-8" onSubmit={handleSubmit}>
+              <form ref={inquiryFormRef} className="space-y-8" onSubmit={handleSubmit}>
+                <Suspense fallback={<ProductInterestSelect />}><ProductInterestField /></Suspense>
                 {/* Anti-abuse fields. Kept off-screen and untabbable, never shown to visitors. */}
                 <div aria-hidden="true" style={{ position: 'absolute', left: '-9999px', width: '1px', height: '1px', overflow: 'hidden' }}>
                   <label htmlFor="contact-company-website">Company website</label>

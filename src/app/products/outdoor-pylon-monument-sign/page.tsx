@@ -6,6 +6,7 @@ import Image from 'next/image';
 import WhatsAppCta from '@/components/WhatsAppCta';
 import JsonLd from '@/components/JsonLd';
 import RelatedCaseStudy from '@/components/RelatedCaseStudy';
+import ProductPurchaseDetails from '@/components/ProductPurchaseDetails';
 
 const faqs = [
   {
@@ -50,10 +51,10 @@ export default function OutdoorPylonMonumentSignPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
-                  href="/contact"
+                  href="/contact?product=pylon"
                   className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide"
                 >
-                  GET A QUOTE
+                  SUBMIT A PYLON SIGN BRIEF
                 </Link>
                 <WhatsAppCta label="Check Feasibility" message="Hi Aaron, can you check feasibility for an outdoor pylon or monument sign?" brief={{ product: 'an outdoor pylon or monument sign', items: ['Site plan and approach context', 'Approximate dimensions and quantity', 'Artwork, finish and lighting direction', 'Foundation/mounting/site photos and ship-to country'] }} />
               </div>
@@ -64,6 +65,8 @@ export default function OutdoorPylonMonumentSignPage() {
             </div>
           </div>
         </section>
+
+        <ProductPurchaseDetails product="pylon" />
 
         {/* 2. Direct answer block */}
         <section className="section bg-slate-100">
@@ -201,7 +204,7 @@ export default function OutdoorPylonMonumentSignPage() {
             <h2 className="text-3xl font-black uppercase tracking-tight text-slate-900 mb-4">Planning an entry sign project?</h2>
             <p className="text-slate-500 font-medium mb-8">Send the site location, approximate dimensions, artwork, and quantity for a project-specific review.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact" className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide">DISCUSS YOUR PROJECT</Link>
+              <Link href="/contact?product=pylon" className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide">SUBMIT A PYLON SIGN BRIEF</Link>
               <Link href="/products" className="px-10 py-5 rounded-full border-2 border-slate-300 text-slate-700 font-black uppercase tracking-widest text-sm hover:border-blue-600 hover:text-blue-700 transition-all">All Products</Link>
             </div>
             <RelatedCaseStudy href="/case-studies/dalian-water-plaza-wayfinding-signage" name="Water Fashion Plaza, Dalian" context="the freestanding pylon sign that identifies the site entrance." />

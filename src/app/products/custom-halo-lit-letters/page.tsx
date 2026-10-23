@@ -50,10 +50,10 @@ export default function HaloLitLettersPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
-                  href="/contact"
+                  href="/contact?product=halo"
                   className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide"
                 >
-                  GET A QUOTE
+                  GET A HALO-LIT LETTER QUOTE
                 </Link>
                 <WhatsAppCta label="Check Feasibility" message="Hi Aaron, can you check feasibility for custom halo-lit metal letters?" brief={{ product: 'custom halo-lit metal letters', items: ['Vector artwork and letter size', 'Quantity and overall run', 'Wall material and mounting photo', 'Finish, lighting direction and ship-to country'] }} />
               </div>
@@ -107,7 +107,7 @@ export default function HaloLitLettersPage() {
                 A comparable quotation needs the artwork in vector form, the letter height and overall run length, the quantity, the wall material, and the required finish. Site photos and the mounting height help confirm the standoff and wiring route. Send those details with the brief and the engineering review follows.
               </p>
               <div className="mt-auto">
-                <Link href="/contact" className="text-sm font-black uppercase tracking-widest text-blue-700 hover:text-blue-900">Send your project brief</Link>
+                <Link href="/contact?product=halo" className="text-sm font-black uppercase tracking-widest text-blue-700 hover:text-blue-900">Send your project brief</Link>
               </div>
             </div>
 
@@ -204,7 +204,7 @@ export default function HaloLitLettersPage() {
             <h2 className="text-3xl font-black uppercase tracking-tight text-slate-900 mb-4">Planning rear-glow letters?</h2>
             <p className="text-slate-500 font-medium mb-8">Send the artwork, letter height, quantity, wall material, and finish direction for a project-specific review.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact" className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide">DISCUSS YOUR PROJECT</Link>
+              <Link href="/contact?product=halo" className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide">GET A HALO-LIT LETTER QUOTE</Link>
               <Link href="/products" className="px-10 py-5 rounded-full border-2 border-slate-300 text-slate-700 font-black uppercase tracking-widest text-sm hover:border-blue-600 hover:text-blue-700 transition-all">All Products</Link>
             </div>
             <RelatedCaseStudy href="/case-studies/dalian-water-plaza-wayfinding-signage" name="Water Fashion Plaza, Dalian" context="illuminated facade letters and a tenant brand wall in stainless steel and acrylic." />

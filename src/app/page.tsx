@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import WhatsAppCta from '@/components/WhatsAppCta';
 import JsonLd from '@/components/JsonLd';
+import FeaturedSignProducts from '@/components/FeaturedSignProducts';
 import { siteConfig } from '@/config/site';
 
 const englishHomeJsonLd = {
@@ -281,6 +282,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <FeaturedSignProducts />
 
         {/* 2. THE ZYD WAY: PRODUCTION PROCESS (Artistic Grid) */}
         <section className="section bg-slate-100 py-32 lg:py-48">

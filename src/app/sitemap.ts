@@ -12,12 +12,12 @@ import { siteConfig } from "@/config/site";
 // one, otherwise the date of the last commit that touched the route. Update the
 // relevant entry whenever a route's content changes.
 const lastModifiedByRoute: Record<string, string> = {
-  "": "2026-09-29",
+  "": "2026-10-23",
   "/products": "2026-09-17",
   "/projects": "2026-09-27",
   "/guides": "2026-10-07",
   "/about": "2026-09-29",
-  "/contact": "2026-09-15",
+  "/contact": "2026-10-23",
   "/faq": "2026-10-07",
   "/ja": "2026-10-08",
   "/ja/products": "2026-10-08",
@@ -62,13 +62,13 @@ const lastModifiedByRoute: Record<string, string> = {
 
   "/products/architectural-wayfinding-system": "2026-10-07",
   "/products/complete-signage-system": "2026-10-07",
-  "/products/custom-channel-letters": "2026-10-12",
-  "/products/custom-halo-lit-letters": "2026-10-07",
+  "/products/custom-channel-letters": "2026-10-23",
+  "/products/custom-halo-lit-letters": "2026-10-23",
   "/products/custom-landscape-furniture": "2026-10-07",
   "/products/custom-led-neon-sign": "2026-10-07",
   "/products/medical-care-signage": "2026-10-07",
   "/products/metal-acrylic-logo-sign": "2026-10-07",
-  "/products/outdoor-pylon-monument-sign": "2026-10-07",
+  "/products/outdoor-pylon-monument-sign": "2026-10-23",
   "/products/ultra-slim-led-light-box": "2026-10-07",
   "/products/outdoor-waste-bin": "2026-10-07",
   "/products/custom-planter-box": "2026-10-07",
