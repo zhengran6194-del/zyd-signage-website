@@ -633,3 +633,35 @@ a.lang-panel-item:hover { background: #f1f5f9; color: var(--blue-700); }
     font-size: 10px;
   }
 }
+
+/* Keep navigation reachable on short mobile screens and while typing. */
+@media (max-width: 1024px) {
+  .menu-toggle {
+    min-width: 44px;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
+  }
+  .primary-nav {
+    max-height: calc(100dvh - 80px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding-bottom: max(2rem, env(safe-area-inset-bottom));
+  }
+  .primary-nav > a {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+  }
+  .floating-whatsapp,
+  .floating-quote {
+    bottom: calc(16px + env(safe-area-inset-bottom));
+  }
+  body:has(input:focus, textarea:focus) .floating-whatsapp,
+  body:has(input:focus, textarea:focus) .floating-quote,
+  body:has(.primary-nav.open) .floating-whatsapp,
+  body:has(.primary-nav.open) .floating-quote {
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
