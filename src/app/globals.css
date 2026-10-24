@@ -536,11 +536,17 @@ a.lang-panel-item:hover { background: #f1f5f9; color: var(--blue-700); }
     height: 132px;
   }
 
-  /* Header gets its own wider track than the 1200px content container. */
-  .nav-wrap {
-    justify-content: flex-start; /* removes the space-between conflict */
-    max-width: 1560px;
-    width: 94%;
+  /* Use the viewport width: logo left, navigation and actions right. */
+  .site-header .nav-wrap {
+    justify-content: flex-start;
+    max-width: none;
+    width: calc(100% - clamp(32px, 3vw, 64px));
+    margin-inline: auto;
+    padding-inline: 0;
+  }
+
+  .site-header .brand {
+    flex: 0 0 auto;
   }
 
   .brand img {
@@ -552,7 +558,7 @@ a.lang-panel-item:hover { background: #f1f5f9; color: var(--blue-700); }
   .primary-nav {
     margin-left: auto;
     margin-right: clamp(1.75rem, 2vw, 2rem);
-    gap: clamp(1.5rem, 1.9vw, 2.25rem);
+    gap: clamp(12px, 1.5vw, 28px);
     flex-wrap: nowrap;
   }
 
