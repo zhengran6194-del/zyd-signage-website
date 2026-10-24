@@ -35,6 +35,7 @@ export type GuideSection = {
   subsections?: Array<{
     heading: string;
     paragraphs?: string[];
+    closingParagraphs?: string[];
     bullets?: string[];
     columns?: {
       headers: string[];
@@ -67,6 +68,12 @@ export type GuideFaq = {
 };
 
 export type GuideArticleData = {
+  heroImage?: NonNullable<GuideSection['image']>;
+  showContents?: boolean;
+  contactHref?: string;
+  asideButtonLabel?: string;
+  whatsappLabel?: string;
+  whatsappMessage?: string;
   title: string;
   category: string;
   description: string;
@@ -97,8 +104,8 @@ type ColumnTable = {
 function ColumnsTable({ columns }: { columns: ColumnTable }) {
   return (
     <div className="overflow-x-auto mt-6">
-      <table className="w-full text-left border-collapse min-w-[760px]">
-        <thead><tr className="border-b-2 border-slate-200">{columns.headers.map((header) => <th key={header} className="py-4 pr-5 text-sm uppercase tracking-wider">{header}</th>)}</tr></thead>
+      <table className={`w-full text-left border-collapse ${columns.headers.length > 2 ? "min-w-[760px]" : ""}`}>
+        <thead><tr className="border-b-2 border-slate-200">{columns.headers.map((header) => <th key={header} scope="col" className="py-4 pr-5 text-sm uppercase tracking-wider">{header}</th>)}</tr></thead>
         <tbody className="text-slate-600">{columns.rows.map((row) => <tr key={row[0]} className="border-b border-slate-100 last:border-0">{row.map((cell, index) => <td key={`${row[0]}-${index}`} className={`py-4 pr-5 ${index === 0 ? 'font-bold text-slate-900' : ''}`}>{cell}</td>)}</tr>)}</tbody>
       </table>
     </div>
@@ -132,6 +139,8 @@ export default function GuideArticle(guide: GuideArticleProps) {
           </div>
         </header>
 
+        {guide.heroImage && <figure className="mb-10 overflow-hidden rounded-3xl border border-slate-200 bg-white"><Image src={guide.heroImage.src} alt={guide.heroImage.alt} width={guide.heroImage.width ?? 1536} height={guide.heroImage.height ?? 1024} sizes="(min-width: 1152px) 1072px, 100vw" className="h-auto w-full" priority /><figcaption className="px-6 py-4 text-sm text-slate-500">{guide.heroImage.caption}</figcaption></figure>}
+
         <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_320px] gap-10 items-start">
           <div className="bg-white rounded-[2.5rem] p-6 sm:p-10 lg:p-14 shadow-sm border border-slate-200">
             <p className="text-xl text-slate-800 leading-relaxed font-semibold mb-10">{guide.directAnswer}</p>
@@ -140,8 +149,10 @@ export default function GuideArticle(guide: GuideArticleProps) {
               <p key={paragraph} className="text-slate-600 leading-relaxed mb-4">{paragraph}</p>
             ))}
 
-            {guide.sections.map((section) => (
-              <section key={section.heading} className="mb-12">
+            {guide.showContents && <nav aria-label="Article contents" className="my-8 rounded-2xl bg-slate-50 p-6"><p className="font-bold mb-3">In this guide</p><ol className="space-y-3 text-sm text-blue-700">{guide.sections.map((section, index) => <li key={section.heading}><a href={`#guide-section-${index + 1}`} className="underline underline-offset-4">{section.heading}</a></li>)}</ol><p className="mt-4 text-xs text-slate-500">Tables can be scrolled horizontally on smaller screens.</p></nav>}
+
+            {guide.sections.map((section, sectionIndex) => (
+              <section key={section.heading} id={`guide-section-${sectionIndex + 1}`} className="mb-12 scroll-mt-32">
                 <h2 className="text-3xl font-black uppercase tracking-tight text-slate-900 mb-5">{section.heading}</h2>
                 {(section.image || section.images) && (
                   <div className={`my-7 grid gap-5 ${section.images && section.images.length > 1 ? 'sm:grid-cols-2' : 'grid-cols-1'}`}>
@@ -201,6 +212,7 @@ export default function GuideArticle(guide: GuideArticleProps) {
                         {subsection.bullets.map((bullet) => <li key={bullet}>• {bullet}</li>)}
                       </ul>
                     )}
+                    {subsection.closingParagraphs?.map((paragraph) => <p key={paragraph} className="text-slate-600 leading-relaxed mt-5 mb-4">{paragraph}</p>)}
                   </div>
                 ))}
                 {section.closingParagraphs?.map((paragraph) => (
@@ -249,7 +261,7 @@ export default function GuideArticle(guide: GuideArticleProps) {
 
             <div className="mt-12 pt-8 border-t border-slate-200 flex flex-wrap gap-5 text-sm font-black uppercase tracking-widest">
               {guide.relatedLinks.map((link) => <Link key={link.href} href={link.href} className="text-blue-700 hover:text-blue-900">{link.label}</Link>)}
-              <WhatsAppCta label="Get Material Advice" message={`Hi Aaron, I would like material advice for this guide topic: ${guide.title}.`} className="text-blue-700 hover:text-blue-900" />
+              <WhatsAppCta label={guide.whatsappLabel ?? "Get Material Advice"} message={guide.whatsappMessage ?? `Hi Aaron, I would like material advice for this guide topic: ${guide.title}.`} className="text-blue-700 hover:text-blue-900" />
             </div>
           </div>
 
@@ -258,7 +270,7 @@ export default function GuideArticle(guide: GuideArticleProps) {
               <div className="text-blue-400 font-black uppercase tracking-[0.25em] text-xs mb-4">Buyer brief</div>
               <h2 className="text-2xl font-black uppercase tracking-tight mb-4">{guide.asideTitle}</h2>
               <p className="text-slate-300 leading-relaxed mb-6">{guide.asideText}</p>
-              <Link href="/contact" className="inline-flex button-green-base px-6 py-4 rounded-full text-white font-black text-sm">DISCUSS YOUR PROJECT</Link>
+              <Link href={guide.contactHref ?? "/contact"} className="inline-flex button-green-base px-6 py-4 rounded-full text-white font-black text-sm">{guide.asideButtonLabel ?? "DISCUSS YOUR PROJECT"}</Link>
             </div>
           </aside>
         </div>

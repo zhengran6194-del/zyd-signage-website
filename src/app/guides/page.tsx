@@ -7,6 +7,7 @@ const title = 'Signage Guides';
 const description = 'Practical buying and technical guides for custom signage projects, covering channel letter costs, illumination styles, sign selection, and outdoor materials.';
 
 const guides = [
+  {"tag":"Pylon Sign Planning","title":"What Site Information Do You Need Before Ordering a Pylon Sign?","desc":"Prepare a pylon sign site brief with photos, dimensions, utilities, electrical supply, foundation interfaces and delivery access before production.","href":"/guides/pylon-sign-site-information-checklist"},
   {
     tag: 'Buying Guide',
     title: 'How Much Do Custom Channel Letters Cost?',

@@ -846,6 +846,16 @@ Each guide states what belongs to the buyer and what belongs to the supplier. Pr
 
 Guides answer the buying questions; the [product range](https://www.zydsign.com/products) shows what is manufactured for each sign type, and the [case studies](https://www.zydsign.com/projects) show how those sign types were coordinated on real sites. When the brief is ready, the technical review starts from the [contact form](https://www.zydsign.com/contact).
 
+Pylon Sign Planning
+
+#### What Site Information Do You Need Before Ordering a Pylon Sign?
+
+Prepare a pylon sign site brief with photos, dimensions, utilities, electrical supply, foundation interfaces and delivery access before production.
+
+Read Guide
+
+<https://www.zydsign.com/guides/pylon-sign-site-information-checklist>
+
 Buying Guide
 
 #### How Much Do Custom Channel Letters Cost?
@@ -2711,6 +2721,8 @@ Typical production lead time is 7–14 days depending on project complexity, plu
 Send the site location, approximate dimensions, artwork, and quantity for a project-specific review.
 
 [SUBMIT A PYLON SIGN BRIEF](https://www.zydsign.com/contact?product=pylon) [All Products](https://www.zydsign.com/products)
+
+[Before ordering: prepare your pylon sign site information](https://www.zydsign.com/guides/pylon-sign-site-information-checklist)
 
 Related case study: [Water Fashion Plaza, Dalian](https://www.zydsign.com/case-studies/dalian-water-plaza-wayfinding-signage) — the freestanding pylon sign that identifies the site entrance.
 
@@ -6013,6 +6025,352 @@ Buyer brief
 ZYD SIGN, EST. 2006, builds custom signage for projects in cold climates. Share the design temperatures, overnight operating schedule, snow and salt exposure, mounting height and the electrical supply confirmed by the local team, so the materials and components can be specified together.
 
 [DISCUSS YOUR PROJECT](https://www.zydsign.com/contact)
+
+### What Site Information Do You Need Before Ordering a Pylon Sign?
+
+Canonical page: https://www.zydsign.com/guides/pylon-sign-site-information-checklist
+Markdown mirror: https://www.zydsign.com/guides/pylon-sign-site-information-checklist/index.md
+
+Prepare a pylon sign site brief with photos, dimensions, utilities, electrical supply, foundation interfaces and delivery access before production.
+
+Guide • Updated October 24, 2026 • By Aaron, ZYD Signage
+
+![Illustration of a site survey for a pylon sign, with site photos, dimensions and local requirements](https://www.zydsign.com/assets/images/pylon-sign-site-information-overview.png)
+
+*Illustrative site-planning scene; not a completed ZYD project.*
+
+Before ordering a pylon sign, prepare the installation address, a marked site plan, photographs, proposed dimensions, underground utility information and electrical supply details. Foundation and structural requirements must also be coordinated with the local project team before production.
+
+These records help the manufacturer develop a sign that fits the site. They also help the installer identify problems before the sign arrives.
+
+A photograph and a preferred height can support an initial discussion. They are not enough to finalize the foundation, anchor arrangement or electrical installation.
+
+Dalian Zhiyudao Signage & Tech. Co., Ltd., also known as ZYD SIGN, manufactures custom pylon signs, illuminated lettering and wayfinding signage in Dalian, China. This guide explains what buyers should prepare at each stage.
+
+In this guide
+
+1. [1. Start with a Basic Site Information Package](https://www.zydsign.com#guide-section-1)
+2. [2. Mark the Installation Position Clearly](https://www.zydsign.com#guide-section-2)
+3. [3. Take Photographs That Explain the Whole Site](https://www.zydsign.com#guide-section-3)
+4. [4. Confirm Dimensions and Ground Levels](https://www.zydsign.com#guide-section-4)
+5. [5. Explain the Viewing Conditions](https://www.zydsign.com#guide-section-5)
+6. [6. Locate Underground Utilities Before Foundation Work](https://www.zydsign.com#guide-section-6)
+7. [7. Prepare Ground and Foundation Information](https://www.zydsign.com#guide-section-7)
+8. [8. Confirm Electrical Supply and Cable Routing](https://www.zydsign.com#guide-section-8)
+9. [9. Describe Environmental Exposure](https://www.zydsign.com#guide-section-9)
+10. [10. Check Local Approval and Property Requirements](https://www.zydsign.com#guide-section-10)
+11. [11. Plan Delivery, Lifting and Maintenance Access](https://www.zydsign.com#guide-section-11)
+12. [12. Separate Quotation Information from Production Approval](https://www.zydsign.com#guide-section-12)
+13. [Prepare Your Pylon Sign Inquiry with ZYD SIGN](https://www.zydsign.com#guide-section-13)
+
+Tables can be scrolled horizontally on smaller screens.
+
+#### 1. Start with a Basic Site Information Package
+
+For an initial inquiry, send the following:
+
+| Information | What to Provide |
+| --- | --- |
+| Installation address | Full address and a map pin |
+| Proposed position | Mark the sign location on a site plan or aerial image |
+| Site photographs | Front, rear, side and approach views |
+| Preferred dimensions | Overall height, width and approximate depth |
+| Sign content | Logo, tenant names, directions or other information |
+| Lighting preference | Illuminated, non-illuminated or digital elements |
+| Existing conditions | New installation or replacement of an existing sign |
+| Local restrictions | Known height, area, setback or landlord requirements |
+| Delivery conditions | Vehicle access, unloading space and site contact |
+
+Identify any dimensions or conditions that remain unverified. This allows the quotation to distinguish confirmed requirements from assumptions.
+
+#### 2. Mark the Installation Position Clearly
+
+![Illustration of pylon sign position checks covering boundaries, ground levels and viewing directions](https://www.zydsign.com/assets/images/pylon-sign-position-dimensions.png)
+
+*Position and dimensions illustration. Confirm actual boundaries and levels through the local site team.*
+
+A pylon sign is a freestanding structure. Its location affects visibility, access, underground work and potential approval requirements.
+
+Provide a plan showing the proposed position relative to:
+
+- • Property boundaries.
+- • Roads and sidewalks.
+- • Driveways and entrances.
+- • Buildings and parking areas.
+- • Landscaping and retaining walls.
+- • Existing signs.
+- • Known easements or utility routes.
+
+A marked aerial image can help start the discussion. For detailed design or permit submission, a scaled plan or survey may be required.
+
+Do not treat a fence, curb or landscaping edge as a confirmed property boundary unless it has been verified.
+
+#### 3. Take Photographs That Explain the Whole Site
+
+Close-up photographs show surface details, but wider views reveal installation constraints.
+
+##### Recommended Photographs
+
+Front view: Show the proposed sign position and surrounding space.
+
+Rear view: Show potential service access and nearby obstructions.
+
+Side views: Show slopes, walls, paths and available working space.
+
+Approach views: Photograph the site from the directions in which drivers or pedestrians will see the sign.
+
+Ground detail: Show pavement, soil, drainage features and any existing base.
+
+Include a reliable scale reference where practical. Record measured dimensions separately rather than asking the manufacturer to estimate them from photographs.
+
+A short site video can also help explain access and surroundings.
+
+#### 4. Confirm Dimensions and Ground Levels
+
+State what the proposed dimensions refer to.
+
+For example, “six meters high” could mean the cabinet height or the total height from finished ground level to the top of the sign.
+
+Confirm:
+
+- • Overall installed height.
+- • Cabinet or display height.
+- • Overall width and depth.
+- • Number of display faces.
+- • Clearance beneath elevated sign sections.
+- • Finished ground level.
+- • Ground slope around the base.
+
+For multi-tenant signs, provide the number and approximate size of tenant panels. Confirm whether panels need to be replaceable.
+
+Where local rules limit sign height or area, have the local team confirm how those measurements are defined.
+
+#### 5. Explain the Viewing Conditions
+
+The correct sign size depends on how it will be seen.
+
+Tell the manufacturer whether the primary audience is pedestrians, arriving vehicles or traffic passing along a road.
+
+Provide the intended viewing directions and approximate distances. Identify trees, parked vehicles, street furniture or other signs that could obstruct the display.
+
+Do not select letter sizes solely from a close-up rendering. Review the information hierarchy at the intended viewing distance.
+
+For a double-sided pylon, confirm the orientation of each face. The best location for one approach may not provide the same visibility from the opposite direction.
+
+#### 6. Locate Underground Utilities Before Foundation Work
+
+![Illustration of underground utility locating before pylon sign foundation work](https://www.zydsign.com/assets/images/pylon-sign-underground-utility-review.png)
+
+*Illustration only. Confirm public and private utility-locating arrangements before excavation.*
+
+Underground conditions can change the proposed sign position or foundation arrangement.
+
+Relevant services may include:
+
+- • Electricity.
+- • Gas.
+- • Water and drainage.
+- • Telecommunications.
+- • Irrigation.
+- • Private lighting circuits.
+
+Existing drawings are useful background information, but they do not replace the required site-locating process before excavation.
+
+Use the applicable local utility-location service. Privately owned services may require separate locating arrangements.
+
+Record any restrictions that affect excavation or the route of the electrical supply. Do not assume that a small area of clear ground is free of buried services.
+
+#### 7. Prepare Ground and Foundation Information
+
+![Concept illustration of a pylon sign anchor layout, base plate and cable entry interface](https://www.zydsign.com/assets/images/pylon-sign-foundation-interface.png)
+
+*Concept illustration, not an engineered detail or anchor template. Use the approved project-specific drawings.*
+
+A pylon sign foundation cannot be selected reliably from overall sign height alone.
+
+The design may depend on the sign geometry, wind exposure, supporting structure, soil conditions and local requirements.
+
+Ask the responsible local engineer what ground information is needed. Depending on the project, this may include geotechnical information, groundwater conditions, frost considerations or nearby structures.
+
+##### Coordinate the Foundation-to-Sign Interface
+
+Before manufacturing the relevant components, confirm:
+
+- • Support-post arrangement.
+- • Base-plate dimensions.
+- • Anchor layout.
+- • Anchor projection and orientation.
+- • Required interface levels.
+- • Electrical entry position.
+- • Installation tolerances.
+
+Do not pour a foundation using a preliminary visual rendering.
+
+The sign drawings, foundation design and anchor template should agree before the work proceeds.
+
+##### Reusing an Existing Foundation
+
+An existing foundation is not automatically suitable for a replacement sign.
+
+Provide available drawings, inspection records, anchor measurements and information about the previous structure. The local engineer should assess suitability for the proposed loads and condition.
+
+A new sign with a similar appearance may still impose different demands.
+
+#### 8. Confirm Electrical Supply and Cable Routing
+
+For an illuminated pylon sign, provide the actual electrical supply information confirmed by the local electrician.
+
+Include:
+
+| Electrical Detail | What to Confirm |
+| --- | --- |
+| Supply | Available voltage and frequency |
+| Connection point | Location and proposed route to the sign |
+| Controls | Timer, photocell, dimming or other requirements |
+| Equipment location | Proposed power supply or service compartment |
+| Cable entry | Coordinated route through the foundation or structure |
+| Access | How equipment can be isolated and serviced |
+| Local requirements | Applicable electrical documentation and approvals |
+
+Do not assume that country information alone identifies the available supply.
+
+For digital displays, also confirm communications, controls and service requirements. These can differ substantially from a fixed illuminated sign.
+
+#### 9. Describe Environmental Exposure
+
+Give the supplier the conditions relevant to the site:
+
+- • Design temperature range.
+- • Coastal or de-icing salt exposure.
+- • Rain, snow and potential water accumulation.
+- • Strong sunlight.
+- • Industrial contaminants.
+- • Cleaning methods.
+- • Known wind exposure.
+
+The responsible project professional should establish structural design criteria. Avoid substituting a general statement such as “wind-resistant” for defined requirements.
+
+Environmental information also helps specify metals, finishes, seals and electrical components.
+
+#### 10. Check Local Approval and Property Requirements
+
+Before committing to final dimensions, ask the local team to confirm applicable requirements.
+
+These may involve:
+
+- • Sign height and area.
+- • Position and setbacks.
+- • Visibility near driveways or intersections.
+- • Illumination and operating hours.
+- • Structural drawings and calculations.
+- • Electrical permits.
+- • Property-owner or landlord approval.
+- • Construction inspections.
+
+Requirements vary by jurisdiction and site.
+
+A factory production drawing is not automatically a locally approved permit drawing. Specify whether local engineering, submission and approval services are included or arranged separately.
+
+#### 11. Plan Delivery, Lifting and Maintenance Access
+
+A sign that fits its final position may still be difficult to deliver or install.
+
+Provide information about:
+
+- • Site-entry width and height.
+- • Delivery-vehicle restrictions.
+- • Overhead cables and structures.
+- • Unloading space.
+- • Crane or lifting-equipment access.
+- • Temporary storage.
+- • Working-hour restrictions.
+- • Pedestrian or traffic-control requirements.
+
+For large signs, the manufacturer may propose shipping in sections. Confirm section sizes, connection details and site assembly responsibilities before production.
+
+Also review future maintenance. Service doors should remain accessible after landscaping, fencing and other site work are completed.
+
+#### 12. Separate Quotation Information from Production Approval
+
+![Concept illustration of cast-in anchors, concrete foundation, sign mounting and electrical connection](https://www.zydsign.com/assets/images/pylon-sign-foundation-installation-overview.png)
+
+*Concept illustration only; intermediate steps are omitted. Concrete must meet the specified curing and strength acceptance requirements before loading. Follow approved construction documents; electrical work requires a qualified local installer.*
+
+Not every record needs to be complete before requesting a budget. However, unresolved assumptions should be closed before the affected work begins.
+
+| Stage | Typical Information Needed |
+| --- | --- |
+| Initial budget | Address, photographs, concept, approximate size, content and lighting preference |
+| Design coordination | Measured layout, site constraints, supply details, local restrictions and installation approach |
+| Production release | Approved dimensions, materials, structural interfaces, electrical arrangement and agreed scope |
+| Foundation and installation | Applicable approved construction documents, utility locating, verified site conditions and installation planning |
+
+Some production activities depend on others. For example, anchor-related components should not be finalized while the foundation interface remains unresolved.
+
+#### Prepare Your Pylon Sign Inquiry with ZYD SIGN
+
+Dalian Zhiyudao Signage & Tech. Co., Ltd. — ZYD SIGN manufactures custom pylon signs and coordinated architectural signage.
+
+Send your installation address, marked location, photographs, preferred dimensions and artwork. Include information already confirmed by your local installer, electrician or engineer.
+
+A clear site package helps define the manufacturing scope, identify missing information and coordinate the details that need approval before production.
+
+Contact ZYD SIGN to discuss your custom pylon sign project and site-information requirements.
+
+#### Copy-ready pylon sign inquiry checklist
+
+Include what you know and mark anything still awaiting site confirmation.
+
+- • Installation address and marked sign position
+- • Front, rear, side and approach photographs
+- • Preferred overall dimensions and number of faces
+- • Artwork, tenant panels and lighting preference
+- • Known utilities and confirmed electrical supply
+- • Local restrictions and responsible approval contact
+- • Foundation interface status and local installation team
+- • Delivery access, unloading arrangements and requested scope
+
+#### Frequently asked questions
+
+##### Can I request a pylon sign quotation without a full survey?
+
+Yes. Basic information can support a preliminary quotation. Ask the supplier to identify assumptions and items requiring confirmation.
+
+##### Can the manufacturer determine the foundation from photographs?
+
+Photographs can support discussion, but they do not establish soil capacity or a complete foundation design.
+
+##### Should the foundation be completed before the sign is ordered?
+
+Coordinate the sequence with the project team. The important point is that the approved sign interface, foundation and anchor arrangement agree before construction.
+
+##### Can an existing sign base be reused?
+
+Possibly, following an appropriate assessment. Similar dimensions do not establish that the existing base or anchors are suitable.
+
+##### What if the site has no electrical supply?
+
+Ask a local electrician to assess the required supply work. Include this separately in the project scope and budget.
+
+##### Who is responsible for local permits?
+
+Name the responsible party in the contract. Do not assume manufacturing or shipping includes local approval services.
+
+#### Sources & further reading
+
+These public references support terminology, accessibility context, or material-selection background. They are not ZYD product claims; project compliance and final specifications must be confirmed with the design team and the authority having jurisdiction.
+
+1. HSE: Avoiding danger from underground services (HSG47) UK reference on planning, identifying buried services and safe excavation. Apply the requirements and locating process for the actual project location.
+
+[Custom Pylon Signs](https://www.zydsign.com/products/outdoor-pylon-monument-sign) [Submit Your Pylon Site Brief](https://www.zydsign.com/contact?product=pylon) [Signage Procurement Checklist](https://www.zydsign.com/guides/complete-site-signage-procurement-checklist) Discuss Your Pylon Sign
+
+Buyer brief
+
+#### Planning a pylon sign?
+
+Send the site photos, marked location, preferred dimensions and artwork. Identify anything that still needs confirmation by your local team.
+
+[SEND YOUR PYLON BRIEF](https://www.zydsign.com/contact?product=pylon)
 
 ### Raceway vs. Individually Mounted Channel Letters: Wiring, Wall Fixings and Installation Planning
 

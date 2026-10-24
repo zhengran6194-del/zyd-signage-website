@@ -56,6 +56,8 @@ A single file carrying the full text of every page listed here is published at [
 
 ## Guides
 
+- [What Site Information Do You Need Before Ordering a Pylon Sign?](https://www.zydsign.com/guides/pylon-sign-site-information-checklist/index.md): Prepare a pylon sign site brief with photos, dimensions, utilities, electrical supply, foundation interfaces and delivery access before production.
+
 - [Mall Wayfinding Signage](https://www.zydsign.com/guides/mall-wayfinding-signage/index.md): Scenario-based planning for commercial complexes, covering arrival identification, pylon signs, facade letters, directories, overhead directions, and functional signage.
 - [Industrial Park Signage](https://www.zydsign.com/guides/industrial-park-signage/index.md): Scenario-based planning for gateways, roads, buildings, production zones, parking, functional signs, and repeatable materials across a large site.
 - [Hotel Signage](https://www.zydsign.com/guides/hotel-signage/index.md): Scenario-based planning for hotel arrival, illuminated branding, directories, guest navigation, room and facility signs, parking, and service areas.

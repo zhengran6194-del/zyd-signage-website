@@ -12,10 +12,11 @@ import { siteConfig } from "@/config/site";
 // one, otherwise the date of the last commit that touched the route. Update the
 // relevant entry whenever a route's content changes.
 const lastModifiedByRoute: Record<string, string> = {
+  "/guides/pylon-sign-site-information-checklist": "2026-10-24",
   "": "2026-10-23",
   "/products": "2026-09-17",
   "/projects": "2026-09-27",
-  "/guides": "2026-10-07",
+  "/guides": "2026-10-24",
   "/about": "2026-09-29",
   "/contact": "2026-10-23",
   "/faq": "2026-10-07",
@@ -68,7 +69,7 @@ const lastModifiedByRoute: Record<string, string> = {
   "/products/custom-led-neon-sign": "2026-10-07",
   "/products/medical-care-signage": "2026-10-07",
   "/products/metal-acrylic-logo-sign": "2026-10-07",
-  "/products/outdoor-pylon-monument-sign": "2026-10-23",
+  "/products/outdoor-pylon-monument-sign": "2026-10-24",
   "/products/ultra-slim-led-light-box": "2026-10-07",
   "/products/outdoor-waste-bin": "2026-10-07",
   "/products/custom-planter-box": "2026-10-07",
@@ -182,6 +183,7 @@ const routes: SitemapRoute[] = [
   { path: "/products/custom-planter-box", priority: 0.8 },
   { path: "/products/acrylic-desk-sign", priority: 0.8 },
   { path: "/products/portable-metal-a-frame-sign", priority: 0.8 },
+  { path: "/guides/pylon-sign-site-information-checklist", priority: 0.8 },
   { path: "/guides/304-stainless-steel-vs-galvanized-steel-outdoor-signs", priority: 0.7 },
   { path: "/guides/how-much-do-custom-channel-letters-cost", priority: 0.7 },
   { path: "/guides/front-lit-vs-halo-lit-channel-letters", priority: 0.7 },

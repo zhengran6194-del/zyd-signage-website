@@ -207,6 +207,7 @@ export default function OutdoorPylonMonumentSignPage() {
               <Link href="/contact?product=pylon" className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide">SUBMIT A PYLON SIGN BRIEF</Link>
               <Link href="/products" className="px-10 py-5 rounded-full border-2 border-slate-300 text-slate-700 font-black uppercase tracking-widest text-sm hover:border-blue-600 hover:text-blue-700 transition-all">All Products</Link>
             </div>
+            <p className="mt-6"><Link href="/guides/pylon-sign-site-information-checklist" className="font-bold text-blue-700 underline underline-offset-4">Before ordering: prepare your pylon sign site information</Link></p>
             <RelatedCaseStudy href="/case-studies/dalian-water-plaza-wayfinding-signage" name="Water Fashion Plaza, Dalian" context="the freestanding pylon sign that identifies the site entrance." />
           </div>
         </section>
