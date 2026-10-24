@@ -5,6 +5,10 @@ export const productInterests = {
   letters: 'Illuminated channel letters',
   halo: 'Halo-lit letters',
   pylon: 'Pylon / monument sign',
+  landscape: 'Landscape & furniture',
+  neon: 'LED neon signs',
+  metal: 'Metal & acrylic signs',
+  planter: 'Custom planter box',
 } as const;
 
 export function ProductInterestSelect({ initialProduct = '' }: { initialProduct?: string }) {
