@@ -438,13 +438,14 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="reveal w-full border-y border-slate-200 bg-slate-950 shadow-[0_35px_100px_rgba(10,39,84,0.16)]">
+          <div className="reveal mx-auto my-6 w-[94%] max-w-[1672px] overflow-hidden rounded-2xl border border-slate-200 bg-slate-950 shadow-[0_20px_60px_rgba(10,39,84,0.12)] lg:my-10">
             <Image
-              src="/assets/images/global-signage-poster-wide.jpg"
+              src="/assets/images/global-signage-poster-premium.jpg"
               alt="ZYD custom signage and architectural sign collection"
-              width={1327}
-              height={726}
-              sizes="100vw"
+              width={1672}
+              height={941}
+              quality={90}
+              sizes="(min-width: 1780px) 1672px, 94vw"
               className="block h-auto w-full"
             />
           </div>

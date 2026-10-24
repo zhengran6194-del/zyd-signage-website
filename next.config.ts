@@ -19,6 +19,7 @@ const securityHeaders = [
 const nextConfig: NextConfig = {
   // Do not advertise the framework version.
   poweredByHeader: false,
+  images: { qualities: [75, 90] },
 
   /**
    * Addresses that were published and then retired are kept alive with
