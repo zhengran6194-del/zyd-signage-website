@@ -18,13 +18,8 @@ export default function Header() {
       <div className="container nav-wrap">
         {/* Logo, left aligned */}
         <Link className="brand" href="/" aria-label={copy.homeLabel}>
-          {/* The master PNG is 4961x3508 (1.41:1), but .brand img caps the
-              rendered height at 56px on mobile and 92-112px from 1025px up, so
-              the logo is never wider than about 158px. Declaring that rendered
-              box instead of the master file keeps the reserved space and the
-              generated srcset in scale with what is actually painted; the ratio
-              matches the master, so nothing is distorted. */}
-          <Image src="/assets/images/logo-correct.png" alt={copy.logoAlt} width={160} height={113} loading="eager" sizes="(max-width: 1024px) 80px, 160px" />
+          {/* Desktop CSS crops the master image whitespace within a proportional logo window. */}
+          <Image src="/assets/images/logo-correct.png" alt={copy.logoAlt} width={160} height={113} loading="eager" sizes="(max-width: 1024px) 80px, (max-width: 1625px) 16vw, 260px" />
         </Link>
 
         {/* Mobile menu toggle */}
