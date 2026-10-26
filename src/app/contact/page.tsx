@@ -322,6 +322,8 @@ export default function ContactPage() {
             </div>
           </div>
 
+          <section className="mt-12 rounded-2xl border border-blue-100 bg-blue-50 p-6 sm:p-8" aria-labelledby="contact-supply-scope"><h2 id="contact-supply-scope" className="text-xl font-black text-slate-950 mb-3">Planning, fabrication, packing and delivery</h2><p className="text-slate-700 leading-relaxed">We can plan and design your signage, manufacture it and arrange packing and transport. EXW, FOB, CIF and DDP options are quoted for your destination or port. On-site installation is not included.</p><Link href="/packaging-shipping" className="inline-block mt-4 font-bold text-blue-700 underline underline-offset-4">View packing photos and delivery scope</Link></section>
+
           <section className="mt-24 grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-12 items-start">
             <div className="reveal visible">
               <div className="eyebrow text-blue-600 font-black tracking-[0.3em] uppercase mb-4 text-sm">Before You Write</div>

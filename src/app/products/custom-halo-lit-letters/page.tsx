@@ -3,6 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import PackingDeliverySummary from '@/components/PackingDeliverySummary';
 import LetterProjectEvidence from '@/components/LetterProjectEvidence';
 import WhatsAppCta from '@/components/WhatsAppCta';
 import JsonLd from '@/components/JsonLd';
@@ -68,6 +69,8 @@ export default function HaloLitLettersPage() {
         </section>
 
         <LetterProjectEvidence variant="halo" />
+
+        <PackingDeliverySummary />
 
         {/* 2. Direct answer block */}
         <section className="section bg-slate-100">

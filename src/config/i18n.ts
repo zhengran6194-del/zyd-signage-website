@@ -358,6 +358,7 @@ export const footerCopy: Record<
         links: [
           { label: 'Production Base', href: '/about' },
           { label: 'Case Portfolio', href: '/projects' },
+          { label: 'Packaging & Shipping', href: '/packaging-shipping' },
           { label: 'Resources', href: '/faq' },
           { label: 'Channel Letters Cost Guide', href: '/guides/how-much-do-custom-channel-letters-cost' },
           { label: 'Front-Lit vs Halo-Lit', href: '/guides/front-lit-vs-halo-lit-channel-letters' },

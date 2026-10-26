@@ -12,14 +12,16 @@ import { siteConfig } from "@/config/site";
 // one, otherwise the date of the last commit that touched the route. Update the
 // relevant entry whenever a route's content changes.
 const lastModifiedByRoute: Record<string, string> = {
+  "/packaging-shipping": "2026-10-26",
+  "/case-studies/multi-brand-dealership-pylon-sign": "2026-10-26",
   "/guides/pylon-sign-site-information-checklist": "2026-10-24",
   "": "2026-10-23",
   "/products": "2026-09-17",
-  "/projects": "2026-09-27",
+  "/projects": "2026-10-26",
   "/guides": "2026-10-24",
   "/about": "2026-09-29",
-  "/contact": "2026-10-23",
-  "/faq": "2026-10-07",
+  "/contact": "2026-10-26",
+  "/faq": "2026-10-26",
   "/ja": "2026-10-08",
   "/ja/products": "2026-10-08",
   "/ja/products/architectural-wayfinding-system": "2026-10-08",
@@ -56,8 +58,8 @@ const lastModifiedByRoute: Record<string, string> = {
   "/guides/outdoor-signs-for-cold-climates": "2026-10-23",
   "/guides/importing-custom-signage-from-china": "2026-10-20",
 
-  "/case-studies/dalian-water-plaza-wayfinding-signage": "2026-09-29",
-  "/case-studies/hengli-industrial-park-wayfinding-signage": "2026-09-29",
+  "/case-studies/dalian-water-plaza-wayfinding-signage": "2026-10-26",
+  "/case-studies/hengli-industrial-park-wayfinding-signage": "2026-10-26",
   "/case-studies/pavilion-dalian-mall-festive-installations": "2026-10-07",
   "/case-studies/dongguan-street-dalian-heritage-renewal": "2026-10-12",
 
@@ -163,6 +165,8 @@ const routes: SitemapRoute[] = [
   { path: "/ja/contact", priority: 0.7, languages: englishAndJapanese("/contact") },
   { path: "/faq", priority: 0.8, languages: englishAndJapanese("/faq") },
   { path: "/ja/faq", priority: 0.7, languages: englishAndJapanese("/faq") },
+  { path: "/packaging-shipping", priority: 0.7 },
+  { path: "/case-studies/multi-brand-dealership-pylon-sign", priority: 0.8 },
   { path: "/projects", priority: 0.8, languages: englishAndJapanese("/projects") },
   { path: "/ja/projects", priority: 0.7, languages: englishAndJapanese("/projects") },
   { path: "/guides", priority: 0.8, languages: englishAndJapanese("/guides") },

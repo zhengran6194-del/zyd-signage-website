@@ -30,7 +30,7 @@ const ROUTE_GROUPS = [
 
 // Pages that sit at the top level as a single HTML file rather than in a group:
 // the homepage, the standing pages, and the listing routes.
-const TOP_LEVEL_PAGES = ['/', '/about', '/contact', '/faq', '/products', '/guides', '/projects'];
+const TOP_LEVEL_PAGES = ['/', '/about', '/contact', '/faq', '/products', '/guides', '/projects', '/packaging-shipping'];
 
 /**
  * Language trees to mirror, as path prefixes. The English tree is the root; the

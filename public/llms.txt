@@ -54,6 +54,10 @@ A single file carrying the full text of every page listed here is published at [
 
 - [Full product index](https://www.zydsign.com/products/index.md): The complete product range as one list, for matching a sign type to a project.
 
+## Packaging and delivery
+
+- [Packaging & Shipping](https://www.zydsign.com/packaging-shipping/index.md): Planning, design, fabrication, wooden-crate packing and transport under EXW, FOB, CIF or DDP quotations. On-site installation is not included.
+
 ## Guides
 
 - [What Site Information Do You Need Before Ordering a Pylon Sign?](https://www.zydsign.com/guides/pylon-sign-site-information-checklist/index.md): Prepare a pylon sign site brief with photos, dimensions, utilities, electrical supply, foundation interfaces and delivery access before production.
@@ -87,6 +91,8 @@ A single file carrying the full text of every page listed here is published at [
 - [Full guide index](https://www.zydsign.com/guides/index.md): The complete guide list, showing which buying, material and procurement questions are covered.
 
 ## Case studies
+
+- [Multi-Brand Dealership Pylon: Drawing and Production](https://www.zydsign.com/case-studies/multi-brand-dealership-pylon-sign/index.md): Project drawing and unlit and illuminated workshop views, with project-specific dimensions. Company packing examples are identified separately.
 
 - [Water Fashion Plaza Wayfinding](https://www.zydsign.com/case-studies/dalian-water-plaza-wayfinding-signage/index.md): Wayfinding and architectural signage for a commercial complex in Dalian, China, from the outdoor pylon sign through to the interior floor directories.
 - [Hengli Industrial Park Wayfinding Signage](https://www.zydsign.com/case-studies/hengli-industrial-park-wayfinding-signage/index.md): A coordinated bilingual wayfinding and signage system for a large industrial park, covering gateways, roads, buildings, production zones and functional spaces.

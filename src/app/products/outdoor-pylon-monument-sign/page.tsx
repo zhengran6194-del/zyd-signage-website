@@ -3,6 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import PackingDeliverySummary from '@/components/PackingDeliverySummary';
 import WhatsAppCta from '@/components/WhatsAppCta';
 import JsonLd from '@/components/JsonLd';
 import RelatedCaseStudy from '@/components/RelatedCaseStudy';
@@ -186,6 +187,8 @@ export default function OutdoorPylonMonumentSignPage() {
             </div>
           </div>
         </section>
+
+        <PackingDeliverySummary />
 
         {/* 5. FAQ */}
         <section className="section bg-slate-100 pt-0">

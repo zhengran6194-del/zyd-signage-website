@@ -619,6 +619,12 @@ Chat on WhatsApp
 
 ![Factory Overview](https://www.zydsign.com/assets/images/factory-overview.jpg)
 
+#### Planning, fabrication, packing and delivery
+
+We can plan and design your signage, manufacture it and arrange packing and transport. EXW, FOB, CIF and DDP options are quoted for your destination or port. On-site installation is not included.
+
+[View packing photos and delivery scope](https://www.zydsign.com/packaging-shipping)
+
 Before You Write
 
 #### What to send for a quotation
@@ -768,6 +774,10 @@ Sep 21, 2026
 #### Frequently Asked Questions
 
 Quick answers to common project inquiries.
+
+Do you offer planning, design and shipping? Is installation included?
+
+ZYD can provide signage planning and design, production, packing and transport. EXW, FOB, CIF and DDP options are available by quotation. On-site installation is not included; arrange local installation, foundation works, lifting and electrical connection with your project team.
 
 Can you provide free 3D mockups?
 
@@ -1102,6 +1112,98 @@ Send the site details, artwork, and quantities for a project-specific review.
 
 [DISCUSS YOUR PROJECT](https://www.zydsign.com/contact) [All Products](https://www.zydsign.com/products)
 
+### Custom signage packaging & shipping
+
+Canonical page: https://www.zydsign.com/packaging-shipping
+Markdown mirror: https://www.zydsign.com/packaging-shipping/index.md
+
+Plan, design, manufacture, pack and transport your custom sign package with ZYD. Review the real packing photographs and agree the delivery scope before production.
+
+EXW · FOB · CIF · DDP — quoted for your shipment.
+
+[Discuss your sign and delivery requirements](https://www.zydsign.com/contact)
+
+![ZYD wooden packing crates at the factory ready for handling](https://www.zydsign.com/assets/images/packing-crates-forklift.jpg)
+
+#### Know the supply and site responsibilities
+
+##### ZYD supply scope
+
+- Signage planning and design.
+- Production to the approved drawings and agreed specifications.
+- Packing for the confirmed sign package.
+- Transport arrangements under the quoted delivery term.
+
+##### Installation is not included
+
+Your local project team arranges the installer and the site works, including foundations, lifting and electrical connection where required. Agree any required templates, interface information or drawings in the supply quotation. Fabrication drawings do not replace local engineering or approvals.
+
+#### Real packing and dispatch photographs
+
+These are company packing examples, rather than photographs of every product or a guarantee that all orders use an identical crate. Specify your sign dimensions, components and delivery conditions so the appropriate packing can be agreed.
+
+![Closed reinforced ZYD wooden crate on a raised base in the workshop](https://www.zydsign.com/assets/images/packing-wooden-crate-workshop.jpg)
+
+*Closed wooden crateWorkshop photograph showing a reinforced wooden crate, lid catches and a raised base. Crate dimensions are matched to the supplied sign package.*
+
+![Tall and low-profile wooden signage crates beside a forklift at the factory](https://www.zydsign.com/assets/images/packing-crates-forklift.jpg)
+
+*Different crate formatsTall and low-profile crates alongside handling equipment. The packing arrangement depends on sign geometry and the planned shipment.*
+
+![ZYD branded wooden crates loaded on a dispatch truck outside the factory](https://www.zydsign.com/assets/images/packing-crates-truck-dispatch.jpg)
+
+*Factory dispatchBranded crates loaded on a truck at the factory. Confirm the onward transport and delivery point in the quotation.*
+
+![Wooden signage crates loaded into a side-opening cargo vehicle](https://www.zydsign.com/assets/images/packing-crates-loading-vehicle.jpg)
+
+*Loading arrangementCrated cargo in a loading vehicle. Access, cargo dimensions and handling arrangements should be reviewed before dispatch.*
+
+#### Prepare a comparable delivery quotation
+
+Provide the sign type, dimensions, quantity, destination address or port and preferred delivery term. State the required arrival date, site access and unloading arrangements. Ask for fabrication, packing and transport lines to be identified clearly.
+
+##### EXW
+
+Confirm the named place or port, included charges and handover responsibilities in the written quotation.
+
+##### FOB
+
+Confirm the named place or port, included charges and handover responsibilities in the written quotation.
+
+##### CIF
+
+Confirm the named place or port, included charges and handover responsibilities in the written quotation.
+
+##### DDP
+
+Confirm the named place or port, included charges and handover responsibilities in the written quotation.
+
+Request an alternative delivery option if you want to compare scopes. Shipping availability and timing are confirmed for the actual cargo and destination.
+
+#### Frequently asked questions
+
+##### Which services can ZYD provide?
+
+ZYD can provide signage planning and design, production, packing and transport under an agreed quotation. On-site installation is not included.
+
+##### Which delivery terms are available?
+
+EXW, FOB, CIF and DDP options are available by quotation. Confirm the applicable term, named place or port, cargo details, included charges and responsibilities before ordering.
+
+##### Does a DDP quotation include sign installation?
+
+No. On-site sign installation is excluded from ZYD supply. The local project team arranges installation, foundation works, lifting and electrical connection as applicable.
+
+##### Can these packing photographs be used as the packing specification?
+
+They show examples of ZYD packing and dispatch. The crate size, supports, protection, supplied accessories and shipment arrangement for your order are confirmed against the approved sign package.
+
+#### Start with your sign brief and destination
+
+Send the artwork, approximate dimensions, quantity and destination. Mark any details that still need confirmation.
+
+[Get a pylon sign quote](https://www.zydsign.com/contact?product=pylon) [Get a channel letter quote](https://www.zydsign.com/contact?product=letters) [View the dealership pylon production case](https://www.zydsign.com/case-studies/multi-brand-dealership-pylon-sign)
+
 ### Signage Solutions
 
 Canonical page: https://www.zydsign.com/products
@@ -1387,6 +1489,18 @@ A wayfinding system and a themed installation programme for the renewal of a hun
 View case study →
 
 <https://www.zydsign.com/case-studies/dongguan-street-dalian-heritage-renewal>
+
+![MULTI-BRAND DEALERSHIP PYLON | DRAWING AND PRODUCTION](https://www.zydsign.com/assets/images/pylon-dealership-lighting-check.jpg)
+
+Pylon Production
+
+##### MULTI-BRAND DEALERSHIP PYLON | DRAWING AND PRODUCTION
+
+A dimensioned multi-brand directory pylon shown in unlit and illuminated workshop views, with the design, packing and delivery scope explained.
+
+View case study →
+
+<https://www.zydsign.com/case-studies/multi-brand-dealership-pylon-sign>
 
 Your Project Next?
 
@@ -1798,7 +1912,7 @@ Send a wall photo, substrate and installation height. Confirm individual fixing 
 
 ##### Power and supplied parts
 
-Confirm destination supply voltage, power supply position and the specified LED circuit with the project team. Ask whether drivers, wiring information, mounting templates and fixings are included; local electrical connection remains a separately agreed responsibility.
+Confirm destination supply voltage, power supply position and the specified LED circuit with the project team. Ask whether drivers, wiring information, mounting templates and fixings are included; on-site installation and local electrical connection are not included in ZYD supply.
 
 ##### Start with what you have
 
@@ -1829,6 +1943,18 @@ These photographs show custom letter and logo sets during workshop preparation a
 Overall width, letter height, return depth, quantity, finish and mounting details are confirmed on the project drawing. These photographs are construction references, not a standard-size catalogue. Send approximate dimensions if the final size is still being decided.
 
 [Get a quote for your design](https://www.zydsign.com/contact?product=letters) [What goes into a channel letter quote?](https://www.zydsign.com/guides/how-much-do-custom-channel-letters-cost)
+
+![Closed ZYD wooden packing crate with external reinforcement and a raised base in the workshop](https://www.zydsign.com/assets/images/packing-wooden-crate-workshop.jpg)
+
+From design to dispatch
+
+#### Planning, fabrication, packing and shipping
+
+ZYD can plan and design the signage, manufacture the approved sign package, and arrange packing and transport. EXW, FOB, CIF and DDP options are available by quotation for the agreed destination or port.
+
+On-site installation is not included. Arrange the local installer, foundation works, lifting and electrical connection with your project team.
+
+[View packing photos and delivery scope](https://www.zydsign.com/packaging-shipping)
 
 Front-lit channel letters: the short answer
 
@@ -1984,6 +2110,18 @@ These photographs show custom dimensional lettering and logo elements during wor
 Overall width, letter height, return depth, quantity, finish and mounting details are confirmed on the project drawing. These photographs are construction references, not a standard-size catalogue. Send approximate dimensions if the final size is still being decided.
 
 [Get a quote for your design](https://www.zydsign.com/contact?product=halo) [What goes into a channel letter quote?](https://www.zydsign.com/guides/how-much-do-custom-channel-letters-cost)
+
+![Closed ZYD wooden packing crate with external reinforcement and a raised base in the workshop](https://www.zydsign.com/assets/images/packing-wooden-crate-workshop.jpg)
+
+From design to dispatch
+
+#### Planning, fabrication, packing and shipping
+
+ZYD can plan and design the signage, manufacture the approved sign package, and arrange packing and transport. EXW, FOB, CIF and DDP options are available by quotation for the agreed destination or port.
+
+On-site installation is not included. Arrange the local installer, foundation works, lifting and electrical connection with your project team.
+
+[View packing photos and delivery scope](https://www.zydsign.com/packaging-shipping)
 
 Halo-lit letters: the short answer
 
@@ -2643,6 +2781,8 @@ These photographs show the same automotive directory unlit and during a workshop
 
 *Illuminated workshop view*
 
+[Read the dealership pylon drawing and production case](https://www.zydsign.com/case-studies/multi-brand-dealership-pylon-sign)
+
 ##### Project drawing example
 
 Dimensions shown on the supplied drawing for this example. Your sign dimensions, panel layout, electrical supply and mounting interface are specified for your own site.
@@ -2693,7 +2833,7 @@ Before you request a quote
 
 #### Plan the pylon from structure to delivery
 
-A freestanding sign needs a coordinated supply and site scope. Confirm the structure, transport and installation responsibilities in writing before production.
+ZYD can plan, design, fabricate, pack and transport the sign. On-site installation is not included. Confirm the supply scope and local site responsibilities in writing before production.
 
 ##### Structure and site inputs
 
@@ -2709,7 +2849,7 @@ Agree the section joints, assembly sequence, connection details, cable routes an
 
 ##### Lighting and supply boundary
 
-Specify illuminated panels or letters, power location, finish and access for servicing. Ask the quote to identify the frame, cladding, faces, lighting, drivers and accessories included; clarify foundations, ground works, site installation and electrical work separately.
+Specify illuminated panels or letters, power location, finish and access for servicing. Ask the quote to identify the frame, cladding, faces, lighting, drivers and accessories included; foundations, ground works, site installation and electrical connection are excluded from ZYD supply and arranged locally.
 
 ##### Start with what you have
 
@@ -2784,6 +2924,18 @@ DDP Shipping by Quotation
 MOQ: 1
 
 Lead time confirmed per project
+
+![Closed ZYD wooden packing crate with external reinforcement and a raised base in the workshop](https://www.zydsign.com/assets/images/packing-wooden-crate-workshop.jpg)
+
+From design to dispatch
+
+#### Planning, fabrication, packing and shipping
+
+ZYD can plan and design the signage, manufacture the approved sign package, and arrange packing and transport. EXW, FOB, CIF and DDP options are available by quotation for the agreed destination or port.
+
+On-site installation is not included. Arrange the local installer, foundation works, lifting and electrical connection with your project team.
+
+[View packing photos and delivery scope](https://www.zydsign.com/packaging-shipping)
 
 #### Frequently asked questions
 
@@ -8045,11 +8197,11 @@ Treating furniture as part of the system is what stops a scheme from fragmenting
 
 *Segregated recycling station units with green recycling symbols in a Water Fashion Plaza walkway*
 
-#### Production, installation and quality control
+#### Production and supply scope
 
 The fabricated elements are built from stainless steel and acrylic. The production route covers laser cutting, seamless welding, powder coating and illuminated fabrication, which is what allows the outdoor letters, the pylon and the illuminated panels to be built to the same finish standard as the interior signs.
 
-The service scope runs end to end rather than stopping at handover of the goods: design development, production, on-site installation and commissioning, followed by periodic maintenance. Work of this kind is manufactured at ZYD Signage in Dalian, a factory-direct operation established in 2006, and shipped to project sites.
+ZYD provides planning and design, production, packing and transport. On-site installation is not included. Work is manufactured at ZYD Signage in Dalian, a factory-direct operation established in 2006; buyers arrange the local installer and site works.
 
 #### Frequently asked questions
 
@@ -8071,7 +8223,7 @@ A driver meets the entrance name, the plaza logo, the height restriction, the sp
 
 ##### Can ZYD deliver a comparable wayfinding package for another mall?
 
-Yes. ZYD Signage is a factory-direct signage manufacturer established in 2006, working from a production base in Dalian, China, on wayfinding, architectural signage and illuminated branding for commercial, hospitality, healthcare and industrial projects. The scope covers design development, production, installation and commissioning, with DDP shipping for export projects.
+Yes. ZYD Signage is a factory-direct signage manufacturer established in 2006, working from a production base in Dalian, China, on wayfinding, architectural signage and illuminated branding for commercial, hospitality, healthcare and industrial projects. The supply scope covers planning and design, production, packing and transport. EXW, FOB, CIF and DDP options are quoted for the agreed destination or port. On-site installation is not included.
 
 [Architectural Wayfinding Systems](https://www.zydsign.com/products/architectural-wayfinding-system) [Complete Signage Systems](https://www.zydsign.com/products/complete-signage-system) [Mall wayfinding solution](https://www.zydsign.com/guides/mall-wayfinding-signage) [How to choose the right sign](https://www.zydsign.com/guides/how-to-choose-the-right-sign-for-your-business) [All Case Studies](https://www.zydsign.com/projects) [Start a Project Brief](https://www.zydsign.com/contact) Request a 3D Concept
 
@@ -8354,7 +8506,7 @@ For illuminated elements, waterproof and dust-resistant LED modules are used wit
 
 The delivery route starts with a full-site survey and graded wayfinding planning. The information structure is then translated into factory production, followed by coordinated installation across the park areas.
 
-After installation, the service scope includes after-sales maintenance. This keeps the system supported beyond the initial production and site installation stages.
+For new signage orders, ZYD can provide planning and design, production, packing and transport. On-site installation is not included; buyers arrange the local installer and site works. Confirm any after-sales support requirements in the quotation.
 
 #### Frequently asked questions
 
@@ -8389,6 +8541,69 @@ Delivered by
 ZYD Signage — Dalian Zhiyudao Signage & Tech. Co., Ltd.
 
 Factory-direct wayfinding, architectural signage and illuminated branding for industrial, commercial and institutional projects.
+
+### Multi-brand dealership pylon sign: drawing and workshop checks
+
+Canonical page: https://www.zydsign.com/case-studies/multi-brand-dealership-pylon-sign
+Markdown mirror: https://www.zydsign.com/case-studies/multi-brand-dealership-pylon-sign/index.md
+
+A tall directory brings the dealership identity and several automotive brands into one freestanding sign. The available project record shows its dimensioned drawing and workshop appearance before and during illumination.
+
+By Aaron, ZYD Signage · Published October 26, 2026
+
+#### Project at a glance
+
+Dimensions describe this project drawing. New projects are sized to their own artwork, site and approved drawings. This record does not document final site installation or commissioning.
+
+#### Organise several brands in one directory
+
+The dealership name occupies the header, followed by individual automotive brand panels. The lower graphic panel completes the composition. At the planning stage, panel order, logo proportions, face count and overall dimensions need to be settled together.
+
+![Dealership directory pylon in an unlit workshop view](https://www.zydsign.com/assets/images/pylon-dealership-unlit.jpg)
+
+*Unlit workshop view: separate brand faces and the assembled cabinet.*
+
+![Dealership directory pylon illuminated during a workshop check](https://www.zydsign.com/assets/images/pylon-dealership-lighting-check.jpg)
+
+*Workshop lighting view: the brand faces and lower graphics are illuminated.*
+
+#### Develop the front, side and back elevations
+
+The project drawing identifies the cabinet envelope, brand panel layout, finish references and lighting notes. These details support design approval and fabrication. The foundation, anchoring and electrical interface still need coordination with the local project team; this elevation is not a universal construction detail.
+
+![Dealership pylon front, side and back elevations with 4000 mm height, 1500 mm width and 200 mm depth](https://www.zydsign.com/assets/images/pylon-dealership-elevation-drawing.png)
+
+*Project-specific design reference. Material, electrical and colour notes apply to this drawing; final approved documents govern production.*
+
+#### Agree the supply and delivery boundary
+
+ZYD can provide planning and design, production, packing and transport. EXW, FOB, CIF and DDP options can be quoted for the agreed shipment. The order should identify the sign components, accessories, drawings, packing and delivery scope being purchased.
+
+On-site installation is not included. The buyer arranges local site works, foundation construction, lifting and electrical connection as applicable.
+
+Before releasing interface-dependent parts, coordinate the base plate, anchors, cable entry and service access with the local installer and responsible engineer.
+
+#### Packing and dispatch capability
+
+The packing examples below show ZYD company packing and dispatch capability. They are not presented as the shipment record for this dealership pylon. The actual crate layout and shipment arrangement are agreed for each order.
+
+![Closed ZYD wooden packing crate with external reinforcement and a raised base in the workshop](https://www.zydsign.com/assets/images/packing-wooden-crate-workshop.jpg)
+
+From design to dispatch
+
+#### Planning, fabrication, packing and shipping
+
+ZYD can plan and design the signage, manufacture the approved sign package, and arrange packing and transport. EXW, FOB, CIF and DDP options are available by quotation for the agreed destination or port.
+
+On-site installation is not included. Arrange the local installer, foundation works, lifting and electrical connection with your project team.
+
+[View packing photos and delivery scope](https://www.zydsign.com/packaging-shipping)
+
+#### Planning a multi-brand pylon?
+
+Send your brand artwork, panel count, approximate dimensions, site photographs and delivery destination. Include the installation information already confirmed by your local team.
+
+[Get a custom pylon sign quote](https://www.zydsign.com/contact?product=pylon) [Explore pylon configurations](https://www.zydsign.com/products/outdoor-pylon-monument-sign) [Prepare the site brief](https://www.zydsign.com/guides/pylon-sign-site-information-checklist)
 
 ### Pavilion Dalian | Festive Installations Driving Footfall
 

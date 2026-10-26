@@ -176,7 +176,7 @@ export const homePageLanguages: LanguageAlternates = {
  * keep the tree list in that script in step with the trees mirrored here.
  */
 const MARKDOWN_MIRROR_PREFIXES = ['/products/', '/guides/', '/case-studies/'];
-const MARKDOWN_MIRROR_PATHS = ['/', '/about', '/contact', '/faq', '/products', '/guides', '/projects'];
+const MARKDOWN_MIRROR_PATHS = ['/', '/about', '/contact', '/faq', '/products', '/guides', '/projects', '/packaging-shipping'];
 
 /**
  * A translated page mirrors wherever its English counterpart does, so the

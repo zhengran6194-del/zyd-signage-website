@@ -173,7 +173,7 @@ const sections: Section[] = [
     heading: 'Survey, production and site delivery',
     paragraphs: [
       'The delivery route starts with a full-site survey and graded wayfinding planning. The information structure is then translated into factory production, followed by coordinated installation across the park areas.',
-      'After installation, the service scope includes after-sales maintenance. This keeps the system supported beyond the initial production and site installation stages.',
+      'For new signage orders, ZYD can provide planning and design, production, packing and transport. On-site installation is not included; buyers arrange the local installer and site works. Confirm any after-sales support requirements in the quotation.',
     ],
   },
 ];

@@ -27,6 +27,7 @@ export default function PylonProjectEvidence() {
             <figcaption className="px-5 py-4 font-bold text-slate-900">{photo.title}</figcaption>
           </figure>)}
         </div>
+        <p className="mt-6"><Link href="/case-studies/multi-brand-dealership-pylon-sign" className="font-bold text-blue-700 underline underline-offset-4">Read the dealership pylon drawing and production case</Link></p>
         <div className="mt-6 rounded-2xl bg-slate-950 text-white p-6 sm:p-8">
           <h3 className="text-xl font-black mb-4">Project drawing example</h3>
           <dl className="grid sm:grid-cols-3 gap-5">

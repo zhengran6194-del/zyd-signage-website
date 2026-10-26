@@ -103,7 +103,7 @@ const projectFacts: Array<{ label: string; value: string }> = [
   },
   {
     label: 'Services',
-    value: 'Design development, production, on-site installation and commissioning',
+    value: 'Design development, production and supply',
   },
 ];
 
@@ -171,10 +171,10 @@ const sections: Section[] = [
     images: [IMAGES.recycling],
   },
   {
-    heading: 'Production, installation and quality control',
+    heading: 'Production and supply scope',
     paragraphs: [
       'The fabricated elements are built from stainless steel and acrylic. The production route covers laser cutting, seamless welding, powder coating and illuminated fabrication, which is what allows the outdoor letters, the pylon and the illuminated panels to be built to the same finish standard as the interior signs.',
-      'The service scope runs end to end rather than stopping at handover of the goods: design development, production, on-site installation and commissioning, followed by periodic maintenance. Work of this kind is manufactured at ZYD Signage in Dalian, a factory-direct operation established in 2006, and shipped to project sites.',
+      'ZYD provides planning and design, production, packing and transport. On-site installation is not included. Work is manufactured at ZYD Signage in Dalian, a factory-direct operation established in 2006; buyers arrange the local installer and site works.',
     ],
   },
 ];
@@ -203,7 +203,7 @@ const faqs: Array<{ question: string; answer: string }> = [
   {
     question: 'Can ZYD deliver a comparable wayfinding package for another mall?',
     answer:
-      'Yes. ZYD Signage is a factory-direct signage manufacturer established in 2006, working from a production base in Dalian, China, on wayfinding, architectural signage and illuminated branding for commercial, hospitality, healthcare and industrial projects. The scope covers design development, production, installation and commissioning, with DDP shipping for export projects.',
+      'Yes. ZYD Signage is a factory-direct signage manufacturer established in 2006, working from a production base in Dalian, China, on wayfinding, architectural signage and illuminated branding for commercial, hospitality, healthcare and industrial projects. The supply scope covers planning and design, production, packing and transport. EXW, FOB, CIF and DDP options are quoted for the agreed destination or port. On-site installation is not included.',
   },
 ];
 

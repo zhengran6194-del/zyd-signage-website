@@ -57,6 +57,7 @@ const guides = [
 ];
 
 const faqs = [
+  { q: 'Do you offer planning, design and shipping? Is installation included?', a: 'ZYD can provide signage planning and design, production, packing and transport. EXW, FOB, CIF and DDP options are available by quotation. On-site installation is not included; arrange local installation, foundation works, lifting and electrical connection with your project team.' },
   { q: 'Can you provide free 3D mockups?', a: 'Our engineering team can provide a 3D mockup for a project inquiry when the brief contains enough information to prepare one. The scope and format are confirmed with the project before production.' },
   { q: 'What file formats do I need to provide for my logo?', a: 'We prefer vector files such as .AI, .EPS, .SVG, or high-resolution .PDF. These ensure the highest precision for CNC cutting and fabrication.' },
   { q: 'What is the minimum order quantity for custom signage?', a: 'The minimum order quantity (MOQ) is 1 piece for the listed custom signage products. Your quotation can cover one sign or a larger project quantity, depending on the brief.' },
