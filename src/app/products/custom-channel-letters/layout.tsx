@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { buildPageMetadata, ogImages } from "@/config/site";
+import { buildPageMetadata } from "@/config/site";
 import ProductJsonLd from "@/components/ProductJsonLd";
 
 // No `languages` here on purpose: this product has no Japanese page, so an
@@ -13,7 +13,7 @@ export const metadata: Metadata = buildPageMetadata({
   title,
   description,
   path: "/products/custom-channel-letters",
-  image: ogImages.channelLetters,
+  image: { path: "/assets/images/channel-letters-white-lighting-check.jpg", width: 1706, height: 1279, alt: "White front-lit channel letters illuminated on a workshop bench, with red illuminated letters behind" },
 });
 
 export default function Layout({ children }: Readonly<{ children: React.ReactNode }>) {
@@ -23,7 +23,7 @@ export default function Layout({ children }: Readonly<{ children: React.ReactNod
         name={title}
         description={description}
         path="/products/custom-channel-letters"
-         image="/assets/images/cat-illuminated.jpg"
+         image="/assets/images/channel-letters-white-lighting-check.jpg"
          category="Illuminated channel letters"
          material="Acrylic, formed metal and LED modules"
        />

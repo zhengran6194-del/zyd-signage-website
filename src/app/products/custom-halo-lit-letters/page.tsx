@@ -3,6 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import LetterProjectEvidence from '@/components/LetterProjectEvidence';
 import WhatsAppCta from '@/components/WhatsAppCta';
 import JsonLd from '@/components/JsonLd';
 import RelatedCaseStudy from '@/components/RelatedCaseStudy';
@@ -48,22 +49,25 @@ export default function HaloLitLettersPage() {
               <p className="text-lg text-slate-300 mb-8 max-w-xl leading-relaxed font-medium">
                 Rear-glow illumination for architectural branding, fabricated as dimensional metal letters with LED modules.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row sm:flex-wrap gap-4">
                 <Link
                   href="/contact?product=halo"
-                  className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide"
+                  className="button button-green-base px-6 py-4 rounded-full text-white font-black text-sm tracking-wide text-center"
                 >
                   GET A HALO-LIT LETTER QUOTE
                 </Link>
-                <WhatsAppCta label="Check Feasibility" message="Hi Aaron, can you check feasibility for custom halo-lit metal letters?" brief={{ product: 'custom halo-lit metal letters', items: ['Vector artwork and letter size', 'Quantity and overall run', 'Wall material and mounting photo', 'Finish, lighting direction and ship-to country'] }} />
+                <WhatsAppCta label="Check Feasibility" message="Hi Aaron, can you check feasibility for custom halo-lit metal letters?" className="inline-flex items-center justify-center rounded-full border border-blue-300 px-6 py-4 text-sm font-black text-white hover:bg-white/10" />
               </div>
             </div>
             <div className="reveal visible relative">
               <div className="absolute -inset-4 bg-blue-500/20 blur-3xl rounded-full"></div>
-              <Image src="/assets/images/cat-illuminated.jpg" alt="Halo-Lit Signage" width={1440} height={1080} priority sizes="(min-width: 1024px) 50vw, 100vw" className="relative rounded-[2.5rem] shadow-2xl border-4 border-white/5 object-cover w-full h-[420px] lg:h-[500px]" />
+              <Image src="/assets/images/halo-letters-infinite-workshop.jpg" alt="Custom dark-faced lettering and shaped logo with warm rear glow during a workshop lighting check" width={1706} height={1279} priority sizes="(min-width: 1024px) 50vw, 100vw" className="relative rounded-[2rem] shadow-2xl border border-white/10 h-auto w-full" />
+              <p className="relative mt-4 text-sm text-slate-400">Workshop lighting check. All dimensions are customised to the approved project drawing.</p>
             </div>
           </div>
         </section>
+
+        <LetterProjectEvidence variant="halo" />
 
         {/* 2. Direct answer block */}
         <section className="section bg-slate-100">
@@ -204,7 +208,7 @@ export default function HaloLitLettersPage() {
             <h2 className="text-3xl font-black uppercase tracking-tight text-slate-900 mb-4">Planning rear-glow letters?</h2>
             <p className="text-slate-500 font-medium mb-8">Send the artwork, letter height, quantity, wall material, and finish direction for a project-specific review.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact?product=halo" className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide">GET A HALO-LIT LETTER QUOTE</Link>
+              <Link href="/contact?product=halo" className="button button-green-base px-6 py-4 rounded-full text-white font-black text-sm tracking-wide text-center">GET A HALO-LIT LETTER QUOTE</Link>
               <Link href="/products" className="px-10 py-5 rounded-full border-2 border-slate-300 text-slate-700 font-black uppercase tracking-widest text-sm hover:border-blue-600 hover:text-blue-700 transition-all">All Products</Link>
             </div>
             <RelatedCaseStudy href="/case-studies/dalian-water-plaza-wayfinding-signage" name="Water Fashion Plaza, Dalian" context="illuminated facade letters and a tenant brand wall in stainless steel and acrylic." />

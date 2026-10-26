@@ -101,6 +101,39 @@ const guide: GuideArticleData = {
       ]
     },
     {
+      "heading": "Workshop examples: define the complete letter and logo set",
+      "paragraphs": [
+        "These workshop photographs show why a quote needs more than a letter count. All dimensions are custom. The examples below explain what to specify; they are not priced orders or standard-size products."
+      ],
+      "image": {
+        "src": "/assets/images/channel-letters-white-lighting-check.jpg",
+        "alt": "White front-lit lettering and red illuminated letters during a workshop lighting check",
+        "width": 1706,
+        "height": 1279,
+        "caption": "Workshop lighting check of custom front-lit lettering. Installed dimensions and final supply scope are confirmed on the project drawing."
+      },
+      "subsections": [
+        {
+          "heading": "Front-lit lettering in more than one face colour",
+          "paragraphs": [
+            "Include the complete wording, every colour, the individual letter height, overall width, depth and number of sets. Ask the quote to identify the supplied power units, wiring information, mounting accessories and packing rather than treating them as assumed inclusions."
+          ]
+        },
+        {
+          "heading": "Halo-lit lettering with shaped graphics",
+          "paragraphs": [
+            "Include logo shapes, roofline details, lines and other illuminated graphics as well as the letters. Specify the face appearance and preferred rear glow, and share a photograph of the real wall so the mounting distance and light effect can be reviewed."
+          ]
+        },
+        {
+          "heading": "A separate illuminated logo beside a letter set",
+          "paragraphs": [
+            "A large shaped logo is a separate fabrication item. State its dimensions and lighting effect alongside the wording. Ask for the logo, letter set and separately charged accessories to be identifiable in the quotation."
+          ]
+        }
+      ]
+    },
+    {
       "heading": "Front-lit vs. halo-lit: compare the same specification",
       "paragraphs": [
         "Front-lit letters illuminate the face; halo-lit letters direct light onto the background. Neither label alone establishes which quotation will be lower. Compare identical artwork, dimensions, material, finish, supplied components and delivery scope before deciding.",
@@ -110,7 +143,14 @@ const guide: GuideArticleData = {
         "State whether power supplies and mounting hardware are included.",
         "Confirm the wiring route and which connections remain for the installer.",
         "Ask how the components can be accessed for maintenance."
-      ]
+      ],
+      "image": {
+        "src": "/assets/images/halo-letters-infinite-workshop.jpg",
+        "alt": "Dark-faced letters and shaped logo showing warm rear illumination in the workshop",
+        "width": 1706,
+        "height": 1279,
+        "caption": "Halo-lit lettering and logo elements on a temporary workshop backing. The halo on the final wall can differ with the mounting surface and standoff."
+      }
     },
     {
       "heading": "Why a price per letter can be misleading",
@@ -262,7 +302,8 @@ const guide: GuideArticleData = {
   "whatsappLabel": "Discuss Your Letter Quote",
   "whatsappMessage": "Hi Aaron, I would like an itemised channel letter quote. I can share artwork, dimensions, quantity, lighting preference, wall photos and delivery destination.",
   "asideTitle": "Get a quote for your sign",
-  "asideText": "Send artwork, dimensions, quantity, lighting preference, a wall photo and destination. Ask us to separate fabrication, supplied accessories, packing and freight, and to identify site work outside the supply scope."
+  "asideText": "Send artwork, dimensions, quantity, lighting preference, a wall photo and destination. Ask us to separate fabrication, supplied accessories, packing and freight, and to identify site work outside the supply scope.",
+  "showContents": true
 };
 
 export default function ChannelLettersCostGuide() {

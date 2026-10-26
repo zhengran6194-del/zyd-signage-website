@@ -63,8 +63,8 @@ const lastModifiedByRoute: Record<string, string> = {
 
   "/products/architectural-wayfinding-system": "2026-10-07",
   "/products/complete-signage-system": "2026-10-07",
-  "/products/custom-channel-letters": "2026-10-23",
-  "/products/custom-halo-lit-letters": "2026-10-23",
+  "/products/custom-channel-letters": "2026-10-26",
+  "/products/custom-halo-lit-letters": "2026-10-26",
   "/products/custom-landscape-furniture": "2026-10-07",
   "/products/custom-led-neon-sign": "2026-10-07",
   "/products/medical-care-signage": "2026-10-07",

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { buildPageMetadata, ogImages } from "@/config/site";
+import { buildPageMetadata } from "@/config/site";
 import ProductJsonLd from "@/components/ProductJsonLd";
 
 // The wording stays on rear-glow: "channel letters" belongs to the front-lit
@@ -11,7 +11,7 @@ export const metadata: Metadata = buildPageMetadata({
   title: "Custom Halo-Lit Metal Letters | Aluminum & Steel",
   description,
   path: "/products/custom-halo-lit-letters",
-  image: ogImages.channelLetters,
+  image: { path: "/assets/images/halo-letters-infinite-workshop.jpg", width: 1706, height: 1279, alt: "Custom dark-faced lettering and shaped logo with warm rear glow during a workshop lighting check" },
   languages: { en: "/products/custom-halo-lit-letters", ja: "/ja/products/custom-halo-lit-letters" },
 });
 
@@ -22,7 +22,7 @@ export default function Layout({ children }: Readonly<{ children: React.ReactNod
         name="Custom Halo-Lit Metal Letters | Aluminum & Steel"
         description={description}
         path="/products/custom-halo-lit-letters"
-         image="/assets/images/cat-illuminated.jpg"
+         image="/assets/images/halo-letters-infinite-workshop.jpg"
          category="Halo-lit metal letters"
          material="Aluminum, stainless steel and coated sheet"
        />
