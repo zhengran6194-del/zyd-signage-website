@@ -62,6 +62,16 @@ const nextConfig: NextConfig = {
 
   async headers() {
     return [
+      // Canonical URLs for Markdown mirrors: keep the files crawlable for
+      // text consumers while identifying the corresponding public HTML page.
+      {
+        source: "/:path(.+)/index.md",
+        headers: [{ key: "Link", value: '<https://www.zydsign.com/:path>; rel="canonical"' }],
+      },
+      {
+        source: "/index.md",
+        headers: [{ key: "Link", value: '<https://www.zydsign.com/>; rel="canonical"' }],
+      },
       {
         // Images and videos live in public/assets and are served straight from
         // the CDN; without this they fall back to must-revalidate, so every
