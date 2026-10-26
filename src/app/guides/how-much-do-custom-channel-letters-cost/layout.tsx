@@ -16,7 +16,7 @@ export default function Layout({ children }: Readonly<{ children: React.ReactNod
       { "@type": "ListItem", position: 2, name: "Guides", item: `${siteConfig.url}/guides` },
       { "@type": "ListItem", position: 3, name: title, item: url },
     ] },
-    { "@type": "Article", "@id": `${url}#article`, headline: title, description, mainEntityOfPage: url, author: { "@type": "Person", name: "Aaron" }, publisher: { "@id": `${siteConfig.url}/#organization` }, datePublished: "2026-09-07", dateModified: "2026-10-23" },
+    { "@type": "Article", "@id": `${url}#article`, headline: title, description, mainEntityOfPage: url, author: { "@type": "Person", name: "Aaron" }, publisher: { "@id": `${siteConfig.url}/#organization` }, datePublished: "2026-09-07", dateModified: "2026-10-26" },
   ] };
   return <><JsonLd data={data} />{children}</>;
 }

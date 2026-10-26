@@ -2591,20 +2591,73 @@ Related case study: [Water Fashion Plaza, Dalian](https://www.zydsign.com/case-s
 Canonical page: https://www.zydsign.com/products/outdoor-pylon-monument-sign
 Markdown mirror: https://www.zydsign.com/products/outdoor-pylon-monument-sign/index.md
 
-Landmark-scale entry identification for corporate campuses, dealerships and retail destinations.
+Custom illuminated pylon signs, multi-tenant directories and freestanding entrance signs for dealerships, shopping destinations and commercial sites. Define the size, display faces, lighting and supplied parts around your project.
 
 [SUBMIT A PYLON SIGN BRIEF](https://www.zydsign.com/contact?product=pylon) Check Feasibility
 
-What to send for an outdoor pylon or monument sign
+![Installed Water Fashion Plaza multi-tenant pylon sign at the commercial entrance in Dalian](https://www.zydsign.com/assets/images/pylon-water-plaza-installed.jpg)
 
-- • Site plan and approach context
-- • Approximate dimensions and quantity
-- • Artwork, finish and lighting direction
-- • Foundation/mounting/site photos and ship-to country
+Water Fashion Plaza, Dalian: installed entrance pylon and tenant directory. [Explore the project](https://www.zydsign.com/case-studies/dalian-water-plaza-wayfinding-signage)
 
-Send what you have: artwork, approximate dimensions, quantity, finish or lighting direction, mounting/site photos, and ship-to country.
+From drawing to illuminated sign
 
-![Outdoor Pylon Monument Sign](https://www.zydsign.com/assets/images/cat-outdoor.webp)
+#### Multi-brand dealership pylon: workshop views
+
+These photographs show the same automotive directory unlit and during a workshop lighting check. Separate brand panels organise the display, while the header and lower graphics complete the identity. This is a manufacturing reference, rather than an installed-site photograph.
+
+![Automotive multi-brand pylon sign lying horizontally in the workshop before illumination](https://www.zydsign.com/assets/images/pylon-dealership-unlit.jpg)
+
+*Unlit workshop view*
+
+![The same automotive multi-brand pylon sign during an illuminated workshop check](https://www.zydsign.com/assets/images/pylon-dealership-lighting-check.jpg)
+
+*Illuminated workshop view*
+
+##### Project drawing example
+
+Dimensions shown on the supplied drawing for this example. Your sign dimensions, panel layout, electrical supply and mounting interface are specified for your own site.
+
+View the project elevation drawing
+
+![Project elevation drawing showing the dealership pylon at 4000 mm high, 1500 mm wide and 200 mm deep](https://www.zydsign.com/assets/images/pylon-dealership-elevation-drawing.png)
+
+*Project-specific front, side and back elevations. The component and electrical notes apply to this drawing, not to every pylon sign. Foundation and local approval details require separate coordination.*
+
+[Open the full-size drawing](https://www.zydsign.com/assets/images/pylon-dealership-elevation-drawing.png)
+
+Project photographs
+
+#### Pylon and totem signs in different settings
+
+Compare tenant directories, entrance identification and directional totems. Each photograph shows a particular configuration; dimensions and materials are confirmed separately for a new quotation.
+
+![Installed retail pylon sign with individual tenant panels and a metal-clad base](https://www.zydsign.com/assets/images/pylon-retail-tenant-directory.jpg)
+
+*Retail tenant directoryA freestanding directory with stacked tenant faces and a separate site identity at the top.*
+
+![Two-sided sports park pylon with projecting graphic panels and visible base plates during installation](https://www.zydsign.com/assets/images/pylon-sports-park-directory.jpg)
+
+*Sports park and parkingTwo display faces combine activity graphics and parking directions. The installation photograph also shows the base interface.*
+
+![Victoria Mansion entrance pylon with raised lettering and decorative metal detailing](https://www.zydsign.com/assets/images/pylon-residential-entry.jpg)
+
+*Residential entrance identityRaised lettering, decorative side details and a display panel give this entrance sign a different visual hierarchy.*
+
+![Parking totem illuminated in the workshop with a glowing P symbol and warm edge lighting](https://www.zydsign.com/assets/images/pylon-parking-lighting-check.jpg)
+
+*Illuminated parking totemA workshop lighting check shows illuminated parking graphics and a warm perimeter detail before site installation.*
+
+![Red and white freestanding logistics sign with directions for trucks, warehouse and office entrance](https://www.zydsign.com/assets/images/pylon-logistics-directional.jpg)
+
+*Logistics site directionsSeparate truck, warehouse and office directions make the sign useful at a decision point, beyond displaying a company name.*
+
+Prepare your quotation
+
+##### Which configuration fits your site?
+
+Send the location, approximate height and width, number of faces, artwork and lighting preference. Include site photos and identify details still awaiting local confirmation.
+
+[Get a custom pylon sign quote](https://www.zydsign.com/contact?product=pylon) [Use the site information checklist](https://www.zydsign.com/guides/pylon-sign-site-information-checklist)
 
 Before you request a quote
 
@@ -2640,7 +2693,7 @@ Choose a pylon sign when the entry must be identified from a distance, above roa
 
 #### How are large pylon signs engineered for wind load?
 
-Wind resistance is a site-specific engineering question, not a fixed specification. Our engineering team provides project-specific wind load calculations and foundation specifications when the site location, overall dimensions, and local conditions are confirmed. The illumination and power components are selected and reviewed against the confirmed exterior application.
+Wind resistance is a site-specific engineering question, not a fixed specification. Confirm the design criteria and responsibility for structural calculations and foundation design with the project team. The fabrication drawing, base plate, anchors and electrical entry must agree with the approved site design. The illumination and power components are selected and reviewed against the confirmed exterior application.
 
 [Read the sign-selection guide](https://www.zydsign.com/guides/how-to-choose-the-right-sign-for-your-business)
 
@@ -2700,7 +2753,7 @@ DDP Shipping by Quotation
 
 MOQ: 1
 
-Lead Time: 7–14 days
+Lead time confirmed per project
 
 #### Frequently asked questions
 
@@ -2710,11 +2763,11 @@ A pylon sign is a tall, freestanding identification structure usually chosen whe
 
 ##### Do you provide wind load calculations and foundation specifications?
 
-For large pylon and monument signs, our engineering team can provide project-specific wind load calculations and foundation specifications when the site location, dimensions, and local conditions are confirmed. Request the structural review with your project brief rather than relying on a generic figure.
+Provide the site location, dimensions and local structural criteria with the brief. Agree who supplies structural calculations, foundation design and local approval services. Fabrication drawings and anchor interfaces must be coordinated with the responsible local engineer; these services are not automatically included in every quotation.
 
 ##### What is the standard lead time for pylon and monument signs?
 
-Typical production lead time is 7–14 days depending on project complexity, plus site-specific engineering review when required. Large-scale rollout projects are phased according to your schedule.
+Production timing is confirmed in the quotation after reviewing the approved drawings, dimensions, finish, lighting, quantity and packing requirements. Drawing approval, local engineering, freight and installation should be scheduled separately.
 
 #### Planning an entry sign project?
 
@@ -4266,7 +4319,7 @@ Markdown mirror: https://www.zydsign.com/guides/how-much-do-custom-channel-lette
 
 Understand channel letter sign pricing: fabrication, lighting, mounting, freight and local installation. Use a scope checklist to compare quotes for your project.
 
-Guide • Updated Oct 23, 2026 • By Aaron, ZYD Signage
+Guide • Updated Oct 26, 2026 • By Aaron, ZYD Signage
 
 Channel letter sign cost depends on the finished design and the scope you are buying. A factory quote for letters is different from a delivered price or a fully installed sign. For a usable budget, separate fabrication and components, packing and transport, and local installation. ZYD prices custom projects from artwork, dimensions, quantity, lighting, mounting details and destination; this guide does not publish a verified average price or a fixed price list.
 
@@ -4391,7 +4444,7 @@ These public references support terminology, accessibility context, or material-
 2. [Raceway vs. individually mounted channel letters](https://www.zydsign.com/guides/raceway-vs-individually-mounted-channel-letters) Review fixing, wiring and installation coordination before requesting a price.
 3. [Importing custom signage from China](https://www.zydsign.com/guides/importing-custom-signage-from-china) Prepare the delivery and procurement scope for an international signage project.
 
-[Front-lit letter specifications](https://www.zydsign.com/products/custom-channel-letters) [Halo-lit letter specifications](https://www.zydsign.com/products/custom-halo-lit-letters) [Request an itemised channel letter quote](https://www.zydsign.com/contact) Get Material Advice
+[Front-lit letter specifications](https://www.zydsign.com/products/custom-channel-letters) [Halo-lit letter specifications](https://www.zydsign.com/products/custom-halo-lit-letters) [Request an itemised channel letter quote](https://www.zydsign.com/contact?product=letters) Discuss Your Letter Quote
 
 Buyer brief
 
@@ -4399,7 +4452,7 @@ Buyer brief
 
 Send artwork, dimensions, quantity, lighting preference, a wall photo and destination. Ask us to separate fabrication, supplied accessories, packing and freight, and to identify site work outside the supply scope.
 
-[DISCUSS YOUR PROJECT](https://www.zydsign.com/contact)
+[GET A CHANNEL LETTER QUOTE](https://www.zydsign.com/contact?product=letters)
 
 ### How to Choose the Right Sign for Your Business
 

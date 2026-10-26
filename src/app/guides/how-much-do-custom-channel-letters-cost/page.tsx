@@ -4,7 +4,7 @@ const guide: GuideArticleData = {
   "title": "Channel Letter Sign Cost: What Goes Into Your Quote?",
   "category": "Channel Letter Pricing Guide",
   "description": "Understand channel letter sign pricing: fabrication, lighting, mounting, freight and local installation. Use a scope checklist to compare quotes for your project.",
-  "updated": "Oct 23, 2026",
+  "updated": "Oct 26, 2026",
   "directAnswer": "Channel letter sign cost depends on the finished design and the scope you are buying. A factory quote for letters is different from a delivered price or a fully installed sign. For a usable budget, separate fabrication and components, packing and transport, and local installation. ZYD prices custom projects from artwork, dimensions, quantity, lighting, mounting details and destination; this guide does not publish a verified average price or a fixed price list.",
   "introParagraphs": [
     "If you are searching for the average cost of channel letter signs, first decide which total you need. A price per letter can help compare identical letters, but it cannot describe an entire storefront project unless the letter count, height, construction and included services are stated. Use the breakdown below to ask suppliers and your local installer for the same scope."
@@ -253,10 +253,14 @@ const guide: GuideArticleData = {
       "label": "Halo-lit letter specifications"
     },
     {
-      "href": "/contact",
+      "href": "/contact?product=letters",
       "label": "Request an itemised channel letter quote"
     }
   ],
+  "contactHref": "/contact?product=letters",
+  "asideButtonLabel": "GET A CHANNEL LETTER QUOTE",
+  "whatsappLabel": "Discuss Your Letter Quote",
+  "whatsappMessage": "Hi Aaron, I would like an itemised channel letter quote. I can share artwork, dimensions, quantity, lighting preference, wall photos and delivery destination.",
   "asideTitle": "Get a quote for your sign",
   "asideText": "Send artwork, dimensions, quantity, lighting preference, a wall photo and destination. Ask us to separate fabrication, supplied accessories, packing and freight, and to identify site work outside the supply scope."
 };
