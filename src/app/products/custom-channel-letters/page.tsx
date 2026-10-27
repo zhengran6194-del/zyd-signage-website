@@ -1,6 +1,3 @@
-'use client';
-
-import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import PackingDeliverySummary from '@/components/PackingDeliverySummary';
@@ -99,7 +96,7 @@ export default function FrontLitChannelLettersPage() {
             </div>
             <div className="reveal visible relative">
               <div className="absolute -inset-4 bg-blue-500/20 blur-3xl rounded-full"></div>
-              <Image src="/assets/images/channel-letters-white-lighting-check.jpg" alt="White front-lit channel letters illuminated on a workshop bench, with red illuminated letters behind" width={1706} height={1279} priority sizes="(min-width: 1024px) 50vw, 100vw" className="relative rounded-[2rem] shadow-2xl border border-white/10 h-auto w-full" />
+              <Image src="/assets/images/channel-letters-white-lighting-check.jpg" alt="White front-lit channel letters illuminated on a workshop bench, with red illuminated letters behind" width={1706} height={1279} loading="eager" fetchPriority="high" sizes="(min-width: 1334px) 568px, (min-width: 1024px) calc(45vw - 32px), 90vw" className="relative rounded-[2rem] shadow-2xl border border-white/10 h-auto w-full" />
               <p className="relative mt-4 text-sm text-slate-400">Workshop lighting check. All dimensions are customised to the approved project drawing.</p>
             </div>
           </div>

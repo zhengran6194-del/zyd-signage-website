@@ -1,6 +1,3 @@
-'use client';
-
-import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import PackingDeliverySummary from '@/components/PackingDeliverySummary';
@@ -72,7 +69,7 @@ export default function OutdoorPylonMonumentSignPage() {
             </div>
             <div className="reveal visible relative">
               <div className="absolute -inset-4 bg-blue-500/20 blur-3xl rounded-full"></div>
-              <Image src="/assets/images/pylon-water-plaza-installed.jpg" alt="Installed Water Fashion Plaza multi-tenant pylon sign at the commercial entrance in Dalian" width={5647} height={3765} priority sizes="(min-width: 1024px) 50vw, 100vw" className="relative rounded-[2rem] shadow-2xl border border-white/10 h-auto w-full" />
+              <Image src="/assets/images/pylon-water-plaza-installed.jpg" alt="Installed Water Fashion Plaza multi-tenant pylon sign at the commercial entrance in Dalian" width={5647} height={3765} loading="eager" fetchPriority="high" sizes="(min-width: 1334px) 568px, (min-width: 1024px) calc(45vw - 32px), 90vw" className="relative rounded-[2rem] shadow-2xl border border-white/10 h-auto w-full" />
               <p className="relative mt-4 text-sm text-slate-400">Water Fashion Plaza, Dalian: installed entrance pylon and tenant directory. <Link href="/case-studies/dalian-water-plaza-wayfinding-signage" className="text-blue-300 underline underline-offset-4">Explore the project</Link></p>
             </div>
           </div>

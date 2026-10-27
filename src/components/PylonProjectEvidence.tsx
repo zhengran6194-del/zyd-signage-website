@@ -23,7 +23,7 @@ export default function PylonProjectEvidence() {
             {src:'pylon-dealership-unlit.jpg',width:1920,height:1080,title:'Unlit workshop view',alt:'Automotive multi-brand pylon sign lying horizontally in the workshop before illumination'},
             {src:'pylon-dealership-lighting-check.jpg',width:1080,height:1440,title:'Illuminated workshop view',alt:'The same automotive multi-brand pylon sign during an illuminated workshop check'},
           ].map(photo=><figure key={photo.src} className="min-w-0 overflow-hidden rounded-2xl border border-slate-200 bg-slate-50">
-            <div className="relative h-72 sm:h-96"><Image src={'/assets/images/'+photo.src} alt={photo.alt} fill sizes="(min-width: 1024px) 600px, (min-width: 768px) 50vw, 100vw" className="object-contain" /></div>
+            <div className="relative h-72 sm:h-96"><Image src={'/assets/images/'+photo.src} alt={photo.alt} fill sizes={photo.width < photo.height ? "(min-width: 640px) 288px, 216px" : "(min-width: 1334px) 588px, (min-width: 768px) calc(45vw - 12px), 90vw"} className="object-contain" /></div>
             <figcaption className="px-5 py-4 font-bold text-slate-900">{photo.title}</figcaption>
           </figure>)}
         </div>
@@ -50,7 +50,7 @@ export default function PylonProjectEvidence() {
         <div className="max-w-3xl mb-8"><p className="text-xs font-black uppercase tracking-widest text-blue-700 mb-3">Project photographs</p><h2 id="pylon-projects-heading" className="text-3xl lg:text-4xl font-black tracking-tight text-slate-950 mb-4">Pylon and totem signs in different settings</h2><p className="text-slate-600 leading-relaxed">Compare tenant directories, entrance identification and directional totems. Each photograph shows a particular configuration; dimensions and materials are confirmed separately for a new quotation.</p></div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {gallery.map(photo=><figure key={photo.src} className="min-w-0 overflow-hidden rounded-2xl border border-slate-200 bg-white">
-            <div className="relative aspect-[3/4] bg-slate-50"><Image src={'/assets/images/'+photo.src} alt={photo.alt} fill sizes="(min-width: 1024px) 400px, (min-width: 640px) 50vw, 100vw" className="object-contain" /></div>
+            <div className="relative aspect-[3/4] bg-slate-50"><Image src={'/assets/images/'+photo.src} alt={photo.alt} fill sizes={photo.width / photo.height < 0.75 ? "(min-width: 1334px) 340px, (min-width: 1024px) calc(26.67vw - 15px), (min-width: 640px) calc(40vw - 11px), 80vw" : "(min-width: 1334px) 384px, (min-width: 1024px) calc(30vw - 16px), (min-width: 640px) calc(45vw - 12px), 90vw"} className="object-contain" /></div>
             <figcaption className="p-5"><h3 className="text-lg font-black text-slate-950 mb-2">{photo.title}</h3><p className="text-sm text-slate-600 leading-relaxed">{photo.text}</p></figcaption>
           </figure>)}
           <div className="rounded-2xl bg-slate-950 p-7 text-white flex flex-col justify-center">
