@@ -1928,6 +1928,24 @@ Before you request a quote
 
 Use these decisions to define the quotation. The approved drawing and written quote establish the final construction, supplied accessories and site work.
 
+Minimum order
+
+1 set
+
+Design support
+
+Free design by our designers
+
+Typical production
+
+7–15 days
+
+Warranty
+
+1 year
+
+Confirm the production schedule with the approved drawings and order scope. Design review and transport time are scheduled separately from production.
+
 ##### Lighting effect
 
 Front-lit letters illuminate the face. For rear glow, review the halo-lit alternative. Send daytime and night-time appearance references, face colour and preferred light colour; confirm the effect against the actual wall and artwork.
@@ -1943,6 +1961,17 @@ Send a wall photo, substrate and installation height. Confirm individual fixing 
 ##### Power and supplied parts
 
 Confirm destination supply voltage, power supply position and the specified LED circuit with the project team. Ask whether drivers, wiring information, mounting templates and fixings are included; on-site installation and local electrical connection are not included in ZYD supply.
+
+##### From free design to drawing approval
+
+1. Send your logo or reference, approximate dimensions, quantity, site photographs and delivery destination. Unknown details can be discussed with our designers.
+2. Our designers prepare a free design for review. Check the artwork, dimensions, colours, lighting and proposed mounting arrangement with your project team.
+3. Confirm the final drawing and written supply scope before fabrication. For pylon signs, coordinate site-dependent structural and foundation interfaces with your local team.
+4. Agree the production schedule, packing and delivery arrangements for the approved order. Typical production takes 7–15 days; on-site installation is not included.
+
+##### 1-year warranty and after-sales contact
+
+If an issue occurs, contact our team with the order reference, a description and clear photos or video. We will review the issue and discuss the appropriate next steps. Confirm warranty coverage and any parts, labour or transport arrangements in the order terms. On-site installation and local site work are not included.
 
 ##### Start with what you have
 
@@ -2048,9 +2077,9 @@ Direct manufacturing from our 20,000sqm base in Dalian, established in 2006, kee
 
 DDP Shipping by Quotation
 
-MOQ: 1
+MOQ: 1 set
 
-Lead Time: 7–14 days
+Production: 7–15 days
 
 Related Reading
 
@@ -2061,6 +2090,14 @@ Front-lit letters light the face; halo-lit (rear-glow) letters leave the face da
 Once the construction is fixed, the remaining questions are commercial and procedural: what the price is built from, how a low bid can pass acceptance while missing the scope, and what the production stages are between drawing and packing. The [low-bid tender guide](https://www.zydsign.com/guides/signage-procurement-low-bid-pitfalls) and the [manufacturing process guide](https://www.zydsign.com/guides/custom-signage-manufacturing-process) cover those, and the [contact form](https://www.zydsign.com/contact?product=letters) is where a front-lit letter set gets reviewed.
 
 #### Frequently asked questions
+
+##### Do you offer free design and drawing confirmation?
+
+Yes. Our designers provide free design support. Share your artwork or reference, dimensions, quantity and site information. Review the design and confirm the final drawing, lighting, finish and supply scope before fabrication. Site-dependent interfaces must be coordinated with the local project team.
+
+##### What warranty and after-sales support do you provide?
+
+The warranty is 1 year. Contact our team with the order reference, issue description and photos or video so we can review the problem and discuss the next steps. Warranty coverage and any parts, labour or transport arrangements should be confirmed in the order terms. On-site installation is not included.
 
 ##### What is a front-lit channel letter?
 
@@ -2100,7 +2137,7 @@ A comparable quotation needs the artwork in vector form, the letter height, the 
 
 ##### What are the MOQ and the lead time for front-lit letters?
 
-Minimum order is one unit. Typical production lead time is 7–14 days depending on letter count, size, finish and lighting configuration, and larger rollout projects are phased against your schedule.
+The MOQ is 1 set. Typical production lead time is 7–15 days. Confirm the production schedule with the approved drawings and order scope; design review and transport are scheduled separately.
 
 #### Planning front-lit letters?
 
@@ -2865,6 +2902,24 @@ Before you request a quote
 
 ZYD can plan, design, fabricate, pack and transport the sign. On-site installation is not included. Confirm the supply scope and local site responsibilities in writing before production.
 
+Minimum order
+
+1 set
+
+Design support
+
+Free design by our designers
+
+Typical production
+
+7–15 days
+
+Warranty
+
+1 year
+
+Confirm the production schedule with the approved drawings and order scope. Design review and transport time are scheduled separately from production.
+
 ##### Structure and site inputs
 
 Provide overall height and width, number of faces, panel layout, site location and any available structural requirements. Frame, base plate, anchors and foundation interfaces require project-specific review; local engineering acceptance and approvals must be agreed with the site team.
@@ -2880,6 +2935,17 @@ Agree the section joints, assembly sequence, connection details, cable routes an
 ##### Lighting and supply boundary
 
 Specify illuminated panels or letters, power location, finish and access for servicing. Ask the quote to identify the frame, cladding, faces, lighting, drivers and accessories included; foundations, ground works, site installation and electrical connection are excluded from ZYD supply and arranged locally.
+
+##### From free design to drawing approval
+
+1. Send your logo or reference, approximate dimensions, quantity, site photographs and delivery destination. Unknown details can be discussed with our designers.
+2. Our designers prepare a free design for review. Check the artwork, dimensions, colours, lighting and proposed mounting arrangement with your project team.
+3. Confirm the final drawing and written supply scope before fabrication. For pylon signs, coordinate site-dependent structural and foundation interfaces with your local team.
+4. Agree the production schedule, packing and delivery arrangements for the approved order. Typical production takes 7–15 days; on-site installation is not included.
+
+##### 1-year warranty and after-sales contact
+
+If an issue occurs, contact our team with the order reference, a description and clear photos or video. We will review the issue and discuss the appropriate next steps. Confirm warranty coverage and any parts, labour or transport arrangements in the order terms. On-site installation and local site work are not included.
 
 ##### Start with what you have
 
@@ -2943,7 +3009,7 @@ Each option below is a decision input. Confirm the site, finish, and fabrication
 - • LED modules selected for the project specification
 - • Power supplies selected for the project specification
 - • Environmental rating reviewed for the exterior application
-- • Warranty terms confirmed in the project quotation
+- • 1-year warranty; coverage confirmed in the order terms
 
 ##### Factory Advantage
 
@@ -2951,7 +3017,7 @@ Direct manufacturing from our 20,000sqm base in Dalian, established in 2006, kee
 
 DDP Shipping by Quotation
 
-MOQ: 1
+MOQ: 1 set
 
 Lead time confirmed per project
 
@@ -2969,6 +3035,14 @@ On-site installation is not included. Arrange the local installer, foundation wo
 
 #### Frequently asked questions
 
+##### Do you offer free design and drawing confirmation?
+
+Yes. Our designers provide free design support. Share your artwork or reference, dimensions, quantity and site information. Review the design and confirm the final drawing, lighting, finish and supply scope before fabrication. Site-dependent interfaces must be coordinated with the local project team.
+
+##### What warranty and after-sales support do you provide?
+
+The warranty is 1 year. Contact our team with the order reference, issue description and photos or video so we can review the problem and discuss the next steps. Warranty coverage and any parts, labour or transport arrangements should be confirmed in the order terms. On-site installation is not included.
+
 ##### What is the difference between a pylon sign and a monument sign?
 
 A pylon sign is a tall, freestanding identification structure usually chosen when the sign must be read from a distance or above surrounding objects. A monument sign is a lower, broader structure integrated with the site and landscape. The right choice depends on approach distance, permitted height, site context, and the message hierarchy.
@@ -2979,7 +3053,7 @@ Provide the site location, dimensions and local structural criteria with the bri
 
 ##### What is the standard lead time for pylon and monument signs?
 
-Production timing is confirmed in the quotation after reviewing the approved drawings, dimensions, finish, lighting, quantity and packing requirements. Drawing approval, local engineering, freight and installation should be scheduled separately.
+The MOQ is 1 set. Typical production lead time is 7–15 days. Confirm the production schedule with the approved drawings, dimensions, finish, lighting, quantity and packing requirements. Design review, local engineering and freight are scheduled separately. On-site installation is not included.
 
 #### Planning an entry sign project?
 

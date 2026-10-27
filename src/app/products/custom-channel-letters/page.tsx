@@ -11,6 +11,15 @@ import ProductPurchaseDetails from '@/components/ProductPurchaseDetails';
 
 const faqs = [
   {
+    question: 'Do you offer free design and drawing confirmation?',
+    answer: 'Yes. Our designers provide free design support. Share your artwork or reference, dimensions, quantity and site information. Review the design and confirm the final drawing, lighting, finish and supply scope before fabrication. Site-dependent interfaces must be coordinated with the local project team.',
+  },
+  {
+    question: 'What warranty and after-sales support do you provide?',
+    answer: 'The warranty is 1 year. Contact our team with the order reference, issue description and photos or video so we can review the problem and discuss the next steps. Warranty coverage and any parts, labour or transport arrangements should be confirmed in the order terms. On-site installation is not included.',
+  },
+
+  {
     question: 'What is a front-lit channel letter?',
     answer: 'A front-lit channel letter is a fabricated letter with a translucent face that is lit from inside the letter body. The light passes through the face, so the letter itself glows while the wall behind it stays dark. That is the opposite of a halo-lit (rear-glow) letter, where the face stays unlit and the light is thrown back onto the wall.',
   },
@@ -48,7 +57,7 @@ const faqs = [
   },
   {
     question: 'What are the MOQ and the lead time for front-lit letters?',
-    answer: 'Minimum order is one unit. Typical production lead time is 7–14 days depending on letter count, size, finish and lighting configuration, and larger rollout projects are phased against your schedule.',
+    answer: 'The MOQ is 1 set. Typical production lead time is 7–15 days. Confirm the production schedule with the approved drawings and order scope; design review and transport are scheduled separately.',
   },
 ];
 
@@ -207,8 +216,8 @@ export default function FrontLitChannelLettersPage() {
                 <p className="text-slate-300 mb-8 leading-relaxed font-medium">Direct manufacturing from our 20,000sqm base in Dalian, established in 2006, keeps fabrication and finishing under one quality-control process.</p>
                 <div className="space-y-5">
                   <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">DDP Shipping by Quotation</span></div>
-                  <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">MOQ: 1</span></div>
-                  <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">Lead Time: 7–14 days</span></div>
+                  <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">MOQ: 1 set</span></div>
+                  <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">Production: 7–15 days</span></div>
                 </div>
               </div>
             </div>

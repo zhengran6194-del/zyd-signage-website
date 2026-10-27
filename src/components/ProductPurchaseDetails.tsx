@@ -32,8 +32,30 @@ export default function ProductPurchaseDetails({ product }: { product: keyof typ
       <p className="text-xs font-black uppercase tracking-widest text-blue-700 mb-3">Before you request a quote</p>
       <h2 id="purchase-details" className="text-3xl font-black text-slate-950 mb-4">{brief.title}</h2>
       <p className="text-slate-600 max-w-3xl mb-8">{brief.intro}</p>
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-8" aria-label="Order essentials">
+        {[
+          ['Minimum order', '1 set'],
+          ['Design support', 'Free design by our designers'],
+          ['Typical production', '7–15 days'],
+          ['Warranty', '1 year'],
+        ].map(([label, value]) => <div key={label} className="min-w-0 rounded-xl border border-blue-100 bg-blue-50 p-4"><p className="text-xs font-bold text-slate-600 mb-2">{label}</p><p className="text-lg font-black text-slate-950">{value}</p></div>)}
+      </div>
+      <p className="text-sm text-slate-600 leading-relaxed mb-8">Confirm the production schedule with the approved drawings and order scope. Design review and transport time are scheduled separately from production.</p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         {brief.items.map(([title, text]) => <div key={title} className="min-w-0 rounded-2xl border border-slate-200 bg-slate-50 p-6"><h3 className="text-xl font-black text-slate-950 mb-3">{title}</h3><p className="text-slate-600 leading-relaxed">{text}</p></div>)}
+      </div>
+      <div className="mt-8 rounded-2xl border border-slate-200 p-6 lg:p-8">
+        <h3 className="text-xl font-black text-slate-950 mb-4">From free design to drawing approval</h3>
+        <ol className="list-decimal pl-5 space-y-3 text-sm leading-relaxed text-slate-600">
+          <li>Send your logo or reference, approximate dimensions, quantity, site photographs and delivery destination. Unknown details can be discussed with our designers.</li>
+          <li>Our designers prepare a free design for review. Check the artwork, dimensions, colours, lighting and proposed mounting arrangement with your project team.</li>
+          <li>Confirm the final drawing and written supply scope before fabrication. For pylon signs, coordinate site-dependent structural and foundation interfaces with your local team.</li>
+          <li>Agree the production schedule, packing and delivery arrangements for the approved order. Typical production takes 7–15 days; on-site installation is not included.</li>
+        </ol>
+      </div>
+      <div className="mt-6 rounded-2xl border border-slate-200 bg-slate-50 p-6 lg:p-8">
+        <h3 className="text-xl font-black text-slate-950 mb-3">1-year warranty and after-sales contact</h3>
+        <p className="text-sm leading-relaxed text-slate-600">If an issue occurs, contact our team with the order reference, a description and clear photos or video. We will review the issue and discuss the appropriate next steps. Confirm warranty coverage and any parts, labour or transport arrangements in the order terms. On-site installation and local site work are not included.</p>
       </div>
       <div className="mt-6 rounded-2xl bg-blue-50 p-6 lg:p-8">
         <h3 className="text-xl font-black text-slate-950 mb-3">Start with what you have</h3>

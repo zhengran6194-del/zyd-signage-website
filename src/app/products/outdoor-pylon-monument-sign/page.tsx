@@ -12,6 +12,15 @@ import PylonProjectEvidence from '@/components/PylonProjectEvidence';
 
 const faqs = [
   {
+    question: 'Do you offer free design and drawing confirmation?',
+    answer: 'Yes. Our designers provide free design support. Share your artwork or reference, dimensions, quantity and site information. Review the design and confirm the final drawing, lighting, finish and supply scope before fabrication. Site-dependent interfaces must be coordinated with the local project team.',
+  },
+  {
+    question: 'What warranty and after-sales support do you provide?',
+    answer: 'The warranty is 1 year. Contact our team with the order reference, issue description and photos or video so we can review the problem and discuss the next steps. Warranty coverage and any parts, labour or transport arrangements should be confirmed in the order terms. On-site installation is not included.',
+  },
+
+  {
     question: 'What is the difference between a pylon sign and a monument sign?',
     answer: 'A pylon sign is a tall, freestanding identification structure usually chosen when the sign must be read from a distance or above surrounding objects. A monument sign is a lower, broader structure integrated with the site and landscape. The right choice depends on approach distance, permitted height, site context, and the message hierarchy.',
   },
@@ -21,7 +30,7 @@ const faqs = [
   },
   {
     question: 'What is the standard lead time for pylon and monument signs?',
-    answer: 'Production timing is confirmed in the quotation after reviewing the approved drawings, dimensions, finish, lighting, quantity and packing requirements. Drawing approval, local engineering, freight and installation should be scheduled separately.',
+    answer: 'The MOQ is 1 set. Typical production lead time is 7–15 days. Confirm the production schedule with the approved drawings, dimensions, finish, lighting, quantity and packing requirements. Design review, local engineering and freight are scheduled separately. On-site installation is not included.',
   },
 ];
 
@@ -170,7 +179,7 @@ export default function OutdoorPylonMonumentSignPage() {
                       <li>&bull; LED modules selected for the project specification</li>
                       <li>&bull; Power supplies selected for the project specification</li>
                       <li>&bull; Environmental rating reviewed for the exterior application</li>
-                      <li>&bull; Warranty terms confirmed in the project quotation</li>
+                      <li>&bull; 1-year warranty; coverage confirmed in the order terms</li>
                     </ul>
                   </div>
                 </div>
@@ -180,7 +189,7 @@ export default function OutdoorPylonMonumentSignPage() {
                 <p className="text-slate-300 mb-8 leading-relaxed font-medium">Direct manufacturing from our 20,000sqm base in Dalian, established in 2006, keeps every weld and finish under one quality-control process.</p>
                 <div className="space-y-5">
                   <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">DDP Shipping by Quotation</span></div>
-                  <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">MOQ: 1</span></div>
+                  <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">MOQ: 1 set</span></div>
                   <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">Lead time confirmed per project</span></div>
                 </div>
               </div>
