@@ -6,6 +6,7 @@ import Link from 'next/link';
 import WhatsAppCta from '@/components/WhatsAppCta';
 import JsonLd from '@/components/JsonLd';
 import FeaturedSignProducts from '@/components/FeaturedSignProducts';
+import HomeProjectEvidence from '@/components/HomeProjectEvidence';
 import { siteConfig } from '@/config/site';
 
 const englishHomeJsonLd = {
@@ -284,6 +285,7 @@ export default function Home() {
         </section>
 
         <FeaturedSignProducts />
+        <HomeProjectEvidence />
 
         {/* 2. THE ZYD WAY: PRODUCTION PROCESS (Artistic Grid) */}
         <section className="section bg-slate-100 py-32 lg:py-48">
@@ -775,7 +777,8 @@ export default function Home() {
                   <input id="home-email-address" type="email" required name="email" value={formData.email} onChange={handleInquiryChange} placeholder="Email Address *" aria-label="Email address for your signage project inquiry" className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:ring-4 focus:ring-blue-600 font-bold" />
                 </div>
                 <input id="home-company-name" type="text" name="company" value={formData.company} onChange={handleInquiryChange} placeholder="Company Name" aria-label="Company name for your signage project inquiry" className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:ring-4 focus:ring-blue-600 font-bold" />
-                <textarea id="home-project-details" name="details" value={formData.details} onChange={handleInquiryChange} placeholder="Project Details *" aria-label="Project details for your signage inquiry" rows={4} required className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:ring-4 focus:ring-blue-600 font-bold resize-none" />
+                <label htmlFor="home-project-details" className="block text-sm font-bold text-slate-700">Tell us about your sign *</label>
+                <textarea id="home-project-details" name="details" value={formData.details} onChange={handleInquiryChange} placeholder="Sign type, approximate dimensions, quantity and delivery country. Unknown details are welcome." aria-label="Project details for your signage inquiry" rows={4} required className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 focus:ring-4 focus:ring-blue-600 font-bold resize-none" />
                 <div className="rounded-2xl border border-emerald-200 bg-emerald-50 p-5">
                   <h3 className="text-sm font-black uppercase tracking-widest text-slate-900">Send Drawings Directly on WhatsApp</h3>
                   <p className="mt-2 text-xs font-medium text-slate-600">PDF, AI or PSD — send them in the chat and they reach our engineering team immediately. No second form, no re-typing.</p>

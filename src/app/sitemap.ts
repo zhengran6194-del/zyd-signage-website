@@ -20,7 +20,7 @@ const lastModifiedByRoute: Record<string, string> = {
   "/projects": "2026-10-26",
   "/guides": "2026-10-24",
   "/about": "2026-09-29",
-  "/contact": "2026-10-26",
+  "/contact": "2026-10-27",
   "/faq": "2026-10-26",
   "/ja": "2026-10-08",
   "/ja/products": "2026-10-08",

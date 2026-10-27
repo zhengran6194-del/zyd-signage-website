@@ -229,7 +229,7 @@ export default function ContactPage() {
                     value={formData.details}
                     onChange={handleChange}
                     rows={5} 
-                     placeholder="Describe your signage needs, dimensions, location, and installation environment..." 
+                     placeholder="Sign type, approximate dimensions, quantity and delivery country. Share what you know; dimensions and other details can be confirmed together."
                      aria-label="Project details for your signage inquiry"
                      className="w-full px-4 sm:px-8 py-4 sm:py-5 rounded-2xl sm:rounded-3xl bg-slate-50 border-none focus:ring-4 focus:ring-blue-600 font-bold transition-all resize-none"
                      required
