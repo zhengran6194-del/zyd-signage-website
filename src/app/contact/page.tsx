@@ -337,7 +337,7 @@ export default function ContactPage() {
                 Send whatever exists today. Rough dimensions, a photograph of the wall or the ground, and a logo file are enough to start: the drawing set is developed with you during the technical consultation, and the free 3D mockup is produced before fabrication so the intended appearance can be reviewed first.
               </p>
               <p className="text-slate-600 leading-relaxed font-medium">
-                Minimum order is one unit and typical production lead time is 7–14 days from the point the artwork and the drawings are agreed, so an incomplete brief delays the start of production rather than the quotation. The <Link href="/faq" className="font-black text-blue-700 underline decoration-blue-300 underline-offset-4 hover:text-blue-900">FAQ</Link> answers the questions that arrive most often, and the <Link href="/guides" className="font-black text-blue-700 underline decoration-blue-300 underline-offset-4 hover:text-blue-900">guides</Link> cover material, illumination and procurement decisions in more detail.
+                Minimum order is 1 set and typical production lead time is 7–15 days from the point the artwork and the drawings are agreed, so an incomplete brief delays the start of production rather than the quotation. The <Link href="/faq" className="font-black text-blue-700 underline decoration-blue-300 underline-offset-4 hover:text-blue-900">FAQ</Link> answers the questions that arrive most often, and the <Link href="/guides" className="font-black text-blue-700 underline decoration-blue-300 underline-offset-4 hover:text-blue-900">guides</Link> cover material, illumination and procurement decisions in more detail.
               </p>
             </div>
 
