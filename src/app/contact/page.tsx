@@ -9,6 +9,7 @@ import {
   type InquiryPayload,
 } from '@/lib/inquiry';
 import Image from 'next/image';
+import InquiryNextSteps from '@/components/InquiryNextSteps';
 import Link from 'next/link';
 import JsonLd from '@/components/JsonLd';
 import ProductInterestField, { productInterests, ProductInterestSelect } from '@/components/ProductInterestField';
@@ -125,7 +126,7 @@ export default function ContactPage() {
     setLastSubmitted(validated);
     setLeadReceived(true);
     setSubmitMessageType('success');
-    setSubmitMessage(response.message);
+    setSubmitMessage(response.message + ' Our team will reply by email within 8 hours to confirm your requirements and any missing details. Design and quotation timing will be agreed after reviewing your information.');
     setFormData({ fullName: '', email: '', company: '', details: '' });
     if (startedAtRef.current) startedAtRef.current.value = String(Date.now());
     setIsSubmitting(false);
@@ -171,6 +172,7 @@ export default function ContactPage() {
             {/* Contact Form */}
             <div className="bg-white min-w-0 p-6 sm:p-10 lg:p-16 rounded-[2rem] sm:rounded-[4rem] shadow-2xl border border-slate-100 reveal visible">
               <h2 className="text-3xl font-black mb-10 uppercase tracking-tight">Project Inquiry</h2>
+              <InquiryNextSteps />
               <form ref={inquiryFormRef} className="space-y-8" onSubmit={handleSubmit}>
                 <Suspense fallback={<ProductInterestSelect />}><ProductInterestField /></Suspense>
                 {/* Anti-abuse fields. Kept off-screen and untabbable, never shown to visitors. */}

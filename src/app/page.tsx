@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
+import InquiryNextSteps from '@/components/InquiryNextSteps';
 import Link from 'next/link';
 import WhatsAppCta from '@/components/WhatsAppCta';
 import JsonLd from '@/components/JsonLd';
@@ -116,7 +117,7 @@ export default function Home() {
     setLastSubmitted(validated);
     setLeadReceived(true);
     setSubmitMessageType('success');
-    setSubmitMessage(response.message);
+    setSubmitMessage(response.message + ' Our team will reply by email within 8 hours to confirm your requirements and any missing details. Design and quotation timing will be agreed after reviewing your information.');
     setFormData({ fullName: '', email: '', company: '', details: '' });
     if (startedAtRef.current) startedAtRef.current.value = String(Date.now());
     setIsSubmitting(false);
@@ -765,6 +766,7 @@ export default function Home() {
                 <div className="text-blue-600 font-black uppercase text-[10px] tracking-[0.35em] mb-3">Start Your Project</div>
                 <h2 className="text-3xl lg:text-4xl font-black text-slate-950 uppercase tracking-tight">Project Inquiry</h2>
               </div>
+              <InquiryNextSteps />
               <form className="space-y-5" onSubmit={handleInquirySubmit}>
                 {/* Anti-abuse fields. Kept off-screen and untabbable, never shown to visitors. */}
                 <div aria-hidden="true" style={{ position: 'absolute', left: '-9999px', width: '1px', height: '1px', overflow: 'hidden' }}>
