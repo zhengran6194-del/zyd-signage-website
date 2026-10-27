@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
 import PackingDeliverySummary from '@/components/PackingDeliverySummary';
@@ -49,7 +51,7 @@ export default function OutdoorPylonMonumentSignPage() {
         {/* 1. Hero */}
         <section className="bg-slate-900 text-white py-20 lg:py-24 relative overflow-hidden">
           <div className="container grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div className="reveal visible">
+            <div>
               <div className="eyebrow text-blue-400 font-black tracking-widest uppercase mb-4 text-sm">Custom Pylon Sign Manufacturing</div>
               <h1 className="text-4xl lg:text-5xl font-black mb-6 leading-tight tracking-tight uppercase">
                 Outdoor Pylon &amp; <span className="text-blue-500 italic">Monument</span> <br/>Signs
@@ -67,7 +69,7 @@ export default function OutdoorPylonMonumentSignPage() {
                 <WhatsAppCta label="Check Feasibility" message="Hi Aaron, can you check feasibility for an outdoor pylon or monument sign?" className="inline-flex items-center justify-center rounded-full border border-blue-300 px-6 py-4 text-sm font-black text-white hover:bg-white/10" />
               </div>
             </div>
-            <div className="reveal visible relative">
+            <div className="relative">
               <div className="absolute -inset-4 bg-blue-500/20 blur-3xl rounded-full"></div>
               <Image src="/assets/images/pylon-water-plaza-installed.jpg" alt="Installed Water Fashion Plaza multi-tenant pylon sign at the commercial entrance in Dalian" width={5647} height={3765} loading="eager" fetchPriority="high" sizes="(min-width: 1334px) 568px, (min-width: 1024px) calc(45vw - 32px), 90vw" className="relative rounded-[2rem] shadow-2xl border border-white/10 h-auto w-full" />
               <p className="relative mt-4 text-sm text-slate-400">Water Fashion Plaza, Dalian: installed entrance pylon and tenant directory. <Link href="/case-studies/dalian-water-plaza-wayfinding-signage" className="text-blue-300 underline underline-offset-4">Explore the project</Link></p>

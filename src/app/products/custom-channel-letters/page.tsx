@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
 import PackingDeliverySummary from '@/components/PackingDeliverySummary';
@@ -76,7 +78,7 @@ export default function FrontLitChannelLettersPage() {
         {/* 1. Hero */}
         <section className="bg-slate-900 text-white py-20 lg:py-24 relative overflow-hidden">
           <div className="container grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div className="reveal visible">
+            <div>
               <div className="eyebrow text-blue-400 font-black tracking-widest uppercase mb-4 text-sm">Illuminated Face Fabrication</div>
               <h1 className="text-4xl lg:text-5xl font-black mb-6 leading-tight tracking-tight uppercase">
                 Custom <span className="text-blue-500 italic">Front-Lit</span> <br/>Channel Letters
@@ -94,7 +96,7 @@ export default function FrontLitChannelLettersPage() {
                 <WhatsAppCta label="Check Feasibility" message="Hi Aaron, can you check feasibility for custom front-lit channel letters?" className="inline-flex items-center justify-center rounded-full border border-blue-300 px-6 py-4 text-sm font-black text-white hover:bg-white/10" />
               </div>
             </div>
-            <div className="reveal visible relative">
+            <div className="relative">
               <div className="absolute -inset-4 bg-blue-500/20 blur-3xl rounded-full"></div>
               <Image src="/assets/images/channel-letters-white-lighting-check.jpg" alt="White front-lit channel letters illuminated on a workshop bench, with red illuminated letters behind" width={1706} height={1279} loading="eager" fetchPriority="high" sizes="(min-width: 1334px) 568px, (min-width: 1024px) calc(45vw - 32px), 90vw" className="relative rounded-[2rem] shadow-2xl border border-white/10 h-auto w-full" />
               <p className="relative mt-4 text-sm text-slate-400">Workshop lighting check. All dimensions are customised to the approved project drawing.</p>
