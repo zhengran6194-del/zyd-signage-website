@@ -15,7 +15,7 @@ const lastModifiedByRoute: Record<string, string> = {
   "/packaging-shipping": "2026-10-26",
   "/case-studies/multi-brand-dealership-pylon-sign": "2026-10-26",
   "/guides/pylon-sign-site-information-checklist": "2026-10-24",
-  "": "2026-10-23",
+  "": "2026-10-28",
   "/products": "2026-09-17",
   "/projects": "2026-10-26",
   "/guides": "2026-10-24",
