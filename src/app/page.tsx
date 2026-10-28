@@ -222,9 +222,9 @@ export default function Home() {
               </div>
               <figure className="min-w-0 overflow-hidden rounded-2xl border border-white/15 bg-slate-900">
                 <div className="relative aspect-[4/3]">
-                  <Image src="/assets/images/pylon-water-plaza-installed.jpg" alt="Installed entrance pylon and tenant directory at Water Fashion Plaza in Dalian, with the commercial building behind it" fill loading="eager" fetchPriority="high" sizes="(min-width: 1600px) 660px, (min-width: 1024px) 43vw, 90vw" className="object-cover" />
+                  <Image src="/assets/images/the-setai-sea-of-galilee.jpg" alt="The Setai Sea of Galilee hospitality project overview with resort buildings, palms and landscaped pathways" fill loading="eager" fetchPriority="high" sizes="(min-width: 1600px) 660px, (min-width: 1024px) 43vw, 90vw" className="object-cover" />
                 </div>
-                <figcaption className="px-5 py-4 text-sm text-slate-300 leading-relaxed">Water Fashion Plaza, Dalian — entrance pylon and tenant signage. <Link href="/case-studies/dalian-water-plaza-wayfinding-signage" className="text-blue-300 underline underline-offset-4">Explore this project →</Link></figcaption>
+                <figcaption className="px-5 py-4 text-sm text-slate-300 leading-relaxed">The Setai Sea of Galilee, Israel — hospitality signage and wayfinding. <Link href="/projects#the-setai-sea-of-galilee" className="text-blue-300 underline underline-offset-4">View in our case portfolio →</Link></figcaption>
               </figure>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 border-t border-white/15 pt-6 mt-8 text-xs sm:text-sm font-bold text-slate-300">

@@ -125,7 +125,7 @@ export default function ProjectsPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 mb-20">
             {caseStudies.map((proj, idx) => (
-              <div key={idx} className={CARD_CLASS}>
+              <div key={idx} id={proj.img === 'the-setai-sea-of-galilee.jpg' ? 'the-setai-sea-of-galilee' : undefined} className={CARD_CLASS + ' scroll-mt-40'}>
                 <div className="relative h-[26rem] overflow-hidden">
                   {proj.img ? (
                     <Image src={`/assets/images/${proj.img}`} alt={proj.title} fill sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" className="object-cover group-hover:scale-105 transition-transform duration-700" />

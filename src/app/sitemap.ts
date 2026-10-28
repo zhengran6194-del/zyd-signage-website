@@ -17,7 +17,7 @@ const lastModifiedByRoute: Record<string, string> = {
   "/guides/pylon-sign-site-information-checklist": "2026-10-24",
   "": "2026-10-28",
   "/products": "2026-09-17",
-  "/projects": "2026-10-26",
+  "/projects": "2026-10-28",
   "/guides": "2026-10-24",
   "/about": "2026-09-29",
   "/contact": "2026-10-27",
