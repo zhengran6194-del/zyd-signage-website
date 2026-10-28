@@ -18,7 +18,7 @@ const manrope = Manrope({
   variable: "--font-manrope",
 });
 
-const homeTitle = "ZYD Signage | Factory-Direct Signage Solutions";
+const homeTitle = "Custom Architectural & Illuminated Signs for Global Projects";
 const homeDescription = "Factory-direct custom signage from Dalian, China for global B2B projects, covering wayfinding, architectural and illuminated signage.";
 
 const siteJsonLd = {

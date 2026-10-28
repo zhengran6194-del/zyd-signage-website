@@ -15,7 +15,7 @@ const englishHomeJsonLd = {
   '@type': 'WebPage',
   '@id': `${siteConfig.url}/#webpage`,
   url: siteConfig.url,
-  name: 'ZYD Signage | Factory-Direct Signage Solutions',
+  name: 'Custom Architectural & Illuminated Signs for Global Projects',
   description: 'Factory-direct custom signage from Dalian, China for global B2B projects, covering wayfinding, architectural and illuminated signage.',
   inLanguage: 'en',
   isPartOf: { '@id': `${siteConfig.url}/#website` },
@@ -206,81 +206,29 @@ export default function Home() {
     <>
       <JsonLd data={englishHomeJsonLd} />
       <main id="main">
-        {/* 1. MEGA HERO SECTION (Image 2) */}
-        <section className="hero home-hero relative min-h-screen flex items-center bg-slate-950 text-white overflow-hidden py-32">
-          <div className="absolute inset-0 z-0">
-            <Image
-              src="/assets/images/hero-bg-factory-aerial.jpg"
-              alt="ZYD Factory Aerial"
-              fill
-              priority
-              sizes="100vw"
-              className="object-cover opacity-80"
-            />
-            <div className="hero-overlay-dark opacity-30"></div>
-          </div>
-          
-          <div className="max-w-[1600px] w-[95%] mx-auto relative z-10">
-            <div className="home-hero-grid grid grid-cols-1 lg:grid-cols-2 gap-32 items-center mb-24">
-              <div className="hero-copy reveal visible">
-                <h1 className="text-4xl lg:text-6xl font-black leading-tight mb-8 uppercase text-white">
-                  ZYD Signage | Factory-Direct <br/>
-                  Signage Solutions
-                </h1>
-                <p className="text-xl lg:text-2xl text-slate-200 mb-12 max-w-xl leading-relaxed font-medium">
-                  Dalian Zhiyudao Signage &amp; Tech. Co., Ltd. makes custom wayfinding, architectural and illuminated signage in Dalian, China for global B2B projects.
-                </p>
-                <div className="flex flex-wrap gap-6">
-                  <Link href="/contact" className="button button-green-base px-10 py-5 text-lg rounded-md">
-                    Get My Free 3D Mockup & Quote →
-                  </Link>
-                  <Link href="/products" className="px-10 py-5 border-2 border-white/20 rounded-md font-black uppercase text-sm hover:bg-white hover:text-slate-950 transition-all flex items-center justify-center">
-                    Explore Solutions
-                  </Link>
+        {/* Lead with a real project; factory imagery remains in the capability section. */}
+        <section className="bg-slate-950 text-white py-10 lg:py-16" aria-labelledby="home-project-title">
+          <div className="w-[90%] max-w-[1440px] mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-8 lg:gap-12 items-center">
+              <div>
+                <p className="text-xs font-black tracking-[0.18em] uppercase text-blue-300 mb-4">Custom channel letters · Pylon signs · Architectural signage</p>
+                <h1 id="home-project-title" className="text-3xl sm:text-4xl xl:text-5xl font-black leading-tight tracking-tight mb-5">Custom Architectural &amp; Illuminated Signs for Global Projects</h1>
+                <p className="text-base lg:text-lg text-slate-300 leading-relaxed mb-7 max-w-xl">Custom illuminated letters, pylon signs and coordinated signage for contractors, architects and commercial brands. Designed and manufactured by ZYD in Dalian, China.</p>
+                <div className="flex flex-col sm:flex-row sm:flex-wrap gap-3">
+                  <Link href="/contact" className="button button-green-base px-6 py-4 rounded-xl text-sm font-black text-center">Get a Project Quote</Link>
+                  <Link href="/projects" className="inline-flex justify-center items-center border border-white/30 px-6 py-4 rounded-xl text-sm font-bold hover:bg-white/10">View Real Projects</Link>
                 </div>
+                <p className="text-sm text-slate-300 leading-relaxed mt-4">Free design &amp; mockup support · First reply within 8 hours by WhatsApp or email.</p>
               </div>
-
-              {/* RIGHT CARD: SIGNAGE SOLUTIONS */}
-              <div className="reveal visible relative hidden lg:block">
-                <div className="bg-[#0b1a33]/80 backdrop-blur-2xl p-12 rounded-[2rem] border border-white/10 shadow-[0_80px_150px_rgba(0,0,0,0.6)] relative group overflow-hidden">
-                  <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/10 blur-[100px] rounded-full -translate-y-1/2 translate-x-1/2"></div>
-                  
-                  <div className="mb-8 relative z-10">
-                    <div className="text-green-400 font-black text-[12px] uppercase tracking-[0.3em] mb-4">SIGNAGE SOLUTIONS</div>
-                    <h3 className="text-4xl font-black text-white mb-6 uppercase tracking-tighter leading-tight">Commercial <br/>Signage Solutions</h3>
-                    <p className="text-slate-300 text-base leading-relaxed mb-8 font-medium">
-                      Wayfinding, illuminated signs, and outdoor signs for commercial projects.
-                    </p>
-                    
-                    <div className="flex flex-wrap gap-3">
-                      {[
-                        { name: 'Wayfinding', icon: <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> },
-                        { name: 'Illuminated Signs', icon: <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg> },
-                        { name: 'Outdoor Signs', icon: <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> }
-                      ].map((chip, idx) => (
-                        <span key={idx} className="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-xs font-bold text-slate-200 flex items-center gap-2">
-                          <span className="text-green-500">{chip.icon}</span>
-                          {chip.name}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
+              <figure className="min-w-0 overflow-hidden rounded-2xl border border-white/15 bg-slate-900">
+                <div className="relative aspect-[4/3]">
+                  <Image src="/assets/images/pylon-water-plaza-installed.jpg" alt="Installed entrance pylon and tenant directory at Water Fashion Plaza in Dalian, with the commercial building behind it" fill loading="eager" fetchPriority="high" sizes="(min-width: 1600px) 660px, (min-width: 1024px) 43vw, 90vw" className="object-cover" />
                 </div>
-              </div>
+                <figcaption className="px-5 py-4 text-sm text-slate-300 leading-relaxed">Water Fashion Plaza, Dalian — entrance pylon and tenant signage. <Link href="/case-studies/dalian-water-plaza-wayfinding-signage" className="text-blue-300 underline underline-offset-4">Explore this project →</Link></figcaption>
+              </figure>
             </div>
-
-            {/* Statistics Bar (Image 2) */}
-            <div className="home-hero-stats grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-16 py-12 border-y border-white/10 max-w-6xl text-white reveal visible mt-auto">
-              {[
-                { val: 'EST. 2006' },
-                { val: '20,000m² PRODUCTION BASE' },
-                { val: 'GLOBAL DDP SHIPPING' },
-                { val: 'QUALITY REVIEW' }
-              ].map((item, idx) => (
-                <div key={idx} className="text-center md:text-left border-l border-white/5 pl-8 first:border-none">
-                  <strong className="block text-xl lg:text-2xl font-black tracking-tight text-white uppercase">{item.val}</strong>
-                </div>
-              ))}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 border-t border-white/15 pt-6 mt-8 text-xs sm:text-sm font-bold text-slate-300">
+              <p>MOQ: 1 set</p><p>Free design support</p><p>Production: 7–15 days</p><p>EXW · FOB · CIF · DDP</p>
             </div>
           </div>
         </section>
