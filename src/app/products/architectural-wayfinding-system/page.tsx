@@ -18,7 +18,7 @@ const faqs = [
   },
   {
     question: 'What is the lead time for a wayfinding system?',
-    answer: 'Typical production lead time is 7–14 days depending on the number of sign types, quantity, and artwork. Phased rollouts are scheduled against your construction program.',
+    answer: 'Typical production lead time is 7–15 days depending on the number of sign types, quantity, and artwork. Phased rollouts are scheduled against your construction program.',
   },
 ];
 
@@ -172,8 +172,8 @@ export default function WayfindingSystemPage() {
                 <p className="text-slate-300 mb-8 leading-relaxed font-medium">Direct manufacturing from our 20,000sqm base in Dalian, established in 2006, keeps panel fabrication and finishing under one quality-control process.</p>
                 <div className="space-y-5">
                   <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">DDP Shipping by Quotation</span></div>
-                  <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">MOQ: 1</span></div>
-                  <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">Lead Time: 7–14 days</span></div>
+                  <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">MOQ: 1 set</span></div>
+                  <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">Lead Time: 7–15 days</span></div>
                 </div>
               </div>
             </div>

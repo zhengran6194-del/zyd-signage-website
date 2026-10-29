@@ -10,7 +10,7 @@ import RelatedCaseStudy from '@/components/RelatedCaseStudy';
 const faqs = [
   {
     question: 'What information is needed for an outdoor waste bin quotation?',
-    answer: 'Send the number of separation streams, the dimensions or capacity you need to serve, the opening type, the fixing method, the finish direction, the target quantity, and the ship-to country. Minimum order quantity is 1 piece, and typical production lead time is 7–14 days depending on quantity and finish.',
+    answer: 'Send the number of separation streams, the dimensions or capacity you need to serve, the opening type, the fixing method, the finish direction, the target quantity, and the ship-to country. Minimum order quantity is 1 set, and typical production lead time is 7–15 days depending on quantity and finish.',
   },
   {
     question: 'Can bins be supplied for a multi-stream recycling programme?',
@@ -167,8 +167,8 @@ export default function OutdoorWasteBinPage() {
                 <p className="text-slate-300 mb-8 leading-relaxed font-medium">Direct manufacturing from our 20,000sqm base in Dalian, established in 2006, keeps body fabrication, finishing, and the label panels under one quality-control process.</p>
                 <div className="space-y-5">
                   <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">DDP Shipping by Quotation</span></div>
-                  <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">MOQ: 1</span></div>
-                  <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">Lead Time: 7–14 days</span></div>
+                  <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">MOQ: 1 set</span></div>
+                  <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">Lead Time: 7–15 days</span></div>
                 </div>
               </div>
             </div>

@@ -444,8 +444,8 @@ export default function Home() {
                   </div>
                   <h4 className="font-black text-slate-900 mb-1 uppercase text-xs">{p.title}</h4>
                   <div className="flex flex-wrap gap-x-4 gap-y-1 text-[10px] font-bold uppercase tracking-widest text-slate-600 mb-2">
-                    <span>MOQ: 1</span>
-                    <span>Lead Time: 7–14 days</span>
+                    <span>MOQ: 1 set</span>
+                    <span>Lead Time: 7–15 days</span>
                   </div>
                   <span className="text-[10px] font-bold text-slate-600 uppercase tracking-widest group-hover:text-blue-600 transition-colors">Details</span>
                 </Link>

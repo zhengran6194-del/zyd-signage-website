@@ -18,7 +18,7 @@ const faqs = [
   },
   {
     question: 'What is the lead time for custom LED neon signs?',
-    answer: 'Typical production lead time is 7–14 days depending on artwork complexity, size, quantity, and mounting requirement. Multi-site rollout programs are phased according to your schedule.',
+    answer: 'Typical production lead time is 7–15 days depending on artwork complexity, size, quantity, and mounting requirement. Multi-site rollout programs are phased according to your schedule.',
   },
 ];
 
@@ -170,8 +170,8 @@ export default function LedNeonSignPage() {
                 <p className="text-slate-300 mb-8 leading-relaxed font-medium">Direct manufacturing from our 20,000sqm base in Dalian, established in 2006, keeps neon assembly and finishing under one quality-control process.</p>
                 <div className="space-y-5">
                   <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">DDP Shipping by Quotation</span></div>
-                  <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">MOQ: 1</span></div>
-                  <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">Lead Time: 7–14 days</span></div>
+                  <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">MOQ: 1 set</span></div>
+                  <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">Lead Time: 7–15 days</span></div>
                 </div>
               </div>
             </div>

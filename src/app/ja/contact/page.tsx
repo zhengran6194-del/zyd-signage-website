@@ -129,7 +129,7 @@ export default function JapaneseContactPage() {
               今お手元にあるものだけで構いません。おおよその寸法、設置面の写真、ロゴデータがあれば検討を始められます。図面は技術相談の中で一緒に詰めていき、無料の3Dモックアップで仕上がりを確認してから製作に入ります。
             </p>
             <p className="text-slate-600 leading-relaxed font-medium">
-              最小ロットは1台、通常の生産リードタイムは図面とアートワークの確定後7〜14日です。情報が揃わない場合は、生産の着手が遅れるだけで、お見積もりの検討は進められます。よくあるご質問は
+              最小ロットは1セット、通常の生産リードタイムは図面とアートワークの確定後7〜15日です。情報が揃わない場合は、生産の着手が遅れるだけで、お見積もりの検討は進められます。よくあるご質問は
               <Link href="/ja/faq" className="font-black text-blue-700 underline decoration-blue-300 underline-offset-4 hover:text-blue-900">FAQ・資料</Link>
               にまとめています。
             </p>

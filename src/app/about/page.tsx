@@ -127,10 +127,10 @@ export default function AboutPage() {
             <div className="bg-slate-950 text-white rounded-[2.5rem] p-10">
               <h2 className="text-3xl font-black mb-6 uppercase tracking-tighter">Ordering and delivery basics</h2>
               <p className="text-slate-300 leading-relaxed mb-6">
-                Minimum order is one unit, so a single reception sign and a multi-site rollout are both accepted. Typical production lead time is 7–14 days depending on scope and quantity, counted from the point the drawings and the artwork are agreed.
+                Minimum order is 1 set, so a single reception sign and a multi-site rollout are both accepted. Typical production lead time is 7–15 days depending on scope and quantity, counted from the point the drawings and the artwork are agreed.
               </p>
               <p className="text-slate-300 leading-relaxed mb-6">
-                DDP may be quoted as a door-to-door scope once the destination and the cargo details are confirmed. The agreed delivery scope, import duties and taxes, and any warranty coverage, duration and exclusions are stated in the project quotation or supply agreement rather than assumed here.
+                DDP may be quoted as a door-to-door scope once the destination and the cargo details are confirmed. The warranty is 1 year. The agreed delivery scope, import duties and taxes, warranty coverage and exclusions are stated in the project quotation or supply agreement.
               </p>
               <p className="text-slate-300 leading-relaxed">
                 Artwork and brand references are reviewed before quoting, and the 3D mockup stage exists so the intended appearance can be seen before fabrication. Start from the{' '}

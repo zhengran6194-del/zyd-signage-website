@@ -137,10 +137,10 @@ export default function JapaneseAboutPage() {
           <div className="bg-slate-950 text-white rounded-[2.5rem] p-10">
             <h2 className="text-3xl font-black mb-6 tracking-tighter">ご発注と配送について</h2>
             <p className="text-slate-300 leading-relaxed mb-6">
-              最小ロットは1台です。受付カウンターのサイン1台から、複数拠点への展開まで承ります。通常の生産リードタイムは内容と数量により7〜14日で、図面とアートワークが確定した時点から起算します。
+              最小ロットは1セットです。受付カウンターのサイン1台から、複数拠点への展開まで承ります。通常の生産リードタイムは内容と数量により7〜15日で、図面とアートワークが確定した時点から起算します。
             </p>
             <p className="text-slate-300 leading-relaxed mb-6">
-              納品先と貨物の情報が確定した段階で、DDPをdoor-to-doorの範囲としてお見積もりできます。合意する納品範囲、関税・税金、保証の範囲・期間・除外事項は、案件ごとの見積書または供給契約に記載します。
+              納品先と貨物の情報が確定した段階で、DDPをdoor-to-doorの範囲としてお見積もりできます。保証期間は1年間です。合意する納品範囲、関税・税金、保証の範囲と除外事項は、案件ごとの見積書または供給契約に記載します。
             </p>
             <p className="text-slate-300 leading-relaxed">
               アートワークとブランド資料は見積もり前に確認し、3Dモックアップの段階で仕上がりの方向性をご確認いただきます。確定している図面や条件をそのままに、

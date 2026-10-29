@@ -64,7 +64,7 @@ export default function ProductsPage() {
             <div className="reveal">
               <h2 className="text-2xl font-black mb-4 text-slate-900 uppercase tracking-tight">What ordering looks like</h2>
               <p className="text-slate-600 leading-relaxed font-medium text-sm">
-                Minimum order is one unit, so a single sign and a multi-site rollout are both accepted, and typical production lead time is 7–14 days depending on scope and quantity. DDP may be quoted as a door-to-door scope once the destination and the cargo details are confirmed. Where the work is going out to tender, the guide to{' '}
+                Minimum order is 1 set, so a single sign and a multi-site rollout are both accepted, and typical production lead time is 7–15 days depending on scope and quantity. DDP may be quoted as a door-to-door scope once the destination and the cargo details are confirmed. Where the work is going out to tender, the guide to{' '}
                 <Link href="/guides/signage-procurement-low-bid-pitfalls" className="font-black text-blue-700 underline decoration-blue-300 underline-offset-4 hover:text-blue-900">low-bid signage tenders</Link>{' '}
                 explains why two prices for the same sign are rarely the same scope.
               </p>
@@ -83,8 +83,8 @@ export default function ProductsPage() {
                 <h3 className="text-xl font-black mb-3 text-slate-900 uppercase">{p.title}</h3>
                 <p className="text-slate-500 text-sm leading-relaxed mb-8 font-medium">{p.desc}</p>
                 <div className="flex flex-wrap gap-x-4 gap-y-1 text-[10px] font-bold uppercase tracking-widest text-slate-600 mb-6">
-                  <span>MOQ: 1</span>
-                  <span>Lead Time: 7–14 days</span>
+                  <span>MOQ: 1 set</span>
+                  <span>Lead Time: 7–15 days</span>
                 </div>
                 <Link href={`/products/${p.id}`} className="button button-green-base w-full py-3 mt-auto text-white font-bold rounded-md text-center block">
                   View Details

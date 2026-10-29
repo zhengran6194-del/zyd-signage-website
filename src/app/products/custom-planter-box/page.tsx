@@ -10,7 +10,7 @@ import RelatedCaseStudy from '@/components/RelatedCaseStudy';
 const faqs = [
   {
     question: 'What information is needed for a planter box quotation?',
-    answer: 'Send the profile or drawings, the dimensions, the target quantity, the planting type, the drainage detail, the finish direction, the installation method, and the ship-to country. Minimum order quantity is 1 piece, and typical production lead time is 7–14 days depending on quantity, finish, and whether the body is combined with other elements in the same landscape package.',
+    answer: 'Send the profile or drawings, the dimensions, the target quantity, the planting type, the drainage detail, the finish direction, the installation method, and the ship-to country. Minimum order quantity is 1 set, and typical production lead time is 7–15 days depending on quantity, finish, and whether the body is combined with other elements in the same landscape package.',
   },
   {
     question: 'Can planter boxes match an existing street furniture range?',
@@ -167,8 +167,8 @@ export default function CustomPlanterBoxPage() {
                 <p className="text-slate-300 mb-8 leading-relaxed font-medium">Direct manufacturing from our 20,000sqm base in Dalian, established in 2006, keeps body fabrication, finishing, and the brand panel under one quality-control process.</p>
                 <div className="space-y-5">
                   <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">DDP Shipping by Quotation</span></div>
-                  <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">MOQ: 1</span></div>
-                  <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">Lead Time: 7–14 days</span></div>
+                  <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">MOQ: 1 set</span></div>
+                  <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">Lead Time: 7–15 days</span></div>
                 </div>
               </div>
             </div>

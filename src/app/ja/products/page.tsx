@@ -67,8 +67,8 @@ export default function JapaneseProductsIndex() {
                   <h3 className="text-xl font-black mb-3 text-slate-900">{product.h1.lead}{product.h1.accent}{product.h1.tail}</h3>
                   <p className="text-slate-500 text-sm leading-relaxed mb-8 font-medium">{product.subtitle}</p>
                   <div className="flex flex-wrap gap-x-4 gap-y-1 text-[10px] font-bold tracking-widest text-slate-600 mb-6">
-                    <span>MOQ: 1</span>
-                    <span>リードタイム: 7〜14日</span>
+                    <span>MOQ: 1 set</span>
+                    <span>リードタイム: 7〜15日</span>
                   </div>
                   <Link
                     href={`/ja/products/${product.slug}`}

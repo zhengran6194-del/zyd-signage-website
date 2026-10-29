@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     question: 'What is the minimum order and lead time for an A-frame sign?',
-    answer: 'Minimum order is 1 unit and typical production lead time is 7–14 days depending on artwork, quantity, and finish. DDP delivery and any warranty terms are confirmed in the project quotation.',
+    answer: 'Minimum order is 1 set and typical production lead time is 7–15 days depending on artwork, quantity, and finish. The warranty is 1 year. DDP delivery, warranty coverage and exclusions are confirmed in the project quotation.',
   },
 ];
 
@@ -143,11 +143,11 @@ export default function PortableMetalAFrameSignPage() {
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
                 <div className="border-l-2 border-blue-500/40 pl-5">
-                  <div className="text-2xl font-black text-white">MOQ 1</div>
+                  <div className="text-2xl font-black text-white">MOQ 1 set</div>
                   <div className="text-xs text-slate-300 font-bold uppercase tracking-widest mt-1">Single-unit orders accepted</div>
                 </div>
                 <div className="border-l-2 border-blue-500/40 pl-5">
-                  <div className="text-2xl font-black text-white">7–14 days</div>
+                  <div className="text-2xl font-black text-white">7–15 days</div>
                   <div className="text-xs text-slate-300 font-bold uppercase tracking-widest mt-1">Typical production lead time</div>
                 </div>
                 <div className="border-l-2 border-blue-500/40 pl-5">

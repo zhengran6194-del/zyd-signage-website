@@ -4,7 +4,7 @@
  * Every language follows the same seven sections as the English home page and
  * states only what the English pages already publish: the 2006 founding year,
  * the 20-year trading history, the 20,000m² production base, the eight-step
- * process, MOQ 1, the 7–14 day lead time and DDP shipping by quotation. No
+ * process, MOQ 1, the 7–15 day lead time and DDP shipping by quotation. No
  * certification, price, warranty period, service life or customer count is added
  * anywhere. Products and guides are published in English only, so their links
  * point at the pages that exist.

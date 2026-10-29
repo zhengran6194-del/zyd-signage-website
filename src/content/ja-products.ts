@@ -6,7 +6,7 @@
  * — so the two versions of a page read as translations of one another.
  *
  * Every figure and claim here is one the English page already publishes: the
- * 2006 founding year, the 20,000m² production base, MOQ 1, the 7–14 day lead
+ * 2006 founding year, the 20,000m² production base, MOQ 1, the 7–15 day lead
  * time, DDP shipping by quotation, and the material and finish options named in
  * the English specification cards. No certification, price, warranty period,
  * service life or customer count is added.
@@ -92,7 +92,7 @@ export const japaneseProducts: JapaneseProduct[] = [
           'プロジェクト仕様に合わせて選定するLEDモジュール（オプション）',
           '点灯する場合は仕様に合わせて選定する電源',
           '屋外用途に応じた環境等級の確認',
-          '保証条件はプロジェクト見積もりで確認',
+          '保証期間は1年間。保証範囲と除外事項はプロジェクト見積もりで確認',
         ],
       },
     ],
@@ -112,7 +112,7 @@ export const japaneseProducts: JapaneseProduct[] = [
       {
         question: '導線サインのリードタイムはどのくらいですか？',
         answer:
-          '標準的な生産リードタイムは、サイン種別の数、数量、図面により7〜14日です。段階的な導入は、お客様の施工工程に合わせて計画します。',
+          '標準的な生産リードタイムは、サイン種別の数、数量、図面により7〜15日です。段階的な導入は、お客様の施工工程に合わせて計画します。',
       },
     ],
     cta: {
@@ -187,7 +187,7 @@ export const japaneseProducts: JapaneseProduct[] = [
         title: '耐久性',
         items: [
           '屋外用途に応じた環境等級の確認',
-          '保証条件はプロジェクト見積もりで確認',
+          '保証期間は1年間。保証範囲と除外事項はプロジェクト見積もりで確認',
           '製作前に合意する配線経路と保守アクセス',
         ],
       },
@@ -208,7 +208,7 @@ export const japaneseProducts: JapaneseProduct[] = [
       {
         question: 'オーダーメイドのハロー文字のリードタイムはどのくらいですか？',
         answer:
-          '標準的な生産リードタイムは、文字数、サイズ、仕上げ、照明構成により7〜14日です。大規模な導入案件はお客様の工程に合わせて段階的に進めます。',
+          '標準的な生産リードタイムは、文字数、サイズ、仕上げ、照明構成により7〜15日です。大規模な導入案件はお客様の工程に合わせて段階的に進めます。',
       },
     ],
     cta: {
@@ -289,7 +289,7 @@ export const japaneseProducts: JapaneseProduct[] = [
           'プロジェクト仕様に合わせて選定するLEDモジュール',
           'プロジェクト仕様に合わせて選定する電源',
           '屋外用途に応じた環境等級の確認',
-          '保証条件はプロジェクト見積もりで確認',
+          '保証期間は1年間。保証範囲と除外事項はプロジェクト見積もりで確認',
         ],
       },
     ],
@@ -309,7 +309,7 @@ export const japaneseProducts: JapaneseProduct[] = [
       {
         question: 'ピロンおよびモニュメントサインの標準的なリードタイムはどのくらいですか？',
         answer:
-          '標準的な生産リードタイムは、案件の複雑さにより7〜14日で、必要に応じて敷地固有の技術検討が加わります。大規模な導入案件はお客様の工程に合わせて段階的に進めます。',
+          '標準的な生産リードタイムは、案件の複雑さにより7〜15日で、必要に応じて敷地固有の技術検討が加わります。大規模な導入案件はお客様の工程に合わせて段階的に進めます。',
       },
     ],
     cta: {

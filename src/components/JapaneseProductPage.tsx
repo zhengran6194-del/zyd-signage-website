@@ -150,8 +150,8 @@ export default function JapaneseProductPage({ product }: { product: JapaneseProd
                 <p className="text-slate-300 mb-8 leading-relaxed font-medium">{product.factoryAdvantage}</p>
                 <div className="space-y-5">
                   <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">見積もりによるDDP配送</span></div>
-                  <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">MOQ: 1</span></div>
-                  <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">リードタイム: 7〜14日</span></div>
+                  <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">MOQ: 1 set</span></div>
+                  <div className="flex items-center gap-4"><span className="w-4 h-4 bg-green-500 rounded-full"></span><span className="font-bold">リードタイム: 7〜15日</span></div>
                 </div>
               </div>
             </div>

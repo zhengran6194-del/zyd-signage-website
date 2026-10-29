@@ -237,7 +237,7 @@ Bespoke manufacturing for global architectural projects.
 
 ###### Halo-Lit Letters
 
-MOQ: 1 Lead Time: 7–14 days
+MOQ: 1 set Lead Time: 7–15 days
 
 Details
 
@@ -247,7 +247,7 @@ Details
 
 ###### Wayfinding Systems
 
-MOQ: 1 Lead Time: 7–14 days
+MOQ: 1 set Lead Time: 7–15 days
 
 Details
 
@@ -257,7 +257,7 @@ Details
 
 ###### Medical Signage
 
-MOQ: 1 Lead Time: 7–14 days
+MOQ: 1 set Lead Time: 7–15 days
 
 Details
 
@@ -267,7 +267,7 @@ Details
 
 ###### Monument Signs
 
-MOQ: 1 Lead Time: 7–14 days
+MOQ: 1 set Lead Time: 7–15 days
 
 Details
 
@@ -277,7 +277,7 @@ Details
 
 ###### LED Light Boxes
 
-MOQ: 1 Lead Time: 7–14 days
+MOQ: 1 set Lead Time: 7–15 days
 
 Details
 
@@ -287,7 +287,7 @@ Details
 
 ###### LED Neon Signs
 
-MOQ: 1 Lead Time: 7–14 days
+MOQ: 1 set Lead Time: 7–15 days
 
 Details
 
@@ -297,7 +297,7 @@ Details
 
 ###### Metal & Acrylic Signs
 
-MOQ: 1 Lead Time: 7–14 days
+MOQ: 1 set Lead Time: 7–15 days
 
 Details
 
@@ -307,7 +307,7 @@ Details
 
 ###### Landscape & Furniture
 
-MOQ: 1 Lead Time: 7–14 days
+MOQ: 1 set Lead Time: 7–15 days
 
 Details
 
@@ -317,7 +317,7 @@ Details
 
 ###### Complete Systems
 
-MOQ: 1 Lead Time: 7–14 days
+MOQ: 1 set Lead Time: 7–15 days
 
 Details
 
@@ -327,7 +327,7 @@ Details
 
 ###### Outdoor Waste Bin
 
-MOQ: 1 Lead Time: 7–14 days
+MOQ: 1 set Lead Time: 7–15 days
 
 Details
 
@@ -337,7 +337,7 @@ Details
 
 ###### Custom Planter Box
 
-MOQ: 1 Lead Time: 7–14 days
+MOQ: 1 set Lead Time: 7–15 days
 
 Details
 
@@ -347,7 +347,7 @@ Details
 
 ###### Acrylic Desk Sign
 
-MOQ: 1 Lead Time: 7–14 days
+MOQ: 1 set Lead Time: 7–15 days
 
 Details
 
@@ -357,7 +357,7 @@ Details
 
 ###### Portable Metal A-Frame Sign
 
-MOQ: 1 Lead Time: 7–14 days
+MOQ: 1 set Lead Time: 7–15 days
 
 Details
 
@@ -606,9 +606,9 @@ Quality is handled as a set of agreed checks rather than a single inspection at 
 
 #### Ordering and delivery basics
 
-Minimum order is one unit, so a single reception sign and a multi-site rollout are both accepted. Typical production lead time is 7–14 days depending on scope and quantity, counted from the point the drawings and the artwork are agreed.
+Minimum order is 1 set, so a single reception sign and a multi-site rollout are both accepted. Typical production lead time is 7–15 days depending on scope and quantity, counted from the point the drawings and the artwork are agreed.
 
-DDP may be quoted as a door-to-door scope once the destination and the cargo details are confirmed. The agreed delivery scope, import duties and taxes, and any warranty coverage, duration and exclusions are stated in the project quotation or supply agreement rather than assumed here.
+DDP may be quoted as a door-to-door scope once the destination and the cargo details are confirmed. The warranty is 1 year. The agreed delivery scope, import duties and taxes, warranty coverage and exclusions are stated in the project quotation or supply agreement.
 
 Artwork and brand references are reviewed before quoting, and the 3D mockup stage exists so the intended appearance can be seen before fabrication. Start from the [contact form](https://www.zydsign.com/contact) with whatever drawings and constraints are already fixed.
 
@@ -837,7 +837,7 @@ We prefer vector files such as .AI, .EPS, .SVG, or high-resolution .PDF. These e
 
 What is the minimum order quantity for custom signage?
 
-The minimum order quantity (MOQ) is 1 piece for the listed custom signage products. Your quotation can cover one sign or a larger project quantity, depending on the brief.
+The minimum order quantity (MOQ) is 1 set for the listed custom signage products. Your quotation can cover one sign or a larger project quantity, depending on the brief.
 
 What information do you need to prepare a signage quotation?
 
@@ -857,7 +857,7 @@ DDP (Delivered Duty Paid) is a door-to-door delivery model that includes import 
 
 What is the standard lead time?
 
-Typical production lead time is 7–14 days depending on project complexity, artwork, quantity, and finish. Large-scale rollout projects are phased according to your schedule.
+Typical production lead time is 7–15 days depending on project complexity, artwork, quantity, and finish. Large-scale rollout projects are phased according to your schedule.
 
 Do you provide detailed installation drawings?
 
@@ -873,7 +873,7 @@ Coastal projects need a material and finish review based on exposure, appearance
 
 What are your warranty terms?
 
-Any warranty coverage, duration, and exclusions are stated in the project quotation or supply agreement. They depend on the supplied scope and should be confirmed before production.
+The warranty is 1 year. Coverage and exclusions are stated in the project quotation or supply agreement and should be confirmed before production.
 
 Do you offer engineering support for structural calculations?
 
@@ -1269,7 +1269,7 @@ Whether a sign stands indoors or outdoors, mounts on a wall or on the ground, an
 
 #### What ordering looks like
 
-Minimum order is one unit, so a single sign and a multi-site rollout are both accepted, and typical production lead time is 7–14 days depending on scope and quantity. DDP may be quoted as a door-to-door scope once the destination and the cargo details are confirmed. Where the work is going out to tender, the guide to [low-bid signage tenders](https://www.zydsign.com/guides/signage-procurement-low-bid-pitfalls) explains why two prices for the same sign are rarely the same scope.
+Minimum order is 1 set, so a single sign and a multi-site rollout are both accepted, and typical production lead time is 7–15 days depending on scope and quantity. DDP may be quoted as a door-to-door scope once the destination and the cargo details are confirmed. Where the work is going out to tender, the guide to [low-bid signage tenders](https://www.zydsign.com/guides/signage-procurement-low-bid-pitfalls) explains why two prices for the same sign are rarely the same scope.
 
 ![Airport Wayfinding](https://www.zydsign.com/assets/images/hero-wayfinding.jpg)
 
@@ -1277,7 +1277,7 @@ Minimum order is one unit, so a single sign and a multi-site rollout are both ac
 
 High-precision indoor and outdoor directional systems.
 
-MOQ: 1 Lead Time: 7–14 days
+MOQ: 1 set Lead Time: 7–15 days
 
 [View Details](https://www.zydsign.com/products/architectural-wayfinding-system)
 
@@ -1287,7 +1287,7 @@ MOQ: 1 Lead Time: 7–14 days
 
 Specialized healthcare signage systems for hospitals.
 
-MOQ: 1 Lead Time: 7–14 days
+MOQ: 1 set Lead Time: 7–15 days
 
 [View Details](https://www.zydsign.com/products/medical-care-signage)
 
@@ -1297,7 +1297,7 @@ MOQ: 1 Lead Time: 7–14 days
 
 Bespoke outdoor landscape branding and seating.
 
-MOQ: 1 Lead Time: 7–14 days
+MOQ: 1 set Lead Time: 7–15 days
 
 [View Details](https://www.zydsign.com/products/custom-landscape-furniture)
 
@@ -1307,7 +1307,7 @@ MOQ: 1 Lead Time: 7–14 days
 
 Illuminated acrylic faces with concealed LED modules inside a formed letter body.
 
-MOQ: 1 Lead Time: 7–14 days
+MOQ: 1 set Lead Time: 7–15 days
 
 [View Details](https://www.zydsign.com/products/custom-channel-letters)
 
@@ -1317,7 +1317,7 @@ MOQ: 1 Lead Time: 7–14 days
 
 Rear-glow metal letters that light the wall behind them rather than the face.
 
-MOQ: 1 Lead Time: 7–14 days
+MOQ: 1 set Lead Time: 7–15 days
 
 [View Details](https://www.zydsign.com/products/custom-halo-lit-letters)
 
@@ -1327,7 +1327,7 @@ MOQ: 1 Lead Time: 7–14 days
 
 Ultra-slim and projecting LED light boxes for retail.
 
-MOQ: 1 Lead Time: 7–14 days
+MOQ: 1 set Lead Time: 7–15 days
 
 [View Details](https://www.zydsign.com/products/ultra-slim-led-light-box)
 
@@ -1337,7 +1337,7 @@ MOQ: 1 Lead Time: 7–14 days
 
 Large-scale pylon signs and entry identification.
 
-MOQ: 1 Lead Time: 7–14 days
+MOQ: 1 set Lead Time: 7–15 days
 
 [View Details](https://www.zydsign.com/products/outdoor-pylon-monument-sign)
 
@@ -1347,7 +1347,7 @@ MOQ: 1 Lead Time: 7–14 days
 
 Vibrant custom neon flex for branding and interior decor.
 
-MOQ: 1 Lead Time: 7–14 days
+MOQ: 1 set Lead Time: 7–15 days
 
 [View Details](https://www.zydsign.com/products/custom-led-neon-sign)
 
@@ -1357,7 +1357,7 @@ MOQ: 1 Lead Time: 7–14 days
 
 Precision laser-cut corporate logos and plaque systems.
 
-MOQ: 1 Lead Time: 7–14 days
+MOQ: 1 set Lead Time: 7–15 days
 
 [View Details](https://www.zydsign.com/products/metal-acrylic-logo-sign)
 
@@ -1367,7 +1367,7 @@ MOQ: 1 Lead Time: 7–14 days
 
 One-partner coordinated signage programs for global rollouts.
 
-MOQ: 1 Lead Time: 7–14 days
+MOQ: 1 set Lead Time: 7–15 days
 
 [View Details](https://www.zydsign.com/products/complete-signage-system)
 
@@ -1377,7 +1377,7 @@ MOQ: 1 Lead Time: 7–14 days
 
 Custom waste bins for hospitality, commercial, and public-space projects.
 
-MOQ: 1 Lead Time: 7–14 days
+MOQ: 1 set Lead Time: 7–15 days
 
 [View Details](https://www.zydsign.com/products/outdoor-waste-bin)
 
@@ -1387,7 +1387,7 @@ MOQ: 1 Lead Time: 7–14 days
 
 Architectural planter solutions for commercial entrances and public spaces.
 
-MOQ: 1 Lead Time: 7–14 days
+MOQ: 1 set Lead Time: 7–15 days
 
 [View Details](https://www.zydsign.com/products/custom-planter-box)
 
@@ -1397,7 +1397,7 @@ MOQ: 1 Lead Time: 7–14 days
 
 Free-standing counter and desk signs for reception and front-of-house.
 
-MOQ: 1 Lead Time: 7–14 days
+MOQ: 1 set Lead Time: 7–15 days
 
 [View Details](https://www.zydsign.com/products/acrylic-desk-sign)
 
@@ -1407,7 +1407,7 @@ MOQ: 1 Lead Time: 7–14 days
 
 Free-standing A-frame signs for pavements, forecourts, and event stands.
 
-MOQ: 1 Lead Time: 7–14 days
+MOQ: 1 set Lead Time: 7–15 days
 
 [View Details](https://www.zydsign.com/products/portable-metal-a-frame-sign)
 
@@ -1584,11 +1584,11 @@ Acrylic desk signs: the short answer
 
 An acrylic desk sign is a free-standing sign that sits on a counter, reception desk, or meeting table and carries the brand mark, a name, or a short message. It is the right choice where a wall sign would sit too far behind the viewer, or where the counter itself is the focal point of the space. The build is settled against the artwork and the surface it will stand on before production starts.
 
-MOQ 1
+MOQ 1 set
 
 Single-unit orders accepted
 
-7–14 days
+7–15 days
 
 Typical production lead time
 
@@ -1700,7 +1700,7 @@ From the artwork, the surface the sign will stand on, and how it is expected to 
 
 ##### What is the minimum order and lead time for a desk sign?
 
-Minimum order is 1 unit and typical production lead time is 7–14 days depending on artwork, quantity, and finish. DDP delivery and any warranty terms are confirmed in the project quotation.
+Minimum order is 1 set and typical production lead time is 7–15 days depending on artwork, quantity, and finish. The warranty is 1 year. DDP delivery, warranty coverage and exclusions are confirmed in the project quotation.
 
 #### Planning a desk or counter sign?
 
@@ -1793,9 +1793,9 @@ Direct manufacturing from our 20,000sqm base in Dalian, established in 2006, kee
 
 DDP Shipping by Quotation
 
-MOQ: 1
+MOQ: 1 set
 
-Lead Time: 7–14 days
+Lead Time: 7–15 days
 
 #### Frequently asked questions
 
@@ -1809,7 +1809,7 @@ Accessibility requirements vary by country, building type, and the authority hav
 
 ##### What is the lead time for a wayfinding system?
 
-Typical production lead time is 7–14 days depending on the number of sign types, quantity, and artwork. Phased rollouts are scheduled against your construction program.
+Typical production lead time is 7–15 days depending on the number of sign types, quantity, and artwork. Phased rollouts are scheduled against your construction program.
 
 #### Planning a wayfinding program?
 
@@ -1901,9 +1901,9 @@ Direct manufacturing from our 20,000sqm base in Dalian, established in 2006, kee
 
 DDP Shipping by Quotation
 
-MOQ: 1
+MOQ: 1 set
 
-Lead Time: 7–14 days
+Lead Time: 7–15 days
 
 #### Frequently asked questions
 
@@ -1917,7 +1917,7 @@ Single-partner delivery pays off when a brand must be repeated across several bu
 
 ##### What is the lead time for a multi-element signage program?
 
-Typical production lead time is 7–14 days per element group depending on scope and quantity. Rollout programs are phased by site or by opening date against your construction schedule.
+Typical production lead time is 7–15 days per element group depending on scope and quantity. Rollout programs are phased by site or by opening date against your construction schedule.
 
 #### Planning a multi-site program?
 
@@ -2256,9 +2256,9 @@ Direct manufacturing from our 20,000sqm base in Dalian, established in 2006, kee
 
 DDP Shipping by Quotation
 
-MOQ: 1
+MOQ: 1 set
 
-Lead Time: 7–14 days
+Lead Time: 7–15 days
 
 #### Frequently asked questions
 
@@ -2272,7 +2272,7 @@ The mounting surface affects the result, because the glow depends on light refle
 
 ##### What is the lead time for custom halo-lit letters?
 
-Typical production lead time is 7–14 days depending on letter count, size, finish, and lighting configuration. Large rollout projects are phased according to your schedule.
+Typical production lead time is 7–15 days depending on letter count, size, finish, and lighting configuration. Large rollout projects are phased according to your schedule.
 
 #### Planning rear-glow letters?
 
@@ -2364,9 +2364,9 @@ Direct manufacturing from our 20,000sqm base in Dalian, established in 2006, kee
 
 DDP Shipping by Quotation
 
-MOQ: 1
+MOQ: 1 set
 
-Lead Time: 7–14 days
+Lead Time: 7–15 days
 
 #### Frequently asked questions
 
@@ -2380,7 +2380,7 @@ The finish is chosen for the climate and cleaning routine: coated metal, exposed
 
 ##### What is the lead time for landscape furniture?
 
-Typical production lead time is 7–14 days depending on the number of element types, quantity, and finish. Multi-site programs are phased against your construction schedule.
+Typical production lead time is 7–15 days depending on the number of element types, quantity, and finish. Multi-site programs are phased against your construction schedule.
 
 #### Planning street-level furniture?
 
@@ -2472,9 +2472,9 @@ Direct manufacturing from our 20,000sqm base in Dalian, established in 2006, kee
 
 DDP Shipping by Quotation
 
-MOQ: 1
+MOQ: 1 set
 
-Lead Time: 7–14 days
+Lead Time: 7–15 days
 
 Related Reading
 
@@ -2496,7 +2496,7 @@ Most LED neon projects are interior: reception walls, retail windows, hospitalit
 
 ##### What is the lead time for custom LED neon signs?
 
-Typical production lead time is 7–14 days depending on artwork complexity, size, quantity, and mounting requirement. Multi-site rollout programs are phased according to your schedule.
+Typical production lead time is 7–15 days depending on artwork complexity, size, quantity, and mounting requirement. Multi-site rollout programs are phased according to your schedule.
 
 #### Planning an LED neon feature?
 
@@ -2588,9 +2588,9 @@ Direct manufacturing from our 20,000sqm base in Dalian, established in 2006, kee
 
 DDP Shipping by Quotation
 
-MOQ: 1
+MOQ: 1 set
 
-Lead Time: 7–14 days
+Lead Time: 7–15 days
 
 Related Reading
 
@@ -2604,7 +2604,7 @@ From there the body follows the same production path as other fabricated signage
 
 ##### What information is needed for a planter box quotation?
 
-Send the profile or drawings, the dimensions, the target quantity, the planting type, the drainage detail, the finish direction, the installation method, and the ship-to country. Minimum order quantity is 1 piece, and typical production lead time is 7–14 days depending on quantity, finish, and whether the body is combined with other elements in the same landscape package.
+Send the profile or drawings, the dimensions, the target quantity, the planting type, the drainage detail, the finish direction, the installation method, and the ship-to country. Minimum order quantity is 1 set, and typical production lead time is 7–15 days depending on quantity, finish, and whether the body is combined with other elements in the same landscape package.
 
 ##### Can planter boxes match an existing street furniture range?
 
@@ -2704,9 +2704,9 @@ Direct manufacturing from our 20,000sqm base in Dalian, established in 2006, kee
 
 DDP Shipping by Quotation
 
-MOQ: 1
+MOQ: 1 set
 
-Lead Time: 7–14 days
+Lead Time: 7–15 days
 
 #### Frequently asked questions
 
@@ -2720,7 +2720,7 @@ Panels, edges, and graphics can be specified with surface finishes suited to rou
 
 ##### What is the lead time for a medical signage package?
 
-Typical production lead time is 7–14 days depending on the number of sign types, quantity, and artwork. Hospital rollouts are phased by floor or department against your opening schedule.
+Typical production lead time is 7–15 days depending on the number of sign types, quantity, and artwork. Hospital rollouts are phased by floor or department against your opening schedule.
 
 #### Planning a healthcare signage package?
 
@@ -2813,9 +2813,9 @@ Direct manufacturing from our 20,000sqm base in Dalian, established in 2006, kee
 
 DDP Shipping by Quotation
 
-MOQ: 1
+MOQ: 1 set
 
-Lead Time: 7–14 days
+Lead Time: 7–15 days
 
 #### Frequently asked questions
 
@@ -2829,7 +2829,7 @@ Common routes are stainless steel, aluminum, or coated sheet for the metal layer
 
 ##### What is the lead time for a custom logo sign?
 
-Typical production lead time is 7–14 days depending on artwork complexity, size, quantity, and finish. Multi-site programs are phased according to your schedule.
+Typical production lead time is 7–15 days depending on artwork complexity, size, quantity, and finish. Multi-site programs are phased according to your schedule.
 
 #### Planning a fabricated logo sign?
 
@@ -3165,9 +3165,9 @@ Direct manufacturing from our 20,000sqm base in Dalian, established in 2006, kee
 
 DDP Shipping by Quotation
 
-MOQ: 1
+MOQ: 1 set
 
-Lead Time: 7–14 days
+Lead Time: 7–15 days
 
 Related Reading
 
@@ -3181,7 +3181,7 @@ The body is then produced like other fabricated street furniture: drawings, cutt
 
 ##### What information is needed for an outdoor waste bin quotation?
 
-Send the number of separation streams, the dimensions or capacity you need to serve, the opening type, the fixing method, the finish direction, the target quantity, and the ship-to country. Minimum order quantity is 1 piece, and typical production lead time is 7–14 days depending on quantity and finish.
+Send the number of separation streams, the dimensions or capacity you need to serve, the opening type, the fixing method, the finish direction, the target quantity, and the ship-to country. Minimum order quantity is 1 set, and typical production lead time is 7–15 days depending on quantity and finish.
 
 ##### Can bins be supplied for a multi-stream recycling programme?
 
@@ -3225,11 +3225,11 @@ Portable metal A-frame signs: the short answer
 
 A portable metal A-frame sign is a free-standing sign that carries its own frame and stands on the ground rather than on a wall. The A-frame shape presents a face on each side, so the message can be read from either direction of approach, and the whole unit can be lifted, moved, or brought in at the end of the day. That combination is what makes it the practical choice where the position that matters is on the pavement or the forecourt instead of the building itself. The build is settled against the artwork and the site it will stand on before production starts.
 
-MOQ 1
+MOQ 1 set
 
 Single-unit orders accepted
 
-7–14 days
+7–15 days
 
 Typical production lead time
 
@@ -3341,7 +3341,7 @@ It is kept stable through the weight and the footprint of the frame itself, and 
 
 ##### What is the minimum order and lead time for an A-frame sign?
 
-Minimum order is 1 unit and typical production lead time is 7–14 days depending on artwork, quantity, and finish. DDP delivery and any warranty terms are confirmed in the project quotation.
+Minimum order is 1 set and typical production lead time is 7–15 days depending on artwork, quantity, and finish. The warranty is 1 year. DDP delivery, warranty coverage and exclusions are confirmed in the project quotation.
 
 #### Planning an A-frame sign?
 
@@ -3433,9 +3433,9 @@ Direct manufacturing from our 20,000sqm base in Dalian, established in 2006, kee
 
 DDP Shipping by Quotation
 
-MOQ: 1
+MOQ: 1 set
 
-Lead Time: 7–14 days
+Lead Time: 7–15 days
 
 #### Frequently asked questions
 
@@ -3449,7 +3449,7 @@ Yes, provided the construction and sealing are specified for the location. Outdo
 
 ##### What is the lead time for custom LED light boxes?
 
-Typical production lead time is 7–14 days depending on panel size, quantity, artwork, and lighting configuration. Rollout programs are phased according to your schedule.
+Typical production lead time is 7–15 days depending on panel size, quantity, artwork, and lighting configuration. Rollout programs are phased according to your schedule.
 
 #### Planning an illuminated panel?
 
@@ -3819,7 +3819,7 @@ No — but every open item should be written down with an owner. Production can 
 
 ##### What is the minimum order and typical lead time?
 
-Minimum order is one unit. Typical production lead time is 7 to 14 days depending on scope and quantity, counted from the point the artwork and the drawings are agreed. Multi-site packages and sample approvals change that estimate, so the lead time that applies to the project is the one in the quotation.
+Minimum order is 1 set. Typical production lead time is 7–15 days depending on scope and quantity, counted from the point the artwork and the drawings are agreed. Multi-site packages and sample approvals change that estimate, so the lead time that applies to the project is the one in the quotation.
 
 #### Sources & further reading
 
@@ -4946,7 +4946,7 @@ On a multi-location project, keep the master artwork and the site-specific mount
 
 A quotation is only as good as the brief behind it. Sending the items below with the first enquiry produces a comparable price instead of a placeholder, and it lets the supplier flag the gaps rather than fill them silently.
 
-Delivery scope belongs in the same conversation: minimum order is one unit, typical production lead time is 7 to 14 days depending on scope and quantity, and DDP can be quoted as a door-to-door scope once the destination and the cargo details are confirmed. These are project confirmations, not standing terms, so they should be restated in the quotation.
+Delivery scope belongs in the same conversation: minimum order is 1 set, typical production lead time is 7–15 days depending on scope and quantity, and DDP can be quoted as a door-to-door scope once the destination and the cargo details are confirmed. These are project confirmations, not standing terms, so they should be restated in the quotation.
 
 - • Vector artwork of the logo or lettering, with any brand colour references.
 - • Letter heights, overall run length and the quantity required.
@@ -4981,11 +4981,11 @@ Yes. Mixed routes are common on larger sites: a bright front-lit facade element 
 
 ##### How long does an illuminated sign take to produce?
 
-Typical production lead time is 7 to 14 days depending on scope and quantity, counted from the point the artwork and the drawings are agreed. Mixed packages, sample approvals and multi-site quantities change that estimate, so the lead time that applies to the project is the one written in the quotation.
+Typical production lead time is 7–15 days depending on scope and quantity, counted from the point the artwork and the drawings are agreed. Mixed packages, sample approvals and multi-site quantities change that estimate, so the lead time that applies to the project is the one written in the quotation.
 
 ##### What is the minimum order for custom illuminated signage?
 
-Minimum order is one unit. A single reception sign and a multi-site roll-out go through the same drawing and inspection stages, so the difference is in the quantity and the number of site variations rather than in a minimum quantity.
+Minimum order is 1 set. A single reception sign and a multi-site roll-out go through the same drawing and inspection stages, so the difference is in the quantity and the number of site variations rather than in a minimum quantity.
 
 ##### Do you handle delivery and duties?
 
@@ -9100,9 +9100,9 @@ Markdown mirror: https://www.zydsign.com/ja/about/index.md
 
 #### ご発注と配送について
 
-最小ロットは1台です。受付カウンターのサイン1台から、複数拠点への展開まで承ります。通常の生産リードタイムは内容と数量により7〜14日で、図面とアートワークが確定した時点から起算します。
+最小ロットは1セットです。受付カウンターのサイン1台から、複数拠点への展開まで承ります。通常の生産リードタイムは内容と数量により7〜15日で、図面とアートワークが確定した時点から起算します。
 
-納品先と貨物の情報が確定した段階で、DDPをdoor-to-doorの範囲としてお見積もりできます。合意する納品範囲、関税・税金、保証の範囲・期間・除外事項は、案件ごとの見積書または供給契約に記載します。
+納品先と貨物の情報が確定した段階で、DDPをdoor-to-doorの範囲としてお見積もりできます。保証期間は1年間です。合意する納品範囲、関税・税金、保証の範囲と除外事項は、案件ごとの見積書または供給契約に記載します。
 
 アートワークとブランド資料は見積もり前に確認し、3Dモックアップの段階で仕上がりの方向性をご確認いただきます。確定している図面や条件をそのままに、[お問い合わせフォーム](https://www.zydsign.com/ja/contact) からご相談ください。
 
@@ -9153,7 +9153,7 @@ Before You Write
 
 今お手元にあるものだけで構いません。おおよその寸法、設置面の写真、ロゴデータがあれば検討を始められます。図面は技術相談の中で一緒に詰めていき、無料の3Dモックアップで仕上がりを確認してから製作に入ります。
 
-最小ロットは1台、通常の生産リードタイムは図面とアートワークの確定後7〜14日です。情報が揃わない場合は、生産の着手が遅れるだけで、お見積もりの検討は進められます。よくあるご質問は[FAQ・資料](https://www.zydsign.com/ja/faq) にまとめています。
+最小ロットは1セット、通常の生産リードタイムは図面とアートワークの確定後7〜15日です。情報が揃わない場合は、生産の着手が遅れるだけで、お見積もりの検討は進められます。よくあるご質問は[FAQ・資料](https://www.zydsign.com/ja/faq) にまとめています。
 
 ##### 案件情報チェックリスト
 
@@ -9409,7 +9409,7 @@ Markdown mirror: https://www.zydsign.com/ja/products/index.md
 
 空港、病院、大学キャンパス、複合開発向けの導線サインシステム。
 
-MOQ: 1 リードタイム: 7〜14日
+MOQ: 1 set リードタイム: 7〜15日
 
 [詳細を見る](https://www.zydsign.com/ja/products/architectural-wayfinding-system)
 
@@ -9419,7 +9419,7 @@ MOQ: 1 リードタイム: 7〜14日
 
 建築ブランディング向けの背面発光。LEDモジュールを組み込んだ立体金属文字として製作します。
 
-MOQ: 1 リードタイム: 7〜14日
+MOQ: 1 set リードタイム: 7〜15日
 
 [詳細を見る](https://www.zydsign.com/ja/products/custom-halo-lit-letters)
 
@@ -9429,7 +9429,7 @@ MOQ: 1 リードタイム: 7〜14日
 
 企業キャンパス、ディーラー、商業施設の入口にふさわしいランドマーク規模の識別サイン。
 
-MOQ: 1 リードタイム: 7〜14日
+MOQ: 1 set リードタイム: 7〜15日
 
 [詳細を見る](https://www.zydsign.com/ja/products/outdoor-pylon-monument-sign)
 
@@ -9513,7 +9513,7 @@ Markdown mirror: https://www.zydsign.com/ja/products/architectural-wayfinding-sy
 - • プロジェクト仕様に合わせて選定するLEDモジュール（オプション）
 - • 点灯する場合は仕様に合わせて選定する電源
 - • 屋外用途に応じた環境等級の確認
-- • 保証条件はプロジェクト見積もりで確認
+- • 保証期間は1年間。保証範囲と除外事項はプロジェクト見積もりで確認
 
 ##### 工場直送の強み
 
@@ -9521,9 +9521,9 @@ Markdown mirror: https://www.zydsign.com/ja/products/architectural-wayfinding-sy
 
 見積もりによるDDP配送
 
-MOQ: 1
+MOQ: 1 set
 
-リードタイム: 7〜14日
+リードタイム: 7〜15日
 
 #### よくあるご質問
 
@@ -9537,7 +9537,7 @@ MOQ: 1
 
 ##### 導線サインのリードタイムはどのくらいですか？
 
-標準的な生産リードタイムは、サイン種別の数、数量、図面により7〜14日です。段階的な導入は、お客様の施工工程に合わせて計画します。
+標準的な生産リードタイムは、サイン種別の数、数量、図面により7〜15日です。段階的な導入は、お客様の施工工程に合わせて計画します。
 
 #### 導線プログラムをご計画ですか？
 
@@ -9621,7 +9621,7 @@ Markdown mirror: https://www.zydsign.com/ja/products/custom-halo-lit-letters/ind
 ##### 耐久性
 
 - • 屋外用途に応じた環境等級の確認
-- • 保証条件はプロジェクト見積もりで確認
+- • 保証期間は1年間。保証範囲と除外事項はプロジェクト見積もりで確認
 - • 製作前に合意する配線経路と保守アクセス
 
 ##### 工場直送の強み
@@ -9630,9 +9630,9 @@ Markdown mirror: https://www.zydsign.com/ja/products/custom-halo-lit-letters/ind
 
 見積もりによるDDP配送
 
-MOQ: 1
+MOQ: 1 set
 
-リードタイム: 7〜14日
+リードタイム: 7〜15日
 
 #### よくあるご質問
 
@@ -9646,7 +9646,7 @@ MOQ: 1
 
 ##### オーダーメイドのハロー文字のリードタイムはどのくらいですか？
 
-標準的な生産リードタイムは、文字数、サイズ、仕上げ、照明構成により7〜14日です。大規模な導入案件はお客様の工程に合わせて段階的に進めます。
+標準的な生産リードタイムは、文字数、サイズ、仕上げ、照明構成により7〜15日です。大規模な導入案件はお客様の工程に合わせて段階的に進めます。
 
 #### 背面発光文字をご検討ですか？
 
@@ -9733,7 +9733,7 @@ Markdown mirror: https://www.zydsign.com/ja/products/outdoor-pylon-monument-sign
 - • プロジェクト仕様に合わせて選定するLEDモジュール
 - • プロジェクト仕様に合わせて選定する電源
 - • 屋外用途に応じた環境等級の確認
-- • 保証条件はプロジェクト見積もりで確認
+- • 保証期間は1年間。保証範囲と除外事項はプロジェクト見積もりで確認
 
 ##### 工場直送の強み
 
@@ -9741,9 +9741,9 @@ Markdown mirror: https://www.zydsign.com/ja/products/outdoor-pylon-monument-sign
 
 見積もりによるDDP配送
 
-MOQ: 1
+MOQ: 1 set
 
-リードタイム: 7〜14日
+リードタイム: 7〜15日
 
 #### よくあるご質問
 
@@ -9757,7 +9757,7 @@ MOQ: 1
 
 ##### ピロンおよびモニュメントサインの標準的なリードタイムはどのくらいですか？
 
-標準的な生産リードタイムは、案件の複雑さにより7〜14日で、必要に応じて敷地固有の技術検討が加わります。大規模な導入案件はお客様の工程に合わせて段階的に進めます。
+標準的な生産リードタイムは、案件の複雑さにより7〜15日で、必要に応じて敷地固有の技術検討が加わります。大規模な導入案件はお客様の工程に合わせて段階的に進めます。
 
 #### エントリーサインをご計画ですか？
 
