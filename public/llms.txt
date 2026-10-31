@@ -29,6 +29,10 @@ A single file carrying the full text of every page listed here is published at [
 - Email: zhengran@zydsign.cn
 - Website: https://www.zydsign.com
 
+## Factory video
+
+- [ZYD Signage Factory Tour](https://www.zydsign.com/videos/factory-tour/index.md): Watch the recorded company and factory video.
+
 ## Company
 
 - [About ZYD Signage](https://www.zydsign.com/about/index.md): Company background, the Dalian production base and DDP delivery scope.

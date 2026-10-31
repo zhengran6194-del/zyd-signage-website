@@ -271,8 +271,8 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
               <div className="reveal max-w-xl">
                 <div className="text-blue-600 font-black uppercase text-[10px] tracking-[0.4em] mb-5 border-l-2 border-blue-600 pl-4">INSIDE OUR FACTORY</div>
-                <h2 className="text-5xl lg:text-6xl font-black text-slate-950 uppercase tracking-tighter leading-[0.95] mb-8">See Your Signage Being Made — Live.</h2>
-                <p className="text-slate-600 text-lg leading-relaxed font-medium mb-10">From precision cutting to final quality checks, see how your signage moves through our factory before it reaches your project site.</p>
+                <h2 className="text-5xl lg:text-6xl font-black text-slate-950 uppercase tracking-tighter leading-[0.95] mb-8">See Inside Our Signage Factory.</h2>
+                <p className="text-slate-600 text-lg leading-relaxed font-medium mb-10">Watch our recorded company and factory video, or contact our team to arrange a live factory tour and discuss your project.</p>
                 <div className="flex flex-col sm:flex-row gap-5">
                   <a
                     href={`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent('Hi Aaron, I would like to arrange a full factory tour and discuss a signage project.')}`}
@@ -280,23 +280,17 @@ export default function Home() {
                     rel="noopener noreferrer"
                     className="button-green-base"
                   >
-                    Full Factory Tour
+                    Arrange a Live Tour
                   </a>
                   <Link href="/contact" className="button-green-base">Get Free Quote</Link>
                 </div>
               </div>
               <div className="reveal relative group">
                 <div className="rounded-[3rem] overflow-hidden shadow-2xl border-[12px] border-slate-50 aspect-[4/3] bg-slate-100">
-                  <video
-                    src="/assets/videos/factory-live.mp4"
-                    controls
-                    muted
-                    loop
-                    playsInline
-                    preload="metadata"
-                    poster="/assets/images/factory-video-poster.jpg"
-                    className="w-full h-full object-cover"
-                  />
+                  <Link href="/videos/factory-tour" className="relative block w-full h-full" aria-label="Watch the ZYD Signage factory tour video">
+                    <Image src="/assets/images/factory-video-poster.jpg" alt="Preview of the ZYD Signage factory tour video" fill sizes="(min-width: 1024px) 45vw, 90vw" className="object-cover" />
+                    <span className="absolute inset-0 flex items-center justify-center bg-black/20"><span className="rounded-full bg-white text-slate-950 px-6 py-4 font-bold shadow-lg">▶ Watch Factory Tour · 2:49</span></span>
+                  </Link>
                 </div>
               </div>
             </div>

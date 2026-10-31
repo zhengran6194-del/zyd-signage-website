@@ -12,10 +12,11 @@ import { siteConfig } from "@/config/site";
 // one, otherwise the date of the last commit that touched the route. Update the
 // relevant entry whenever a route's content changes.
 const lastModifiedByRoute: Record<string, string> = {
+  "/videos/factory-tour": "2026-10-30",
   "/packaging-shipping": "2026-10-26",
   "/case-studies/multi-brand-dealership-pylon-sign": "2026-10-26",
   "/guides/pylon-sign-site-information-checklist": "2026-10-24",
-  "": "2026-10-29",
+  "": "2026-10-30",
   "/products": "2026-10-29",
   "/projects": "2026-10-28",
   "/guides": "2026-10-24",
@@ -113,6 +114,7 @@ const englishAndJapanese = (path: string): Record<string, string> => ({
 });
 
 const routes: SitemapRoute[] = [
+  { path: "/videos/factory-tour", priority: 0.7 },
   { path: "", priority: 1.0, languages: homePageLanguages },
   {
     path: "/ja",
@@ -222,6 +224,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: lastModifiedByRoute[path] ?? SITE_CONTENT_BASELINE_DATE,
     changeFrequency: "monthly",
     priority,
+    ...(path === "/videos/factory-tour" ? { videos: [{ title: "ZYD Signage Factory Tour Video", thumbnail_loc: siteConfig.url + "/assets/images/factory-video-poster.jpg", description: "Recorded introduction to ZYD Signage and its factory in Dalian, China.", content_loc: siteConfig.url + "/assets/videos/factory-live.mp4", duration: 169 }] } : {}),
     ...(languages
       ? {
           alternates: {

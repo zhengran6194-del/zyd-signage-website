@@ -156,3 +156,6 @@ https://www.zydsign.com/ja/projects
 https://www.zydsign.com/ja/about
 # status 200
 https://www.zydsign.com/ja/contact
+
+# Factory video watch page, published 2026-10-30
+https://www.zydsign.com/videos/factory-tour
