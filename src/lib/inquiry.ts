@@ -112,6 +112,7 @@ export async function submitInquiry(input: InquiryInput): Promise<InquiryRespons
 declare global {
   interface Window {
     dataLayer?: Record<string, unknown>[];
+    __zydInternalTest?: boolean;
   }
 }
 
@@ -120,7 +121,7 @@ declare global {
  * the inquiry was stored, so a failed submission never reports a conversion.
  */
 export function pushGenerateLead(response: InquiryResponse, source: InquirySource) {
-  if (typeof window === 'undefined') return false;
+  if (typeof window === 'undefined' || window.__zydInternalTest) return false;
   if (!response.ok || !response.id || response.emailNotification !== 'sent') return false;
 
   window.dataLayer = window.dataLayer || [];

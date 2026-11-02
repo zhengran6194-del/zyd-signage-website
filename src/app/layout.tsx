@@ -4,6 +4,7 @@ import { Manrope } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import InternalTestNotice from "@/components/InternalTestNotice";
 import JsonLd from "@/components/JsonLd";
 import DocumentShell from "@/components/DocumentShell";
 import { buildPageMetadata, homePageLanguages, siteConfig } from "@/config/site";
@@ -119,7 +120,17 @@ export default function RootLayout({
           {/* llmstxt.org: names the file that describes every page under this path. */}
           <link rel="describedby" href={`${siteConfig.url}/llms.txt`} />
           <Script id="gtm" strategy="beforeInteractive">
-            {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            {`(function(w,d,s,l,i){
+        var mode=new URLSearchParams(w.location.search).get('zyd_internal');
+        var internal=false;
+        try {
+          if(mode==='1') localStorage.setItem('zyd_internal','1');
+          if(mode==='0') localStorage.removeItem('zyd_internal');
+          internal=localStorage.getItem('zyd_internal')==='1';
+        } catch(e) { internal=mode==='1'; }
+        w.__zydInternalTest=internal;
+        if(internal){w['ga-disable-G-0VGWVG5VJ2']=true;return;}
+        w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
@@ -136,6 +147,7 @@ export default function RootLayout({
       <a className="skip-link" href="#main-content">
         Skip to main content
       </a>
+      <InternalTestNotice />
       <Header />
       {/* Keyboard entry point for the skip link. tabIndex={-1} lets focus land
           here while keeping the wrapper out of the sequential tab order. */}
@@ -145,6 +157,7 @@ export default function RootLayout({
       <Footer />
       <Script id="microsoft-clarity" strategy="afterInteractive">
         {`(function(c,l,a,r,i,t,y){
+        if(c.__zydInternalTest)return;
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
         t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
