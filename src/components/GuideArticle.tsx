@@ -1,4 +1,5 @@
 import { Fragment } from 'react';
+import GuideProjectNextStep from '@/components/GuideProjectNextStep';
 import Image from 'next/image';
 import Link from 'next/link';
 import JsonLd from '@/components/JsonLd';
@@ -149,6 +150,8 @@ export default function GuideArticle(guide: GuideArticleProps) {
               <p key={paragraph} className="text-slate-600 leading-relaxed mb-4">{paragraph}</p>
             ))}
 
+            <GuideProjectNextStep slug={guide.slug} compact />
+
             {guide.showContents && <nav aria-label="Article contents" className="my-8 rounded-2xl bg-slate-50 p-6"><p className="font-bold mb-3">In this guide</p><ol className="space-y-3 text-sm text-blue-700">{guide.sections.map((section, index) => <li key={section.heading}><a href={`#guide-section-${index + 1}`} className="underline underline-offset-4">{section.heading}</a></li>)}</ol><p className="mt-4 text-xs text-slate-500">Tables can be scrolled horizontally on smaller screens.</p></nav>}
 
             {guide.sections.map((section, sectionIndex) => (
@@ -258,6 +261,8 @@ export default function GuideArticle(guide: GuideArticleProps) {
                 ))}
               </ol>
             </section>
+
+            <GuideProjectNextStep slug={guide.slug} />
 
             <div className="mt-12 pt-8 border-t border-slate-200 flex flex-wrap gap-5 text-sm font-black uppercase tracking-widest">
               {guide.relatedLinks.map((link) => <Link key={link.href} href={link.href} className="text-blue-700 hover:text-blue-900">{link.label}</Link>)}

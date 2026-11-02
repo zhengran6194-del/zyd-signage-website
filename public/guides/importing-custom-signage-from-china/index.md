@@ -8,6 +8,12 @@ Guide • Updated Oct 20, 2026 • By Aaron, ZYD Signage
 
 Importing custom signage from China requires more than comparing factory prices. Before ordering, confirm the total delivered cost, local installation requirements, approval process and after-sales responsibilities.
 
+## See the signs discussed in this guide
+
+- [Explore custom channel letters →](https://www.zydsign.com/products/custom-channel-letters)
+- [Explore pylon and monument signs →](https://www.zydsign.com/products/outdoor-pylon-monument-sign)
+- [See real packing and delivery scope →](https://www.zydsign.com/packaging-shipping)
+
 ## Before You Compare Factory Prices
 
 A competitive manufacturing quotation can be useful for a retail storefront, restaurant or multi-building wayfinding project. However, the sign still needs to clear customs, reach the site and be installed correctly.
@@ -287,6 +293,20 @@ Resolve the issue before production. Ask the installer to state the reason and d
 These public references support terminology, accessibility context, or material-selection background. They are not ZYD product claims; project compliance and final specifications must be confirmed with the design team and the authority having jurisdiction.
 
 1. [International Sign Association (ISA) — Glossary of Sign Terms and Definitions](https://signs.org/resources-training/signs101/glossary-of-sign-terms-and-definitions/) Public terminology reference for sign construction and component descriptions.
+
+## Plan a letter or pylon sign shipment
+
+Send the artwork or site brief, approximate sizes, quantity and destination city or postcode. We can discuss fabrication, wooden crating and EXW, FOB, CIF or DDP scope in the quotation. On-site installation is not included.
+
+- [Explore custom channel letters →](https://www.zydsign.com/products/custom-channel-letters)
+- [Explore pylon and monument signs →](https://www.zydsign.com/products/outdoor-pylon-monument-sign)
+- [See real packing and delivery scope →](https://www.zydsign.com/packaging-shipping)
+
+[Get a Letter Project Quote](https://www.zydsign.com/contact?product=letters) [Get a Pylon Project Quote](https://www.zydsign.com/contact?product=pylon)
+
+MOQ: 1 set · Free design support · Production: 7–15 days · 1-year warranty.
+
+First reply within 8 hours by WhatsApp or email to confirm your requirements and any missing information. A completed design or quotation may need further review.
 
 [The full procurement sequence](https://www.zydsign.com/guides/complete-site-signage-procurement-checklist) [What shapes the factory quotation itself](https://www.zydsign.com/guides/how-much-do-custom-channel-letters-cost) [How custom signage is manufactured](https://www.zydsign.com/guides/custom-signage-manufacturing-process) [Why the cheapest bid fails at acceptance](https://www.zydsign.com/guides/signage-procurement-low-bid-pitfalls) [Illumination specification checks](https://www.zydsign.com/guides/illuminated-signage-buying-guide) [Custom channel letters built for export crating](https://www.zydsign.com/products/custom-channel-letters) [Get Material Advice](https://wa.me/8615931359322?text=Hi%20Aaron%2C%20I%20would%20like%20material%20advice%20for%20this%20guide%20topic%3A%20Importing%20Custom%20Signage%20from%20China%3A%20Costs%2C%20Installation%20and%20Supplier%20Responsibilities.)
 
