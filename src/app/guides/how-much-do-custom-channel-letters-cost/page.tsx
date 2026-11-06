@@ -1,11 +1,11 @@
 import GuideArticle, { type GuideArticleData } from '@/components/GuideArticle';
 
 const guide: GuideArticleData = {
-  "title": "Channel Letter Sign Cost: What Goes Into Your Quote?",
+  "title": "How Much Do Channel Letter Signs Cost? A Quote Guide",
   "category": "Channel Letter Pricing Guide",
-  "description": "Understand channel letter sign pricing: fabrication, lighting, mounting, freight and local installation. Use a scope checklist to compare quotes for your project.",
-  "updated": "Oct 26, 2026",
-  "directAnswer": "Channel letter sign cost depends on the finished design and the scope you are buying. A factory quote for letters is different from a delivered price or a fully installed sign. For a usable budget, separate fabrication and components, packing and transport, and local installation. ZYD prices custom projects from artwork, dimensions, quantity, lighting, mounting details and destination; this guide does not publish a verified average price or a fixed price list.",
+  "description": "What affects channel letter sign cost? Compare front-lit and halo-lit construction, mounting and shipping, then request a custom quote with free design support.",
+  "updated": "Nov 6, 2026",
+  "directAnswer": "Channel letter signs are quoted to your design: letter size and count, front-lit or halo-lit construction, materials, mounting and destination all affect the cost. Compare three separate amounts: factory fabrication, packing and delivery, and local installation. For a ZYD quotation, send your artwork, approximate dimensions, quantity, wall photo and destination. There is no single price that represents every custom sign; this guide explains the cost inputs and what to include in your request.",
   "introParagraphs": [
     "If you are searching for the average cost of channel letter signs, first decide which total you need. A price per letter can help compare identical letters, but it cannot describe an entire storefront project unless the letter count, height, construction and included services are stated. Use the breakdown below to ask suppliers and your local installer for the same scope."
   ],

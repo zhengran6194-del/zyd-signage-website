@@ -54,20 +54,24 @@ export default function OutdoorPylonMonumentSignPage() {
             <div>
               <div className="eyebrow text-blue-400 font-black tracking-widest uppercase mb-4 text-sm">Custom Pylon Sign Manufacturing</div>
               <h1 className="text-4xl lg:text-5xl font-black mb-6 leading-tight tracking-tight uppercase">
-                Outdoor Pylon &amp; <span className="text-blue-500 italic">Monument</span> <br/>Signs
+                Custom Pylon Signs &amp; <span className="text-blue-500 italic">Tenant Directories</span>
               </h1>
               <p className="text-lg text-slate-300 mb-8 max-w-xl leading-relaxed font-medium">
-                Custom illuminated pylon signs, multi-tenant directories and freestanding entrance signs for dealerships, shopping destinations and commercial sites. Define the size, display faces, lighting and supplied parts around your project.
+                Custom illuminated entrance signs and multi-tenant directories for dealerships, shopping centers and commercial properties. Our team plans, designs and manufactures your sign to the agreed dimensions, tenant layout, lighting and finish.
               </p>
               <div className="flex flex-col sm:flex-row sm:flex-wrap gap-4">
                 <Link
                   href="/contact?product=pylon"
                   className="button button-green-base px-6 py-4 rounded-full text-white font-black text-sm tracking-wide text-center"
                 >
-                  SUBMIT A PYLON SIGN BRIEF
+                  GET A PYLON SIGN QUOTE
                 </Link>
-                <WhatsAppCta label="Check Feasibility" message="Hi Aaron, can you check feasibility for an outdoor pylon or monument sign?" className="inline-flex items-center justify-center rounded-full border border-blue-300 px-6 py-4 text-sm font-black text-white hover:bg-white/10" />
+                <WhatsAppCta label="Discuss on WhatsApp" message="Hi Aaron, I would like a custom pylon sign quote. I can share site photos, approximate dimensions, tenant layout, quantity and destination." className="inline-flex items-center justify-center rounded-full border border-blue-300 px-6 py-4 text-sm font-black text-white hover:bg-white/10" />
               </div>
+              <p className="mt-5 text-sm leading-relaxed text-slate-300">MOQ: 1 set · Free design support · Production: 7–15 days · 1-year warranty.</p>
+              <p className="mt-3 text-sm leading-relaxed text-slate-300">Send site photos, approximate dimensions, tenant layout and destination. First reply within 8 hours by WhatsApp or email; final design and quotation follow review.</p>
+              <p className="mt-3 text-sm leading-relaxed text-slate-400">EXW, FOB, CIF or DDP by quotation. Local foundations and on-site installation are arranged by your project team.</p>
+              <Link href="/case-studies/multi-brand-dealership-pylon-sign" className="mt-5 inline-block text-sm font-bold text-blue-300 underline underline-offset-4">See a real dealership pylon: drawing to lighting check →</Link>
             </div>
             <div className="relative">
               <div className="absolute -inset-4 bg-blue-500/20 blur-3xl rounded-full"></div>
