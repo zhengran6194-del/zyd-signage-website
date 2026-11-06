@@ -12,6 +12,8 @@ import { siteConfig } from "@/config/site";
 // one, otherwise the date of the last commit that touched the route. Update the
 // relevant entry whenever a route's content changes.
 const lastModifiedByRoute: Record<string, string> = {
+"/guides/pylon-sign-cost": "2026-11-06",
+"/guides/ordering-channel-letters-from-manufacturer": "2026-11-06",
   "/videos/factory-tour": "2026-10-30",
   "/packaging-shipping": "2026-10-26",
   "/case-studies/multi-brand-dealership-pylon-sign": "2026-10-26",
@@ -19,7 +21,7 @@ const lastModifiedByRoute: Record<string, string> = {
   "": "2026-10-30",
   "/products": "2026-10-29",
   "/projects": "2026-10-28",
-  "/guides": "2026-10-24",
+  "/guides": "2026-11-06",
   "/about": "2026-10-29",
   "/contact": "2026-10-27",
   "/faq": "2026-10-29",
@@ -66,7 +68,7 @@ const lastModifiedByRoute: Record<string, string> = {
 
   "/products/architectural-wayfinding-system": "2026-10-29",
   "/products/complete-signage-system": "2026-10-29",
-  "/products/custom-channel-letters": "2026-10-27",
+  "/products/custom-channel-letters": "2026-11-06",
   "/products/custom-halo-lit-letters": "2026-10-29",
   "/products/custom-landscape-furniture": "2026-10-29",
   "/products/custom-led-neon-sign": "2026-10-29",
@@ -171,6 +173,8 @@ const routes: SitemapRoute[] = [
   { path: "/case-studies/multi-brand-dealership-pylon-sign", priority: 0.8 },
   { path: "/projects", priority: 0.8, languages: englishAndJapanese("/projects") },
   { path: "/ja/projects", priority: 0.7, languages: englishAndJapanese("/projects") },
+  { path: "/guides/pylon-sign-cost", priority: 0.8 },
+  { path: "/guides/ordering-channel-letters-from-manufacturer", priority: 0.8 },
   { path: "/guides", priority: 0.8, languages: englishAndJapanese("/guides") },
   { path: "/ja/guides", priority: 0.7, languages: englishAndJapanese("/guides") },
   // Pages that exist in English only, so they declare no alternates.

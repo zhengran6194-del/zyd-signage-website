@@ -168,6 +168,7 @@ export default function FrontLitChannelLettersPage() {
           </div>
         </section>
 
+        <div className="container py-6"><Link href="/guides/ordering-channel-letters-from-manufacturer" className="text-blue-800 font-bold underline underline-offset-4">Need free design and a quote? See what to send Aaron →</Link></div>
         {/* 4. Specification selection guide */}
         <section className="section bg-slate-100 pt-0">
           <div className="container">

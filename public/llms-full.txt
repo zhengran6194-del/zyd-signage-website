@@ -906,6 +906,26 @@ Each guide states what belongs to the buyer and what belongs to the supplier. Pr
 
 Guides answer the buying questions; the [product range](https://www.zydsign.com/products) shows what is manufactured for each sign type, and the [case studies](https://www.zydsign.com/projects) show how those sign types were coordinated on real sites. When the brief is ready, the technical review starts from the [contact form](https://www.zydsign.com/contact).
 
+Procurement
+
+#### Pylon Sign Cost: What Affects Your Project Quote?
+
+Understand custom pylon sign cost: dimensions, single or double faces, tenant panels, lighting, steel framing, wooden crating and freight. Get a project quote.
+
+Read Guide
+
+<https://www.zydsign.com/guides/pylon-sign-cost>
+
+Procurement
+
+#### Ordering Channel Letters from a Manufacturer: What to Send
+
+Get free channel letter design support from Aaron. Prepare artwork, dimensions, lighting, mounting details and destination to confirm drawings, timing and freight.
+
+Read Guide
+
+<https://www.zydsign.com/guides/ordering-channel-letters-from-manufacturer>
+
 Pylon Sign Planning
 
 #### What Site Information Do You Need Before Ordering a Pylon Sign?
@@ -2080,6 +2100,8 @@ Lighting is specified as part of the build rather than added afterwards: module 
 
 [Read the material guide](https://www.zydsign.com/guides/signage-material-selection-guide)
 
+[Need free design and a quote? See what to send Aaron →](https://www.zydsign.com/guides/ordering-channel-letters-from-manufacturer)
+
 #### Specifications with selection logic
 
 Each item is a decision input for a front-lit letter. Confirm the face, the return depth and the mounting route before production.
@@ -2878,6 +2900,8 @@ EXW, FOB, CIF or DDP by quotation. Local foundations and on-site installation ar
 ![Installed Water Fashion Plaza multi-tenant pylon sign at the commercial entrance in Dalian](https://www.zydsign.com/assets/images/pylon-water-plaza-installed.jpg)
 
 Water Fashion Plaza, Dalian: installed entrance pylon and tenant directory. [Explore the project](https://www.zydsign.com/case-studies/dalian-water-plaza-wayfinding-signage)
+
+[Planning a budget? See what affects pylon sign cost →](https://www.zydsign.com/guides/pylon-sign-cost)
 
 From drawing to illuminated sign
 
@@ -5825,6 +5849,143 @@ Share your room list, photos of the installation surface, preferred materials an
 
 [DISCUSS YOUR PROJECT](https://www.zydsign.com/contact)
 
+### Ordering Channel Letters from a Manufacturer: What to Send
+
+Canonical page: https://www.zydsign.com/guides/ordering-channel-letters-from-manufacturer
+Markdown mirror: https://www.zydsign.com/guides/ordering-channel-letters-from-manufacturer/index.md
+
+Get free channel letter design support from Aaron. Prepare artwork, dimensions, lighting, mounting details and destination to confirm drawings, timing and freight.
+
+Guide • Updated Nov 6, 2026 • By Aaron, ZYD Signage
+
+![Channel letters and logo arranged on a full-size workshop positioning template](https://www.zydsign.com/assets/images/guides/halo-lit-channel-letters-installation-template.jpg)
+
+*Channel letters and logo arranged on a full-size workshop positioning template. ZYD project reference; your specification is confirmed separately.*
+
+To order channel letters from ZYD, contact Aaron with your logo or reference, approximate dimensions, quantity, lighting preference, wall photographs and delivery destination. If you do not have a finished drawing, our designers provide free design support, recommend dimensions and prepare a visual mockup. Confirm the artwork, construction, mounting interface and supply scope before production, then agree the production schedule and freight arrangements.
+
+In this guide
+
+1. [1. Start with Aaron, even if your drawing is incomplete](https://www.zydsign.com#guide-section-1)
+2. [2. Send the artwork and the intended wording](https://www.zydsign.com#guide-section-2)
+3. [3. Give approximate dimensions or ask for a recommendation](https://www.zydsign.com#guide-section-3)
+4. [4. Explain the lighting effect you want](https://www.zydsign.com#guide-section-4)
+5. [5. Coordinate the mounting interface before production](https://www.zydsign.com#guide-section-5)
+6. [6. Include the destination and target date](https://www.zydsign.com#guide-section-6)
+7. [7. Review, quote and approve the same specification](https://www.zydsign.com#guide-section-7)
+
+Tables can be scrolled horizontally on smaller screens.
+
+#### 1. Start with Aaron, even if your drawing is incomplete
+
+You do not need a production-ready drawing to begin. Send the logo, a reference photograph or an explanation of the sign you want. Mark details you already know and those you want help choosing.
+
+Aaron coordinates free design support with our designers, including size recommendations and a visual mockup. The first reply is within 8 hours by WhatsApp or email to confirm your requirements and any missing information. A completed design or quotation may require further review; it is not an 8-hour finished-design promise.
+
+#### 2. Send the artwork and the intended wording
+
+A vector logo file is useful when available, but send what you currently have and tell us whether the lettering, logo shape or colours must follow brand guidelines. Confirm spelling, capitalization and all separate logo elements.
+
+A screenshot helps explain the idea, but the final production artwork must be reviewed and approved. Tell us if the same design is required at several locations or if each set has different wording.
+
+- • Logo or reference file and final wording
+- • Brand colour and finish references, if available
+- • Number of complete sets and any site-specific variations
+
+#### 3. Give approximate dimensions or ask for a recommendation
+
+Share the available wall area, overall sign width and height, and preferred letter height if known. Include a photograph of the facade and identify the area where the sign will sit.
+
+If you are unsure about sizing, ask our designers for a recommendation using those photographs and measurements. State the viewing direction and intended application so the layout discussion has context. A mockup communicates appearance; measurements still need confirmation before fabrication.
+
+Review overall layout, letter dimensions and any depth or spacing constraints on the final drawing rather than relying only on a scaled screenshot.
+
+#### 4. Explain the lighting effect you want
+
+Front-lit letters illuminate their faces. Halo-lit letters cast light onto the surface behind them. Send a reference image or tell Aaron if you want help choosing between the two.
+
+For halo-lit letters, the wall finish and stand-off arrangement affect the visual result, so a clear wall photograph is especially useful. Confirm lighting colour and the intended daytime face finish together.
+
+Ask the quotation and drawing to identify the agreed lighting construction, power supplies and cable connections. Do not assume that two letters with similar front views use the same construction.
+
+#### 5. Coordinate the mounting interface before production
+
+Send photographs and available information about the wall material, mounting height, cable access and power-supply location. Tell us whether your installer prefers individually mounted letters, a raceway or a backing arrangement. If undecided, ask us to review an option with the local installer.
+
+We can coordinate project-specific mounting interfaces through the drawing review. Ask which templates, studs, brackets, wiring information and other accessories are included in the offer. Final fixing suitability and site connections must be confirmed with your local team.
+
+ZYD does not provide on-site installation. Your installer or contractor handles wall preparation, fixings, access equipment and electrical connection. Unknown site conditions cannot be resolved by a generic mounting promise.
+
+#### 6. Include the destination and target date
+
+Provide the delivery country, city and postcode, or destination port, as well as the date you need the signs on site. Aaron can check production timing and freight options against the proposed sign package.
+
+Typical production is 7–15 days after the drawings and order scope are confirmed. This is separate from design review, shipping and local installation. Ask for the production period and freight estimate as distinct items.
+
+EXW, FOB, CIF and DDP options are available by quotation. Confirm the named delivery point, packing, included charges and local unloading requirements before accepting the offer.
+
+#### 7. Review, quote and approve the same specification
+
+Use one agreed brief through design and quotation so a change in lighting or mounting does not silently change the supplied package. Ask for revised scope and timing when the design changes.
+
+| Step | What you receive or confirm |
+| --- | --- |
+| Initial enquiry | Requirement confirmation and a list of missing details |
+| Free design discussion | Recommended dimensions and a visual mockup for review |
+| Quotation | Defined fabrication, components, packing and delivery scope |
+| Drawing approval | Artwork, dimensions, finish, lighting, mounting and cable interfaces |
+| Production planning | Approved order scope and production schedule |
+| Delivery planning | Packing and freight arrangements for the agreed destination |
+
+Minimum order is 1 set and the warranty is 1 year. If an issue arises, send the order reference, description and photographs or video to Aaron for review. Confirm coverage and any parts, labour or transport arrangements in the order terms.
+
+#### What to send Aaron for your project
+
+Send what you have now; mark unknown items for design review.
+
+- • Logo, final wording or a reference image
+- • Approximate overall dimensions and quantity
+- • Facade or wall photographs with the intended sign area marked
+- • Front-lit, halo-lit or a request for lighting advice
+- • Material, colour and finish preferences
+- • Mounting surface, cable access and installer requirements
+- • Delivery destination and target arrival date
+
+#### Frequently asked questions
+
+##### Can I enquire without a finished design?
+
+Yes. Contact Aaron with your logo or reference, site photographs and approximate dimensions. Our designers provide free design support, size recommendations and a visual mockup for review.
+
+##### Does free design include installation?
+
+No. Design and mounting-interface coordination are separate from on-site installation. Your local contractor installs the sign and connects power.
+
+##### When will I receive a reply?
+
+Our first reply is within 8 hours by WhatsApp or email. It confirms requirements and missing information. Completed design and quotation timing depends on the available project details.
+
+##### How do I find out the lead time and freight?
+
+Send the proposed sign specification, quantity, destination and target date. Aaron checks production and shipping separately; typical production is 7–15 days after drawing and scope confirmation.
+
+#### Sources & further reading
+
+These public references support terminology, accessibility context, or material-selection background. They are not ZYD product claims; project compliance and final specifications must be confirmed with the design team and the authority having jurisdiction.
+
+1. [ZYD channel letter supply scope](https://www.zydsign.com/products/custom-channel-letters) Manufacturer product information and project-specific purchasing details.
+2. [ZYD packing and shipping](https://www.zydsign.com/packaging-shipping) Real wooden crate photographs and delivery responsibilities.
+
+[Custom illuminated channel letters](https://www.zydsign.com/products/custom-channel-letters) [Halo-lit metal letter options](https://www.zydsign.com/products/custom-halo-lit-letters) [Understand the quotation cost inputs](https://www.zydsign.com/guides/how-much-do-custom-channel-letters-cost) [Compare front-lit and halo-lit letters](https://www.zydsign.com/guides/front-lit-vs-halo-lit-channel-letters) ASK AARON FOR FREE DESIGN
+
+Buyer brief
+
+#### Start with free design support
+
+Contact Aaron with your brief for free design support and a project quotation. First reply within 8 hours by WhatsApp or email. MOQ 1 set; typical production 7–15 days after approval; 1-year warranty.
+
+[GET A CHANNEL LETTER QUOTE](https://www.zydsign.com/contact?product=letters)
+
 ### Outdoor Sign Finishes: Liquid Paint, Powder Coating or Electroplating?
 
 Canonical page: https://www.zydsign.com/guides/outdoor-sign-finishes-liquid-paint-powder-coating-electroplating
@@ -6502,6 +6663,139 @@ Buyer brief
 ZYD SIGN, EST. 2006, builds custom signage for projects in cold climates. Share the design temperatures, overnight operating schedule, snow and salt exposure, mounting height and the electrical supply confirmed by the local team, so the materials and components can be specified together.
 
 [DISCUSS YOUR PROJECT](https://www.zydsign.com/contact)
+
+### Pylon Sign Cost: What Affects Your Project Quote?
+
+Canonical page: https://www.zydsign.com/guides/pylon-sign-cost
+Markdown mirror: https://www.zydsign.com/guides/pylon-sign-cost/index.md
+
+Understand custom pylon sign cost: dimensions, single or double faces, tenant panels, lighting, steel framing, wooden crating and freight. Get a project quote.
+
+Guide • Updated Nov 6, 2026 • By Aaron, ZYD Signage
+
+![Installed multi-tenant pylon sign at Water Fashion Plaza in Dalian](https://www.zydsign.com/assets/images/pylon-water-plaza-installed.jpg)
+
+*Installed multi-tenant pylon sign at Water Fashion Plaza in Dalian. ZYD project reference; your specification is confirmed separately.*
+
+Pylon sign cost depends on the approved dimensions, number of display faces, tenant layout, lighting, internal steel structure, finish, wooden crate and delivery destination. ZYD makes custom signs; common heights for our regular configurations are 80–200 cm (800–2,000 mm), with other dimensions reviewed per project. There is no single price for every configuration. Ask for fabrication, packing and freight to be identified separately, and budget for local installation separately.
+
+In this guide
+
+1. [1. Start with the dimensions and the purpose](https://www.zydsign.com#guide-section-1)
+2. [2. Single-sided or double-sided display](https://www.zydsign.com#guide-section-2)
+3. [3. Tenant quantity and panel layout](https://www.zydsign.com#guide-section-3)
+4. [4. Illuminated or non-illuminated construction](https://www.zydsign.com#guide-section-4)
+5. [5. Internal steel structure and the site interface](https://www.zydsign.com#guide-section-5)
+6. [6. Wooden crate and freight](https://www.zydsign.com#guide-section-6)
+7. [7. Compare the same scope, not just the total](https://www.zydsign.com#guide-section-7)
+
+Tables can be scrolled horizontally on smaller screens.
+
+#### 1. Start with the dimensions and the purpose
+
+A compact entrance totem and a taller multi-tenant roadside pylon are different purchases, even when both are called pylon signs. Tell Aaron what the sign needs to identify, where it will stand and how it will be viewed. Our designers can recommend dimensions and prepare a free design for discussion.
+
+Regular configurations commonly stand 80–200 cm high. This is a typical range, not a fixed size catalogue or the maximum size of every pylon we manufacture. Width, depth and overall height are customized and confirmed on the project drawing. Larger signs shown in our project photographs are separate project-specific examples.
+
+Changing height, width or cabinet depth changes the material, fabrication, structure and packed volume. Send approximate dimensions rather than choosing a price from an unrelated installation.
+
+#### 2. Single-sided or double-sided display
+
+Specify whether visitors approach from one direction or need to see the sign from both sides. ZYD offers single-sided and double-sided configurations. A second display face can change the panel, graphic, lighting and service-access scope; it does not justify assuming that the complete price simply doubles.
+
+Mark the front and back on the layout and say whether both sides use identical tenant information. Request a quote against that arrangement.
+
+#### 3. Tenant quantity and panel layout
+
+Tenant quantity and the arrangement of names or logos are customized. Send the development identity and the number of tenant positions, including any spaces intended for later use.
+
+More tenant names may require smaller graphics, more panel divisions or a larger overall sign. Review readability and the panel layout together. If names must be changed later, ask us to confirm the proposed replacement method and included parts on the drawing; do not assume all panels are interchangeable.
+
+#### 4. Illuminated or non-illuminated construction
+
+Lighting is optional. A non-illuminated sign and an illuminated tenant directory require different component scopes. Identify which areas should light up: the main name, individual tenant faces, lettering or other details.
+
+An illuminated quotation should identify the proposed lighting, power supplies, cable entry and maintenance access. Share the destination and available site power information. Local electrical connection is arranged by your project team.
+
+For a useful comparison, request illuminated and non-illuminated options against the same dimensions, graphics and finish.
+
+#### 5. Internal steel structure and the site interface
+
+Our pylon configurations use an internal steel structure. Its arrangement and the sign enclosure are specified for the agreed design; there is no universal frame, base plate or anchor specification for every site.
+
+Provide the site location, proposed dimensions and any requirements from the local project team. Confirm the base interface, cable entry and supplied mounting parts before fabrication. Local foundation design, structural approval and installation responsibilities must be agreed with the responsible local professionals.
+
+A lower price is only comparable when the frame, cladding, finish, lighting and supplied accessories are clearly described. ZYD does not include on-site installation.
+
+#### 6. Wooden crate and freight
+
+Signs are packed in wooden crates. The approved sign size and whether it ships assembled or in sections affect crate dimensions, handling and freight planning. Confirm packed dimensions and weight once the design and packing proposal are defined.
+
+Send the delivery city, country and postcode, or the destination port. EXW, FOB, CIF and DDP options are available by quotation. Ask for the named delivery point and the charges included in that particular offer.
+
+Do not treat the production period as the arrival date. Production, transport, clearance where applicable, unloading and local installation are separate stages. Aaron can check the proposed production timing and freight options from your brief.
+
+#### 7. Compare the same scope, not just the total
+
+Request a written quotation with the following items identified. Mark unconfirmed items for review instead of allowing different suppliers to make different assumptions.
+
+| Quote item | Information to agree |
+| --- | --- |
+| Fabrication | Height, width, depth, faces, tenant layout, enclosure, finish and internal steel structure |
+| Lighting | Illuminated or non-illuminated; component and power-supply scope |
+| Site interface | Base connection, cable entry, supplied hardware and local responsibilities |
+| Packing | Wooden crate, assembled or sectional shipment, packed dimensions and weight |
+| Delivery | Destination, delivery terms, freight option and estimated timing |
+| Excluded site work | Local foundations, lifting, installation and electrical connection |
+
+MOQ is 1 set. Free design support is available, typical production is 7–15 days after drawing and order-scope confirmation, and the warranty is 1 year. Design review and transport are scheduled separately. Warranty coverage and any parts, labour or transport arrangements are confirmed in the order terms.
+
+#### What to send Aaron for your project
+
+Send what you have now; mark unknown items for design review.
+
+- • Site photos and marked sign position
+- • Approximate height, width and depth, or a request for size advice
+- • Single or double face and number of sets
+- • Tenant count, logo artwork and preferred panel layout
+- • Lighting preference and finish direction
+- • Site requirements and available power information
+- • Delivery city, country and postcode or destination port
+
+#### Frequently asked questions
+
+##### Can I order a custom size?
+
+Yes. Dimensions are customized. Common heights for regular configurations are 80–200 cm, while other sizes are reviewed against the project design and site requirements.
+
+##### Can the pylon be non-illuminated?
+
+Yes. Lighting is optional. Specify the same dimensions, layout and finish when comparing illuminated and non-illuminated quotes.
+
+##### How do I get the price and shipping cost?
+
+Send Aaron your site photos, approximate dimensions, face count, tenant layout, lighting preference, quantity and destination. We confirm requirements and missing details, then prepare the appropriate design or quotation.
+
+##### Does delivery include installation?
+
+No. ZYD supplies planning, design, fabrication, packing and agreed transport. Your local team arranges foundations, lifting, installation and electrical connection.
+
+#### Sources & further reading
+
+These public references support terminology, accessibility context, or material-selection background. They are not ZYD product claims; project compliance and final specifications must be confirmed with the design team and the authority having jurisdiction.
+
+1. [ZYD pylon sign supply scope](https://www.zydsign.com/products/outdoor-pylon-monument-sign) Manufacturer product information and project-specific purchasing details.
+2. [ZYD packing and shipping](https://www.zydsign.com/packaging-shipping) Real wooden crate photographs and delivery responsibilities.
+
+[Custom pylon sign options and real projects](https://www.zydsign.com/products/outdoor-pylon-monument-sign) [Prepare your pylon site information](https://www.zydsign.com/guides/pylon-sign-site-information-checklist) [Dealership pylon: drawing and lighting check](https://www.zydsign.com/case-studies/multi-brand-dealership-pylon-sign) [Wooden packing crates and delivery scope](https://www.zydsign.com/packaging-shipping) ASK AARON FOR FREE DESIGN
+
+Buyer brief
+
+#### Start with free design support
+
+Contact Aaron with your brief for free design support and a project quotation. First reply within 8 hours by WhatsApp or email. MOQ 1 set; typical production 7–15 days after approval; 1-year warranty.
+
+[GET A PYLON SIGN QUOTE](https://www.zydsign.com/contact?product=pylon)
 
 ### What Site Information Do You Need Before Ordering a Pylon Sign?
 

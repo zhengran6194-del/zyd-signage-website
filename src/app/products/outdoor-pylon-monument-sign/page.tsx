@@ -81,6 +81,7 @@ export default function OutdoorPylonMonumentSignPage() {
           </div>
         </section>
 
+        <div className="container py-6"><Link href="/guides/pylon-sign-cost" className="text-blue-800 font-bold underline underline-offset-4">Planning a budget? See what affects pylon sign cost →</Link></div>
         <PylonProjectEvidence />
 
         <ProductPurchaseDetails product="pylon" />

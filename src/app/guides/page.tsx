@@ -7,6 +7,8 @@ const title = 'Signage Guides';
 const description = 'Practical buying and technical guides for custom signage projects, covering channel letter costs, illumination styles, sign selection, and outdoor materials.';
 
 const guides = [
+{"tag":"Procurement","title":"Pylon Sign Cost: What Affects Your Project Quote?","desc":"Understand custom pylon sign cost: dimensions, single or double faces, tenant panels, lighting, steel framing, wooden crating and freight. Get a project quote.","href":"/guides/pylon-sign-cost"},
+{"tag":"Procurement","title":"Ordering Channel Letters from a Manufacturer: What to Send","desc":"Get free channel letter design support from Aaron. Prepare artwork, dimensions, lighting, mounting details and destination to confirm drawings, timing and freight.","href":"/guides/ordering-channel-letters-from-manufacturer"},
   {"tag":"Pylon Sign Planning","title":"What Site Information Do You Need Before Ordering a Pylon Sign?","desc":"Prepare a pylon sign site brief with photos, dimensions, utilities, electrical supply, foundation interfaces and delivery access before production.","href":"/guides/pylon-sign-site-information-checklist"},
   {
     tag: 'Buying Guide',
