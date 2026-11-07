@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import { buildPageMetadata } from "@/config/site";
 import ProductJsonLd from "@/components/ProductJsonLd";
 
-// The wording stays on rear-glow: "channel letters" belongs to the front-lit
-// page, which is the page that product name resolves to.
+// This page targets halo-lit / reverse-lit channel-letter searches; front-lit
+// queries remain focused on the separate front-lit product page.
 const description =
-  "Custom halo-lit (rear-glow) metal letters in aluminum and stainless steel, fabricated factory-direct with lead time confirmed against each project.";
+  "Custom halo-lit (reverse-lit) channel letters in aluminum, stainless steel or coated metal. Factory-direct, free design support, MOQ 1 set and 7–15 day production.";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Custom Halo-Lit Metal Letters | Aluminum & Steel",
+  title: "Halo-Lit Channel Letters Manufacturer | Custom Metal",
   description,
   path: "/products/custom-halo-lit-letters",
   image: { path: "/assets/images/halo-letters-infinite-workshop.jpg", width: 1706, height: 1279, alt: "Custom dark-faced lettering and shaped logo with warm rear glow during a workshop lighting check" },
@@ -19,11 +19,11 @@ export default function Layout({ children }: Readonly<{ children: React.ReactNod
   return (
     <>
       <ProductJsonLd
-        name="Custom Halo-Lit Metal Letters | Aluminum & Steel"
+        name="Custom Halo-Lit Channel Letters"
         description={description}
         path="/products/custom-halo-lit-letters"
          image="/assets/images/halo-letters-infinite-workshop.jpg"
-         category="Halo-lit metal letters"
+         category="Custom halo-lit channel letters"
          material="Aluminum, stainless steel and coated sheet"
        />
       {children}

@@ -45,7 +45,7 @@ export default function HaloLitLettersPage() {
             <div className="reveal visible">
               <div className="eyebrow text-blue-400 font-black tracking-widest uppercase mb-4 text-sm">Rear-Glow Fabrication</div>
               <h1 className="text-4xl lg:text-5xl font-black mb-6 leading-tight tracking-tight uppercase">
-                Custom <span className="text-blue-500 italic">Halo-Lit</span> <br/>Metal Letters
+                Custom <span className="text-blue-500 italic">Halo-Lit</span> <br/>Channel Letters
               </h1>
               <p className="text-lg text-slate-300 mb-8 max-w-xl leading-relaxed font-medium">
                 Rear-glow illumination for architectural branding, fabricated as dimensional metal letters with LED modules.
@@ -62,7 +62,7 @@ export default function HaloLitLettersPage() {
             </div>
             <div className="reveal visible relative">
               <div className="absolute -inset-4 bg-blue-500/20 blur-3xl rounded-full"></div>
-              <Image src="/assets/images/halo-letters-infinite-workshop.jpg" alt="Custom dark-faced lettering and shaped logo with warm rear glow during a workshop lighting check" width={1706} height={1279} priority sizes="(min-width: 1024px) 50vw, 100vw" className="relative rounded-[2rem] shadow-2xl border border-white/10 h-auto w-full" />
+              <Image src="/assets/images/halo-letters-infinite-workshop.jpg" alt="Custom halo-lit channel letters with warm rear glow during a workshop lighting check" width={1706} height={1279} priority sizes="(min-width: 1024px) 50vw, 100vw" className="relative rounded-[2rem] shadow-2xl border border-white/10 h-auto w-full" />
               <p className="relative mt-4 text-sm text-slate-400">Workshop lighting check. All dimensions are customised to the approved project drawing.</p>
             </div>
           </div>

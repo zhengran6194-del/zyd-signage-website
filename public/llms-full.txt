@@ -2204,7 +2204,7 @@ Send the artwork, letter height, quantity, wall material and face direction for 
 
 [GET A CHANNEL LETTER QUOTE](https://www.zydsign.com/contact?product=letters) [All Products](https://www.zydsign.com/products)
 
-### Custom Halo-Lit Metal Letters
+### Custom Halo-Lit Channel Letters
 
 Canonical page: https://www.zydsign.com/products/custom-halo-lit-letters
 Markdown mirror: https://www.zydsign.com/products/custom-halo-lit-letters/index.md
@@ -2213,7 +2213,7 @@ Rear-glow illumination for architectural branding, fabricated as dimensional met
 
 [GET A HALO-LIT LETTER QUOTE](https://www.zydsign.com/contact?product=halo) Check Feasibility
 
-![Custom dark-faced lettering and shaped logo with warm rear glow during a workshop lighting check](https://www.zydsign.com/assets/images/halo-letters-infinite-workshop.jpg)
+![Custom halo-lit channel letters with warm rear glow during a workshop lighting check](https://www.zydsign.com/assets/images/halo-letters-infinite-workshop.jpg)
 
 Workshop lighting check. All dimensions are customised to the approved project drawing.
 
