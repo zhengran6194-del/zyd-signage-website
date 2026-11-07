@@ -43,10 +43,10 @@ export default function MetalAcrylicLogoSignPage() {
             <div className="reveal visible">
               <div className="eyebrow text-blue-400 font-black tracking-widest uppercase mb-4 text-sm">Cut &amp; Layered Fabrication</div>
               <h1 className="text-4xl lg:text-5xl font-black mb-6 leading-tight tracking-tight uppercase">
-                Metal &amp; <span className="text-blue-500 italic">Acrylic</span> <br/>Logo Signs
+                Metal &amp; <span className="text-blue-500 italic">Acrylic</span> <br/>Logo Panels
               </h1>
               <p className="text-lg text-slate-300 mb-8 max-w-xl leading-relaxed font-medium">
-                Cut metal and layered acrylic brand marks for reception walls, boardrooms, and storefronts.
+                Custom metal and acrylic logo panels and dimensional signs for reception walls, boardrooms, storefronts, and commercial interiors.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
@@ -70,7 +70,7 @@ export default function MetalAcrylicLogoSignPage() {
           <div className="container max-w-6xl">
             <div className="bg-slate-950 text-white rounded-[3rem] p-10 lg:p-14 relative overflow-hidden">
               <div className="absolute -top-16 -right-16 w-64 h-64 bg-blue-500/10 blur-3xl rounded-full"></div>
-              <div className="text-blue-400 font-black uppercase tracking-[0.3em] text-xs mb-5">Logo signs: the short answer</div>
+              <div className="text-blue-400 font-black uppercase tracking-[0.3em] text-xs mb-5">Metal and acrylic logo panels: the short answer</div>
               <p className="text-xl lg:text-2xl text-slate-200 leading-relaxed font-semibold max-w-4xl">
                 A cut metal and acrylic logo sign reproduces the brand mark as a physical, layered object rather than a flat print, which gives walls depth, shadow, and a premium finish. Choose it for reception and interior feature walls where the mark is seen close up, and in a suitable build for exterior plaques.
               </p>

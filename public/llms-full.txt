@@ -2663,12 +2663,12 @@ Send the profile, dimensions, planting type, drainage detail, and installation c
 
 Related case study: [Hengli Industrial Park](https://www.zydsign.com/case-studies/hengli-industrial-park-wayfinding-signage) — site fabrication and installation of outdoor units in landscaped grounds.
 
-### Medical Care Signage System
+### Healthcare & Specialty Signage Systems
 
 Canonical page: https://www.zydsign.com/products/medical-care-signage
 Markdown mirror: https://www.zydsign.com/products/medical-care-signage/index.md
 
-Wayfinding, room identification, and department signage for hospitals and healthcare centers.
+Custom healthcare signage for hospitals and clinics, including wayfinding, room identification, department directories, and coordinated sign systems.
 
 [GET A QUOTE](https://www.zydsign.com/contact) Check Feasibility
 
@@ -2683,7 +2683,7 @@ Send what you have: artwork, approximate dimensions, quantity, finish or lightin
 
 ![Medical Signage](https://www.zydsign.com/assets/images/hero-medical.jpg)
 
-Medical signage: the short answer
+Healthcare and specialty signage: the short answer
 
 Medical signage succeeds when a visitor can find the right department without asking for help and staff can update a room name without replacing the wall. The system combines clear directional panels with modular room and department identification, specified for the cleaning routine and mounting conditions of each care area.
 
@@ -2771,12 +2771,12 @@ Send the department list, sign types, mounting surfaces, and any accessibility r
 
 Related case study: [Water Fashion Plaza, Dalian](https://www.zydsign.com/case-studies/dalian-water-plaza-wayfinding-signage) — interior wayfinding layers, directories and functional identification planned as one system.
 
-### Metal & Acrylic Logo Signs
+### Metal & Acrylic Logo Panels
 
 Canonical page: https://www.zydsign.com/products/metal-acrylic-logo-sign
 Markdown mirror: https://www.zydsign.com/products/metal-acrylic-logo-sign/index.md
 
-Cut metal and layered acrylic brand marks for reception walls, boardrooms, and storefronts.
+Custom metal and acrylic logo panels and dimensional signs for reception walls, boardrooms, storefronts, and commercial interiors.
 
 [GET A QUOTE](https://www.zydsign.com/contact) Check Feasibility
 
@@ -2791,7 +2791,7 @@ Send what you have: artwork, approximate dimensions, quantity, finish or lightin
 
 ![Metal & Acrylic Logo Sign](https://www.zydsign.com/assets/images/cat-metal.jpg)
 
-Logo signs: the short answer
+Metal and acrylic logo panels: the short answer
 
 A cut metal and acrylic logo sign reproduces the brand mark as a physical, layered object rather than a flat print, which gives walls depth, shadow, and a premium finish. Choose it for reception and interior feature walls where the mark is seen close up, and in a suitable build for exterior plaques.
 

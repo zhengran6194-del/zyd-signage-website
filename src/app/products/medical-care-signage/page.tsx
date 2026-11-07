@@ -43,10 +43,10 @@ export default function MedicalSignagePage() {
             <div className="reveal visible">
               <div className="eyebrow text-blue-400 font-black tracking-widest uppercase mb-4 text-sm">Healthcare Interior Systems</div>
               <h1 className="text-4xl lg:text-5xl font-black mb-6 leading-tight tracking-tight uppercase">
-                Medical <span className="text-blue-500 italic">Care</span> <br/>Signage System
+                Healthcare <span className="text-blue-500 italic">&amp; Specialty</span> <br/>Signage Systems
               </h1>
               <p className="text-lg text-slate-300 mb-8 max-w-xl leading-relaxed font-medium">
-                Wayfinding, room identification, and department signage for hospitals and healthcare centers.
+                Custom healthcare signage for hospitals and clinics, including wayfinding, room identification, department directories, and coordinated sign systems.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
@@ -70,7 +70,7 @@ export default function MedicalSignagePage() {
           <div className="container max-w-6xl">
             <div className="bg-slate-950 text-white rounded-[3rem] p-10 lg:p-14 relative overflow-hidden">
               <div className="absolute -top-16 -right-16 w-64 h-64 bg-blue-500/10 blur-3xl rounded-full"></div>
-              <div className="text-blue-400 font-black uppercase tracking-[0.3em] text-xs mb-5">Medical signage: the short answer</div>
+              <div className="text-blue-400 font-black uppercase tracking-[0.3em] text-xs mb-5">Healthcare and specialty signage: the short answer</div>
               <p className="text-xl lg:text-2xl text-slate-200 leading-relaxed font-semibold max-w-4xl">
                 Medical signage succeeds when a visitor can find the right department without asking for help and staff can update a room name without replacing the wall. The system combines clear directional panels with modular room and department identification, specified for the cleaning routine and mounting conditions of each care area.
               </p>

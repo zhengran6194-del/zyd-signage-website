@@ -3,8 +3,8 @@ import { buildPageMetadata, ogImages } from "@/config/site";
 import ProductJsonLd from "@/components/ProductJsonLd";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Metal & Acrylic Logo Signs & Reception Plaques",
-  description: "Precision metal and acrylic logo signs, plaques, and corporate identity systems for B2B projects.",
+  title: "Custom Metal & Acrylic Logo Panels",
+  description: "Custom metal and acrylic logo panels and dimensional signs for reception areas, branded interiors, and commercial projects.",
   path: "/products/metal-acrylic-logo-sign",
   image: ogImages.metalLogo,
 });
@@ -13,11 +13,11 @@ export default function Layout({ children }: Readonly<{ children: React.ReactNod
   return (
     <>
       <ProductJsonLd
-        name="Metal & Acrylic Logo Signs & Reception Plaques"
-        description="Precision metal and acrylic logo signs, plaques, and corporate identity systems for B2B projects."
+        name="Custom Metal & Acrylic Logo Panels"
+        description="Custom metal and acrylic logo panels and dimensional signs for reception areas, branded interiors, and commercial projects."
         path="/products/metal-acrylic-logo-sign"
          image="/assets/images/cat-metal.jpg"
-         category="Metal and acrylic logo signs"
+         category="Custom metal and acrylic logo panels and logo signs"
          material="Stainless steel, aluminum, coated sheet and acrylic"
        />
       {children}
