@@ -11,6 +11,10 @@ import PylonProjectEvidence from '@/components/PylonProjectEvidence';
 
 const faqs = [
   {
+    question: 'What is included in a custom outdoor pylon sign system?',
+    answer: 'The scope is confirmed for each project. A custom system can be specified with a fabricated sign structure and tenant or brand panels, with lighting as an option. Our designers provide free design support, and wooden-crate packing is available. EXW, FOB, CIF and DDP can be quoted for the destination. Confirm power components, anchor and foundation interfaces, local engineering, unloading and installation in the written scope; on-site installation is not included.',
+  },
+  {
     question: 'Do you offer free design and drawing confirmation?',
     answer: 'Yes. Our designers provide free design support. Share your artwork or reference, dimensions, quantity and site information. Review the design and confirm the final drawing, lighting, finish and supply scope before fabrication. Site-dependent interfaces must be coordinated with the local project team.',
   },
@@ -57,7 +61,7 @@ export default function OutdoorPylonMonumentSignPage() {
                 Custom Pylon Signs &amp; <span className="text-blue-500 italic">Tenant Directories</span>
               </h1>
               <p className="text-lg text-slate-300 mb-8 max-w-xl leading-relaxed font-medium">
-                Custom illuminated entrance signs and multi-tenant directories for dealerships, shopping centers and commercial properties. Our team plans, designs and manufactures your sign to the agreed dimensions, tenant layout, lighting and finish.
+                Custom outdoor pylon sign systems for dealerships, shopping centers and commercial properties—from single-business entrance signs to multi-tenant directories. Our designers provide free design support for project-specific dimensions, tenant layouts, optional lighting and finishes.
               </p>
               <div className="flex flex-col sm:flex-row sm:flex-wrap gap-4">
                 <Link
