@@ -85,9 +85,7 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
 .brand-marquee-section {
   overflow: hidden;
   padding: 1.6rem 0 1.1rem;
-  background: #fff;
-  border-top: 1px solid #e4e9f1;
-  border-bottom: 1px solid #e4e9f1;
+  background: transparent;
 }
 .brand-marquee-heading {
   width: min(92%, 1440px);
@@ -135,19 +133,23 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
 }
 .brand-marquee-item {
   display: flex;
-  min-width: clamp(125px, 15vw, 190px);
-  height: 3.4rem;
+  min-width: clamp(118px, 13vw, 166px);
+  height: 4.5rem;
   align-items: center;
   justify-content: center;
-  gap: .65rem;
-  color: #26344a;
   white-space: nowrap;
-  opacity: .82;
+  opacity: .94;
   transition: opacity .2s ease;
 }
 .brand-marquee-item:hover { opacity: 1; }
-.brand-marquee-mark { display: inline-flex; flex: 0 0 auto; align-items: center; justify-content: center; }
-.brand-marquee-wordmark { display: inline-flex; flex-direction: column; align-items: center; text-align: center; line-height: 1.05; }
+.brand-marquee-logo {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 148px;
+  max-height: 3.9rem;
+  object-fit: contain;
+}
 .brand-marquee-note {
   margin: .7rem auto 0;
   color: #7b8493;
@@ -160,8 +162,9 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
 }
 @media (max-width: 640px) {
   .brand-marquee-section { padding-block: 1.2rem .9rem; }
-  .brand-marquee-item { min-width: 138px; }
-  .brand-marquee-group { gap: 2rem; }
+  .brand-marquee-item { min-width: 120px; height: 4rem; }
+  .brand-marquee-logo { max-width: 128px; max-height: 3.45rem; }
+  .brand-marquee-group { gap: 1.6rem; }
   .brand-marquee-track { animation-duration: 34s; }
 }
 @media (prefers-reduced-motion: reduce) {
