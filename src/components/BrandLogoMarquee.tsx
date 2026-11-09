@@ -36,10 +36,10 @@ export default function BrandLogoMarquee() {
   return (
     <section className="brand-marquee-section" aria-labelledby="brand-marquee-title">
       <div className="brand-marquee-heading">
-        <p className="brand-marquee-eyebrow">Selected project references</p>
-        <h2 id="brand-marquee-title">Brand signage in real projects</h2>
+        <p className="brand-marquee-eyebrow">Brand marks in signage</p>
+        <h2 id="brand-marquee-title">Brand artwork, made for your project</h2>
       </div>
-      <div className="brand-marquee-viewport" tabIndex={0} aria-label="Scrolling brand signage project references">
+      <div className="brand-marquee-viewport" tabIndex={0} aria-label="Examples of brand marks used in custom signage">
         <div className="brand-marquee-track">
           <div className="brand-marquee-group">
             {brands.map(brand => <LogoItem key={brand.name} brand={brand} />)}
@@ -49,7 +49,7 @@ export default function BrandLogoMarquee() {
           </div>
         </div>
       </div>
-      <p className="brand-marquee-note">Brand names and marks are shown to identify signage project references.</p>
+      <p className="brand-marquee-note">Brand names and logos belong to their respective owners. Shown as visual references for custom signage only; no endorsement is implied.</p>
     </section>
   );
 }
