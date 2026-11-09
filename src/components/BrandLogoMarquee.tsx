@@ -1,50 +1,33 @@
-import React from 'react';
+import Image from 'next/image';
 
-type Brand = { name: string; mark: React.ReactNode; wordmark: React.ReactNode };
+type Brand = {
+  name: string;
+  src: string;
+  width: number;
+  height: number;
+};
 
 const brands: Brand[] = [
-  {
-    name: "McDonald's",
-    mark: <svg viewBox="0 0 52 44" aria-hidden="true" className="h-10 w-12"><path d="M5 39C8 17 13 5 19 5c6 0 10 17 12 34C33 22 37 5 43 5c3 0 5 5 7 13" fill="none" stroke="currentColor" strokeWidth="5" strokeLinecap="round" /></svg>,
-    wordmark: <span className="text-[1.15rem] font-black tracking-tight">McDonald&apos;s</span>,
-  },
-  {
-    name: 'KFC',
-    mark: <span aria-hidden="true" className="grid h-10 w-10 place-items-center rounded-full bg-[#c41230] text-[0.68rem] font-black tracking-tight text-white">KFC</span>,
-    wordmark: <span className="text-xl font-black tracking-[0.08em] text-[#c41230]">KFC</span>,
-  },
-  {
-    name: 'Starbucks',
-    mark: <svg viewBox="0 0 48 48" aria-hidden="true" className="h-10 w-10"><circle cx="24" cy="24" r="22" fill="currentColor"/><path d="M24 10l3.1 8.1 8.5.4-6.6 5.3 2.3 8.2-7.3-4.6-7.3 4.6 2.3-8.2-6.6-5.3 8.5-.4L24 10z" fill="white"/><path d="M12 37h24" stroke="white" strokeWidth="2" strokeLinecap="round"/></svg>,
-    wordmark: <span className="text-[0.95rem] font-black tracking-[0.16em] text-[#006241]">STARBUCKS</span>,
-  },
-  {
-    name: 'Tesla',
-    mark: <svg viewBox="0 0 48 48" aria-hidden="true" className="h-10 w-10"><path d="M7 12c5-4 11-6 17-6s12 2 17 6l-4 4c-4-3-8-4-13-4s-9 1-13 4l-4-4zm7 5h20l-8 7v17h-4V24l-8-7z" fill="currentColor"/></svg>,
-    wordmark: <span className="text-lg font-black tracking-[0.22em] text-[#e82127]">TESLA</span>,
-  },
-  {
-    name: 'Honda',
-    mark: <svg viewBox="0 0 48 48" aria-hidden="true" className="h-10 w-10"><rect x="5" y="8" width="38" height="32" rx="5" fill="none" stroke="currentColor" strokeWidth="3"/><path d="M15 15h4v7h10v-7h4v18h-4v-7H19v7h-4z" fill="currentColor"/></svg>,
-    wordmark: <span className="text-xl font-black tracking-[0.12em] text-[#cc0000]">HONDA</span>,
-  },
-  {
-    name: 'The Setai Sea of Galilee',
-    mark: <svg viewBox="0 0 64 52" aria-hidden="true" className="h-10 w-12"><path d="M18 49V20m28 29V20M18 22C4 20 4 9 8 6c7 0 11 6 10 16zm0-2C19 7 28 3 34 5c2 8-5 14-16 15zm28 2C32 20 32 9 36 6c7 0 11 6 10 16zm0-2C47 7 56 3 62 5c2 8-5 14-16 15z" fill="currentColor"/></svg>,
-    wordmark: <span className="text-[0.9rem] font-serif font-semibold tracking-[0.15em]">THE SETAI <small className="mt-1 block text-[0.52rem] tracking-[0.25em]">SEA OF GALILEE</small></span>,
-  },
-  {
-    name: 'Louis Vuitton',
-    mark: <span aria-hidden="true" className="font-serif text-4xl leading-none tracking-[-0.18em]">L<span className="relative -left-1">V</span></span>,
-    wordmark: <span className="text-[0.95rem] font-serif font-semibold tracking-[0.15em]">LOUIS VUITTON</span>,
-  },
+  { name: "McDonald's", src: '/brand-logos/mcdonalds.png', width: 287, height: 242 },
+  { name: 'KFC', src: '/brand-logos/kfc.png', width: 408, height: 628 },
+  { name: 'Starbucks', src: '/brand-logos/starbucks.png', width: 894, height: 777 },
+  { name: 'Tesla', src: '/brand-logos/tesla.png', width: 366, height: 441 },
+  { name: 'Honda', src: '/brand-logos/honda.png', width: 508, height: 321 },
+  { name: 'The Setai Sea of Galilee', src: '/brand-logos/setai.png', width: 710, height: 594 },
+  { name: 'Louis Vuitton', src: '/brand-logos/louis-vuitton.png', width: 427, height: 510 },
 ];
 
 function LogoItem({ brand }: { brand: Brand }) {
   return (
     <div className="brand-marquee-item" role="img" aria-label={brand.name}>
-      <span className="brand-marquee-mark">{brand.mark}</span>
-      <span className="brand-marquee-wordmark">{brand.wordmark}</span>
+      <Image
+        src={brand.src}
+        alt={brand.name}
+        width={brand.width}
+        height={brand.height}
+        className="brand-marquee-logo"
+        draggable={false}
+      />
     </div>
   );
 }
