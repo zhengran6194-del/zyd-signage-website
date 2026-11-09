@@ -8,6 +8,7 @@ import WhatsAppCta from '@/components/WhatsAppCta';
 import JsonLd from '@/components/JsonLd';
 import FeaturedSignProducts from '@/components/FeaturedSignProducts';
 import HomeProjectEvidence from '@/components/HomeProjectEvidence';
+import BrandLogoMarquee from '@/components/BrandLogoMarquee';
 import { siteConfig } from '@/config/site';
 
 const englishHomeJsonLd = {
@@ -234,6 +235,7 @@ export default function Home() {
         </section>
 
         <FeaturedSignProducts />
+        <BrandLogoMarquee />
         <HomeProjectEvidence />
 
         {/* 2. THE ZYD WAY: PRODUCTION PROCESS (Artistic Grid) */}
