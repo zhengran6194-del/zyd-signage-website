@@ -5,6 +5,7 @@ type Brand = {
   src: string;
   width: number;
   height: number;
+  dark?: boolean;
 };
 
 const brands: Brand[] = [
@@ -15,11 +16,16 @@ const brands: Brand[] = [
   { name: 'Honda', src: '/brand-logos/honda.png', width: 508, height: 321 },
   { name: 'The Setai Sea of Galilee', src: '/brand-logos/setai.png', width: 710, height: 594 },
   { name: 'Louis Vuitton', src: '/brand-logos/louis-vuitton.png', width: 427, height: 510 },
+  { name: 'Windy Ridge Residences', src: '/brand-logos/windy-ridge.png', width: 1069, height: 496, dark: true },
+  { name: 'Wuling', src: '/brand-logos/wuling.png', width: 786, height: 187 },
+  { name: 'Jetour', src: '/brand-logos/jetour.png', width: 679, height: 155 },
+  { name: 'Coca-Cola', src: '/brand-logos/coca-cola.png', width: 451, height: 315 },
+  { name: 'Custom project mark', src: '/brand-logos/project-brand-mark.png', width: 466, height: 398 },
 ];
 
 function LogoItem({ brand }: { brand: Brand }) {
   return (
-    <div className="brand-marquee-item" role="img" aria-label={brand.name}>
+    <div className={`brand-marquee-item${brand.dark ? ' brand-marquee-item--dark' : ''}`} role="img" aria-label={brand.name}>
       <Image
         src={brand.src}
         alt={brand.name}

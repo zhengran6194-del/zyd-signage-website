@@ -121,13 +121,11 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
   align-items: center;
 }
 .brand-marquee-track {
-  animation: brand-marquee-scroll 38s linear infinite;
-}
-.brand-marquee-viewport:hover .brand-marquee-track,
-.brand-marquee-viewport:focus-within .brand-marquee-track {
-  animation-play-state: paused;
+  flex: none;
+  animation: brand-marquee-scroll 66s linear infinite;
 }
 .brand-marquee-group {
+  flex: none;
   gap: clamp(2rem, 5vw, 5.2rem);
   padding-inline: clamp(1.5rem, 3vw, 3rem);
 }
@@ -142,6 +140,11 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
   transition: opacity .2s ease;
 }
 .brand-marquee-item:hover { opacity: 1; }
+.brand-marquee-item--dark {
+  padding: .55rem .8rem;
+  border-radius: 6px;
+  background: #0b326d;
+}
 .brand-marquee-logo {
   display: block;
   width: auto;
@@ -165,7 +168,7 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
   .brand-marquee-item { min-width: 120px; height: 4rem; }
   .brand-marquee-logo { max-width: 128px; max-height: 3.45rem; }
   .brand-marquee-group { gap: 1.6rem; }
-  .brand-marquee-track { animation-duration: 34s; }
+  .brand-marquee-track { animation-duration: 58s; }
 }
 @media (prefers-reduced-motion: reduce) {
   .brand-marquee-viewport { overflow-x: auto; mask-image: none; }
