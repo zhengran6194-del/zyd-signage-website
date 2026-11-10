@@ -140,11 +140,6 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
   transition: opacity .2s ease;
 }
 .brand-marquee-item:hover { opacity: 1; }
-.brand-marquee-item--dark {
-  padding: .55rem .8rem;
-  border-radius: 6px;
-  background: #0b326d;
-}
 .brand-marquee-logo {
   display: block;
   width: auto;
@@ -153,6 +148,8 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
   max-height: 3.9rem;
   object-fit: contain;
 }
+.brand-marquee-item--monochrome .brand-marquee-logo { filter: brightness(0); }
+.brand-marquee-item--white-background .brand-marquee-logo { mix-blend-mode: multiply; }
 .brand-marquee-note {
   margin: .7rem auto 0;
   color: #7b8493;

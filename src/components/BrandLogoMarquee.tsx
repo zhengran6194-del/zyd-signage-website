@@ -5,7 +5,8 @@ type Brand = {
   src: string;
   width: number;
   height: number;
-  dark?: boolean;
+  monochrome?: boolean;
+  whiteBackground?: boolean;
 };
 
 const brands: Brand[] = [
@@ -16,16 +17,23 @@ const brands: Brand[] = [
   { name: 'Honda', src: '/brand-logos/honda.png', width: 508, height: 321 },
   { name: 'The Setai Sea of Galilee', src: '/brand-logos/setai.png', width: 710, height: 594 },
   { name: 'Louis Vuitton', src: '/brand-logos/louis-vuitton.png', width: 427, height: 510 },
-  { name: 'Windy Ridge Residences', src: '/brand-logos/windy-ridge.png', width: 1069, height: 496, dark: true },
+  { name: 'Windy Ridge Residences', src: '/brand-logos/windy-ridge.png', width: 1069, height: 496, monochrome: true },
   { name: 'Wuling', src: '/brand-logos/wuling.png', width: 786, height: 187 },
   { name: 'Jetour', src: '/brand-logos/jetour.png', width: 679, height: 155 },
   { name: 'Coca-Cola', src: '/brand-logos/coca-cola.png', width: 451, height: 315 },
-  { name: 'Custom project mark', src: '/brand-logos/project-brand-mark.png', width: 466, height: 398 },
+  { name: 'Hengli Petrochemical', src: '/brand-logos/hengli-petrochemical.png', width: 558, height: 184, whiteBackground: true },
+  { name: 'Hengli Heavy Industries', src: '/brand-logos/hengli-heavy-industries.png', width: 908, height: 377, whiteBackground: true },
 ];
 
 function LogoItem({ brand }: { brand: Brand }) {
+  const classNames = [
+    'brand-marquee-item',
+    brand.monochrome && 'brand-marquee-item--monochrome',
+    brand.whiteBackground && 'brand-marquee-item--white-background',
+  ].filter(Boolean).join(' ');
+
   return (
-    <div className={`brand-marquee-item${brand.dark ? ' brand-marquee-item--dark' : ''}`} role="img" aria-label={brand.name}>
+    <div className={classNames} role="img" aria-label={brand.name}>
       <Image
         src={brand.src}
         alt={brand.name}
