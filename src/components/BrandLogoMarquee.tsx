@@ -6,7 +6,6 @@ type Brand = {
   width: number;
   height: number;
   monochrome?: boolean;
-  whiteBackground?: boolean;
 };
 
 const brands: Brand[] = [
@@ -21,15 +20,14 @@ const brands: Brand[] = [
   { name: 'Wuling', src: '/brand-logos/wuling.png', width: 786, height: 187 },
   { name: 'Jetour', src: '/brand-logos/jetour.png', width: 679, height: 155 },
   { name: 'Coca-Cola', src: '/brand-logos/coca-cola.png', width: 451, height: 315 },
-  { name: 'Hengli Petrochemical', src: '/brand-logos/hengli-petrochemical.png', width: 558, height: 184, whiteBackground: true },
-  { name: 'Hengli Heavy Industries', src: '/brand-logos/hengli-heavy-industries.png', width: 908, height: 377, whiteBackground: true },
+  { name: 'Hengli Petrochemical', src: '/brand-logos/hengli-petrochemical.png', width: 558, height: 184 },
+  { name: 'Hengli Heavy Industries', src: '/brand-logos/hengli-heavy-industries.png', width: 908, height: 377 },
 ];
 
 function LogoItem({ brand }: { brand: Brand }) {
   const classNames = [
     'brand-marquee-item',
     brand.monochrome && 'brand-marquee-item--monochrome',
-    brand.whiteBackground && 'brand-marquee-item--white-background',
   ].filter(Boolean).join(' ');
 
   return (

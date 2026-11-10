@@ -149,7 +149,6 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
   object-fit: contain;
 }
 .brand-marquee-item--monochrome .brand-marquee-logo { filter: brightness(0); }
-.brand-marquee-item--white-background .brand-marquee-logo { mix-blend-mode: multiply; }
 .brand-marquee-note {
   margin: .7rem auto 0;
   color: #7b8493;
