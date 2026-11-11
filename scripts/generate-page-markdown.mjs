@@ -130,6 +130,7 @@ const hasBlockChild = (node) =>
   node.children.some((c) => BLOCK_TAGS.has(c.tag) || (c.tag !== 'text' && hasBlockChild(c)));
 
 function render(node, ctx = { listDepth: 0 }) {
+  if (isHiddenFromReaders(node)) return '';
   /**
    * Two adjacent elements carry no whitespace between them in the HTML - the
    * page separates them with a flex gap - so they run together once the tags are
@@ -230,7 +231,12 @@ function render(node, ctx = { listDepth: 0 }) {
 
 const inline2 = (node, ctx) => node.children.map((c) => renderInline(c, ctx)).join('');
 
+const isHiddenFromReaders = (node) =>
+  node.attrs?.['aria-hidden']?.toLowerCase() === 'true' ||
+  Object.prototype.hasOwnProperty.call(node.attrs ?? {}, 'hidden');
+
 function renderInline(node, ctx) {
+  if (isHiddenFromReaders(node)) return '';
   if (node.tag === 'text') return node.text;
   switch (node.tag) {
     case 'strong':

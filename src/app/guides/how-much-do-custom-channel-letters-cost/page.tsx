@@ -1,10 +1,10 @@
 import GuideArticle, { type GuideArticleData } from '@/components/GuideArticle';
 
 const guide: GuideArticleData = {
-  "title": "How Much Do Channel Letter Signs Cost? A Quote Guide",
+  "title": "Average Cost of Channel Letter Signs: What Affects the Quote?",
   "category": "Channel Letter Pricing Guide",
-  "description": "What affects channel letter sign cost? Compare front-lit and halo-lit construction, mounting and shipping, then request a custom quote with free design support.",
-  "updated": "Nov 6, 2026",
+  "description": "There is no single average price: size, letter count, lighting, materials, mounting and delivery affect channel letter sign cost. See what to send for a quote.",
+  "updated": "Nov 11, 2026",
   "directAnswer": "Channel letter signs are quoted to your design: letter size and count, front-lit or halo-lit construction, materials, mounting and destination all affect the cost. Compare three separate amounts: factory fabrication, packing and delivery, and local installation. For a ZYD quotation, send your artwork, approximate dimensions, quantity, wall photo and destination. There is no single price that represents every custom sign; this guide explains the cost inputs and what to include in your request.",
   "introParagraphs": [
     "If you are searching for the average cost of channel letter signs, first decide which total you need. A price per letter can help compare identical letters, but it cannot describe an entire storefront project unless the letter count, height, construction and included services are stated. Use the breakdown below to ask suppliers and your local installer for the same scope."
