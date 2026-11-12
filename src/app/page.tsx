@@ -225,16 +225,16 @@ export default function Home() {
 
           <div className="mx-auto flex min-h-[680px] w-[90%] max-w-[1600px] flex-col justify-between py-10 lg:min-h-[calc(100svh-132px)] lg:py-4">
             <div className="max-w-[900px]">
-              <p className="mb-5 flex items-center gap-5 text-[10px] font-black uppercase tracking-[0.35em] text-white/90 sm:text-xs">
+              <p className="mb-5 flex items-center gap-5 text-xs font-black uppercase tracking-[0.25em] text-white/90 sm:text-sm sm:tracking-[0.3em]">
                 <span className="inline-block h-px w-12 bg-white/80" aria-hidden="true" />
                 From Our Factory. To Your Project.
               </p>
-              <h1 id="home-project-title" className="mb-4 max-w-[900px] text-5xl font-black leading-[0.98] tracking-[-0.045em] sm:text-6xl lg:text-4xl xl:text-[3.75rem]">
+              <h1 id="home-project-title" className="mb-4 max-w-[1000px] text-5xl font-black leading-[0.98] tracking-[-0.045em] sm:text-6xl lg:text-5xl xl:text-[4.5rem]">
                 Your Signage.<br />
                 <span className="text-sky-300">Our Factory.</span><br />
                 Built for Your Project.
               </h1>
-              <p className="mb-6 max-w-2xl text-base leading-relaxed text-slate-200 sm:text-lg lg:text-xl">
+              <p className="mb-6 max-w-3xl text-lg leading-relaxed text-slate-200 sm:text-xl xl:text-2xl">
                 Bespoke wayfinding and architectural signage. Manufactured in Dalian. Delivered worldwide.
               </p>
               <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
@@ -256,17 +256,17 @@ export default function Home() {
                   <span aria-hidden="true" className="text-lg transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">↗</span>
                 </a>
               </div>
-              <p className="mt-5 text-xs leading-relaxed text-slate-200 sm:text-sm">Free design &amp; mockup support · First reply within 8 hours by WhatsApp or email.</p>
-              <p className="mt-2 text-[11px] font-semibold tracking-wide text-white/85 sm:text-xs">MOQ 1 set · Typical production 7–15 days · 1-year warranty</p>
+              <p className="mt-5 text-sm leading-relaxed text-slate-100 sm:text-base">Free design &amp; mockup support · First reply within 8 hours by WhatsApp or email.</p>
+              <p className="mt-2 text-xs font-semibold tracking-wide text-white/90 sm:text-sm">MOQ 1 set · Typical production 7–15 days · 1-year warranty</p>
             </div>
 
             <div className="mt-12 flex flex-col gap-5 border-t border-white/25 pt-6 sm:flex-row sm:items-end sm:justify-between sm:pt-8 lg:mt-14">
-              <p className="text-[9px] font-black uppercase tracking-[0.2em] text-white/90 sm:text-[10px] sm:tracking-[0.3em]">
+              <p className="text-[10px] font-black uppercase tracking-[0.15em] text-white/95 sm:text-xs sm:tracking-[0.2em]">
                 Custom Engineered <span className="mx-2 text-sky-300">/</span> Factory Direct <span className="mx-2 text-sky-300">/</span> Global Delivery
               </p>
               <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
-                <p className="text-[9px] font-bold uppercase tracking-[0.2em] text-white/85 sm:text-[10px] sm:tracking-[0.25em]">Dalian, China <span className="mx-2 text-sky-300">/</span> Our Manufacturing Base</p>
-                <Link href="/projects" className="inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.16em] text-white underline decoration-white/50 underline-offset-4 transition hover:text-sky-200 hover:decoration-sky-200">
+                <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-white/95 sm:text-xs sm:tracking-[0.2em]">Dalian, China <span className="mx-2 text-sky-300">/</span> Our Manufacturing Base</p>
+                <Link href="/projects" className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.12em] text-white underline decoration-white/50 underline-offset-4 transition hover:text-sky-200 hover:decoration-sky-200 sm:text-sm">
                   Browse Real Projects <span aria-hidden="true">↗</span>
                 </Link>
               </div>
