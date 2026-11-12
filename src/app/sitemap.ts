@@ -13,6 +13,7 @@ import { siteConfig } from "@/config/site";
 // relevant entry whenever a route's content changes.
 const lastModifiedByRoute: Record<string, string> = {
   "/guides/wayfinding-signage-levels": "2026-11-12",
+  "/guides/metal-landmark-sign-design-lessons": "2026-11-12",
 "/guides/pylon-sign-cost": "2026-11-06",
 "/guides/ordering-channel-letters-from-manufacturer": "2026-11-06",
   "/videos/factory-tour": "2026-10-30",
@@ -177,6 +178,7 @@ const routes: SitemapRoute[] = [
   { path: "/guides/pylon-sign-cost", priority: 0.8 },
   { path: "/guides/ordering-channel-letters-from-manufacturer", priority: 0.8 },
   { path: "/guides/wayfinding-signage-levels", priority: 0.8 },
+  { path: "/guides/metal-landmark-sign-design-lessons", priority: 0.8 },
   { path: "/guides", priority: 0.8, languages: englishAndJapanese("/guides") },
   { path: "/ja/guides", priority: 0.7, languages: englishAndJapanese("/guides") },
   // Pages that exist in English only, so they declare no alternates.

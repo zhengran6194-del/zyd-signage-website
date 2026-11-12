@@ -12,13 +12,15 @@
 # --force is passed. The status column below was measured on 2026-10-07, except
 # where a group notes a later measurement.
 #
-# Coverage: every URL in src/app/sitemap.ts plus the root URL (66 URLs: 56 English, 10 Japanese).
+# Coverage: every URL in src/app/sitemap.ts plus the root URL (67 URLs: 57 English, 10 Japanese).
 # Keep the two in step: when a route is added to the sitemap, add it here in the
 # group it belongs to.
 
 # --- Group 1: guides ---
 # status 200 checked 2026-11-12
 https://www.zydsign.com/guides/wayfinding-signage-levels
+# New guide added 2026-11-12; deploy before submitting.
+https://www.zydsign.com/guides/metal-landmark-sign-design-lessons
 # status 200 checked 2026-11-12
 https://www.zydsign.com/guides/pylon-sign-cost
 # status 200 checked 2026-11-12
