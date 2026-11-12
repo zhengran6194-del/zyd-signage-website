@@ -12,26 +12,26 @@
 # --force is passed. The status column below was measured on 2026-10-07, except
 # where a group notes a later measurement.
 #
-# Coverage: every URL in src/app/sitemap.ts (65 routes: 55 English, 10 Japanese).
+# Coverage: every URL in src/app/sitemap.ts plus the root URL (66 URLs: 56 English, 10 Japanese).
 # Keep the two in step: when a route is added to the sitemap, add it here in the
 # group it belongs to.
 
 # --- Group 1: guides ---
-# status pending deployment
+# status 200 checked 2026-11-12
 https://www.zydsign.com/guides/wayfinding-signage-levels
-# status pending live recheck
+# status 200 checked 2026-11-12
 https://www.zydsign.com/guides/pylon-sign-cost
-# status pending live recheck
+# status 200 checked 2026-11-12
 https://www.zydsign.com/guides/ordering-channel-letters-from-manufacturer
-# status pending live recheck
+# status 200 checked 2026-11-12
 https://www.zydsign.com/guides/pylon-sign-site-information-checklist
-# status pending live recheck
+# status 200 checked 2026-11-12
 https://www.zydsign.com/guides/raceway-vs-individually-mounted-channel-letters
-# status pending live recheck
+# status 200 checked 2026-11-12
 https://www.zydsign.com/guides/outdoor-sign-finishes-liquid-paint-powder-coating-electroplating
-# status pending live recheck
+# status 200 checked 2026-11-12
 https://www.zydsign.com/guides/what-does-ip65-mean-outdoor-channel-letters
-# status pending live recheck
+# status 200 checked 2026-11-12
 https://www.zydsign.com/guides/outdoor-signs-for-cold-climates
 # status 200
 https://www.zydsign.com/guides/signage-procurement-low-bid-pitfalls
@@ -69,7 +69,7 @@ https://www.zydsign.com/products/outdoor-waste-bin
 https://www.zydsign.com/products/custom-planter-box
 
 # --- Group 4: case studies ---
-# status pending live recheck
+# status 200 checked 2026-11-12
 https://www.zydsign.com/case-studies/multi-brand-dealership-pylon-sign
 # status 200
 https://www.zydsign.com/case-studies/pavilion-dalian-mall-festive-installations
@@ -79,7 +79,7 @@ https://www.zydsign.com/case-studies/dalian-water-plaza-wayfinding-signage
 https://www.zydsign.com/case-studies/hengli-industrial-park-wayfinding-signage
 
 # --- Group 5: updated pages (homepage, catalog and site pages, then product details) ---
-# status pending live recheck
+# status 200 checked 2026-11-12
 https://www.zydsign.com/packaging-shipping
 # status 200
 https://www.zydsign.com
