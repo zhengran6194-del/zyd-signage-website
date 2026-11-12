@@ -106,8 +106,8 @@ Request an agreed delivery term, named place and version—for example, an appro
 
 Two terms buyers may encounter are:
 
-- • DAP — Delivered at Place: the seller arranges delivery to the named place, ready for unloading; the buyer generally handles import clearance and applicable import charges.
-- • DDP — Delivered Duty Paid: the seller generally handles import clearance and applicable duties and taxes, delivering to the named place ready for unloading.
+- DAP — Delivered at Place: the seller arranges delivery to the named place, ready for unloading; the buyer generally handles import clearance and applicable import charges.
+- DDP — Delivered Duty Paid: the seller generally handles import clearance and applicable duties and taxes, delivering to the named place ready for unloading.
 
 Before accepting a DDP quotation, confirm that the proposed arrangement can lawfully operate in the destination country. Identify the importer of record and the documents the buyer will receive.
 
@@ -125,12 +125,12 @@ An illuminated sign and a non-electrical metal plaque may require different clas
 
 Before confirming the budget, send a customs broker:
 
-- • Product photographs and drawings.
-- • Material descriptions.
-- • Whether the product is illuminated.
-- • Details of electrical components.
-- • Commercial value and country of origin.
-- • Proposed shipping and delivery arrangements.
+- Product photographs and drawings.
+- Material descriptions.
+- Whether the product is illuminated.
+- Details of electrical components.
+- Commercial value and country of origin.
+- Proposed shipping and delivery arrangements.
 
 Ask the broker to confirm classification and applicable charges. A supplier’s suggested HS code is useful information, but it should not be treated as a guaranteed duty assessment.
 
@@ -146,14 +146,14 @@ The installer needs enough information to assess the work.
 
 Include:
 
-- • Approved artwork and overall dimensions.
-- • Letter depth, materials and estimated weights.
-- • Mounting arrangement and fixing locations.
-- • Wall photographs and substrate information.
-- • Wiring layout, supply requirements and power supply locations.
-- • Proposed service access.
-- • Relevant certification or evaluation documents.
-- • Delivery and installation schedule.
+- Approved artwork and overall dimensions.
+- Letter depth, materials and estimated weights.
+- Mounting arrangement and fixing locations.
+- Wall photographs and substrate information.
+- Wiring layout, supply requirements and power supply locations.
+- Proposed service access.
+- Relevant certification or evaluation documents.
+- Delivery and installation schedule.
 
 Ask for a written quotation stating whether it includes permits, electrical work, lifting equipment, unloading and removal of existing signage.
 
@@ -213,11 +213,11 @@ Agree on how the manufacturer and installer will exchange photographs, measureme
 
 A parts warranty does not necessarily include:
 
-- • Local technician charges.
-- • Lift rental.
-- • Removal and reinstallation.
-- • Replacement freight.
-- • Duties or taxes on replacement shipments.
+- Local technician charges.
+- Lift rental.
+- Removal and reinstallation.
+- Replacement freight.
+- Duties or taxes on replacement shipments.
 
 These items should be addressed expressly. For a larger project, discuss spare components and retain the final wiring and component records.
 
@@ -254,13 +254,13 @@ Contact ZYD SIGN to discuss manufacturing specifications and the supply scope fo
 
 Importing works when the commercial terms, the installation review and the responsibility split are settled before production starts. Each item below should exist in writing, not in conversation.
 
-- • Installer review obtained before factory drawings are approved.
-- • Delivery term, named place and written list of inclusions agreed.
-- • Importer of record identified, and the documents the buyer receives confirmed.
-- • Customs broker asked to review the actual product before the budget is fixed.
-- • Warranty scope written to state parts, labor, freight and access separately.
-- • Reporting procedure and claim evidence agreed before the deposit is paid.
-- • Every row of the responsibility table assigned to a named party.
+- Installer review obtained before factory drawings are approved.
+- Delivery term, named place and written list of inclusions agreed.
+- Importer of record identified, and the documents the buyer receives confirmed.
+- Customs broker asked to review the actual product before the budget is fixed.
+- Warranty scope written to state parts, labor, freight and access separately.
+- Reporting procedure and claim evidence agreed before the deposit is paid.
+- Every row of the responsibility table assigned to a named party.
 
 ## Frequently asked questions
 

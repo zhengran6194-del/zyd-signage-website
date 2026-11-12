@@ -12,6 +12,7 @@ import { siteConfig } from "@/config/site";
 // one, otherwise the date of the last commit that touched the route. Update the
 // relevant entry whenever a route's content changes.
 const lastModifiedByRoute: Record<string, string> = {
+  "/guides/wayfinding-signage-levels": "2026-11-12",
 "/guides/pylon-sign-cost": "2026-11-06",
 "/guides/ordering-channel-letters-from-manufacturer": "2026-11-06",
   "/videos/factory-tour": "2026-10-30",
@@ -21,7 +22,7 @@ const lastModifiedByRoute: Record<string, string> = {
   "": "2026-10-30",
   "/products": "2026-10-29",
   "/projects": "2026-10-28",
-  "/guides": "2026-11-06",
+  "/guides": "2026-11-12",
   "/about": "2026-10-29",
   "/contact": "2026-10-27",
   "/faq": "2026-10-29",
@@ -175,6 +176,7 @@ const routes: SitemapRoute[] = [
   { path: "/ja/projects", priority: 0.7, languages: englishAndJapanese("/projects") },
   { path: "/guides/pylon-sign-cost", priority: 0.8 },
   { path: "/guides/ordering-channel-letters-from-manufacturer", priority: 0.8 },
+  { path: "/guides/wayfinding-signage-levels", priority: 0.8 },
   { path: "/guides", priority: 0.8, languages: englishAndJapanese("/guides") },
   { path: "/ja/guides", priority: 0.7, languages: englishAndJapanese("/guides") },
   // Pages that exist in English only, so they declare no alternates.

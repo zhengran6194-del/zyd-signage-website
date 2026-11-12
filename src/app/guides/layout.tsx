@@ -5,7 +5,7 @@ const path = "/guides";
 // Rendered with the root template: "Signage Guides: Cost, Materials,
 // Installation | ZYD Signage" (59 characters).
 const title = "Signage Guides: Cost, Materials, Installation";
-const description = "Practical buying and technical guides for custom signage: channel letter costs, illumination, sign selection, outdoor materials, MOQ and lead time.";
+const description = "Buying and planning guides for building wayfinding systems, illuminated signage, channel letter costs, materials and project procurement.";
 
 // The guide articles that have no Japanese version name none of their own:
 // their metadata replaces this one, so only the index declares the pair.

@@ -99,9 +99,12 @@ function parseAttrs(raw = '') {
 
 /* -------------------------------------------------------------- rendering */
 
+let currentPageUrl = '';
+
 const abs = (href) => {
   if (!href) return '';
   if (/^(?:https?:|mailto:|tel:|whatsapp:)/i.test(href)) return href;
+  if (href.startsWith('#')) return `${SITE}${currentPageUrl}${href}`;
   return `${SITE}${href}`;
 };
 
@@ -262,11 +265,12 @@ function renderInline(node, ctx) {
 
 function renderLi(li, ctx, kind, index) {
   const marker = kind === 'ol' ? `${index}. ` : '- ';
-  const body = li.children
+  const rawBody = li.children
     .filter((c) => c.tag !== 'ul' && c.tag !== 'ol')
     .map((c) => renderInline(c, ctx))
     .join('')
     .trim();
+  const body = kind === 'ul' ? rawBody.replace(/^•\s*/, '') : rawBody;
   const nested = li.children
     .filter((c) => c.tag === 'ul' || c.tag === 'ol')
     .map((c) => render(c, ctx).trim())
@@ -352,6 +356,7 @@ const failures = [];
 // set, in the same pass, and cannot list a page whose mirror was not written.
 const mirrored = [];
 for (const url of pages) {
+  currentPageUrl = url;
   const htmlFile = htmlFileFor(url);
   const raw = fs.readFileSync(htmlFile, 'utf8');
   const body = raw.replace(/<script>self\.__next_f\.push\([\s\S]*?\)<\/script>/g, '');

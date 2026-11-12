@@ -497,11 +497,11 @@ Contact our engineering team for expert technical support and factory-direct pri
 
 What to send for a signage project
 
-- • Artwork or logo file
-- • Sign types, approximate sizes and quantities
-- • Indoor or outdoor location and mounting surface
-- • Finish and lighting direction
-- • Site photos and ship-to country
+- Artwork or logo file
+- Sign types, approximate sizes and quantities
+- Indoor or outdoor location and mounting surface
+- Finish and lighting direction
+- Site photos and ship-to country
 
 Send what you have: artwork, approximate dimensions, quantity, finish or lighting direction, mounting/site photos, and ship-to country.
 
@@ -870,11 +870,11 @@ Our technical sales engineers are ready to assist with your specific project req
 Canonical page: https://www.zydsign.com/guides
 Markdown mirror: https://www.zydsign.com/guides/index.md
 
-Practical buying and technical guides for custom signage projects.
+Practical buying and planning guides for wayfinding systems, custom signs and commercial projects.
 
 #### What these guides cover
 
-Twenty-three guides cover the decisions that sit in front of a signage order: how the illuminated routes compare, how raceway and individually mounted channel letters differ, what shapes a channel letter quotation, how material and finish routes are chosen, how a complete site package is procured stage by stage, how a low-bid tender fails at acceptance, how imported signage clears customs and hands over to an installer, how tactile and Braille signage is planned and how custom Braille door signs are specified, and how a mall, an industrial park or a hotel becomes one coordinated signage system.
+Our guides cover the decisions that sit in front of a signage order: how the illuminated routes compare, how wayfinding levels connect a visitor journey, how raceway and individually mounted channel letters differ, what shapes a quotation, how materials and finishes are chosen, how a complete site package is procured, and how projects are planned for accessibility, healthcare, campuses, industrial parks and hotels.
 
 #### How to read them
 
@@ -903,6 +903,16 @@ Get free channel letter design support from Aaron. Prepare artwork, dimensions, 
 Read Guide
 
 <https://www.zydsign.com/guides/ordering-channel-letters-from-manufacturer>
+
+Architectural Wayfinding
+
+#### Wayfinding Signage Levels: Level 1, 2 & 3 Explained
+
+Learn how site identification, route directions and room signs connect into one clear visitor journey through an office, hospital, school, campus or industrial park.
+
+Read Guide
+
+<https://www.zydsign.com/guides/wayfinding-signage-levels>
 
 Pylon Sign Planning
 
@@ -1586,10 +1596,10 @@ Free-standing counter and desk signs that carry your brand at reading distance, 
 
 What to send for an acrylic desk sign
 
-- • Artwork or logo file
-- • Overall dimensions and quantity
-- • Finish and edge direction
-- • Counter/desk photo and ship-to country
+- Artwork or logo file
+- Overall dimensions and quantity
+- Finish and edge direction
+- Counter/desk photo and ship-to country
 
 Send what you have: artwork, approximate dimensions, quantity, finish or lighting direction, mounting/site photos, and ship-to country.
 
@@ -1738,10 +1748,10 @@ Directional signage systems for airports, hospitals, campuses, and mixed-use dev
 
 What to send for an architectural wayfinding system
 
-- • Site or floor plans
-- • Sign types and quantities
-- • Artwork or brand standards
-- • Mounting conditions and ship-to country
+- Site or floor plans
+- Sign types and quantities
+- Artwork or brand standards
+- Mounting conditions and ship-to country
 
 Send what you have: artwork, approximate dimensions, quantity, finish or lighting direction, mounting/site photos, and ship-to country.
 
@@ -1753,9 +1763,9 @@ A wayfinding system organizes every sign type into one hierarchy so a visitor ca
 
 #### How is a wayfinding system planned for a large site?
 
-Planning starts with the visitor journey: arrival, parking, first decision point, corridors, and final destination. Each decision point defines what the sign must say and how far ahead it must be read, which then sets the panel sizes and mounting. Our selection guide explains how to match sign formats to the site and viewer.
+Planning starts with the visitor journey: arrival, parking, first decision point, corridors, and final destination. Each decision point defines what the sign must say and how far ahead it must be read, which then sets the panel sizes and mounting. Use the wayfinding hierarchy guide to map each level, then the sign-selection guide to match formats to the site and viewer.
 
-[Read the sign-selection guide](https://www.zydsign.com/guides/how-to-choose-the-right-sign-for-your-business)
+[Review the three wayfinding levels](https://www.zydsign.com/guides/wayfinding-signage-levels) [Read the sign-selection guide](https://www.zydsign.com/guides/how-to-choose-the-right-sign-for-your-business)
 
 #### Which materials suit interior and exterior wayfinding?
 
@@ -1781,28 +1791,28 @@ Each item is a decision input for a wayfinding program. Confirm the journey, mou
 
 ##### Sign family
 
-- • Overhead, projecting, and wall-mounted panels
-- • Freestanding directories and map boards
-- • Tactile and Braille options when specified
+- Overhead, projecting, and wall-mounted panels
+- Freestanding directories and map boards
+- Tactile and Braille options when specified
 
 ##### Panels & finish
 
-- • Aluminum and acrylic panel construction
-- • 304 stainless steel for exposed metal elements
-- • Powder coating in specified RAL colors
+- Aluminum and acrylic panel construction
+- 304 stainless steel for exposed metal elements
+- Powder coating in specified RAL colors
 
 ##### Mounting
 
-- • Ceiling-hung and wall-bracket assemblies
-- • Flush mounting where the wall allows
-- • Fixing layout confirmed from the site survey
+- Ceiling-hung and wall-bracket assemblies
+- Flush mounting where the wall allows
+- Fixing layout confirmed from the site survey
 
 ##### Illumination & durability
 
-- • Optional LED modules selected for the project specification
-- • Power supplies selected for the project specification where lit
-- • Environmental rating reviewed for the exterior application
-- • Warranty terms confirmed in the project quotation
+- Optional LED modules selected for the project specification
+- Power supplies selected for the project specification where lit
+- Environmental rating reviewed for the exterior application
+- Warranty terms confirmed in the project quotation
 
 ##### Factory Advantage
 
@@ -1847,10 +1857,10 @@ Coordinated sign programs for chain rollouts and multi-site brand projects.
 
 What to send for a complete signage system
 
-- • Site list and rollout sequence
-- • Sign types and quantities per site
-- • Artwork or brand standards
-- • Mounting/site photos and ship-to country
+- Site list and rollout sequence
+- Sign types and quantities per site
+- Artwork or brand standards
+- Mounting/site photos and ship-to country
 
 Send what you have: artwork, approximate dimensions, quantity, finish or lighting direction, mounting/site photos, and ship-to country.
 
@@ -1890,27 +1900,27 @@ Each item is a decision input for a coordinated program. Confirm the scope, stan
 
 ##### Program scope
 
-- • Exterior entry and building identification
-- • Illuminated letters and light boxes
-- • Wayfinding and interior brand elements
+- Exterior entry and building identification
+- Illuminated letters and light boxes
+- Wayfinding and interior brand elements
 
 ##### Locked specification
 
-- • One material and finish standard per element group
-- • Fixed typography and color references
-- • 304 stainless steel for exposed outdoor metal
+- One material and finish standard per element group
+- Fixed typography and color references
+- 304 stainless steel for exposed outdoor metal
 
 ##### Lighting & components
 
-- • LED modules selected for the project specification
-- • Power supplies selected for the project specification
-- • Environmental rating reviewed for the exterior application
+- LED modules selected for the project specification
+- Power supplies selected for the project specification
+- Environmental rating reviewed for the exterior application
 
 ##### Phasing & delivery
 
-- • Production grouped by site or opening date
-- • DDP delivery scope quoted from destination and cargo details
-- • Warranty terms confirmed in the project quotation
+- Production grouped by site or opening date
+- DDP delivery scope quoted from destination and cargo details
+- Warranty terms confirmed in the project quotation
 
 ##### Factory Advantage
 
@@ -2086,27 +2096,27 @@ Each item is a decision input for a front-lit letter. Confirm the face, the retu
 
 ##### Letter face
 
-- • Translucent acrylic, the illuminated surface
-- • Face material chosen against the required light spread
-- • Trim fitted around the face edge
+- Translucent acrylic, the illuminated surface
+- Face material chosen against the required light spread
+- Trim fitted around the face edge
 
 ##### Letter body
 
-- • 304 stainless steel for exposed outdoor letters
-- • Aluminum for lighter letter bodies
-- • Coated sheet where a painted finish is specified
+- 304 stainless steel for exposed outdoor letters
+- Aluminum for lighter letter bodies
+- Coated sheet where a painted finish is specified
 
 ##### Interior illumination
 
-- • LED modules mounted on the interior of the return
-- • Module spacing set for an even face
-- • Power supplies selected for the project specification
+- LED modules mounted on the interior of the return
+- Module spacing set for an even face
+- Power supplies selected for the project specification
 
 ##### Mounting & access
 
-- • Raceway or individual bracket mounting
-- • Wiring route and service access agreed before fabrication
-- • Face or service panel detailed for single-letter service
+- Raceway or individual bracket mounting
+- Wiring route and service access agreed before fabrication
+- Face or service panel detailed for single-letter service
 
 ##### Factory Advantage
 
@@ -2312,10 +2322,10 @@ Fabricated seating, planters, and street-level brand elements for commercial and
 
 What to send for custom landscape furniture
 
-- • Site plan and element list
-- • Dimensions and quantities
-- • Finish or brand colour direction
-- • Ground-fixing/site photos and ship-to country
+- Site plan and element list
+- Dimensions and quantities
+- Finish or brand colour direction
+- Ground-fixing/site photos and ship-to country
 
 Send what you have: artwork, approximate dimensions, quantity, finish or lighting direction, mounting/site photos, and ship-to country.
 
@@ -2355,27 +2365,27 @@ Each item is a decision input for fabricated street elements. Confirm the site l
 
 ##### Element types
 
-- • Benches and seating units
-- • Planters and planter-and-seat combinations
-- • Bollards and litter bins
+- Benches and seating units
+- Planters and planter-and-seat combinations
+- Bollards and litter bins
 
 ##### Material & finish
 
-- • Coated steel or aluminum for painted elements
-- • 304 stainless steel for exposed metal details
-- • Powder coating in specified RAL colors
+- Coated steel or aluminum for painted elements
+- 304 stainless steel for exposed metal details
+- Powder coating in specified RAL colors
 
 ##### Ground fixing
 
-- • Surface-fixed or embedded bases
-- • Fixing detail confirmed from the site drawing
-- • Service access kept clear around each unit
+- Surface-fixed or embedded bases
+- Fixing detail confirmed from the site drawing
+- Service access kept clear around each unit
 
 ##### Durability
 
-- • Finish route selected for the local climate
-- • Warranty terms confirmed in the project quotation
-- • Replacement parts planned for high-traffic locations
+- Finish route selected for the local climate
+- Warranty terms confirmed in the project quotation
+- Replacement parts planned for high-traffic locations
 
 ##### Factory Advantage
 
@@ -2420,10 +2430,10 @@ Flexible LED neon logos for retail interiors, hospitality walls, and brand displ
 
 What to send for a custom LED neon sign
 
-- • Vector artwork
-- • Overall dimensions and quantity
-- • Colour, lighting and power direction
-- • Wall/mounting photo and ship-to country
+- Vector artwork
+- Overall dimensions and quantity
+- Colour, lighting and power direction
+- Wall/mounting photo and ship-to country
 
 Send what you have: artwork, approximate dimensions, quantity, finish or lighting direction, mounting/site photos, and ship-to country.
 
@@ -2463,27 +2473,27 @@ Each item is a decision input for flexible neon fabrication. Confirm the artwork
 
 ##### Tubing & color
 
-- • Single-color tubing matched to brand color
-- • Multi-color and controller options where required
-- • Path simplified for the tubing minimum bend
+- Single-color tubing matched to brand color
+- Multi-color and controller options where required
+- Path simplified for the tubing minimum bend
 
 ##### Backing & mounting
 
-- • Clear acrylic backing for a floating look
-- • Coated backing where a solid outline is preferred
-- • Fixing method confirmed from the wall material
+- Clear acrylic backing for a floating look
+- Coated backing where a solid outline is preferred
+- Fixing method confirmed from the wall material
 
 ##### Power
 
-- • Power supplies selected for the project specification
-- • Concealed feed route agreed before fabrication
-- • Dimming or animation only where specified
+- Power supplies selected for the project specification
+- Concealed feed route agreed before fabrication
+- Dimming or animation only where specified
 
 ##### Durability & use
 
-- • Environmental rating reviewed for the exterior application
-- • Warranty terms confirmed in the project quotation
-- • Interior and event use as the standard application
+- Environmental rating reviewed for the exterior application
+- Warranty terms confirmed in the project quotation
+- Interior and event use as the standard application
 
 ##### Factory Advantage
 
@@ -2536,10 +2546,10 @@ Architectural planter solutions that bring greenery into hotels, commercial entr
 
 What to send for a custom planter box project
 
-- • Drawings or artwork
-- • Dimensions and target quantity
-- • Material, drainage and finish
-- • Installation/site photos and ship-to country
+- Drawings or artwork
+- Dimensions and target quantity
+- Material, drainage and finish
+- Installation/site photos and ship-to country
 
 Send what you have: artwork, approximate dimensions, quantity, finish or lighting direction, mounting/site photos, and ship-to country.
 
@@ -2579,27 +2589,27 @@ Each item is a decision input for a planter package. Confirm the location, plant
 
 ##### Form & scale
 
-- • Profile, height, and visible-face treatment
-- • Alignment to the paving, dado, or seating datum
-- • Scale checked in a 3D mockup where the brief allows
+- Profile, height, and visible-face treatment
+- Alignment to the paving, dado, or seating datum
+- Scale checked in a 3D mockup where the brief allows
 
 ##### Body construction
 
-- • Aluminum or galvanized steel bodies
-- • Stainless steel where the project specifies it
-- • Base and levelling detail set by the site survey
+- Aluminum or galvanized steel bodies
+- Stainless steel where the project specifies it
+- Base and levelling detail set by the site survey
 
 ##### Drainage & liner
 
-- • Internal liner and outlet or perforation direction
-- • Interface with irrigation and overflow
-- • Root volume and soil load confirmed with the planting plan
+- Internal liner and outlet or perforation direction
+- Interface with irrigation and overflow
+- Root volume and soil load confirmed with the planting plan
 
 ##### Finish & exposure
 
-- • Surface finish selected for the specified environment
-- • Brand panel placement and contrast agreed with the brand standard
-- • Warranty terms confirmed in the project quotation
+- Surface finish selected for the specified environment
+- Brand panel placement and contrast agreed with the brand standard
+- Warranty terms confirmed in the project quotation
 
 ##### Factory Advantage
 
@@ -2652,10 +2662,10 @@ Custom healthcare signage for hospitals and clinics, including wayfinding, room 
 
 What to send for a medical care signage system
 
-- • Floor/department plans
-- • Sign types, dimensions and quantities
-- • Artwork, finish and accessibility notes
-- • Mounting/site photos and ship-to country
+- Floor/department plans
+- Sign types, dimensions and quantities
+- Artwork, finish and accessibility notes
+- Mounting/site photos and ship-to country
 
 Send what you have: artwork, approximate dimensions, quantity, finish or lighting direction, mounting/site photos, and ship-to country.
 
@@ -2695,27 +2705,27 @@ Each item is a decision input for a healthcare signage package. Confirm the depa
 
 ##### Sign family
 
-- • Directional and overhead panels
-- • Room and department identification plates
-- • Replaceable room-name inserts as departments change
+- Directional and overhead panels
+- Room and department identification plates
+- Replaceable room-name inserts as departments change
 
 ##### Panels & finish
 
-- • Aluminum and acrylic panel construction
-- • Surface finish specified for the cleaning routine
-- • Graphic contrast confirmed against the brand standard
+- Aluminum and acrylic panel construction
+- Surface finish specified for the cleaning routine
+- Graphic contrast confirmed against the brand standard
 
 ##### Mounting
 
-- • Flush mounting to reduce ledges and dust collection
-- • Bracket and rail systems for corridors
-- • Fixing layout confirmed from the site survey
+- Flush mounting to reduce ledges and dust collection
+- Bracket and rail systems for corridors
+- Fixing layout confirmed from the site survey
 
 ##### Illumination & durability
 
-- • Optional LED modules selected for the project specification
-- • Power supplies selected for the project specification where lit
-- • Warranty terms confirmed in the project quotation
+- Optional LED modules selected for the project specification
+- Power supplies selected for the project specification where lit
+- Warranty terms confirmed in the project quotation
 
 ##### Factory Advantage
 
@@ -2760,10 +2770,10 @@ Custom metal and acrylic logo panels and dimensional signs for reception walls, 
 
 What to send for a metal and acrylic logo sign
 
-- • Vector artwork or logo file
-- • Overall dimensions and quantity
-- • Metal/acrylic finish direction
-- • Wall/mounting photo and ship-to country
+- Vector artwork or logo file
+- Overall dimensions and quantity
+- Metal/acrylic finish direction
+- Wall/mounting photo and ship-to country
 
 Send what you have: artwork, approximate dimensions, quantity, finish or lighting direction, mounting/site photos, and ship-to country.
 
@@ -2803,28 +2813,28 @@ Each item is a decision input for a fabricated logo sign. Confirm the artwork, w
 
 ##### Metal layer
 
-- • 304 stainless steel for exposed applications
-- • Aluminum for lighter panels
-- • Coated sheet where a painted finish is specified
+- 304 stainless steel for exposed applications
+- Aluminum for lighter panels
+- Coated sheet where a painted finish is specified
 
 ##### Face & finish
 
-- • Brushed or mirror stainless faces
-- • Acrylic face layer for color and depth
-- • Powder coating in specified RAL colors
+- Brushed or mirror stainless faces
+- Acrylic face layer for color and depth
+- Powder coating in specified RAL colors
 
 ##### Mounting
 
-- • Standoff mounting for a shadow-line effect
-- • Flush mounting where the wall requires it
-- • Template and fixing layout confirmed from the wall survey
+- Standoff mounting for a shadow-line effect
+- Flush mounting where the wall requires it
+- Template and fixing layout confirmed from the wall survey
 
 ##### Illumination & durability
 
-- • Optional LED backlighting selected for the project specification
-- • Power supplies selected for the project specification where lit
-- • Environmental rating reviewed for the exterior application
-- • Warranty terms confirmed in the project quotation
+- Optional LED backlighting selected for the project specification
+- Power supplies selected for the project specification where lit
+- Environmental rating reviewed for the exterior application
+- Warranty terms confirmed in the project quotation
 
 ##### Factory Advantage
 
@@ -3034,29 +3044,29 @@ Each option below is a decision input. Confirm the site, finish, and fabrication
 
 ##### Material direction
 
-- • Galvanized sheet with a specified coating system for painted structures
-- • 201 or 304 stainless steel when a stainless appearance is required
-- • Aluminum plate for lighter structural sections
+- Galvanized sheet with a specified coating system for painted structures
+- 201 or 304 stainless steel when a stainless appearance is required
+- Aluminum plate for lighter structural sections
 
 ##### Finish direction
 
-- • Powder coating in specified RAL colors
-- • Automotive-grade paint where the brand finish demands it
-- • Brushed or mirror stainless finish as an exposed-metal route
+- Powder coating in specified RAL colors
+- Automotive-grade paint where the brand finish demands it
+- Brushed or mirror stainless finish as an exposed-metal route
 
 ##### Structure & mounting
 
-- • Internal reinforced frames for larger faces
-- • L-shape or U-shape mounting brackets
-- • Flush-mount installation where the site allows
-- • Project-specific wind load review for tall structures
+- Internal reinforced frames for larger faces
+- L-shape or U-shape mounting brackets
+- Flush-mount installation where the site allows
+- Project-specific wind load review for tall structures
 
 ##### Illumination & durability
 
-- • LED modules selected for the project specification
-- • Power supplies selected for the project specification
-- • Environmental rating reviewed for the exterior application
-- • 1-year warranty; coverage confirmed in the order terms
+- LED modules selected for the project specification
+- Power supplies selected for the project specification
+- Environmental rating reviewed for the exterior application
+- 1-year warranty; coverage confirmed in the order terms
 
 ##### Factory Advantage
 
@@ -3123,10 +3133,10 @@ A refined waste bin solution for hotels, commercial spaces, and public environme
 
 What to send for a custom outdoor waste bin project
 
-- • Artwork or logo file
-- • Dimensions, capacity and quantity
-- • Material and finish direction
-- • Installation/site photos and ship-to country
+- Artwork or logo file
+- Dimensions, capacity and quantity
+- Material and finish direction
+- Installation/site photos and ship-to country
 
 Send what you have: artwork, approximate dimensions, quantity, finish or lighting direction, mounting/site photos, and ship-to country.
 
@@ -3166,27 +3176,27 @@ Each item is a decision input for a waste and recycling package. Confirm the str
 
 ##### Stream configuration
 
-- • General-waste and recyclable streams
-- • Station grouping at decision points
-- • Label and pictogram panels matched to the site sign system
+- General-waste and recyclable streams
+- Station grouping at decision points
+- Label and pictogram panels matched to the site sign system
 
 ##### Body, liner & finish
 
-- • Galvanized steel or aluminum bodies
-- • Stainless steel where the project specifies it
-- • Removable liner and surface finish for the cleaning routine
+- Galvanized steel or aluminum bodies
+- Stainless steel where the project specifies it
+- Removable liner and surface finish for the cleaning routine
 
 ##### Opening & servicing
 
-- • Opening type and liner access set by the servicing method
-- • Emptying clearance confirmed with the operator
-- • Detail shaped to avoid standing water
+- Opening type and liner access set by the servicing method
+- Emptying clearance confirmed with the operator
+- Detail shaped to avoid standing water
 
 ##### Fixing, placement & graphics
 
-- • Surface fixing or ballast set by the paving and wind exposure
-- • Cleaning access and movement allowance
-- • Warranty terms confirmed in the project quotation
+- Surface fixing or ballast set by the paving and wind exposure
+- Cleaning access and movement allowance
+- Warranty terms confirmed in the project quotation
 
 ##### Factory Advantage
 
@@ -3239,10 +3249,10 @@ Free-standing A-frame signs that stand on the pavement, forecourt, or event floo
 
 What to send for a portable metal A-frame sign
 
-- • Artwork or message file
-- • Overall dimensions and quantity
-- • Finish, double-sided or fold direction
-- • Pavement/site photos and ship-to country
+- Artwork or message file
+- Overall dimensions and quantity
+- Finish, double-sided or fold direction
+- Pavement/site photos and ship-to country
 
 Send what you have: artwork, approximate dimensions, quantity, finish or lighting direction, mounting/site photos, and ship-to country.
 
@@ -3391,10 +3401,10 @@ Edge-lit illuminated panels for retail fascias, transport interiors, and corpora
 
 What to send for an ultra-slim LED light box
 
-- • Artwork or panel file
-- • Panel dimensions and quantity
-- • Finish, colour and lighting direction
-- • Mounting/site photos and ship-to country
+- Artwork or panel file
+- Panel dimensions and quantity
+- Finish, colour and lighting direction
+- Mounting/site photos and ship-to country
 
 Send what you have: artwork, approximate dimensions, quantity, finish or lighting direction, mounting/site photos, and ship-to country.
 
@@ -3434,27 +3444,27 @@ Each item is a decision input for illuminated panel construction. Confirm the pa
 
 ##### Frame & face
 
-- • Coated metal frame for exposed locations
-- • 304 stainless steel where a stainless finish is specified
-- • Acrylic face matched to the print method
+- Coated metal frame for exposed locations
+- 304 stainless steel where a stainless finish is specified
+- Acrylic face matched to the print method
 
 ##### Mounting direction
 
-- • Flush mounting where depth is limited
-- • Projecting or bracket mounting for signage visibility
-- • Fixing layout confirmed from the site survey
+- Flush mounting where depth is limited
+- Projecting or bracket mounting for signage visibility
+- Fixing layout confirmed from the site survey
 
 ##### Lighting
 
-- • LED modules selected for the project specification
-- • Power supplies selected for the project specification
-- • Service access agreed for driver replacement
+- LED modules selected for the project specification
+- Power supplies selected for the project specification
+- Service access agreed for driver replacement
 
 ##### Durability
 
-- • Environmental rating reviewed for the exterior application
-- • Warranty terms confirmed in the project quotation
-- • Sealing specified for the installation environment
+- Environmental rating reviewed for the exterior application
+- Warranty terms confirmed in the project quotation
+- Sealing specified for the installation environment
 
 ##### Factory Advantage
 
@@ -3536,12 +3546,12 @@ Ask the supplier to separate face material, internal frame, finish, illumination
 
 This is ZYD's practical request list for preparing a project review. It is a procurement workflow, not a claim that either material is automatically compliant or suitable.
 
-- • Site city/country and exposure notes, including coastal or industrial conditions.
-- • Sign type: pylon sign, monument sign, directional sign, building sign, or another defined type.
-- • Approximate dimensions, quantity, artwork, illumination, and viewing direction.
-- • Required appearance: exposed stainless finish, painted finish, or a finish sample for approval.
-- • Installation location, access constraints, foundation/interface responsibility, and local review requirements.
-- • Destination and delivery scope, so packaging and shipping can be discussed with the actual project brief.
+- Site city/country and exposure notes, including coastal or industrial conditions.
+- Sign type: pylon sign, monument sign, directional sign, building sign, or another defined type.
+- Approximate dimensions, quantity, artwork, illumination, and viewing direction.
+- Required appearance: exposed stainless finish, painted finish, or a finish sample for approval.
+- Installation location, access constraints, foundation/interface responsibility, and local review requirements.
+- Destination and delivery scope, so packaging and shipping can be discussed with the actual project brief.
 
 #### Frequently asked questions
 
@@ -3602,10 +3612,10 @@ The signs themselves are ordinary signage in construction terms. What changes is
 
 Because those requirements are set by law in some jurisdictions and by client or consultant standards in others, the planning conversation has to start with "which framework applies here", not with "which sign type do you want".
 
-- • Permanent room and space identification, including rooms with a specific function
-- • Directional signs along an accessible route and at decision points
-- • Informational signs, such as instructions that must be read at a fixed position
-- • Tactile and raised characters, Braille, and contrast between text and background where required
+- Permanent room and space identification, including rooms with a specific function
+- Directional signs along an accessible route and at decision points
+- Informational signs, such as instructions that must be read at a fixed position
+- Tactile and raised characters, Braille, and contrast between text and background where required
 
 #### Which inputs does an accessibility review normally ask for?
 
@@ -3628,10 +3638,10 @@ What a buyer can do is make the sign readable as an object: keep the tactile ele
 
 Where Braille is required, its placement relative to the corresponding text is part of the standard rather than a design preference. If the requirement is unclear, record it as an open item on the sign schedule instead of alternating between options during production.
 
-- • Freeze the text before tactile artwork starts; later wording edits mean new tooling or new plates
-- • Confirm whether raised characters, Braille, or both are required for each sign type
-- • Agree the finish on the reading surface so the raised profile stays perceptible
-- • Plan the mounting detail so fixings do not intrude on the tactile area
+- Freeze the text before tactile artwork starts; later wording edits mean new tooling or new plates
+- Confirm whether raised characters, Braille, or both are required for each sign type
+- Agree the finish on the reading surface so the raised profile stays perceptible
+- Plan the mounting detail so fixings do not intrude on the tactile area
 
 #### How does accessible signage fit into a wayfinding system?
 
@@ -3641,22 +3651,22 @@ Treating them as one system also avoids the common duplication where a tactile s
 
 For healthcare, education, transport, and public buildings, this is often the difference between an installation that reads well on a checklist and one a visitor can actually follow. That judgement again sits with the project team, but the schedule is the tool that makes it checkable.
 
-- • Start from the visitor journey and mark the points where a decision is made
-- • Assign each destination both a directional sign and, where required, an identification sign
-- • Keep one schedule covering tactile content, Braille, mounting, and finish
-- • Re-check the schedule after any floor plan or room-naming change
+- Start from the visitor journey and mark the points where a decision is made
+- Assign each destination both a directional sign and, where required, an identification sign
+- Keep one schedule covering tactile content, Braille, mounting, and finish
+- Re-check the schedule after any floor plan or room-naming change
 
 #### What should be confirmed before production starts?
 
 Most accessibility-related rework traces back to information that was still moving when fabrication began. The confirmations below are the ones worth freezing first, because each of them is expensive to change once plates and mountings exist.
 
-- • The framework that applies to the site, confirmed in writing by the project team or authority
-- • Final text, room numbering, pictograms, and language set, with an agreed revision date
-- • Sign locations cross-checked against the current floor plan and the accessible route
-- • Mounting heights measured on site, including the finished floor level
-- • Contrast, finish, and surface treatment decisions for each sign type
-- • Sample or first-article review before the full run, where the project calls for it
-- • Destination, quantity, packing, and installation responsibility
+- The framework that applies to the site, confirmed in writing by the project team or authority
+- Final text, room numbering, pictograms, and language set, with an agreed revision date
+- Sign locations cross-checked against the current floor plan and the accessible route
+- Mounting heights measured on site, including the finished floor level
+- Contrast, finish, and surface treatment decisions for each sign type
+- Sample or first-article review before the full run, where the project calls for it
+- Destination, quantity, packing, and installation responsibility
 
 #### What can a signage manufacturer confirm, and what can it not?
 
@@ -3668,14 +3678,14 @@ What it cannot do is determine which accessibility framework governs a building,
 
 Use this list to assemble the project inputs an accessibility-related signage schedule depends on. Anything left open should be marked as open rather than assumed.
 
-- • The accessibility framework that applies, and who confirms it
-- • Floor plans showing entrances, accessible routes, decision points, and destinations
-- • The sign schedule: location, sign type, and message for every item
-- • Final text, numbering, pictograms, and languages, with a revision reference
-- • Which items require raised characters, Braille, or both
-- • Mounting heights and clear approach space, measured on site
-- • Contrast, finish, and reading-surface treatment per sign type
-- • Quantities, destination, packing, and installation responsibility
+- The accessibility framework that applies, and who confirms it
+- Floor plans showing entrances, accessible routes, decision points, and destinations
+- The sign schedule: location, sign type, and message for every item
+- Final text, numbering, pictograms, and languages, with a revision reference
+- Which items require raised characters, Braille, or both
+- Mounting heights and clear approach space, measured on site
+- Contrast, finish, and reading-surface treatment per sign type
+- Quantities, destination, packing, and installation responsibility
 
 #### Frequently asked questions
 
@@ -3732,97 +3742,97 @@ A complete site signage package is procured stage by stage, and every stage has 
 
 The brief fixes the scope before any drawing exists. It should describe the site, the audience, the sign types being considered and the standards the client applies, and it should name the person who approves each artefact.
 
-- • Project team decides: site type and audience, sign types in scope, the approval chain and the review dates.
-- • Supplier confirms: whether the requested scope can be produced as described, and which items need more information before a price is meaningful.
-- • Supplier confirms: the assumptions the quotation is based on, listed as assumptions rather than left implicit.
+- Project team decides: site type and audience, sign types in scope, the approval chain and the review dates.
+- Supplier confirms: whether the requested scope can be produced as described, and which items need more information before a price is meaningful.
+- Supplier confirms: the assumptions the quotation is based on, listed as assumptions rather than left implicit.
 
 #### 2. Site survey: what the drawings will be built from
 
 The survey turns a description into measurable inputs. Photographs alone are not a survey, because they do not record the substrate, the available clearances or the power position.
 
-- • Project team decides: access arrangements, survey dates, and who attends on site.
-- • Supplier confirms: what the survey must capture — wall or ground substrate and condition, mounting heights, available clearances, fixings, and the power and service positions.
-- • Supplier confirms: any site condition that changes the sign type, the mounting method or the delivery method.
+- Project team decides: access arrangements, survey dates, and who attends on site.
+- Supplier confirms: what the survey must capture — wall or ground substrate and condition, mounting heights, available clearances, fixings, and the power and service positions.
+- Supplier confirms: any site condition that changes the sign type, the mounting method or the delivery method.
 
 #### 3. Drawings and specification: freezing the design
 
 The drawing set is where the package becomes buildable. It carries the elevations, the sign schedule, the dimensions and the construction description for each sign type, and it is the document the acceptance stage is measured against.
 
-- • Project team decides: artwork, message content, language, and the approved design revision.
-- • Supplier confirms: the construction description per sign type — face, return, trim, depth and framing — and the mounting detail.
-- • Supplier confirms: the drawing revision that production is released against, so a later change is a documented revision rather than a verbal one.
+- Project team decides: artwork, message content, language, and the approved design revision.
+- Supplier confirms: the construction description per sign type — face, return, trim, depth and framing — and the mounting detail.
+- Supplier confirms: the drawing revision that production is released against, so a later change is a documented revision rather than a verbal one.
 
 #### 4. Materials and finish: making the route explicit
 
 Material and finish routes are selected per project against exposure, appearance, fabrication and the environment the sign stands in. Common routes include 304 stainless steel, galvanized steel, aluminum, acrylic and heavy-gauge steel sheet, finished with a coating route such as oven-baked paint, and the route chosen is confirmed with the sample rather than inferred from the sign type.
 
-- • Project team decides: the appearance standard and any colour references the finish is matched to.
-- • Supplier confirms: the material route proposed for each sign type, and the reason it suits the exposure.
-- • Supplier confirms: the finish sample or approved reference, and which visible surfaces it applies to.
+- Project team decides: the appearance standard and any colour references the finish is matched to.
+- Supplier confirms: the material route proposed for each sign type, and the reason it suits the exposure.
+- Supplier confirms: the finish sample or approved reference, and which visible surfaces it applies to.
 
 #### 5. Lighting and electrical: where the power comes from
 
 Illuminated signs are the part of the package where electrical decisions arrive earliest. The lighting effect, the power source and the service access are one subject, and they are confirmed with the electrician or the main contractor rather than after the sign is fabricated.
 
-- • Project team decides: the power available on site, the switching arrangement, and who connects the supply.
-- • Supplier confirms: the lighting effect and the construction that produces it, the power supply location, and the cable route.
-- • Supplier confirms: how each lit sign is reached for service without removing it, and where the driver or power supply can be accessed.
+- Project team decides: the power available on site, the switching arrangement, and who connects the supply.
+- Supplier confirms: the lighting effect and the construction that produces it, the power supply location, and the cable route.
+- Supplier confirms: how each lit sign is reached for service without removing it, and where the driver or power supply can be accessed.
 
 #### 6. Mounting: how each sign is fixed and set out
 
 Mounting is specified per sign type and per elevation. Setting-out dimensions are as important as the fixing method, because a sign that is level but in the wrong position is still a defect.
 
-- • Project team decides: the installation responsibility, the site access window and the lifting arrangements.
-- • Supplier confirms: the fixing method, the substrate requirements, the standoff or raceway detail, and the setting-out dimensions.
-- • Supplier confirms: whether the fixing detail assumes a substrate that still has to be verified on site.
+- Project team decides: the installation responsibility, the site access window and the lifting arrangements.
+- Supplier confirms: the fixing method, the substrate requirements, the standoff or raceway detail, and the setting-out dimensions.
+- Supplier confirms: whether the fixing detail assumes a substrate that still has to be verified on site.
 
 #### 7. Quality assurance and acceptance: what good looks like
 
 Acceptance criteria are agreed before production, not discovered at handover. They cover the construction, the finish, the visible surfaces, and for illuminated signs the build and the illumination check.
 
-- • Project team decides: the acceptance criteria, the inspection scope, and who signs off the inspection record.
-- • Supplier confirms: the inspection stages, the check for each lit sign, the finish and dimension checks, and the record issued with the shipment.
-- • Supplier confirms: the agreed visual check or sample comparison that the delivered sign is measured against.
+- Project team decides: the acceptance criteria, the inspection scope, and who signs off the inspection record.
+- Supplier confirms: the inspection stages, the check for each lit sign, the finish and dimension checks, and the record issued with the shipment.
+- Supplier confirms: the agreed visual check or sample comparison that the delivered sign is measured against.
 
 #### 8. Packing and shipping: protecting the agreed scope
 
 The delivery scope states what arrives, in what condition, and to which address. Packing is part of that scope, because a correctly built sign that arrives damaged has not been delivered to the agreed standard.
 
-- • Project team decides: the delivery address, the receiving arrangements, the offloading capability and the required date.
-- • Supplier confirms: the packing method, the number and type of packages, and the crate marks used to identify each sign.
-- • Supplier confirms: the delivery scope being quoted, including whether duties and taxes are in the quotation or handled by the receiving party.
+- Project team decides: the delivery address, the receiving arrangements, the offloading capability and the required date.
+- Supplier confirms: the packing method, the number and type of packages, and the crate marks used to identify each sign.
+- Supplier confirms: the delivery scope being quoted, including whether duties and taxes are in the quotation or handled by the receiving party.
 
 #### 9. Commercial terms: what the price includes
 
 Commercial terms make the differences between quotations visible. Two prices for the same sign are only comparable when the included scope, the revision, the quantities and the delivery terms are the same.
 
-- • Project team decides: the order quantities, the revision ordered, the payment route and the required delivery date.
-- • Supplier confirms: what the price includes and what it excludes — drawings, samples, inspection, packing, freight, duties, installation and commissioning.
-- • Supplier confirms: the lead time that applies to the ordered scope, and any payment or supply terms the quotation is conditional on.
+- Project team decides: the order quantities, the revision ordered, the payment route and the required delivery date.
+- Supplier confirms: what the price includes and what it excludes — drawings, samples, inspection, packing, freight, duties, installation and commissioning.
+- Supplier confirms: the lead time that applies to the ordered scope, and any payment or supply terms the quotation is conditional on.
 
 #### 10. Handover: closing the package
 
 Handover is where the package is closed rather than abandoned. The final documents and the agreed follow-up items are recorded, so a later question about a sign is answered from a record instead of from memory.
 
-- • Project team decides: the completion requirements, and who accepts the sign schedule as delivered.
-- • Supplier confirms: the documents issued at handover — the as-built drawing revision, the inspection record, and the maintenance route for the lit signs.
-- • Both sides confirm: the agreed follow-up items, with an owner and a date for each one.
+- Project team decides: the completion requirements, and who accepts the sign schedule as delivered.
+- Supplier confirms: the documents issued at handover — the as-built drawing revision, the inspection record, and the maintenance route for the lit signs.
+- Both sides confirm: the agreed follow-up items, with an owner and a date for each one.
 
 #### Copy this checklist into the project brief
 
 One line per stage. Each line is a field to confirm rather than an assumption to carry forward, and any line that cannot be answered yet should be listed as an open item on the drawing.
 
-- • Brief: scope, sign types, audience, approval chain, review dates.
-- • Site survey: substrate, mounting heights, clearances, fixings, power and service positions.
-- • Drawings: approved revision, sign schedule, setting-out dimensions, construction description.
-- • Specification: mounting detail, fixing method, substrate assumptions stated as assumptions.
-- • Materials and finish: material route per sign, exposure reason, finish sample or reference.
-- • Lighting and electrical: effect, power location, cable route, switching, service access, commissioning.
-- • Mounting: fixing method per elevation, standoff or raceway detail, installation responsibility.
-- • QA and acceptance: inspection stages, illuminated sign check, finish and dimension check, sign-off.
-- • Packing and shipping: packing method, package list, crate marks, delivery scope, receiver arrangements.
-- • Commercial terms: included and excluded scope, revision and quantities, lead time, payment route.
-- • Handover: as-built revision, inspection record, maintenance route, follow-up items with owners.
+- Brief: scope, sign types, audience, approval chain, review dates.
+- Site survey: substrate, mounting heights, clearances, fixings, power and service positions.
+- Drawings: approved revision, sign schedule, setting-out dimensions, construction description.
+- Specification: mounting detail, fixing method, substrate assumptions stated as assumptions.
+- Materials and finish: material route per sign, exposure reason, finish sample or reference.
+- Lighting and electrical: effect, power location, cable route, switching, service access, commissioning.
+- Mounting: fixing method per elevation, standoff or raceway detail, installation responsibility.
+- QA and acceptance: inspection stages, illuminated sign check, finish and dimension check, sign-off.
+- Packing and shipping: packing method, package list, crate marks, delivery scope, receiver arrangements.
+- Commercial terms: included and excluded scope, revision and quantities, lead time, payment route.
+- Handover: as-built revision, inspection record, maintenance route, follow-up items with owners.
 
 #### Frequently asked questions
 
@@ -3917,11 +3927,11 @@ Depending on the project specification, customization can cover room information
 
 For a hotel, this may mean a coordinated set of room-number and restroom signs. For an office, it may mean matching signs for Accounting, Human Resources, Customer Service, and meeting rooms. The aim is clear, consistent room identification while respecting the character of the space.
 
-- • Room information: names, numbers, and permanent room identifiers
-- • Tactile content: raised lettering, numerals, symbols, and Braille
-- • Materials: acrylic, aluminum, and stainless steel, selected for the intended application
-- • Appearance: dimensions, colors, finishes, and layouts coordinated with the interior
-- • Sign families: consistent designs across multiple rooms, departments, or floors
+- Room information: names, numbers, and permanent room identifiers
+- Tactile content: raised lettering, numerals, symbols, and Braille
+- Materials: acrylic, aluminum, and stainless steel, selected for the intended application
+- Appearance: dimensions, colors, finishes, and layouts coordinated with the interior
+- Sign families: consistent designs across multiple rooms, departments, or floors
 
 #### What Makes a Braille Sign Effective?
 
@@ -3941,11 +3951,11 @@ Requirements vary by market and application. The target country, building use, a
 
 For U.S. projects, relevant ADA signage requirements include contracted, or Grade 2, Braille, rounded or domed dots, raised-character specifications, and installation criteria. Adding Braille alone does not establish ADA compliance; the finished sign and its installation must meet the applicable requirements.
 
-- • Freeze the room name or number before tactile artwork starts
-- • Confirm which Braille language and convention the destination requires
-- • Check raised-character style, dimensions, spacing, and Braille placement together
-- • Confirm contrast and surface finish where visual readability is part of the brief
-- • Measure the mounting location, installation height, and clear approach space
+- Freeze the room name or number before tactile artwork starts
+- Confirm which Braille language and convention the destination requires
+- Check raised-character style, dimensions, spacing, and Braille placement together
+- Confirm contrast and surface finish where visual readability is part of the brief
+- Measure the mounting location, installation height, and clear approach space
 
 #### Accessibility That Fits the Interior
 
@@ -3965,14 +3975,14 @@ Brand colors and material choices can help maintain consistency while the inform
 
 Use this list to assemble the project inputs a tactile room-identification schedule depends on. Any open item should be marked for confirmation rather than assumed.
 
-- • Room list, numbering, pictograms, and final wording
-- • Braille language and convention required for the target market
-- • Which items require raised characters, Braille, symbols, or a combination
-- • Applicable accessibility standard and the party responsible for confirming it
-- • Preferred dimensions, material route, color, finish, and contrast direction
-- • Mounting surface, installation height, clear approach space, and fixing method
-- • Quantities by room, floor, department, or building
-- • Destination, packing, and installation responsibility
+- Room list, numbering, pictograms, and final wording
+- Braille language and convention required for the target market
+- Which items require raised characters, Braille, symbols, or a combination
+- Applicable accessibility standard and the party responsible for confirming it
+- Preferred dimensions, material route, color, finish, and contrast direction
+- Mounting surface, installation height, clear approach space, and fixing method
+- Quantities by room, floor, department, or building
+- Destination, packing, and installation responsibility
 
 #### Frequently asked questions
 
@@ -4027,9 +4037,9 @@ The process starts by translating the brief into drawings, dimensions, sign type
 
 For a coordinated signage program, the team also separates repeated rules from site-specific details. That keeps a wayfinding family, architectural letters or illuminated sign range visually related while allowing each location to be checked against its own support and access conditions.
 
-- • Confirm artwork, dimensions, sign schedule and intended viewing conditions.
-- • Record material, finish, lighting, mounting, wiring and access assumptions.
-- • Separate repeatable system rules from site-specific construction details.
+- Confirm artwork, dimensions, sign schedule and intended viewing conditions.
+- Record material, finish, lighting, mounting, wiring and access assumptions.
+- Separate repeatable system rules from site-specific construction details.
 
 #### 2. Material, process and first-article verification
 
@@ -4037,9 +4047,9 @@ Before full production, the proposed material and process route should be checke
 
 A first-article or sample review gives the buyer and production team a concrete reference for appearance, construction and information placement. The exact sample scope depends on the project; not every order requires the same approval sequence.
 
-- • Review material and finish samples against the approved design intent.
-- • Confirm the selected process can form, join, finish and illuminate the sign as drawn.
-- • Record first-article comments before repeating the construction across the order.
+- Review material and finish samples against the approved design intent.
+- Confirm the selected process can form, join, finish and illuminate the sign as drawn.
+- Record first-article comments before repeating the construction across the order.
 
 #### 3. Laser cutting, CNC cutting and bending
 
@@ -4051,9 +4061,9 @@ After the construction route is confirmed, sheet, plate, profiles or other sign 
 
 Cut components are then formed where the design requires returns, folded edges, trays or structural parts. The correct sequence depends on the sign type and material; the important buyer question is whether the cut files, bend information and revision status are controlled together.
 
-- • Check the production file against the approved drawing revision.
-- • Match cutting and bending instructions to the specified material and sign construction.
-- • Review edges, apertures, returns and formed parts before the next assembly stage.
+- Check the production file against the approved drawing revision.
+- Match cutting and bending instructions to the specified material and sign construction.
+- Review edges, apertures, returns and formed parts before the next assembly stage.
 
 #### 4. Frame welding and post-weld finishing
 
@@ -4065,9 +4075,9 @@ Frames, returns, trays and supports are joined using the method appropriate to t
 
 This stage is where fabrication discipline becomes visible in the finished sign. A buyer should ask how the factory checks alignment, joint treatment, access panels and the relationship between the welded frame and the face or lettering.
 
-- • Check frame geometry, joint alignment and support interfaces.
-- • Review weld finishing on visible faces and edges before surface treatment.
-- • Confirm access for wiring, components, installation and future service.
+- Check frame geometry, joint alignment and support interfaces.
+- Review weld finishing on visible faces and edges before surface treatment.
+- Confirm access for wiring, components, installation and future service.
 
 #### 5. Surface treatment and colour management
 
@@ -4079,9 +4089,9 @@ Surface treatment may include spray coating, baking paint, fluorocarbon coating,
 
 Colour management is not only a final visual check. Samples, batch references, lighting conditions and viewing context should be considered together because a colour can read differently on a coated metal face, an acrylic component or an illuminated sign.
 
-- • Confirm the substrate preparation and surface-treatment route.
-- • Use an agreed colour reference and retain the approved sample or record.
-- • Review colour under suitable lighting and against the project background where practical.
+- Confirm the substrate preparation and surface-treatment route.
+- Use an agreed colour reference and retain the approved sample or record.
+- Review colour under suitable lighting and against the project background where practical.
 
 #### 6. Illumination layout, enclosure and pre-assembly
 
@@ -4093,9 +4103,9 @@ For illuminated signage, the light source layout is coordinated with the letter 
 
 The sign is then assembled and pre-built where the project allows. Pre-assembly helps the team review proportions, joins, face fit, component access, information placement and overall appearance before packing or site installation.
 
-- • Check the light-source layout against the sign face, depth and enclosure.
-- • Confirm wiring routes, power access, component space and service openings.
-- • Pre-assemble representative or complete units when the project scope allows.
+- Check the light-source layout against the sign face, depth and enclosure.
+- Confirm wiring routes, power access, component space and service openings.
+- Pre-assemble representative or complete units when the project scope allows.
 
 #### 7. Inspection, protective packing and delivery
 
@@ -4107,10 +4117,10 @@ The final stage combines inspection with a delivery plan. Checks may cover dimen
 
 Protective packing is then matched to the sign geometry, finish, components and transport route. Clear identification, packing records and installation information help the site team receive the right parts and reduce avoidable handling damage during delivery and installation.
 
-- • Check dimensions, finish, colour, assembly, information and illumination as applicable.
-- • Record any project-required ageing or burn-in checks without treating them as universal.
-- • Protect faces, edges, returns, electronics and finished surfaces for the planned delivery route.
-- • Include identification and installation information with the packed sign system.
+- Check dimensions, finish, colour, assembly, information and illumination as applicable.
+- Record any project-required ageing or burn-in checks without treating them as universal.
+- Protect faces, edges, returns, electronics and finished surfaces for the planned delivery route.
+- Include identification and installation information with the packed sign system.
 
 #### How to evaluate a sign manufacturing process
 
@@ -4120,13 +4130,13 @@ A capable supplier should be able to explain the handoffs between design, materi
 
 Use this checklist when comparing a sign manufacturer or preparing a custom signage manufacturing brief. Ask the supplier to mark unknowns and project-dependent checks rather than turning them into blanket promises.
 
-- • Approved artwork, drawings, dimensions and sign schedule
-- • Material, substrate, finish, colour reference and sample-approval route
-- • Cutting, bending, welding, joint-finishing and assembly assumptions
-- • Lighting layout, wiring, power access, enclosure and service openings
-- • Inspection points for dimensions, finish, colour, fit, information and illumination
-- • Project-specific ageing or burn-in checks, where specified or required
-- • Protective packing, part identification, installation information and delivery scope
+- Approved artwork, drawings, dimensions and sign schedule
+- Material, substrate, finish, colour reference and sample-approval route
+- Cutting, bending, welding, joint-finishing and assembly assumptions
+- Lighting layout, wiring, power access, enclosure and service openings
+- Inspection points for dimensions, finish, colour, fit, information and illumination
+- Project-specific ageing or burn-in checks, where specified or required
+- Protective packing, part identification, installation information and delivery scope
 
 #### Frequently asked questions
 
@@ -4240,12 +4250,12 @@ For either type, readability depends on letter height and stroke width, typeface
 
 Very thin strokes, tightly spaced letters and intricate details can be difficult to illuminate consistently. Review fabrication adjustments with the manufacturer while preserving the identity of the logo. Approve the sign at its intended scale rather than judging only a small rendering.
 
-- • Letter height and stroke width.
-- • Typeface and spacing.
-- • Distance and approach angle.
-- • Daytime contrast.
-- • Nearby lighting and competing signs.
-- • Light output and uniformity.
+- Letter height and stroke width.
+- Typeface and spacing.
+- Distance and approach angle.
+- Daytime contrast.
+- Nearby lighting and competing signs.
+- Light output and uniformity.
 
 #### 4. Why the Wall Matters More for Halo-Lit Letters
 
@@ -4285,14 +4295,14 @@ Neither type is always more expensive. The quotation depends on letter size, qua
 
 Complex metal fabrication or special finishes can increase the cost of halo-lit letters. Detailed face construction, large dimensions or additional color treatments can increase the cost of front-lit letters. A comparison based only on “price per letter” can overlook substantial differences.
 
-- • Overall sign size and individual letter dimensions.
-- • Face and return materials.
-- • Letter depth.
-- • Finish and color.
-- • LED and power supply specifications.
-- • Mounting arrangement.
-- • Included templates and hardware.
-- • Packaging and delivery scope.
+- Overall sign size and individual letter dimensions.
+- Face and return materials.
+- Letter depth.
+- Finish and color.
+- LED and power supply specifications.
+- Mounting arrangement.
+- Included templates and hardware.
+- Packaging and delivery scope.
 
 #### 8. What About Maintenance and Outdoor Use?
 
@@ -4312,13 +4322,13 @@ Confirm the internal arrangement, wiring, power requirements and maintenance acc
 
 Use this list to define the decision before asking for a final quotation. The supplier should flag unknowns instead of silently choosing for the project.
 
-- • Show the daytime and night-time visual intent.
-- • Identify the mounting background, wall colour and available clearance.
-- • Confirm face, return, trim, finish and letter depth.
-- • Mark power access, cable route and service access.
-- • State the stand-off distance for halo-lit letters on the drawing.
-- • Confirm artwork, quantity, site differences and delivery destination.
-- • Coordinate accessibility and local approval with the project team.
+- Show the daytime and night-time visual intent.
+- Identify the mounting background, wall colour and available clearance.
+- Confirm face, return, trim, finish and letter depth.
+- Mark power access, cable route and service access.
+- State the stand-off distance for halo-lit letters on the drawing.
+- Confirm artwork, quantity, site differences and delivery destination.
+- Coordinate accessibility and local approval with the project team.
 
 #### Frequently asked questions
 
@@ -4492,11 +4502,11 @@ For multi-floor projects, request packaging labeled by room number or installati
 
 These five checks frame every decision in the sections above.
 
-- • Location: indoor corridor, sheltered entrance or exposed outdoor area.
-- • Material: suitable for the environment, cleaning routine and design.
-- • Readability: clear numbers, appropriate contrast and controlled reflections.
-- • Accessibility: tactile characters, Braille and placement where required.
-- • Installation: a mounting method compatible with the wall, sign weight and site restrictions.
+- Location: indoor corridor, sheltered entrance or exposed outdoor area.
+- Material: suitable for the environment, cleaning routine and design.
+- Readability: clear numbers, appropriate contrast and controlled reflections.
+- Accessibility: tactile characters, Braille and placement where required.
+- Installation: a mounting method compatible with the wall, sign weight and site restrictions.
 
 #### Frequently asked questions
 
@@ -4549,11 +4559,11 @@ Discuss This Scenario on WhatsApp
 
 What to send for hotel signage system
 
-- • Site plan and guest journey
-- • Sign schedule and brand artwork
-- • Dimensions, quantities, and mounting surfaces
-- • Materials, finishes, and lighting direction
-- • Destination, access, and installation scope
+- Site plan and guest journey
+- Sign schedule and brand artwork
+- Dimensions, quantities, and mounting surfaces
+- Materials, finishes, and lighting direction
+- Destination, access, and installation scope
 
 Send what you have: artwork, approximate dimensions, quantity, finish or lighting direction, mounting/site photos, and ship-to country.
 
@@ -4683,14 +4693,14 @@ If you are searching for the average cost of channel letter signs, first decide 
 
 In this guide
 
-1. [Channel letter pricing: factory, delivered and installed cost](https://www.zydsign.com#guide-section-1)
-2. [What changes the cost of channel letter signs?](https://www.zydsign.com#guide-section-2)
-3. [Workshop examples: define the complete letter and logo set](https://www.zydsign.com#guide-section-3)
-4. [Front-lit vs. halo-lit: compare the same specification](https://www.zydsign.com#guide-section-4)
-5. [Why a price per letter can be misleading](https://www.zydsign.com#guide-section-5)
-6. [Compare two channel letter quotes line by line](https://www.zydsign.com#guide-section-6)
-7. [Reduce cost by reviewing the specification](https://www.zydsign.com#guide-section-7)
-8. [Request a project-specific channel letter quote](https://www.zydsign.com#guide-section-8)
+1. [Channel letter pricing: factory, delivered and installed cost](https://www.zydsign.com/guides/how-much-do-custom-channel-letters-cost#guide-section-1)
+2. [What changes the cost of channel letter signs?](https://www.zydsign.com/guides/how-much-do-custom-channel-letters-cost#guide-section-2)
+3. [Workshop examples: define the complete letter and logo set](https://www.zydsign.com/guides/how-much-do-custom-channel-letters-cost#guide-section-3)
+4. [Front-lit vs. halo-lit: compare the same specification](https://www.zydsign.com/guides/how-much-do-custom-channel-letters-cost#guide-section-4)
+5. [Why a price per letter can be misleading](https://www.zydsign.com/guides/how-much-do-custom-channel-letters-cost#guide-section-5)
+6. [Compare two channel letter quotes line by line](https://www.zydsign.com/guides/how-much-do-custom-channel-letters-cost#guide-section-6)
+7. [Reduce cost by reviewing the specification](https://www.zydsign.com/guides/how-much-do-custom-channel-letters-cost#guide-section-7)
+8. [Request a project-specific channel letter quote](https://www.zydsign.com/guides/how-much-do-custom-channel-letters-cost#guide-section-8)
 
 Tables can be scrolled horizontally on smaller screens.
 
@@ -4754,9 +4764,9 @@ Front-lit letters illuminate the face; halo-lit letters direct light onto the ba
 
 For halo-lit letters, include wall colour and texture, the intended spacing from the wall, and a site photo. For front-lit letters, confirm the face colour and intended illuminated appearance. If both options are acceptable, request two clearly labelled alternatives against the same brief.
 
-- • State whether power supplies and mounting hardware are included.
-- • Confirm the wiring route and which connections remain for the installer.
-- • Ask how the components can be accessed for maintenance.
+- State whether power supplies and mounting hardware are included.
+- Confirm the wiring route and which connections remain for the installer.
+- Ask how the components can be accessed for maintenance.
 
 #### Why a price per letter can be misleading
 
@@ -4795,13 +4805,13 @@ Copy this brief into your inquiry: Sign location: __. Artwork attached or availa
 
 Use the same brief for every quotation. Unknown items can be marked for technical review.
 
-- • Logo or vector artwork and brand colour references.
-- • Overall dimensions, letter height, number of letters and number of sets.
-- • Lighting effect, preferred material and finish.
-- • Wall photo, substrate, installation height and power location.
-- • Ship-to city, postcode and country, with target arrival date.
-- • Required drawings, mounting accessories, packing and transport scope.
-- • Who handles installation, electrical work and any required approvals.
+- Logo or vector artwork and brand colour references.
+- Overall dimensions, letter height, number of letters and number of sets.
+- Lighting effect, preferred material and finish.
+- Wall photo, substrate, installation height and power location.
+- Ship-to city, postcode and country, with target arrival date.
+- Required drawings, mounting accessories, packing and transport scope.
+- Who handles installation, electrical work and any required approvals.
 
 #### Frequently asked questions
 
@@ -4886,19 +4896,19 @@ Begin with the job the sign must perform. A roadside or campus entrance may need
 
 The first measurement is not only a dimension. Record the approach direction, viewing distance, speed of movement, surrounding visual noise, lighting conditions, available mounting surface, power access, pedestrian route, and maintenance access. A supplier can then discuss scale and construction without pretending an unverified dimension will suit every location.
 
-- • Primary viewer: driver, pedestrian, visitor, tenant, or service team
-- • Approach direction, viewing distance, and whether the message is fixed or changeable
-- • Site photos, elevation, mounting surface, obstructions, and access constraints
-- • Local sign permit, accessibility review, landlord, campus, or authority requirements
+- Primary viewer: driver, pedestrian, visitor, tenant, or service team
+- Approach direction, viewing distance, and whether the message is fixed or changeable
+- Site photos, elevation, mounting surface, obstructions, and access constraints
+- Local sign permit, accessibility review, landlord, campus, or authority requirements
 
 #### How do illumination and materials affect the decision?
 
 Illumination should support the message and the surroundings, not be added after the sign type is chosen. Discuss daytime finish, night-time effect, glare control, power location, service access, and neighbouring properties together. Material selection should likewise follow exposure, finish, fabrication, drainage, cleaning, and maintenance questions. Public material references can inform the conversation, but they do not replace a project-specific review.
 
-- • Choose the desired day/night visual effect before selecting components.
-- • Review coastal, industrial, roadside, sheltered, and high-contact exposure separately.
-- • Ask for finish samples, mounting details, and a clear maintenance assumption.
-- • Do not turn an unverified grade, lifetime, certification, or weather claim into a specification.
+- Choose the desired day/night visual effect before selecting components.
+- Review coastal, industrial, roadside, sheltered, and high-contact exposure separately.
+- Ask for finish samples, mounting details, and a clear maintenance assumption.
+- Do not turn an unverified grade, lifetime, certification, or weather claim into a specification.
 
 #### How should accessibility and approvals be handled?
 
@@ -4908,12 +4918,12 @@ Accessibility is a project coordination requirement, not a material marketing cl
 
 Use this brief before asking a sign manufacturer for a recommendation. It keeps the communication goal visible and identifies the decisions still open.
 
-- • Business name, logo artwork, message hierarchy, and language requirements
-- • Site photos, plan/elevation, approach direction, and viewing distance
-- • Sign type under consideration and the reason it may fit
-- • Day/night appearance, finish, illumination, and power access
-- • Mounting surface, foundation/interface, installation access, and maintenance access
-- • Quantity, destination, local approval path, and target delivery window
+- Business name, logo artwork, message hierarchy, and language requirements
+- Site photos, plan/elevation, approach direction, and viewing distance
+- Sign type under consideration and the reason it may fit
+- Day/night appearance, finish, illumination, and power access
+- Mounting surface, foundation/interface, installation access, and maintenance access
+- Quantity, destination, local approval path, and target delivery window
 
 #### Frequently asked questions
 
@@ -4963,10 +4973,10 @@ Choose the illumination route from the viewer, the mounting surface and the main
 
 The four routes below cover most illuminated signage briefs. They can be combined on one site, but each one is specified from its own inputs, so the comparison should be made against the same brief rather than route by route.
 
-- • Front-lit channel letters: the face of the letter is the illuminated surface. The reading effect comes from the letter itself, and the daytime look is carried by the letter form, the face material and the trim.
-- • Halo-lit (rear-glow) letters: the letter face stays dark and the light is thrown onto the wall behind the body. The wall colour and texture become part of the design, and the standoff distance matters.
-- • LED light box: one framed panel with an even illuminated face. It suits a single message or a brand panel across a shopfront or an interior wall, and the framing depth is what keeps the face even.
-- • LED neon: a bright line used as lettering, a symbol or an outline. It is usually chosen for an interior feature or a decorative facade element, and the fixings are planned along the run of the line.
+- Front-lit channel letters: the face of the letter is the illuminated surface. The reading effect comes from the letter itself, and the daytime look is carried by the letter form, the face material and the trim.
+- Halo-lit (rear-glow) letters: the letter face stays dark and the light is thrown onto the wall behind the body. The wall colour and texture become part of the design, and the standoff distance matters.
+- LED light box: one framed panel with an even illuminated face. It suits a single message or a brand panel across a shopfront or an interior wall, and the framing depth is what keeps the face even.
+- LED neon: a bright line used as lettering, a symbol or an outline. It is usually chosen for an interior feature or a decorative facade element, and the fixings are planned along the run of the line.
 
 #### What does each route need from the project?
 
@@ -4987,12 +4997,12 @@ Material and finish routes such as 304 stainless steel, galvanized steel, alumin
 
 Illumination is specified as an effect and a construction detail: where the light comes from, how the letter or panel is built, where the power supply sits, and how each module is reached for service. A visual check is agreed before production where the project calls for one.
 
-- • The effect that is wanted, day and night, stated in plain language.
-- • The construction description for the chosen route, with face, return, trim and depth direction.
-- • The power location and the cable route, agreed with the site electrician or the main contractor.
-- • The service access route for modules, drivers and the power supply.
-- • The finish or material sample that the approved look is measured against.
-- • The installation responsibility: who lifts, who fixes, who connects, and who commissions.
+- The effect that is wanted, day and night, stated in plain language.
+- The construction description for the chosen route, with face, return, trim and depth direction.
+- The power location and the cable route, agreed with the site electrician or the main contractor.
+- The service access route for modules, drivers and the power supply.
+- The finish or material sample that the approved look is measured against.
+- The installation responsibility: who lifts, who fixes, who connects, and who commissions.
 
 #### What should be answered before installation is planned?
 
@@ -5000,12 +5010,12 @@ Installation questions arrive early enough to change the sign, so they are worth
 
 On a multi-location project, keep the master artwork and the site-specific mounting differences in separate records. That keeps every quotation auditable and stops one site elevation being quietly reused for another.
 
-- • What the sign fixes into, and whether the substrate has been verified on site.
-- • The mounting height and the viewing distance from the main approach.
-- • Whether the wall is flat enough for the chosen standoff, or whether a raceway or a bracket detail is needed.
-- • Where the power supply can be reached without removing the sign.
-- • What the site needs for lifting, access equipment or out-of-hours working.
-- • Any local approval or accessibility review that applies to the location.
+- What the sign fixes into, and whether the substrate has been verified on site.
+- The mounting height and the viewing distance from the main approach.
+- Whether the wall is flat enough for the chosen standoff, or whether a raceway or a bracket detail is needed.
+- Where the power supply can be reached without removing the sign.
+- What the site needs for lifting, access equipment or out-of-hours working.
+- Any local approval or accessibility review that applies to the location.
 
 #### What files should a buyer send for a quotation?
 
@@ -5013,26 +5023,26 @@ A quotation is only as good as the brief behind it. Sending the items below with
 
 Delivery scope belongs in the same conversation: minimum order is 1 set, typical production lead time is 7–15 days depending on scope and quantity, and DDP can be quoted as a door-to-door scope once the destination and the cargo details are confirmed. These are project confirmations, not standing terms, so they should be restated in the quotation.
 
-- • Vector artwork of the logo or lettering, with any brand colour references.
-- • Letter heights, overall run length and the quantity required.
-- • A photograph or elevation of the mounting surface, with dimensions where available.
-- • The illumination route that is being considered, and the effect wanted for it.
-- • Material and finish direction, including any sample already approved.
-- • The site city and country, so the delivery scope can be quoted correctly.
+- Vector artwork of the logo or lettering, with any brand colour references.
+- Letter heights, overall run length and the quantity required.
+- A photograph or elevation of the mounting surface, with dimensions where available.
+- The illumination route that is being considered, and the effect wanted for it.
+- Material and finish direction, including any sample already approved.
+- The site city and country, so the delivery scope can be quoted correctly.
 
 #### Illuminated signage: buyer checklist
 
 Copy this list into the project brief. Each line is a decision to confirm rather than an assumption to carry forward, and the supplier should mark anything that cannot be confirmed yet.
 
-- • State the viewing direction, the viewing distance and the approach.
-- • Pick the illumination route against the wall, not against a product name.
-- • Confirm the construction description: face, return, trim, depth.
-- • Agree the power location, the cable route and the service access.
-- • Confirm the finish or material sample and the approved visual.
-- • Record the mounting substrate, height and fixing method after the site survey.
-- • Send artwork, dimensions, quantity, destination and delivery scope.
-- • Agree who installs, who connects and who commissions the sign.
-- • Write the project-specific lead time and delivery scope into the quotation.
+- State the viewing direction, the viewing distance and the approach.
+- Pick the illumination route against the wall, not against a product name.
+- Confirm the construction description: face, return, trim, depth.
+- Agree the power location, the cable route and the service access.
+- Confirm the finish or material sample and the approved visual.
+- Record the mounting substrate, height and fixing method after the site survey.
+- Send artwork, dimensions, quantity, destination and delivery scope.
+- Agree who installs, who connects and who commissions the sign.
+- Write the project-specific lead time and delivery scope into the quotation.
 
 #### Frequently asked questions
 
@@ -5188,8 +5198,8 @@ Request an agreed delivery term, named place and version—for example, an appro
 
 Two terms buyers may encounter are:
 
-- • DAP — Delivered at Place: the seller arranges delivery to the named place, ready for unloading; the buyer generally handles import clearance and applicable import charges.
-- • DDP — Delivered Duty Paid: the seller generally handles import clearance and applicable duties and taxes, delivering to the named place ready for unloading.
+- DAP — Delivered at Place: the seller arranges delivery to the named place, ready for unloading; the buyer generally handles import clearance and applicable import charges.
+- DDP — Delivered Duty Paid: the seller generally handles import clearance and applicable duties and taxes, delivering to the named place ready for unloading.
 
 Before accepting a DDP quotation, confirm that the proposed arrangement can lawfully operate in the destination country. Identify the importer of record and the documents the buyer will receive.
 
@@ -5207,12 +5217,12 @@ An illuminated sign and a non-electrical metal plaque may require different clas
 
 Before confirming the budget, send a customs broker:
 
-- • Product photographs and drawings.
-- • Material descriptions.
-- • Whether the product is illuminated.
-- • Details of electrical components.
-- • Commercial value and country of origin.
-- • Proposed shipping and delivery arrangements.
+- Product photographs and drawings.
+- Material descriptions.
+- Whether the product is illuminated.
+- Details of electrical components.
+- Commercial value and country of origin.
+- Proposed shipping and delivery arrangements.
 
 Ask the broker to confirm classification and applicable charges. A supplier’s suggested HS code is useful information, but it should not be treated as a guaranteed duty assessment.
 
@@ -5228,14 +5238,14 @@ The installer needs enough information to assess the work.
 
 Include:
 
-- • Approved artwork and overall dimensions.
-- • Letter depth, materials and estimated weights.
-- • Mounting arrangement and fixing locations.
-- • Wall photographs and substrate information.
-- • Wiring layout, supply requirements and power supply locations.
-- • Proposed service access.
-- • Relevant certification or evaluation documents.
-- • Delivery and installation schedule.
+- Approved artwork and overall dimensions.
+- Letter depth, materials and estimated weights.
+- Mounting arrangement and fixing locations.
+- Wall photographs and substrate information.
+- Wiring layout, supply requirements and power supply locations.
+- Proposed service access.
+- Relevant certification or evaluation documents.
+- Delivery and installation schedule.
 
 Ask for a written quotation stating whether it includes permits, electrical work, lifting equipment, unloading and removal of existing signage.
 
@@ -5295,11 +5305,11 @@ Agree on how the manufacturer and installer will exchange photographs, measureme
 
 A parts warranty does not necessarily include:
 
-- • Local technician charges.
-- • Lift rental.
-- • Removal and reinstallation.
-- • Replacement freight.
-- • Duties or taxes on replacement shipments.
+- Local technician charges.
+- Lift rental.
+- Removal and reinstallation.
+- Replacement freight.
+- Duties or taxes on replacement shipments.
 
 These items should be addressed expressly. For a larger project, discuss spare components and retain the final wiring and component records.
 
@@ -5336,13 +5346,13 @@ Contact ZYD SIGN to discuss manufacturing specifications and the supply scope fo
 
 Importing works when the commercial terms, the installation review and the responsibility split are settled before production starts. Each item below should exist in writing, not in conversation.
 
-- • Installer review obtained before factory drawings are approved.
-- • Delivery term, named place and written list of inclusions agreed.
-- • Importer of record identified, and the documents the buyer receives confirmed.
-- • Customs broker asked to review the actual product before the budget is fixed.
-- • Warranty scope written to state parts, labor, freight and access separately.
-- • Reporting procedure and claim evidence agreed before the deposit is paid.
-- • Every row of the responsibility table assigned to a named party.
+- Installer review obtained before factory drawings are approved.
+- Delivery term, named place and written list of inclusions agreed.
+- Importer of record identified, and the documents the buyer receives confirmed.
+- Customs broker asked to review the actual product before the budget is fixed.
+- Warranty scope written to state parts, labor, freight and access separately.
+- Reporting procedure and claim evidence agreed before the deposit is paid.
+- Every row of the responsibility table assigned to a named party.
 
 #### Frequently asked questions
 
@@ -5411,11 +5421,11 @@ Discuss This Scenario on WhatsApp
 
 What to send for industrial park signage
 
-- • Master plan and vehicle routes
-- • Building, zone, and parking sign schedule
-- • Artwork, languages, dimensions, and quantities
-- • Exposure, materials, finishes, and mounting
-- • Phasing, destination, and installation scope
+- Master plan and vehicle routes
+- Building, zone, and parking sign schedule
+- Artwork, languages, dimensions, and quantities
+- Exposure, materials, finishes, and mounting
+- Phasing, destination, and installation scope
 
 Send what you have: artwork, approximate dimensions, quantity, finish or lighting direction, mounting/site photos, and ship-to country.
 
@@ -5536,11 +5546,11 @@ Discuss This Scenario on WhatsApp
 
 What to send for mall wayfinding signage
 
-- • Site plan and visitor routes
-- • Sign schedule and tenant directory
-- • Artwork, dimensions, and quantities
-- • Materials, finishes, and lighting direction
-- • Mounting, destination, and installation scope
+- Site plan and visitor routes
+- Sign schedule and tenant directory
+- Artwork, dimensions, and quantities
+- Materials, finishes, and lighting direction
+- Mounting, destination, and installation scope
 
 Send what you have: artwork, approximate dimensions, quantity, finish or lighting direction, mounting/site photos, and ship-to country.
 
@@ -5747,11 +5757,11 @@ Material selection should support clear room identification. Use a typeface that
 
 Evaluate a full-size sample on the intended surface. A screen preview cannot reliably show material texture, reflections or the effect of a transparent background. If tactile characters or Braille are part of the project, include those requirements at the beginning. Material choice alone does not establish accessibility compliance.
 
-- • Contrast between lettering and background.
-- • Reflections under actual office lighting.
-- • Interference from wood grain or decorative patterns.
-- • Spacing around room names and numbers.
-- • Visibility from the normal approach direction.
+- Contrast between lettering and background.
+- Reflections under actual office lighting.
+- Interference from wood grain or decorative patterns.
+- Spacing around room names and numbers.
+- Visibility from the normal approach direction.
 
 #### 5. Match the Mounting Method to the Surface
 
@@ -5769,13 +5779,13 @@ Where staff names or department information change frequently, consider an inter
 
 The lowest raw-material cost does not always produce the lowest finished-sign cost. Compare quotations using the same specification. A flat printed acrylic panel and a layered plaque with individual metal letters are different products, even if they share the same dimensions.
 
-- • Plaque dimensions and thickness.
-- • Number of layers and components.
-- • Lettering method and detail.
-- • Surface preparation and finishing.
-- • Mounting hardware.
-- • Quantity and variation between signs.
-- • Packaging and replacement requirements.
+- Plaque dimensions and thickness.
+- Number of layers and components.
+- Lettering method and detail.
+- Surface preparation and finishing.
+- Mounting hardware.
+- Quantity and variation between signs.
+- Packaging and replacement requirements.
 
 #### 7. What to Send Your Office Sign Manufacturer
 
@@ -5844,13 +5854,13 @@ To order channel letters from ZYD, contact Aaron with your logo or reference, ap
 
 In this guide
 
-1. [1. Start with Aaron, even if your drawing is incomplete](https://www.zydsign.com#guide-section-1)
-2. [2. Send the artwork and the intended wording](https://www.zydsign.com#guide-section-2)
-3. [3. Give approximate dimensions or ask for a recommendation](https://www.zydsign.com#guide-section-3)
-4. [4. Explain the lighting effect you want](https://www.zydsign.com#guide-section-4)
-5. [5. Coordinate the mounting interface before production](https://www.zydsign.com#guide-section-5)
-6. [6. Include the destination and target date](https://www.zydsign.com#guide-section-6)
-7. [7. Review, quote and approve the same specification](https://www.zydsign.com#guide-section-7)
+1. [1. Start with Aaron, even if your drawing is incomplete](https://www.zydsign.com/guides/ordering-channel-letters-from-manufacturer#guide-section-1)
+2. [2. Send the artwork and the intended wording](https://www.zydsign.com/guides/ordering-channel-letters-from-manufacturer#guide-section-2)
+3. [3. Give approximate dimensions or ask for a recommendation](https://www.zydsign.com/guides/ordering-channel-letters-from-manufacturer#guide-section-3)
+4. [4. Explain the lighting effect you want](https://www.zydsign.com/guides/ordering-channel-letters-from-manufacturer#guide-section-4)
+5. [5. Coordinate the mounting interface before production](https://www.zydsign.com/guides/ordering-channel-letters-from-manufacturer#guide-section-5)
+6. [6. Include the destination and target date](https://www.zydsign.com/guides/ordering-channel-letters-from-manufacturer#guide-section-6)
+7. [7. Review, quote and approve the same specification](https://www.zydsign.com/guides/ordering-channel-letters-from-manufacturer#guide-section-7)
 
 Tables can be scrolled horizontally on smaller screens.
 
@@ -5866,9 +5876,9 @@ A vector logo file is useful when available, but send what you currently have an
 
 A screenshot helps explain the idea, but the final production artwork must be reviewed and approved. Tell us if the same design is required at several locations or if each set has different wording.
 
-- • Logo or reference file and final wording
-- • Brand colour and finish references, if available
-- • Number of complete sets and any site-specific variations
+- Logo or reference file and final wording
+- Brand colour and finish references, if available
+- Number of complete sets and any site-specific variations
 
 #### 3. Give approximate dimensions or ask for a recommendation
 
@@ -5921,13 +5931,13 @@ Minimum order is 1 set and the warranty is 1 year. If an issue arises, send the 
 
 Send what you have now; mark unknown items for design review.
 
-- • Logo, final wording or a reference image
-- • Approximate overall dimensions and quantity
-- • Facade or wall photographs with the intended sign area marked
-- • Front-lit, halo-lit or a request for lighting advice
-- • Material, colour and finish preferences
-- • Mounting surface, cable access and installer requirements
-- • Delivery destination and target arrival date
+- Logo, final wording or a reference image
+- Approximate overall dimensions and quantity
+- Facade or wall photographs with the intended sign area marked
+- Front-lit, halo-lit or a request for lighting advice
+- Material, colour and finish preferences
+- Mounting surface, cable access and installer requirements
+- Delivery destination and target arrival date
 
 #### Frequently asked questions
 
@@ -6190,13 +6200,13 @@ Request information relevant to the proposed substrate and finish combination.
 
 Useful records may include:
 
-- • Coating or plating product information.
-- • Surface-preparation requirements.
-- • Application and curing specifications.
-- • Inspection criteria.
-- • Relevant test reports.
-- • Cleaning and repair instructions.
-- • Written warranty conditions.
+- Coating or plating product information.
+- Surface-preparation requirements.
+- Application and curing specifications.
+- Inspection criteria.
+- Relevant test reports.
+- Cleaning and repair instructions.
+- Written warranty conditions.
 
 Check what a test actually evaluated. A result for a flat laboratory panel may not represent the complete fabricated sign.
 
@@ -6212,12 +6222,12 @@ Review it under daylight and, for illuminated signage, under the intended nightt
 
 Check:
 
-- • Color and sheen.
-- • Texture and visible grain.
-- • Reflections and glare.
-- • Edge coverage.
-- • Weld finishing.
-- • Consistency between adjacent components.
+- Color and sheen.
+- Texture and visible grain.
+- Reflections and glare.
+- Edge coverage.
+- Weld finishing.
+- Consistency between adjacent components.
 
 Where possible, include a corner, weld or shaped section in the sample. These details reveal more than a small flat color swatch.
 
@@ -6227,16 +6237,16 @@ Keep an approved reference sample for production inspection and future replaceme
 
 A useful finish specification should identify:
 
-- • 1. Base material and relevant grade.
-- • 2. Surface-preparation process.
-- • 3. Paint, powder or plating system.
-- • 4. Color reference and approved sample.
-- • 5. Gloss or sheen requirement.
-- • 6. Layer or film-thickness requirements, where applicable.
-- • 7. Intended installation environment.
-- • 8. Inspection and acceptance criteria.
-- • 9. Cleaning and repair instructions.
-- • 10. Warranty scope and exclusions.
+- 1. Base material and relevant grade.
+- 2. Surface-preparation process.
+- 3. Paint, powder or plating system.
+- 4. Color reference and approved sample.
+- 5. Gloss or sheen requirement.
+- 6. Layer or film-thickness requirements, where applicable.
+- 7. Intended installation environment.
+- 8. Inspection and acceptance criteria.
+- 9. Cleaning and repair instructions.
+- 10. Warranty scope and exclusions.
 
 Compare quotations using the same finish specification. “Black powder coating” and “exterior-grade black powder coating over specified pretreatment” do not communicate the same scope.
 
@@ -6248,11 +6258,11 @@ Compare quotations using the same finish specification. “Black powder coating�
 
 Most finish failures trace back to a specification that named a process without defining the system. These are the errors worth catching before the order is placed.
 
-- • Standard polyester powder quoted as fluorocarbon. Ask for the product designation and the resin system, not the colour name alone.
-- • Anodizing proposed for a steel letter. Anodizing is an aluminium process, so the offer does not describe a buildable finish.
-- • Anodized aluminium expected to hold its exact appearance indefinitely outdoors. The surface can chalk or lighten under prolonged UV exposure.
-- • A plated mirror finish specified for an exposed exterior sign. Plating is most defensible indoors; outdoors it can lose gloss and is difficult to repair locally.
-- • Finishes compared by colour only. Adhesion, film build, pretreatment and curing decide how long the appearance actually lasts.
+- Standard polyester powder quoted as fluorocarbon. Ask for the product designation and the resin system, not the colour name alone.
+- Anodizing proposed for a steel letter. Anodizing is an aluminium process, so the offer does not describe a buildable finish.
+- Anodized aluminium expected to hold its exact appearance indefinitely outdoors. The surface can chalk or lighten under prolonged UV exposure.
+- A plated mirror finish specified for an exposed exterior sign. Plating is most defensible indoors; outdoors it can lose gloss and is difficult to repair locally.
+- Finishes compared by colour only. Adhesion, film build, pretreatment and curing decide how long the appearance actually lasts.
 
 A finish comparison is only meaningful when each quotation describes the same substrate, the same preparation and the same system.
 
@@ -6268,18 +6278,18 @@ Contact ZYD SIGN to discuss surface-treatment options and define a clear finish 
 
 Use this list to confirm that the quotation describes a complete system rather than a process name.
 
-- • Process identified: liquid paint, powder coating, electroplating, PVD or another treatment.
-- • Base material and grade stated with the proposed preparation.
-- • Coating or plating system named, including primer and topcoat where applicable.
-- • Color reference and sheen agreed on a physical sample.
-- • Layer or film-thickness requirements stated where applicable.
-- • Intended exposure described, including coastal or industrial conditions.
-- • Welds, cut edges, recesses and dissimilar-metal interfaces addressed in the process.
-- • Assembly sequence confirmed for heat-sensitive components.
-- • Inspection criteria, cleaning instructions and repair method supplied.
-- • Warranty scope and exclusions written into the order documents.
-- • Coating resin system identified (for example PVDF fluorocarbon or polyester powder), not only the colour.
-- • Anodizing confirmed as an aluminium-only process and matched to the actual component.
+- Process identified: liquid paint, powder coating, electroplating, PVD or another treatment.
+- Base material and grade stated with the proposed preparation.
+- Coating or plating system named, including primer and topcoat where applicable.
+- Color reference and sheen agreed on a physical sample.
+- Layer or film-thickness requirements stated where applicable.
+- Intended exposure described, including coastal or industrial conditions.
+- Welds, cut edges, recesses and dissimilar-metal interfaces addressed in the process.
+- Assembly sequence confirmed for heat-sensitive components.
+- Inspection criteria, cleaning instructions and repair method supplied.
+- Warranty scope and exclusions written into the order documents.
+- Coating resin system identified (for example PVDF fluorocarbon or polyester powder), not only the colour.
+- Anodizing confirmed as an aluminium-only process and matched to the actual component.
 
 #### Frequently asked questions
 
@@ -6407,11 +6417,11 @@ Acrylic and metal expand and contract at different rates. A large face held too 
 
 Ask the manufacturer to confirm:
 
-- • The specific sheet grade and its intended application.
-- • Retention details and movement allowances.
-- • Panel dimensions and support.
-- • Compatibility with adhesives and sealants.
-- • Handling and installation requirements.
+- The specific sheet grade and its intended application.
+- Retention details and movement allowances.
+- Panel dimensions and support.
+- Compatibility with adhesives and sealants.
+- Handling and installation requirements.
 
 Do not apply one universal expansion gap to every face. The allowance depends on the material, panel length and temperature range.
 
@@ -6445,11 +6455,11 @@ Also read terminology carefully: a datasheet's "cold-start inrush current" figur
 
 Confirm compatibility between:
 
-- • Power supply output and LED modules.
-- • Connected load and documented output capacity.
-- • Cable lengths and voltage drop.
-- • Controls, dimmers and switching equipment.
-- • Input supply and protective devices.
+- Power supply output and LED modules.
+- Connected load and documented output capacity.
+- Cable lengths and voltage drop.
+- Controls, dimmers and switching equipment.
+- Input supply and protective devices.
 
 ##### Review Summer Conditions Too
 
@@ -6467,12 +6477,12 @@ An accessible indoor location may be worth considering where permitted and compa
 
 For outdoor equipment, confirm:
 
-- • Permitted orientation.
-- • Exposure and enclosure requirements.
-- • Cable-entry and connection protection.
-- • Separation from accumulating water.
-- • Heat dissipation.
-- • Access for inspection and replacement.
+- Permitted orientation.
+- Exposure and enclosure requirements.
+- Cable-entry and connection protection.
+- Separation from accumulating water.
+- Heat dissipation.
+- Access for inspection and replacement.
 
 Do not add insulation or a heater without reviewing the complete design. Additional equipment changes power consumption, thermal behavior and maintenance requirements.
 
@@ -6522,13 +6532,13 @@ Ask the local engineer or responsible project professional to establish the appl
 
 ##### What Should Drawings Identify?
 
-- • Overall dimensions and projection.
-- • Materials and structural members.
-- • Connections and fixing locations.
-- • Estimated assembly weights.
-- • Supporting substrate assumptions.
-- • Foundation requirements where applicable.
-- • Information requiring site verification.
+- Overall dimensions and projection.
+- Materials and structural members.
+- Connections and fixing locations.
+- Estimated assembly weights.
+- Supporting substrate assumptions.
+- Foundation requirements where applicable.
+- Information requiring site verification.
 
 Do not use a generic bolt count or foundation detail for every location.
 
@@ -6591,16 +6601,16 @@ Contact ZYD SIGN to discuss specifications for your outdoor signage project in a
 
 Use this list to confirm that the approval package covers the conditions the sign will actually face.
 
-- • Environmental brief states the design temperature range and exposure assumptions.
-- • Material schedule names metal grades, sheet materials and non-metal components.
-- • Electrical schedule names the exact LED, power supply and control models.
-- • Operating, storage and relevant startup conditions are documented separately.
-- • Construction drawings show movement allowances, joints and face retention.
-- • Moisture-management details cover sealing, drainage and cable entries.
-- • Mounting information records fixings, substrate assumptions and local review.
-- • A verification plan defines the configuration, conditions and acceptance criteria.
-- • Maintenance instructions cover access, cleaning and replacement procedures.
-- • Warranty terms state covered conditions, remedies and excluded costs.
+- Environmental brief states the design temperature range and exposure assumptions.
+- Material schedule names metal grades, sheet materials and non-metal components.
+- Electrical schedule names the exact LED, power supply and control models.
+- Operating, storage and relevant startup conditions are documented separately.
+- Construction drawings show movement allowances, joints and face retention.
+- Moisture-management details cover sealing, drainage and cable entries.
+- Mounting information records fixings, substrate assumptions and local review.
+- A verification plan defines the configuration, conditions and acceptance criteria.
+- Maintenance instructions cover access, cleaning and replacement procedures.
+- Warranty terms state covered conditions, remedies and excluded costs.
 
 #### Frequently asked questions
 
@@ -6659,13 +6669,13 @@ Pylon sign cost depends on the approved dimensions, number of display faces, ten
 
 In this guide
 
-1. [1. Start with the dimensions and the purpose](https://www.zydsign.com#guide-section-1)
-2. [2. Single-sided or double-sided display](https://www.zydsign.com#guide-section-2)
-3. [3. Tenant quantity and panel layout](https://www.zydsign.com#guide-section-3)
-4. [4. Illuminated or non-illuminated construction](https://www.zydsign.com#guide-section-4)
-5. [5. Internal steel structure and the site interface](https://www.zydsign.com#guide-section-5)
-6. [6. Wooden crate and freight](https://www.zydsign.com#guide-section-6)
-7. [7. Compare the same scope, not just the total](https://www.zydsign.com#guide-section-7)
+1. [1. Start with the dimensions and the purpose](https://www.zydsign.com/guides/pylon-sign-cost#guide-section-1)
+2. [2. Single-sided or double-sided display](https://www.zydsign.com/guides/pylon-sign-cost#guide-section-2)
+3. [3. Tenant quantity and panel layout](https://www.zydsign.com/guides/pylon-sign-cost#guide-section-3)
+4. [4. Illuminated or non-illuminated construction](https://www.zydsign.com/guides/pylon-sign-cost#guide-section-4)
+5. [5. Internal steel structure and the site interface](https://www.zydsign.com/guides/pylon-sign-cost#guide-section-5)
+6. [6. Wooden crate and freight](https://www.zydsign.com/guides/pylon-sign-cost#guide-section-6)
+7. [7. Compare the same scope, not just the total](https://www.zydsign.com/guides/pylon-sign-cost#guide-section-7)
 
 Tables can be scrolled horizontally on smaller screens.
 
@@ -6732,13 +6742,13 @@ MOQ is 1 set. Free design support is available, typical production is 7–15 day
 
 Send what you have now; mark unknown items for design review.
 
-- • Site photos and marked sign position
-- • Approximate height, width and depth, or a request for size advice
-- • Single or double face and number of sets
-- • Tenant count, logo artwork and preferred panel layout
-- • Lighting preference and finish direction
-- • Site requirements and available power information
-- • Delivery city, country and postcode or destination port
+- Site photos and marked sign position
+- Approximate height, width and depth, or a request for size advice
+- Single or double face and number of sets
+- Tenant count, logo artwork and preferred panel layout
+- Lighting preference and finish direction
+- Site requirements and available power information
+- Delivery city, country and postcode or destination port
 
 #### Frequently asked questions
 
@@ -6803,19 +6813,19 @@ Dalian Zhiyudao Signage & Tech. Co., Ltd., also known as ZYD SIGN, manufactures 
 
 In this guide
 
-1. [1. Start with a Basic Site Information Package](https://www.zydsign.com#guide-section-1)
-2. [2. Mark the Installation Position Clearly](https://www.zydsign.com#guide-section-2)
-3. [3. Take Photographs That Explain the Whole Site](https://www.zydsign.com#guide-section-3)
-4. [4. Confirm Dimensions and Ground Levels](https://www.zydsign.com#guide-section-4)
-5. [5. Explain the Viewing Conditions](https://www.zydsign.com#guide-section-5)
-6. [6. Locate Underground Utilities Before Foundation Work](https://www.zydsign.com#guide-section-6)
-7. [7. Prepare Ground and Foundation Information](https://www.zydsign.com#guide-section-7)
-8. [8. Confirm Electrical Supply and Cable Routing](https://www.zydsign.com#guide-section-8)
-9. [9. Describe Environmental Exposure](https://www.zydsign.com#guide-section-9)
-10. [10. Check Local Approval and Property Requirements](https://www.zydsign.com#guide-section-10)
-11. [11. Plan Delivery, Lifting and Maintenance Access](https://www.zydsign.com#guide-section-11)
-12. [12. Separate Quotation Information from Production Approval](https://www.zydsign.com#guide-section-12)
-13. [Prepare Your Pylon Sign Inquiry with ZYD SIGN](https://www.zydsign.com#guide-section-13)
+1. [1. Start with a Basic Site Information Package](https://www.zydsign.com/guides/pylon-sign-site-information-checklist#guide-section-1)
+2. [2. Mark the Installation Position Clearly](https://www.zydsign.com/guides/pylon-sign-site-information-checklist#guide-section-2)
+3. [3. Take Photographs That Explain the Whole Site](https://www.zydsign.com/guides/pylon-sign-site-information-checklist#guide-section-3)
+4. [4. Confirm Dimensions and Ground Levels](https://www.zydsign.com/guides/pylon-sign-site-information-checklist#guide-section-4)
+5. [5. Explain the Viewing Conditions](https://www.zydsign.com/guides/pylon-sign-site-information-checklist#guide-section-5)
+6. [6. Locate Underground Utilities Before Foundation Work](https://www.zydsign.com/guides/pylon-sign-site-information-checklist#guide-section-6)
+7. [7. Prepare Ground and Foundation Information](https://www.zydsign.com/guides/pylon-sign-site-information-checklist#guide-section-7)
+8. [8. Confirm Electrical Supply and Cable Routing](https://www.zydsign.com/guides/pylon-sign-site-information-checklist#guide-section-8)
+9. [9. Describe Environmental Exposure](https://www.zydsign.com/guides/pylon-sign-site-information-checklist#guide-section-9)
+10. [10. Check Local Approval and Property Requirements](https://www.zydsign.com/guides/pylon-sign-site-information-checklist#guide-section-10)
+11. [11. Plan Delivery, Lifting and Maintenance Access](https://www.zydsign.com/guides/pylon-sign-site-information-checklist#guide-section-11)
+12. [12. Separate Quotation Information from Production Approval](https://www.zydsign.com/guides/pylon-sign-site-information-checklist#guide-section-12)
+13. [Prepare Your Pylon Sign Inquiry with ZYD SIGN](https://www.zydsign.com/guides/pylon-sign-site-information-checklist#guide-section-13)
 
 Tables can be scrolled horizontally on smaller screens.
 
@@ -6847,13 +6857,13 @@ A pylon sign is a freestanding structure. Its location affects visibility, acces
 
 Provide a plan showing the proposed position relative to:
 
-- • Property boundaries.
-- • Roads and sidewalks.
-- • Driveways and entrances.
-- • Buildings and parking areas.
-- • Landscaping and retaining walls.
-- • Existing signs.
-- • Known easements or utility routes.
+- Property boundaries.
+- Roads and sidewalks.
+- Driveways and entrances.
+- Buildings and parking areas.
+- Landscaping and retaining walls.
+- Existing signs.
+- Known easements or utility routes.
 
 A marked aerial image can help start the discussion. For detailed design or permit submission, a scaled plan or survey may be required.
 
@@ -6887,13 +6897,13 @@ For example, “six meters high” could mean the cabinet height or the total he
 
 Confirm:
 
-- • Overall installed height.
-- • Cabinet or display height.
-- • Overall width and depth.
-- • Number of display faces.
-- • Clearance beneath elevated sign sections.
-- • Finished ground level.
-- • Ground slope around the base.
+- Overall installed height.
+- Cabinet or display height.
+- Overall width and depth.
+- Number of display faces.
+- Clearance beneath elevated sign sections.
+- Finished ground level.
+- Ground slope around the base.
 
 For multi-tenant signs, provide the number and approximate size of tenant panels. Confirm whether panels need to be replaceable.
 
@@ -6921,12 +6931,12 @@ Underground conditions can change the proposed sign position or foundation arran
 
 Relevant services may include:
 
-- • Electricity.
-- • Gas.
-- • Water and drainage.
-- • Telecommunications.
-- • Irrigation.
-- • Private lighting circuits.
+- Electricity.
+- Gas.
+- Water and drainage.
+- Telecommunications.
+- Irrigation.
+- Private lighting circuits.
 
 Existing drawings are useful background information, but they do not replace the required site-locating process before excavation.
 
@@ -6950,13 +6960,13 @@ Ask the responsible local engineer what ground information is needed. Depending 
 
 Before manufacturing the relevant components, confirm:
 
-- • Support-post arrangement.
-- • Base-plate dimensions.
-- • Anchor layout.
-- • Anchor projection and orientation.
-- • Required interface levels.
-- • Electrical entry position.
-- • Installation tolerances.
+- Support-post arrangement.
+- Base-plate dimensions.
+- Anchor layout.
+- Anchor projection and orientation.
+- Required interface levels.
+- Electrical entry position.
+- Installation tolerances.
 
 Do not pour a foundation using a preliminary visual rendering.
 
@@ -6994,13 +7004,13 @@ For digital displays, also confirm communications, controls and service requirem
 
 Give the supplier the conditions relevant to the site:
 
-- • Design temperature range.
-- • Coastal or de-icing salt exposure.
-- • Rain, snow and potential water accumulation.
-- • Strong sunlight.
-- • Industrial contaminants.
-- • Cleaning methods.
-- • Known wind exposure.
+- Design temperature range.
+- Coastal or de-icing salt exposure.
+- Rain, snow and potential water accumulation.
+- Strong sunlight.
+- Industrial contaminants.
+- Cleaning methods.
+- Known wind exposure.
 
 The responsible project professional should establish structural design criteria. Avoid substituting a general statement such as “wind-resistant” for defined requirements.
 
@@ -7012,14 +7022,14 @@ Before committing to final dimensions, ask the local team to confirm applicable 
 
 These may involve:
 
-- • Sign height and area.
-- • Position and setbacks.
-- • Visibility near driveways or intersections.
-- • Illumination and operating hours.
-- • Structural drawings and calculations.
-- • Electrical permits.
-- • Property-owner or landlord approval.
-- • Construction inspections.
+- Sign height and area.
+- Position and setbacks.
+- Visibility near driveways or intersections.
+- Illumination and operating hours.
+- Structural drawings and calculations.
+- Electrical permits.
+- Property-owner or landlord approval.
+- Construction inspections.
 
 Requirements vary by jurisdiction and site.
 
@@ -7031,14 +7041,14 @@ A sign that fits its final position may still be difficult to deliver or install
 
 Provide information about:
 
-- • Site-entry width and height.
-- • Delivery-vehicle restrictions.
-- • Overhead cables and structures.
-- • Unloading space.
-- • Crane or lifting-equipment access.
-- • Temporary storage.
-- • Working-hour restrictions.
-- • Pedestrian or traffic-control requirements.
+- Site-entry width and height.
+- Delivery-vehicle restrictions.
+- Overhead cables and structures.
+- Unloading space.
+- Crane or lifting-equipment access.
+- Temporary storage.
+- Working-hour restrictions.
+- Pedestrian or traffic-control requirements.
 
 For large signs, the manufacturer may propose shipping in sections. Confirm section sizes, connection details and site assembly responsibilities before production.
 
@@ -7075,14 +7085,14 @@ Contact ZYD SIGN to discuss your custom pylon sign project and site-information 
 
 Include what you know and mark anything still awaiting site confirmation.
 
-- • Installation address and marked sign position
-- • Front, rear, side and approach photographs
-- • Preferred overall dimensions and number of faces
-- • Artwork, tenant panels and lighting preference
-- • Known utilities and confirmed electrical supply
-- • Local restrictions and responsible approval contact
-- • Foundation interface status and local installation team
-- • Delivery access, unloading arrangements and requested scope
+- Installation address and marked sign position
+- Front, rear, side and approach photographs
+- Preferred overall dimensions and number of faces
+- Artwork, tenant panels and lighting preference
+- Known utilities and confirmed electrical supply
+- Local restrictions and responsible approval contact
+- Foundation interface status and local installation team
+- Delivery access, unloading arrangements and requested scope
 
 #### Frequently asked questions
 
@@ -7220,12 +7230,12 @@ Concealed wiring needs a defined physical route. It cannot be solved by removing
 
 Longer cable routes can affect voltage drop and system performance. The wiring arrangement should follow the applicable component instructions and project requirements.
 
-- • Cable exit locations for each letter.
-- • The route connecting the letters.
-- • Power supply locations.
-- • Access to connections and serviceable components.
-- • Protection at penetrations.
-- • Cable lengths and electrical design requirements.
+- Cable exit locations for each letter.
+- The route connecting the letters.
+- Power supply locations.
+- Access to connections and serviceable components.
+- Protection at penetrations.
+- Cable lengths and electrical design requirements.
 
 #### 4. Will Drilling Go Through to the Interior?
 
@@ -7296,12 +7306,12 @@ It may also allow more of the letter assembly and alignment to be completed befo
 
 However, the raceway introduces its own design requirements:
 
-- • Structural attachment to the building.
-- • Enclosure dimensions and appearance.
-- • Cable entry and equipment layout.
-- • Access for maintenance.
-- • Environmental suitability.
-- • Handling and installation arrangements.
+- Structural attachment to the building.
+- Enclosure dimensions and appearance.
+- Cable entry and equipment layout.
+- Access for maintenance.
+- Environmental suitability.
+- Handling and installation arrangements.
 
 A smaller enclosure is not automatically better. It still needs adequate space for the specified equipment and service access.
 
@@ -7311,12 +7321,12 @@ Individual mounting is worth considering when the architectural design prioritiz
 
 It is especially important to confirm:
 
-- • Access behind the facade.
-- • Acceptable interior cable routes.
-- • Suitable fixing positions.
-- • Locations for accessible power supplies.
-- • Whether individual letters can be removed for service.
-- • Permission for the required penetrations.
+- Access behind the facade.
+- Acceptable interior cable routes.
+- Suitable fixing positions.
+- Locations for accessible power supplies.
+- Whether individual letters can be removed for service.
+- Permission for the required penetrations.
 
 If these conditions remain unresolved, the clean exterior concept may create additional site work later.
 
@@ -7324,15 +7334,15 @@ If these conditions remain unresolved, the clean exterior concept may create add
 
 Before production, coordinate a drawing package covering:
 
-- • 1. Overall layout and letter dimensions.
-- • 2. Letter construction and estimated weights.
-- • 3. Mounting method and fixing positions.
-- • 4. Wall substrate assumptions requiring site verification.
-- • 5. Separate cable exit and penetration locations.
-- • 6. Power supply placement and connection layout.
-- • 7. Stand-off distances, where applicable.
-- • 8. Maintenance access and removal procedure.
-- • 9. Installation template and component identification.
+- 1. Overall layout and letter dimensions.
+- 2. Letter construction and estimated weights.
+- 3. Mounting method and fixing positions.
+- 4. Wall substrate assumptions requiring site verification.
+- 5. Separate cable exit and penetration locations.
+- 6. Power supply placement and connection layout.
+- 7. Stand-off distances, where applicable.
+- 8. Maintenance access and removal procedure.
+- 9. Installation template and component identification.
 
 The manufacturer can provide product and fabrication details. The local project team should verify the actual wall conditions and arrange any required site-specific electrical or structural review.
 
@@ -7352,14 +7362,14 @@ Contact ZYD SIGN to discuss channel letter construction and the product details 
 
 Use this checklist to coordinate the manufacturer, installer and building conditions before approving a mounting arrangement.
 
-- • Mounting method selected: individually mounted or raceway-mounted.
-- • Wall build-up and concealed services verified before drilling.
-- • Cable exits and penetration locations shown separately from structural fixing holes.
-- • Power supply locations and service access agreed on the drawing.
-- • Fixing method matched to the actual substrate and letter construction.
-- • Interior appearance reviewed where cables or enclosures may emerge behind the facade.
-- • Installation template and component identification issued before site work.
-- • Maintenance and letter-removal procedure understood by the installer.
+- Mounting method selected: individually mounted or raceway-mounted.
+- Wall build-up and concealed services verified before drilling.
+- Cable exits and penetration locations shown separately from structural fixing holes.
+- Power supply locations and service access agreed on the drawing.
+- Fixing method matched to the actual substrate and letter construction.
+- Interior appearance reviewed where cables or enclosures may emerge behind the facade.
+- Installation template and component identification issued before site work.
+- Maintenance and letter-removal procedure understood by the installer.
 
 #### Frequently asked questions
 
@@ -7416,107 +7426,107 @@ A signage glossary helps buyers distinguish sign types, illumination methods, ma
 
 A channel letter is an individual three-dimensional letter or character fabricated as a formed sign element, often with a face, return, and internal illumination. Front-lit and halo-lit channel letters are different specification routes.
 
-- • Confirm letter height, depth, face and return materials, illumination direction, mounting background, wiring access, quantity, and destination.
+- Confirm letter height, depth, face and return materials, illumination direction, mounting background, wiring access, quantity, and destination.
 
 #### Front-Lit Letter
 
 A front-lit letter directs illumination through the visible face so the letter itself appears bright from the viewing direction. The face material, internal LED layout, return construction, and finish all affect the result.
 
-- • Confirm the face colour and material, letter depth, LED access, power route, mounting surface, night-time appearance, and service responsibility.
+- Confirm the face colour and material, letter depth, LED access, power route, mounting surface, night-time appearance, and service responsibility.
 
 #### Halo-Lit Letter
 
 A halo-lit letter uses rear-facing light to create a glow on the wall or mounting background behind the letter rather than lighting the letter face directly.
 
-- • Confirm the wall colour and texture, stand-off depth, rear illumination direction, cable route, shadow effect, mounting method, and access for service.
+- Confirm the wall colour and texture, stand-off depth, rear illumination direction, cable route, shadow effect, mounting method, and access for service.
 
 #### Wayfinding Signage
 
 Wayfinding signage helps people make decisions as they move through a site, using directional signs, directories, identification signs, and functional messages as one coordinated system.
 
-- • Provide a site or floor plan, visitor routes, decision points, sign hierarchy, languages, mounting conditions, quantities, and the required installation scope.
+- Provide a site or floor plan, visitor routes, decision points, sign hierarchy, languages, mounting conditions, quantities, and the required installation scope.
 
 #### Directory Sign
 
 A directory sign presents multiple destinations in one organised panel, such as tenants, departments, floors, rooms, or facilities.
 
-- • Confirm the destination list, hierarchy, update method, typography, languages, panel size, mounting height, access for changes, and whether illumination is required.
+- Confirm the destination list, hierarchy, update method, typography, languages, panel size, mounting height, access for changes, and whether illumination is required.
 
 #### Pylon Sign
 
 A pylon sign is a freestanding, often tall sign used for identification and visibility from an approach route. It may carry one brand, multiple tenants, or directional information depending on the site.
 
-- • Confirm sightlines, approach speed, overall dimensions, foundation or fixing interface, wind and structural inputs, tenant content, lighting, destination, and installation responsibility.
+- Confirm sightlines, approach speed, overall dimensions, foundation or fixing interface, wind and structural inputs, tenant content, lighting, destination, and installation responsibility.
 
 #### Monument Sign
 
 A monument sign is a freestanding identification sign designed with a lower, more architectural profile that relates closely to its surrounding entrance, landscape, or building frontage.
 
-- • Confirm the desired viewing distance, base and cladding concept, site interface, drainage, landscape clearance, message hierarchy, materials, finish, and service access.
+- Confirm the desired viewing distance, base and cladding concept, site interface, drainage, landscape clearance, message hierarchy, materials, finish, and service access.
 
 #### Light Box
 
 A light box is an illuminated sign cabinet or panel in which a graphic, face, or translucent surface is lit from within. LED light boxes can be wall-mounted, projecting, or integrated into a larger sign system.
 
-- • Confirm panel dimensions, face and cabinet materials, graphic replacement method, LED access, power route, viewing direction, mounting, brightness intent, and maintenance access.
+- Confirm panel dimensions, face and cabinet materials, graphic replacement method, LED access, power route, viewing direction, mounting, brightness intent, and maintenance access.
 
 #### LED Neon
 
 LED neon is a flexible LED product formed or mounted to create a continuous neon-like line or letter appearance without treating it as traditional glass neon.
 
-- • Confirm the artwork path, bend radius, colour, backing, power supply location, indoor or outdoor exposure, mounting method, cable concealment, and service access.
+- Confirm the artwork path, bend radius, colour, backing, power supply location, indoor or outdoor exposure, mounting method, cable concealment, and service access.
 
 #### Tactile Sign
 
 A tactile sign communicates information through raised characters, symbols, or other elements that can be identified by touch, sometimes together with visual lettering.
 
-- • Confirm the tactile content, character geometry, spacing, contrast, mounting location, installation height, reading access, language, and the accessibility requirements that apply to the project.
+- Confirm the tactile content, character geometry, spacing, contrast, mounting location, installation height, reading access, language, and the accessibility requirements that apply to the project.
 
 #### Braille Signage
 
 Braille signage uses raised Braille dots to communicate room names, numbers, or other permanent information for people who read by touch. It may be combined with raised letters and symbols.
 
-- • Confirm the Braille language and convention, translation, dot geometry, room list, raised-character content, location, installation height, and the applicable accessibility standard before production.
+- Confirm the Braille language and convention, translation, dot geometry, room list, raised-character content, location, installation height, and the applicable accessibility standard before production.
 
 #### ADA Signage
 
 ADA signage refers to signage planned for applicable Americans with Disabilities Act requirements in the United States. Compliance depends on the finished sign, tactile and visual details, placement, and installation rather than on adding Braille alone.
 
-- • Identify the project jurisdiction and applicable requirements early, then review text, Braille, raised characters, contrast, mounting location, installation height, and inspection responsibility.
+- Identify the project jurisdiction and applicable requirements early, then review text, Braille, raised characters, contrast, mounting location, installation height, and inspection responsibility.
 
 #### 304 Stainless Steel
 
 304 stainless steel is a commonly considered stainless grade for architectural and outdoor signage, subject to the actual environment, finish, fabrication, and installation controls.
 
-- • Confirm the exposure, surface finish, thickness, weld and edge treatment, cleaning plan, contamination controls, documentation, and whether the project environment calls for another grade.
+- Confirm the exposure, surface finish, thickness, weld and edge treatment, cleaning plan, contamination controls, documentation, and whether the project environment calls for another grade.
 
 #### Galvanized Steel
 
 Galvanized steel is steel protected with a zinc coating and may be considered for selected outdoor sign structures or panels when the project specification and finish system support it.
 
-- • Confirm coating condition, cut-edge treatment, weld treatment, topcoat or finish route, drainage, contact with other metals, exposure, and the maintenance expectations for the location.
+- Confirm coating condition, cut-edge treatment, weld treatment, topcoat or finish route, drainage, contact with other metals, exposure, and the maintenance expectations for the location.
 
 #### Aluminium
 
 Aluminium is a lightweight metal used in sign faces, cabinets, panels, letters, and supporting elements when its weight, finish, fabrication, and environment fit the project.
 
-- • Confirm alloy or sheet specification where needed, thickness, finish, stiffness, joining method, galvanic-contact risks, mounting, lighting access, and the required appearance.
+- Confirm alloy or sheet specification where needed, thickness, finish, stiffness, joining method, galvanic-contact risks, mounting, lighting access, and the required appearance.
 
 #### DDP Delivery
 
 DDP is a delivery scope in which the seller may quote door-to-door delivery with destination duties and taxes considered as part of the project scope. Availability depends on the destination and cargo details.
 
-- • Confirm the exact destination, cargo description, packing, duties and taxes, unloading responsibility, documentation, and what is included or excluded in the quotation.
+- Confirm the exact destination, cargo description, packing, duties and taxes, unloading responsibility, documentation, and what is included or excluded in the quotation.
 
 #### Glossary terms to put in a signage brief
 
 Use the terms precisely, then attach the project information that turns a general sign type into a reviewable specification.
 
-- • Name the sign type and its role in the visitor or brand journey.
-- • Add approximate dimensions, quantities, artwork, languages, and viewing direction.
-- • State the environment, mounting surface, power access, and service constraints.
-- • Confirm material, finish, illumination, accessibility, destination, and installation scope.
-- • Ask the supplier to identify assumptions and project-specific items before production.
+- Name the sign type and its role in the visitor or brand journey.
+- Add approximate dimensions, quantities, artwork, languages, and viewing direction.
+- State the environment, mounting surface, power access, and service constraints.
+- Confirm material, finish, illumination, accessibility, destination, and installation scope.
+- Ask the supplier to identify assumptions and project-specific items before production.
 
 #### Frequently asked questions
 
@@ -7574,10 +7584,10 @@ The same logo can need a different construction at a mall entrance, on an expose
 
 For a wayfinding system, the environment review should include vehicle and pedestrian routes, decision points, viewing distance, mounting surface, cleaning access, and the relationship between exterior identification and interior directories. For a brand sign, add the intended day and night effect, face treatment, return depth, wiring route, and service opening.
 
-- • Indoor or outdoor exposure, including coastal or salt-air conditions where relevant.
-- • Viewing distance, sign scale, day/night appearance, and surrounding lighting.
-- • Mounting surface, access equipment, drainage, cleaning, wiring, and maintenance assumptions.
-- • Destination, packing, installation responsibility, and any DDP delivery scope to be quoted.
+- Indoor or outdoor exposure, including coastal or salt-air conditions where relevant.
+- Viewing distance, sign scale, day/night appearance, and surrounding lighting.
+- Mounting surface, access equipment, drainage, cleaning, wiring, and maintenance assumptions.
+- Destination, packing, installation responsibility, and any DDP delivery scope to be quoted.
 
 #### 2. Illuminated letter constructions: match the build to the brief
 
@@ -7606,11 +7616,11 @@ Mini or edge-free letters can suit an interior logo wall or counter sign where a
 
 304 stainless steel can be considered for exposed metal elements where its appearance and project environment fit the brief. Aluminum can be considered when lower weight, larger panels, or an exterior route calls for it. Galvanized steel may be reviewed for suitable protected or coated applications, while acrylic is often used for faces, translucent elements, letters, and shaped panels where light transmission or form is part of the design. A project-specific review should still confirm the selected grade, thickness, preparation, and finish.
 
-- • 304 stainless steel: review for exposed metal, finish, fabrication, and coastal or salt-air context.
-- • Aluminum: review when weight, panel size, corrosion context, and mounting are important.
-- • Galvanized steel: confirm substrate, coating route, exposure, edges, drainage, and maintenance.
-- • Acrylic: confirm thickness, dimensions, light transmission, colour, support, and handling assumptions.
-- • 201 stainless steel may be discussed as a general material option, but it should not be treated as a site-wide recommendation without project review.
+- 304 stainless steel: review for exposed metal, finish, fabrication, and coastal or salt-air context.
+- Aluminum: review when weight, panel size, corrosion context, and mounting are important.
+- Galvanized steel: confirm substrate, coating route, exposure, edges, drainage, and maintenance.
+- Acrylic: confirm thickness, dimensions, light transmission, colour, support, and handling assumptions.
+- 201 stainless steel may be discussed as a general material option, but it should not be treated as a site-wide recommendation without project review.
 
 #### 4. Surface finishes change the appearance and maintenance brief
 
@@ -7622,10 +7632,10 @@ The substrate is only part of the decision. Spray or baked paint, fluorocarbon c
 
 Use an agreed colour reference and sample wherever the finish is important to the brand system. For a coastal or exposed application, ask the supplier to state the proposed preparation, coating route, edge treatment, inspection scope, and maintenance assumptions instead of treating a finish name as a performance guarantee.
 
-- • Record substrate, preparation, colour reference, gloss or texture, and finish route.
-- • Use a physical or documented sample when colour and surface appearance are critical.
-- • Check visible edges, returns, joints, cut-outs, and transitions between different materials.
-- • Keep cleaning, access, replacement, and future touch-up assumptions in the project record.
+- Record substrate, preparation, colour reference, gloss or texture, and finish route.
+- Use a physical or documented sample when colour and surface appearance are critical.
+- Check visible edges, returns, joints, cut-outs, and transitions between different materials.
+- Keep cleaning, access, replacement, and future touch-up assumptions in the project record.
 
 #### 5. Light-source selection: review the whole illuminated sign
 
@@ -7637,10 +7647,10 @@ For an illuminated sign, brightness is only one part of the brief. Review light 
 
 Ask for the proposed light-source layout, component information, enclosure details, and applicable inspection records. Uniformity, ageing or burn-in checks, waterproofing, lifetime, and component brand should be treated as project-specific items to verify in supplier documents and the agreed inspection scope, not as blanket promises for every sign.
 
-- • Define the day/night visual effect and acceptable colour-temperature direction.
-- • Review module or strip layout against letter depth, face material, returns, and enclosure.
-- • Confirm wiring, power access, service openings, packing, and installation sequence.
-- • Request project-specific component, inspection, ageing, and water-ingress information where required.
+- Define the day/night visual effect and acceptable colour-temperature direction.
+- Review module or strip layout against letter depth, face material, returns, and enclosure.
+- Confirm wiring, power access, service openings, packing, and installation sequence.
+- Request project-specific component, inspection, ageing, and water-ingress information where required.
 
 #### 6. Match the selection to the project scenario
 
@@ -7662,13 +7672,13 @@ A useful selection matrix does not promise one material for every site. It gives
 
 Send this information with the enquiry so the supplier can compare construction, materials, finish, lighting, and delivery as one scope. Unknown items can be marked for clarification.
 
-- • Project location, indoor/outdoor exposure, coastal or salt-air context, and surrounding lighting
-- • Sign types, artwork, approximate dimensions, viewing distance, and quantities
-- • Day/night visual effect, illumination direction, colour-temperature preference, and glare concerns
-- • Substrate, face, return, thickness, material route, finish, colour reference, and sample needs
-- • Mounting surface, fixing method, power location, wiring route, access, cleaning, and maintenance assumptions
-- • Site survey, 3D mockup, drawings, installation, packing, destination, and DDP quotation scope
-- • Project-specific component information, inspection points, ageing or burn-in checks, and water-ingress review where required
+- Project location, indoor/outdoor exposure, coastal or salt-air context, and surrounding lighting
+- Sign types, artwork, approximate dimensions, viewing distance, and quantities
+- Day/night visual effect, illumination direction, colour-temperature preference, and glare concerns
+- Substrate, face, return, thickness, material route, finish, colour reference, and sample needs
+- Mounting surface, fixing method, power location, wiring route, access, cleaning, and maintenance assumptions
+- Site survey, 3D mockup, drawings, installation, packing, destination, and DDP quotation scope
+- Project-specific component information, inspection points, ageing or burn-in checks, and water-ingress review where required
 
 #### Frequently asked questions
 
@@ -7819,11 +7829,11 @@ Daytime inspection confirms geometry, surface, and colour. Most illumination and
 
 The defects below are the ones buyers most often report after handover. Each one traces back to a decision that could have been pinned down in the specification.
 
-- • Uneven brightness across a letter, with individual modules visible as separate bright spots rather than a continuous light.
-- • Colour mismatch between letters, where adjacent characters read at different colour temperatures under the same supply.
-- • Parts of the sign not illuminating, or dropping out after the first rain, indicating moisture ingress or an unprotected connection.
-- • Face or panel edges lifting, with sealant joints opening enough to move under hand pressure.
-- • Intermittent flicker or partial LED failure appearing weeks after handover rather than on day one.
+- Uneven brightness across a letter, with individual modules visible as separate bright spots rather than a continuous light.
+- Colour mismatch between letters, where adjacent characters read at different colour temperatures under the same supply.
+- Parts of the sign not illuminating, or dropping out after the first rain, indicating moisture ingress or an unprotected connection.
+- Face or panel edges lifting, with sealant joints opening enough to move under hand pressure.
+- Intermittent flicker or partial LED failure appearing weeks after handover rather than on day one.
 
 #### 9. Illumination acceptance testing: two separate checks before packing
 
@@ -7859,11 +7869,11 @@ None of the following requires the buyer to be a fabrication specialist. They ar
 
 Adapt the wording to the project and the local procurement rules, then issue the same version to every bidder so no one is pricing a different scope.
 
-- • Name the material grade and thickness. Replace generic terms such as "stainless steel" with the required grade, the nominal sheet thickness for faces and returns, and a tolerance with a verification method.
-- • Name the light source requirement. Specify the component class and the documentation you require, including colour consistency and how rated output is evidenced, rather than relying on an advertised service-life figure.
-- • Name the surface finish system. State the coating or finish system, the number of coats or stages, the substrate preparation, and the edge and joint treatment required.
-- • Produce and sign a physical sample. Have a representative sample of the actual letter, finish, and illumination approved and sealed by both parties before production, and keep it accessible for comparison at acceptance.
-- • State the warranty and response commitments in the contract. Define what is covered, what is excluded, how long the period runs, and the response time for a reported defect, including who carries access costs.
+- Name the material grade and thickness. Replace generic terms such as "stainless steel" with the required grade, the nominal sheet thickness for faces and returns, and a tolerance with a verification method.
+- Name the light source requirement. Specify the component class and the documentation you require, including colour consistency and how rated output is evidenced, rather than relying on an advertised service-life figure.
+- Name the surface finish system. State the coating or finish system, the number of coats or stages, the substrate preparation, and the edge and joint treatment required.
+- Produce and sign a physical sample. Have a representative sample of the actual letter, finish, and illumination approved and sealed by both parties before production, and keep it accessible for comparison at acceptance.
+- State the warranty and response commitments in the contract. Define what is covered, what is excluded, how long the period runs, and the response time for a reported defect, including who carries access costs.
 
 #### 12. Judging the supplier, and what a factory visit actually tells you
 
@@ -7893,16 +7903,16 @@ Where a project needs a defined material and process route, send the drawings, s
 
 Use this list while the tender is being written, when bids come back, and again at acceptance. Items the project cannot yet answer should be recorded as open points rather than left to the bidder to interpret.
 
-- • Sign schedule with each location, sign type, quantity, and required reading distance
-- • Material grade per sign type and location, with nominal sheet and return thickness plus tolerance
-- • Light source requirement with the documentation to be supplied and the colour consistency method
-- • Surface finish system, number of coats or stages, substrate preparation, and edge and joint treatment
-- • Sealing, drainage, and connection protection stated as a defined inspection point
-- • Approved physical sample of letter construction, finish, and illumination, signed by both parties and retained
-- • Warranty scope, exclusions, duration, and defect response time written into the contract terms
-- • Powered illumination check and inspection records before packing, plus a retained light source reference
-- • Access, lifting, protection, and site coordination responsibility during installation and any rework
-- • Packing, identification, delivery scope, and any DDP delivery arrangement quoted as a defined scope
+- Sign schedule with each location, sign type, quantity, and required reading distance
+- Material grade per sign type and location, with nominal sheet and return thickness plus tolerance
+- Light source requirement with the documentation to be supplied and the colour consistency method
+- Surface finish system, number of coats or stages, substrate preparation, and edge and joint treatment
+- Sealing, drainage, and connection protection stated as a defined inspection point
+- Approved physical sample of letter construction, finish, and illumination, signed by both parties and retained
+- Warranty scope, exclusions, duration, and defect response time written into the contract terms
+- Powered illumination check and inspection records before packing, plus a retained light source reference
+- Access, lifting, protection, and site coordination responsibility during installation and any rework
+- Packing, identification, delivery scope, and any DDP delivery arrangement quoted as a defined scope
 
 #### Frequently asked questions
 
@@ -7992,10 +8002,10 @@ The more demanding the environment, the more carefully the grade, finish, fabric
 
 There is no universal grade answer. Start with the environment, then confirm the material and fabrication brief.
 
-- • Controlled indoor locations such as a dry lobby or interior commercial space may allow a broader material review; 201 may be considered for selected applications, while 304 is a common starting point where additional margin is preferred.
-- • Ordinary outdoor locations such as residential areas, campuses, and commercial streets commonly start with 304, subject to the actual exposure and finish specification.
-- • High salt spray, persistent humidity, coastal exposure, or de-icing salts can justify evaluating 316, but the final choice still depends on the complete environment and project specification.
-- • The principle is simple: as exposure becomes more aggressive, the grade and the process controls require more careful review. Even a higher grade cannot compensate for poor fabrication or contamination.
+- Controlled indoor locations such as a dry lobby or interior commercial space may allow a broader material review; 201 may be considered for selected applications, while 304 is a common starting point where additional margin is preferred.
+- Ordinary outdoor locations such as residential areas, campuses, and commercial streets commonly start with 304, subject to the actual exposure and finish specification.
+- High salt spray, persistent humidity, coastal exposure, or de-icing salts can justify evaluating 316, but the final choice still depends on the complete environment and project specification.
+- The principle is simple: as exposure becomes more aggressive, the grade and the process controls require more careful review. Even a higher grade cannot compensate for poor fabrication or contamination.
 
 #### Why Outdoor Stainless Steel Can Still Rust
 
@@ -8017,10 +8027,10 @@ There is no universal grade answer. Start with the environment, then confirm the
 
 Outdoor stainless steel can corrode even when a specification names a stainless grade. The risk often comes from a mismatch between the material, the process, and the environment rather than from the grade name alone.
 
-- • Grade substitution: if the supplied material does not match the approved grade, the finished sign may not have the expected corrosion resistance. Confirm the material documentation rather than relying on appearance.
-- • Unclean welds and cut edges: cutting and welding can disturb the passive surface layer. Welds, heat-affected areas, and cut edges need the cleaning, finishing, and post-weld treatment required by the project specification.
-- • Carbon-steel contamination during installation: tools, abrasives, or steel particles used on carbon steel can transfer iron to a stainless surface. Separate tools and suitable abrasives help reduce this contamination risk.
-- • Environment mismatch: a grade selected for an ordinary exposure may be unsuitable beside heavy salt spray, de-icing salts, or other aggressive conditions. The environment should be reviewed before the material is finalized.
+- Grade substitution: if the supplied material does not match the approved grade, the finished sign may not have the expected corrosion resistance. Confirm the material documentation rather than relying on appearance.
+- Unclean welds and cut edges: cutting and welding can disturb the passive surface layer. Welds, heat-affected areas, and cut edges need the cleaning, finishing, and post-weld treatment required by the project specification.
+- Carbon-steel contamination during installation: tools, abrasives, or steel particles used on carbon steel can transfer iron to a stainless surface. Separate tools and suitable abrasives help reduce this contamination risk.
+- Environment mismatch: a grade selected for an ordinary exposure may be unsuitable beside heavy salt spray, de-icing salts, or other aggressive conditions. The environment should be reviewed before the material is finalized.
 
 #### How to Reduce Corrosion Risk
 
@@ -8040,21 +8050,21 @@ The practical controls are the reverse of the common failure modes: confirm the 
 
 Stainless steel does not rust without a cause. A corrosion review should trace the material, the fabrication, the installation, the environment, and the maintenance brief rather than assuming that a grade name settles the question.
 
-- • Confirm the specified grade and supporting material documentation before production.
-- • Define the required weld cleaning, passivation, polishing, and edge-finishing steps.
-- • Keep tools, abrasives, and handling practices suitable for stainless steel and separate from carbon-steel work.
-- • Record the target environment, including coastal exposure, humidity, and de-icing salts where relevant.
-- • Ask for a project-specific material recommendation when the environment or exposure is uncertain.
+- Confirm the specified grade and supporting material documentation before production.
+- Define the required weld cleaning, passivation, polishing, and edge-finishing steps.
+- Keep tools, abrasives, and handling practices suitable for stainless steel and separate from carbon-steel work.
+- Record the target environment, including coastal exposure, humidity, and de-icing salts where relevant.
+- Ask for a project-specific material recommendation when the environment or exposure is uncertain.
 
 #### Before you approve the stainless-steel signage specification
 
 Use these questions to turn the four-part corrosion review into a project brief.
 
-- • What is the target environment and exposure level?
-- • Which grade is specified, and what material documentation is required?
-- • How will welds, cut edges, and finished surfaces be cleaned and treated?
-- • How will stainless-steel tools and abrasives be separated from carbon-steel work?
-- • Which details should be confirmed with the signage fabricator before production?
+- What is the target environment and exposure level?
+- Which grade is specified, and what material documentation is required?
+- How will welds, cut edges, and finished surfaces be cleaned and treated?
+- How will stainless-steel tools and abrasives be separated from carbon-steel work?
+- Which details should be confirmed with the signage fabricator before production?
 
 #### Frequently asked questions
 
@@ -8143,11 +8153,11 @@ The face may be retained through a recessed arrangement, internal components, bo
 
 A product description that says only “trimless” does not fully explain the structure.
 
-- • The acrylic face and its edge profile.
-- • The connection between the face and sidewalls.
-- • Any internal retaining components.
-- • The fastening or bonding method.
-- • The intended service-access route.
+- The acrylic face and its edge profile.
+- The connection between the face and sidewalls.
+- Any internal retaining components.
+- The fastening or bonding method.
+- The intended service-access route.
 
 #### 3. How Does the Appearance Differ?
 
@@ -8175,12 +8185,12 @@ No. Removing the trim cap does not automatically make a sign brighter or more ev
 
 Trimless construction changes the visible edge, but lighting performance still needs to be checked through a representative working sample. For both types, inspect narrow strokes, corners and transitions between large and small illuminated areas.
 
-- • LED arrangement and output.
-- • Letter depth.
-- • Face material and light transmission.
-- • Stroke width and internal geometry.
-- • Printed graphics or applied films.
-- • Power supply specification.
+- LED arrangement and output.
+- Letter depth.
+- Face material and light transmission.
+- Stroke width and internal geometry.
+- Printed graphics or applied films.
+- Power supply specification.
 
 #### 6. What Are the Maintenance Differences?
 
@@ -8233,13 +8243,13 @@ Finally, ask the supplier to demonstrate how the sample would be serviced. This 
 
 Both constructions can work. The quotation should describe how the face is held, how it is serviced and how the installed sign is expected to perform.
 
-- • Face-edge detail or cross-section drawing.
-- • Trim material, color, width and fastening method (trim cap).
-- • Face retention, bonding and internal supports (trimless).
-- • Proposed artwork adjustments at small counters and tight corners.
-- • Lighting sample checked at the intended size and depth.
-- • Removal and reassembly procedure for the specific design.
-- • Outdoor joints, seals, drainage and power supply location.
+- Face-edge detail or cross-section drawing.
+- Trim material, color, width and fastening method (trim cap).
+- Face retention, bonding and internal supports (trimless).
+- Proposed artwork adjustments at small counters and tight corners.
+- Lighting sample checked at the intended size and depth.
+- Removal and reassembly procedure for the specific design.
+- Outdoor joints, seals, drainage and power supply location.
 
 #### Frequently asked questions
 
@@ -8282,6 +8292,170 @@ Buyer brief
 Send the vector artwork, required dimensions and photographs of the installation surface, and ask for a face-edge detail or cross-section for each option. That drawing explains more than the construction name.
 
 [DISCUSS YOUR PROJECT](https://www.zydsign.com/contact)
+
+### Wayfinding Signage Levels: Level 1, 2 & 3 Explained
+
+Canonical page: https://www.zydsign.com/guides/wayfinding-signage-levels
+Markdown mirror: https://www.zydsign.com/guides/wayfinding-signage-levels/index.md
+
+A practical framework for organizing building wayfinding signs by the visitor journey: identify the site, choose a route, then find the destination.
+
+Guide • Updated Nov 12, 2026 • By Aaron, ZYD Signage
+
+![Illuminated building name mounted high on a commercial building facade and visible from outside](https://www.zydsign.com/assets/images/guides/wayfinding-levels-building-identity.jpg)
+
+*Level 1 signage helps visitors recognize the right site or building as they approach.*
+
+Level 1 wayfinding signs identify the site or building from the approach. Level 2 signs guide people inside and at route choices, such as lobbies, elevators and corridors. Level 3 signs identify the destination itself, such as a room, clinic or department. Together they form a continuous route from arrival to the right door.
+
+Walk into a building you have never visited and you may reach a meeting room in minutes—or circle the lobby without knowing which way to turn. The difference is often not the number of signs. It is whether each sign answers the right question at the right point in the journey.
+
+This three-level wayfinding signage framework is useful for offices, hospitals, schools, campuses and industrial parks. Treat it as a planning model rather than a universal code: project teams must confirm local accessibility, life-safety and approval requirements for their site.
+
+In this guide
+
+1. [1. What is Level 1 wayfinding signage?](https://www.zydsign.com/guides/wayfinding-signage-levels#guide-section-1)
+2. [2. What is Level 2 wayfinding signage?](https://www.zydsign.com/guides/wayfinding-signage-levels#guide-section-2)
+3. [3. What is Level 3 wayfinding signage?](https://www.zydsign.com/guides/wayfinding-signage-levels#guide-section-3)
+4. [4. Why do people still get lost in a signed building?](https://www.zydsign.com/guides/wayfinding-signage-levels#guide-section-4)
+5. [5. How does the three-level framework change by building type?](https://www.zydsign.com/guides/wayfinding-signage-levels#guide-section-5)
+6. [6. What should a project team prepare before designing wayfinding signs?](https://www.zydsign.com/guides/wayfinding-signage-levels#guide-section-6)
+
+Tables can be scrolled horizontally on smaller screens.
+
+#### 1. What is Level 1 wayfinding signage?
+
+![Traditional university entrance gate identifying the campus from the approach](https://www.zydsign.com/assets/images/guides/wayfinding-levels-campus-gateway.jpg)
+
+*A campus gateway is a Level 1 identification point.*
+
+![Large campus complex with several connected buildings and a central visitor approach](https://www.zydsign.com/assets/images/guides/wayfinding-levels-campus-complex.jpg)
+
+*Multi-building sites need clear identification before visitors choose a building.*
+
+![Modern office building with a clearly visible primary facade and visitor entrance](https://www.zydsign.com/assets/images/guides/wayfinding-levels-office-building.jpg)
+
+*Facade identification and the visitor entrance should support the same arrival route.*
+
+Level 1 signs answer: “Am I at the right place, and where is the building I need?” They work from the site approach, street, driveway, campus edge or parking entrance. Their job is to make the destination easy to recognize before a visitor reaches the front door.
+
+Typical examples include a building name on the facade, a campus or park entrance marker, an external site directory, and a sign that identifies the main visitor entrance. The design should be legible in its real viewing conditions; visibility depends on distance, approach direction, lighting, landscaping and surrounding buildings.
+
+At this level, clarity and recognition matter more than small details. A visitor should be able to distinguish the correct building or entrance without first reading a dense directory.
+
+#### 2. What is Level 2 wayfinding signage?
+
+![Outdoor campus directory sign with a site map and directional information](https://www.zydsign.com/assets/images/guides/wayfinding-levels-campus-directory.jpg)
+
+*A map or directory is useful only when visitors can find it before choosing a route. Pictured brand content is illustrative and does not imply a client relationship.*
+
+![Interior facility with wall-mounted identification and directional signage](https://www.zydsign.com/assets/images/guides/wayfinding-levels-interior-signage.jpg)
+
+*Interior signs should continue the same destination names and visual language.*
+
+After someone enters the site or building, Level 2 signs answer: “Where am I now, and which way should I go?” Place them at decision points—the lobby, elevator and stair areas, corridor junctions, and other places where a visitor must choose a direction.
+
+Typical examples include a lobby directory, a floor index, elevator and stair identification, overhead direction signs, and corridor arrows. A sign in the wrong place can be easy to miss even when its wording is correct. Visitors need the instruction before they make the turn, not after they have passed it.
+
+Use consistent names and destinations from one sign to the next. If a directory says “Conference Centre” but the corridor sign says “Meeting Suite,” visitors may not know those labels lead to the same place.
+
+#### 3. What is Level 3 wayfinding signage?
+
+![Clinic door with a room identification sign beside the entrance](https://www.zydsign.com/assets/images/guides/wayfinding-levels-clinic-door.jpg)
+
+*A destination sign confirms the visitor has reached the correct room or department.*
+
+![A consistent series of room number signs mounted beside doors along a corridor](https://www.zydsign.com/assets/images/guides/wayfinding-levels-room-numbers.jpg)
+
+*Consistent numbering and placement make room identification easier along a corridor.*
+
+Level 3 signs answer: “Is this the room, department or facility I came to find?” They sit closest to the destination and confirm arrival. Examples include room number signs, clinic and department signs, restroom identification, staff-only or equipment-room labels, and other functional or warning signs.
+
+Level 3 is often the easiest layer to overlook because an individual room sign seems small. Yet a visitor who has followed every direction correctly can still lose confidence if the final door is unmarked, the number is hidden, or the naming differs from the directory.
+
+Keep room names, numbers, mounting positions and sign formats consistent across a floor. For tactile, Braille or other accessibility features, confirm the applicable requirements with the project’s local accessibility professional and authority before artwork approval.
+
+#### 4. Why do people still get lost in a signed building?
+
+A wayfinding system can contain many attractive signs and still fail if the visitor journey has gaps. Check these common problems during planning and on-site review:
+
+- A missing level: the visitor is directed to the floor but cannot identify the room at the end of the route.
+- A sign at the wrong decision point: the instruction is mounted after the corridor turn, or a directory is placed where visitors cannot pause to read it.
+- A broken sequence: a destination appears on the lobby directory but disappears from later directional signs.
+- Inconsistent names or symbols: the same destination is called by different names on plans, directories and doors.
+- Visual clutter: too many messages compete, so the primary direction is difficult to scan.
+
+Review the route as a chain: recognize the site, enter the right building, choose a direction at each junction, then confirm the destination at the door. A weak link can undo the work of all the signs before it.
+
+#### 5. How does the three-level framework change by building type?
+
+The sign types and quantities vary with the building. The visitor logic stays similar: identify the destination, make each route choice clear, and confirm arrival.
+
+| Building type | Level 1: identify the site | Level 2: guide the route | Level 3: confirm the destination |
+| --- | --- | --- | --- |
+| Office building | Facade name and main entrance | Lobby directory, floor index and corridor directions | Office, meeting-room and facility signs |
+| Hospital or clinic | Campus entrance and building identification | Department directories, floor and clinic directions | Room, clinic, restroom and service signs |
+| School or campus | Campus gateway and building name | Campus map, building and floor directories | Classroom, office and facility signs |
+| Industrial park | Park gateway and site identification | Zone, road and building directions | Workshop, department and safety identification |
+
+For healthcare projects, connect the interior room and department signs with the wider hospital navigation plan. Our related medical signage page covers coordinated hospital and clinic sign types.
+
+#### 6. What should a project team prepare before designing wayfinding signs?
+
+Start with the visitor journey and the names people will actually look for. A manufacturer or design team can then map those destinations to sign locations and review the sign family with the project team.
+
+- A site plan showing entrances, parking, buildings and the main visitor routes.
+- Floor plans with corridor junctions, elevators, stairs, departments and room numbers.
+- A verified destination list with consistent names, departments and abbreviations.
+- The main visitor groups and routes, including first-time visitors and people with accessibility needs.
+- Brand guidelines, preferred materials, illumination requirements and environmental conditions.
+- Local accessibility, life-safety, landlord and permitting requirements confirmed by the responsible project professionals.
+
+Mark unknown details instead of guessing. The destination list, sign locations, mounting conditions and final wording should be reviewed together before production drawings are approved.
+
+#### A simple wayfinding hierarchy review
+
+Walk the route as a first-time visitor and check that each question is answered in order:
+
+- Can I recognize the right site or building before I reach the entrance?
+- Can I choose the correct route at every lobby, elevator and corridor decision point?
+- Can I confirm the destination at the correct room, clinic or department door?
+- Are destination names, arrows, numbering and sign placement consistent throughout?
+- Have local accessibility, safety and approval requirements been reviewed by the responsible team?
+
+#### Frequently asked questions
+
+##### What are Level 1, Level 2 and Level 3 wayfinding signs?
+
+Level 1 signs identify a site or building from the approach. Level 2 signs direct visitors inside at lobbies and route choices. Level 3 signs identify the final room, department or facility.
+
+##### Where should Level 2 directional signs be placed?
+
+Place Level 2 directions at decision points such as entrances, lobby directories, elevator and stair areas, corridor junctions and turns—early enough for visitors to choose the correct route.
+
+##### Are the three wayfinding levels a universal standard?
+
+They are a practical planning framework used to organize the visitor journey, not a substitute for local codes or project requirements. Confirm accessibility, life-safety and approval criteria with the responsible local professionals.
+
+##### What information is needed to plan a building wayfinding system?
+
+Prepare a site plan, floor plans, entrances and routes, a verified destination list, visitor needs, brand guidelines, sign location conditions and applicable local requirements.
+
+#### Sources & further reading
+
+These public references support terminology, accessibility context, or material-selection background. They are not ZYD product claims; project compliance and final specifications must be confirmed with the design team and the authority having jurisdiction.
+
+1. Original Chinese article shared by the project owner The English guide adapts the supplied article structure and supplied example images.
+
+[Architectural wayfinding signage systems](https://www.zydsign.com/products/architectural-wayfinding-system) [Coordinated medical and hospital signage](https://www.zydsign.com/products/medical-care-signage) [Plan tactile and Braille signage with accessibility review](https://www.zydsign.com/guides/ada-braille-signage-planning-guide) [See a wayfinding project across exterior and interior spaces](https://www.zydsign.com/case-studies/dalian-water-plaza-wayfinding-signage) ASK AARON ABOUT YOUR SITE
+
+Buyer brief
+
+#### Planning a building wayfinding system?
+
+Share the site plan, floor plans and destination list with Aaron to discuss the sign hierarchy and project scope. MOQ 1 set; production timing and delivery are confirmed against the approved project drawings and quotation.
+
+[DISCUSS A WAYFINDING PROJECT](https://www.zydsign.com/contact?product=wayfinding)
 
 ### What Does IP65 Mean for Outdoor Channel Letters? Protection Ratings and Installation Conditions
 
@@ -8331,13 +8505,13 @@ An illuminated sign contains multiple components and interfaces.
 
 These may include:
 
-- • LED modules.
-- • Power supplies.
-- • Connectors and cable joints.
-- • Junction boxes.
-- • Cable-entry fittings.
-- • Letter faces, returns and backs.
-- • Service covers and fastening points.
+- LED modules.
+- Power supplies.
+- Connectors and cable joints.
+- Junction boxes.
+- Cable-entry fittings.
+- Letter faces, returns and backs.
+- Service covers and fastening points.
 
 ##### An IP67 LED Module Does Not Make the Letter IP67
 
@@ -8504,16 +8678,16 @@ Avoid a specification that says only “IP65 waterproof letters.”
 
 Instead, ask the quotation to identify:
 
-- • 1. The scope of each IP claim.
-- • 2. LED module and power supply models.
-- • 3. Connector and cable-joint arrangements.
-- • 4. Letter-enclosure construction.
-- • 5. Cable-entry details.
-- • 6. Drainage or moisture-management provisions.
-- • 7. Mounting orientation and equipment location.
-- • 8. Installation and cleaning instructions.
-- • 9. Supporting documents.
-- • 10. Warranty conditions.
+- 1. The scope of each IP claim.
+- 2. LED module and power supply models.
+- 3. Connector and cable-joint arrangements.
+- 4. Letter-enclosure construction.
+- 5. Cable-entry details.
+- 6. Drainage or moisture-management provisions.
+- 7. Mounting orientation and equipment location.
+- 8. Installation and cleaning instructions.
+- 9. Supporting documents.
+- 10. Warranty conditions.
 
 Where the complete letter enclosure has not been rated, describe its outdoor construction and component ratings accurately rather than assigning an unsupported whole-sign rating.
 
@@ -8529,16 +8703,16 @@ Contact ZYD SIGN to discuss outdoor sign construction, electrical components and
 
 Use this checklist to confirm that an IP claim describes the actual supplied configuration and installation conditions.
 
-- • The exact rated component, enclosure or complete sign assembly is identified.
-- • The stated IP rating is tied to a model or defined configuration.
-- • LED modules, power supplies, connectors and cable joints are considered separately.
-- • The mounting orientation and equipment location are documented.
-- • Cable entries, junctions, covers and fastening points follow the specified details.
-- • Drainage and ventilation features are preserved where the design requires them.
-- • The installation environment includes rain, washing, coastal, cold and condensation conditions where relevant.
-- • Cleaning pressure, nozzle distance, chemicals and water temperature are defined when washing is expected.
-- • Supporting test, certification or manufacturer documentation is requested.
-- • The quotation describes component ratings and whole-sign construction without unsupported guarantees.
+- The exact rated component, enclosure or complete sign assembly is identified.
+- The stated IP rating is tied to a model or defined configuration.
+- LED modules, power supplies, connectors and cable joints are considered separately.
+- The mounting orientation and equipment location are documented.
+- Cable entries, junctions, covers and fastening points follow the specified details.
+- Drainage and ventilation features are preserved where the design requires them.
+- The installation environment includes rain, washing, coastal, cold and condensation conditions where relevant.
+- Cleaning pressure, nozzle distance, chemicals and water temperature are defined when washing is expected.
+- Supporting test, certification or manufacturer documentation is requested.
+- The quotation describes component ratings and whole-sign construction without unsupported guarantees.
 
 #### Frequently asked questions
 
@@ -9416,11 +9590,11 @@ Signage Insights
 
 送っていただきたい情報
 
-- • 図面またはロゴデータ
-- • サインの種類・おおよその寸法・数量
-- • 屋内か屋外か、取付面の状況
-- • 仕上げと照明のご希望
-- • 設置場所の写真と納品先の国
+- 図面またはロゴデータ
+- サインの種類・おおよその寸法・数量
+- 屋内か屋外か、取付面の状況
+- 仕上げと照明のご希望
+- 設置場所の写真と納品先の国
 
 お手元にある資料で構いません。図面、おおよその寸法、数量、仕上げや照明のご希望、設置場所の写真、納品先の国をお知らせください。
 
@@ -9819,11 +9993,11 @@ Markdown mirror: https://www.zydsign.com/ja/products/architectural-wayfinding-sy
 
 送っていただきたい情報
 
-- • 図面またはロゴデータ
-- • 種類・おおよその寸法・数量
-- • 設置場所と取付面の状況
-- • 仕上げと照明のご希望
-- • 設置場所の写真と納品先の国
+- 図面またはロゴデータ
+- 種類・おおよその寸法・数量
+- 設置場所と取付面の状況
+- 仕上げと照明のご希望
+- 設置場所の写真と納品先の国
 
 お手元にある資料で構いません。図面、おおよその寸法、数量、仕上げや照明のご希望、設置場所の写真、納品先の国をお知らせください。
 
@@ -9863,28 +10037,28 @@ Markdown mirror: https://www.zydsign.com/ja/products/architectural-wayfinding-sy
 
 ##### サインの種類
 
-- • 天吊り・突き出し・壁面パネル
-- • 自立式の案内板とマップボード
-- • 指定時の触知・点字オプション
+- 天吊り・突き出し・壁面パネル
+- 自立式の案内板とマップボード
+- 指定時の触知・点字オプション
 
 ##### パネルと仕上げ
 
-- • アルミニウムおよびアクリルのパネル構成
-- • 露出金属部分には304ステンレス鋼
-- • 指定RAL色の粉体塗装
+- アルミニウムおよびアクリルのパネル構成
+- 露出金属部分には304ステンレス鋼
+- 指定RAL色の粉体塗装
 
 ##### 取付
 
-- • 天井吊りおよび壁面ブラケット式
-- • 壁面が許す箇所では面付け
-- • 現場調査に基づく固定方法の確認
+- 天井吊りおよび壁面ブラケット式
+- 壁面が許す箇所では面付け
+- 現場調査に基づく固定方法の確認
 
 ##### 照明と耐久性
 
-- • プロジェクト仕様に合わせて選定するLEDモジュール（オプション）
-- • 点灯する場合は仕様に合わせて選定する電源
-- • 屋外用途に応じた環境等級の確認
-- • 保証期間は1年間。保証範囲と除外事項はプロジェクト見積もりで確認
+- プロジェクト仕様に合わせて選定するLEDモジュール（オプション）
+- 点灯する場合は仕様に合わせて選定する電源
+- 屋外用途に応じた環境等級の確認
+- 保証期間は1年間。保証範囲と除外事項はプロジェクト見積もりで確認
 
 ##### 工場直送の強み
 
@@ -9929,11 +10103,11 @@ Markdown mirror: https://www.zydsign.com/ja/products/custom-halo-lit-letters/ind
 
 送っていただきたい情報
 
-- • 図面またはロゴデータ
-- • 種類・おおよその寸法・数量
-- • 設置場所と取付面の状況
-- • 仕上げと照明のご希望
-- • 設置場所の写真と納品先の国
+- 図面またはロゴデータ
+- 種類・おおよその寸法・数量
+- 設置場所と取付面の状況
+- 仕上げと照明のご希望
+- 設置場所の写真と納品先の国
 
 お手元にある資料で構いません。図面、おおよその寸法、数量、仕上げや照明のご希望、設置場所の写真、納品先の国をお知らせください。
 
@@ -9973,27 +10147,27 @@ Markdown mirror: https://www.zydsign.com/ja/products/custom-halo-lit-letters/ind
 
 ##### 文字本体
 
-- • 屋外の露出文字には304ステンレス鋼
-- • 軽量な文字本体にはアルミニウム
-- • 塗装仕上げを指定する場合は塗装鋼板
+- 屋外の露出文字には304ステンレス鋼
+- 軽量な文字本体にはアルミニウム
+- 塗装仕上げを指定する場合は塗装鋼板
 
 ##### 仕上げの方向性
 
-- • ヘアラインまたは鏡面のステンレス表面
-- • 指定RAL色の粉体塗装
-- • ハローの広がりを調整するための見返し（リターン）深さ
+- ヘアラインまたは鏡面のステンレス表面
+- 指定RAL色の粉体塗装
+- ハローの広がりを調整するための見返し（リターン）深さ
 
 ##### 照明と取付
 
-- • プロジェクト仕様に合わせて選定するLEDモジュール
-- • プロジェクト仕様に合わせて選定する電源
-- • 壁面調査に基づく浮かせ寸法とブラケット配置の確認
+- プロジェクト仕様に合わせて選定するLEDモジュール
+- プロジェクト仕様に合わせて選定する電源
+- 壁面調査に基づく浮かせ寸法とブラケット配置の確認
 
 ##### 耐久性
 
-- • 屋外用途に応じた環境等級の確認
-- • 保証期間は1年間。保証範囲と除外事項はプロジェクト見積もりで確認
-- • 製作前に合意する配線経路と保守アクセス
+- 屋外用途に応じた環境等級の確認
+- 保証期間は1年間。保証範囲と除外事項はプロジェクト見積もりで確認
+- 製作前に合意する配線経路と保守アクセス
 
 ##### 工場直送の強み
 
@@ -10038,11 +10212,11 @@ Markdown mirror: https://www.zydsign.com/ja/products/outdoor-pylon-monument-sign
 
 送っていただきたい情報
 
-- • 図面またはロゴデータ
-- • 種類・おおよその寸法・数量
-- • 設置場所と取付面の状況
-- • 仕上げと照明のご希望
-- • 設置場所の写真と納品先の国
+- 図面またはロゴデータ
+- 種類・おおよその寸法・数量
+- 設置場所と取付面の状況
+- 仕上げと照明のご希望
+- 設置場所の写真と納品先の国
 
 お手元にある資料で構いません。図面、おおよその寸法、数量、仕上げや照明のご希望、設置場所の写真、納品先の国をお知らせください。
 
@@ -10082,29 +10256,29 @@ Markdown mirror: https://www.zydsign.com/ja/products/outdoor-pylon-monument-sign
 
 ##### 素材の方向性
 
-- • 塗装構造には指定の塗装システムを施した溶融亜鉛めっき鋼板
-- • ステンレスの外観が必要な場合は201または304ステンレス鋼
-- • 軽量な構造部にはアルミニウム板
+- 塗装構造には指定の塗装システムを施した溶融亜鉛めっき鋼板
+- ステンレスの外観が必要な場合は201または304ステンレス鋼
+- 軽量な構造部にはアルミニウム板
 
 ##### 仕上げの方向性
 
-- • 指定RAL色の粉体塗装
-- • ブランドの仕上げ要件に応じた自動車グレード塗装
-- • 露出金属の選択としてヘアラインまたは鏡面のステンレス
+- 指定RAL色の粉体塗装
+- ブランドの仕上げ要件に応じた自動車グレード塗装
+- 露出金属の選択としてヘアラインまたは鏡面のステンレス
 
 ##### 構造と取付
 
-- • 大型面には内部補強フレーム
-- • L字またはU字の取付ブラケット
-- • 敷地が許す箇所では面付け施工
-- • 背の高い構造物にはプロジェクト固有の風荷重検討
+- 大型面には内部補強フレーム
+- L字またはU字の取付ブラケット
+- 敷地が許す箇所では面付け施工
+- 背の高い構造物にはプロジェクト固有の風荷重検討
 
 ##### 照明と耐久性
 
-- • プロジェクト仕様に合わせて選定するLEDモジュール
-- • プロジェクト仕様に合わせて選定する電源
-- • 屋外用途に応じた環境等級の確認
-- • 保証期間は1年間。保証範囲と除外事項はプロジェクト見積もりで確認
+- プロジェクト仕様に合わせて選定するLEDモジュール
+- プロジェクト仕様に合わせて選定する電源
+- 屋外用途に応じた環境等級の確認
+- 保証期間は1年間。保証範囲と除外事項はプロジェクト見積もりで確認
 
 ##### 工場直送の強み
 

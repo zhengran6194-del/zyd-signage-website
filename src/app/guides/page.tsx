@@ -4,11 +4,12 @@ import { siteConfig } from '@/config/site';
 
 const path = '/guides';
 const title = 'Signage Guides';
-const description = 'Practical buying and technical guides for custom signage projects, covering channel letter costs, illumination styles, sign selection, and outdoor materials.';
+const description = 'Buying and planning guides for building wayfinding systems, illuminated signage, materials and commercial sign procurement.';
 
 const guides = [
 {"tag":"Procurement","title":"Pylon Sign Cost: What Affects Your Project Quote?","desc":"Understand custom pylon sign cost: dimensions, single or double faces, tenant panels, lighting, steel framing, wooden crating and freight. Get a project quote.","href":"/guides/pylon-sign-cost"},
 {"tag":"Procurement","title":"Ordering Channel Letters from a Manufacturer: What to Send","desc":"Get free channel letter design support from Aaron. Prepare artwork, dimensions, lighting, mounting details and destination to confirm drawings, timing and freight.","href":"/guides/ordering-channel-letters-from-manufacturer"},
+{"tag":"Architectural Wayfinding","title":"Wayfinding Signage Levels: Level 1, 2 & 3 Explained","desc":"Learn how site identification, route directions and room signs connect into one clear visitor journey through an office, hospital, school, campus or industrial park.","href":"/guides/wayfinding-signage-levels"},
   {"tag":"Pylon Sign Planning","title":"What Site Information Do You Need Before Ordering a Pylon Sign?","desc":"Prepare a pylon sign site brief with photos, dimensions, utilities, electrical supply, foundation interfaces and delivery access before production.","href":"/guides/pylon-sign-site-information-checklist"},
   {
     tag: 'Buying Guide',
@@ -185,7 +186,7 @@ export default function GuidesPage() {
           <div className="eyebrow text-blue-400 font-black tracking-[0.3em] uppercase mb-4 text-xs">Knowledge Base</div>
           <h1 className="uppercase tracking-tighter mb-6">Signage Guides</h1>
           <p className="text-lg text-slate-300 max-w-2xl mx-auto font-medium">
-            Practical buying and technical guides for custom signage projects.
+            Practical buying and planning guides for wayfinding systems, custom signs and commercial projects.
           </p>
         </div>
       </section>
@@ -195,7 +196,7 @@ export default function GuidesPage() {
           <div>
             <h2 className="text-2xl font-black uppercase tracking-tight text-slate-900 mb-4">What these guides cover</h2>
             <p className="text-slate-600 leading-relaxed font-medium">
-              Twenty-three guides cover the decisions that sit in front of a signage order: how the illuminated routes compare, how raceway and individually mounted channel letters differ, what shapes a channel letter quotation, how material and finish routes are chosen, how a complete site package is procured stage by stage, how a low-bid tender fails at acceptance, how imported signage clears customs and hands over to an installer, how tactile and Braille signage is planned and how custom Braille door signs are specified, and how a mall, an industrial park or a hotel becomes one coordinated signage system.
+              Our guides cover the decisions that sit in front of a signage order: how the illuminated routes compare, how wayfinding levels connect a visitor journey, how raceway and individually mounted channel letters differ, what shapes a quotation, how materials and finishes are chosen, how a complete site package is procured, and how projects are planned for accessibility, healthcare, campuses, industrial parks and hotels.
             </p>
           </div>
           <div>

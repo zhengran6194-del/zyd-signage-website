@@ -84,9 +84,10 @@ export default function WayfindingSystemPage() {
             <div className="bg-white rounded-[2.5rem] border border-slate-200 p-10 shadow-sm flex flex-col">
               <h2 className="text-2xl lg:text-3xl font-black uppercase tracking-tight text-slate-900 mb-5">How is a wayfinding system planned for a large site?</h2>
               <p className="text-slate-600 leading-relaxed mb-6">
-                Planning starts with the visitor journey: arrival, parking, first decision point, corridors, and final destination. Each decision point defines what the sign must say and how far ahead it must be read, which then sets the panel sizes and mounting. Our selection guide explains how to match sign formats to the site and viewer.
+                Planning starts with the visitor journey: arrival, parking, first decision point, corridors, and final destination. Each decision point defines what the sign must say and how far ahead it must be read, which then sets the panel sizes and mounting. Use the wayfinding hierarchy guide to map each level, then the sign-selection guide to match formats to the site and viewer.
               </p>
-              <div className="mt-auto">
+              <div className="mt-auto flex flex-col items-start gap-3">
+                <Link href="/guides/wayfinding-signage-levels" className="text-sm font-black uppercase tracking-widest text-blue-700 hover:text-blue-900">Review the three wayfinding levels</Link>
                 <Link href="/guides/how-to-choose-the-right-sign-for-your-business" className="text-sm font-black uppercase tracking-widest text-blue-700 hover:text-blue-900">Read the sign-selection guide</Link>
               </div>
             </div>
