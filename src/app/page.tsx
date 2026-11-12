@@ -225,22 +225,22 @@ export default function Home() {
 
           <div className="mx-auto flex min-h-[680px] w-[90%] max-w-[1600px] flex-col justify-between py-10 lg:min-h-[calc(100svh-132px)] lg:py-4">
             <div className="max-w-[900px]">
-              <p className="mb-5 flex items-center gap-5 text-xs font-black uppercase tracking-[0.25em] text-white/90 sm:text-sm sm:tracking-[0.3em]">
+              <p className="mb-6 flex items-center gap-5 text-sm font-black uppercase tracking-[0.22em] text-white/95 sm:text-base sm:tracking-[0.28em]">
                 <span className="inline-block h-px w-12 bg-white/80" aria-hidden="true" />
                 From Our Factory. To Your Project.
               </p>
-              <h1 id="home-project-title" className="mb-4 max-w-[1000px] text-5xl font-black leading-[0.98] tracking-[-0.045em] sm:text-6xl lg:text-5xl xl:text-[4.5rem]">
+              <h1 id="home-project-title" className="mb-6 max-w-[1100px] text-5xl font-black leading-[0.98] tracking-[-0.045em] sm:text-6xl lg:text-6xl xl:text-[5.5rem]">
                 Your Signage.<br />
                 <span className="text-sky-300">Our Factory.</span><br />
                 Built for Your Project.
               </h1>
-              <p className="mb-6 max-w-3xl text-lg leading-relaxed text-slate-200 sm:text-xl xl:text-2xl">
+              <p className="mb-8 max-w-4xl text-lg leading-relaxed text-slate-100 sm:text-xl xl:text-[1.75rem]">
                 Bespoke wayfinding and architectural signage. Manufactured in Dalian. Delivered worldwide.
               </p>
               <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
                 <Link
                   href="/contact"
-                  className="group inline-flex min-h-16 items-center justify-center gap-4 rounded-sm bg-[#f0e8dc] px-8 py-4 text-base font-bold text-slate-950 shadow-[0_12px_40px_rgba(0,0,0,0.24)] transition duration-300 hover:-translate-y-0.5 hover:bg-white hover:shadow-[0_18px_48px_rgba(0,0,0,0.32)] sm:min-w-[290px]"
+                  className="group inline-flex min-h-[72px] items-center justify-center gap-4 rounded-sm bg-[#f0e8dc] px-10 py-5 text-lg font-bold text-slate-950 shadow-[0_12px_40px_rgba(0,0,0,0.24)] transition duration-300 hover:-translate-y-0.5 hover:bg-white hover:shadow-[0_18px_48px_rgba(0,0,0,0.32)] sm:min-w-[320px]"
                   style={{ color: '#0f172a' }}
                 >
                   Start Your Project
@@ -250,14 +250,14 @@ export default function Home() {
                   href={virtualFactoryTourUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group inline-flex min-h-14 items-center gap-3 self-start px-2 text-sm font-bold text-white transition-colors hover:text-sky-200 sm:ml-4"
+                  className="group inline-flex min-h-14 items-center gap-3 self-start px-2 text-base font-bold text-white transition-colors hover:text-sky-200 sm:ml-4"
                 >
                   <span className="border-b border-white/70 pb-1 group-hover:border-sky-200">Inside Our Factory</span>
                   <span aria-hidden="true" className="text-lg transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">↗</span>
                 </a>
               </div>
-              <p className="mt-5 text-sm leading-relaxed text-slate-100 sm:text-base">Free design &amp; mockup support · First reply within 8 hours by WhatsApp or email.</p>
-              <p className="mt-2 text-xs font-semibold tracking-wide text-white/90 sm:text-sm">MOQ 1 set · Typical production 7–15 days · 1-year warranty</p>
+              <p className="mt-6 text-base leading-relaxed text-white sm:text-lg">Free design &amp; mockup support · First reply within 8 hours by WhatsApp or email.</p>
+              <p className="mt-3 text-sm font-semibold tracking-wide text-white sm:text-base">MOQ 1 set · Typical production 7–15 days · 1-year warranty</p>
             </div>
 
             <div className="mt-12 flex flex-col gap-5 border-t border-white/25 pt-6 sm:flex-row sm:items-end sm:justify-between sm:pt-8 lg:mt-14">
