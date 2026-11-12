@@ -101,6 +101,12 @@ const guides = [
     href: '/guides/custom-braille-door-signs',
   },
   {
+    tag: 'Wayfinding Systems',
+    title: 'Primary, Secondary and Tertiary Wayfinding: How the Three Sign Levels Work',
+    desc: 'How primary, secondary and tertiary wayfinding levels differ, where signs belong at decision points, and how the same framework applies to offices, hospitals, schools and industrial parks.',
+    href: '/guides/wayfinding-signage-levels',
+  },
+  {
     tag: 'Commercial Complex Signage',
     title: 'Mall Wayfinding Signage for Commercial Complexes',
     desc: 'A buyer-focused route for shopping malls and commercial complexes that need exterior identification, parking and arrival guidance, directories, tenant branding, and functional signs to work as one system.',
