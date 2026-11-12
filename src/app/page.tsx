@@ -207,29 +207,69 @@ export default function Home() {
     <>
       <JsonLd data={englishHomeJsonLd} />
       <main id="main">
-        {/* Lead with a real project; factory imagery remains in the capability section. */}
-        <section className="bg-slate-950 text-white py-10 lg:py-16" aria-labelledby="home-project-title">
-          <div className="w-[90%] max-w-[1440px] mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-8 lg:gap-12 items-center">
-              <div>
-                <p className="text-xs font-black tracking-[0.18em] uppercase text-blue-300 mb-4">Custom channel letters · Pylon signs · Architectural signage</p>
-                <h1 id="home-project-title" className="text-3xl sm:text-4xl xl:text-5xl font-black leading-tight tracking-tight mb-5">Custom Architectural &amp; Illuminated Signs for Global Projects</h1>
-                <p className="text-base lg:text-lg text-slate-300 leading-relaxed mb-7 max-w-xl">Custom illuminated letters, pylon signs and coordinated signage for contractors, architects and commercial brands. Designed and manufactured by ZYD in Dalian, China.</p>
-                <div className="flex flex-col sm:flex-row sm:flex-wrap gap-3">
-                  <Link href="/contact" className="button button-green-base px-6 py-4 rounded-xl text-sm font-black text-center">Get a Project Quote</Link>
-                  <Link href="/projects" className="inline-flex justify-center items-center border border-white/30 px-6 py-4 rounded-xl text-sm font-bold hover:bg-white/10">View Real Projects</Link>
-                </div>
-                <p className="text-sm text-slate-300 leading-relaxed mt-4">Free design &amp; mockup support · First reply within 8 hours by WhatsApp or email.</p>
+        {/* Factory-led, full-bleed hero: show the production base and give buyers two clear next steps. */}
+        <section className="relative isolate flex min-h-[680px] items-center overflow-hidden bg-slate-950 text-white lg:min-h-[calc(100svh-132px)]" aria-labelledby="home-project-title">
+          <div className="absolute inset-0 -z-20">
+            <Image
+              src="/assets/images/home-factory-hero.webp"
+              alt="Aerial view of ZYD Signage's manufacturing base in Dalian, China"
+              fill
+              priority
+              fetchPriority="high"
+              sizes="100vw"
+              className="object-cover object-center"
+            />
+          </div>
+          <div className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(2,6,23,0.96)_0%,rgba(2,6,23,0.82)_34%,rgba(2,6,23,0.48)_66%,rgba(2,6,23,0.2)_100%)]" />
+          <div className="absolute inset-0 -z-10 bg-[linear-gradient(0deg,rgba(2,6,23,0.72)_0%,transparent_35%)]" />
+
+          <div className="mx-auto flex min-h-[680px] w-[90%] max-w-[1600px] flex-col justify-between py-10 lg:min-h-[calc(100svh-132px)] lg:py-4">
+            <div className="max-w-[900px]">
+              <p className="mb-5 flex items-center gap-5 text-[10px] font-black uppercase tracking-[0.35em] text-white/90 sm:text-xs">
+                <span className="inline-block h-px w-12 bg-white/80" aria-hidden="true" />
+                From Our Factory. To Your Project.
+              </p>
+              <h1 id="home-project-title" className="mb-4 max-w-[900px] text-5xl font-black leading-[0.98] tracking-[-0.045em] sm:text-6xl lg:text-4xl xl:text-[3.75rem]">
+                Your Signage.<br />
+                <span className="text-sky-300">Our Factory.</span><br />
+                Built for Your Project.
+              </h1>
+              <p className="mb-6 max-w-2xl text-base leading-relaxed text-slate-200 sm:text-lg lg:text-xl">
+                Bespoke wayfinding and architectural signage. Manufactured in Dalian. Delivered worldwide.
+              </p>
+              <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
+                <Link
+                  href="/contact"
+                  className="group inline-flex min-h-16 items-center justify-center gap-4 rounded-sm bg-[#f0e8dc] px-8 py-4 text-base font-bold text-slate-950 shadow-[0_12px_40px_rgba(0,0,0,0.24)] transition duration-300 hover:-translate-y-0.5 hover:bg-white hover:shadow-[0_18px_48px_rgba(0,0,0,0.32)] sm:min-w-[290px]"
+                  style={{ color: '#0f172a' }}
+                >
+                  Start Your Project
+                  <span aria-hidden="true" className="text-xl transition-transform duration-300 group-hover:translate-x-1">→</span>
+                </Link>
+                <a
+                  href={virtualFactoryTourUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group inline-flex min-h-14 items-center gap-3 self-start px-2 text-sm font-bold text-white transition-colors hover:text-sky-200 sm:ml-4"
+                >
+                  <span className="border-b border-white/70 pb-1 group-hover:border-sky-200">Inside Our Factory</span>
+                  <span aria-hidden="true" className="text-lg transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">↗</span>
+                </a>
               </div>
-              <figure className="min-w-0 overflow-hidden rounded-2xl border border-white/15 bg-slate-900">
-                <div className="relative aspect-[4/3]">
-                  <Image src="/assets/images/the-setai-sea-of-galilee.jpg" alt="The Setai Sea of Galilee hospitality project overview with resort buildings, palms and landscaped pathways" fill loading="eager" fetchPriority="high" sizes="(min-width: 1600px) 660px, (min-width: 1024px) 43vw, 90vw" className="object-cover" />
-                </div>
-                <figcaption className="px-5 py-4 text-sm text-slate-300 leading-relaxed">The Setai Sea of Galilee, Israel — hospitality signage and wayfinding. <Link href="/projects#the-setai-sea-of-galilee" className="text-blue-300 underline underline-offset-4">View in our case portfolio →</Link></figcaption>
-              </figure>
+              <p className="mt-5 text-xs leading-relaxed text-slate-200 sm:text-sm">Free design &amp; mockup support · First reply within 8 hours by WhatsApp or email.</p>
+              <p className="mt-2 text-[11px] font-semibold tracking-wide text-white/85 sm:text-xs">MOQ 1 set · Typical production 7–15 days · 1-year warranty</p>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 border-t border-white/15 pt-6 mt-8 text-xs sm:text-sm font-bold text-slate-300">
-              <p>MOQ: 1 set</p><p>Free design support</p><p>Production: 7–15 days</p><p>EXW · FOB · CIF · DDP</p>
+
+            <div className="mt-12 flex flex-col gap-5 border-t border-white/25 pt-6 sm:flex-row sm:items-end sm:justify-between sm:pt-8 lg:mt-14">
+              <p className="text-[9px] font-black uppercase tracking-[0.2em] text-white/90 sm:text-[10px] sm:tracking-[0.3em]">
+                Custom Engineered <span className="mx-2 text-sky-300">/</span> Factory Direct <span className="mx-2 text-sky-300">/</span> Global Delivery
+              </p>
+              <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
+                <p className="text-[9px] font-bold uppercase tracking-[0.2em] text-white/85 sm:text-[10px] sm:tracking-[0.25em]">Dalian, China <span className="mx-2 text-sky-300">/</span> Our Manufacturing Base</p>
+                <Link href="/projects" className="inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.16em] text-white underline decoration-white/50 underline-offset-4 transition hover:text-sky-200 hover:decoration-sky-200">
+                  Browse Real Projects <span aria-hidden="true">↗</span>
+                </Link>
+              </div>
             </div>
           </div>
         </section>
