@@ -145,6 +145,7 @@ const guide: GuideArticleData = {
     { name: 'ZYD Signage — Low-Bid Signage Tenders: Why the Cheapest Quote Fails at Acceptance', url: '/guides/signage-procurement-low-bid-pitfalls', note: 'Internal reference for where a signage price gap hides and which technical requirements belong in the tender.' },
     { name: 'ZYD Signage — How Custom Signage Is Made', url: '/guides/custom-signage-manufacturing-process', note: 'Internal reference for the production stages a site package passes through.' },
     { name: 'ZYD Signage — How to Choose Materials for Illuminated Signage', url: '/guides/signage-material-selection-guide', note: 'Internal reference for material, finish and light-source routes.' },
+    { name: 'ZYD Signage — Primary, Secondary and Tertiary Wayfinding', url: '/guides/wayfinding-signage-levels', note: 'Internal reference for dividing a site package into the three wayfinding levels and their decision points.' },
     { name: 'International Sign Association (ISA) — Glossary of Sign Terms and Definitions', url: 'https://signs.org/resources-training/signs101/glossary-of-sign-terms-and-definitions/', note: 'Public terminology reference for sign and lighting discussions.' },
     { name: 'U.S. Access Board — Chapter 7: Signs', url: 'https://www.access-board.gov/ada/guides/chapter-7-signs/', note: 'Official signs guidance; the applicable accessibility framework is confirmed per project.' },
   ],

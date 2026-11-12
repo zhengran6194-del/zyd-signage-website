@@ -47,6 +47,7 @@ const guide: GuideArticleData = {
     { name: 'U.S. Access Board — Americans with Disabilities Act (ADA)', url: 'https://www.access-board.gov/ada/', note: 'Official accessibility context; confirm the applicable local framework.' },
     { name: 'U.S. Access Board — Chapter 7: Signs', url: 'https://www.access-board.gov/ada/guides/chapter-7-signs/', note: 'Official signs guidance; the authority having jurisdiction remains decisive.' },
     { name: 'International Molybdenum Association — Which Stainless Steel?', url: 'https://www.imoa.info/download_files/stainless-steel/folder_which_stainless_steel_EN.pdf', note: 'Public material-selection background for stainless exposure discussions.' },
+    { name: 'ZYD Signage — Primary, Secondary and Tertiary Wayfinding', url: '/guides/wayfinding-signage-levels', note: 'Internal reference for where wayfinding sits in the sign-type choice and how its levels divide a journey.' },
   ],
   relatedLinks: [
     { href: '/products/outdoor-pylon-monument-sign', label: 'See outdoor pylon signs' },

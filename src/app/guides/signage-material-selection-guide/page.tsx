@@ -114,6 +114,7 @@ const guide: GuideArticleData = {
     { name: 'ZYD Signage — 304 Stainless Steel vs Galvanized Steel Guide', url: '/guides/304-stainless-steel-vs-galvanized-steel-outdoor-signs', note: 'Internal material-selection reference for outdoor signage decisions.' },
     { name: 'ZYD Signage — Front-Lit vs Halo-Lit Channel Letters', url: '/guides/front-lit-vs-halo-lit-channel-letters', note: 'Internal reference for illumination effect, mounting, and service questions.' },
     { name: 'ZYD Signage — How Custom Signage Is Made', url: '/guides/custom-signage-manufacturing-process', note: 'Internal reference for drawings, samples, fabrication, inspection, packing, and delivery handoffs.' },
+    { name: 'ZYD Signage — Primary, Secondary and Tertiary Wayfinding', url: '/guides/wayfinding-signage-levels', note: 'Internal reference for how wayfinding levels divide a route and which decision points each level serves.' },
   ],
   relatedLinks: [
     { href: '/products/custom-channel-letters', label: 'Review front-lit channel letters' },
