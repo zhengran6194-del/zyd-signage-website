@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { buildPageMetadata, ogImages } from "@/config/site";
 import ProductJsonLd from "@/components/ProductJsonLd";
 
-const title = "Custom Acrylic Desk Signs & Counter Displays";
-const description = "Custom acrylic desk signs and counter-top brand displays, fabricated factory-direct for global B2B projects.";
+const title = "Custom Acrylic Desk Signs for Reception & Counters";
+const description = "Factory-direct acrylic desk signs and countertop logo displays for reception desks, hotels and showrooms. MOQ 1 set; request a project quote.";
 const path = "/products/acrylic-desk-sign";
 
 // Dimensions live in the ogImages registry so the asset is declared once, in the
