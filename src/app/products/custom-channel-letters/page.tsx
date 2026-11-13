@@ -84,7 +84,7 @@ export default function FrontLitChannelLettersPage() {
                 Custom <span className="text-blue-500 italic">Front-Lit</span> <br/>Channel Letters
               </h1>
               <p className="text-lg text-slate-300 mb-8 max-w-xl leading-relaxed font-medium">
-                Letters whose face is the light source, fabricated in acrylic and sheet metal with concealed LED modules and a project-specific finish.
+                ZYD is a custom channel letter sign manufacturer in Dalian, China. We fabricate front-lit LED channel letters with acrylic faces and formed metal returns to each project brief.
               </p>
               <div className="flex flex-col sm:flex-row sm:flex-wrap gap-4">
                 <Link

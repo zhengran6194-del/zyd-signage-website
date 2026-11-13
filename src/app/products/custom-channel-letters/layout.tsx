@@ -5,9 +5,9 @@ import ProductJsonLd from "@/components/ProductJsonLd";
 // No `languages` here on purpose: this product has no Japanese page, so an
 // alternate pointing at /ja/products/custom-channel-letters would advertise a
 // URL that does not exist. The pair is added when the Japanese page is built.
-const title = "Custom Front-Lit Channel Letters | Acrylic & Metal";
+const title = "Custom Channel Letter Sign Manufacturer | Front-Lit LED";
 const description =
-  "Custom front-lit channel letters built factory-direct, with illuminated acrylic faces, formed metal returns and concealed LED modules confirmed per project.";
+  "ZYD manufactures custom front-lit channel letter signs for contractors, architects and brands. Free design, acrylic faces, formed metal returns and project-specific LED layouts.";
 
 export const metadata: Metadata = buildPageMetadata({
   title,
