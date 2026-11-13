@@ -1840,6 +1840,10 @@ Architectural wayfinding is the system of signs, maps, and markers that helps pe
 
 Accessibility requirements vary by country, building type, and the authority having jurisdiction, so they are confirmed for each project before production. We can build tactile and Braille options, mounting heights, and contrast into the schedule when the project brief specifies them. Our published guidance is a reference and does not replace a local code review.
 
+##### What affects the cost to replace a lobby directory board?
+
+The replacement cost depends on whether the existing frame and fixings can be reused, the board dimensions, the number of tenant listings, map or directory artwork updates, panel materials and finish, installation constraints, and delivery destination. Send overall measurements, clear photos of the board and mounting, the updated tenant list or artwork, quantity, and ship-to location. ZYD can review whether a replacement panel or a complete new directory is the better fit and prepare a project-specific quotation.
+
 ##### What is the lead time for a wayfinding system?
 
 Typical production lead time is 7–15 days depending on the number of sign types, quantity, and artwork. Phased rollouts are scheduled against your construction program.
