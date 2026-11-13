@@ -5,6 +5,8 @@ export const productInterests = {
   letters: 'Illuminated channel letters',
   halo: 'Halo-lit letters',
   pylon: 'Pylon / monument sign',
+  wayfinding: 'Architectural wayfinding and directory signs',
+  medical: 'Healthcare and specialty signage',
   landscape: 'Landscape & furniture',
   neon: 'LED neon signs',
   metal: 'Metal & acrylic signs',

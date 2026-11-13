@@ -609,7 +609,7 @@ Submit the form for an email reply, or message us directly on WhatsApp. Here is 
 
 The 8-hour commitment is for our first reply. A completed design or quotation may require additional information and review.
 
-Product of interest Other signage / help me choose Illuminated channel letters Halo-lit letters Pylon / monument sign Landscape & furniture LED neon signs Metal & acrylic signs Custom planter box
+Product of interest Other signage / help me choose Illuminated channel letters Halo-lit letters Pylon / monument sign Architectural wayfinding and directory signs Healthcare and specialty signage Landscape & furniture LED neon signs Metal & acrylic signs Custom planter box
 
 The product is included in your inquiry. You can change it here.
 
@@ -1750,7 +1750,7 @@ Markdown mirror: https://www.zydsign.com/products/architectural-wayfinding-syste
 
 Directional signage systems for airports, hospitals, campuses, and mixed-use developments.
 
-[GET A QUOTE](https://www.zydsign.com/contact) Check Feasibility
+[GET A QUOTE](https://www.zydsign.com/contact?product=wayfinding) Check Feasibility
 
 What to send for an architectural wayfinding system
 
@@ -1783,7 +1783,7 @@ Interior panels are frequently aluminum or acrylic with printed or applied graph
 
 A comparable quotation needs the site plan or floor plans, the list of sign types and quantities, the mounting conditions, the artwork or brand standards, and any accessibility requirement the project specifies. Sending those items together lets the schedule and scope be reviewed in one pass.
 
-[Send your project brief](https://www.zydsign.com/contact) [Plan accessible signage](https://www.zydsign.com/guides/ada-braille-signage-planning-guide)
+[Send your project brief](https://www.zydsign.com/contact?product=wayfinding) [Plan accessible signage](https://www.zydsign.com/guides/ada-braille-signage-planning-guide)
 
 #### How does wayfinding coordinate with entry signage?
 
@@ -1850,9 +1850,9 @@ Typical production lead time is 7–15 days depending on the number of sign type
 
 #### Planning a wayfinding program?
 
-Send the site or floor plans, sign types, quantities, and mounting conditions for a project-specific review.
+For a directory-board replacement, send overall measurements, photos of the board and fixings, the updated tenant list or artwork, and the delivery destination. For a full system, include site or floor plans, sign types, quantities, and mounting conditions.
 
-[DISCUSS YOUR PROJECT](https://www.zydsign.com/contact) [All Products](https://www.zydsign.com/products)
+[DISCUSS YOUR PROJECT](https://www.zydsign.com/contact?product=wayfinding) [All Products](https://www.zydsign.com/products)
 
 Related case study: [Water Fashion Plaza, Dalian](https://www.zydsign.com/case-studies/dalian-water-plaza-wayfinding-signage) — the full wayfinding and architectural signage system delivered across a shopping centre.
 
@@ -2666,9 +2666,9 @@ Related case study: [Hengli Industrial Park](https://www.zydsign.com/case-studie
 Canonical page: https://www.zydsign.com/products/medical-care-signage
 Markdown mirror: https://www.zydsign.com/products/medical-care-signage/index.md
 
-Custom healthcare signage for hospitals and clinics, including wayfinding, room identification, department directories, and coordinated sign systems.
+ZYD manufactures healthcare and specialty signage for hospitals, clinics, and project teams, including wayfinding, room identification, department directories, and coordinated sign systems.
 
-[GET A QUOTE](https://www.zydsign.com/contact) Check Feasibility
+[GET A QUOTE](https://www.zydsign.com/contact?product=medical) Check Feasibility
 
 What to send for a medical care signage system
 
@@ -2701,7 +2701,7 @@ Panels are commonly aluminum or acrylic with printed or applied graphics, finish
 
 Send the floor plans or department list, the sign types and quantities, the mounting surfaces, any accessibility requirement the project specifies, and the brand or color standard. Confirming those items at the start keeps the schedule accurate and avoids rework during installation.
 
-[Send your project brief](https://www.zydsign.com/contact) [Plan accessible signage](https://www.zydsign.com/guides/ada-braille-signage-planning-guide)
+[Send your project brief](https://www.zydsign.com/contact?product=medical) [Plan accessible signage](https://www.zydsign.com/guides/ada-braille-signage-planning-guide)
 
 #### How does medical signage coordinate with exterior signage?
 
@@ -2757,6 +2757,10 @@ Healthcare signage has to work for people who are stressed, moving quickly, or u
 
 Panels, edges, and graphics can be specified with surface finishes suited to routine cleaning, and mounting methods can be chosen to reduce ledges where dirt collects. The exact requirement depends on the department and the facility protocol, so the cleaning method and environment are confirmed with the project brief before production.
 
+##### What should I send to a healthcare signage manufacturer for a quote?
+
+Send a floor plan or department list, the sign types and approximate quantities, artwork or brand standards, mounting surfaces, any accessibility requirements specified for the project, and the delivery destination. Photos and dimensions can help identify missing information; open items can be confirmed before a design or quotation is finalized.
+
 ##### What is the lead time for a medical signage package?
 
 Typical production lead time is 7–15 days depending on the number of sign types, quantity, and artwork. Hospital rollouts are phased by floor or department against your opening schedule.
@@ -2765,7 +2769,7 @@ Typical production lead time is 7–15 days depending on the number of sign type
 
 Send the department list, sign types, mounting surfaces, and any accessibility requirement for a project-specific review.
 
-[DISCUSS YOUR PROJECT](https://www.zydsign.com/contact) [All Products](https://www.zydsign.com/products)
+[DISCUSS YOUR PROJECT](https://www.zydsign.com/contact?product=medical) [All Products](https://www.zydsign.com/products)
 
 Related case study: [Water Fashion Plaza, Dalian](https://www.zydsign.com/case-studies/dalian-water-plaza-wayfinding-signage) — interior wayfinding layers, directories and functional identification planned as one system.
 
@@ -2776,7 +2780,7 @@ Markdown mirror: https://www.zydsign.com/products/metal-acrylic-logo-sign/index.
 
 ZYD manufactures custom acrylic and metal logo panels in Dalian, China for reception walls, boardrooms, storefronts, and commercial interiors, with project-specific finishes and mounting details.
 
-[GET A QUOTE](https://www.zydsign.com/contact) Check Feasibility
+[GET A QUOTE](https://www.zydsign.com/contact?product=metal) Check Feasibility
 
 What to send for a metal and acrylic logo sign
 
@@ -2809,7 +2813,7 @@ Interior marks often use brushed or mirror stainless, anodized-look aluminum, or
 
 Vector artwork is the reliable starting point because the mark is cut and layered rather than printed, and very fine strokes may need adjustment for the material. Include the intended size, the wall surface, and any brand color references. The review confirms layer build-up and mounting before production.
 
-[Send your project brief](https://www.zydsign.com/contact)
+[Send your project brief](https://www.zydsign.com/contact?product=metal)
 
 #### Can logo signs be matched across multiple locations?
 
@@ -2856,6 +2860,20 @@ MOQ: 1 set
 
 Lead Time: 7–15 days
 
+Custom acrylic and metal logo panels
+
+#### Get a project-specific quote
+
+Send the logo artwork, approximate finished size, quantity, preferred metal and acrylic finish, mounting-surface photo, and delivery city or postcode. Our designer can recommend dimensions and prepare a free design mockup for review.
+
+We reply by WhatsApp or email within 8 hours to confirm your requirements, identify missing information, or outline the next step toward a design and quotation.
+
+- MOQ 1 set
+- Typical production 7–15 days after design and specification confirmation
+- Warranty 1 year
+
+[REQUEST A LOGO PANEL QUOTE](https://www.zydsign.com/contact?product=metal)
+
 #### Frequently asked questions
 
 ##### What is the difference between a metal logo sign and a channel letter sign?
@@ -2878,7 +2896,7 @@ Typical production lead time is 7–15 days depending on artwork complexity, siz
 
 Send the vector artwork, intended size, wall surface, finish direction, and quantity for a project-specific review.
 
-[DISCUSS YOUR PROJECT](https://www.zydsign.com/contact) [All Products](https://www.zydsign.com/products)
+[DISCUSS YOUR PROJECT](https://www.zydsign.com/contact?product=metal) [All Products](https://www.zydsign.com/products)
 
 Related case study: [Water Fashion Plaza, Dalian](https://www.zydsign.com/case-studies/dalian-water-plaza-wayfinding-signage) — layered metal and acrylic branding on the facade, brand wall and information desk.
 
@@ -8256,9 +8274,9 @@ Send the region, installation environment, sign type, finish, and project requir
 Canonical page: https://www.zydsign.com/guides/trimless-vs-trim-cap-channel-letters
 Markdown mirror: https://www.zydsign.com/guides/trimless-vs-trim-cap-channel-letters/index.md
 
-How trimless and trim cap channel letters differ in face attachment, edge appearance, logo detail, servicing and outdoor specification.
+What trim cap means for signs, how trim cap and trimless channel letters differ, and what to confirm about face attachment, finish and service access.
 
-Guide • Updated Oct 19, 2026 • By Aaron, ZYD Signage
+Guide • Updated Nov 13, 2026 • By Aaron, ZYD Signage
 
 Trimless channel letters have no visible trim cap around the illuminated face. Trim cap channel letters use a visible perimeter trim to retain the face. Both can produce effective illuminated signs, but they differ in edge appearance, face attachment and servicing arrangements.
 
@@ -8403,6 +8421,10 @@ Both constructions can work. The quotation should describe how the face is held,
 
 #### Frequently asked questions
 
+##### What is trim cap for signs?
+
+For channel letter signs, a trim cap is a visible perimeter strip that retains the translucent face against the letter body and creates an outlined edge. Confirm the trim material, width, color, fastening method, and face-removal procedure in the product drawing because construction varies by manufacturer.
+
 ##### What is the main difference between trimless and trim cap channel letters?
 
 Trimless letters have no visible retaining trim cap around the face. Trim cap letters have a visible perimeter trim. The face attachment and servicing method depend on the specific construction.
@@ -8433,7 +8455,7 @@ These public references support terminology, accessibility context, or material-
 
 1. International Sign Association (ISA) — Glossary of Sign Terms and Definitions Public terminology reference for sign construction and lighting discussions.
 
-[See custom front-lit channel letters](https://www.zydsign.com/products/custom-channel-letters) [See custom halo-lit letters](https://www.zydsign.com/products/custom-halo-lit-letters) [Compare front-lit and halo-lit channel letters](https://www.zydsign.com/guides/front-lit-vs-halo-lit-channel-letters) [Read the illuminated signage buying guide](https://www.zydsign.com/guides/illuminated-signage-buying-guide) [Signage glossary](https://www.zydsign.com/guides/signage-glossary) [Discuss trimless and trim cap options](https://www.zydsign.com/contact) Get Material Advice
+[See custom front-lit channel letters](https://www.zydsign.com/products/custom-channel-letters) [See custom halo-lit letters](https://www.zydsign.com/products/custom-halo-lit-letters) [Compare front-lit and halo-lit channel letters](https://www.zydsign.com/guides/front-lit-vs-halo-lit-channel-letters) [Read the illuminated signage buying guide](https://www.zydsign.com/guides/illuminated-signage-buying-guide) [Signage glossary](https://www.zydsign.com/guides/signage-glossary) [Request a channel letter quote with trim cap options](https://www.zydsign.com/contact?product=letters) Get Material Advice
 
 Buyer brief
 

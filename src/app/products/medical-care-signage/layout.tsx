@@ -3,8 +3,8 @@ import { buildPageMetadata, ogImages } from "@/config/site";
 import ProductJsonLd from "@/components/ProductJsonLd";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Healthcare Signage Manufacturer for Hospitals & Clinics",
-  description: "Custom hospital and clinic wayfinding, room signs, directories and coordinated signage. Send floor plans and quantities for a project-specific quote.",
+  title: "Healthcare & Specialty Signage Manufacturer | Hospitals",
+  description: "Dalian-based healthcare signage manufacturer for hospital and clinic wayfinding, room signs, and directories. Send plans and quantities for a project quote.",
   path: "/products/medical-care-signage",
   image: ogImages.medical,
 });

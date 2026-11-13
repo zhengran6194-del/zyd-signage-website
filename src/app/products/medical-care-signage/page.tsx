@@ -17,6 +17,10 @@ const faqs = [
     answer: 'Panels, edges, and graphics can be specified with surface finishes suited to routine cleaning, and mounting methods can be chosen to reduce ledges where dirt collects. The exact requirement depends on the department and the facility protocol, so the cleaning method and environment are confirmed with the project brief before production.',
   },
   {
+    question: 'What should I send to a healthcare signage manufacturer for a quote?',
+    answer: 'Send a floor plan or department list, the sign types and approximate quantities, artwork or brand standards, mounting surfaces, any accessibility requirements specified for the project, and the delivery destination. Photos and dimensions can help identify missing information; open items can be confirmed before a design or quotation is finalized.',
+  },
+  {
     question: 'What is the lead time for a medical signage package?',
     answer: 'Typical production lead time is 7–15 days depending on the number of sign types, quantity, and artwork. Hospital rollouts are phased by floor or department against your opening schedule.',
   },
@@ -41,16 +45,16 @@ export default function MedicalSignagePage() {
         <section className="bg-slate-900 text-white py-20 lg:py-24 relative overflow-hidden">
           <div className="container grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="reveal visible">
-              <div className="eyebrow text-blue-400 font-black tracking-widest uppercase mb-4 text-sm">Healthcare Interior Systems</div>
+              <div className="eyebrow text-blue-400 font-black tracking-widest uppercase mb-4 text-sm">Healthcare Signage Manufacturer · Dalian, China</div>
               <h1 className="text-4xl lg:text-5xl font-black mb-6 leading-tight tracking-tight uppercase">
                 Healthcare <span className="text-blue-500 italic">&amp; Specialty</span> <br/>Signage Systems
               </h1>
               <p className="text-lg text-slate-300 mb-8 max-w-xl leading-relaxed font-medium">
-                Custom healthcare signage for hospitals and clinics, including wayfinding, room identification, department directories, and coordinated sign systems.
+                ZYD manufactures healthcare and specialty signage for hospitals, clinics, and project teams, including wayfinding, room identification, department directories, and coordinated sign systems.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
-                  href="/contact"
+                  href="/contact?product=medical"
                   className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide"
                 >
                   GET A QUOTE
@@ -107,7 +111,7 @@ export default function MedicalSignagePage() {
                 Send the floor plans or department list, the sign types and quantities, the mounting surfaces, any accessibility requirement the project specifies, and the brand or color standard. Confirming those items at the start keeps the schedule accurate and avoids rework during installation.
               </p>
               <div className="mt-auto flex flex-wrap gap-x-6 gap-y-3">
-                <Link href="/contact" className="text-sm font-black uppercase tracking-widest text-blue-700 hover:text-blue-900">Send your project brief</Link>
+                <Link href="/contact?product=medical" className="text-sm font-black uppercase tracking-widest text-blue-700 hover:text-blue-900">Send your project brief</Link>
                 <Link href="/guides/ada-braille-signage-planning-guide" className="text-sm font-black uppercase tracking-widest text-blue-700 hover:text-blue-900">Plan accessible signage</Link>
               </div>
             </div>
@@ -200,7 +204,7 @@ export default function MedicalSignagePage() {
             <h2 className="text-3xl font-black uppercase tracking-tight text-slate-900 mb-4">Planning a healthcare signage package?</h2>
             <p className="text-slate-500 font-medium mb-8">Send the department list, sign types, mounting surfaces, and any accessibility requirement for a project-specific review.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact" className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide">DISCUSS YOUR PROJECT</Link>
+              <Link href="/contact?product=medical" className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide">DISCUSS YOUR PROJECT</Link>
               <Link href="/products" className="px-10 py-5 rounded-full border-2 border-slate-300 text-slate-700 font-black uppercase tracking-widest text-sm hover:border-blue-600 hover:text-blue-700 transition-all">All Products</Link>
             </div>
             <RelatedCaseStudy href="/case-studies/dalian-water-plaza-wayfinding-signage" name="Water Fashion Plaza, Dalian" context="interior wayfinding layers, directories and functional identification planned as one system." />

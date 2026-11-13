@@ -3,8 +3,8 @@ import GuideArticle, { type GuideArticleData } from '@/components/GuideArticle';
 const guide: GuideArticleData = {
   title: 'Trimless vs. Trim Cap Channel Letters: Construction, Appearance and Maintenance',
   category: 'Illuminated Signage Construction',
-  description: 'How trimless and trim cap channel letters differ in face attachment, edge appearance, logo detail, servicing and outdoor specification.',
-  updated: 'Oct 19, 2026',
+  description: 'What trim cap means for signs, how trim cap and trimless channel letters differ, and what to confirm about face attachment, finish and service access.',
+  updated: 'Nov 13, 2026',
   directAnswer: 'Trimless channel letters have no visible trim cap around the illuminated face. Trim cap channel letters use a visible perimeter trim to retain the face. Both can produce effective illuminated signs, but they differ in edge appearance, face attachment and servicing arrangements.',
   sections: [
     {
@@ -162,6 +162,7 @@ const guide: GuideArticleData = {
     'Outdoor joints, seals, drainage and power supply location.',
   ],
   faqs: [
+    { question: 'What is trim cap for signs?', answer: 'For channel letter signs, a trim cap is a visible perimeter strip that retains the translucent face against the letter body and creates an outlined edge. Confirm the trim material, width, color, fastening method, and face-removal procedure in the product drawing because construction varies by manufacturer.' },
     { question: 'What is the main difference between trimless and trim cap channel letters?', answer: 'Trimless letters have no visible retaining trim cap around the face. Trim cap letters have a visible perimeter trim. The face attachment and servicing method depend on the specific construction.' },
     { question: 'Do trimless letters have metal sides?', answer: 'They can. “Trimless” refers to the face-edge appearance, not the absence of sidewalls. Confirm the sidewall material in the specification.' },
     { question: 'Are trimless letters the same as edge-lit letters?', answer: 'No. Trimless describes a construction detail. Edge-lit describes a lighting method. The terms should not be treated as interchangeable.' },
@@ -178,7 +179,7 @@ const guide: GuideArticleData = {
     { href: '/guides/front-lit-vs-halo-lit-channel-letters', label: 'Compare front-lit and halo-lit channel letters' },
     { href: '/guides/illuminated-signage-buying-guide', label: 'Read the illuminated signage buying guide' },
     { href: '/guides/signage-glossary', label: 'Signage glossary' },
-    { href: '/contact', label: 'Discuss trimless and trim cap options' },
+    { href: '/contact?product=letters', label: 'Request a channel letter quote with trim cap options' },
   ],
   asideTitle: 'Ask for the face-edge detail',
   asideText: 'Send the vector artwork, required dimensions and photographs of the installation surface, and ask for a face-edge detail or cross-section for each option. That drawing explains more than the construction name.',

@@ -54,7 +54,7 @@ export default function WayfindingSystemPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
-                  href="/contact"
+                  href="/contact?product=wayfinding"
                   className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide"
                 >
                   GET A QUOTE
@@ -112,7 +112,7 @@ export default function WayfindingSystemPage() {
                 A comparable quotation needs the site plan or floor plans, the list of sign types and quantities, the mounting conditions, the artwork or brand standards, and any accessibility requirement the project specifies. Sending those items together lets the schedule and scope be reviewed in one pass.
               </p>
               <div className="mt-auto flex flex-wrap gap-x-6 gap-y-3">
-                <Link href="/contact" className="text-sm font-black uppercase tracking-widest text-blue-700 hover:text-blue-900">Send your project brief</Link>
+                <Link href="/contact?product=wayfinding" className="text-sm font-black uppercase tracking-widest text-blue-700 hover:text-blue-900">Send your project brief</Link>
                 <Link href="/guides/ada-braille-signage-planning-guide" className="text-sm font-black uppercase tracking-widest text-blue-700 hover:text-blue-900">Plan accessible signage</Link>
               </div>
             </div>
@@ -204,9 +204,9 @@ export default function WayfindingSystemPage() {
         <section className="bg-slate-50 py-20">
           <div className="container text-center">
             <h2 className="text-3xl font-black uppercase tracking-tight text-slate-900 mb-4">Planning a wayfinding program?</h2>
-            <p className="text-slate-500 font-medium mb-8">Send the site or floor plans, sign types, quantities, and mounting conditions for a project-specific review.</p>
+            <p className="text-slate-500 font-medium mb-8">For a directory-board replacement, send overall measurements, photos of the board and fixings, the updated tenant list or artwork, and the delivery destination. For a full system, include site or floor plans, sign types, quantities, and mounting conditions.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact" className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide">DISCUSS YOUR PROJECT</Link>
+              <Link href="/contact?product=wayfinding" className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide">DISCUSS YOUR PROJECT</Link>
               <Link href="/products" className="px-10 py-5 rounded-full border-2 border-slate-300 text-slate-700 font-black uppercase tracking-widest text-sm hover:border-blue-600 hover:text-blue-700 transition-all">All Products</Link>
             </div>
             <RelatedCaseStudy href="/case-studies/dalian-water-plaza-wayfinding-signage" name="Water Fashion Plaza, Dalian" context="the full wayfinding and architectural signage system delivered across a shopping centre." />

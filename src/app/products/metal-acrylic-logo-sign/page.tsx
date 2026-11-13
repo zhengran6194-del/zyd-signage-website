@@ -54,7 +54,7 @@ export default function MetalAcrylicLogoSignPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
-                  href="/contact"
+                  href="/contact?product=metal"
                   className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide"
                 >
                   GET A QUOTE
@@ -111,7 +111,7 @@ export default function MetalAcrylicLogoSignPage() {
                 Vector artwork is the reliable starting point because the mark is cut and layered rather than printed, and very fine strokes may need adjustment for the material. Include the intended size, the wall surface, and any brand color references. The review confirms layer build-up and mounting before production.
               </p>
               <div className="mt-auto">
-                <Link href="/contact" className="text-sm font-black uppercase tracking-widest text-blue-700 hover:text-blue-900">Send your project brief</Link>
+                <Link href="/contact?product=metal" className="text-sm font-black uppercase tracking-widest text-blue-700 hover:text-blue-900">Send your project brief</Link>
               </div>
             </div>
 
@@ -183,7 +183,29 @@ export default function MetalAcrylicLogoSignPage() {
           </div>
         </section>
 
-        {/* 5. FAQ */}
+        {/* 5. Quote preparation */}
+        <section className="section bg-slate-100 pt-0">
+          <div className="container max-w-6xl">
+            <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_320px] gap-10 items-center rounded-[2.5rem] border border-slate-200 bg-white p-8 sm:p-10 lg:p-14 shadow-sm">
+              <div>
+                <p className="text-sm font-black uppercase tracking-[0.25em] text-blue-700 mb-4">Custom acrylic and metal logo panels</p>
+                <h2 className="text-3xl lg:text-4xl font-black tracking-tight text-slate-900 mb-5">Get a project-specific quote</h2>
+                <p className="text-slate-600 leading-relaxed mb-6">Send the logo artwork, approximate finished size, quantity, preferred metal and acrylic finish, mounting-surface photo, and delivery city or postcode. Our designer can recommend dimensions and prepare a free design mockup for review.</p>
+                <p className="text-slate-600 leading-relaxed">We reply by WhatsApp or email within 8 hours to confirm your requirements, identify missing information, or outline the next step toward a design and quotation.</p>
+              </div>
+              <div className="rounded-3xl bg-slate-950 p-8 text-white">
+                <ul className="space-y-4 text-sm font-semibold text-slate-200">
+                  <li><span className="text-blue-300">MOQ</span><br/>1 set</li>
+                  <li><span className="text-blue-300">Typical production</span><br/>7–15 days after design and specification confirmation</li>
+                  <li><span className="text-blue-300">Warranty</span><br/>1 year</li>
+                </ul>
+                <Link href="/contact?product=metal" className="mt-8 inline-flex w-full justify-center button button-green-base rounded-xl px-6 py-4 text-center font-black text-white">REQUEST A LOGO PANEL QUOTE</Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 6. FAQ */}
         <section className="section bg-slate-100 pt-0">
           <div className="container max-w-5xl">
             <h2 className="text-3xl font-black text-slate-900 mb-10 uppercase tracking-tight">Frequently asked questions</h2>
@@ -198,13 +220,13 @@ export default function MetalAcrylicLogoSignPage() {
           </div>
         </section>
 
-        {/* 6. CTA */}
+        {/* 7. CTA */}
         <section className="bg-slate-50 py-20">
           <div className="container text-center">
             <h2 className="text-3xl font-black uppercase tracking-tight text-slate-900 mb-4">Planning a fabricated logo sign?</h2>
             <p className="text-slate-500 font-medium mb-8">Send the vector artwork, intended size, wall surface, finish direction, and quantity for a project-specific review.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact" className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide">DISCUSS YOUR PROJECT</Link>
+              <Link href="/contact?product=metal" className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide">DISCUSS YOUR PROJECT</Link>
               <Link href="/products" className="px-10 py-5 rounded-full border-2 border-slate-300 text-slate-700 font-black uppercase tracking-widest text-sm hover:border-blue-600 hover:text-blue-700 transition-all">All Products</Link>
             </div>
             <RelatedCaseStudy href="/case-studies/dalian-water-plaza-wayfinding-signage" name="Water Fashion Plaza, Dalian" context="layered metal and acrylic branding on the facade, brand wall and information desk." />
