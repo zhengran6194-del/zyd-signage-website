@@ -100,7 +100,7 @@ export default function PortableMetalAFrameSignPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
-                  href="/contact"
+                  href="/contact?product=portable"
                   className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide"
                 >
                   GET A QUOTE
@@ -269,7 +269,7 @@ export default function PortableMetalAFrameSignPage() {
             <h2 className="text-3xl font-black uppercase tracking-tight text-slate-900 mb-4">Planning an A-frame sign?</h2>
             <p className="text-slate-600 font-medium mb-8">Send the artwork, the number of units, and the pavement or site the sign will stand on for a project-specific review.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact" className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide">DISCUSS YOUR PROJECT</Link>
+              <Link href="/contact?product=portable" className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide">DISCUSS YOUR PROJECT</Link>
               <Link href="/products" className="px-10 py-5 rounded-full border-2 border-slate-300 text-slate-700 font-black uppercase tracking-widest text-sm hover:border-blue-600 hover:text-blue-700 transition-all">All Products</Link>
             </div>
             <RelatedCaseStudy href="/case-studies/pavilion-dalian-mall-festive-installations" name="Pavilion Dalian festive installations" context="temporary promotional display work delivered for a shopping centre." />

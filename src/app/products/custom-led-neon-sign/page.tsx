@@ -50,7 +50,7 @@ export default function LedNeonSignPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
-                  href="/contact"
+                  href="/contact?product=neon"
                   className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide"
                 >
                   GET A QUOTE
@@ -97,7 +97,7 @@ export default function LedNeonSignPage() {
                 The design is simplified into continuous paths that the tubing can follow, so very fine detail and tight inner corners are usually adjusted. Vector artwork gives the cleanest starting point. The review confirms which strokes stay open and how the power feed and controller are hidden.
               </p>
               <div className="mt-auto">
-                <Link href="/contact" className="text-sm font-black uppercase tracking-widest text-blue-700 hover:text-blue-900">Send your project brief</Link>
+                <Link href="/contact?product=neon" className="text-sm font-black uppercase tracking-widest text-blue-700 hover:text-blue-900">Send your project brief</Link>
               </div>
             </div>
 
@@ -107,7 +107,7 @@ export default function LedNeonSignPage() {
                 Share the wall material, the mounting height, and whether a visible or concealed power feed is preferred, plus the required color and any dimming or animation requirement. Those details determine the backing and the driver selection, and they keep the quotation comparable between suppliers.
               </p>
               <div className="mt-auto">
-                <Link href="/contact" className="text-sm font-black uppercase tracking-widest text-blue-700 hover:text-blue-900">Send your project brief</Link>
+                <Link href="/contact?product=neon" className="text-sm font-black uppercase tracking-widest text-blue-700 hover:text-blue-900">Send your project brief</Link>
               </div>
             </div>
 
@@ -217,7 +217,7 @@ export default function LedNeonSignPage() {
             <h2 className="text-3xl font-black uppercase tracking-tight text-slate-900 mb-4">Planning an LED neon feature?</h2>
             <p className="text-slate-500 font-medium mb-8">Send the artwork, intended size, wall material, colors, and mounting location for a project-specific review.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact" className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide">DISCUSS YOUR PROJECT</Link>
+              <Link href="/contact?product=neon" className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide">DISCUSS YOUR PROJECT</Link>
               <Link href="/products" className="px-10 py-5 rounded-full border-2 border-slate-300 text-slate-700 font-black uppercase tracking-widest text-sm hover:border-blue-600 hover:text-blue-700 transition-all">All Products</Link>
             </div>
             <RelatedCaseStudy href="/case-studies/pavilion-dalian-mall-festive-installations" name="Pavilion Dalian festive installations" context="custom illuminated features built with integrated LED modules for a retail interior." />

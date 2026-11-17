@@ -50,7 +50,7 @@ export default function UltraSlimLightBoxPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
-                  href="/contact"
+                  href="/contact?product=lightbox"
                   className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide"
                 >
                   GET A QUOTE
@@ -107,7 +107,7 @@ export default function UltraSlimLightBoxPage() {
                 Send the panel dimensions, quantity, artwork, mounting surface and depth, indoor or outdoor exposure, and the required finish. Where the box replaces an existing unit, a photo and the fixing layout speed up the review. Those details make the quotation comparable and the installation plan reliable.
               </p>
               <div className="mt-auto">
-                <Link href="/contact" className="text-sm font-black uppercase tracking-widest text-blue-700 hover:text-blue-900">Send your project brief</Link>
+                <Link href="/contact?product=lightbox" className="text-sm font-black uppercase tracking-widest text-blue-700 hover:text-blue-900">Send your project brief</Link>
               </div>
             </div>
 
@@ -199,7 +199,7 @@ export default function UltraSlimLightBoxPage() {
             <h2 className="text-3xl font-black uppercase tracking-tight text-slate-900 mb-4">Planning an illuminated panel?</h2>
             <p className="text-slate-500 font-medium mb-8">Send the panel size, quantity, artwork, mounting depth, and exposure for a project-specific review.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact" className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide">DISCUSS YOUR PROJECT</Link>
+              <Link href="/contact?product=lightbox" className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide">DISCUSS YOUR PROJECT</Link>
               <Link href="/products" className="px-10 py-5 rounded-full border-2 border-slate-300 text-slate-700 font-black uppercase tracking-widest text-sm hover:border-blue-600 hover:text-blue-700 transition-all">All Products</Link>
             </div>
             <RelatedCaseStudy href="/case-studies/dalian-water-plaza-wayfinding-signage" name="Water Fashion Plaza, Dalian" context="the illuminated tenant brand wall and panel signage on the facade." />

@@ -11,6 +11,11 @@ export const productInterests = {
   neon: 'LED neon signs',
   metal: 'Metal & acrylic signs',
   planter: 'Custom planter box',
+  desk: 'Acrylic desk and counter signs',
+  lightbox: 'LED light box signs',
+  complete: 'Complete signage systems',
+  waste: 'Outdoor waste bins',
+  portable: 'Portable metal A-frame signs',
 } as const;
 
 export function ProductInterestSelect({ initialProduct = '' }: { initialProduct?: string }) {

@@ -50,7 +50,7 @@ export default function LandscapeFurniturePage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
-                  href="/contact"
+                  href="/contact?product=landscape"
                   className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide"
                 >
                   GET A QUOTE
@@ -107,7 +107,7 @@ export default function LandscapeFurniturePage() {
                 Send the site plan, the list of element types and quantities, the mounting or ground-fixing condition, the brand color or artwork, and the local exposure. Those items let the fabrication and finish be reviewed in one pass and keep the quotation comparable between suppliers.
               </p>
               <div className="mt-auto">
-                <Link href="/contact" className="text-sm font-black uppercase tracking-widest text-blue-700 hover:text-blue-900">Send your project brief</Link>
+                <Link href="/contact?product=landscape" className="text-sm font-black uppercase tracking-widest text-blue-700 hover:text-blue-900">Send your project brief</Link>
               </div>
             </div>
 
@@ -199,7 +199,7 @@ export default function LandscapeFurniturePage() {
             <h2 className="text-3xl font-black uppercase tracking-tight text-slate-900 mb-4">Planning street-level furniture?</h2>
             <p className="text-slate-500 font-medium mb-8">Send the site plan, element list, quantities, ground-fixing condition, and finish direction for a project-specific review.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact" className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide">DISCUSS YOUR PROJECT</Link>
+              <Link href="/contact?product=landscape" className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide">DISCUSS YOUR PROJECT</Link>
               <Link href="/products" className="px-10 py-5 rounded-full border-2 border-slate-300 text-slate-700 font-black uppercase tracking-widest text-sm hover:border-blue-600 hover:text-blue-700 transition-all">All Products</Link>
             </div>
             <RelatedCaseStudy href="/case-studies/hengli-industrial-park-wayfinding-signage" name="Hengli Industrial Park" context="outdoor fabricated elements installed across the landscaped grounds." />

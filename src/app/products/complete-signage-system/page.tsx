@@ -50,7 +50,7 @@ export default function CompleteSignageSystemPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
-                  href="/contact"
+                  href="/contact?product=complete"
                   className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide"
                 >
                   GET A QUOTE
@@ -107,7 +107,7 @@ export default function CompleteSignageSystemPage() {
                 Send the site list, the required sign types and quantities per site, the brand standards or artwork, the mounting conditions, and the opening sequence. Providing the full package in one brief lets the program be priced, scheduled, and phased as a single coordinated scope.
               </p>
               <div className="mt-auto">
-                <Link href="/contact" className="text-sm font-black uppercase tracking-widest text-blue-700 hover:text-blue-900">Send your project brief</Link>
+                <Link href="/contact?product=complete" className="text-sm font-black uppercase tracking-widest text-blue-700 hover:text-blue-900">Send your project brief</Link>
               </div>
             </div>
 
@@ -199,7 +199,7 @@ export default function CompleteSignageSystemPage() {
             <h2 className="text-3xl font-black uppercase tracking-tight text-slate-900 mb-4">Planning a multi-site program?</h2>
             <p className="text-slate-500 font-medium mb-8">Send the site list, sign types, quantities, brand standards, and opening sequence for a project-specific review.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact" className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide">DISCUSS YOUR PROJECT</Link>
+              <Link href="/contact?product=complete" className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide">DISCUSS YOUR PROJECT</Link>
               <Link href="/products" className="px-10 py-5 rounded-full border-2 border-slate-300 text-slate-700 font-black uppercase tracking-widest text-sm hover:border-blue-600 hover:text-blue-700 transition-all">All Products</Link>
             </div>
             <RelatedCaseStudy href="/case-studies/hengli-industrial-park-wayfinding-signage" name="Hengli Industrial Park" context="a park-wide signage system planned in layers from gateway to production zone." />

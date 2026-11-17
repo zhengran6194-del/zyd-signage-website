@@ -49,7 +49,7 @@ export default function OutdoorWasteBinPage() {
                 A refined waste bin solution for hotels, commercial spaces, and public environments. Coordinate the visible form, branding, and project requirements directly with our factory team.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/contact" className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide">
+                <Link href="/contact?product=waste" className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide">
                   GET A PROJECT QUOTE
                 </Link>
                 <WhatsAppCta label="Check Feasibility" message="Hi Aaron, can you check feasibility for a custom outdoor waste bin project?" brief={{ product: 'a custom outdoor waste bin project', items: ['Artwork or logo file', 'Dimensions, capacity and quantity', 'Material and finish direction', 'Installation/site photos and ship-to country'] }} />
@@ -94,7 +94,7 @@ export default function OutdoorWasteBinPage() {
                 Opening direction, liner removal, and the clearance a crew needs to empty the unit decide whether a bin is actually used as intended; a unit that is awkward to service tends to be bypassed. The servicing method is confirmed with the operator and the maintenance team before the opening and liner details are frozen, so the daily task stays a one-person job.
               </p>
               <div className="mt-auto">
-                <Link href="/contact" className="text-sm font-black uppercase tracking-widest text-blue-700 hover:text-blue-900">Confirm the servicing routine</Link>
+                <Link href="/contact?product=waste" className="text-sm font-black uppercase tracking-widest text-blue-700 hover:text-blue-900">Confirm the servicing routine</Link>
               </div>
             </div>
 
@@ -214,7 +214,7 @@ export default function OutdoorWasteBinPage() {
             <h2 className="text-3xl font-black uppercase tracking-tight text-slate-900 mb-4">Planning a waste and recycling package?</h2>
             <p className="text-slate-500 font-medium mb-8">Send the streams, the servicing routine, the fixing conditions, and the finish direction for a project-specific review.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact" className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide">DISCUSS YOUR PROJECT</Link>
+              <Link href="/contact?product=waste" className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide">DISCUSS YOUR PROJECT</Link>
               <Link href="/products" className="px-10 py-5 rounded-full border-2 border-slate-300 text-slate-700 font-black uppercase tracking-widest text-sm hover:border-blue-600 hover:text-blue-700 transition-all">All Products</Link>
             </div>
             <RelatedCaseStudy href="/case-studies/dalian-water-plaza-wayfinding-signage" name="Water Fashion Plaza, Dalian" context="the segregated recycling stations installed through the public walkways." />

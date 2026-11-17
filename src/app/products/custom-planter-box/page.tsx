@@ -49,7 +49,7 @@ export default function CustomPlanterBoxPage() {
                 Architectural planter solutions that bring greenery into hotels, commercial entrances, and public spaces. Coordinate the shape, appearance, and project requirements directly with our factory team.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/contact" className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide">
+                <Link href="/contact?product=planter" className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide">
                   GET A PROJECT QUOTE
                 </Link>
                 <WhatsAppCta label="Check Feasibility" message="Hi Aaron, can you check feasibility for a custom planter box project?" brief={{ product: 'a custom planter box project', items: ['Drawings or artwork', 'Dimensions and target quantity', 'Material, drainage and finish', 'Installation/site photos and ship-to country'] }} />
@@ -104,7 +104,7 @@ export default function CustomPlanterBoxPage() {
                 An internal liner, a drainage outlet or perforation direction, and the interface with the irrigation and overflow arrangement are all part of the body rather than an afterthought. The planting type drives the root volume and soil load, and those in turn affect the body construction and the base detail. These items are confirmed with the landscape contractor and the project team before fabrication.
               </p>
               <div className="mt-auto">
-                <Link href="/contact" className="text-sm font-black uppercase tracking-widest text-blue-700 hover:text-blue-900">Confirm drainage and base details</Link>
+                <Link href="/contact?product=planter" className="text-sm font-black uppercase tracking-widest text-blue-700 hover:text-blue-900">Confirm drainage and base details</Link>
               </div>
             </div>
 
@@ -214,7 +214,7 @@ export default function CustomPlanterBoxPage() {
             <h2 className="text-3xl font-black uppercase tracking-tight text-slate-900 mb-4">Planning a landscape package?</h2>
             <p className="text-slate-500 font-medium mb-8">Send the profile, dimensions, planting type, drainage detail, and installation conditions for a project-specific review.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact" className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide">DISCUSS YOUR PROJECT</Link>
+              <Link href="/contact?product=planter" className="button button-green-base px-10 py-5 rounded-full text-white font-black text-base tracking-wide">DISCUSS YOUR PROJECT</Link>
               <Link href="/products" className="px-10 py-5 rounded-full border-2 border-slate-300 text-slate-700 font-black uppercase tracking-widest text-sm hover:border-blue-600 hover:text-blue-700 transition-all">All Products</Link>
             </div>
             <RelatedCaseStudy href="/case-studies/hengli-industrial-park-wayfinding-signage" name="Hengli Industrial Park" context="site fabrication and installation of outdoor units in landscaped grounds." />
