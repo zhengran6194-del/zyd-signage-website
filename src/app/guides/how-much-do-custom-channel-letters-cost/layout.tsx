@@ -4,7 +4,7 @@ import JsonLd from "@/components/JsonLd";
 
 const path = "/guides/how-much-do-custom-channel-letters-cost";
 const title = "Average Cost of Channel Letter Signs: What Affects the Quote?";
-const description = "There is no single average price: size, letter count, lighting, materials, mounting and delivery affect channel letter sign cost. See what to send for a quote.";
+const description = "Average channel letter sign cost depends on size, letter count, lighting, material, mounting and delivery. See what to include in an itemized quote.";
 
 export const metadata: Metadata = buildPageMetadata({ title, description, path, image: ogImages.channelLetters, type: "article" });
 

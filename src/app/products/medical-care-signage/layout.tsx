@@ -4,7 +4,7 @@ import ProductJsonLd from "@/components/ProductJsonLd";
 
 export const metadata: Metadata = buildPageMetadata({
   title: "Healthcare & Specialty Signage Manufacturer | Hospitals",
-  description: "Dalian-based healthcare signage manufacturer for hospital and clinic wayfinding, room signs, and directories. Send plans and quantities for a project quote.",
+  description: "Hospital and clinic signage for wayfinding, room signs, department directories and identification systems. Send plans, sign types and quantities for a project quote.",
   path: "/products/medical-care-signage",
   image: ogImages.medical,
 });

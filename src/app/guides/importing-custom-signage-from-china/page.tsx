@@ -1,13 +1,13 @@
 import GuideArticle, { type GuideArticleData } from '@/components/GuideArticle';
 
 const guide: GuideArticleData = {
-  title: 'Importing Custom Signage from China: Costs, Installation and Supplier Responsibilities',
+  title: 'How to Vet an Overseas Custom Signage Factory | Buyer Checklist',
   category: 'Signage Procurement & Import',
   description:
-    'What importing custom signage from China really involves: landed and installed cost, Incoterms, duty, local installation and responsibility after delivery.',
-  updated: 'Oct 20, 2026',
+    'Vet an overseas custom signage factory: check drawings, samples, delivery terms, installation scope and warranty, then compare landed and installed costs.',
+  updated: 'Nov 17, 2026',
   directAnswer:
-    'Importing custom signage from China requires more than comparing factory prices. Before ordering, confirm the total delivered cost, local installation requirements, approval process and after-sales responsibilities.',
+    'To vet an overseas custom signage factory, review its production evidence, drawing and sample process, written delivery scope, and how local installation and warranty responsibilities are divided. Then compare landed and installed costs rather than relying on the factory price alone.',
   sections: [
     {
       heading: 'Before You Compare Factory Prices',

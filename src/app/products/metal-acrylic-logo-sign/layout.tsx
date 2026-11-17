@@ -4,7 +4,7 @@ import ProductJsonLd from "@/components/ProductJsonLd";
 
 export const metadata: Metadata = buildPageMetadata({
   title: "Acrylic & Metal Logo Panels Manufacturer | Custom Signs",
-  description: "Dalian-based manufacturer of custom acrylic and metal logo panels for reception walls, branded interiors and commercial projects. Send artwork and dimensions for a factory quote.",
+  description: "Custom acrylic and metal logo panels for reception walls, branded interiors and storefronts. Compare finishes and mounting; send artwork, dimensions and destination for a quote.",
   path: "/products/metal-acrylic-logo-sign",
   image: ogImages.metalLogo,
 });

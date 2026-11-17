@@ -90,8 +90,9 @@ export default function MedicalSignagePage() {
               <p className="text-slate-600 leading-relaxed mb-6">
                 Hospitals are usually planned as a hierarchy: campus arrival, building entry, vertical circulation, department entries, and finally room identification. Each level answers one decision, which keeps the panels simple and the visitor moving. The general selection guide explains how to match sign formats to the site and viewer.
               </p>
-              <div className="mt-auto">
-                <Link href="/guides/how-to-choose-the-right-sign-for-your-business" className="text-sm font-black uppercase tracking-widest text-blue-700 hover:text-blue-900">Read the sign-selection guide</Link>
+              <div className="mt-auto flex flex-wrap gap-x-6 gap-y-3">
+                  <Link href="/guides/wayfinding-signage-levels" className="text-sm font-black uppercase tracking-widest text-blue-700 hover:text-blue-900">Review the wayfinding signage hierarchy</Link>
+                  <Link href="/guides/how-to-choose-the-right-sign-for-your-business" className="text-sm font-black uppercase tracking-widest text-blue-700 hover:text-blue-900">Read the sign-selection guide</Link>
               </div>
             </div>
 

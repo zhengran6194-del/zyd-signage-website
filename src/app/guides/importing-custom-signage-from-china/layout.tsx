@@ -3,8 +3,8 @@ import { buildPageMetadata, ogImages, siteConfig } from "@/config/site";
 import JsonLd from "@/components/JsonLd";
 
 const path = "/guides/importing-custom-signage-from-china";
-const title = "Importing Custom Signage from China: Costs, Installation and Supplier Responsibilities";
-const description = "What importing custom signage from China really involves: landed and installed cost, Incoterms, duty, local installation and responsibility after delivery.";
+const title = "How to Vet an Overseas Custom Signage Factory | Buyer Checklist";
+const description = "Vet an overseas custom signage factory: check drawings, samples, delivery terms, installation scope and warranty, then compare landed and installed costs.";
 
 export const metadata: Metadata = buildPageMetadata({ title, description, path, image: ogImages.wayfinding, type: "article" });
 
@@ -14,9 +14,9 @@ export default function Layout({ children }: Readonly<{ children: React.ReactNod
     { "@type": "BreadcrumbList", itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: siteConfig.url },
       { "@type": "ListItem", position: 2, name: "Guides", item: `${siteConfig.url}/guides` },
-      { "@type": "ListItem", position: 3, name: "Importing Custom Signage from China", item: url },
+      { "@type": "ListItem", position: 3, name: title, item: url },
     ] },
-    { "@type": "Article", "@id": `${url}#article`, headline: "Importing Custom Signage from China: Costs, Installation and Supplier Responsibilities", description, mainEntityOfPage: url, author: { "@id": `${siteConfig.url}/#aaron` }, publisher: { "@id": `${siteConfig.url}/#organization` }, datePublished: "2026-10-20", dateModified: "2026-10-20" },
+    { "@type": "Article", "@id": `${url}#article`, headline: title, description, mainEntityOfPage: url, author: { "@id": `${siteConfig.url}/#aaron` }, publisher: { "@id": `${siteConfig.url}/#organization` }, datePublished: "2026-10-20", dateModified: "2026-11-17" },
   ] };
   return <><JsonLd data={data} />{children}</>;
 }
