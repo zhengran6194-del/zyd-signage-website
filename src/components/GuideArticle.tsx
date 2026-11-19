@@ -245,22 +245,24 @@ export default function GuideArticle(guide: GuideArticleProps) {
               </div>
             </section>
 
-            <section className="mb-4">
-              <h2 className="text-3xl font-black uppercase tracking-tight text-slate-900 mb-5">Sources &amp; further reading</h2>
-              <p className="text-slate-600 leading-relaxed mb-6">These public references support terminology, accessibility context, or material-selection background. They are not ZYD product claims; project compliance and final specifications must be confirmed with the design team and the authority having jurisdiction.</p>
-              <ol className="space-y-5 list-decimal pl-5">
-                {guide.sources.map((source) => (
-                  <li key={source.url} className="pl-2 text-slate-700">
-                    {source.url.startsWith('/') ? (
-                      <Link href={source.url} className="font-bold text-blue-700 underline decoration-blue-200 underline-offset-4 hover:text-blue-900">{source.name}</Link>
-                    ) : (
-                      <a href={source.url} target="_blank" rel="noopener noreferrer" className="font-bold text-blue-700 underline decoration-blue-200 underline-offset-4 hover:text-blue-900">{source.name}</a>
-                    )}
-                    <p className="text-sm text-slate-500 mt-1">{source.note}</p>
-                  </li>
-                ))}
-              </ol>
-            </section>
+            {guide.sources.length > 0 && (
+              <section className="mb-4">
+                <h2 className="text-3xl font-black uppercase tracking-tight text-slate-900 mb-5">Sources &amp; further reading</h2>
+                <p className="text-slate-600 leading-relaxed mb-6">These public references support terminology, accessibility context, or material-selection background. They are not ZYD product claims; project compliance and final specifications must be confirmed with the design team and the authority having jurisdiction.</p>
+                <ol className="space-y-5 list-decimal pl-5">
+                  {guide.sources.map((source) => (
+                    <li key={source.url} className="pl-2 text-slate-700">
+                      {source.url.startsWith('/') ? (
+                        <Link href={source.url} className="font-bold text-blue-700 underline decoration-blue-200 underline-offset-4 hover:text-blue-900">{source.name}</Link>
+                      ) : (
+                        <a href={source.url} target="_blank" rel="noopener noreferrer" className="font-bold text-blue-700 underline decoration-blue-200 underline-offset-4 hover:text-blue-900">{source.name}</a>
+                      )}
+                      <p className="text-sm text-slate-500 mt-1">{source.note}</p>
+                    </li>
+                  ))}
+                </ol>
+              </section>
+            )}
 
             <GuideProjectNextStep slug={guide.slug} />
 
