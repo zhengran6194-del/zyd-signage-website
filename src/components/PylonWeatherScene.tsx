@@ -17,6 +17,7 @@ export default function PylonWeatherScene({ placement = 'product' }: Props) {
   const [weather, setWeather] = useState<Weather>('sun');
   const currentIndex = weatherOptions.findIndex((option) => option.id === weather);
   const isHome = placement === 'home';
+  const advanceWeather = () => setWeather(weatherOptions[(currentIndex + 1) % weatherOptions.length].id);
 
   return (
     <section className={styles.section} aria-labelledby={`pylon-weather-title-${placement}`}>
@@ -48,18 +49,12 @@ export default function PylonWeatherScene({ placement = 'product' }: Props) {
                   <span>{option.label}</span>
                 </button>
               ))}
-              <input
-                className={styles.dial}
-                type="range"
-                min="0"
-                max="2"
-                step="1"
-                value={currentIndex}
-                aria-label="Change the outdoor condition"
-                aria-valuetext={weatherOptions[currentIndex].label}
-                onChange={(event) => setWeather(weatherOptions[Number(event.target.value)].id)}
-              />
-              <span className={`${styles.dialKnob} ${styles[`dialKnob${currentIndex}`]}`} aria-hidden="true"><span /></span>
+              <button
+                type="button"
+                className={`${styles.dialKnob} ${styles[`dialKnob${currentIndex}`]}`}
+                aria-label={`Next weather condition. Current: ${weatherOptions[currentIndex].label}`}
+                onClick={advanceWeather}
+              ><span aria-hidden="true" /></button>
             </div>
           </div>
           <Link href={isHome ? '/products/outdoor-pylon-monument-sign' : '/contact?product=pylon'} className={styles.cta}>
