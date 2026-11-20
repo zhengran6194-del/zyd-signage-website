@@ -29,24 +29,25 @@ export default function PylonWeatherScene({ placement = 'product' }: Props) {
           <p className={styles.description}>
             Preview the pylon in heavy rain and snow. Structure, materials and finish are specified against the conditions at each project site.
           </p>
-          <div className={styles.controls} aria-label="Preview outdoor conditions">
-            <p className={styles.controlHint}>TAP A SYMBOL OR TURN THE DIAL</p>
-            <div className={styles.weatherButtons}>
-              {weatherOptions.map((option) => (
+          <div className={styles.controls} role="group" aria-label="Preview outdoor conditions">
+            <p className={styles.controlHint}>SELECT A WEATHER CONDITION</p>
+            <div className={styles.weatherDial} data-step={currentIndex}>
+              <svg className={styles.dialArc} viewBox="0 0 240 140" aria-hidden="true">
+                <path d="M22 112 A98 98 0 0 1 218 112" />
+                <path className={styles.dialArcGlow} d="M22 112 A98 98 0 0 1 218 112" />
+              </svg>
+              {weatherOptions.map((option, index) => (
                 <button
                   key={option.id}
                   type="button"
-                  className={styles.weatherButton}
+                  className={`${styles.weatherChoice} ${styles[`weatherChoice${index}`]} ${weather === option.id ? styles.weatherChoiceActive : ''}`}
                   aria-pressed={weather === option.id}
                   onClick={() => setWeather(option.id)}
                 >
-                  <span aria-hidden="true">{option.icon}</span>
-                  {option.label}
+                  <span className={styles.choiceIcon} aria-hidden="true">{option.icon}</span>
+                  <span>{option.label}</span>
                 </button>
               ))}
-            </div>
-            <div className={styles.dialRow}>
-              <span className={styles.dialTrack} aria-hidden="true" />
               <input
                 className={styles.dial}
                 type="range"
@@ -58,7 +59,7 @@ export default function PylonWeatherScene({ placement = 'product' }: Props) {
                 aria-valuetext={weatherOptions[currentIndex].label}
                 onChange={(event) => setWeather(weatherOptions[Number(event.target.value)].id)}
               />
-              <span className={styles.dialLabels} aria-hidden="true"><span>☼</span><span>☂</span><span>❄</span></span>
+              <span className={`${styles.dialKnob} ${styles[`dialKnob${currentIndex}`]}`} aria-hidden="true"><span /></span>
             </div>
           </div>
           <Link href={isHome ? '/products/outdoor-pylon-monument-sign' : '/contact?product=pylon'} className={styles.cta}>

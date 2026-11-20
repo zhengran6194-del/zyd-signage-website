@@ -263,7 +263,7 @@ ON THE SITE
 
 Preview the pylon in heavy rain and snow. Structure, materials and finish are specified against the conditions at each project site.
 
-TAP A SYMBOL OR TURN THE DIAL
+SELECT A WEATHER CONDITION
 
 Sunshine Heavy rain Heavy snow
 
@@ -2951,7 +2951,7 @@ ON THE SITE
 
 Preview the pylon in heavy rain and snow. Structure, materials and finish are specified against the conditions at each project site.
 
-TAP A SYMBOL OR TURN THE DIAL
+SELECT A WEATHER CONDITION
 
 Sunshine Heavy rain Heavy snow
 
