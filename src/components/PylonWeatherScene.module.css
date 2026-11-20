@@ -73,7 +73,7 @@
 .weatherChoice1:hover { transform: translate(-50%, -2px); }
 .weatherChoice2 { right: 0; top: 52px; }
 .choiceIcon { color: #e7d8ff; font-size: 1.15rem; line-height: 1; }
-.weatherChoice:focus-visible, .dial:focus-visible, .cta:focus-visible { outline: 2px solid #c5a4ff; outline-offset: 3px; }
+.weatherChoice:focus-visible, .cta:focus-visible { outline: 2px solid #c5a4ff; outline-offset: 3px; }
 .dialKnob { position: absolute; z-index: 4; left: 50%; bottom: 12px; display: grid; width: 48px; height: 48px; padding: 0; place-items: center; border: 1px solid rgba(230,239,234,.62); border-radius: 50%; background: radial-gradient(circle at 35% 28%, #53625c, #202c27 55%, #111a16 100%); box-shadow: inset 0 1px 3px #ffffff35, 0 5px 16px #0008; color: inherit; cursor: pointer; transform: translateX(-50%); transition: box-shadow .25s ease, filter .25s ease; }
 .dialKnob:hover { filter: brightness(1.2); box-shadow: inset 0 1px 3px #ffffff55, 0 0 22px #c5a4ff66, 0 5px 16px #0008; }
 .dialKnob:focus-visible { outline: 2px solid #c5a4ff; outline-offset: 4px; }
@@ -107,7 +107,7 @@
 .image {
   position: absolute;
   inset: 0;
-  background: url('/assets/images/pylon-water-plaza-installed-16x9.jpg') center / cover no-repeat;
+  background: url('/assets/images/pylon-weather-sun.webp') center / cover no-repeat;
   transition: opacity .45s ease;
 }
 .scene[data-weather='rain'] .image { background-image: url('/assets/images/pylon-weather-rain.webp'); }
