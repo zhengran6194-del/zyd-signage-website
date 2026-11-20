@@ -66,13 +66,14 @@ export default function PylonWeatherScene({ placement = 'product' }: Props) {
           </Link>
         </div>
         <div className={styles.visual} role="img" aria-label={`Installed multi-tenant pylon sign shown in ${weatherOptions[currentIndex].label.toLowerCase()} conditions`}>
-          <div className={styles.image} />
-          <div className={styles.atmosphere} aria-hidden="true" />
-          <div className={styles.rain} aria-hidden="true" />
-          <div className={styles.snow} aria-hidden="true" />
-          <div className={styles.caption}>
-            <span>WEATHER SCENE PREVIEW</span>
-            <span>BASED ON A DALIAN PROJECT PHOTO</span>
+          <div className={styles.frame}>
+            <div className={styles.image} />
+            <div className={styles.atmosphere} aria-hidden="true" />
+            <div className={styles.snow} aria-hidden="true" />
+            <div className={styles.caption}>
+              <span>WEATHER SCENE PREVIEW</span>
+              <span>BASED ON A DALIAN PROJECT PHOTO</span>
+            </div>
           </div>
         </div>
       </div>
