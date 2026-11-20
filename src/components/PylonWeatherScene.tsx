@@ -9,8 +9,8 @@ type Props = { placement?: 'home' | 'product' };
 
 const weatherOptions: { id: Weather; label: string; icon: string }[] = [
   { id: 'sun', label: 'Sunshine', icon: '☼' },
-  { id: 'rain', label: 'Rain', icon: '☂' },
-  { id: 'frost', label: 'Frost', icon: '❄' },
+  { id: 'rain', label: 'Heavy rain', icon: '☂' },
+  { id: 'frost', label: 'Heavy snow', icon: '❄' },
 ];
 
 export default function PylonWeatherScene({ placement = 'product' }: Props) {
@@ -27,7 +27,7 @@ export default function PylonWeatherScene({ placement = 'product' }: Props) {
             BUILT TO STAND OUT <span>IN EVERY CLIMATE</span>
           </h2>
           <p className={styles.description}>
-            Preview how an entrance pylon reads through changing outdoor conditions. Final materials, lighting and structure are confirmed for each project site.
+            Preview the pylon in heavy rain and snow. Structure, materials and finish are specified against the conditions at each project site.
           </p>
           <div className={styles.controls} aria-label="Preview outdoor conditions">
             <p className={styles.controlHint}>TAP A SYMBOL OR TURN THE DIAL</p>
@@ -71,8 +71,8 @@ export default function PylonWeatherScene({ placement = 'product' }: Props) {
           <div className={styles.rain} aria-hidden="true" />
           <div className={styles.snow} aria-hidden="true" />
           <div className={styles.caption}>
-            <span>PYLON &amp; TENANT DIRECTORY</span>
-            <span>DALIAN · PROJECT REFERENCE</span>
+            <span>WEATHER SCENE PREVIEW</span>
+            <span>BASED ON A DALIAN PROJECT PHOTO</span>
           </div>
         </div>
       </div>

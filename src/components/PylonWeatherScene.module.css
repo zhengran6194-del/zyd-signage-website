@@ -1,6 +1,6 @@
 .section {
-  padding: 2.5rem 3% 3rem;
-  background: #f1f5f9;
+  padding: 0;
+  background: #09110e;
 }
 
 .scene {
@@ -8,9 +8,8 @@
   position: relative;
   display: grid;
   grid-template-columns: minmax(280px, 0.36fr) minmax(0, 0.64fr);
-  min-height: 650px;
-  max-width: 1680px;
-  margin: 0 auto;
+  min-height: min(840px, 92svh);
+  width: 100%;
   overflow: hidden;
   background: #09110e;
   color: #fff;
@@ -134,8 +133,8 @@
   background: url('/assets/images/pylon-water-plaza-installed.jpg') center 52% / cover no-repeat;
   transition: filter .65s ease, transform 1s ease;
 }
-.scene[data-weather='rain'] .image { filter: brightness(.66) saturate(.68) contrast(1.05); transform: scale(1.015); }
-.scene[data-weather='frost'] .image { filter: brightness(1.08) saturate(.45) hue-rotate(7deg); }
+.scene[data-weather='rain'] .image { background-image: url('/assets/images/pylon-weather-rain.webp'); }
+.scene[data-weather='frost'] .image { background-image: url('/assets/images/pylon-weather-snow.webp'); }
 .atmosphere, .rain, .snow { position: absolute; inset: 0; pointer-events: none; transition: opacity .5s ease; }
 .atmosphere { background: linear-gradient(90deg, rgba(9,17,14,.42), var(--weather-tone) 55%, transparent 100%); }
 .scene[data-weather='rain'] .atmosphere { background: linear-gradient(110deg, rgba(8,20,33,.42), rgba(24,45,66,.16)); }
@@ -145,14 +144,14 @@
   background: repeating-linear-gradient(106deg, transparent 0 18px, rgba(221,239,255,.34) 19px, transparent 20px 39px);
   background-size: 100% 180%;
 }
-.scene[data-weather='rain'] .rain { opacity: .4; animation: rainfall .45s linear infinite; }
+.scene[data-weather='rain'] .rain { opacity: .18; animation: rainfall .55s linear infinite; }
 .snow {
   opacity: 0;
   background-image: radial-gradient(circle, #fff 0 1px, transparent 2px), radial-gradient(circle, #eef8ff 0 2px, transparent 3px), radial-gradient(circle, #fff 0 1.5px, transparent 2.5px);
   background-size: 91px 97px, 137px 151px, 197px 183px;
   background-position: 0 0, 40px 60px, 90px 25px;
 }
-.scene[data-weather='frost'] .snow { opacity: .75; animation: snowfall 8s linear infinite; }
+.scene[data-weather='frost'] .snow { opacity: .46; animation: snowfall 8s linear infinite; }
 .caption { position: absolute; right: clamp(1rem, 3vw, 3rem); bottom: 1.5rem; display: flex; flex-direction: column; gap: .3rem; text-align: right; color: white; text-shadow: 0 1px 8px #000; }
 .caption span:first-child { font-size: .7rem; font-weight: 900; letter-spacing: .16em; }
 .caption span:last-child { font-size: .6rem; font-weight: 700; letter-spacing: .12em; opacity: .8; }
@@ -161,9 +160,9 @@
 @keyframes snowfall { from { background-position: 0 -60px, 40px 0, 90px -30px; } to { background-position: 40px 180px, 10px 220px, 120px 150px; } }
 
 @media (max-width: 760px) {
-  .section { padding: 1.5rem 4%; }
   .scene { grid-template-columns: 1fr; }
-  .visual { order: -1; min-height: 390px; }
+  .scene { min-height: auto; }
+  .visual { order: -1; min-height: min(55svh, 460px); }
   .copy { padding: 2rem 1.5rem 2.5rem; }
   .title { max-width: 520px; font-size: clamp(2.5rem, 12vw, 4rem); }
   .description { max-width: 560px; }

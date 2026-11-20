@@ -1,12 +1,12 @@
 Signage Procurement & Import
 
-# Importing Custom Signage from China: Costs, Installation and Supplier Responsibilities
+# How to Vet an Overseas Custom Signage Factory | Buyer Checklist
 
-What importing custom signage from China really involves: landed and installed cost, Incoterms, duty, local installation and responsibility after delivery.
+Vet an overseas custom signage factory: check drawings, samples, delivery terms, installation scope and warranty, then compare landed and installed costs.
 
-Guide • Updated Oct 20, 2026 • By Aaron, ZYD Signage
+Guide • Updated Nov 17, 2026 • By Aaron, ZYD Signage
 
-Importing custom signage from China requires more than comparing factory prices. Before ordering, confirm the total delivered cost, local installation requirements, approval process and after-sales responsibilities.
+To vet an overseas custom signage factory, review its production evidence, drawing and sample process, written delivery scope, and how local installation and warranty responsibilities are divided. Then compare landed and installed costs rather than relying on the factory price alone.
 
 ## See the signs discussed in this guide
 
@@ -308,7 +308,7 @@ MOQ: 1 set · Free design support · Production: 7–15 days · 1-year warranty.
 
 First reply within 8 hours by WhatsApp or email to confirm your requirements and any missing information. A completed design or quotation may need further review.
 
-[The full procurement sequence](https://www.zydsign.com/guides/complete-site-signage-procurement-checklist) [What shapes the factory quotation itself](https://www.zydsign.com/guides/how-much-do-custom-channel-letters-cost) [How custom signage is manufactured](https://www.zydsign.com/guides/custom-signage-manufacturing-process) [Why the cheapest bid fails at acceptance](https://www.zydsign.com/guides/signage-procurement-low-bid-pitfalls) [Illumination specification checks](https://www.zydsign.com/guides/illuminated-signage-buying-guide) [Custom channel letters built for export crating](https://www.zydsign.com/products/custom-channel-letters) [Get Material Advice](https://wa.me/8615931359322?text=Hi%20Aaron%2C%20I%20would%20like%20material%20advice%20for%20this%20guide%20topic%3A%20Importing%20Custom%20Signage%20from%20China%3A%20Costs%2C%20Installation%20and%20Supplier%20Responsibilities.)
+[The full procurement sequence](https://www.zydsign.com/guides/complete-site-signage-procurement-checklist) [What shapes the factory quotation itself](https://www.zydsign.com/guides/how-much-do-custom-channel-letters-cost) [How custom signage is manufactured](https://www.zydsign.com/guides/custom-signage-manufacturing-process) [Why the cheapest bid fails at acceptance](https://www.zydsign.com/guides/signage-procurement-low-bid-pitfalls) [Illumination specification checks](https://www.zydsign.com/guides/illuminated-signage-buying-guide) [Custom channel letters built for export crating](https://www.zydsign.com/products/custom-channel-letters) [Get Material Advice](https://wa.me/8615931359322?text=Hi%20Aaron%2C%20I%20would%20like%20material%20advice%20for%20this%20guide%20topic%3A%20How%20to%20Vet%20an%20Overseas%20Custom%20Signage%20Factory%20%7C%20Buyer%20Checklist.)
 
 Buyer brief
 

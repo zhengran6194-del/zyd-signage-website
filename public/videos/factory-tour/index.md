@@ -1,4 +1,4 @@
-[Home](https://www.zydsign.com/) / Factory tour video
+[Home](https://www.zydsign.com/) Factory tour video
 
 # ZYD Signage Factory Tour
 
