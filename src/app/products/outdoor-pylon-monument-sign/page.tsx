@@ -8,6 +8,7 @@ import JsonLd from '@/components/JsonLd';
 import RelatedCaseStudy from '@/components/RelatedCaseStudy';
 import ProductPurchaseDetails from '@/components/ProductPurchaseDetails';
 import PylonProjectEvidence from '@/components/PylonProjectEvidence';
+import PylonWeatherScene from '@/components/PylonWeatherScene';
 
 const faqs = [
   {
@@ -80,6 +81,8 @@ export default function OutdoorPylonMonumentSignPage() {
             </div>
           </div>
         </section>
+
+        <PylonWeatherScene placement="product" />
 
         <div className="container py-6"><Link href="/guides/pylon-sign-cost" className="text-blue-800 font-bold underline underline-offset-4">Planning a budget? See what affects pylon sign cost →</Link></div>
         <PylonProjectEvidence />
