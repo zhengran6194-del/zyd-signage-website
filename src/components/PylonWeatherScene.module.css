@@ -110,8 +110,8 @@
   background: url('/assets/images/pylon-weather-sun.webp') center / cover no-repeat;
   transition: opacity .45s ease;
 }
-.scene[data-weather='rain'] .image { background-image: url('/assets/images/pylon-weather-rain.webp'); }
-.scene[data-weather='frost'] .image { background-image: url('/assets/images/pylon-weather-snow.webp'); }
+.scene[data-weather='rain'] .image { background-image: url('/assets/images/pylon-weather-rain-lit.webp'); }
+.scene[data-weather='frost'] .image { background-image: url('/assets/images/pylon-weather-snow-lit.webp'); }
 .atmosphere, .snow { position: absolute; inset: 0; pointer-events: none; transition: opacity .5s ease; }
 .atmosphere { background: linear-gradient(90deg, rgba(9,17,14,.42), var(--weather-tone) 55%, transparent 100%); }
 .scene[data-weather='rain'] .atmosphere { background: linear-gradient(110deg, rgba(8,20,33,.42), rgba(24,45,66,.16)); }
