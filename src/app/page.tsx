@@ -266,6 +266,7 @@ export default function Home() {
           </div>
         </section>
 
+        <PylonWeatherScene placement="home" />
         <FeaturedSignProducts />
         <BrandLogoMarquee />
         <HomeProjectEvidence />
@@ -429,8 +430,6 @@ export default function Home() {
             />
           </div>
         </section>
-
-        <PylonWeatherScene placement="home" />
 
         {/* 5. PRODUCTS PREVIEW */}
         <section className="section bg-slate-100 py-20 lg:py-24">
