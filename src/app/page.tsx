@@ -8,6 +8,7 @@ import WhatsAppCta from '@/components/WhatsAppCta';
 import JsonLd from '@/components/JsonLd';
 import FeaturedSignProducts from '@/components/FeaturedSignProducts';
 import HomeProjectEvidence from '@/components/HomeProjectEvidence';
+import HomeHeroCarouselBackground from '@/components/HomeHeroCarouselBackground';
 import PylonWeatherScene from '@/components/PylonWeatherScene';
 import BrandLogoMarquee from '@/components/BrandLogoMarquee';
 import { siteConfig } from '@/config/site';
@@ -210,17 +211,7 @@ export default function Home() {
       <main id="main">
         {/* Factory-led, full-bleed hero: show the production base and give buyers two clear next steps. */}
         <section className="relative isolate flex min-h-[680px] items-center overflow-hidden bg-slate-950 text-white lg:min-h-[calc(100svh-132px)]" aria-labelledby="home-project-title">
-          <div className="absolute inset-0 -z-20">
-            <Image
-              src="/assets/images/home-factory-hero.webp"
-              alt="Aerial view of ZYD Signage's manufacturing base in Dalian, China"
-              fill
-              priority
-              fetchPriority="high"
-              sizes="100vw"
-              className="object-cover object-center"
-            />
-          </div>
+          <HomeHeroCarouselBackground />
           <div className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(2,6,23,0.96)_0%,rgba(2,6,23,0.82)_34%,rgba(2,6,23,0.48)_66%,rgba(2,6,23,0.2)_100%)]" />
           <div className="absolute inset-0 -z-10 bg-[linear-gradient(0deg,rgba(2,6,23,0.72)_0%,transparent_35%)]" />
 
