@@ -72,7 +72,7 @@ export default function HomeHeroCarouselBackground() {
         ))}
       </div>
       <div
-        className="absolute right-5 top-5 z-10 flex items-center gap-2 rounded-full border border-white/15 bg-slate-950/45 px-3 py-2 backdrop-blur-sm sm:right-8 sm:top-7"
+        className="pointer-events-none absolute inset-y-0 z-10 flex w-full items-center justify-between px-4 sm:px-7 lg:px-10"
         role="group"
         aria-label="Homepage background slides"
         onMouseEnter={() => setPaused(true)}
@@ -86,25 +86,15 @@ export default function HomeHeroCarouselBackground() {
           type="button"
           aria-label="Previous background image"
           onClick={() => setActiveSlide((current) => (current + slides.length - 1) % slides.length)}
-          className="grid h-7 w-7 place-items-center rounded-full text-lg text-white/80 transition hover:bg-white/15 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-white"
+          className="pointer-events-auto grid h-11 w-11 place-items-center rounded-full border border-white/35 bg-slate-950/35 text-2xl text-white shadow-lg backdrop-blur-sm transition hover:scale-105 hover:bg-slate-950/65 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:h-12 sm:w-12"
         >
           ‹
         </button>
-        {slides.map((slide, index) => (
-          <button
-            key={slide.src}
-            type="button"
-            aria-label={`Show ${slide.label} background`}
-            aria-pressed={index === activeSlide}
-            onClick={() => setActiveSlide(index)}
-            className={`h-2.5 rounded-full transition-all duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-white ${index === activeSlide ? 'w-7 bg-white' : 'w-2.5 bg-white/55 hover:bg-white/85'}`}
-          />
-        ))}
         <button
           type="button"
           aria-label="Next background image"
           onClick={() => setActiveSlide((current) => (current + 1) % slides.length)}
-          className="grid h-7 w-7 place-items-center rounded-full text-lg text-white/80 transition hover:bg-white/15 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-white"
+          className="pointer-events-auto grid h-11 w-11 place-items-center rounded-full border border-white/35 bg-slate-950/35 text-2xl text-white shadow-lg backdrop-blur-sm transition hover:scale-105 hover:bg-slate-950/65 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:h-12 sm:w-12"
         >
           ›
         </button>
