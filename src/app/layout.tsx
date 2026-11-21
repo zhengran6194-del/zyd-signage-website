@@ -38,12 +38,27 @@ const siteJsonLd = {
       foundingDate: "2006",
       description: siteConfig.description,
       url: siteConfig.url,
+      // Match the scope stated on the homepage and About page. These describe
+      // the company's real project focus without implying a local service area.
+      areaServed: {
+        "@type": "Place",
+        name: "Worldwide",
+      },
+      knowsAbout: [
+        "Architectural wayfinding signage systems",
+        "Custom pylon and monument signs",
+        "Illuminated channel letters and halo-lit letters",
+        "LED light boxes and illuminated signs",
+        "Metal and acrylic logo signs",
+        "Custom signage planning, fabrication, packing, and export delivery",
+      ],
       logo: `${siteConfig.url}/assets/images/logo-correct.png`,
       email: siteConfig.salesEmail,
       telephone: `+${siteConfig.whatsappNumber}`,
       address: {
         "@type": "PostalAddress",
-        streetAddress: "No. 18, Industrial Zone, Ganjingzi District",
+        // City-level address only: the exact street address has not been
+        // verified against the company's current NAP record.
         addressLocality: "Dalian",
         addressRegion: "Liaoning",
         addressCountry: "CN",

@@ -304,7 +304,7 @@ export default function ContactPage() {
                     <div>
                       <div className="text-xs font-black uppercase tracking-[0.3em] text-slate-600 mb-1">Address</div>
                       <p className="text-lg font-bold text-slate-900 leading-relaxed">
-                        No. 18, Industrial Zone, Ganjingzi District, Dalian, Liaoning, China
+                        Dalian, Liaoning, China
                       </p>
                     </div>
                   </div>
