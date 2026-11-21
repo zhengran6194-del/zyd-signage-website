@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 
 const slides = [
-  { src: '/assets/images/homepage-hero-miami-pylon.png', label: 'Coastal pylon at dusk' },
+  { src: '/assets/images/homepage-hero-miami-pylon-v2.png', label: 'Coastal pylon at dusk' },
   { src: '/assets/images/homepage-hero-campus-wayfinding.png', label: 'Campus wayfinding' },
   { src: '/assets/images/homepage-hero-retail-pylon.png', label: 'Retail display pylon' },
   { src: '/assets/images/homepage-hero-product-display.png', label: 'Product display stand' },
