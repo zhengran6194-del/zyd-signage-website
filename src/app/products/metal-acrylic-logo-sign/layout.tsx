@@ -3,8 +3,8 @@ import { buildPageMetadata, ogImages } from "@/config/site";
 import ProductJsonLd from "@/components/ProductJsonLd";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Custom Acrylic & Metal Logo Panels | ZYD Signage",
-  description: "Factory-direct acrylic and metal logo panels for commercial and multi-site projects worldwide. Made in Dalian, China, with shipping quoted by destination, including Saudi Arabia.",
+  title: "Acrylic & Metal Logo Panels Manufacturer | ZYD Signage",
+  description: "Custom acrylic and metal logo panels for commercial projects worldwide. Factory-direct from Dalian, China, with project quotes and shipping options based on your destination.",
   path: "/products/metal-acrylic-logo-sign",
   image: ogImages.metalLogo,
 });

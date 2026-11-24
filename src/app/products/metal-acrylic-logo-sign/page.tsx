@@ -17,6 +17,10 @@ const faqs = [
     answer: 'Common routes are stainless steel, aluminum, or coated sheet for the metal layer, and acrylic for the face or the standoff layer. The finish is chosen to match the interior and the required appearance, from brushed metal to powder-coated color. The material guide compares the outdoor stainless and coated-steel routes.',
   },
   {
+    question: 'Can you ship custom logo panels to projects worldwide?',
+    answer: 'Yes. ZYD manufactures custom acrylic and metal logo panels in Dalian, China for projects in different markets. We confirm the packing and available freight options against the project destination, quantity, dimensions, and delivery requirements. Share your destination country or postcode with the artwork and approximate size to start a project quote.',
+  },
+  {
     question: 'Can you supply acrylic and metal logo panels for projects in Riyadh?',
     answer: 'ZYD manufactures custom acrylic and metal logo panels in Dalian, China and can prepare an export quotation for a Riyadh project. Share the artwork, finished dimensions, quantity, wall or mounting details, and delivery address so the panel design, packing, and freight route can be confirmed together.',
   },
