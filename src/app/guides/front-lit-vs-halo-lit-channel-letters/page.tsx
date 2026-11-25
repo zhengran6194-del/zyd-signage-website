@@ -162,6 +162,7 @@ const guide: GuideArticleData = {
   relatedLinks: [
     { href: '/products/custom-channel-letters', label: 'See custom front-lit channel letters' },
     { href: '/products/custom-halo-lit-letters', label: 'See custom halo-lit letters' },
+    { href: '/guides/how-much-do-custom-channel-letters-cost', label: 'See what affects channel letter cost' },
     { href: '/products/custom-led-neon-sign', label: 'See custom LED neon signs' },
     { href: '/guides/illuminated-signage-buying-guide', label: 'Read the illuminated signage buying guide' },
     { href: '/guides/signage-glossary', label: 'Signage glossary' },
