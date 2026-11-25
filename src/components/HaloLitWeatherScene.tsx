@@ -5,9 +5,9 @@ import Link from 'next/link';
 import styles from './HaloLitWeatherScene.module.css';
 
 const conditions = [
-  { id: 'sun', label: 'Sunshine', icon: '☼', image: '/assets/images/halo-weather-sun.png' },
-  { id: 'rain', label: 'Heavy rain', icon: '☂', image: '/assets/images/halo-weather-rain.png' },
-  { id: 'snow', label: 'Heavy snow', icon: '❄', image: '/assets/images/halo-weather-snow.png' },
+  { id: 'sun', label: 'Sunshine', icon: '☼', image: '/assets/images/halo-weather-sun.webp' },
+  { id: 'rain', label: 'Heavy rain', icon: '☂', image: '/assets/images/halo-weather-rain.webp' },
+  { id: 'snow', label: 'Heavy snow', icon: '❄', image: '/assets/images/halo-weather-snow.webp' },
 ] as const;
 
 export default function HaloLitWeatherScene() {
@@ -56,7 +56,7 @@ export default function HaloLitWeatherScene() {
             ))}
             <div className={styles.caption} aria-live="polite">
               <span>{current.label.toUpperCase()} SCENE PREVIEW</span>
-              <span>ILLUSTRATIVE PROJECT VISUAL</span>
+              <span>ILLUSTRATIVE WEATHER VISUALIZATION</span>
             </div>
           </div>
         </div>

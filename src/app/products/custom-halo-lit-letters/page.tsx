@@ -8,6 +8,7 @@ import LetterProjectEvidence from '@/components/LetterProjectEvidence';
 import WhatsAppCta from '@/components/WhatsAppCta';
 import JsonLd from '@/components/JsonLd';
 import RelatedCaseStudy from '@/components/RelatedCaseStudy';
+import HaloLitWeatherScene from '@/components/HaloLitWeatherScene';
 
 const faqs = [
   {
@@ -67,6 +68,8 @@ export default function HaloLitLettersPage() {
             </div>
           </div>
         </section>
+
+        <HaloLitWeatherScene />
 
         <LetterProjectEvidence variant="halo" />
 

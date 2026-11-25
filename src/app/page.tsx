@@ -445,7 +445,7 @@ export default function Home() {
             </div>
             <div id="home-products-grid" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
               {[
-                { title: 'Halo-Lit Letters', img: 'cat-illuminated.jpg', id: 'custom-halo-lit-letters' },
+                { title: 'Halo-Lit Letters', img: 'halo-lit-cashflow-workshop.jpg', id: 'custom-halo-lit-letters' },
                 { title: 'Wayfinding Systems', img: 'hero-wayfinding.jpg', id: 'architectural-wayfinding-system' },
                 { title: 'Medical Signage', img: 'hero-medical.jpg', id: 'medical-care-signage' },
                 { title: 'Monument Signs', img: 'cat-outdoor.webp', id: 'outdoor-pylon-monument-sign' },

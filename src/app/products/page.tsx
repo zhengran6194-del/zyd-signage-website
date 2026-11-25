@@ -21,7 +21,7 @@ export default function ProductsPage() {
     { title: 'Medical Signage', desc: 'Specialized healthcare signage systems for hospitals.', img: 'hero-medical.jpg', id: 'medical-care-signage' },
     { title: 'Landscape & Furniture', desc: 'Bespoke outdoor landscape branding and seating.', img: 'landscape-bench.jpg', id: 'custom-landscape-furniture' },
     { title: 'Front-Lit Channel Letters', desc: 'Illuminated acrylic faces with concealed LED modules inside a formed letter body.', img: 'cat-illuminated.jpg', id: 'custom-channel-letters' },
-    { title: 'Halo-Lit Metal Letters', desc: 'Rear-glow metal letters that light the wall behind them rather than the face.', img: 'cat-illuminated.jpg', id: 'custom-halo-lit-letters' },
+    { title: 'Halo-Lit Metal Letters', desc: 'Rear-glow metal letters that light the wall behind them rather than the face.', img: 'halo-lit-cashflow-workshop.jpg', id: 'custom-halo-lit-letters' },
     { title: 'LED Light Boxes', desc: 'Ultra-slim and projecting LED light boxes for retail.', img: 'cat-lightbox.jpg', id: 'ultra-slim-led-light-box' },
     { title: 'Monument Signs', desc: 'Large-scale pylon signs and entry identification.', img: 'cat-outdoor.webp', id: 'outdoor-pylon-monument-sign' },
     { title: 'LED Neon Signs', desc: 'Vibrant custom neon flex for branding and interior decor.', img: 'cat-neon.webp', id: 'custom-led-neon-sign' },
