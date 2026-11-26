@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import LanguageSwitch from '@/components/LanguageSwitch';
 import { headerCopy, headerCta, localeFromPath, navItems } from '@/config/i18n';
 
 export default function Header() {
@@ -43,14 +42,10 @@ export default function Header() {
               {item.label}
             </Link>
           ))}
-          {/* Mobile: the switcher sits at the end of the panel. Hidden on
-              desktop, where .nav-actions carries it instead. */}
-          <LanguageSwitch className="lang-mobile" />
         </nav>
 
         {/* Quote button, far right */}
         <div className="nav-actions">
-          <LanguageSwitch className="lang-desktop" />
           <Link 
             className="button button-green-base" 
             href={cta.href}
