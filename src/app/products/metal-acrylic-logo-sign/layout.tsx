@@ -4,7 +4,7 @@ import ProductJsonLd from "@/components/ProductJsonLd";
 
 export const metadata: Metadata = buildPageMetadata({
   title: "Acrylic & Metal Logo Panels Manufacturer | ZYD Signage",
-  description: "Custom acrylic and metal logo panels for commercial projects worldwide. Factory-direct from Dalian, China, with project quotes and shipping options based on your destination.",
+  description: "Custom acrylic & metal logo panels for reception and commercial interiors. MOQ 1 set, free design mockup, 7–15 day production. Factory direct from China, shipping worldwide.",
   path: "/products/metal-acrylic-logo-sign",
   image: ogImages.metalLogo,
 });

@@ -65,6 +65,9 @@ export default function MetalAcrylicLogoSignPage() {
                 </Link>
                 <WhatsAppCta label="Check Feasibility" message="Hi Aaron, can you check feasibility for a metal and acrylic logo sign?" brief={{ product: 'a metal and acrylic logo sign', items: ['Vector artwork or logo file', 'Overall dimensions and quantity', 'Metal/acrylic finish direction', 'Wall/mounting photo and ship-to country'] }} />
               </div>
+              <p className="mt-5 text-sm text-slate-300">
+                MOQ 1 set <span className="px-2 text-blue-400">·</span> Free design mockup <span className="px-2 text-blue-400">·</span> Typical production 7–15 days after specification approval
+              </p>
             </div>
             <div className="reveal visible relative">
               <div className="absolute -inset-4 bg-blue-500/20 blur-3xl rounded-full"></div>
